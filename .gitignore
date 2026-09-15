@@ -1,0 +1,36 @@
+# Dependencies and local caches
+vendor/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.mplconfig/
+mplcache/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+
+# Third-party papers and extracted contents
+*.pdf
+参考文献/
+source_text/
+inspection/
+
+# Generated experiments and reports
+results/
+*.npz
+*.pt
+*.png
+*.csv
+simulation_reproduction/复现实验报告.html
+simulation_reproduction/复现实验报告.md
+simulation_reproduction/guided_wave_v2/*_healthy.json
+simulation_reproduction/guided_wave_v2/*_damage.json
+simulation_reproduction/guided_wave_v2/*_halfdt.json
+simulation_reproduction/guided_wave_v2/metrics.json
+simulation_reproduction/guided_wave_v2/manifest.json
+simulation_reproduction/guided_wave_v2/visual-data.json
+simulation_reproduction/guided_wave_v2/计算结果.md
+simulation_reproduction/guided_wave_v2/打开仿真.html
