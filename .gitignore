@@ -34,3 +34,11 @@ simulation_reproduction/guided_wave_v2/manifest.json
 simulation_reproduction/guided_wave_v2/visual-data.json
 simulation_reproduction/guided_wave_v2/计算结果.md
 simulation_reproduction/guided_wave_v2/打开仿真.html
+
+# Keep our comparison plots; original paper pages and embedded full report stay local.
+!simulation_reproduction/comparison/*.png
+simulation_reproduction/comparison/P*-p*.png
+simulation_reproduction/comparison/论文与仿真逐项对比分析.html
+simulation_reproduction/comparison/source_manifest.json
+simulation_reproduction/comparison/analysis_manifest.json
+simulation_reproduction/comparison/verification.json

@@ -2,6 +2,10 @@
 
 毕设论文实验的数值复现与主动导波参考仿真代码。
 
+**新对话先读：[项目交接文档](PROJECT_HANDOFF.md)。** 包含项目目标、实际文件位置、已完成工作、已知错误、模型边界、复算命令和可复制提示词。
+
+**分析报告：[论文与仿真逐项对比分析](simulation_reproduction/comparison/论文与仿真逐项对比分析.md)**。审计脚本与指标见 [对比分析说明](simulation_reproduction/comparison/README_对比报告.md)。本机完整HTML含原论文图页，仓库阅读版保留分析和本项目绘图。
+
 ## 目录
 
 - `simulation_reproduction/`：AE 到达时间、定位、简化板动力响应、迁移学习及其他方法实验。
