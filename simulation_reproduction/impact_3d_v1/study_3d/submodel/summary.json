@@ -1,0 +1,36 @@
+{
+  "model": "locally refined 3D H8, rigid sphere + unilateral impulse contact",
+  "graded": {
+    "h0_m": 0.00025,
+    "z0_m": 0.000125,
+    "growth": 1.15,
+    "h_max_m": 0.004
+  },
+  "nx": 77,
+  "ny": 64,
+  "nz": 9,
+  "elements": 44352,
+  "nodes": 50700,
+  "free_dofs": 126130,
+  "min_element_size_m": 0.0002464405160456651,
+  "contact_candidates": 28,
+  "dt_s": 2.1464754872499355e-08,
+  "steps": 23294,
+  "duration_s": 0.0005,
+  "dt_upper_bound_s": 4.293003594818861e-08,
+  "ball_mass_kg": 0.00396762208197367,
+  "incident_energy_J": 0.006227579619865873,
+  "implied_D_Nm": [
+    45.66695084982705,
+    45.66695084982705,
+    1.4623116837978587,
+    3.1333333333333333
+  ],
+  "peak_contact_force_N": 32.40232946645201,
+  "peak_penetration_m": 2.1340893036950035e-06,
+  "peak_surface_deflection_m": 0.0003110174977847795,
+  "first_contact_duration_s": 6.439426461749806e-08,
+  "energy_max_relative_error": 0.00011871628820543278,
+  "seconds": 139.37308835983276,
+  "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+}

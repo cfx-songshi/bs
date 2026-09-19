@@ -1,0 +1,35 @@
+{
+  "model": "quarter-symmetric 3D H8, prescribed contact force (from local submodel)",
+  "nx": 100,
+  "ny": 80,
+  "nz": 4,
+  "elements": 32000,
+  "nodes": 40905,
+  "free_dofs": 98540,
+  "dt_s": 1.464986815118664e-07,
+  "steps": 3413,
+  "duration_s": 0.0005,
+  "dt_upper_bound_s": 2.093027880835269e-07,
+  "quarter_size_m": [
+    0.25,
+    0.2
+  ],
+  "thickness_m": 0.002,
+  "sensor_grid": {
+    "n_per_side": 4,
+    "spacing_x_m": 0.115,
+    "spacing_y_m": 0.09000000000000001,
+    "edge_x_m": 0.0575,
+    "edge_y_m": 0.045000000000000005,
+    "subregion_x_m": 0.115,
+    "subregion_y_m": 0.09000000000000001,
+    "reference": "clear span (outer size minus twice the clamp width)",
+    "rule": "P2 SMS\u8bba\u658701 PDF p15: edge distance = half the monitoring region"
+  },
+  "sensors_total": 16,
+  "sensors_in_quarter": 4,
+  "prescribed_peak_force_N": 32.23800025847371,
+  "peak_impact_point_displacement_m": 0.0003002360285423059,
+  "seconds": 14.721615076065063,
+  "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+}

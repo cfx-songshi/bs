@@ -1,0 +1,176 @@
+{
+  "generated": "2026-09-19 18:11:44",
+  "reference_case": "P2 SMS\u8bba\u658701 PDF p15-p18: 8 mm tungsten steel sphere, 160 mm drop, perimeter-clamped plate. Numerical reference, not a validated specimen.",
+  "level1_submodel": {
+    "model": "locally refined 3D H8, rigid sphere + unilateral impulse contact",
+    "graded": {
+      "h0_m": 0.00025,
+      "z0_m": 0.000125,
+      "growth": 1.15,
+      "h_max_m": 0.004
+    },
+    "nx": 77,
+    "ny": 64,
+    "nz": 9,
+    "elements": 44352,
+    "nodes": 50700,
+    "free_dofs": 126130,
+    "min_element_size_m": 0.0002464405160456651,
+    "contact_candidates": 28,
+    "dt_s": 2.1464754872499355e-08,
+    "steps": 23294,
+    "duration_s": 0.0005,
+    "dt_upper_bound_s": 4.293003594818861e-08,
+    "ball_mass_kg": 0.00396762208197367,
+    "incident_energy_J": 0.006227579619865873,
+    "implied_D_Nm": [
+      45.66695084982705,
+      45.66695084982705,
+      1.4623116837978587,
+      3.1333333333333333
+    ],
+    "peak_contact_force_N": 32.40232946645201,
+    "peak_penetration_m": 2.1340893036950035e-06,
+    "peak_surface_deflection_m": 0.0003110174977847795,
+    "first_contact_duration_s": 6.439426461749806e-08,
+    "energy_max_relative_error": 0.00011871628820543278,
+    "seconds": 139.37308835983276,
+    "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE",
+    "wall_seconds": 139.39310359954834
+  },
+  "level2_global": {
+    "model": "quarter-symmetric 3D H8, prescribed contact force (from local submodel)",
+    "nx": 100,
+    "ny": 80,
+    "nz": 4,
+    "elements": 32000,
+    "nodes": 40905,
+    "free_dofs": 98540,
+    "dt_s": 1.464986815118664e-07,
+    "steps": 3413,
+    "duration_s": 0.0005,
+    "dt_upper_bound_s": 2.093027880835269e-07,
+    "quarter_size_m": [
+      0.25,
+      0.2
+    ],
+    "thickness_m": 0.002,
+    "sensor_grid": {
+      "n_per_side": 4,
+      "spacing_x_m": 0.115,
+      "spacing_y_m": 0.09000000000000001,
+      "edge_x_m": 0.0575,
+      "edge_y_m": 0.045000000000000005,
+      "subregion_x_m": 0.115,
+      "subregion_y_m": 0.09000000000000001,
+      "reference": "clear span (outer size minus twice the clamp width)",
+      "rule": "P2 SMS\u8bba\u658701 PDF p15: edge distance = half the monitoring region"
+    },
+    "sensors_total": 16,
+    "sensors_in_quarter": 4,
+    "prescribed_peak_force_N": 32.23800025847371,
+    "peak_impact_point_displacement_m": 0.0003002360285423059,
+    "seconds": 14.721615076065063,
+    "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE",
+    "wall_seconds": 14.732543230056763
+  },
+  "cross_check_deflection": {
+    "submodel_peak_m": 0.0003110174977847795,
+    "global_peak_m": 0.0003002360285423059,
+    "relative_difference": 0.0359099782088758
+  },
+  "sensor_peaks": {
+    "9": {
+      "x_m": 0.0775,
+      "y_m": 0.155,
+      "distance_from_impact_m": 0.1782729648600707,
+      "exx": -2.589893121292018e-05,
+      "eyy": -8.947073412768048e-06,
+      "exy": -6.4418871565032e-05,
+      "peak_invariant": -3.484600462568823e-05,
+      "peak_axis_projection": -4.369004342156944e-05,
+      "peak_impact_direction_projection": -5.628714656007657e-05,
+      "principal_e1": 4.755108778798941e-05,
+      "principal_e2": -8.239709241367764e-05,
+      "principal_angle_deg": -48.747824599731906,
+      "impact_direction_deg": 14.620873988631663
+    },
+    "10": {
+      "x_m": 0.1925,
+      "y_m": 0.155,
+      "distance_from_impact_m": 0.07301540933255117,
+      "exx": 5.008323097667808e-05,
+      "eyy": 1.6187871737651926e-05,
+      "exy": 0.00016334148462289767,
+      "peak_invariant": 6.627110271433e-05,
+      "peak_axis_projection": 5.496807345681383e-05,
+      "peak_impact_direction_projection": 0.00019576277713648438,
+      "principal_e1": 0.00019735389516594288,
+      "principal_e2": -0.00013108279245161288,
+      "principal_angle_deg": 42.038203848824985,
+      "impact_direction_deg": 38.047042531826094
+    },
+    "13": {
+      "x_m": 0.0775,
+      "y_m": 0.065,
+      "distance_from_impact_m": 0.2190462279976535,
+      "exx": 1.3813933146646047e-05,
+      "eyy": 8.151081685039531e-06,
+      "exy": 3.433687586493907e-05,
+      "peak_invariant": 2.196501483168558e-05,
+      "peak_axis_projection": 1.3813933146646047e-05,
+      "peak_impact_direction_projection": 4.4993498612776224e-05,
+      "principal_e1": 4.543592547317478e-05,
+      "principal_e2": -2.3470910641489205e-05,
+      "principal_angle_deg": 42.64302179863945,
+      "impact_direction_deg": 38.047042531826094
+    },
+    "14": {
+      "x_m": 0.1925,
+      "y_m": 0.065,
+      "distance_from_impact_m": 0.1467353059082919,
+      "exx": -9.605705572744218e-06,
+      "eyy": -2.1750082326096322e-05,
+      "exy": -6.945704816041524e-05,
+      "peak_invariant": -3.135578789884054e-05,
+      "peak_axis_projection": -1.621943187875256e-05,
+      "peak_impact_direction_projection": -6.996689867673437e-05,
+      "principal_e1": 5.4044075406300615e-05,
+      "principal_e2": -8.539986330514116e-05,
+      "principal_angle_deg": -42.501848482385945,
+      "impact_direction_deg": 66.92958775017536
+    }
+  },
+  "sensor_orientation_dependence": {
+    "note": "peak of eps(theta) over theta for the sensor nearest the impact",
+    "9": {
+      "distance_from_impact_m": 0.1782729648600707,
+      "peak_impact_direction_projection": -5.628714656007657e-05,
+      "peak_axis_projection_at_0deg": -4.369004342156944e-05,
+      "ratio_impact_over_axis": 1.2883289223807006,
+      "principal_angle_deg": -48.747824599731906
+    },
+    "10": {
+      "distance_from_impact_m": 0.07301540933255117,
+      "peak_impact_direction_projection": 0.00019576277713648438,
+      "peak_axis_projection_at_0deg": 5.496807345681383e-05,
+      "ratio_impact_over_axis": 3.5613905459191177,
+      "principal_angle_deg": 42.038203848824985
+    },
+    "13": {
+      "distance_from_impact_m": 0.2190462279976535,
+      "peak_impact_direction_projection": 4.4993498612776224e-05,
+      "peak_axis_projection_at_0deg": 1.3813933146646047e-05,
+      "ratio_impact_over_axis": 3.2571099146878684,
+      "principal_angle_deg": 42.64302179863945
+    },
+    "14": {
+      "distance_from_impact_m": 0.1467353059082919,
+      "peak_impact_direction_projection": -6.996689867673437e-05,
+      "peak_axis_projection_at_0deg": -1.621943187875256e-05,
+      "ratio_impact_over_axis": 4.313770001302632,
+      "principal_angle_deg": -42.501848482385945
+    }
+  },
+  "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+}

@@ -1,0 +1,59 @@
+{
+  "route": "P2 free-falling sphere with perimeter frame clamping, quarter-symmetric 3D solid model",
+  "outer_size_m": [0.5, 0.4],
+  "quarter_x_m": 0.25,
+  "quarter_y_m": 0.2,
+  "thickness_m": 0.002,
+  "rho_kg_m3": 1650,
+  "clamp_width_m": 0.02,
+  "duration_s": 0.0005,
+  "output_dt_s": 0.000005,
+  "patch_size_m": 0.015,
+  "ply": {
+    "E1_Pa": 128100000000,
+    "E2_Pa": 8200000000,
+    "E3_Pa": 8200000000,
+    "G12_Pa": 4700000000,
+    "G13_Pa": 4700000000,
+    "G23_Pa": 3440000000,
+    "nu12": 0.27,
+    "nu13": 0.27,
+    "nu23": 0.2
+  },
+  "impact_v1_reference": {
+    "E1_Pa": 128100000000,
+    "E2_Pa": 8200000000,
+    "G12_Pa": 4700000000,
+    "nu12": 0.27
+  },
+  "ball": {
+    "diameter_m": 0.008,
+    "height_m": 0.16,
+    "rho_kg_m3": 14800,
+    "E_Pa": 530000000000,
+    "nu": 0.24
+  },
+  "contact_proxy": {
+    "E_Pa": 8200000000,
+    "nu": 0.3
+  },
+  "sensors": {
+    "n_per_side": 4,
+    "axis_angle_deg": 0.0,
+    "note": "axis_angle_deg is the in-plane orientation (deg, from +x towards +y) of the patch measurement axis; the PZT-5A square patch electrode/poling axis is not yet known, so 0 deg is an analyst default"
+  },
+  "provenance": {
+    "geometry_density": "User order and seller screenshot; nominal, not measured. Same values as impact_v1.",
+    "quarter_symmetry": "Analyst choice. The clear span is centred at (250,200) mm and the impact point is the centre, and the homogenised material has principal axes along x and y, so the x and y mirror planes are exact for this baseline case. Off-centre impact would require the full plate.",
+    "ply_constants": "Li et al. 2012 Table 1, T300/F593, the external substitute already used by guided_wave_v2 and impact_v1; NOT this specimen.",
+    "homogenisation": "Analyst assumption: C_eff = mean(C(0 deg), C(90 deg)) in 3D Voigt form. impact_v1 instead averaged the plane-stress reduced Q, so the implied in-plane D differs slightly; both are reported in summary.json.",
+    "clamp": "20 mm analyst choice, consistent with impact_v1. The whole strip outside the clear span is held fixed, i.e. impact_v1's 'outer strip immobile', not a measured frame flexibility.",
+    "symmetry_boundary": "Mirror planes at x = quarter_x and y = quarter_y with the normal displacement restrained; the clamped strips at x <= clamp_width and y <= clamp_width have all dofs fixed.",
+    "sphere": "P2 SMS paper PDF p17 Table2 and p18 Table4: 8 mm tungsten steel, 160 mm drop. Same numerical reference case as impact_v1, not an experimentally validated CFRP case.",
+    "contact": "Hertz elastic sphere / half-space proxy, identical law and identical contact_proxy to impact_v1 so that the 3D and thin-plate results differ only through the kinematics. Not a calibrated anisotropic layered indentation model.",
+    "sensor_grid": "P2 SMS paper PDF p16 figure 18 gives a 4x4 PZT grid with equal spacing and an edge distance of half the monitoring region (stated on PDF p15). Applied here to the clear span, because the clamped strip cannot carry a working sensor. Sensor id numbering follows the paper, so the centre sub-region is bounded by sensors 6, 7, 10 and 11.",
+    "sensor_signal": "P2 PDF p19 uses the mean element strain along the impact direction as the simulated PZT signal. The same three readouts are reported here: the in-plane invariant exx+eyy (comparable with impact_v1), the patch-axis projection, and the impact-direction projection.",
+    "duration": "P2 PDF p18 uses 5e-4 s total analysis time with a 5e-6 s output interval (200 kHz), matching the experimental sampling. The same values are used here.",
+    "omissions": "No damage, delamination, damping, plasticity, PZT mass or stiffness, adhesive layer, piezoelectric coupling or voltage prediction, and no electrical or acquisition chain. Surface strain is evaluated on the top face of the top element layer, which is mesh-sensitive; the through-thickness refinement is the required evidence."
+  }
+}
