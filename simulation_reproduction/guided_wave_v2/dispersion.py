@@ -127,9 +127,14 @@ def boundary_matrix(c, omega, h, m, rho):
     qb = -(a_big * C33 + b_big * C55 + k ** 2 * (C13 + C55) ** 2)
     qc = a_big * b_big
     disc = qb * qb - 4 * qa * qc
-    if disc < 0:
-        return None
-    root = np.sqrt(disc)
+    # A negative discriminant is NOT a failure to find a root. It means q = p^2 is
+    # complex, so p = +/- (a + b i): the field oscillates through the thickness while
+    # also growing or decaying across it, which is what a non-uniform partial wave
+    # looks like in an anisotropic plate. Returning early here silently deleted every
+    # such solution. That went unnoticed along the fibres because the discriminant
+    # happens to be positive there, and it destroyed the whole A0 branch across the
+    # fibres, leaving only S0 and a spurious root at the bulk shear speed.
+    root = np.sqrt(complex(disc))
     ps = []
     for q in ((-qb + root) / (2 * qa), (-qb - root) / (2 * qa)):
         p = np.sqrt(complex(q))
