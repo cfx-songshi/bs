@@ -399,7 +399,8 @@ def run(config, nx, ny, nz, duration=None, out=None, modes=0):
     return summary
 
 
-def run_prescribed(config, nx, ny, nz, t_hist, f_hist, duration=None, out=None):
+def run_prescribed(config, nx, ny, nz, t_hist, f_hist, duration=None, out=None,
+                   dt_fixed=None):
     """Drive the global uniform model with a prescribed contact force history.
 
     Far-field strain obeys Saint-Venant: at the sensor distances the response is
@@ -414,6 +415,10 @@ def run_prescribed(config, nx, ny, nz, t_hist, f_hist, duration=None, out=None):
     check here; the model is instead validated by the submodel's energy check and
     by the fact that the force magnitude (not its spatial distribution) determines
     the far field.
+
+    dt_fixed pins the time step. A far-field mesh refinement study must vary only
+    the mesh, otherwise the time discretization error changes with it and the two
+    cannot be separated; pass the smallest stable step over all the meshes used.
     """
     if out and Path(out).exists():
         raise FileExistsError('Refusing to overwrite existing results: ' + str(out))
@@ -426,7 +431,10 @@ def run_prescribed(config, nx, ny, nz, t_hist, f_hist, duration=None, out=None):
     f_hist = np.asarray(f_hist, float)
 
     dt_limit = 2. / np.sqrt(bound)
-    steps = int(np.ceil(duration / (0.7 * dt_limit)))
+    if dt_fixed:
+        steps = max(1, int(round(duration / float(dt_fixed))))
+    else:
+        steps = int(np.ceil(duration / (0.7 * dt_limit)))
     dt = duration / steps
 
     sensors, grid_meta = sensor_layout(config)
@@ -482,7 +490,7 @@ def run_prescribed(config, nx, ny, nz, t_hist, f_hist, duration=None, out=None):
     summary = dict(model='quarter-symmetric 3D H8, prescribed contact force (from local submodel)',
                    nx=nx, ny=ny, nz=nz, elements=int(nx * ny * nz), nodes=int(b['n_node']),
                    free_dofs=int(n_free), dt_s=dt, steps=steps, duration_s=duration,
-                   dt_upper_bound_s=dt_limit,
+                   dt_fixed=bool(dt_fixed), dt_upper_bound_s=dt_limit,
                    quarter_size_m=[lx, ly], thickness_m=config['thickness_m'],
                    sensor_grid=grid_meta, sensors_total=len(sensors),
                    sensors_in_quarter=len(inside),

@@ -1,16 +1,16 @@
 {
   "model": "quarter-symmetric 3D H8, prescribed contact force (from local submodel)",
-  "nx": 200,
-  "ny": 160,
+  "nx": 150,
+  "ny": 120,
   "nz": 4,
-  "elements": 128000,
-  "nodes": 161805,
-  "free_dofs": 395800,
-  "dt_s": 1.288659793814433e-07,
-  "steps": 3880,
+  "elements": 72000,
+  "nodes": 91355,
+  "free_dofs": 222330,
+  "dt_s": 7.326007326007326e-08,
+  "steps": 6825,
   "duration_s": 0.0005,
-  "dt_fixed": false,
-  "dt_upper_bound_s": 1.840967934969723e-07,
+  "dt_fixed": true,
+  "dt_upper_bound_s": 2.049209314725979e-07,
   "quarter_size_m": [
     0.25,
     0.2
@@ -29,8 +29,8 @@
   },
   "sensors_total": 16,
   "sensors_in_quarter": 4,
-  "prescribed_peak_force_N": 32.243234901699395,
-  "peak_impact_point_displacement_m": 0.00031253597119950235,
-  "seconds": 71.8383059501648,
+  "prescribed_peak_force_N": 32.24433051133582,
+  "peak_impact_point_displacement_m": 0.00030846135048337274,
+  "seconds": 74.39398646354675,
   "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
 }

@@ -1,0 +1,143 @@
+{
+  "sensors": [
+    {
+      "id": 1,
+      "x_m": 0.0775,
+      "y_m": 0.3350000000000001,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": -38.0470425318261
+    },
+    {
+      "id": 2,
+      "x_m": 0.1925,
+      "y_m": 0.3350000000000001,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": -66.92958775017536
+    },
+    {
+      "id": 3,
+      "x_m": 0.30750000000000005,
+      "y_m": 0.3350000000000001,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": -113.07041224982466
+    },
+    {
+      "id": 4,
+      "x_m": 0.42250000000000004,
+      "y_m": 0.3350000000000001,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": -141.95295746817393
+    },
+    {
+      "id": 5,
+      "x_m": 0.0775,
+      "y_m": 0.24500000000000002,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": -14.620873988631663
+    },
+    {
+      "id": 6,
+      "x_m": 0.1925,
+      "y_m": 0.24500000000000002,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": -38.047042531826094
+    },
+    {
+      "id": 7,
+      "x_m": 0.30750000000000005,
+      "y_m": 0.24500000000000002,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": -141.95295746817393
+    },
+    {
+      "id": 8,
+      "x_m": 0.42250000000000004,
+      "y_m": 0.24500000000000002,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": -165.37912601136836
+    },
+    {
+      "id": 9,
+      "x_m": 0.0775,
+      "y_m": 0.155,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": 14.620873988631663
+    },
+    {
+      "id": 10,
+      "x_m": 0.1925,
+      "y_m": 0.155,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": 38.047042531826094
+    },
+    {
+      "id": 11,
+      "x_m": 0.30750000000000005,
+      "y_m": 0.155,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": 141.95295746817393
+    },
+    {
+      "id": 12,
+      "x_m": 0.42250000000000004,
+      "y_m": 0.155,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": 165.37912601136836
+    },
+    {
+      "id": 13,
+      "x_m": 0.0775,
+      "y_m": 0.065,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": 38.047042531826094
+    },
+    {
+      "id": 14,
+      "x_m": 0.1925,
+      "y_m": 0.065,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": 66.92958775017536
+    },
+    {
+      "id": 15,
+      "x_m": 0.30750000000000005,
+      "y_m": 0.065,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": 113.07041224982467
+    },
+    {
+      "id": 16,
+      "x_m": 0.42250000000000004,
+      "y_m": 0.065,
+      "patch_size_m": 0.015,
+      "axis_angle_deg": 0.0,
+      "theta_impact_deg": 141.95295746817393
+    }
+  ],
+  "grid": {
+    "n_per_side": 4,
+    "spacing_x_m": 0.115,
+    "spacing_y_m": 0.09000000000000001,
+    "edge_x_m": 0.0575,
+    "edge_y_m": 0.045000000000000005,
+    "subregion_x_m": 0.115,
+    "subregion_y_m": 0.09000000000000001,
+    "reference": "clear span (outer size minus twice the clamp width)",
+    "rule": "P2 SMS论文01 PDF p15: edge distance = half the monitoring region"
+  }
+}

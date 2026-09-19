@@ -41,11 +41,46 @@ def run_submodel(cfg, out, h0, z0, growth, h_max, duration, safety):
     return s
 
 
-def run_global(cfg, out, nx, ny, nz, t_hist, f_hist, duration):
+def run_global(cfg, out, nx, ny, nz, t_hist, f_hist, duration, dt_fixed=None):
     t0 = time.time()
-    s = G.run_prescribed(cfg, nx, ny, nz, t_hist, f_hist, duration=duration, out=out)
+    s = G.run_prescribed(cfg, nx, ny, nz, t_hist, f_hist, duration=duration, out=out,
+                         dt_fixed=dt_fixed)
     s['wall_seconds'] = time.time() - t0
     return s
+
+
+def far_field_sweep(cfg, out, t_hist, f_hist, duration, meshes):
+    """Refine the uniform global mesh with the time step held fixed.
+
+    Holding dt fixed is what makes this a mesh study: otherwise the time
+    discretization error shrinks together with the element size and the two
+    contributions cannot be told apart. The shared step is the smallest stable
+    step over all the meshes, so every mesh is comfortably within its own limit.
+    """
+    limits = []
+    for nx, ny, nz in meshes:
+        b = G.build(cfg, nx, ny, nz)
+        limits.append(2. / np.sqrt(b['bound']))
+    dt_common = 0.7 * min(limits)
+    corner = (cfg['quarter_x_m'], cfg['quarter_y_m'])
+
+    rows = []
+    for (nx, ny, nz), lim in zip(meshes, limits):
+        sub = out / ('farfield_%dx%dx%d' % (nx, ny, nz))
+        s = run_global(cfg, sub, nx, ny, nz, t_hist, f_hist, duration, dt_fixed=dt_common)
+        peaks = sensor_peaks(sub / 'sensors.csv', corner)
+        rows.append(dict(nx=nx, ny=ny, nz=nz, elements=s['elements'],
+                         free_dofs=s['free_dofs'], dt_s=s['dt_s'], steps=s['steps'],
+                         dt_upper_bound_s=lim,
+                         peak_impact_point_displacement_m=s['peak_impact_point_displacement_m'],
+                         wall_seconds=s['wall_seconds'], sensor_peaks=peaks))
+        print('      %dx%dx%d (%d dof) -> centre %.2f um, S10 impact-dir %.1f uE'
+              % (nx, ny, nz, s['free_dofs'],
+                 s['peak_impact_point_displacement_m'] * 1e6,
+                 peaks['10']['peak_impact_direction_projection'] * 1e6), flush=True)
+    return dict(common_dt_s=dt_common,
+                note='one time step shared by all meshes; only the mesh varies',
+                meshes=rows)
 
 
 def sensor_peaks(sensor_csv, cfg_impact):
@@ -89,9 +124,12 @@ def main():
     p.add_argument('--growth', type=float, default=1.15)
     p.add_argument('--hmax', type=float, default=4e-3)
     p.add_argument('--safety', type=float, default=0.5)
-    p.add_argument('--mesh', type=int, nargs=3, default=[100, 80, 4], metavar=('NX', 'NY', 'NZ'))
+    p.add_argument('--mesh', type=int, nargs=3, default=[200, 160, 4], metavar=('NX', 'NY', 'NZ'),
+                   help='far-field mesh; the default is the converged one (see README section 3.3)')
     p.add_argument('--convergence', action='store_true',
-                   help='also run the mesh and step refinement sweep')
+                   help='also run the submodel mesh and step refinement sweep')
+    p.add_argument('--farfield', action='store_true',
+                   help='also refine the uniform global mesh (far field) at a fixed time step')
     a = p.parse_args()
     if a.out.exists():
         raise FileExistsError('Refusing to overwrite existing results: %s' % a.out)
@@ -143,6 +181,12 @@ def main():
                 principal_angle_deg=sensors[k]['principal_angle_deg'])
                for k in sensors}),
         status='UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE')
+
+    if a.farfield:
+        print('[extra] far-field global mesh refinement at a common time step', flush=True)
+        metrics['far_field_convergence'] = far_field_sweep(
+            cfg, a.out, t_hist, f_hist, a.duration,
+            [(100, 80, 4), (150, 120, 4), (200, 160, 4), (200, 160, 8)])
 
     if a.convergence:
         print('[extra] mesh and time-step refinement sweep', flush=True)

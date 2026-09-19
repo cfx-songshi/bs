@@ -31,6 +31,6 @@
   "peak_surface_deflection_m": 0.0003110174977847795,
   "first_contact_duration_s": 6.439426461749806e-08,
   "energy_max_relative_error": 0.00011871628820543278,
-  "seconds": 139.37308835983276,
+  "seconds": 113.51934909820557,
   "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
 }
