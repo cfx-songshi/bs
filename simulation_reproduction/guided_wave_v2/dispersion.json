@@ -1,0 +1,512 @@
+{
+  "material": {
+    "E1": 128100000000.0,
+    "E2": 8200000000.0,
+    "E3": 8200000000.0,
+    "G12": 4700000000.0,
+    "G13": 4700000000.0,
+    "G23": 3440000000.0,
+    "nu12": 0.27,
+    "nu13": 0.27,
+    "nu23": 0.2,
+    "rho": 1570.0
+  },
+  "thickness_m": 0.00172,
+  "stiffness": {
+    "C11": 129612090465.22844,
+    "C13": 2800167528.2007785,
+    "C33": 8602162089.2607,
+    "C55": 4700000000.0
+  },
+  "c_max_m_s": 9067.832153787056,
+  "nscan": 3000,
+  "tol": 0.001,
+  "curves": [
+    {
+      "frequency_hz": 10000.0,
+      "fd_MHz_mm": 0.0172,
+      "branches": [
+        {
+          "phase_velocity_m_s": 516.3241834266126,
+          "wavelength_m": 0.05163241834266127,
+          "group_velocity_m_s": 976.6269375129831
+        },
+        {
+          "phase_velocity_m_s": 9053.99296851002,
+          "wavelength_m": 0.905399296851002,
+          "group_velocity_m_s": 9053.980095144558
+        }
+      ]
+    },
+    {
+      "frequency_hz": 19666.666666666664,
+      "fd_MHz_mm": 0.033826666666666665,
+      "branches": [
+        {
+          "phase_velocity_m_s": 704.3485577027179,
+          "wavelength_m": 0.03581433344251108,
+          "group_velocity_m_s": 1267.1636276488712
+        },
+        {
+          "phase_velocity_m_s": 9053.976863998523,
+          "wavelength_m": 0.46037170494907753,
+          "group_velocity_m_s": 9053.927632093637
+        }
+      ]
+    },
+    {
+      "frequency_hz": 29333.333333333332,
+      "fd_MHz_mm": 0.05045333333333333,
+      "branches": [
+        {
+          "phase_velocity_m_s": 837.0759176797521,
+          "wavelength_m": 0.028536679011809736,
+          "group_velocity_m_s": 1437.935651797018
+        },
+        {
+          "phase_velocity_m_s": 9053.949647290265,
+          "wavelength_m": 0.30865737433944085,
+          "group_velocity_m_s": 9053.837868116138
+        }
+      ]
+    },
+    {
+      "frequency_hz": 39000.0,
+      "fd_MHz_mm": 0.06708,
+      "branches": [
+        {
+          "phase_velocity_m_s": 939.6490237939363,
+          "wavelength_m": 0.024093564712665032,
+          "group_velocity_m_s": 1547.181172350536
+        },
+        {
+          "phase_velocity_m_s": 9053.911996079372,
+          "wavelength_m": 0.23215158964306082,
+          "group_velocity_m_s": 9053.739339011316
+        }
+      ]
+    },
+    {
+      "frequency_hz": 48666.666666666664,
+      "fd_MHz_mm": 0.08370666666666665,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1022.3697659181363,
+          "wavelength_m": 0.02100759792982472,
+          "group_velocity_m_s": 1619.2355751681407
+        },
+        {
+          "phase_velocity_m_s": 9053.862745173768,
+          "wavelength_m": 0.18603827558576236,
+          "group_velocity_m_s": 9053.558440866927
+        }
+      ]
+    },
+    {
+      "frequency_hz": 58333.33333333333,
+      "fd_MHz_mm": 0.10033333333333333,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1090.783504766765,
+          "wavelength_m": 0.01869914579600169,
+          "group_velocity_m_s": 1667.290110410478
+        },
+        {
+          "phase_velocity_m_s": 9053.803394236222,
+          "wavelength_m": 0.15520805818690667,
+          "group_velocity_m_s": 9053.413172763812
+        }
+      ]
+    },
+    {
+      "frequency_hz": 68000.0,
+      "fd_MHz_mm": 0.11696,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1148.3326533593442,
+          "wavelength_m": 0.016887244902343296,
+          "group_velocity_m_s": 1699.5447850090231
+        },
+        {
+          "phase_velocity_m_s": 9053.732974333107,
+          "wavelength_m": 0.13314313197548686,
+          "group_velocity_m_s": 9053.200508798755
+        }
+      ]
+    },
+    {
+      "frequency_hz": 77666.66666666666,
+      "fd_MHz_mm": 0.13358666666666666,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1197.3509032790134,
+          "wavelength_m": 0.015416535235352106,
+          "group_velocity_m_s": 1721.1950858113971
+        },
+        {
+          "phase_velocity_m_s": 9053.65084377042,
+          "wavelength_m": 0.11657061172236594,
+          "group_velocity_m_s": 9052.953541023822
+        }
+      ]
+    },
+    {
+      "frequency_hz": 87333.33333333333,
+      "fd_MHz_mm": 0.1502133333333333,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1239.5154943539058,
+          "wavelength_m": 0.01419292550786915,
+          "group_velocity_m_s": 1735.2184522692385
+        },
+        {
+          "phase_velocity_m_s": 9053.556956960021,
+          "wavelength_m": 0.10366668271328268,
+          "group_velocity_m_s": 9052.519101390446
+        }
+      ]
+    },
+    {
+      "frequency_hz": 97000.0,
+      "fd_MHz_mm": 0.16684,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1276.0813330852252,
+          "wavelength_m": 0.013155477660672425,
+          "group_velocity_m_s": 1743.6770058989516
+        },
+        {
+          "phase_velocity_m_s": 9053.451960292587,
+          "wavelength_m": 0.09333455629167615,
+          "group_velocity_m_s": 9052.403411180216
+        }
+      ]
+    },
+    {
+      "frequency_hz": 106666.66666666666,
+      "fd_MHz_mm": 0.18346666666666667,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1308.0168900610358,
+          "wavelength_m": 0.01226265834432221,
+          "group_velocity_m_s": 1749.1034571800817
+        },
+        {
+          "phase_velocity_m_s": 9053.334502722253,
+          "wavelength_m": 0.08487501096302112,
+          "group_velocity_m_s": 9051.942095252023
+        }
+      ]
+    },
+    {
+      "frequency_hz": 116333.33333333333,
+      "fd_MHz_mm": 0.20009333333333332,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1336.0834785934396,
+          "wavelength_m": 0.011484958268711517,
+          "group_velocity_m_s": 1752.0172418638028
+        },
+        {
+          "phase_velocity_m_s": 9053.205012526543,
+          "wavelength_m": 0.07782124652601613,
+          "group_velocity_m_s": 9051.514929177258
+        }
+      ]
+    },
+    {
+      "frequency_hz": 126000.0,
+      "fd_MHz_mm": 0.21672,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1360.89164716981,
+          "wavelength_m": 0.010800727358490558,
+          "group_velocity_m_s": 1753.1291846496135
+        },
+        {
+          "phase_velocity_m_s": 9053.062593839091,
+          "wavelength_m": 0.07184970312570708,
+          "group_velocity_m_s": 9051.176080125797
+        }
+      ]
+    },
+    {
+      "frequency_hz": 135666.66666666666,
+      "fd_MHz_mm": 0.23334666666666665,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1382.9353905576043,
+          "wavelength_m": 0.010193626957427059,
+          "group_velocity_m_s": 1753.0118572860956
+        },
+        {
+          "phase_velocity_m_s": 9052.907337322713,
+          "wavelength_m": 0.06672904671245243,
+          "group_velocity_m_s": 9050.661353391668
+        }
+      ]
+    },
+    {
+      "frequency_hz": 145333.3333333333,
+      "fd_MHz_mm": 0.2499733333333333,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1402.6198616304605,
+          "wavelength_m": 0.009651054093787572,
+          "group_velocity_m_s": 1752.4515802751546
+        },
+        {
+          "phase_velocity_m_s": 9052.738387907133,
+          "wavelength_m": 0.06228948432046194,
+          "group_velocity_m_s": 9049.822210505627
+        }
+      ]
+    },
+    {
+      "frequency_hz": 155000.0,
+      "fd_MHz_mm": 0.2666,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1420.2789292471834,
+          "wavelength_m": 0.009163089866110861,
+          "group_velocity_m_s": 1751.3265968896376
+        },
+        {
+          "phase_velocity_m_s": 9052.556195700892,
+          "wavelength_m": 0.0584035883593606,
+          "group_velocity_m_s": 9049.535702604551
+        }
+      ]
+    },
+    {
+      "frequency_hz": 164666.66666666666,
+      "fd_MHz_mm": 0.2832266666666666,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1436.190640661046,
+          "wavelength_m": 0.008721805510087326,
+          "group_velocity_m_s": 1749.8925061664722
+        },
+        {
+          "phase_velocity_m_s": 9052.35898324832,
+          "wavelength_m": 0.05497383997924081,
+          "group_velocity_m_s": 9048.975454408066
+        }
+      ]
+    },
+    {
+      "frequency_hz": 174333.3333333333,
+      "fd_MHz_mm": 0.2998533333333333,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1450.5868208399156,
+          "wavelength_m": 0.008320765702714622,
+          "group_velocity_m_s": 1748.5269537017903
+        },
+        {
+          "phase_velocity_m_s": 9052.146823697169,
+          "wavelength_m": 0.05192436036537574,
+          "group_velocity_m_s": 9048.1923609596
+        }
+      ]
+    },
+    {
+      "frequency_hz": 184000.0,
+      "fd_MHz_mm": 0.31648,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1463.6633257777103,
+          "wavelength_m": 0.007954691987922338,
+          "group_velocity_m_s": 1747.0772443876358
+        },
+        {
+          "phase_velocity_m_s": 9051.919048317055,
+          "wavelength_m": 0.04919521221911443,
+          "group_velocity_m_s": 9047.507227825405
+        }
+      ]
+    },
+    {
+      "frequency_hz": 193666.66666666666,
+      "fd_MHz_mm": 0.3331066666666666,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1475.5847800978488,
+          "wavelength_m": 0.007619198520298703,
+          "group_velocity_m_s": 1745.699481823423
+        },
+        {
+          "phase_velocity_m_s": 9051.67481305487,
+          "wavelength_m": 0.0467384241637945,
+          "group_velocity_m_s": 9046.839433061486
+        }
+      ]
+    },
+    {
+      "frequency_hz": 203333.3333333333,
+      "fd_MHz_mm": 0.34973333333333334,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1486.4912517790697,
+          "wavelength_m": 0.0073106127136675575,
+          "group_velocity_m_s": 1744.2840535756825
+        },
+        {
+          "phase_velocity_m_s": 9051.413996061692,
+          "wavelength_m": 0.04451515080030341,
+          "group_velocity_m_s": 9045.761695334722
+        }
+      ]
+    },
+    {
+      "frequency_hz": 213000.0,
+      "fd_MHz_mm": 0.36636,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1496.5024353088118,
+          "wavelength_m": 0.007025833029618835,
+          "group_velocity_m_s": 1742.8526930338257
+        },
+        {
+          "phase_velocity_m_s": 9051.135297128276,
+          "wavelength_m": 0.042493592944264205,
+          "group_velocity_m_s": 9044.59753782662
+        }
+      ]
+    },
+    {
+      "frequency_hz": 222666.66666666666,
+      "fd_MHz_mm": 0.38298666666666664,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1505.7199080764626,
+          "wavelength_m": 0.006762215156032017,
+          "group_velocity_m_s": 1741.6215071210947
+        },
+        {
+          "phase_velocity_m_s": 9050.837327312136,
+          "wavelength_m": 0.04064747302685091,
+          "group_velocity_m_s": 9043.752100702437
+        }
+      ]
+    },
+    {
+      "frequency_hz": 232333.3333333333,
+      "fd_MHz_mm": 0.3996133333333333,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1514.2324228923353,
+          "wavelength_m": 0.0065174996681162225,
+          "group_velocity_m_s": 1740.2008574702243
+        },
+        {
+          "phase_velocity_m_s": 9050.519998563623,
+          "wavelength_m": 0.03895489238980039,
+          "group_velocity_m_s": 9042.645520977027
+        }
+      ]
+    },
+    {
+      "frequency_hz": 242000.0,
+      "fd_MHz_mm": 0.41624,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1522.1150953782005,
+          "wavelength_m": 0.006289731799083473,
+          "group_velocity_m_s": 1739.2414421544488
+        },
+        {
+          "phase_velocity_m_s": 9050.182112640205,
+          "wavelength_m": 0.03739744674644713,
+          "group_velocity_m_s": 9041.51349211434
+        }
+      ]
+    },
+    {
+      "frequency_hz": 251666.66666666666,
+      "fd_MHz_mm": 0.4328666666666666,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1529.434399794326,
+          "wavelength_m": 0.006077222780639706,
+          "group_velocity_m_s": 1738.302977423373
+        },
+        {
+          "phase_velocity_m_s": 9049.8214931418,
+          "wavelength_m": 0.035959555601887946,
+          "group_velocity_m_s": 9040.108970320069
+        }
+      ]
+    },
+    {
+      "frequency_hz": 261333.3333333333,
+      "fd_MHz_mm": 0.4494933333333333,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1536.246839133592,
+          "wavelength_m": 0.005878495557909154,
+          "group_velocity_m_s": 1737.258988307408
+        },
+        {
+          "phase_velocity_m_s": 9049.438250272216,
+          "wavelength_m": 0.03462795248828655,
+          "group_velocity_m_s": 9038.570381417821
+        }
+      ]
+    },
+    {
+      "frequency_hz": 271000.0,
+      "fd_MHz_mm": 0.46612,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1542.6026223518636,
+          "wavelength_m": 0.005692260599084367,
+          "group_velocity_m_s": 1736.5193113547646
+        },
+        {
+          "phase_velocity_m_s": 9049.029519949936,
+          "wavelength_m": 0.03339125284114367,
+          "group_velocity_m_s": 9037.319498030833
+        }
+      ]
+    },
+    {
+      "frequency_hz": 280666.6666666666,
+      "fd_MHz_mm": 0.48274666666666655,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1548.5455613630938,
+          "wavelength_m": 0.005517383235260431,
+          "group_velocity_m_s": null
+        }
+      ]
+    },
+    {
+      "frequency_hz": 290333.3333333333,
+      "fd_MHz_mm": 0.49937333333333334,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1554.1139152509684,
+          "wavelength_m": 0.005352860787316768,
+          "group_velocity_m_s": 1734.8517435739934
+        }
+      ]
+    },
+    {
+      "frequency_hz": 300000.0,
+      "fd_MHz_mm": 0.516,
+      "branches": [
+        {
+          "phase_velocity_m_s": 1559.3420016053344,
+          "wavelength_m": 0.005197806672017781,
+          "group_velocity_m_s": 1734.2314487667682
+        },
+        {
+          "phase_velocity_m_s": 9047.63887947735,
+          "wavelength_m": 0.0301587962649245,
+          "group_velocity_m_s": 9031.760333403232
+        }
+      ]
+    }
+  ]
+}

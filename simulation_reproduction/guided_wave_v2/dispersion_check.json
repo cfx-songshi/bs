@@ -1,0 +1,705 @@
+{
+  "note": "A0 only; S0 has no spectral peak under normal excitation",
+  "band_khz": [
+    85.0,
+    115.0
+  ],
+  "meshes": [
+    {
+      "mesh": "1000x8",
+      "frequency_khz": 100.0,
+      "k_FE_rad_m": 490.7746922195181,
+      "k_analytic_rad_m": 488.4130887457335,
+      "A0_phase_FE_m_s": 1280.2586210719248,
+      "A0_phase_analytic_m_s": 1286.4490022810578,
+      "A0_phase_relative_error": 0.004811991146292263,
+      "A0_group_FE_m_s": 1815.985926597981,
+      "A0_group_analytic_m_s": 1745.5198590668413,
+      "A0_group_relative_error": 0.040369673919843606,
+      "max_phase_relative_error": 0.01580803116206838,
+      "band": [
+        {
+          "frequency_khz": 85.0,
+          "c_phase_FE_m_s": 1230.2441785871788,
+          "c_phase_analytic_m_s": 1229.8925171680526,
+          "c_group_FE_m_s": 1424.4924181208162,
+          "c_group_analytic_m_s": 1732.3258596989424
+        },
+        {
+          "frequency_khz": 86.0,
+          "c_phase_FE_m_s": 1239.5013281371173,
+          "c_phase_analytic_m_s": 1234.0571084453504,
+          "c_group_FE_m_s": 1424.856859793799,
+          "c_group_analytic_m_s": 1733.4316782645608
+        },
+        {
+          "frequency_khz": 87.0,
+          "c_phase_FE_m_s": 1248.1817687506793,
+          "c_phase_analytic_m_s": 1238.1609746414472,
+          "c_group_FE_m_s": 1478.629464287914,
+          "c_group_analytic_m_s": 1734.5404004813583
+        },
+        {
+          "frequency_khz": 88.0,
+          "c_phase_FE_m_s": 1255.13453347061,
+          "c_phase_analytic_m_s": 1242.2043103956694,
+          "c_group_FE_m_s": 1557.956282343098,
+          "c_group_analytic_m_s": 1735.6216455139129
+        },
+        {
+          "frequency_khz": 89.0,
+          "c_phase_FE_m_s": 1259.542241073069,
+          "c_phase_analytic_m_s": 1246.1891153351087,
+          "c_group_FE_m_s": 1647.8955275503047,
+          "c_group_analytic_m_s": 1736.7994904630064
+        },
+        {
+          "frequency_khz": 90.0,
+          "c_phase_FE_m_s": 1238.5133598271623,
+          "c_phase_analytic_m_s": 1250.116345804328,
+          "c_group_FE_m_s": 1736.7909408097312,
+          "c_group_analytic_m_s": 1737.8293259336306
+        },
+        {
+          "frequency_khz": 91.0,
+          "c_phase_FE_m_s": 1244.2868027749582,
+          "c_phase_analytic_m_s": 1253.9865331443789,
+          "c_group_FE_m_s": 1818.5498711955804,
+          "c_group_analytic_m_s": 1738.884993959851
+        },
+        {
+          "frequency_khz": 92.0,
+          "c_phase_FE_m_s": 1251.964034477926,
+          "c_phase_analytic_m_s": 1257.801501197716,
+          "c_group_FE_m_s": 1881.4328770566271,
+          "c_group_analytic_m_s": 1739.6357666703982
+        },
+        {
+          "frequency_khz": 93.0,
+          "c_phase_FE_m_s": 1260.0810391001166,
+          "c_phase_analytic_m_s": 1261.5619030058895,
+          "c_group_FE_m_s": 1795.7563405271567,
+          "c_group_analytic_m_s": 1740.717931350942
+        },
+        {
+          "frequency_khz": 94.0,
+          "c_phase_FE_m_s": 1268.7618702149227,
+          "c_phase_analytic_m_s": 1265.2694440158036,
+          "c_group_FE_m_s": 1767.270453892658,
+          "c_group_analytic_m_s": 1741.5013982132682
+        },
+        {
+          "frequency_khz": 95.0,
+          "c_phase_FE_m_s": 1277.3561702734153,
+          "c_phase_analytic_m_s": 1268.9242908761305,
+          "c_group_FE_m_s": 1794.8402897328613,
+          "c_group_analytic_m_s": 1742.3749886121782
+        },
+        {
+          "frequency_khz": 96.0,
+          "c_phase_FE_m_s": 1285.1901448936162,
+          "c_phase_analytic_m_s": 1272.5279934556686,
+          "c_group_FE_m_s": 1874.185083424301,
+          "c_group_analytic_m_s": 1743.0779571138235
+        },
+        {
+          "frequency_khz": 97.0,
+          "c_phase_FE_m_s": 1292.3490337428357,
+          "c_phase_analytic_m_s": 1276.0813330852252,
+          "c_group_FE_m_s": 1812.405044084712,
+          "c_group_analytic_m_s": 1743.6770058989516
+        },
+        {
+          "frequency_khz": 98.0,
+          "c_phase_FE_m_s": 1297.251939950805,
+          "c_phase_analytic_m_s": 1279.5856113916834,
+          "c_group_FE_m_s": 1778.147079212871,
+          "c_group_analytic_m_s": 1744.3233736732684
+        },
+        {
+          "frequency_khz": 99.0,
+          "c_phase_FE_m_s": 1275.6552605780073,
+          "c_phase_analytic_m_s": 1283.040607057742,
+          "c_group_FE_m_s": 1779.86576926849,
+          "c_group_analytic_m_s": 1745.1913193967673
+        },
+        {
+          "frequency_khz": 100.0,
+          "c_phase_FE_m_s": 1280.2586210719248,
+          "c_phase_analytic_m_s": 1286.4490022810578,
+          "c_group_FE_m_s": 1815.985926597981,
+          "c_group_analytic_m_s": 1745.5198590668413
+        },
+        {
+          "frequency_khz": 101.0,
+          "c_phase_FE_m_s": 1286.6971595769642,
+          "c_phase_analytic_m_s": 1289.8102480388295,
+          "c_group_FE_m_s": 1880.3469073490846,
+          "c_group_analytic_m_s": 1745.975169586571
+        },
+        {
+          "frequency_khz": 102.0,
+          "c_phase_FE_m_s": 1294.4005783890852,
+          "c_phase_analytic_m_s": 1293.1256586803138,
+          "c_group_FE_m_s": 1798.369776893282,
+          "c_group_analytic_m_s": 1746.6787270694526
+        },
+        {
+          "frequency_khz": 103.0,
+          "c_phase_FE_m_s": 1302.4264929846945,
+          "c_phase_analytic_m_s": 1296.3959777727878,
+          "c_group_FE_m_s": 1766.4400100627968,
+          "c_group_analytic_m_s": 1747.1267274579473
+        },
+        {
+          "frequency_khz": 104.0,
+          "c_phase_FE_m_s": 1310.1719634025783,
+          "c_phase_analytic_m_s": 1299.622723029806,
+          "c_group_FE_m_s": 1793.7917733400689,
+          "c_group_analytic_m_s": 1747.8105877204553
+        },
+        {
+          "frequency_khz": 105.0,
+          "c_phase_FE_m_s": 1317.901904900903,
+          "c_phase_analytic_m_s": 1302.8055800159593,
+          "c_group_FE_m_s": 1881.0156917621437,
+          "c_group_analytic_m_s": 1748.5565295673075
+        },
+        {
+          "frequency_khz": 106.0,
+          "c_phase_FE_m_s": 1324.8801952194908,
+          "c_phase_analytic_m_s": 1305.9462709183829,
+          "c_group_FE_m_s": 1819.2639572784594,
+          "c_group_analytic_m_s": 1748.8461014570073
+        },
+        {
+          "frequency_khz": 107.0,
+          "c_phase_FE_m_s": 1329.558840106901,
+          "c_phase_analytic_m_s": 1309.045021375511,
+          "c_group_FE_m_s": 1784.5158144902473,
+          "c_group_analytic_m_s": 1749.2359550543574
+        },
+        {
+          "frequency_khz": 108.0,
+          "c_phase_FE_m_s": 1308.8038538728727,
+          "c_phase_analytic_m_s": 1312.1027909258903,
+          "c_group_FE_m_s": 1783.1379837856405,
+          "c_group_analytic_m_s": 1749.5190659394807
+        },
+        {
+          "frequency_khz": 109.0,
+          "c_phase_FE_m_s": 1312.203703025471,
+          "c_phase_analytic_m_s": 1315.120292366973,
+          "c_group_FE_m_s": 1817.687508877643,
+          "c_group_analytic_m_s": 1749.645232779204
+        },
+        {
+          "frequency_khz": 110.0,
+          "c_phase_FE_m_s": 1317.7674499756215,
+          "c_phase_analytic_m_s": 1318.0984474777879,
+          "c_group_FE_m_s": 1800.7005338677895,
+          "c_group_analytic_m_s": 1750.1418151020748
+        },
+        {
+          "frequency_khz": 111.0,
+          "c_phase_FE_m_s": 1324.7920389745318,
+          "c_phase_analytic_m_s": 1321.037236145256,
+          "c_group_FE_m_s": 1818.955573183285,
+          "c_group_analytic_m_s": 1750.3318194822264
+        },
+        {
+          "frequency_khz": 112.0,
+          "c_phase_FE_m_s": 1331.9807068385862,
+          "c_phase_analytic_m_s": 1323.9382615281713,
+          "c_group_FE_m_s": 1912.0424332145624,
+          "c_group_analytic_m_s": 1750.619326738332
+        },
+        {
+          "frequency_khz": 113.0,
+          "c_phase_FE_m_s": 1339.5519074146687,
+          "c_phase_analytic_m_s": 1326.8014063836442,
+          "c_group_FE_m_s": 2182.0872250583443,
+          "c_group_analytic_m_s": 1750.9608034796092
+        },
+        {
+          "frequency_khz": 114.0,
+          "c_phase_FE_m_s": 1346.951857983883,
+          "c_phase_analytic_m_s": 1329.6277962543707,
+          "c_group_FE_m_s": 3007.887723624611,
+          "c_group_analytic_m_s": 1751.2185003735317
+        },
+        {
+          "frequency_khz": 115.0,
+          "c_phase_FE_m_s": 1353.4810574467117,
+          "c_phase_analytic_m_s": 1332.4181498135536,
+          "c_group_FE_m_s": 3259.204409085347,
+          "c_group_analytic_m_s": 1751.4834223460043
+        }
+      ]
+    },
+    {
+      "mesh": "2000x16",
+      "frequency_khz": 100.0,
+      "k_FE_rad_m": 491.58525774771306,
+      "k_analytic_rad_m": 488.4130887457335,
+      "A0_phase_FE_m_s": 1278.1476271211097,
+      "A0_phase_analytic_m_s": 1286.4490022810578,
+      "A0_phase_relative_error": 0.006452937617603607,
+      "A0_group_FE_m_s": 1818.2812892915913,
+      "A0_group_analytic_m_s": 1745.5198590668413,
+      "A0_group_relative_error": 0.041684676256647374,
+      "max_phase_relative_error": 0.01396473892488765,
+      "band": [
+        {
+          "frequency_khz": 85.0,
+          "c_phase_FE_m_s": 1228.6399420881996,
+          "c_phase_analytic_m_s": 1229.8925171680526,
+          "c_group_FE_m_s": 1405.2712571991842,
+          "c_group_analytic_m_s": 1732.3258596989424
+        },
+        {
+          "frequency_khz": 86.0,
+          "c_phase_FE_m_s": 1237.7072674895498,
+          "c_phase_analytic_m_s": 1234.0571084453504,
+          "c_group_FE_m_s": 1419.6621159406984,
+          "c_group_analytic_m_s": 1733.4316782645608
+        },
+        {
+          "frequency_khz": 87.0,
+          "c_phase_FE_m_s": 1245.6269062132476,
+          "c_phase_analytic_m_s": 1238.1609746414472,
+          "c_group_FE_m_s": 1481.055785671939,
+          "c_group_analytic_m_s": 1734.5404004813583
+        },
+        {
+          "frequency_khz": 88.0,
+          "c_phase_FE_m_s": 1252.2389970499726,
+          "c_phase_analytic_m_s": 1242.2043103956694,
+          "c_group_FE_m_s": 1564.6718927608927,
+          "c_group_analytic_m_s": 1735.6216455139129
+        },
+        {
+          "frequency_khz": 89.0,
+          "c_phase_FE_m_s": 1255.1402548896383,
+          "c_phase_analytic_m_s": 1246.1891153351087,
+          "c_group_FE_m_s": 1654.0977451617262,
+          "c_group_analytic_m_s": 1736.7994904630064
+        },
+        {
+          "frequency_khz": 90.0,
+          "c_phase_FE_m_s": 1235.9496392674507,
+          "c_phase_analytic_m_s": 1250.116345804328,
+          "c_group_FE_m_s": 1742.656390504666,
+          "c_group_analytic_m_s": 1737.8293259336306
+        },
+        {
+          "frequency_khz": 91.0,
+          "c_phase_FE_m_s": 1242.393726763291,
+          "c_phase_analytic_m_s": 1253.9865331443789,
+          "c_group_FE_m_s": 1820.1839408696176,
+          "c_group_analytic_m_s": 1738.884993959851
+        },
+        {
+          "frequency_khz": 92.0,
+          "c_phase_FE_m_s": 1250.3018058099888,
+          "c_phase_analytic_m_s": 1257.801501197716,
+          "c_group_FE_m_s": 1870.9665951704073,
+          "c_group_analytic_m_s": 1739.6357666703982
+        },
+        {
+          "frequency_khz": 93.0,
+          "c_phase_FE_m_s": 1258.4720762413908,
+          "c_phase_analytic_m_s": 1261.5619030058895,
+          "c_group_FE_m_s": 1788.2954908752963,
+          "c_group_analytic_m_s": 1740.717931350942
+        },
+        {
+          "frequency_khz": 94.0,
+          "c_phase_FE_m_s": 1267.096641606055,
+          "c_phase_analytic_m_s": 1265.2694440158036,
+          "c_group_FE_m_s": 1763.4900698780664,
+          "c_group_analytic_m_s": 1741.5013982132682
+        },
+        {
+          "frequency_khz": 95.0,
+          "c_phase_FE_m_s": 1275.2141630516855,
+          "c_phase_analytic_m_s": 1268.9242908761305,
+          "c_group_FE_m_s": 1794.01409378575,
+          "c_group_analytic_m_s": 1742.3749886121782
+        },
+        {
+          "frequency_khz": 96.0,
+          "c_phase_FE_m_s": 1283.0562655169692,
+          "c_phase_analytic_m_s": 1272.5279934556686,
+          "c_group_FE_m_s": 1864.7662308451836,
+          "c_group_analytic_m_s": 1743.0779571138235
+        },
+        {
+          "frequency_khz": 97.0,
+          "c_phase_FE_m_s": 1289.6014211924023,
+          "c_phase_analytic_m_s": 1276.0813330852252,
+          "c_group_FE_m_s": 1805.1270054177303,
+          "c_group_analytic_m_s": 1743.6770058989516
+        },
+        {
+          "frequency_khz": 98.0,
+          "c_phase_FE_m_s": 1292.3937937454323,
+          "c_phase_analytic_m_s": 1279.5856113916834,
+          "c_group_FE_m_s": 1775.813906214505,
+          "c_group_analytic_m_s": 1744.3233736732684
+        },
+        {
+          "frequency_khz": 99.0,
+          "c_phase_FE_m_s": 1272.7148066367865,
+          "c_phase_analytic_m_s": 1283.040607057742,
+          "c_group_FE_m_s": 1782.3419115220763,
+          "c_group_analytic_m_s": 1745.1913193967673
+        },
+        {
+          "frequency_khz": 100.0,
+          "c_phase_FE_m_s": 1278.1476271211097,
+          "c_phase_analytic_m_s": 1286.4490022810578,
+          "c_group_FE_m_s": 1818.2812892915913,
+          "c_group_analytic_m_s": 1745.5198590668413
+        },
+        {
+          "frequency_khz": 101.0,
+          "c_phase_FE_m_s": 1284.9129609616523,
+          "c_phase_analytic_m_s": 1289.8102480388295,
+          "c_group_FE_m_s": 1877.6594469020004,
+          "c_group_analytic_m_s": 1745.975169586571
+        },
+        {
+          "frequency_khz": 102.0,
+          "c_phase_FE_m_s": 1292.7086339162697,
+          "c_phase_analytic_m_s": 1293.1256586803138,
+          "c_group_FE_m_s": 1792.7671194331558,
+          "c_group_analytic_m_s": 1746.6787270694526
+        },
+        {
+          "frequency_khz": 103.0,
+          "c_phase_FE_m_s": 1300.715070239736,
+          "c_phase_analytic_m_s": 1296.3959777727878,
+          "c_group_FE_m_s": 1763.4934985025182,
+          "c_group_analytic_m_s": 1747.1267274579473
+        },
+        {
+          "frequency_khz": 104.0,
+          "c_phase_FE_m_s": 1308.3371065496328,
+          "c_phase_analytic_m_s": 1299.622723029806,
+          "c_group_FE_m_s": 1795.4329338344098,
+          "c_group_analytic_m_s": 1747.8105877204553
+        },
+        {
+          "frequency_khz": 105.0,
+          "c_phase_FE_m_s": 1315.815778664763,
+          "c_phase_analytic_m_s": 1302.8055800159593,
+          "c_group_FE_m_s": 1871.5421376849886,
+          "c_group_analytic_m_s": 1748.5565295673075
+        },
+        {
+          "frequency_khz": 106.0,
+          "c_phase_FE_m_s": 1321.8459274767263,
+          "c_phase_analytic_m_s": 1305.9462709183829,
+          "c_group_FE_m_s": 1810.1910013748657,
+          "c_group_analytic_m_s": 1748.8461014570073
+        },
+        {
+          "frequency_khz": 107.0,
+          "c_phase_FE_m_s": 1325.6612467434381,
+          "c_phase_analytic_m_s": 1309.045021375511,
+          "c_group_FE_m_s": 1780.020182679877,
+          "c_group_analytic_m_s": 1749.2359550543574
+        },
+        {
+          "frequency_khz": 108.0,
+          "c_phase_FE_m_s": 1305.4323297581682,
+          "c_phase_analytic_m_s": 1312.1027909258903,
+          "c_group_FE_m_s": 1783.849141690417,
+          "c_group_analytic_m_s": 1749.5190659394807
+        },
+        {
+          "frequency_khz": 109.0,
+          "c_phase_FE_m_s": 1309.445281887242,
+          "c_phase_analytic_m_s": 1315.120292366973,
+          "c_group_FE_m_s": 1821.871163754397,
+          "c_group_analytic_m_s": 1749.645232779204
+        },
+        {
+          "frequency_khz": 110.0,
+          "c_phase_FE_m_s": 1315.8493240755845,
+          "c_phase_analytic_m_s": 1318.0984474777879,
+          "c_group_FE_m_s": 1812.068937552084,
+          "c_group_analytic_m_s": 1750.1418151020748
+        },
+        {
+          "frequency_khz": 111.0,
+          "c_phase_FE_m_s": 1323.0265131467593,
+          "c_phase_analytic_m_s": 1321.037236145256,
+          "c_group_FE_m_s": 1840.9618718901436,
+          "c_group_analytic_m_s": 1750.3318194822264
+        },
+        {
+          "frequency_khz": 112.0,
+          "c_phase_FE_m_s": 1330.2390949096082,
+          "c_phase_analytic_m_s": 1323.9382615281713,
+          "c_group_FE_m_s": 1951.1636271271038,
+          "c_group_analytic_m_s": 1750.619326738332
+        },
+        {
+          "frequency_khz": 113.0,
+          "c_phase_FE_m_s": 1337.7337534499502,
+          "c_phase_analytic_m_s": 1326.8014063836442,
+          "c_group_FE_m_s": 2240.815166619903,
+          "c_group_analytic_m_s": 1750.9608034796092
+        },
+        {
+          "frequency_khz": 114.0,
+          "c_phase_FE_m_s": 1344.9411813533648,
+          "c_phase_analytic_m_s": 1329.6277962543707,
+          "c_group_FE_m_s": 3082.468944634989,
+          "c_group_analytic_m_s": 1751.2185003735317
+        },
+        {
+          "frequency_khz": 115.0,
+          "c_phase_FE_m_s": 1351.0250214144817,
+          "c_phase_analytic_m_s": 1332.4181498135536,
+          "c_group_FE_m_s": 3277.913245972468,
+          "c_group_analytic_m_s": 1751.4834223460043
+        }
+      ]
+    },
+    {
+      "mesh": "4000x32",
+      "frequency_khz": 100.0,
+      "k_FE_rad_m": 491.7806171096549,
+      "k_analytic_rad_m": 488.4130887457335,
+      "A0_phase_FE_m_s": 1277.6398842450903,
+      "A0_phase_analytic_m_s": 1286.4490022810578,
+      "A0_phase_relative_error": 0.006847623201811835,
+      "A0_group_FE_m_s": 1818.6686343853653,
+      "A0_group_analytic_m_s": 1745.5198590668413,
+      "A0_group_relative_error": 0.04190658441298372,
+      "max_phase_relative_error": 0.013464865419588313,
+      "band": [
+        {
+          "frequency_khz": 85.0,
+          "c_phase_FE_m_s": 1228.2308496027242,
+          "c_phase_analytic_m_s": 1229.8925171680526,
+          "c_group_FE_m_s": 1321.650037401573,
+          "c_group_analytic_m_s": 1732.3258596989424
+        },
+        {
+          "frequency_khz": 86.0,
+          "c_phase_FE_m_s": 1237.2444663904612,
+          "c_phase_analytic_m_s": 1234.0571084453504,
+          "c_group_FE_m_s": 1390.474515088663,
+          "c_group_analytic_m_s": 1733.4316782645608
+        },
+        {
+          "frequency_khz": 87.0,
+          "c_phase_FE_m_s": 1245.0575423679982,
+          "c_phase_analytic_m_s": 1238.1609746414472,
+          "c_group_FE_m_s": 1481.8049517255467,
+          "c_group_analytic_m_s": 1734.5404004813583
+        },
+        {
+          "frequency_khz": 88.0,
+          "c_phase_FE_m_s": 1251.4570171799057,
+          "c_phase_analytic_m_s": 1242.2043103956694,
+          "c_group_FE_m_s": 1584.4220172680239,
+          "c_group_analytic_m_s": 1735.6216455139129
+        },
+        {
+          "frequency_khz": 89.0,
+          "c_phase_FE_m_s": 1233.1926681998862,
+          "c_phase_analytic_m_s": 1246.1891153351087,
+          "c_group_FE_m_s": 1686.5666736031728,
+          "c_group_analytic_m_s": 1736.7994904630064
+        },
+        {
+          "frequency_khz": 90.0,
+          "c_phase_FE_m_s": 1235.351236203893,
+          "c_phase_analytic_m_s": 1250.116345804328,
+          "c_group_FE_m_s": 1783.4116458868123,
+          "c_group_analytic_m_s": 1737.8293259336306
+        },
+        {
+          "frequency_khz": 91.0,
+          "c_phase_FE_m_s": 1241.9349049939437,
+          "c_phase_analytic_m_s": 1253.9865331443789,
+          "c_group_FE_m_s": 1865.0678367185385,
+          "c_group_analytic_m_s": 1738.884993959851
+        },
+        {
+          "frequency_khz": 92.0,
+          "c_phase_FE_m_s": 1249.8895132426148,
+          "c_phase_analytic_m_s": 1257.801501197716,
+          "c_group_FE_m_s": 1940.194543068815,
+          "c_group_analytic_m_s": 1739.6357666703982
+        },
+        {
+          "frequency_khz": 93.0,
+          "c_phase_FE_m_s": 1258.0667184125239,
+          "c_phase_analytic_m_s": 1261.5619030058895,
+          "c_group_FE_m_s": 1875.0319386261667,
+          "c_group_analytic_m_s": 1740.717931350942
+        },
+        {
+          "frequency_khz": 94.0,
+          "c_phase_FE_m_s": 1266.6721519221383,
+          "c_phase_analytic_m_s": 1265.2694440158036,
+          "c_group_FE_m_s": 1872.0141157179871,
+          "c_group_analytic_m_s": 1741.5013982132682
+        },
+        {
+          "frequency_khz": 95.0,
+          "c_phase_FE_m_s": 1274.7416612484253,
+          "c_phase_analytic_m_s": 1268.9242908761305,
+          "c_group_FE_m_s": 1931.0229359077343,
+          "c_group_analytic_m_s": 1742.3749886121782
+        },
+        {
+          "frequency_khz": 96.0,
+          "c_phase_FE_m_s": 1282.4956215696043,
+          "c_phase_analytic_m_s": 1272.5279934556686,
+          "c_group_FE_m_s": 1862.3929478172643,
+          "c_group_analytic_m_s": 1743.0779571138235
+        },
+        {
+          "frequency_khz": 97.0,
+          "c_phase_FE_m_s": 1288.858443635586,
+          "c_phase_analytic_m_s": 1276.0813330852252,
+          "c_group_FE_m_s": 1803.3536710448566,
+          "c_group_analytic_m_s": 1743.6770058989516
+        },
+        {
+          "frequency_khz": 98.0,
+          "c_phase_FE_m_s": 1291.258705424648,
+          "c_phase_analytic_m_s": 1279.5856113916834,
+          "c_group_FE_m_s": 1775.1433281467396,
+          "c_group_analytic_m_s": 1744.3233736732684
+        },
+        {
+          "frequency_khz": 99.0,
+          "c_phase_FE_m_s": 1272.0320080357167,
+          "c_phase_analytic_m_s": 1283.040607057742,
+          "c_group_FE_m_s": 1782.6240303877466,
+          "c_group_analytic_m_s": 1745.1913193967673
+        },
+        {
+          "frequency_khz": 100.0,
+          "c_phase_FE_m_s": 1277.6398842450903,
+          "c_phase_analytic_m_s": 1286.4490022810578,
+          "c_group_FE_m_s": 1818.6686343853653,
+          "c_group_analytic_m_s": 1745.5198590668413
+        },
+        {
+          "frequency_khz": 101.0,
+          "c_phase_FE_m_s": 1284.4717236167007,
+          "c_phase_analytic_m_s": 1289.8102480388295,
+          "c_group_FE_m_s": 1875.7596998796423,
+          "c_group_analytic_m_s": 1745.975169586571
+        },
+        {
+          "frequency_khz": 102.0,
+          "c_phase_FE_m_s": 1292.2832111813464,
+          "c_phase_analytic_m_s": 1293.1256586803138,
+          "c_group_FE_m_s": 1791.0842956629606,
+          "c_group_analytic_m_s": 1746.6787270694526
+        },
+        {
+          "frequency_khz": 103.0,
+          "c_phase_FE_m_s": 1300.2791104837236,
+          "c_phase_analytic_m_s": 1296.3959777727878,
+          "c_group_FE_m_s": 1763.1736211486873,
+          "c_group_analytic_m_s": 1747.1267274579473
+        },
+        {
+          "frequency_khz": 104.0,
+          "c_phase_FE_m_s": 1307.863072079971,
+          "c_phase_analytic_m_s": 1299.622723029806,
+          "c_group_FE_m_s": 1795.7433512826417,
+          "c_group_analytic_m_s": 1747.8105877204553
+        },
+        {
+          "frequency_khz": 105.0,
+          "c_phase_FE_m_s": 1315.2672260590598,
+          "c_phase_analytic_m_s": 1302.8055800159593,
+          "c_group_FE_m_s": 1869.4023619200173,
+          "c_group_analytic_m_s": 1748.5565295673075
+        },
+        {
+          "frequency_khz": 106.0,
+          "c_phase_FE_m_s": 1321.1275081735528,
+          "c_phase_analytic_m_s": 1305.9462709183829,
+          "c_group_FE_m_s": 1808.3133825539885,
+          "c_group_analytic_m_s": 1748.8461014570073
+        },
+        {
+          "frequency_khz": 107.0,
+          "c_phase_FE_m_s": 1324.5706748769485,
+          "c_phase_analytic_m_s": 1309.045021375511,
+          "c_group_FE_m_s": 1779.219340140984,
+          "c_group_analytic_m_s": 1749.2359550543574
+        },
+        {
+          "frequency_khz": 108.0,
+          "c_phase_FE_m_s": 1304.6470323309104,
+          "c_phase_analytic_m_s": 1312.1027909258903,
+          "c_group_FE_m_s": 1784.155508212627,
+          "c_group_analytic_m_s": 1749.5190659394807
+        },
+        {
+          "frequency_khz": 109.0,
+          "c_phase_FE_m_s": 1308.89117922301,
+          "c_phase_analytic_m_s": 1315.120292366973,
+          "c_group_FE_m_s": 1822.6481198339393,
+          "c_group_analytic_m_s": 1749.645232779204
+        },
+        {
+          "frequency_khz": 110.0,
+          "c_phase_FE_m_s": 1315.3777532718038,
+          "c_phase_analytic_m_s": 1318.0984474777879,
+          "c_group_FE_m_s": 1814.5387187760875,
+          "c_group_analytic_m_s": 1750.1418151020748
+        },
+        {
+          "frequency_khz": 111.0,
+          "c_phase_FE_m_s": 1322.584000680286,
+          "c_phase_analytic_m_s": 1321.037236145256,
+          "c_group_FE_m_s": 1845.8636694718825,
+          "c_group_analytic_m_s": 1750.3318194822264
+        },
+        {
+          "frequency_khz": 112.0,
+          "c_phase_FE_m_s": 1329.7957722241943,
+          "c_phase_analytic_m_s": 1323.9382615281713,
+          "c_group_FE_m_s": 1959.7544091747968,
+          "c_group_analytic_m_s": 1750.619326738332
+        },
+        {
+          "frequency_khz": 113.0,
+          "c_phase_FE_m_s": 1337.2643614872109,
+          "c_phase_analytic_m_s": 1326.8014063836442,
+          "c_group_FE_m_s": 2254.31916090701,
+          "c_group_analytic_m_s": 1750.9608034796092
+        },
+        {
+          "frequency_khz": 114.0,
+          "c_phase_FE_m_s": 1344.4126819764372,
+          "c_phase_analytic_m_s": 1329.6277962543707,
+          "c_group_FE_m_s": 3089.8672714173804,
+          "c_group_analytic_m_s": 1751.2185003735317
+        },
+        {
+          "frequency_khz": 115.0,
+          "c_phase_FE_m_s": 1350.35898088341,
+          "c_phase_analytic_m_s": 1332.4181498135536,
+          "c_group_FE_m_s": 3267.0068876479872,
+          "c_group_analytic_m_s": 1751.4834223460043
+        }
+      ]
+    }
+  ]
+}

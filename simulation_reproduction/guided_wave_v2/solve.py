@@ -4,7 +4,9 @@ os.environ['OPENBLAS_NUM_THREADS']='1'
 os.environ['OMP_NUM_THREADS']='1'
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
-sys.path.insert(0, 'E:/毕设知识库/simulation_reproduction/vendor')
+# Dependencies come from the interpreter's site-packages on this machine (there is no
+# vendor directory here; see PROJECT_HANDOFF.md). The old hardcoded E: vendor path was
+# removed because it only existed on the previous computer.
 os.environ['MPLCONFIGDIR']=str(ROOT/'mplcache')
 import numpy as np
 from scipy.sparse import coo_matrix, diags
