@@ -1,0 +1,8 @@
+# Solver output directories hold two kinds of file: the *.npz wavefield bulk, which is
+# ignored by the repository-root rule, and the small summary.json metrics, which are
+# committed. So no directory-level rule here -- an out_*/ entry would take the JSON
+# with it.
+
+# Large generated decks. The generator reproduces them in seconds; keeping a 20 MB
+# text file in the repository would bloat every clone.
+abaqus/ugw_plate_*.inp
