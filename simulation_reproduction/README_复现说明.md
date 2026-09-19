@@ -16,13 +16,13 @@
 ## 一键运行（本机 PowerShell）
 
 ```powershell
-Set-Location 'E:\毕设知识库\simulation_reproduction'
-& 'C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' run.py --experiment all --seeds 3 --mc 100000 --epochs 80
+Set-Location 'D:\毕设知识库\simulation_reproduction'
+& 'C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe' run.py --experiment all --seeds 3 --mc 100000 --epochs 80
 ```
 
-依赖已安装在本目录 `vendor`；程序默认读取此目录。不会写入原始论文。
+本机没有 `vendor` 目录，依赖已装在上面这个 Python 3.13.15 的 site-packages 中，因此需要传入一个不存在的 vendor 路径来使用它。不会写入原始论文。
 
-若改用自己的 Python，建议新建虚拟环境，按 `requirements-lock.txt` 安装，然后传入一个不存在的 vendor 路径以使用虚拟环境中的库：
+若使用自己的 Python，建议新建虚拟环境，按 `requirements-lock.txt` 安装所需库：
 
 ```powershell
 python run.py --vendor './no-vendor' --experiment all --seeds 3 --mc 100000 --epochs 80
@@ -33,9 +33,9 @@ python run.py --vendor './no-vendor' --experiment all --seeds 3 --mc 100000 --ep
 额外诊断和建模清单：
 
 ```powershell
-& 'C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' ae_ablation.py
-& 'C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' prepare_plan.py --vendor './vendor' --papers '..'
-& 'C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' build_report.py
+& 'C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe' ae_ablation.py
+& 'C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe' prepare_plan.py --vendor './no-vendor' --papers '..'
+& 'C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe' build_report.py
 ```
 
 `prepare_plan.py` 生成的 1,620 条 ABAQUS 工况是**待计算工况**，不是已经完成的有限元结果。没有把它们计入实际运行样本数。

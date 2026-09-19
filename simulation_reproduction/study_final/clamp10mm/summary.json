@@ -1,0 +1,37 @@
+{
+  "order": 22,
+  "spatial_dofs": 484,
+  "dt_s": 2.4998437597650146e-07,
+  "duration_s": 0.004,
+  "ball_mass_kg": 0.00396762208197367,
+  "incident_energy_J": 0.006227579619865872,
+  "D_Nm": [
+    45.64634247152716,
+    45.64634247152716,
+    1.482920062097742,
+    3.1333333333333333
+  ],
+  "clear_span_mass_kg": 0.6019200000000001,
+  "first_frequencies_Hz": [
+    110.69257799486314,
+    188.48400329203665,
+    263.0833957981317,
+    310.71498025643285,
+    330.43878751566507,
+    420.22338872434153
+  ],
+  "peak_contact_force_N": 167.6172337397155,
+  "peak_indentation_m": 3.6896673929035963e-05,
+  "peak_impact_point_displacement_m": 0.00011504337132425786,
+  "first_contact_duration_s": 7.424535966502093e-05,
+  "energy_max_relative_error": 9.254825760191028e-06,
+  "max_tangent_step_bound": 0.171607297958963,
+  "eigen_relative_residual": 2.6435279237163023e-14,
+  "patch_peak_strain_trace": [
+    9.461378839729058e-05,
+    9.46137883985083e-05,
+    9.461378839652823e-05,
+    9.46137883954513e-05
+  ],
+  "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+}

@@ -35,6 +35,16 @@ simulation_reproduction/guided_wave_v2/visual-data.json
 simulation_reproduction/guided_wave_v2/计算结果.md
 simulation_reproduction/guided_wave_v2/打开仿真.html
 
+# Study run outputs (run_study.py --out study*). Ignore the generated bulk wherever
+# the run directory lands, but always keep the machine-readable metrics.
+# Leading **/ is required: a pattern containing a slash is otherwise anchored to the
+# repo root and would never match nested run directories.
+# Re-including the directories is required: git does not descend into an excluded
+# directory, so a negation targeting files inside it would have no effect.
+**/study*/**
+!**/study*/**/
+!**/study*/**/*.json
+
 # Keep our comparison plots; original paper pages and embedded full report stay local.
 !simulation_reproduction/comparison/*.png
 simulation_reproduction/comparison/P*-p*.png

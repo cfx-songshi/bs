@@ -1,5 +1,29 @@
 # 项目交接：毕设实验仿真与论文对照
 
+## 本机环境与仓库状态（2026-09-19）
+
+- 工作目录确认为`D:\毕设知识库`，它本身就是git仓库：克隆自`https://github.com/cfx-songshi/bs.git`，分支`main`，HEAD为`b1d6e99`。
+- 本机新装工具链：Git 2.55.0.windows.3（`C:\Program Files\Git\cmd\git.exe`）、Python 3.13.15（`C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe`）、pip 26.2.1。新装的PATH只对新开终端生效。
+- 依赖已按`requirements-lock.txt`逐项精确安装到上面这个Python的site-packages：numpy 2.5.3、scipy 1.18.1、matplotlib 3.11.2、PyWavelets 1.10.0、scikit-learn 1.9.1、torch 2.14.0（CPU构建）。**本机没有`simulation_reproduction/vendor`目录**，旧文档里的vendor路径只适用于旧电脑。
+- `git status`显示`simulation_reproduction/impact_v1/`与`simulation_reproduction/study_final/`仍是未跟踪状态：09-15那批落球冲击工作尚未进入版本库，也未推送到远端。
+- 根目录`.gitignore`已排除`*.npz`、`*.csv`、`*.png`、`results/`，提交时只会收录代码、文档、指标JSON与SVG，符合上传范围约定。
+- 旧电脑的`E:\毕设知识库`、`C:\Users\Admin\...`路径及"独立Git工作副本"安排均已作废；第2节表格已按本机实际情况改写。
+
+## 后续更新：实物碳板落球路线（2026-09-15）
+
+- 用户已明确先做P2“落球＋周边框架夹持”冲击实验，板为500×400×2 mm、商家密度1650 kg/m³、标称内部0/90交叉对称铺层及双面3K织物，传感器PZT-5A、15×15 mm、厚度未定。不要回到要求用户先选择冲击方式。
+- 已确认本机项目迁至`D:/毕设知识库`；当前任务权限无法写入该目录，本次工作在独立可写副本中准备。原论文在本机微信接收文件中，已核对P2 PDF p15–18及P3 p9–10；原论文不上传。
+- 新增`simulation_reproduction/impact_v1`。NumPy实现完整板面Kirchhoff薄板Rayleigh–Ritz离散＋质量归一化模态＋落球单边Hertz代理接触＋速度Verlet。不是3D有限元；未使用人工波包。代码、说明、指标及离线HTML可复算。
+- 实物未知项保留在`specimen.json`；实际临时参数放在`simulation_config.json`。20 mm夹持宽度、50/50等效刚度混合、接触参数均为明确标注的假设。单层刚度外部替代来源Li 2012；实际织物和完整层序未知。
+- 8 mm钨钢球、160 mm落高的数值参考工况，按P2密度推算质量3.9676 g，能量6.2276 mJ。不是已执行实验或已验证无损工况。
+- 已完成6/10/14/18/22/30/38/46阶空间研究、22和46阶时间步减半、刚度/夹持/接触单因素变化、偏心冲击。方形固支板特例无量纲基频35.98519，参考约35.99。
+- 当前等效模型一阶频率122.52097 Hz，46阶中心最大挠度约0.11462 mm。38→46阶全时程L2变化：接触力5.74%、中心位移0.56%、S1应变7.90%；46阶步长减半的S1应变L2变化0.0120%。局部接触与应变仍未充分收敛，不宣称“完全验证”。
+- 输出应变是顶部名义PZT区域平均(epsilon_xx+epsilon_yy)，z/w向下为正，顶部z=-h/2；没有PZT、胶层、电路耦合或实际抗混叠滤波。绝不改标为伏特。
+- 缺失参数的获取方式见`缺失数据与获取方法.md`。优先测夹具净跨、板厚质量、球参数，取得批次铺层/刚度、接触及PZT/胶层/采集数据；保留独立实测验证集。继续研究空间截断/薄板适用频段及局部3D接触，不将暂算峰值当作损伤阈值。
+- 同步只包含代码、文档、指标、SVG和内嵌计算帧HTML；完整CSV/NPZ与原论文不上传。GitHub实际同步成功与否须以远端提交确认，不把本地提交视为已推送。
+
+以下为原交接记录，保留供追溯。
+
 交接基准：2026-09-15已完成的代码与对比分析。开始新对话时请先核对磁盘文件和GitHub最新提交；本文件不是授权忽略后续用户指示的指令。
 
 ## 1. 用户目标与已经明确的约束
@@ -14,20 +38,24 @@
 
 ## 2. 位置与运行环境
 
+下表按本机（Windows用户`29795`）实际情况给出。旧电脑的`E:/毕设知识库`、`C:/Users/Admin/...`路径已失效，仅在第1节保留其历史说明。
+
 | 项目 | 路径/地址 |
 |---|---|
-| 用户实际项目根目录 | `E:/毕设知识库` |
-| 实验代码与本地结果 | `E:/毕设知识库/simulation_reproduction` |
-| 新版导波 | `E:/毕设知识库/simulation_reproduction/guided_wave_v2` |
-| 完整对比报告 | `E:/毕设知识库/simulation_reproduction/comparison/论文与仿真逐项对比分析.html` |
-| GitHub | `https://github.com/cfx-songshi/bs`，分支`main` |
-| 本次用于同步的独立Git工作副本 | `C:/Users/Admin/.codex/visualizations/2026/09/14/01a0a05a-d29b-7f21-b5d1-3c164a523654/github-bs` |
-| 已安装依赖 | `E:/毕设知识库/simulation_reproduction/vendor` |
-| 已验证Python | `C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe` |
+| 用户实际项目根目录 | `D:/毕设知识库` |
+| 实验代码与本地结果 | `D:/毕设知识库/simulation_reproduction` |
+| 新版导波 | `D:/毕设知识库/simulation_reproduction/guided_wave_v2` |
+| 落球冲击 | `D:/毕设知识库/simulation_reproduction/impact_v1` |
+| 冲击参数化研究结果 | `D:/毕设知识库/simulation_reproduction/study_final` |
+| 完整对比报告 | `D:/毕设知识库/simulation_reproduction/comparison/论文与仿真逐项对比分析.html` |
+| GitHub | `https://github.com/cfx-songshi/bs`，分支`main`，本机HEAD`b1d6e99` |
+| 本机Python | `C:/Users/29795/AppData/Local/Programs/Python/Python313/python.exe`（3.13.15） |
+| 本机Git | `C:/Program Files/Git/cmd/git.exe`（2.55.0.windows.3） |
+| 已安装依赖 | 上面这个Python的site-packages；本机没有`vendor`目录 |
 
-旧位置`C:/Users/Admin/Downloads/毕设知识库`不是用户当前项目根目录。当前E盘代码目录与Git工作副本是两份文件：在E盘修改不会自动提交到GitHub，必须比较并同步，不能误以为E盘已有`.git`。开始新会话应重新检查实际仓库状态。
+项目根目录**自身就是git仓库**，`.git`位于`D:/毕设知识库/.git`，不再存在"代码目录与git副本是两份文件"的问题；改动后直接在本目录`git add`/`commit`/`push`即可。开始新会话仍应先`git status`核对实际状态。
 
-已安装NumPy、SciPy、Matplotlib、PyWavelets、scikit-learn、PyTorch；参考`requirements-lock.txt`。代码仍包含本机路径，尚未做完整跨电脑可移植化。
+六个依赖已按`requirements-lock.txt`精确安装，版本逐项一致：NumPy 2.5.3、SciPy 1.18.1、Matplotlib 3.11.2、PyWavelets 1.10.0、scikit-learn 1.9.1、PyTorch 2.14.0（CPU构建）。代码仍包含旧电脑的绝对路径引用，尚未做完整跨电脑可移植化。
 
 ## 3. 已完成工作及真实性边界
 
@@ -85,8 +113,8 @@
 在PowerShell中，保持命令顺序；网格细化可能耗时数分钟：
 
 ```powershell
-$py = 'C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
-Set-Location 'E:\毕设知识库\simulation_reproduction\guided_wave_v2'
+$py = 'C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe'
+Set-Location 'D:\毕设知识库\simulation_reproduction\guided_wave_v2'
 & $py solve.py 1000 8 healthy
 & $py solve.py 1000 8 damage
 & $py solve.py 2000 16 healthy
@@ -99,13 +127,22 @@ Set-Location 'E:\毕设知识库\simulation_reproduction\guided_wave_v2'
 Start-Process '.\打开仿真.html'
 ```
 
-旧包与对比分析：
+落球冲击（当前主线）：
 
 ```powershell
-Set-Location 'E:\毕设知识库\simulation_reproduction'
+Set-Location 'D:\毕设知识库\simulation_reproduction\impact_v1'
+& $py solve_impact.py --order 22 --out results/my_run
+& $py run_study.py --out study_final_new
+& $py build_impact_report.py --study study_final_new
+```
+
+旧包与对比分析（本机没有`vendor`目录，依赖装在该Python的site-packages中，故传入一个不存在的vendor路径）：
+
+```powershell
+Set-Location 'D:\毕设知识库\simulation_reproduction'
 & $py run.py --experiment all --seeds 3 --mc 100000 --epochs 80
 & $py ae_ablation.py
-& $py prepare_plan.py --vendor './vendor' --papers '..'
+& $py prepare_plan.py --vendor './no-vendor' --papers '..'
 & $py build_report.py
 Set-Location '.\comparison'
 & $py audit.py
@@ -130,4 +167,4 @@ Set-Location '.\comparison'
 
 ## 8. 可直接复制给新对话的提示词
 
-> 请先完整阅读 E:\毕设知识库\PROJECT_HANDOFF.md，再阅读 E:\毕设知识库\simulation_reproduction\comparison\论文与仿真逐项对比分析.md，并核对 https://github.com/cfx-songshi/bs 的最新代码。项目主线是PZT主动导波损伤散射：所有材料参数需有出处，论文缺项可联网寻找暂代值并明确标注。已有二维真实有限元和完整差异审计，不要从零用人工波包代替物理仿真。先简要确认已完成工作、已知错误及尚未验证的部分，然后根据我本次提出的下一步继续；不要把报告完成当成实验复现已验证，也不要未经核对覆盖旧结果。
+> 请先完整阅读 D:\毕设知识库\PROJECT_HANDOFF.md，再阅读 D:\毕设知识库\simulation_reproduction\comparison\论文与仿真逐项对比分析.md，并核对 D:\毕设知识库 的git状态与 https://github.com/cfx-songshi/bs 的最新代码。项目原主线是PZT主动导波损伤散射，2026-09-15已按用户决定转为先做P2“落球＋周边框架夹持”实物碳板冲击，并已有impact_v1机械基准：所有材料参数需有出处，论文缺项可联网寻找暂代值并明确标注。已有二维真实有限元、完整差异审计和落球冲击求解，不要从零用人工波包代替物理仿真。先简要确认已完成工作、已知错误及尚未验证的部分，然后根据我本次提出的下一步继续；不要把报告完成当成实验复现已验证，也不要未经核对覆盖旧结果。

@@ -1,0 +1,767 @@
+{
+  "summaries": {
+    "clamp10mm": {
+      "order": 22,
+      "spatial_dofs": 484,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.6019200000000001,
+      "first_frequencies_Hz": [
+        110.69257799486314,
+        188.48400329203665,
+        263.0833957981317,
+        310.71498025643285,
+        330.43878751566507,
+        420.22338872434153
+      ],
+      "peak_contact_force_N": 167.6172337397155,
+      "peak_indentation_m": 3.6896673929035963e-05,
+      "peak_impact_point_displacement_m": 0.00011504337132425786,
+      "first_contact_duration_s": 7.424535966502093e-05,
+      "energy_max_relative_error": 9.254825760191028e-06,
+      "max_tangent_step_bound": 0.171607297958963,
+      "eigen_relative_residual": 2.6435279237163023e-14,
+      "patch_peak_strain_trace": [
+        9.461378839729058e-05,
+        9.46137883985083e-05,
+        9.461378839652823e-05,
+        9.46137883954513e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "clamp30mm": {
+      "order": 22,
+      "spatial_dofs": 484,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.49368000000000006,
+      "first_frequencies_Hz": [
+        136.3925783782075,
+        227.30830932985606,
+        327.6745926352499,
+        382.71153412733395,
+        395.1732163635229,
+        510.3410658096818
+      ],
+      "peak_contact_force_N": 157.24778044256735,
+      "peak_indentation_m": 3.5358822035690415e-05,
+      "peak_impact_point_displacement_m": 0.00011055033415683506,
+      "first_contact_duration_s": 0.00019273795387788264,
+      "energy_max_relative_error": 9.029162692272683e-06,
+      "max_tangent_step_bound": 0.21116194618565587,
+      "eigen_relative_residual": 2.761517450385333e-14,
+      "patch_peak_strain_trace": [
+        9.432733591205407e-05,
+        9.432733591152224e-05,
+        9.432733590964658e-05,
+        9.432733590848094e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "contact050": {
+      "order": 22,
+      "spatial_dofs": 484,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.5209701478906,
+        206.50643724465147,
+        292.71455071467875,
+        343.8571266812893,
+        360.61568266455345,
+        461.9284708109026
+      ],
+      "peak_contact_force_N": 125.96423020796773,
+      "peak_indentation_m": 4.8412732305557546e-05,
+      "peak_impact_point_displacement_m": 0.00011438764688179859,
+      "first_contact_duration_s": 0.00022773576651459283,
+      "energy_max_relative_error": 5.302374423816324e-06,
+      "max_tangent_step_bound": 0.18947067191053318,
+      "eigen_relative_residual": 2.3236614367898704e-14,
+      "patch_peak_strain_trace": [
+        9.305276327355047e-05,
+        9.305276327265972e-05,
+        9.305276327450465e-05,
+        9.305276327526769e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "contact200": {
+      "order": 22,
+      "spatial_dofs": 484,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.5209701478906,
+        206.50643724465147,
+        292.71455071467875,
+        343.8571266812893,
+        360.61568266455345,
+        461.9284708109026
+      ],
+      "peak_contact_force_N": 211.31083035798179,
+      "peak_indentation_m": 2.712497080919169e-05,
+      "peak_impact_point_displacement_m": 0.00011252946335074096,
+      "first_contact_duration_s": 5.0996812699206296e-05,
+      "energy_max_relative_error": 1.5777241103768106e-05,
+      "max_tangent_step_bound": 0.19039584627211395,
+      "eigen_relative_residual": 2.3236614367898704e-14,
+      "patch_peak_strain_trace": [
+        9.375775039218975e-05,
+        9.375775039137742e-05,
+        9.375775039874189e-05,
+        9.375775039943018e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "finest_halfdt": {
+      "order": 46,
+      "spatial_dofs": 2116,
+      "dt_s": 3.1249755861282334e-08,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.52097014786524,
+        206.50643720429562,
+        292.7145511250175,
+        343.85712674197123,
+        360.61568297096534,
+        461.9284708019211
+      ],
+      "peak_contact_force_N": 109.78341393045935,
+      "peak_indentation_m": 2.7826970446892253e-05,
+      "peak_impact_point_displacement_m": 0.00011461845405515446,
+      "first_contact_duration_s": 0.0001904985117303771,
+      "energy_max_relative_error": 1.2226510556517675e-07,
+      "max_tangent_step_bound": 0.30918566767948946,
+      "eigen_relative_residual": 1.3276509057704e-12,
+      "patch_peak_strain_trace": [
+        8.710970870094408e-05,
+        8.710970868820204e-05,
+        8.71097084418323e-05,
+        8.710970849619125e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "halfdt": {
+      "order": 22,
+      "spatial_dofs": 484,
+      "dt_s": 1.249960938720665e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.5209701478906,
+        206.50643724465147,
+        292.71455071467875,
+        343.8571266812893,
+        360.61568266455345,
+        461.9284708109026
+      ],
+      "peak_contact_force_N": 162.5128715165728,
+      "peak_indentation_m": 3.614375598895089e-05,
+      "peak_impact_point_displacement_m": 0.00011221401327078598,
+      "first_contact_duration_s": 8.049748445361083e-05,
+      "energy_max_relative_error": 2.3158369897703097e-06,
+      "max_tangent_step_bound": 0.09490746507477006,
+      "eigen_relative_residual": 2.3236614367898704e-14,
+      "patch_peak_strain_trace": [
+        9.465228949422724e-05,
+        9.465228949336041e-05,
+        9.465228949269654e-05,
+        9.465228949343053e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "offcentre": {
+      "order": 22,
+      "spatial_dofs": 484,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.5209701478906,
+        206.50643724465147,
+        292.71455071467875,
+        343.8571266812893,
+        360.61568266455345,
+        461.9284708109026
+      ],
+      "peak_contact_force_N": 157.4828961998079,
+      "peak_indentation_m": 3.5394058763682167e-05,
+      "peak_impact_point_displacement_m": 0.00010577449359308856,
+      "first_contact_duration_s": 0.0001884882194862821,
+      "energy_max_relative_error": 9.031476012763246e-06,
+      "max_tangent_step_bound": 0.189857159799932,
+      "eigen_relative_residual": 2.3236614367898704e-14,
+      "patch_peak_strain_trace": [
+        0.00010829254560882009,
+        0.0001032006101803712,
+        0.00011399479608154936,
+        8.171580581945587e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "order10": {
+      "order": 10,
+      "spatial_dofs": 100,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.52097059119919,
+        206.506438149303,
+        292.71455221925964,
+        343.8571304140815,
+        360.6157103215601,
+        461.92851010178026
+      ],
+      "peak_contact_force_N": 230.40953177197963,
+      "peak_indentation_m": 4.561507568374151e-05,
+      "peak_impact_point_displacement_m": 0.00013815362206143968,
+      "first_contact_duration_s": 7.699518780076245e-05,
+      "energy_max_relative_error": 1.0397070291585636e-05,
+      "max_tangent_step_bound": 0.02152791259079161,
+      "eigen_relative_residual": 2.5459427980338904e-15,
+      "patch_peak_strain_trace": [
+        7.314823998509924e-05,
+        7.314823998510282e-05,
+        7.314823998504837e-05,
+        7.314823998504644e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "order14": {
+      "order": 14,
+      "spatial_dofs": 196,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.52097016544204,
+        206.50643729168738,
+        292.7145507839736,
+        343.8571268852962,
+        360.6156828715841,
+        461.92847194203733
+      ],
+      "peak_contact_force_N": 204.1762594114112,
+      "peak_indentation_m": 4.208347566659706e-05,
+      "peak_impact_point_displacement_m": 0.00012147640077439166,
+      "first_contact_duration_s": 7.349540653709143e-05,
+      "energy_max_relative_error": 9.950585477540845e-06,
+      "max_tangent_step_bound": 0.04712314416294873,
+      "eigen_relative_residual": 4.525373726038542e-15,
+      "patch_peak_strain_trace": [
+        7.627161660849895e-05,
+        7.627161660850987e-05,
+        7.627161660855262e-05,
+        7.627161660854238e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "order18": {
+      "order": 18,
+      "spatial_dofs": 324,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.5209701490172,
+        206.50643725103825,
+        292.71455072065476,
+        343.8571266952911,
+        360.6156826782299,
+        461.92847089266303
+      ],
+      "peak_contact_force_N": 181.63471746366918,
+      "peak_indentation_m": 3.8926080877768824e-05,
+      "peak_impact_point_displacement_m": 0.00011366761863490412,
+      "first_contact_duration_s": 7.174551590525592e-05,
+      "energy_max_relative_error": 9.53231687273382e-06,
+      "max_tangent_step_bound": 0.0994314144461447,
+      "eigen_relative_residual": 7.951205060884229e-15,
+      "patch_peak_strain_trace": [
+        0.00010348526781547442,
+        0.0001034852678153689,
+        0.00010348526781481014,
+        0.00010348526781499181
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "order22": {
+      "order": 22,
+      "spatial_dofs": 484,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.5209701478906,
+        206.50643724465147,
+        292.71455071467875,
+        343.8571266812893,
+        360.61568266455345,
+        461.9284708109026
+      ],
+      "peak_contact_force_N": 162.5097019022946,
+      "peak_indentation_m": 3.614328602766359e-05,
+      "peak_impact_point_displacement_m": 0.0001122154088482263,
+      "first_contact_duration_s": 8.049496906443347e-05,
+      "energy_max_relative_error": 9.145852149200883e-06,
+      "max_tangent_step_bound": 0.18980899358777137,
+      "eigen_relative_residual": 2.3236614367898704e-14,
+      "patch_peak_strain_trace": [
+        9.466213600103674e-05,
+        9.466213600017035e-05,
+        9.466213599985765e-05,
+        9.466213600059107e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "order30": {
+      "order": 30,
+      "spatial_dofs": 900,
+      "dt_s": 6.249902345275855e-08,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.52097014776436,
+        206.50643724862422,
+        292.71455074130716,
+        343.857126653826,
+        360.6156826846202,
+        461.9284707982529
+      ],
+      "peak_contact_force_N": 134.5051616247771,
+      "peak_indentation_m": 3.1861587154844465e-05,
+      "peak_impact_point_displacement_m": 0.0001138219985502826,
+      "first_contact_duration_s": 0.00020924673051983563,
+      "energy_max_relative_error": 5.426872616002466e-07,
+      "max_tangent_step_bound": 0.1360024903407952,
+      "eigen_relative_residual": 7.495913385364827e-14,
+      "patch_peak_strain_trace": [
+        8.650942807950245e-05,
+        8.650942807007011e-05,
+        8.650942807786495e-05,
+        8.65094280859464e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "order38": {
+      "order": 38,
+      "spatial_dofs": 1444,
+      "dt_s": 6.249902345275855e-08,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.520970147775,
+        206.50643726225252,
+        292.7145506438554,
+        343.85712670090567,
+        360.61568264994406,
+        461.9284707613494
+      ],
+      "peak_contact_force_N": 117.64358846131923,
+      "peak_indentation_m": 2.9139825564392486e-05,
+      "peak_impact_point_displacement_m": 0.00011441142581011533,
+      "first_contact_duration_s": 0.0001979969062983391,
+      "energy_max_relative_error": 5.102072561567274e-07,
+      "max_tangent_step_bound": 0.31391285666233765,
+      "eigen_relative_residual": 5.507725232213185e-13,
+      "patch_peak_strain_trace": [
+        9.14955388731989e-05,
+        9.14955388875864e-05,
+        9.149553886222928e-05,
+        9.149553887682144e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "order46": {
+      "order": 46,
+      "spatial_dofs": 2116,
+      "dt_s": 6.249902345275855e-08,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.52097014786524,
+        206.50643720429562,
+        292.7145511250175,
+        343.85712674197123,
+        360.61568297096534,
+        461.9284708019211
+      ],
+      "peak_contact_force_N": 109.78337745537894,
+      "peak_indentation_m": 2.78269642832955e-05,
+      "peak_impact_point_displacement_m": 0.00011461843768328318,
+      "first_contact_duration_s": 0.00019049702348400806,
+      "energy_max_relative_error": 4.853952546897694e-07,
+      "max_tangent_step_bound": 0.618366504404146,
+      "eigen_relative_residual": 1.3276509057704e-12,
+      "patch_peak_strain_trace": [
+        8.712565865231363e-05,
+        8.712565863954745e-05,
+        8.712565839280226e-05,
+        8.712565844714693e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "order6": {
+      "order": 6,
+      "spatial_dofs": 36,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        45.64634247152716,
+        45.64634247152716,
+        1.482920062097742,
+        3.1333333333333333
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        122.52099945150199,
+        206.50659144719634,
+        292.7148552119767,
+        343.8574577717977,
+        361.20257583285417,
+        462.37139854887204
+      ],
+      "peak_contact_force_N": 259.0569999099035,
+      "peak_indentation_m": 4.9321732868329815e-05,
+      "peak_impact_point_displacement_m": 0.0001758626834015274,
+      "first_contact_duration_s": 8.199487532029249e-05,
+      "energy_max_relative_error": 1.0951142794463471e-05,
+      "max_tangent_step_bound": 0.013146515094509877,
+      "eigen_relative_residual": 3.532694939322386e-16,
+      "patch_peak_strain_trace": [
+        4.2808531117015555e-05,
+        4.2808531117014864e-05,
+        4.280853111701587e-05,
+        4.280853111701654e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "stiffness075": {
+      "order": 22,
+      "spatial_dofs": 484,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        34.23475685364537,
+        34.23475685364537,
+        1.1121900465733066,
+        2.35
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        106.10627264438757,
+        178.8398207038933,
+        253.498236975752,
+        297.789006976749,
+        312.30234218990375,
+        400.0417904503924
+      ],
+      "peak_contact_force_N": 161.16190105905383,
+      "peak_indentation_m": 3.594316859295903e-05,
+      "peak_impact_point_displacement_m": 0.00013525037542309014,
+      "first_contact_duration_s": 7.099556277732642e-05,
+      "energy_max_relative_error": 9.132716301970675e-06,
+      "max_tangent_step_bound": 0.16460828174294634,
+      "eigen_relative_residual": 2.393128864331438e-14,
+      "patch_peak_strain_trace": [
+        0.00010007540125028851,
+        0.00010007540125121435,
+        0.00010007540125764016,
+        0.00010007540125646396
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    },
+    "stiffness125": {
+      "order": 22,
+      "spatial_dofs": 484,
+      "dt_s": 2.4998437597650146e-07,
+      "duration_s": 0.004,
+      "ball_mass_kg": 0.00396762208197367,
+      "incident_energy_J": 0.006227579619865872,
+      "D_Nm": [
+        57.057928089408954,
+        57.057928089408954,
+        1.8536500776221776,
+        3.9166666666666665
+      ],
+      "clear_span_mass_kg": 0.5464800000000001,
+      "first_frequencies_Hz": [
+        136.982608959952,
+        230.8812157436362,
+        327.26481670095086,
+        384.44395490130023,
+        403.1805900934167,
+        516.4517307371995
+      ],
+      "peak_contact_force_N": 163.79884465716853,
+      "peak_indentation_m": 3.6334177067211453e-05,
+      "peak_impact_point_displacement_m": 0.00010093968361266122,
+      "first_contact_duration_s": 0.00019198800074995314,
+      "energy_max_relative_error": 9.157809336468577e-06,
+      "max_tangent_step_bound": 0.21203532870118263,
+      "eigen_relative_residual": 2.262927391727268e-14,
+      "patch_peak_strain_trace": [
+        8.442502147353476e-05,
+        8.442502147430255e-05,
+        8.44250214755493e-05,
+        8.442502147492722e-05
+      ],
+      "status": "UNVALIDATED_MECHANICAL_PROXY_NOT_PZT_VOLTAGE"
+    }
+  },
+  "convergence_relative_L2": {
+    "6_to_10": {
+      "force": 0.21827565360383674,
+      "impact_w": 0.25940436945300466,
+      "S1_strain": 1.2623357945043747,
+      "S2_strain": 1.2623357945043696,
+      "S3_strain": 1.2623357945044322,
+      "S4_strain": 1.2623357945044442
+    },
+    "10_to_14": {
+      "force": 0.20775555500332796,
+      "impact_w": 0.21870941315884343,
+      "S1_strain": 0.6412683797045525,
+      "S2_strain": 0.6412683797044754,
+      "S3_strain": 0.6412683797041483,
+      "S4_strain": 0.641268379704225
+    },
+    "14_to_18": {
+      "force": 0.20743288834936413,
+      "impact_w": 0.11619652727791899,
+      "S1_strain": 0.7039545431113305,
+      "S2_strain": 0.7039545431120333,
+      "S3_strain": 0.7039545431122127,
+      "S4_strain": 0.7039545431116606
+    },
+    "18_to_22": {
+      "force": 0.24729727517896635,
+      "impact_w": 0.05351278287840156,
+      "S1_strain": 0.6710700505547122,
+      "S2_strain": 0.6710700505551325,
+      "S3_strain": 0.6710700505526037,
+      "S4_strain": 0.6710700505520548
+    },
+    "22_to_30": {
+      "force": 0.36318940168870206,
+      "impact_w": 0.02845891151384153,
+      "S1_strain": 0.567401630822645,
+      "S2_strain": 0.567401630845814,
+      "S3_strain": 0.5674016308311166,
+      "S4_strain": 0.5674016308133419
+    },
+    "30_to_38": {
+      "force": 0.14801501562409544,
+      "impact_w": 0.011997439671062536,
+      "S1_strain": 0.26478678322216614,
+      "S2_strain": 0.2647867832120116,
+      "S3_strain": 0.26478678325546606,
+      "S4_strain": 0.2647867832935063
+    },
+    "38_to_46": {
+      "force": 0.0574172901023182,
+      "impact_w": 0.005609258854464774,
+      "S1_strain": 0.07896707893686354,
+      "S2_strain": 0.07896707892296227,
+      "S3_strain": 0.07896707893823042,
+      "S4_strain": 0.07896707891915097
+    }
+  },
+  "checks": {
+    "order6_to_10_relative_L2": {
+      "force": 0.21827565360383674,
+      "impact_w": 0.25940436945300466,
+      "S1_strain": 1.2623357945043747,
+      "S2_strain": 1.2623357945043696,
+      "S3_strain": 1.2623357945044322,
+      "S4_strain": 1.2623357945044442
+    },
+    "order10_to_14_relative_L2": {
+      "force": 0.20775555500332796,
+      "impact_w": 0.21870941315884343,
+      "S1_strain": 0.6412683797045525,
+      "S2_strain": 0.6412683797044754,
+      "S3_strain": 0.6412683797041483,
+      "S4_strain": 0.641268379704225
+    },
+    "order14_to_18_relative_L2": {
+      "force": 0.20743288834936413,
+      "impact_w": 0.11619652727791899,
+      "S1_strain": 0.7039545431113305,
+      "S2_strain": 0.7039545431120333,
+      "S3_strain": 0.7039545431122127,
+      "S4_strain": 0.7039545431116606
+    },
+    "order18_to_22_relative_L2": {
+      "force": 0.24729727517896635,
+      "impact_w": 0.05351278287840156,
+      "S1_strain": 0.6710700505547122,
+      "S2_strain": 0.6710700505551325,
+      "S3_strain": 0.6710700505526037,
+      "S4_strain": 0.6710700505520548
+    },
+    "order22_to_30_relative_L2": {
+      "force": 0.36318940168870206,
+      "impact_w": 0.02845891151384153,
+      "S1_strain": 0.567401630822645,
+      "S2_strain": 0.567401630845814,
+      "S3_strain": 0.5674016308311166,
+      "S4_strain": 0.5674016308133419
+    },
+    "order30_to_38_relative_L2": {
+      "force": 0.14801501562409544,
+      "impact_w": 0.011997439671062536,
+      "S1_strain": 0.26478678322216614,
+      "S2_strain": 0.2647867832120116,
+      "S3_strain": 0.26478678325546606,
+      "S4_strain": 0.2647867832935063
+    },
+    "order38_to_46_relative_L2": {
+      "force": 0.0574172901023182,
+      "impact_w": 0.005609258854464774,
+      "S1_strain": 0.07896707893686354,
+      "S2_strain": 0.07896707892296227,
+      "S3_strain": 0.07896707893823042,
+      "S4_strain": 0.07896707891915097
+    },
+    "halfdt_relative_L2": {
+      "force": 1.5522501636829265e-05,
+      "impact_w": 1.9846681695338022e-05,
+      "S1_strain": 0.0006564959618654371,
+      "S2_strain": 0.0006564959618657096,
+      "S3_strain": 0.0006564959619131624,
+      "S4_strain": 0.0006564959619126908
+    },
+    "finest_halfdt_relative_L2": {
+      "force": 9.585366675292515e-07,
+      "impact_w": 4.3374739086438655e-06,
+      "S1_strain": 0.00012008786446334622,
+      "S2_strain": 0.00012008786439465564,
+      "S3_strain": 0.00012008786403358068,
+      "S4_strain": 0.0001200878639428538
+    },
+    "clamped_basis_max_edge_w_slope": 0.0,
+    "isotropic_square_frequency_parameter": 35.98519356323528
+  }
+}

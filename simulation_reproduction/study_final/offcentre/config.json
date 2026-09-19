@@ -1,0 +1,63 @@
+{
+  "outer_size_m": [
+    0.5,
+    0.4
+  ],
+  "thickness_m": 0.002,
+  "rho_kg_m3": 1650,
+  "clamp_width_m": 0.02,
+  "clear_span_m": [
+    0.46,
+    0.36
+  ],
+  "impact_xy_m": [
+    0.2,
+    0.15
+  ],
+  "sensor_xy_m": [
+    [
+      0.075,
+      0.075
+    ],
+    [
+      0.425,
+      0.075
+    ],
+    [
+      0.425,
+      0.325
+    ],
+    [
+      0.075,
+      0.325
+    ]
+  ],
+  "patch_size_m": 0.015,
+  "substitute_material": {
+    "E1_Pa": 128100000000,
+    "E2_Pa": 8200000000,
+    "G12_Pa": 4700000000,
+    "nu12": 0.27
+  },
+  "ball": {
+    "diameter_m": 0.008,
+    "height_m": 0.16,
+    "rho_kg_m3": 14800,
+    "E_Pa": 530000000000,
+    "nu": 0.24
+  },
+  "contact_proxy": {
+    "E_Pa": 8200000000,
+    "nu": 0.3
+  },
+  "output_dt_s": 5e-06,
+  "provenance": {
+    "geometry_density": "User order and seller screenshot; nominal, not measured",
+    "lamina_constants": "Li 2012 Table1 T300/F593, https://doi.org/10.1155/2012/659849 ; external substitute, NOT this specimen",
+    "homogenization": "Analyst assumption: equal Q0/Q90 mixture throughout thickness, D=h^3*Qmix/12; no claimed actual ply sequence or woven surface stiffness",
+    "clamp": "20 mm analyst choice; ideal clamped inner perimeter, sensitivity 10 and 30 mm; outer strip immobile",
+    "sphere": "P2 SMS paper PDF p17 Table2 and p18 Table4; 8 mm tungsten steel, 160 mm selected numerical reference, not experimentally validated for CFRP",
+    "contact": "Hertz elastic sphere/halfspace proxy: E3 substituted by lamina E2; nu=0.3 analyst choice. Not calibrated anisotropic layered indentation",
+    "omissions": "No damage, delamination, damping, membrane stiffening, transverse shear, rotary inertia, PZT mass/stiffness, adhesive or piezoelectric voltage; only mean substrate strain trace over nominal PZT footprint"
+  }
+}

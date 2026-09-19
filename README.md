@@ -6,19 +6,27 @@
 
 **分析报告：[论文与仿真逐项对比分析](simulation_reproduction/comparison/论文与仿真逐项对比分析.md)**。审计脚本与指标见 [对比分析说明](simulation_reproduction/comparison/README_对比报告.md)。本机完整HTML含原论文图页，仓库阅读版保留分析和本项目绘图。
 
+## 新增：实物碳板落球冲击机械基准
+
+已按500×400×2 mm碳纤维板、PZT-5A名义测点和P2周边框架夹持路线建立独立的[impact_v1](simulation_reproduction/impact_v1/README.md)。包含实际运行的Rayleigh–Ritz薄板与落球接触求解、空间/时间验证、假设敏感性、[计算报告](simulation_reproduction/impact_v1/冲击仿真结果.html)及[缺失数据获取清单](simulation_reproduction/impact_v1/缺失数据与获取方法.md)。
+
+这是未实物标定的机械代理模型，局部接触力与原始应变仍未充分空间收敛；不是PZT电压、损伤预测或3D有限元。旧版代码和审计结果保留。
+
 ## 目录
 
 - `simulation_reproduction/`：AE 到达时间、定位、简化板动力响应、迁移学习及其他方法实验。
 - `simulation_reproduction/guided_wave_v2/`：T300/F593 二维正交各向异性有限元导波模型，健康与中面分层对照。
+- `simulation_reproduction/impact_v1/`：500×400×2 mm 碳板落球冲击的 Rayleigh–Ritz 薄板与 Hertz 接触求解。
+- `simulation_reproduction/study_final/`：impact_v1 的空间/时间收敛与单因素研究结果。
 - 原始论文、第三方依赖、缓存和大体积计算结果不纳入版本管理。
 
 ## 本机运行
 
-现有项目位于 `E:\毕设知识库`，依赖已放在 `simulation_reproduction/vendor`。在 PowerShell 中执行：
+本机项目位于 `D:\毕设知识库`，根目录自身就是git仓库（远端 `https://github.com/cfx-songshi/bs`，分支 `main`）。依赖已按 `requirements-lock.txt` 装进 Python 3.13.15 的 site-packages，本机没有 `simulation_reproduction/vendor` 目录。在 PowerShell 中执行：
 
 ```powershell
-$py = 'C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
-Set-Location 'E:\毕设知识库\simulation_reproduction\guided_wave_v2'
+$py = 'C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe'
+Set-Location 'D:\毕设知识库\simulation_reproduction\guided_wave_v2'
 & $py solve.py 1000 8 healthy
 & $py solve.py 1000 8 damage
 & $py solve.py 2000 16 healthy
@@ -31,7 +39,14 @@ Set-Location 'E:\毕设知识库\simulation_reproduction\guided_wave_v2'
 Start-Process '.\打开仿真.html'
 ```
 
-若运行克隆后的目录，请把 `Set-Location` 改成克隆目录中的对应路径。Python 路径为现有电脑的运行环境路径，在其他电脑上需配置自己的 Python，并参考依赖清单安装所需库。程序包含对原 E 盘依赖目录的引用。
+落球冲击（当前主线）：
+
+```powershell
+Set-Location 'D:\毕设知识库\simulation_reproduction\impact_v1'
+& $py solve_impact.py --order 22 --out results/my_run
+```
+
+若在其他电脑运行，请自行安装 Python 并参考 `requirements-lock.txt` 安装所需库，同时把 `Set-Location` 改成实际路径。程序仍包含旧电脑的绝对路径引用（例如原来的 `vendor` 目录），尚未完成跨电脑可移植化。
 
 旧版完整运行命令和输入要求见 [复现说明](simulation_reproduction/README_复现说明.md)。`prepare_plan.py` 需要另外提供原始论文目录；仓库不分发论文文件。生成报告前应先完成相应求解。
 

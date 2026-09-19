@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "status": "experimental_route_selected_not_simulated",
+  "route": "P2 free-falling sphere with perimeter frame clamping, adapted to purchased CFRP plate and PZT-5A",
+  "units": "m, kg, s, Pa",
+  "plate": {
+    "length_x_m": 0.5,
+    "width_y_m": 0.4,
+    "thickness_m": 0.002,
+    "density_kg_m3": 1650,
+    "thickness_tolerance_m": 0.0001,
+    "nominal_mass_kg": 0.66,
+    "source": "User order screenshot and seller product information; nominal, not measured",
+    "layup_description": "Seller states symmetric 0/90 UD interior with woven 3K surface fabric on both faces",
+    "ply_sequence": null,
+    "ply_thicknesses_m": null,
+    "elastic_constants": null,
+    "damping": null,
+    "strength_and_damage_parameters": null
+  },
+  "pzt": {
+    "grade": "PZT-5A",
+    "grade_source": "User confirmation",
+    "length_m": 0.015,
+    "width_m": 0.015,
+    "thickness_m": null,
+    "seller_nominal": {
+      "density_kg_m3": 7600,
+      "relative_permittivity_T_33": 2000,
+      "d33_C_N": 4.5e-10,
+      "d31_magnitude_C_N": 2.04e-10,
+      "d31_sign": null
+    },
+    "full_constitutive_matrices": null,
+    "poling_direction": null,
+    "adhesive_thickness_m": null,
+    "adhesive_properties": null,
+    "note": "Seller nominal values are not batch calibration; do not combine unrelated PZT-5A datasets without a consistency check"
+  },
+  "boundary": {
+    "experimental_type": "horizontal plate, perimeter frame clamping",
+    "source": "P2 SMS paper PDF p16 Fig17; numerical full-perimeter fixity on PDF p17",
+    "numerical_baseline": "idealized clamped edge at the measured inner frame perimeter",
+    "clamp_width_m": null,
+    "clear_span_x_m": null,
+    "clear_span_y_m": null,
+    "bolt_positions_m": null,
+    "tightening_protocol": null,
+    "note": "Finite clamp width changes clear span; actual fixture is not proven perfectly fixed"
+  },
+  "impact": {
+    "type": "free_falling_sphere",
+    "paper_parameter_options": {
+      "source": "P2 SMS paper PDF p17 Table2; reference ranges only, not authorized physical test levels",
+      "materials": ["aluminium", "tungsten_steel"],
+      "diameters_m": [0.006, 0.008, 0.01],
+      "drop_heights_m": [0.16, 0.25, 0.36]
+    },
+    "selected_material": null,
+    "measured_mass_kg": null,
+    "selected_diameter_m": null,
+    "selected_height_m": null,
+    "height_definition": "Vertical travel from release to first sphere/plate contact",
+    "contact_model": null,
+    "note": "m*g*h is incident potential energy, not measured absorbed damage energy or peak force"
+  },
+  "acquisition": {
+    "device_order_label": "DAQ122 AD7606",
+    "nominal_channels": 8,
+    "nominal_resolution_bits": 16,
+    "target_sampling_hz_per_channel": 200000,
+    "verified_sampling_hz_per_channel": null,
+    "input_range_V": null,
+    "oversampling_setting": null,
+    "analog_transfer_function": null,
+    "front_end_and_protection": null,
+    "note": "Confirm exact chip and board. Standard AD7606 nominal analog -3 dB bandwidth is 22 kHz; sampling rate is not bandwidth",
+    "source": "https://www.analog.com/en/products/ad7606.html"
+  },
+  "proposed_pilot": {
+    "status": "planning_choices_not_paper_values",
+    "coordinate_system": "Top view, origin at lower-left outer corner; x along 500 mm, y along 400 mm",
+    "sensor_centres_m": [[0.075, 0.075], [0.425, 0.075], [0.425, 0.325], [0.075, 0.325]],
+    "initial_impact_xy_m": [0.25, 0.2],
+    "repeats_at_fixed_condition": 10,
+    "pretrigger_s": 0.005,
+    "posttrigger_s": 0.05,
+    "note": "Check clearance against measured fixture, sensor faces and cables; verify acquisition supports pretrigger, otherwise use continuous recording"
+  },
+  "validation_limits": [
+    "No calculated impact or voltage response yet",
+    "Do not reuse the old [0]8 1.72 mm strip as the purchased plate",
+    "Do not interpret a response change as confirmed damage",
+    "Do not claim original P2 localization accuracy on this specimen",
+    "Mechanical strain/displacement is not a calibrated sensor voltage"
+  ]
+}
