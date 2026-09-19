@@ -5,10 +5,26 @@
 - 工作目录确认为`D:\毕设知识库`，它本身就是git仓库：克隆自`https://github.com/cfx-songshi/bs.git`，分支`main`。
 - 本机`github.com:443`被阻断（连接被重置），但22端口可用，因此远端已改为SSH：`git@github.com:cfx-songshi/bs.git`。HTTPS推送在本机不可用，不要改回去。
 - 本机新装工具链：Git 2.55.0.windows.3（`C:\Program Files\Git\cmd\git.exe`）、Python 3.13.15（`C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe`）、pip 26.2.1。新装的PATH只对新开终端生效。
+- 另装了开源有限元**CalculiX 2.23**：`D:\CalculiX\calculix_2.23_4win`（绿色包）。**只有`ccx_static.exe`能跑**，动态版与i4版均以`0xC0000135`（缺DLL）退出。已用悬臂梁网格收敛到Euler–Bernoulli解析值验证（82.62/81.70/81.38 Hz vs 81.54）。**它没有显式动力学**，不能替代Abaqus/Explicit跑导波，详见`guided_wave_3d/calculix/README.md`。
 - 依赖已按`requirements-lock.txt`逐项精确安装到上面这个Python的site-packages：numpy 2.5.3、scipy 1.18.1、matplotlib 3.11.2、PyWavelets 1.10.0、scikit-learn 1.9.1、torch 2.14.0（CPU构建）。**本机没有`simulation_reproduction/vendor`目录**，旧文档里的vendor路径只适用于旧电脑。
 - 09-15那批落球冲击工作已入库并推送：`bdb05c5`（`b1d6e99..bdb05c5`，含`impact_v1/`与`study_final/`指标JSON共57个文件），随后`a355c91`更新本文件；完整CSV/NPZ仍留在本机。远端已确认包含这两个提交。
 - 根目录`.gitignore`已排除`*.npz`、`*.csv`、`*.png`、`results/`，提交时只会收录代码、文档、指标JSON与SVG，符合上传范围约定。
 - 旧电脑的`E:\毕设知识库`、`C:\Users\Admin\...`路径及"独立Git工作副本"安排均已作废；第2节表格已按本机实际情况改写。
+
+## 当前状态总览（2026-09-19 收尾）
+
+两条建模线，各自独立、均有解析或独立求解器对照：
+
+| 线 | 目录 | 状态 |
+|---|---|---|
+| **PZT 主动导波（当前主线）** | `guided_wave_v2/`（二维＋解析参考）、`guided_wave_3d/`（三维） | 二维 A0 相速度对解析 0.48–0.68% 且随网格收敛；三维线源对二维同网格 **0.11%**；三维点源两方向 **1.55% / 3.29%**，各向异性波前比 **1.69%** |
+| 落球冲击（P2 路线） | `impact_v1/`（薄板）、`impact_3d_v1/`（三维） | 三维两级模型网格/时间步/能量三重收敛；并证明**薄板局部量不可信**（峰值力高估 5.1 倍、冲击点位移低估 2.8 倍） |
+
+**工具链**：Python 3.13.15 + 六个锁定依赖（site-packages）；Git 2.55（远端走 SSH，443 被阻断）；CalculiX 2.23（`D:\CalculiX`，无显式动力学）。
+
+**未完成**：①**Abaqus 未安装**（需学校或个人提供许可证与介质），其 `.inp` 已生成并通过静态自检但**从未提交求解**；②导波仍无 PZT/胶层/机电耦合，输出是机械位移**不是电压**；③两条线均**未与实物实验对照**（无实测验证集）；④`.inp` → CalculiX 的转换未做；⑤群速度验证精度不足（导波，见下文各节）。
+
+**同步方式**：本机 `D:\毕设知识库` 自身是仓库，`git status` 干净即与远端一致；**最新提交以远端为准**（`git log -1 origin/main`），不要依赖本文档写的提交号。历史各轮细节见下方按时间排列的"后续更新"节。
 
 ## 后续更新：实物碳板落球路线（2026-09-15）
 

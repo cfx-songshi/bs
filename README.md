@@ -18,10 +18,21 @@
 
 已验证：材料刚度与impact_v1一致到0.045%、一阶频率单调从上方收敛（+1.7%）、局部模型网格1.7%与时间步1%收敛、远场网格与时间步双重收敛（同网格换步长一致到0.01%）、能量漂移1e-5。**结论：impact_v1的薄板局部量不可信**（峰值接触力高估5.1倍、冲击点位移低估2.8倍）；**传感器方向依赖已量化**（同一贴片沿冲击方向与沿轴向差3.5倍）。仍是机械代理模型，不是PZT电压。
 
+## 新增：三维导波模型与频散验证（当前主线）
+
+已建立 [guided_wave_3d](simulation_reproduction/guided_wave_3d/README.md)：三维八节点六面体显式有限元，用**完整三维正交各向异性刚度**而非平面应变压缩块；`line` 源为验证模式（沿宽度均匀，必须退化为平面应变），`point` 源为应用模式（板中央单节点，产生圆波前）。
+
+**验证结果**：三维线源与二维模型在相同网格下只差 **0.11%**；点源沿纤维 **1.55%**、垂直纤维 **3.29%**，各向异性波前比 **1.69%**（该比值是二维平面应变模型给不出的量）。
+
+解析参考实现在 [guided_wave_v2/dispersion.py](simulation_reproduction/guided_wave_v2/dispersion.py)，先经各向同性严格极限自检（S0 长波极限 3.6e-07、Rayleigh 渐近 3.5e-04、方向映射 0.0）才用于对照。**不要跳过这一步**：该实现曾有一处 `if disc < 0: return None` 的早退，静默删除了整类非均匀分波，使一个方向的 A0 分支完全丢失、并留下一个恒定不变的假根。
+
+Abaqus 侧的状态：输入由 [make_abaqus_inp.py](simulation_reproduction/guided_wave_3d/make_abaqus_inp.py) 生成并通过静态一致性自检，但**本机没有 Abaqus（商业许可证，须自行提供），从未提交给求解器**。作为替代装了开源的 [CalculiX 2.23](simulation_reproduction/guided_wave_3d/calculix/README.md)（语法与 Abaqus 相近），并以悬臂梁收敛到解析值完成验证；但 **CalculiX 无显式动力学，不能替代 Abaqus/Explicit 跑导波**。
+
 ## 目录
 
 - `simulation_reproduction/`：AE 到达时间、定位、简化板动力响应、迁移学习及其他方法实验。
-- `simulation_reproduction/guided_wave_v2/`：T300/F593 二维正交各向异性有限元导波模型，健康与中面分层对照。
+- `simulation_reproduction/guided_wave_v2/`：T300/F593 二维正交各向异性有限元导波模型、解析 Rayleigh–Lamb 频散参考与验证脚本。
+- `simulation_reproduction/guided_wave_3d/`：三维导波显式有限元（线源/点源），含 Abaqus 输入生成与 CalculiX 工具链记录。
 - `simulation_reproduction/impact_v1/`：500×400×2 mm 碳板落球冲击的 Rayleigh–Ritz 薄板与 Hertz 接触求解。
 - `simulation_reproduction/impact_3d_v1/`：同工况的三维六面体有限元，局部细化子模型＋全局传感器响应。
 - `simulation_reproduction/study_final/`：impact_v1 的空间/时间收敛与单因素研究结果。
@@ -46,14 +57,25 @@ Set-Location 'D:\毕设知识库\simulation_reproduction\guided_wave_v2'
 Start-Process '.\打开仿真.html'
 ```
 
-落球冲击（当前主线）：
+落球冲击（P2 路线）：
 
 ```powershell
 Set-Location 'D:\毕设知识库\simulation_reproduction\impact_v1'
 & $py solve_impact.py --order 22 --out results/my_run
 ```
 
-若在其他电脑运行，请自行安装 Python 并参考 `requirements-lock.txt` 安装所需库，同时把 `Set-Location` 改成实际路径。程序仍包含旧电脑的绝对路径引用（例如原来的 `vendor` 目录），尚未完成跨电脑可移植化。
+三维导波（当前主线，各脚本的复算命令见对应 README）：
+
+```powershell
+Set-Location 'D:\毕设知识库\simulation_reproduction\guided_wave_v2'
+& $py dispersion.py --self-test          # 解析参考先自检
+& $py dispersion.py                      # 频散曲线
+Set-Location 'D:\毕设知识库\simulation_reproduction\guided_wave_3d'
+& $py solve_uvg_3d.py --mode line --nx 500 --ny 4 --nz 4 --lx 0.5 --ly 0.02 --out out_line
+& $py check_3d_dispersion.py
+```
+
+若在其他电脑运行，请自行安装 Python 并参考 `requirements-lock.txt` 安装所需库，同时把 `Set-Location` 改成实际路径。程序仍包含旧电脑的绝对路径引用，尚未完成跨电脑可移植化（`guided_wave_v2/solve.py` 顶部的旧 vendor 路径已删除）。
 
 旧版完整运行命令和输入要求见 [复现说明](simulation_reproduction/README_复现说明.md)。`prepare_plan.py` 需要另外提供原始论文目录；仓库不分发论文文件。生成报告前应先完成相应求解。
 
