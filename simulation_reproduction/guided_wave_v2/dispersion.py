@@ -57,8 +57,24 @@ THICKNESS = 1.72e-3
 ELEMENTS_PER_WAVELENGTH_TARGET = 10
 
 
-def plane_strain_stiffness(E1, E2, E3, G12, G13, G23, nu12, nu13, nu23):
-    """Reduced plane-strain stiffness components for waves along material axis 1."""
+def plane_strain_stiffness(E1, E2, E3, G12, G13, G23, nu12, nu13, nu23, direction='x'):
+    """Reduced stiffness for guided waves travelling along a material axis.
+
+    The returned keys keep the roles of the x-direction case, namely
+    C11 = longitudinal in the propagation direction
+    C13 = coupling between propagation and thickness
+    C33 = through-thickness
+    C55 = shear in the propagation-thickness plane
+    so the determinant below does not need to know which axis was chosen.
+
+    direction='x' keeps Voigt 11, 33, 13 (waves along material axis 1, the fibre
+    direction of the [0]8 laminate). direction='y' keeps 22, 33, 23 (waves along
+    material axis 2, across the fibres). The two differ because the plate is
+    strongly anisotropic: E1 is about 16 times E2, so the same plate carries waves
+    at very different speeds along and across the fibres. That difference is what
+    makes the point-source wavefront elliptical, and it is a property no
+    plane-strain two-dimensional model can produce.
+    """
     s = np.zeros((6, 6))
     s[0, 0], s[1, 1], s[2, 2] = 1 / E1, 1 / E2, 1 / E3
     s[3, 3], s[4, 4], s[5, 5] = 1 / G23, 1 / G13, 1 / G12
@@ -66,8 +82,11 @@ def plane_strain_stiffness(E1, E2, E3, G12, G13, G23, nu12, nu13, nu23):
     s[0, 2] = s[2, 0] = -nu13 / E1
     s[1, 2] = s[2, 1] = -nu23 / E2
     c = np.linalg.inv(s)
-    # Voigt keeps 11, 33 and 13 for plane strain in the x-z plane.
-    return dict(C11=c[0, 0], C13=c[0, 2], C33=c[2, 2], C55=c[4, 4])
+    if direction == 'x':
+        return dict(C11=c[0, 0], C13=c[0, 2], C33=c[2, 2], C55=c[4, 4])
+    if direction == 'y':
+        return dict(C11=c[1, 1], C13=c[1, 2], C33=c[2, 2], C55=c[3, 3])
+    raise ValueError('direction must be x or y, got %r' % (direction,))
 
 
 def isotropic_stiffness(E, nu):
@@ -285,6 +304,15 @@ def self_test():
         res['slowest_at_6x_m_s'] = round(slowest)
         res['rayleigh_relative_error'] = abs(slowest - cr) / cr
         res['branch_speeds_high_fd'] = [round(b['phase_velocity_m_s']) for b in hi]
+
+    # 5) An isotropic plate cannot distinguish the two propagation directions, so the
+    #    axis-selection branches must agree exactly. This is what checks the Voigt
+    #    index mapping in plane_strain_stiffness.
+    g_iso = E / (2 * (1 + nu))
+    mx = plane_strain_stiffness(E, E, E, g_iso, g_iso, g_iso, nu, nu, nu, direction='x')
+    my = plane_strain_stiffness(E, E, E, g_iso, g_iso, g_iso, nu, nu, nu, direction='y')
+    res['axis_selection_relative_difference'] = max(
+        abs(mx[k] - my[k]) / abs(mx[k]) for k in mx)
     return res
 
 

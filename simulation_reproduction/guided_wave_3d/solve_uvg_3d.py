@@ -184,26 +184,35 @@ def build(nx, ny, nz, lx, ly, thickness, C, rho, damage=None, batch=20000):
                 conn=conn, nx=nx, ny=ny, nz=nz, lx=lx, ly=ly)
 
 
-def source_dofs(mesh, mode, x_src, y_frac=0.5, dx_force=None):
-    """Nodes and per-node force amplitude for the requested source mode."""
+def source_dofs(mesh, mode, x_src, y_frac=0.5, y_src=None):
+    """Nodes and per-node force amplitude for the requested source mode.
+
+    'line' spans the width and radiates along x; 'line_across' spans x and radiates
+    along y. The second exists so that the across-fibre direction can be checked with
+    the same plane-strain-equivalent argument that validated the along-fibre one,
+    which separates a point-source effect from a directional one.
+    """
     nx, ny, nz = mesh['nx'], mesh['ny'], mesh['nz']
-    i0 = int(round(x_src / mesh['dx']))
-    i0 = min(max(i0, 0), nx)
     top, bot = nz, 0
 
     def nid(i, j, k):
         return i + (nx + 1) * (j + (ny + 1) * k)
 
     if mode == 'line':
-        # Every node along y on both faces, so the load is uniform across the width.
-        # Amplitude per node equals the line density times the node spacing, which
-        # makes the total 1 N per metre of width -- the same excitation the 2D model
-        # uses, which is what allows a direct comparison.
+        i0 = min(max(int(round(x_src / mesh['dx'])), 0), nx)
         amp = 1.0 * mesh['dy']
         js = np.arange(ny + 1)
         nodes = np.concatenate([nid(i0, js, top), nid(i0, js, bot)])
         vals = np.concatenate([np.full(ny + 1, amp), np.full(ny + 1, amp)])
+    elif mode == 'line_across':
+        y0 = y_src if y_src is not None else 0.5 * ny * mesh['dy']
+        j0 = min(max(int(round(y0 / mesh['dy'])), 0), ny)
+        amp = 1.0 * mesh['dx']
+        is_ = np.arange(nx + 1)
+        nodes = np.concatenate([nid(is_, j0, top), nid(is_, j0, bot)])
+        vals = np.concatenate([np.full(nx + 1, amp), np.full(nx + 1, amp)])
     elif mode == 'point':
+        i0 = min(max(int(round(x_src / mesh['dx'])), 0), nx)
         j0 = int(round(y_frac * ny))
         nodes = np.array([nid(i0, j0, top), nid(i0, j0, bot)])
         vals = np.array([1.0, 1.0])
@@ -213,8 +222,15 @@ def source_dofs(mesh, mode, x_src, y_frac=0.5, dx_force=None):
 
 
 def run(mesh, mode, x_src, duration=DURATION, out=None, dt_scale=1.0,
-        receivers_x=(0.18, 0.32), frame_dt=2e-6, y_recv_frac=0.5):
-    """Explicit central-difference solve; returns time history and surface frames."""
+        receivers_x=(0.18, 0.32), frame_dt=2e-6, y_recv_frac=0.5,
+        frame_mode='line', frame_stride_xy=None, y_src=None):
+    """Explicit central-difference solve; returns time history and surface frames.
+
+    frame_mode='line' stores only the width-centre line, which is all a line-source
+    study needs and keeps the output small. frame_mode='2d' stores a downsampled
+    surface map, which a point source needs because its wavefront is two
+    dimensional and the ellipse ratio cannot be measured from one line.
+    """
     K, mass = mesh['K'], mesh['mass']
     ndof = mesh['ndof']
     bound = float(np.max(np.asarray(abs(K).sum(axis=1)).ravel() / mass))
@@ -223,7 +239,7 @@ def run(mesh, mode, x_src, duration=DURATION, out=None, dt_scale=1.0,
     dt = duration / nt
 
     force = np.zeros(ndof)
-    src, amp = source_dofs(mesh, mode, x_src)
+    src, amp = source_dofs(mesh, mode, x_src, y_src=y_src)
     force[src] = amp
 
     nx, ny, nz = mesh['nx'], mesh['ny'], mesh['nz']
@@ -236,6 +252,12 @@ def run(mesh, mode, x_src, duration=DURATION, out=None, dt_scale=1.0,
                  for rx in receivers_x]
     rec_dofs = np.array(rec_nodes) * 3 + 2
     surf = (np.arange((nx + 1) * (ny + 1)) + (nx + 1) * (ny + 1) * top) * 3 + 2
+    if frame_stride_xy is None:
+        # No decimation by default. The across-fibre A0 wavelength is only about 9 mm,
+        # so dropping to a 2.5 mm sample spacing leaves fewer than four points per
+        # wavelength and wrecks any phase-slope measurement along that direction. The
+        # saved array is larger, but it is a local run artefact and stays out of git.
+        frame_stride_xy = 1
 
     fine = np.linspace(0, HANN_T, 200001)
     norm = np.max(np.abs(np.sin(2 * np.pi * FREQ_HZ * fine) * np.sin(np.pi * fine / HANN_T) ** 2))
@@ -254,7 +276,11 @@ def run(mesh, mode, x_src, duration=DURATION, out=None, dt_scale=1.0,
             ts.append(t)
             signals.append(u[rec_dofs].copy())
         if n % stride == 0:
-            frames.append(u[surf].reshape(ny + 1, nx + 1)[int(round(ny / 2))].copy())
+            surface = u[surf].reshape(ny + 1, nx + 1)
+            if frame_mode == '2d':
+                frames.append(surface[::frame_stride_xy, ::frame_stride_xy].copy())
+            else:
+                frames.append(surface[ny // 2].copy())
             ft.append(t)
         new = 2 * u - old + dt * dt * (force * val / mass - A @ u)
         if n % stride == 0 and t > 1.2 * HANN_T:
@@ -269,9 +295,12 @@ def run(mesh, mode, x_src, duration=DURATION, out=None, dt_scale=1.0,
                 dx_m=mesh['dx'], dy_m=mesh['dy'], dz_m=mesh['dz'],
                 dt_s=dt, dt_upper_bound_s=dt_limit, steps=nt, duration_s=duration,
                 elements_per_A0_wavelength=12.7e-3 / mesh['dx'],
+                frame_mode=frame_mode, frame_stride_xy=frame_stride_xy,
                 energy_relative_drift=drift)
     result = dict(t=np.array(ts), signal=np.array(signals), frames=np.array(frames),
-                  frame_t=np.array(ft), x=np.arange(nx + 1) * mesh['dx'])
+                  frame_t=np.array(ft), x=np.arange(nx + 1) * mesh['dx'],
+                  y=np.arange(ny + 1) * mesh['dy'],
+                  frame_stride_xy=np.array(frame_stride_xy))
     if out:
         Path(out).mkdir(parents=True, exist_ok=True)
         np.savez_compressed(Path(out) / 'wavefield.npz', **result)
@@ -281,7 +310,9 @@ def run(mesh, mode, x_src, duration=DURATION, out=None, dt_scale=1.0,
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument('--mode', choices=['line', 'point'], default='line')
+    p.add_argument('--mode', choices=['line', 'point', 'line_across'], default='line')
+    p.add_argument('--y-src', type=float, default=None,
+                   help='source position along y, used by --mode line_across')
     p.add_argument('--nx', type=int, default=500)
     p.add_argument('--ny', type=int, default=4)
     p.add_argument('--nz', type=int, default=4)
@@ -291,6 +322,12 @@ def main():
     p.add_argument('--duration', type=float, default=DURATION)
     p.add_argument('--damage', type=float, nargs=4, default=None,
                    metavar=('X0', 'X1', 'Y0', 'Y1'))
+    p.add_argument('--frames', choices=['line', '2d'], default='line',
+                   help='line stores the width-centre line; 2d stores a downsampled '
+                        'surface map, needed to see the elliptical wavefront of a point source')
+    p.add_argument('--frame-stride', type=int, default=None,
+                   help='spatial decimation for --frames 2d; default 1, because the '
+                        'across-fibre A0 wavelength is only about 9 mm')
     p.add_argument('--out', type=Path, default=None)
     a = p.parse_args()
 
@@ -301,7 +338,9 @@ def main():
                  damage=tuple(a.damage) if a.damage else None)
     print('装配完成: %d 单元, %d 节点, %d DOF, %.1f s'
           % (mesh['nelem'], mesh['nnode'], mesh['ndof'], time.time() - t0), flush=True)
-    result, meta = run(mesh, a.mode, a.x_src, duration=a.duration, out=a.out)
+    result, meta = run(mesh, a.mode, a.x_src, duration=a.duration, out=a.out,
+                       frame_mode=a.frames, frame_stride_xy=a.frame_stride,
+                       y_src=a.y_src)
     print(json.dumps(meta, indent=2), flush=True)
 
 
