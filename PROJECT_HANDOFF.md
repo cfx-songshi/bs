@@ -2,11 +2,11 @@
 
 ## 本机环境与仓库状态（2026-09-19）
 
-- 工作目录确认为`D:\毕设知识库`，它本身就是git仓库：克隆自`https://github.com/cfx-songshi/bs.git`，分支`main`，HEAD为`bdb05c5`。
+- 工作目录确认为`D:\毕设知识库`，它本身就是git仓库：克隆自`https://github.com/cfx-songshi/bs.git`，分支`main`。
 - 本机`github.com:443`被阻断（连接被重置），但22端口可用，因此远端已改为SSH：`git@github.com:cfx-songshi/bs.git`。HTTPS推送在本机不可用，不要改回去。
 - 本机新装工具链：Git 2.55.0.windows.3（`C:\Program Files\Git\cmd\git.exe`）、Python 3.13.15（`C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe`）、pip 26.2.1。新装的PATH只对新开终端生效。
 - 依赖已按`requirements-lock.txt`逐项精确安装到上面这个Python的site-packages：numpy 2.5.3、scipy 1.18.1、matplotlib 3.11.2、PyWavelets 1.10.0、scikit-learn 1.9.1、torch 2.14.0（CPU构建）。**本机没有`simulation_reproduction/vendor`目录**，旧文档里的vendor路径只适用于旧电脑。
-- 09-15那批落球冲击工作已入库并推送：提交`bdb05c5`（`b1d6e99..bdb05c5`），含`impact_v1/`与`study_final/`指标JSON共57个文件；完整CSV/NPZ仍留在本机。远端已确认包含该提交。
+- 09-15那批落球冲击工作已入库并推送：`bdb05c5`（`b1d6e99..bdb05c5`，含`impact_v1/`与`study_final/`指标JSON共57个文件），随后`a355c91`更新本文件；完整CSV/NPZ仍留在本机。远端已确认包含这两个提交。
 - 根目录`.gitignore`已排除`*.npz`、`*.csv`、`*.png`、`results/`，提交时只会收录代码、文档、指标JSON与SVG，符合上传范围约定。
 - 旧电脑的`E:\毕设知识库`、`C:\Users\Admin\...`路径及"独立Git工作副本"安排均已作废；第2节表格已按本机实际情况改写。
 
@@ -49,7 +49,7 @@
 | 落球冲击 | `D:/毕设知识库/simulation_reproduction/impact_v1` |
 | 冲击参数化研究结果 | `D:/毕设知识库/simulation_reproduction/study_final` |
 | 完整对比报告 | `D:/毕设知识库/simulation_reproduction/comparison/论文与仿真逐项对比分析.html` |
-| GitHub | `https://github.com/cfx-songshi/bs`，分支`main`，远端地址`git@github.com:cfx-songshi/bs.git`（SSH），HEAD`bdb05c5` |
+| GitHub | `https://github.com/cfx-songshi/bs`，分支`main`，远端地址`git@github.com:cfx-songshi/bs.git`（SSH）。最新提交以远端为准，用`git log -1 origin/main`核对，不要依赖本文档写的提交号 |
 | 本机Python | `C:/Users/29795/AppData/Local/Programs/Python/Python313/python.exe`（3.13.15） |
 | 本机Git | `C:/Program Files/Git/cmd/git.exe`（2.55.0.windows.3） |
 | 已安装依赖 | 上面这个Python的site-packages；本机没有`vendor`目录 |
