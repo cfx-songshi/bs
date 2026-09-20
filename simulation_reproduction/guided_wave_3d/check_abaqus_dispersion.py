@@ -50,8 +50,10 @@ def main():
 
     cases = [
         ('in-house 500x4x4 @ abq dt', HERE / 'out_line_abaqusdt' / 'wavefield.npz'),
-        ('abaqus C3D8R double', HERE / 'abaqus_line500_c3d8r_dp_surface.npz'),
-        ('abaqus C3D8', HERE / 'abaqus_line500_c3d8_surface.npz'),
+        ('in-house 1000x4x8 @ abq dt', HERE / 'out_line_1000x4x8_abaqusdt' / 'wavefield.npz'),
+        ('abaqus C3D8R 500x4x4 dp', HERE / 'abaqus_line500_c3d8r_dp_surface.npz'),
+        ('abaqus C3D8 500x4x4', HERE / 'abaqus_line500_c3d8_surface.npz'),
+        ('abaqus C3D8 1000x4x8', HERE / 'abaqus_line1000_c3d8_surface.npz'),
     ]
 
     rows = []

@@ -16,7 +16,16 @@
       "max_phase_error_in_band": 0.025322938361843475
     },
     {
-      "case": "abaqus C3D8R double",
+      "case": "in-house 1000x4x8 @ abq dt",
+      "path": "wavefield.npz",
+      "c_phase_100k_m_s": 1281.6833128605394,
+      "phase_error_vs_analytic": 0.003704530387188383,
+      "c_group_100k_m_s": 1825.4112894338682,
+      "group_error_vs_analytic": 0.045769419323442743,
+      "max_phase_error_in_band": 0.02133133012842598
+    },
+    {
+      "case": "abaqus C3D8R 500x4x4 dp",
       "path": "abaqus_line500_c3d8r_dp_surface.npz",
       "c_phase_100k_m_s": 1273.6266350098645,
       "phase_error_vs_analytic": 0.00996725657096197,
@@ -25,13 +34,22 @@
       "max_phase_error_in_band": 0.045583078360600104
     },
     {
-      "case": "abaqus C3D8",
+      "case": "abaqus C3D8 500x4x4",
       "path": "abaqus_line500_c3d8_surface.npz",
       "c_phase_100k_m_s": 1288.5302267129666,
       "phase_error_vs_analytic": 0.001617805624800139,
       "c_group_100k_m_s": 1924.706652952108,
       "group_error_vs_analytic": 0.10265525937989638,
       "max_phase_error_in_band": 0.12652174198469776
+    },
+    {
+      "case": "abaqus C3D8 1000x4x8",
+      "path": "abaqus_line1000_c3d8_surface.npz",
+      "c_phase_100k_m_s": 1285.2985177887858,
+      "phase_error_vs_analytic": 0.0008943102215727152,
+      "c_group_100k_m_s": 1991.9409286771804,
+      "group_error_vs_analytic": 0.14117345519178245,
+      "max_phase_error_in_band": 0.10594629591623382
     }
   ]
 }

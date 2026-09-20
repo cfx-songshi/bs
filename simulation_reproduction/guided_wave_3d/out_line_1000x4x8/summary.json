@@ -12,5 +12,7 @@
   "steps": 5958,
   "duration_s": 0.00022,
   "elements_per_A0_wavelength": 25.4,
+  "frame_mode": "line",
+  "frame_stride_xy": 1,
   "energy_relative_drift": 1.4888158092860112e-14
 }
