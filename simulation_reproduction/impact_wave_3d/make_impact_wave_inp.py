@@ -6,9 +6,13 @@ covers the impact stage only; the wave step is added once the impact damages som
 
 What the model contains
 -----------------------
-* A rectangular coupon meshed with a structured grid. The in-plane element size is set
-  by the guided-wave requirement of ten elements per A0 wavelength at 100 kHz, which is
-  the same rule the validated wave models use, so the two stages can share one mesh.
+* A rectangular coupon meshed with a structured grid. The in-plane spacing is stretched
+  from a chosen size at the centre out to the far-field size, and that far-field size is
+  set by the guided-wave requirement of ten elements per A0 wavelength at 100 kHz, which
+  is the same rule the validated wave models use, so the two stages can share one mesh.
+  The refinement is not decoration: at 1.25 mm the delaminated patch a low-energy impact
+  leaves is about one element across, so the wave stage would be looking at a damage that
+  its own mesh cannot represent.
 * One solid element per ply through the thickness, so the ply boundaries, and therefore
   the cohesive interfaces, sit where the real ones do.
 * The interface is contact-based cohesive behaviour, not cohesive elements. The nodes at
@@ -28,11 +32,12 @@ What the model contains
 
 Two things are deliberately crude at this stage and are reported rather than hidden
 ----------------------------------------------------------------------------------------
-* The in-plane mesh cannot resolve the contact patch. At 1.25 mm elements and a contact
-  radius of a few tenths of a millimetre, the contact pressure is lumped onto one or two
-  elements, so the impact force and the damage extent are mesh dependent. The purpose of
-  this stage is the chain, not the damage prediction; a local submodel or a graded mesh
-  is the fix, and the project's impact route already works that way.
+* The refinement is finer in-plane only. Through the thickness there is still one element
+  per ply, because the interfaces are the ply boundaries and splitting a ply would put an
+  interface where the material does not have one. So the indentation itself is resolved by
+  the in-plane grading alone. And how far the grading has to go is not settled by a
+  convergence study here: the refinement is chosen from the contact radius, and the
+  residual mesh dependence of the damage extent is reported rather than claimed away.
 * The failure index of the general criterion is requested as a diagnostic only. It tells
   where the plies would fail first; it does not degrade anything.
 
@@ -119,7 +124,51 @@ def sphere(centre, radius, n_lat, n_lon):
     return nodes, faces
 
 
-def build(nx, ny, nz, lx, ly, thickness):
+def graded_coordinates(count, length, centre_size, ratio):
+    """Node coordinates along one axis, finest at the centre, far-field size at the edge.
+
+    A wave model wants one element size everywhere, ten per A0 wavelength. An impact wants
+    small elements where the ball touches, and that contact radius is a fraction of a
+    millimetre. The two are reconciled by stretching the spacing smoothly from
+    `centre_size` at the middle out to length/count, which is the far-field size the wave
+    requirement sets, rather than by refining a patch and ringing it with a transition:
+    the grid stays structured, so the element connectivity, the ply elsets and the
+    interface surfaces are all unchanged and no hanging nodes appear.
+
+    Neighbouring elements differ by `ratio`, so the grading is gentle. Whatever it does
+    scatter is also largely harmless here, because the damage indicator is the difference
+    between two runs on this same mesh, and a difference cancels the mesh's own response.
+    """
+    far = length / float(count)
+    if centre_size is None or centre_size >= far:
+        return [index * far for index in range(count + 1)]
+
+    half = 0.5 * length
+    sizes = []
+    size = centre_size
+    used = 0.0
+    while size < far - 1e-15 and used + size < half:
+        sizes.append(size)
+        used += size
+        size *= ratio
+    # The rest of the half-length is filled with whole far-field elements, stretched by
+    # whatever fraction is needed to land exactly on the boundary. Letting the last element
+    # absorb the leftover instead would leave a sliver, and the stable increment is set by
+    # the smallest element in the model.
+    remaining = half - used
+    whole = max(1, int(round(remaining / far)))
+    sizes.extend([remaining / whole] * whole)
+
+    coordinates = [half]
+    offset = 0.0
+    for size in sizes:
+        offset += size
+        coordinates.append(half + offset)
+        coordinates.insert(0, half - offset)
+    return coordinates
+
+
+def build(nx, ny, nz, lx, ly, thickness, centre_size=None, ratio=1.1):
     """Nodes, elements and the sets the deck needs.
 
     Node planes: every ply boundary carries two coincident planes, the top of one ply and
@@ -127,9 +176,16 @@ def build(nx, ny, nz, lx, ly, thickness):
     interface a pair of separate faces, which is what contact-based cohesive behaviour
     needs; the ply elements share nodes with their own plane only, so the stack is joined
     by the contact at the interface and by nothing else.
+
+    nx and ny are the far-field element counts, which fix the far-field size; the actual
+    counts come back in the result, because the grading needs more elements than that to
+    reach the centre size.
     """
     dz = thickness / nz
     n_planes = 2 * nz
+    x = graded_coordinates(nx, lx, centre_size, ratio)
+    y = graded_coordinates(ny, ly, centre_size, ratio)
+    nx, ny = len(x) - 1, len(y) - 1
 
     def nid(i, j, plane):
         return 1 + i + (nx + 1) * (j + (ny + 1) * plane)
@@ -143,7 +199,7 @@ def build(nx, ny, nz, lx, ly, thickness):
         z = zed(plane)
         for j in range(ny + 1):
             for i in range(nx + 1):
-                nodes.append((i * lx / nx, j * ly / ny, z))
+                nodes.append((x[i], y[j], z))
 
     ply_elements, ply_elset = [], []
     for ply in range(nz):
@@ -162,14 +218,18 @@ def build(nx, ny, nz, lx, ly, thickness):
     # measurement: they take their mass from the constitutive thickness and they collapse
     # the stable increment (see check_surface_cohesive.py).
     return dict(nodes=nodes, ply_elements=ply_elements, nid=nid, dz=dz,
-                n_planes=n_planes)
+                n_planes=n_planes, nx=nx, ny=ny,
+                centre_size=x[len(x) // 2] - x[len(x) // 2 - 1],
+                far_size=x[-1] - x[-2])
 
 
 def emit(options):
     nx, ny, nz = options.nx, options.ny, options.nz
     lx, ly = options.lx, options.ly
     thickness = options.thickness
-    mesh = build(nx, ny, nz, lx, ly, thickness)
+    mesh = build(nx, ny, nz, lx, ly, thickness,
+                 centre_size=options.centre_size, ratio=options.grade_ratio)
+    nx, ny = mesh['nx'], mesh['ny']
     nodes = mesh['nodes']
     dt = mesh['dz']
 
@@ -188,9 +248,11 @@ def emit(options):
            % (lx * 1e3, ly * 1e3, thickness * 1e3, nz),
            '** cohesive between them, generated by make_impact_wave_inp.py. Impact stage'
            ' only.',
-           '** In-plane %g mm: set by ten elements per A0 wavelength at 100 kHz, which'
-           % (lx / nx * 1e3),
-           '** is the rule the validated wave models use, so one mesh serves both stages.',
+           '** In-plane %g mm at the edges: set by ten elements per A0 wavelength at'
+           % (mesh['far_size'] * 1e3),
+           '** 100 kHz, the rule the validated wave models use, so one mesh serves both',
+           '** stages. In-plane %g mm at the centre, where the ball contacts.'
+           % (mesh['centre_size'] * 1e3),
            '*Preprint, echo=NO, model=NO, history=NO, contact=NO',
            '*Node']
     for index, (x, y, z) in enumerate(nodes, start=1):
@@ -256,8 +318,9 @@ def emit(options):
     out.append('*Rigid Body, ref node=%d, elset=BALL' % ref_node)
 
     # The clamped frame: everything within a border of the coupon edge is held, which is
-    # the same idealisation the earlier impact route used.
-    border = max(1, int(round(0.01 / (lx / nx))))
+    # the same idealisation the earlier impact route used. The width is measured in
+    # far-field elements, because the edge spacing is the far-field size and not lx/nx.
+    border = max(1, int(round(0.01 / mesh['far_size'])))
     clamped = []
     for plane in range(mesh['n_planes']):
         for j in range(ny + 1):
@@ -467,13 +530,18 @@ def _is_number(text):
 def main():
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument('--nx', type=int, default=80, help='in-plane elements along x')
-    p.add_argument('--ny', type=int, default=80, help='in-plane elements along y')
+    p.add_argument('--nx', type=int, default=80, help='far-field in-plane elements along x')
+    p.add_argument('--ny', type=int, default=80, help='far-field in-plane elements along y')
     p.add_argument('--nz', type=int, default=8, help='elements through the thickness, '
                                                      'one per ply')
     p.add_argument('--lx', type=float, default=0.1, help='coupon length in m')
     p.add_argument('--ly', type=float, default=0.1, help='coupon width in m')
     p.add_argument('--thickness', type=float, default=2.0e-3, help='plate thickness in m')
+    p.add_argument('--centre-size', type=float, default=None,
+                   help='in-plane element size at the centre of the coupon, in m; omit '
+                        'for the uniform far-field mesh')
+    p.add_argument('--grade-ratio', type=float, default=1.1,
+                   help='size ratio between neighbouring in-plane elements when grading')
     p.add_argument('--drop-mm', type=float, default=160.0, help='drop height in mm, only '
                                                                 'used for the initial velocity')
     p.add_argument('--impact-us', type=float, default=300.0, help='impact step length in us')
@@ -486,9 +554,12 @@ def main():
     options.out.write_text(text, encoding='ascii')
 
     problems = self_check(text, info)
-    print('coupon %.0f x %.0f x %.0f mm, in-plane %.3f mm, %d plies of %.3f mm'
+    mesh = info['mesh']
+    print('coupon %.0f x %.0f x %.0f mm, %d plies of %.3f mm'
           % (options.lx * 1e3, options.ly * 1e3, options.thickness * 1e3,
-             options.lx / options.nx * 1e3, options.nz, info['dz'] * 1e3))
+             options.nz, info['dz'] * 1e3))
+    print('mesh %d x %d in-plane per ply, %.3f mm at the edge, %.3f mm at the centre'
+          % (mesh['nx'], mesh['ny'], mesh['far_size'] * 1e3, mesh['centre_size'] * 1e3))
     print('nodes %d (incl. ball %d), solid %d, rigid facets %d, %d interfaces'
           % (info['n_nodes'], info['n_ball_nodes'], info['n_ply'], info['n_ball'],
              info['n_interfaces']))
