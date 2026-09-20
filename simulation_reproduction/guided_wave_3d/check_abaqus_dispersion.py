@@ -54,6 +54,7 @@ def main():
         ('abaqus C3D8R 500x4x4 dp', HERE / 'abaqus_line500_c3d8r_dp_surface.npz'),
         ('abaqus C3D8 500x4x4', HERE / 'abaqus_line500_c3d8_surface.npz'),
         ('abaqus C3D8 1000x4x8', HERE / 'abaqus_line1000_c3d8_surface.npz'),
+        ('abaqus C3D8R 1000x4x8', HERE / 'abaqus_line1000_c3d8r_surface.npz'),
     ]
 
     rows = []

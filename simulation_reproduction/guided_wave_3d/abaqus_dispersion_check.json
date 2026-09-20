@@ -50,6 +50,15 @@
       "c_group_100k_m_s": 1991.9409286771804,
       "group_error_vs_analytic": 0.14117345519178245,
       "max_phase_error_in_band": 0.10594629591623382
+    },
+    {
+      "case": "abaqus C3D8R 1000x4x8",
+      "path": "abaqus_line1000_c3d8r_surface.npz",
+      "c_phase_100k_m_s": 1276.010285108362,
+      "phase_error_vs_analytic": 0.008114365322050407,
+      "c_group_100k_m_s": 1866.0088546928275,
+      "group_error_vs_analytic": 0.06902757078364032,
+      "max_phase_error_in_band": 0.013326994158516337
     }
   ]
 }

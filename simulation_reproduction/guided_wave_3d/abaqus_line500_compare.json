@@ -215,6 +215,30 @@
           "node": 42683
         },
         {
+          "peak_m": 3.6815545172051447e-10,
+          "peak_ratio_to_reference": 0.8244112534957606,
+          "rms_m": 1.2106535949207247e-10,
+          "rms_ratio_to_reference": 0.853876135070929,
+          "l2_relative_difference": 0.28229861733113176,
+          "best_lag_s": 3.450000000000001e-07,
+          "aligned_residual": 0.22577217420012638,
+          "case": "abaqus C3D8R",
+          "x_m": 0.18,
+          "node": 42403
+        },
+        {
+          "peak_m": 3.8465254666529017e-10,
+          "peak_ratio_to_reference": 0.888452100572669,
+          "rms_m": 1.1401995350758174e-10,
+          "rms_ratio_to_reference": 0.8641054268947791,
+          "l2_relative_difference": 0.4902606648641681,
+          "best_lag_s": 7.019999999999998e-07,
+          "aligned_residual": 0.2910760676899319,
+          "case": "abaqus C3D8R",
+          "x_m": 0.32,
+          "node": 42683
+        },
+        {
           "peak_m": 3.9973803278369057e-10,
           "peak_ratio_to_reference": 0.8951341916493167,
           "rms_m": 1.4468355508012643e-10,
@@ -255,6 +279,11 @@
           "speed_m_s": 1788.4517118037813,
           "residual": 0.4217358422503496
         },
+        "abaqus C3D8R": {
+          "delay_s": 7.872e-05,
+          "speed_m_s": 1778.4552845528456,
+          "residual": 0.20025833456667536
+        },
         "abaqus C3D8": {
           "delay_s": 7.847e-05,
           "speed_m_s": 1784.1213202497772,
@@ -279,6 +308,14 @@
       "hourglass_ratio_worst_sample": 0.0,
       "etotal_variation_after_burst_j": 5.4129054347486563e-14,
       "etotal_variation_over_peak_allie": 0.0005105434378857716
+    },
+    "1000x4x8 abaqus C3D8R": {
+      "allae_max_j": 1.873452955269972e-11,
+      "allie_max_j": 1.0839199676704325e-10,
+      "hourglass_ratio_peak": 0.17284052431439276,
+      "hourglass_ratio_worst_sample": 0.3120295403621528,
+      "etotal_variation_after_burst_j": 1.335781969248346e-14,
+      "etotal_variation_over_peak_allie": 0.00012323621753358938
     },
     "1000x4x8 abaqus C3D8": {
       "allae_max_j": 0.0,
@@ -333,6 +370,50 @@
       "rms_ratio": 1.033986190901237,
       "l2_relative_difference": 0.33392331846912,
       "best_lag_s": -4.7500000000000053e-07
+    },
+    {
+      "comparison": "Abaqus C3D8R 500 vs 1000 (reduced-integration mesh sensitivity)",
+      "x_m": 0.18,
+      "case_a": "abaqus C3D8R",
+      "mesh_a": "500x4x4",
+      "case_b": "abaqus C3D8R",
+      "mesh_b": "1000x4x8",
+      "rms_ratio": 0.9645163651025915,
+      "l2_relative_difference": 0.20146683636131307,
+      "best_lag_s": 3.149999999999995e-07
+    },
+    {
+      "comparison": "Abaqus C3D8R 500 vs 1000 (reduced-integration mesh sensitivity)",
+      "x_m": 0.32,
+      "case_a": "abaqus C3D8R",
+      "mesh_a": "500x4x4",
+      "case_b": "abaqus C3D8R",
+      "mesh_b": "1000x4x8",
+      "rms_ratio": 0.960404358831726,
+      "l2_relative_difference": 0.36637252242411417,
+      "best_lag_s": 5.999999999999993e-07
+    },
+    {
+      "comparison": "Abaqus C3D8R vs C3D8, 1000 mesh",
+      "x_m": 0.18,
+      "case_a": "abaqus C3D8R",
+      "mesh_a": "1000x4x8",
+      "case_b": "abaqus C3D8",
+      "mesh_b": "1000x4x8",
+      "rms_ratio": 0.8366618376631556,
+      "l2_relative_difference": 0.3192640011874317,
+      "best_lag_s": 1.3499999999999955e-07
+    },
+    {
+      "comparison": "Abaqus C3D8R vs C3D8, 1000 mesh",
+      "x_m": 0.32,
+      "case_a": "abaqus C3D8R",
+      "mesh_a": "1000x4x8",
+      "case_b": "abaqus C3D8",
+      "mesh_b": "1000x4x8",
+      "rms_ratio": 0.9134541227516314,
+      "l2_relative_difference": 0.3715486951410439,
+      "best_lag_s": 4.149999999999994e-07
     },
     {
       "comparison": "Abaqus C3D8 vs in-house, 500 mesh",

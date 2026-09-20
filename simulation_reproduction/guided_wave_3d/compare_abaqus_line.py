@@ -62,7 +62,8 @@ MESHES = [
     dict(name='1000x4x8', nx=1000, ny=4, nz=8,
          reference=HERE / 'out_line_1000x4x8_abaqusdt' / 'wavefield.npz',
          own_dt=HERE / 'out_line_1000x4x8' / 'wavefield.npz',
-         abaqus={'abaqus C3D8': HERE / 'abaqus_line1000_c3d8_history.json'}),
+         abaqus={'abaqus C3D8R': HERE / 'abaqus_line1000_c3d8r_history.json',
+                 'abaqus C3D8': HERE / 'abaqus_line1000_c3d8_history.json'}),
 ]
 
 
@@ -234,6 +235,10 @@ def main():
          ('500x4x4', 'in-house (Abaqus dt)'), ('1000x4x8', 'in-house (Abaqus dt)')),
         ('Abaqus C3D8 500 vs 1000 (Abaqus mesh sensitivity)',
          ('500x4x4', 'abaqus C3D8'), ('1000x4x8', 'abaqus C3D8')),
+        ('Abaqus C3D8R 500 vs 1000 (reduced-integration mesh sensitivity)',
+         ('500x4x4', 'abaqus C3D8R'), ('1000x4x8', 'abaqus C3D8R')),
+        ('Abaqus C3D8R vs C3D8, 1000 mesh',
+         ('1000x4x8', 'abaqus C3D8R'), ('1000x4x8', 'abaqus C3D8')),
         ('Abaqus C3D8 vs in-house, 500 mesh',
          ('500x4x4', 'abaqus C3D8'), ('500x4x4', 'in-house (Abaqus dt)')),
         ('Abaqus C3D8 vs in-house, 1000 mesh',
