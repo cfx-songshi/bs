@@ -4,6 +4,12 @@ Both models are the same physical case: a 500 x 20 x 1.72 mm T300/F593 strip, lo
 normally on both faces at x = 100 mm, free everywhere else, run for 220 us. The
 Abaqus side comes from the odb through `abaqus/read_odb_receivers.py`.
 
+One entry covers the application mode rather than that strip: a single source node at
+the centre of a 500 x 500 mm plate (400x400x4), where the wavefront is circular and
+the side edges reflect too. Its windows start earlier and run to 140 us instead, since
+both receivers sit 70 mm from the source and the first edge echo is not due until
+about 188 us.
+
 Four things this comparison has to get right, each of which produced a wrong number on
 the first attempt:
 
@@ -51,6 +57,12 @@ RECV_X = (0.18, 0.32)
 # lasts 50 us, and the first free-end echo arrives near 160 us at the near receiver
 # and past the end of the record at the far one.
 WINDOWS = ((30e-6, 120e-6), (110e-6, 220e-6))
+# The point source sits at the plate centre, so both receivers are 70 mm from it
+# (0.18 and 0.32 are symmetric about 0.25) and the first edge echo, from the x = 0
+# edge, arrives at about 188 us. Neither receiver needs a different window, and the
+# window has to start earlier than the line case because the packet reaches a receiver
+# at 41 us rather than 47.
+POINT_WINDOWS = ((25e-6, 140e-6), (25e-6, 140e-6))
 DURATION = 220e-6
 
 MESHES = [
@@ -73,6 +85,16 @@ MESHES = [
          reference=HERE / 'out_line_ehgdt' / 'wavefield.npz',
          own_dt=None,
          abaqus={'abaqus C3D8R enhanced HG': HERE / 'abaqus_line500_c3d8r_ehg_history.json'}),
+    # The application mode: one source node at the plate centre, so the wavefront is
+    # circular instead of a plane strip and the side edges reflect as well. This is the
+    # mode that resembles a small PZT patch, and the only one that can show the
+    # in-plane anisotropy, which is why it carries its own windows. Abaqus settles at
+    # 1.19750e-07 s here, so the reference is the in-house run at --dt-scale 1.3287
+    # (1.19695e-07 s), matched to 0.05%.
+    dict(name='point 400x400x4', nx=400, ny=400, nz=4, windows=POINT_WINDOWS,
+         reference=HERE / 'out_point_400' / 'wavefield.npz',
+         own_dt=None,
+         abaqus={'abaqus C3D8': HERE / 'abaqus_point400_c3d8_history.json'}),
 ]
 
 
@@ -178,16 +200,17 @@ def energy_metrics(energy):
 
 def main():
     t_common = np.arange(0, DURATION + 1e-12, 1e-6)
-    report = {'model': {'length_m': LENGTH, 'receivers_x_m': list(RECV_X),
-                        'direct_arrival_windows_s': [list(w) for w in WINDOWS]},
+    report = {'model': {'length_m': LENGTH, 'receivers_x_m': list(RECV_X)},
               'meshes': [], 'energy': {}, 'mesh_convergence': []}
 
     common = {}
     for spec in MESHES:
         labels, t, cases, energies = mesh_cases(spec)
+        windows = spec.get('windows', WINDOWS)
         entry = dict(name=spec['name'], nx=spec['nx'], ny=spec['ny'], nz=spec['nz'],
                      dx_m=LENGTH / spec['nx'], receiver_nodes=labels,
                      elements_per_A0_wavelength=12.7e-3 / (LENGTH / spec['nx']),
+                     direct_arrival_windows_s=[list(w) for w in windows],
                      cases=[])
         print('=== %s (dx = %.3f mm, %.1f elements per A0 wavelength) ==='
               % (spec['name'], 1000 * LENGTH / spec['nx'],
@@ -197,7 +220,7 @@ def main():
         baseline = cases['in-house (Abaqus dt)']
         for name, series in cases.items():
             for n, lab in enumerate(labels):
-                e = window_metrics(t, series[lab], baseline[lab], *WINDOWS[n])
+                e = window_metrics(t, series[lab], baseline[lab], *windows[n])
                 e.update(case=name, x_m=RECV_X[n], node=lab)
                 entry['cases'].append(e)
                 print('%-22s %-8.2f %9.4f %9.4f %9.3f %9.3f %8.4f %8.3f' %
@@ -221,7 +244,7 @@ def main():
         # see check_abaqus_dispersion.py for the phase velocity, which is quotable.
         entry['direct_packet_group_delay'] = {}
         for name, series in cases.items():
-            d, resid = group_delay(t, series[labels[0]], series[labels[1]], WINDOWS[1])
+            d, resid = group_delay(t, series[labels[0]], series[labels[1]], windows[1])
             entry['direct_packet_group_delay'][name] = dict(
                 delay_s=d, speed_m_s=(RECV_X[1] - RECV_X[0]) / d, residual=resid)
             print('%-22s direct-packet delay %.3f us -> %.1f m/s (residual %.4f)'
@@ -240,6 +263,11 @@ def main():
     # disagreement or normal mesh-level movement.
     labels_by_mesh = {s['name']: [node_label(s['nx'], s['ny'], s['nz'], x) for x in RECV_X]
                       for s in MESHES}
+    # The window has to come from the mesh as well, not from the module-level default:
+    # the point-source entry needs its own, and using the strip's windows for it put the
+    # far receiver's window across the 188 us edge echo, which silently produced two
+    # different L2 values for two receivers that are symmetric about the source.
+    windows_by_mesh = {s['name']: s.get('windows', WINDOWS) for s in MESHES}
     pairs = [
         ('in-house 500 vs 1000 (in-house mesh sensitivity)',
          ('500x4x4', 'in-house (Abaqus dt)'), ('1000x4x8', 'in-house (Abaqus dt)')),
@@ -253,6 +281,8 @@ def main():
          ('500x4x4', 'abaqus C3D8'), ('500x4x4', 'in-house (Abaqus dt)')),
         ('Abaqus C3D8 vs in-house, 1000 mesh',
          ('1000x4x8', 'abaqus C3D8'), ('1000x4x8', 'in-house (Abaqus dt)')),
+        ('Abaqus C3D8 vs in-house, point 400x400x4',
+         ('point 400x400x4', 'abaqus C3D8'), ('point 400x400x4', 'in-house (Abaqus dt)')),
     ]
     print('=== convergence, all traces on a common 1 us grid ===')
     print('%-52s %-8s %9s %9s %8s' % ('comparison', 'recv[m]', 'rms a/b', 'L2', 'lag[us]'))
@@ -260,7 +290,8 @@ def main():
         for n, x in enumerate(RECV_X):
             ua = common[a_mesh][a_case][labels_by_mesh[a_mesh][n]]
             ub = common[b_mesh][b_case][labels_by_mesh[b_mesh][n]]
-            m = (t_common >= WINDOWS[n][0]) & (t_common <= WINDOWS[n][1])
+            m = (t_common >= windows_by_mesh[a_mesh][n][0]) & \
+                (t_common <= windows_by_mesh[a_mesh][n][1])
             lag, _ = best_lag(t_common[m], ub[m], ua[m], max_lag=5e-6)
             row = dict(comparison=label, x_m=x, case_a=a_case, mesh_a=a_mesh,
                        case_b=b_case, mesh_b=b_mesh,

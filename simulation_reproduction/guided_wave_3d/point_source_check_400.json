@@ -1,0 +1,169 @@
+{
+  "npz": "out_point_400\\wavefield.npz",
+  "frame_shape": [
+    109,
+    401,
+    401
+  ],
+  "spatial_step_m": 0.00125,
+  "frequency_band_khz": [
+    90.0,
+    110.0
+  ],
+  "directions": {
+    "along_fibre_x": {
+      "analytic_direction": "x",
+      "window_mm": [
+        0.16,
+        0.24
+      ],
+      "time_window_us": [
+        0.0,
+        0.00011999999999999999
+      ],
+      "A0_phase_FE_m_s": 1306.6437059203183,
+      "A0_phase_analytic_m_s": 1286.4490022810578,
+      "A0_phase_relative_error": 0.015698021144602257,
+      "A0_group_FE_m_s": 1995.3399703847017,
+      "A0_group_analytic_m_s": 1745.5198590668413,
+      "max_phase_error_in_band": 0.023287334722331368,
+      "band": [
+        {
+          "frequency_khz": 90.0,
+          "c_phase_FE_m_s": 1258.470670579117,
+          "c_phase_analytic_m_s": 1250.116345804332
+        },
+        {
+          "frequency_khz": 92.0,
+          "c_phase_FE_m_s": 1268.4017454033637,
+          "c_phase_analytic_m_s": 1257.801501197716
+        },
+        {
+          "frequency_khz": 94.0,
+          "c_phase_FE_m_s": 1278.5273061365997,
+          "c_phase_analytic_m_s": 1265.2694440158036
+        },
+        {
+          "frequency_khz": 96.0,
+          "c_phase_FE_m_s": 1288.3470778859582,
+          "c_phase_analytic_m_s": 1272.5279934556686
+        },
+        {
+          "frequency_khz": 98.0,
+          "c_phase_FE_m_s": 1297.3662322765545,
+          "c_phase_analytic_m_s": 1279.5856113916834
+        },
+        {
+          "frequency_khz": 100.0,
+          "c_phase_FE_m_s": 1306.6437059203183,
+          "c_phase_analytic_m_s": 1286.4490022810578
+        },
+        {
+          "frequency_khz": 102.0,
+          "c_phase_FE_m_s": 1315.6793998717928,
+          "c_phase_analytic_m_s": 1293.1256586803138
+        },
+        {
+          "frequency_khz": 104.0,
+          "c_phase_FE_m_s": 1323.984688594514,
+          "c_phase_analytic_m_s": 1299.622723029806
+        },
+        {
+          "frequency_khz": 106.0,
+          "c_phase_FE_m_s": 1332.597635910017,
+          "c_phase_analytic_m_s": 1305.9462709183829
+        },
+        {
+          "frequency_khz": 108.0,
+          "c_phase_FE_m_s": 1341.0258466750327,
+          "c_phase_analytic_m_s": 1312.1027909258903
+        },
+        {
+          "frequency_khz": 110.0,
+          "c_phase_FE_m_s": 1348.7934472211884,
+          "c_phase_analytic_m_s": 1318.0984474777879
+        }
+      ]
+    },
+    "across_fibre_y": {
+      "analytic_direction": "y",
+      "window_mm": [
+        0.16,
+        0.24
+      ],
+      "time_window_us": [
+        0.0,
+        0.00019999999999999998
+      ],
+      "A0_phase_FE_m_s": 797.4247474996502,
+      "A0_phase_analytic_m_s": 751.6561218522174,
+      "A0_phase_relative_error": 0.06089037834834697,
+      "A0_group_FE_m_s": 1391.1638550994894,
+      "A0_group_analytic_m_s": 1237.7852180412406,
+      "max_phase_error_in_band": 0.064090180378103,
+      "band": [
+        {
+          "frequency_khz": 90.0,
+          "c_phase_FE_m_s": 761.9527918628064,
+          "c_phase_analytic_m_s": 720.8454634755024
+        },
+        {
+          "frequency_khz": 92.0,
+          "c_phase_FE_m_s": 769.1507051700927,
+          "c_phase_analytic_m_s": 727.2237558682164
+        },
+        {
+          "frequency_khz": 94.0,
+          "c_phase_FE_m_s": 776.487269645493,
+          "c_phase_analytic_m_s": 733.4908438166005
+        },
+        {
+          "frequency_khz": 96.0,
+          "c_phase_FE_m_s": 783.6862450834968,
+          "c_phase_analytic_m_s": 739.6498234433807
+        },
+        {
+          "frequency_khz": 98.0,
+          "c_phase_FE_m_s": 790.4781390924973,
+          "c_phase_analytic_m_s": 745.7036072276279
+        },
+        {
+          "frequency_khz": 100.0,
+          "c_phase_FE_m_s": 797.4247474996502,
+          "c_phase_analytic_m_s": 751.6561218522174
+        },
+        {
+          "frequency_khz": 102.0,
+          "c_phase_FE_m_s": 804.2538161699007,
+          "c_phase_analytic_m_s": 757.5098625382245
+        },
+        {
+          "frequency_khz": 104.0,
+          "c_phase_FE_m_s": 810.7007435200601,
+          "c_phase_analytic_m_s": 763.2676456664631
+        },
+        {
+          "frequency_khz": 106.0,
+          "c_phase_FE_m_s": 817.3144530275159,
+          "c_phase_analytic_m_s": 768.932714099348
+        },
+        {
+          "frequency_khz": 108.0,
+          "c_phase_FE_m_s": 823.8281645964349,
+          "c_phase_analytic_m_s": 774.5072939434796
+        },
+        {
+          "frequency_khz": 110.0,
+          "c_phase_FE_m_s": 829.9835156017451,
+          "c_phase_analytic_m_s": 779.9935859823715
+        }
+      ]
+    }
+  },
+  "anisotropy_ratio": {
+    "FE": 1.6385793267858062,
+    "analytic": 1.7114860970080485,
+    "relative_error": 0.04259851736435081,
+    "note": "ratio of along-fibre to across-fibre A0 phase velocity at 100 kHz"
+  }
+}

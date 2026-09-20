@@ -173,11 +173,23 @@ def build(nx, ny, nz, lx, ly, thickness, C, rho, damage=None, batch=20000):
     for s in range(0, nelem, batch):
         e = min(nelem, s + batch)
         d = dof[s:e]
-        rows.append(np.repeat(d, 24, axis=1).ravel())
-        cols.append(np.tile(d, (1, 24)).ravel())
+        # int32: the largest index is 3 * nnode, nowhere near 2**31 even for a full
+        # 400x400x4 plate, and at that size the two index arrays are 3 GB each in int64.
+        rows.append(np.repeat(d, 24, axis=1).ravel().astype(np.int32))
+        cols.append(np.tile(d, (1, 24)).ravel().astype(np.int32))
         vals.append(np.tile(ke.ravel(), d.shape[0]))
-    K = coo_matrix((np.concatenate(vals), (np.concatenate(rows), np.concatenate(cols))),
-                   shape=(ndof, ndof)).tocsr()
+    # Concatenate one array at a time and drop its batch list straight away. Each
+    # element contributes a dense 24x24 block, so the triplets number 576 per element:
+    # 3.7e8 entries at 400x400x4, and holding the batches and their concatenations
+    # simultaneously needs about 20 GB, which does not fit this machine.
+    vals_c = np.concatenate(vals)
+    vals = None
+    rows_c = np.concatenate(rows)
+    rows = None
+    cols_c = np.concatenate(cols)
+    cols = None
+    K = coo_matrix((vals_c, (rows_c, cols_c)), shape=(ndof, ndof)).tocsr()
+    del vals_c, rows_c, cols_c
     mass = np.bincount(dof.ravel(), weights=np.full(dof.size, rho * dx * dy * dz / 8.0),
                        minlength=ndof)
     return dict(K=K, mass=mass, nnode=nnode, nelem=nelem, ndof=ndof, dx=dx, dy=dy, dz=dz,
