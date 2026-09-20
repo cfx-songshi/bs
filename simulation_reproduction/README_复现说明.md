@@ -16,7 +16,7 @@
 ## 一键运行（本机 PowerShell）
 
 ```powershell
-Set-Location 'D:\毕设知识库\simulation_reproduction'
+Set-Location 'D:\bs_thesis\simulation_reproduction'
 & 'C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe' run.py --experiment all --seeds 3 --mc 100000 --epochs 80
 ```
 

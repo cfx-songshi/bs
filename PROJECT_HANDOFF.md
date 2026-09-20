@@ -2,7 +2,7 @@
 
 ## 本机环境与仓库状态（2026-09-19）
 
-- 工作目录确认为`D:\毕设知识库`，它本身就是git仓库：克隆自`https://github.com/cfx-songshi/bs.git`，分支`main`。
+- 工作目录确认为`D:\bs_thesis`，它本身就是git仓库：克隆自`https://github.com/cfx-songshi/bs.git`，分支`main`。**该目录原名`D:\毕设知识库`，2026-09-20改为纯ASCII名**，起因是Abaqus/Explicit不能处理中文路径（详见下文Abaqus节）。文档内本机路径已同步更新；**仍出现的`E:\毕设知识库`是旧电脑失效路径，属历史记录，不随本机改名**。副作用：路径变ASCII后，Abaqus算例不必再复制到仓库外。
 - 本机`github.com:443`被阻断（连接被重置），但22端口可用，因此远端已改为SSH：`git@github.com:cfx-songshi/bs.git`。HTTPS推送在本机不可用，不要改回去。
 - 本机新装工具链：Git 2.55.0.windows.3（`C:\Program Files\Git\cmd\git.exe`）、Python 3.13.15（`C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe`）、pip 26.2.1。新装的PATH只对新开终端生效。
 - 另装了开源有限元**CalculiX 2.23**：`D:\CalculiX\calculix_2.23_4win`（绿色包）。**只有`ccx_static.exe`能跑**，动态版与i4版均以`0xC0000135`（缺DLL）退出。已用悬臂梁网格收敛到Euler–Bernoulli解析值验证（82.62/81.70/81.38 Hz vs 81.54）。**它没有显式动力学**，不能替代Abaqus/Explicit跑导波，详见`guided_wave_3d/calculix/README.md`。
@@ -22,14 +22,14 @@
 
 **工具链**：Python 3.13.15 + 六个锁定依赖（site-packages）；Git 2.55（远端走 SSH，443 被阻断）；CalculiX 2.23（`D:\CalculiX`，无显式动力学）。
 
-**未完成**：①**Abaqus 未安装**（需学校或个人提供许可证与介质），其 `.inp` 已生成并通过静态自检但**从未提交求解**；②导波仍无 PZT/胶层/机电耦合，输出是机械位移**不是电压**；③两条线均**未与实物实验对照**（无实测验证集）；④`.inp` → CalculiX 的转换未做；⑤群速度验证精度不足（导波，见下文各节）。
+**未完成**：①Abaqus 侧**已跑通语法检查**（2026-09-20，见下文），但**尚未跑有物理意义的算例**（`--nx 400`）、也**未与自研 `solve_uvg_3d.py` 对照**；②导波仍无 PZT/胶层/机电耦合，输出是机械位移**不是电压**；③两条线均**未与实物实验对照**（无实测验证集）；④`.inp` → CalculiX 的转换未做；⑤群速度验证精度不足（导波，见下文各节）。
 
-**同步方式**：本机 `D:\毕设知识库` 自身是仓库，`git status` 干净即与远端一致；**最新提交以远端为准**（`git log -1 origin/main`），不要依赖本文档写的提交号。历史各轮细节见下方按时间排列的"后续更新"节。
+**同步方式**：本机 `D:\bs_thesis` 自身是仓库，`git status` 干净即与远端一致；**最新提交以远端为准**（`git log -1 origin/main`），不要依赖本文档写的提交号。历史各轮细节见下方按时间排列的"后续更新"节。
 
 ## 后续更新：实物碳板落球路线（2026-09-15）
 
 - 用户已明确先做P2“落球＋周边框架夹持”冲击实验，板为500×400×2 mm、商家密度1650 kg/m³、标称内部0/90交叉对称铺层及双面3K织物，传感器PZT-5A、15×15 mm、厚度未定。不要回到要求用户先选择冲击方式。
-- 已确认本机项目迁至`D:/毕设知识库`；当前任务权限无法写入该目录，本次工作在独立可写副本中准备。原论文在本机微信接收文件中，已核对P2 PDF p15–18及P3 p9–10；原论文不上传。
+- 已确认本机项目迁至`D:/bs_thesis`；当前任务权限无法写入该目录，本次工作在独立可写副本中准备。原论文在本机微信接收文件中，已核对P2 PDF p15–18及P3 p9–10；原论文不上传。
 - 新增`simulation_reproduction/impact_v1`。NumPy实现完整板面Kirchhoff薄板Rayleigh–Ritz离散＋质量归一化模态＋落球单边Hertz代理接触＋速度Verlet。不是3D有限元；未使用人工波包。代码、说明、指标及离线HTML可复算。
 - 实物未知项保留在`specimen.json`；实际临时参数放在`simulation_config.json`。20 mm夹持宽度、50/50等效刚度混合、接触参数均为明确标注的假设。单层刚度外部替代来源Li 2012；实际织物和完整层序未知。
 - 8 mm钨钢球、160 mm落高的数值参考工况，按P2密度推算质量3.9676 g，能量6.2276 mJ。不是已执行实验或已验证无损工况。
@@ -119,19 +119,19 @@
 
 | 项目 | 路径/地址 |
 |---|---|
-| 用户实际项目根目录 | `D:/毕设知识库` |
-| 实验代码与本地结果 | `D:/毕设知识库/simulation_reproduction` |
-| 新版导波 | `D:/毕设知识库/simulation_reproduction/guided_wave_v2` |
-| 落球冲击 | `D:/毕设知识库/simulation_reproduction/impact_v1` |
-| 落球冲击三维模型 | `D:/毕设知识库/simulation_reproduction/impact_3d_v1` |
-| 冲击参数化研究结果 | `D:/毕设知识库/simulation_reproduction/study_final` |
-| 完整对比报告 | `D:/毕设知识库/simulation_reproduction/comparison/论文与仿真逐项对比分析.html` |
+| 用户实际项目根目录 | `D:/bs_thesis` |
+| 实验代码与本地结果 | `D:/bs_thesis/simulation_reproduction` |
+| 新版导波 | `D:/bs_thesis/simulation_reproduction/guided_wave_v2` |
+| 落球冲击 | `D:/bs_thesis/simulation_reproduction/impact_v1` |
+| 落球冲击三维模型 | `D:/bs_thesis/simulation_reproduction/impact_3d_v1` |
+| 冲击参数化研究结果 | `D:/bs_thesis/simulation_reproduction/study_final` |
+| 完整对比报告 | `D:/bs_thesis/simulation_reproduction/comparison/论文与仿真逐项对比分析.html` |
 | GitHub | `https://github.com/cfx-songshi/bs`，分支`main`，远端地址`git@github.com:cfx-songshi/bs.git`（SSH）。最新提交以远端为准，用`git log -1 origin/main`核对，不要依赖本文档写的提交号 |
 | 本机Python | `C:/Users/29795/AppData/Local/Programs/Python/Python313/python.exe`（3.13.15） |
 | 本机Git | `C:/Program Files/Git/cmd/git.exe`（2.55.0.windows.3） |
 | 已安装依赖 | 上面这个Python的site-packages；本机没有`vendor`目录 |
 
-项目根目录**自身就是git仓库**，`.git`位于`D:/毕设知识库/.git`，不再存在"代码目录与git副本是两份文件"的问题；改动后直接在本目录`git add`/`commit`/`push`即可。开始新会话仍应先`git status`核对实际状态。
+项目根目录**自身就是git仓库**，`.git`位于`D:/bs_thesis/.git`，不再存在"代码目录与git副本是两份文件"的问题；改动后直接在本目录`git add`/`commit`/`push`即可。开始新会话仍应先`git status`核对实际状态。
 
 六个依赖已按`requirements-lock.txt`精确安装，版本逐项一致：NumPy 2.5.3、SciPy 1.18.1、Matplotlib 3.11.2、PyWavelets 1.10.0、scikit-learn 1.9.1、PyTorch 2.14.0（CPU构建）。代码仍包含旧电脑的绝对路径引用，尚未做完整跨电脑可移植化。
 
@@ -192,7 +192,7 @@
 
 ```powershell
 $py = 'C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe'
-Set-Location 'D:\毕设知识库\simulation_reproduction\guided_wave_v2'
+Set-Location 'D:\bs_thesis\simulation_reproduction\guided_wave_v2'
 & $py solve.py 1000 8 healthy
 & $py solve.py 1000 8 damage
 & $py solve.py 2000 16 healthy
@@ -208,7 +208,7 @@ Start-Process '.\打开仿真.html'
 落球冲击（当前主线）：
 
 ```powershell
-Set-Location 'D:\毕设知识库\simulation_reproduction\impact_v1'
+Set-Location 'D:\bs_thesis\simulation_reproduction\impact_v1'
 & $py solve_impact.py --order 22 --out results/my_run
 & $py run_study.py --out study_final_new
 & $py build_impact_report.py --study study_final_new
@@ -217,7 +217,7 @@ Set-Location 'D:\毕设知识库\simulation_reproduction\impact_v1'
 旧包与对比分析（本机没有`vendor`目录，依赖装在该Python的site-packages中，故传入一个不存在的vendor路径）：
 
 ```powershell
-Set-Location 'D:\毕设知识库\simulation_reproduction'
+Set-Location 'D:\bs_thesis\simulation_reproduction'
 & $py run.py --experiment all --seeds 3 --mc 100000 --epochs 80
 & $py ae_ablation.py
 & $py prepare_plan.py --vendor './no-vendor' --papers '..'
@@ -245,4 +245,4 @@ Set-Location '.\comparison'
 
 ## 8. 可直接复制给新对话的提示词
 
-> 请先完整阅读 D:\毕设知识库\PROJECT_HANDOFF.md，再阅读 D:\毕设知识库\simulation_reproduction\comparison\论文与仿真逐项对比分析.md，并核对 D:\毕设知识库 的git状态与 https://github.com/cfx-songshi/bs 的最新代码。项目原主线是PZT主动导波损伤散射，2026-09-15已按用户决定转为先做P2“落球＋周边框架夹持”实物碳板冲击，并已有impact_v1机械基准：所有材料参数需有出处，论文缺项可联网寻找暂代值并明确标注。已有二维真实有限元、完整差异审计和落球冲击求解，不要从零用人工波包代替物理仿真。先简要确认已完成工作、已知错误及尚未验证的部分，然后根据我本次提出的下一步继续；不要把报告完成当成实验复现已验证，也不要未经核对覆盖旧结果。
+> 请先完整阅读 D:\bs_thesis\PROJECT_HANDOFF.md，再阅读 D:\bs_thesis\simulation_reproduction\comparison\论文与仿真逐项对比分析.md，并核对 D:\bs_thesis 的git状态与 https://github.com/cfx-songshi/bs 的最新代码。项目原主线是PZT主动导波损伤散射，2026-09-15已按用户决定转为先做P2“落球＋周边框架夹持”实物碳板冲击，并已有impact_v1机械基准：所有材料参数需有出处，论文缺项可联网寻找暂代值并明确标注。已有二维真实有限元、完整差异审计和落球冲击求解，不要从零用人工波包代替物理仿真。先简要确认已完成工作、已知错误及尚未验证的部分，然后根据我本次提出的下一步继续；不要把报告完成当成实验复现已验证，也不要未经核对覆盖旧结果。

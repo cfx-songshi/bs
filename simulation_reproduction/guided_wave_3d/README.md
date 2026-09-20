@@ -112,17 +112,17 @@ Abaqus JOB ugw_small COMPLETED
 
 ### 两条必须知道的实际约束
 
-**1. 算例必须放在纯 ASCII 路径下。** 第一次在仓库内（`D:\毕设知识库\...`）提交时预处理成功，但显式求解器在 `Begin Abaqus/Explicit Analysis` 之后立刻崩溃：
+**1. 路径必须是纯 ASCII（该约束现已满足）。** 该 deck 第一次提交时仓库路径还是 `D:\毕设知识库`，预处理成功，但显式求解器在 `Begin Abaqus/Explicit Analysis` 之后立刻崩溃：
 
 ```
 UnicodeEncodeError: 'charmap' codec can't encode characters in position 15-19
 ```
 
-位置 15-19 正是路径里的中文字符。**pre.exe 能处理中文路径，explicit.exe 不能** —— 所以"预处理通过"不能当作"路径没问题"。因为仓库路径本身含中文，**Abaqus 算例不能在仓库内运行**，须复制到 ASCII 目录再提交：
+位置 15-19 正是路径里的中文字符。**pre.exe 能处理中文路径，explicit.exe 不能** —— 所以"预处理通过"不能当作"路径没问题"。**仓库路径已因此改为纯 ASCII 的 `D:\bs_thesis`，现在可以直接在仓库内运行**（本条记录保留，因为把算例放进任何中文目录都会以同样方式失败）。改名前的成功运行是在 `D:\abaqus_runs\small` 下做的：
 
 ```powershell
 $r = 'D:\abaqus_runs\small'; New-Item -ItemType Directory -Force -Path $r | Out-Null
-Copy-Item 'D:\毕设知识库\simulation_reproduction\guided_wave_3d\abaqus\ugw_small.inp' $r
+Copy-Item 'D:\bs_thesis\simulation_reproduction\guided_wave_3d\abaqus\ugw_small.inp' $r
 Set-Location $r
 & 'D:\Abaqus\Commands\abaqus.bat' job=ugw_small input=ugw_small.inp cpus=2 interactive
 ```

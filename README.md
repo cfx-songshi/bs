@@ -40,11 +40,11 @@ Abaqus 侧的状态：输入由 [make_abaqus_inp.py](simulation_reproduction/gui
 
 ## 本机运行
 
-本机项目位于 `D:\毕设知识库`，根目录自身就是git仓库（远端 `https://github.com/cfx-songshi/bs`，分支 `main`）。依赖已按 `requirements-lock.txt` 装进 Python 3.13.15 的 site-packages，本机没有 `simulation_reproduction/vendor` 目录。在 PowerShell 中执行：
+本机项目位于 `D:\bs_thesis`，根目录自身就是git仓库（远端 `https://github.com/cfx-songshi/bs`，分支 `main`）。依赖已按 `requirements-lock.txt` 装进 Python 3.13.15 的 site-packages，本机没有 `simulation_reproduction/vendor` 目录。在 PowerShell 中执行：
 
 ```powershell
 $py = 'C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe'
-Set-Location 'D:\毕设知识库\simulation_reproduction\guided_wave_v2'
+Set-Location 'D:\bs_thesis\simulation_reproduction\guided_wave_v2'
 & $py solve.py 1000 8 healthy
 & $py solve.py 1000 8 damage
 & $py solve.py 2000 16 healthy
@@ -60,17 +60,17 @@ Start-Process '.\打开仿真.html'
 落球冲击（P2 路线）：
 
 ```powershell
-Set-Location 'D:\毕设知识库\simulation_reproduction\impact_v1'
+Set-Location 'D:\bs_thesis\simulation_reproduction\impact_v1'
 & $py solve_impact.py --order 22 --out results/my_run
 ```
 
 三维导波（当前主线，各脚本的复算命令见对应 README）：
 
 ```powershell
-Set-Location 'D:\毕设知识库\simulation_reproduction\guided_wave_v2'
+Set-Location 'D:\bs_thesis\simulation_reproduction\guided_wave_v2'
 & $py dispersion.py --self-test          # 解析参考先自检
 & $py dispersion.py                      # 频散曲线
-Set-Location 'D:\毕设知识库\simulation_reproduction\guided_wave_3d'
+Set-Location 'D:\bs_thesis\simulation_reproduction\guided_wave_3d'
 & $py solve_uvg_3d.py --mode line --nx 500 --ny 4 --nz 4 --lx 0.5 --ly 0.02 --out out_line
 & $py check_3d_dispersion.py
 ```
