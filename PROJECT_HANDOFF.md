@@ -111,7 +111,7 @@
 - 已据此修订`comparison/论文与仿真逐项对比分析.md`：第6节表格四行、增益段落、控制变量证据段落、第1节结论第3条，并在第6节末新增**「跨环境可复现性」**小节，写明引用首次审计数字须走`git show`、不能与本次结果并列同表。`README_对比报告.md`第5、7行也改为符合本机实际。
 - **本轮改动已提交并推送**（`78ffeb9`，提交信息`Repair the hard-coded comparison paths and record the cross-environment rerun`；已用`git log -1 origin/main`回读确认为同一提交，`main`与`origin/main`无分叉）。涉及7个文件：`comparison/audit.py`、`comparison/build_report.py`、`comparison/audit_metrics.json`、`comparison/transfer-comparison.png`、`comparison/论文与仿真逐项对比分析.md`、`comparison/README_对比报告.md`，以及本文件`PROJECT_HANDOFF.md`。本机新建的`results/`与`_damage.npz`已被`.gitignore`排除，不会进仓库。
 - **下一步（用户此前已指定）**：①用`--nx 400`跑有物理意义的Abaqus算例，与自研`solve_uvg_3d.py`对照，这将是第一个真正独立的第三方求解器验证；②从旧电脑拷回`inspection/`4张论文页图后，`build_report.py`才能生成HTML与两份清单。
-- 工具环境提醒：本轮会话的工作区根目录仍指向已改名的`d:\毕设知识库`，**编辑工具一律返回`Access denied: Edit operations are restricted to the working directory`**，所有文件改动只能走命令行Python脚本（`io.open(..., newline='')`读写、先`assert old in t`再替换）。新会话请确认工作区已指向`D:\bs_thesis`。另注意对比报告那个`.md`在磁盘上是CRLF、git里存LF（仓库配了autocrlf），脚本替换前须先探测换行符。
+- 工具环境提醒：**本会话工作区已指向`D:\bs_thesis`，编辑工具可正常写入仓库内文件**，上一轮那句"编辑工具一律`Access denied`、改动只能走命令行Python脚本"已不再适用（2026-09-20实测）。换行符仍要注意：仓库配`core.autocrlf=true`，但磁盘上各文件并不统一——`论文与仿真逐项对比分析.md`是CRLF，而`PROJECT_HANDOFF.md`、`README_对比报告.md`、`audit.py`是纯LF（同日实测）。任何脚本做文本替换前先探测换行符，不要照抄旧结论。
 
 以下为原交接记录，保留供追溯。
 
