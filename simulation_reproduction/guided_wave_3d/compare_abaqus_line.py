@@ -64,6 +64,15 @@ MESHES = [
          own_dt=HERE / 'out_line_1000x4x8' / 'wavefield.npz',
          abaqus={'abaqus C3D8R': HERE / 'abaqus_line1000_c3d8r_history.json',
                  'abaqus C3D8': HERE / 'abaqus_line1000_c3d8_history.json'}),
+    # Enhanced hourglass control halves the stable increment (9.554e-08 -> 4.798e-08 s
+    # on this strip), because it adds stiffness. Comparing it against the standard
+    # reference would therefore confound the element question with a two-fold change in
+    # time step, so this entry carries its own in-house run at that step. There is no
+    # own-dt row: the sensitivity it would show is the same two-fold step change.
+    dict(name='500x4x4 C3D8R enhanced HG', nx=500, ny=4, nz=4,
+         reference=HERE / 'out_line_ehgdt' / 'wavefield.npz',
+         own_dt=None,
+         abaqus={'abaqus C3D8R enhanced HG': HERE / 'abaqus_line500_c3d8r_ehg_history.json'}),
 ]
 
 
@@ -133,9 +142,10 @@ def mesh_cases(spec):
     ref = np.load(spec['reference'])
     t = ref['t']
     cases = {'in-house (Abaqus dt)': {lab: ref['signal'][:, n] for n, lab in enumerate(labels)}}
-    own = np.load(spec['own_dt'])
-    cases['in-house (own dt)'] = {lab: np.interp(t, own['t'], own['signal'][:, n])
-                                  for n, lab in enumerate(labels)}
+    if spec.get('own_dt') is not None:
+        own = np.load(spec['own_dt'])
+        cases['in-house (own dt)'] = {lab: np.interp(t, own['t'], own['signal'][:, n])
+                                      for n, lab in enumerate(labels)}
     energies = {}
     for name, path in spec['abaqus'].items():
         if not path.exists():

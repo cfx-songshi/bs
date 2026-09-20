@@ -72,7 +72,7 @@ def hann_table(n=101):
 
 def emit(path, nx, ny, nz, lx, ly, thickness=THICKNESS, x_src=0.1, mode='line',
          damage=None, field_interval=2e-6, history_interval=1e-6, duration=DURATION,
-         element='C3D8R'):
+         element='C3D8R', hourglass='default', hourglass_stiffness=None):
     dx, dy, dz = lx / nx, ly / ny, thickness / nz
     nnode = (nx + 1) * (ny + 1) * (nz + 1)
 
@@ -151,9 +151,23 @@ def emit(path, nx, ny, nz, lx, ly, thickness=THICKNESS, x_src=0.1, mode='line',
                 '*Orientation, name=Fibre',
                 '1., 0., 0., 0., 1., 0.',
                 '3, 0.',
-                '*Solid Section, elset=ALL, material=CFRP, orientation=Fibre',
+                '*Solid Section, elset=ALL, material=CFRP, orientation=Fibre%s' %
+                (', controls=HG' if hourglass != 'default' else ''),
                 ',',
-                '*End Part',
+                '*End Part'])
+    if hourglass != 'default':
+        # *Section Controls is model data: it cannot sit inside the part, which is where
+        # it was first written, and the preprocessor rejects it as misplaced. The
+        # section inside the part may still reference it by name.
+        out.extend(['**',
+                    '** Hourglass control other than the default RELAX STIFFNESS, which',
+                    '** retained 17-26% of the internal energy in hourglass modes on this',
+                    '** problem (README 4b and the C3D8R experiment).',
+                    '*Section Controls, name=HG, hourglass=%s%s' %
+                    (hourglass.upper(),
+                     ', hourglass stiffness scale factor=%g' % hourglass_stiffness
+                     if hourglass == 'stiffness' and hourglass_stiffness is not None else '')])
+    out.extend([
                 '**',
                 '*Material, name=CFRP',
                 '*Density',
@@ -317,11 +331,23 @@ def main():
                         'in-house solver to within 3%%; see section 4b of README.md')
     p.add_argument('--damage', type=float, nargs=4, default=None,
                    metavar=('X0', 'X1', 'Y0', 'Y1'))
+    p.add_argument('--hourglass', choices=['default', 'enhanced', 'stiffness', 'combined'],
+                   default='default',
+                   help='hourglass control for reduced-integration elements, passed to '
+                        '*Section Controls. default omits the block and leaves Abaqus at '
+                        'RELAX STIFFNESS, which retained 17-26%% of the internal energy '
+                        'in hourglass modes on this problem (README 4b and the C3D8R '
+                        'experiment)')
+    p.add_argument('--hourglass-stiffness', type=float, default=None,
+                   metavar='SCALE',
+                   help='hourglass stiffness scale factor; only meaningful with '
+                        '--hourglass stiffness')
     p.add_argument('--out', type=Path, required=True)
     p.add_argument('--verify', action='store_true', default=True)
     a = p.parse_args()
     info = emit(a.out, a.nx, a.ny, a.nz, a.lx, a.ly if a.ly else a.lx,
                 x_src=a.x_src, mode=a.mode, element=a.element,
+                hourglass=a.hourglass, hourglass_stiffness=a.hourglass_stiffness,
                 damage=tuple(a.damage) if a.damage else None)
     print(json.dumps(info, indent=2))
     if a.verify:

@@ -34,10 +34,10 @@ Two limits worth knowing
 * The range is fixed per odb, from that odb's own extremes, not shared across odbs.
   C3D8R's extremes are wider than C3D8's because its hourglass content contributes to
   them, so the same colour in the two PNG sets is not the same displacement.
-* animationAutoLimits=OFF was rejected along with the accepted switches at the time of
-  writing, so the legend may still rescale during playback. If it does, use Contour
-  Options -> Limits in the GUI. Not a correctness problem for the frames, which are
-  written with the limits applied.
+* animationAutoLimits holds a symbolic constant (ALL_FRAMES here), not a switch, and
+  the script sets it explicitly. It was found by reading the attribute back after ON and
+  OFF were both rejected, so if playback ever rescales the legend on another release,
+  that read-back is the first thing to do.
 
 A contour plot cannot show the difference between real deformation and hourglass
 content -- that is what ALLAE/ALLIE in the odb history output is for (README 4b and the
@@ -109,19 +109,20 @@ def try_fixed_limits(vp, lo, hi):
     Setting minValue and maxValue without them is accepted and even stored -- reading
     them back returns the values -- but the plot still rescales to whatever frame is
     displayed, so the same colour means a different displacement on every frame.
-    animationAutoLimits is in the first attempt so the legend also holds still during
-    playback. These names were read off the object (ContourOptions has no getValues()
-    here, and the "specify"-style spellings other releases use are rejected outright),
-    which is why the caller logs the accepted keywords.
+
+    animationAutoLimits is not a switch: it holds a symbolic constant, ALL_FRAMES on
+    this release, which is what keeps the legend from being recomputed during playback.
+    Asking for ON or OFF is rejected outright, which is how the constant was found --
+    the value was read back, not guessed. It is set explicitly here rather than relied
+    on as a default, and the second attempt drops it so a release that renames the
+    constant still gets the frame-by-frame legend fixed.
     """
-    attempts = (
-        dict(minValue=lo, maxValue=hi, minAutoCompute=OFF, maxAutoCompute=OFF,
-             animationAutoLimits=OFF),
-        dict(minValue=lo, maxValue=hi, minAutoCompute=OFF, maxAutoCompute=OFF),
-    )
+    opts = vp.odbDisplay.contourOptions
+    fixed = dict(minValue=lo, maxValue=hi, minAutoCompute=OFF, maxAutoCompute=OFF)
+    attempts = [dict(fixed, animationAutoLimits=ALL_FRAMES), fixed]
     for kwargs in attempts:
         try:
-            vp.odbDisplay.contourOptions.setValues(**kwargs)
+            opts.setValues(**kwargs)
             return kwargs
         except Exception:
             continue
@@ -138,7 +139,7 @@ def contour_report(vp):
         opts = vp.odbDisplay.contourOptions
         vals = {}
         for k in ('minValue', 'maxValue', 'minAutoCompute', 'maxAutoCompute',
-                  'numIntervals', 'intervalType', 'contourType'):
+                  'animationAutoLimits', 'numIntervals', 'intervalType', 'contourType'):
             try:
                 vals[k] = getattr(opts, k)
             except Exception:
