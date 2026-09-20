@@ -383,6 +383,10 @@ def emit(options):
     for ply in range(nz):
         out.append('*Elset, elset=LAYER%d, generate' % (ply + 1))
         out.append('%d, %d, 1' % (ply * per_ply + 1, (ply + 1) * per_ply))
+    # The plate's impact face, named so that the contact domain can be assembled from
+    # surfaces rather than from everything exterior. See *Contact Inclusions below.
+    out.append('*Surface, type=ELEMENT, name=TOP')
+    out.append('LAYER%d, S2' % nz)
 
     # A disbonded interface is split into an inner patch and the bonded area around it,
     # because the two need different interactions. The patch is a circle about the damage
@@ -422,6 +426,8 @@ def emit(options):
     if not wave_only:
         out.append('*Elset, elset=BALL, generate')
         out.append('%d, %d, 1' % (n_ply_elements + 1, n_ply_elements + n_ball))
+        out.append('*Surface, type=ELEMENT, name=BALLFACETS')
+        out.append('BALL')
         # R3D3 and R3D4 are rigid facets: they only become a rigid body, with this
         # reference node as its single point of control, through *RIGID BODY.
         out.append('*Rigid Body, ref node=%d, elset=BALL' % ref_node)
@@ -541,7 +547,28 @@ def emit(options):
     out.append('*Friction')
     out.append('%g,' % FRICTION)
     out.append('*Contact, op=NEW')
-    out.append('*Contact Inclusions, ALL EXTERIOR')
+    if options.contact_scope == 'all':
+        out.append('*Contact Inclusions, ALL EXTERIOR')
+    else:
+        # Everything exterior is the wrong domain for this model. The ply interfaces are
+        # duplicated node planes, so at the plate's perimeter every interface leaves two
+        # coincident edge strips facing each other, and the general contact search sees them
+        # as touching. The search is directional, so those contacts are the only mechanism
+        # in an otherwise symmetric elastic model that can break its symmetry, and the
+        # mirror pair check showed the field going asymmetric by up to 48 per cent near the
+        # clamped edge as the wave decayed. Naming the pairs the contact is actually meant
+        # to carry removes all of it: the interfaces, and for the impact the ball on the
+        # top face. A side effect is that the ball stops contacting its own facets.
+        out.append('*Contact Inclusions')
+        for interface in range(nz - 1):
+            number = interface + 1
+            if number in inplane_inner:
+                out.append('IFACE%d_IN_LOWER, IFACE%d_IN_UPPER' % (number, number))
+                out.append('IFACE%d_OUT_LOWER, IFACE%d_OUT_UPPER' % (number, number))
+            else:
+                out.append('IFACE%d_LOWER, IFACE%d_UPPER' % (number, number))
+        if not wave_only:
+            out.append('TOP, BALLFACETS')
     out.append('** The blanket friction assignment comes first and the interface pairs')
     out.append('** after it, because a later assignment takes precedence over an earlier')
     out.append('** one for the same pair.')
@@ -758,6 +785,11 @@ def main():
     p.add_argument('--disbond-interfaces', default='',
                    help='comma separated interface numbers to disbond, counting from the '
                         'bottom of the plate')
+    p.add_argument('--contact-scope', choices=('all', 'interfaces'), default='all',
+                   help='"all" takes every exterior face into the general contact domain, '
+                        'which brings in the coincident edge strips the duplicated ply '
+                        'interfaces leave at the plate perimeter; "interfaces" names only '
+                        'the pairs the contact is meant to carry')
     p.add_argument('--field-frames', type=int, default=50)
     p.add_argument('--wave-frames', type=int, default=25)
     p.add_argument('--history-interval', type=float, default=5e-7)
