@@ -11,15 +11,20 @@ What the model contains
   the same rule the validated wave models use, so the two stages can share one mesh.
 * One solid element per ply through the thickness, so the ply boundaries, and therefore
   the cohesive interfaces, sit where the real ones do.
-* Zero-thickness cohesive elements at each ply boundary, nodes duplicated so the two
-  faces are separate. This is the only built-in mechanism that lets a solid-element
-  model carry damage that changes its response: the general stress criteria flag failure
-  on solids but never move the stiffness (see check_damage_degradation.py).
+* The interface is contact-based cohesive behaviour, not cohesive elements. The nodes at
+  each ply boundary are duplicated, so the two faces are separate and coincident, and a
+  general-contact assignment gives that one pair the cohesive interaction. This is the
+  only mechanism found that lets a solid-element model carry damage which changes its
+  response: the general stress criteria flag failure on solids but never move the
+  stiffness (see check_damage_degradation.py), and cohesive *elements* were ruled out by
+  measurement because they take their mass from the constitutive thickness and collapse
+  the stable increment (see check_surface_cohesive.py).
 * A rigid ball, faceted, driven by an initial velocity, with a point mass on its
   reference node equal to the real ball so that the impact energy is the real energy.
 * General contact, all exterior, with friction. General contact is used rather than a
-  named pair because the ply faces at an interface are shared with the cohesive elements
-  and are therefore interior, so nothing unintended enters the contact.
+  named pair because it is the documented route for surface-based cohesive behaviour in
+  Explicit, and because every ply face at an interface is its own free surface once the
+  nodes are duplicated, so all of them are exterior and all of them are contact faces.
 
 Two things are deliberately crude at this stage and are reported rather than hidden
 ----------------------------------------------------------------------------------------
@@ -53,7 +58,6 @@ G_PLY_AXIAL = 100.0       # penalty for the index's stiffness, not used for dama
 IFACE_STRENGTH = '30e6, 30e6, 30e6'
 IFACE_ENERGY = '1.0e3, 1.0e3, 1.0e3'
 IFACE_POWER = 2.0
-RHO_IFACE = 1650.0
 
 BALL_RADIUS = 4.0e-3
 BALL_RHO = 14800.0
@@ -107,12 +111,14 @@ def sphere(centre, radius, n_lat, n_lon):
     return nodes, faces
 
 
-def build(nx, ny, nz, lx, ly, thickness, drop_mm, interface_thickness):
+def build(nx, ny, nz, lx, ly, thickness):
     """Nodes, elements and the sets the deck needs.
 
-    Node planes: with zero-thickness interfaces every ply boundary carries two coincident
-    planes, the top of one ply and the bottom of the next, so there are two planes per
-    ply and the ply and interface elements share nodes as they must.
+    Node planes: every ply boundary carries two coincident planes, the top of one ply and
+    the bottom of the next, so there are two planes per ply. They are what makes the
+    interface a pair of separate faces, which is what contact-based cohesive behaviour
+    needs; the ply elements share nodes with their own plane only, so the stack is joined
+    by the contact at the interface and by nothing else.
     """
     dz = thickness / nz
     n_planes = 2 * nz
@@ -121,13 +127,8 @@ def build(nx, ny, nz, lx, ly, thickness, drop_mm, interface_thickness):
         return 1 + i + (nx + 1) * (j + (ny + 1) * plane)
 
     def zed(plane):
-        if interface_thickness == 0.0:
-            return (plane // 2) * dz + (plane % 2) * dz * (plane % 2)
-        # With a finite interface thickness the top plane of each ply is raised by half
-        # of it and the next ply's bottom plane by another half, so the interface has
-        # that thickness while the ply thickness stays dz.
-        ply = plane // 2
-        return ply * dz + (interface_thickness if plane % 2 else 0.0)
+        # planes 0 and 1 are both at the bottom/top of ply 1, and so on
+        return ((plane + 1) // 2) * dz
 
     nodes = []
     for plane in range(n_planes):
@@ -147,30 +148,20 @@ def build(nx, ny, nz, lx, ly, thickness, drop_mm, interface_thickness):
                                      nid(i + 1, j + 1, top), nid(i, j + 1, top)))
                 ply_elset.append(len(ply_elements))
 
-    coh_elements, coh_per_interface = [], []
-    for interface in range(nz - 1):
-        bottom, top = 2 * interface + 1, 2 * interface + 2
-        ids = []
-        for j in range(ny):
-            for i in range(nx):
-                coh_elements.append((nid(i, j, bottom), nid(i + 1, j, bottom),
-                                     nid(i + 1, j + 1, bottom), nid(i, j + 1, bottom),
-                                     nid(i, j, top), nid(i + 1, j, top),
-                                     nid(i + 1, j + 1, top), nid(i, j + 1, top)))
-                ids.append(len(ply_elements) + len(coh_elements))
-        coh_per_interface.append(ids)
-
-    return dict(nodes=nodes, ply_elements=ply_elements, ply_elset=ply_elset,
-                coh_elements=coh_elements, coh_per_interface=coh_per_interface,
-                nid=nid, dz=dz, n_planes=n_planes)
+    # No interface elements. The interface is a contact pair carrying cohesive behaviour,
+    # which needs the two faces to be separate, and that is what the duplicated node
+    # planes above provide. Cohesive elements were tried first and ruled out by
+    # measurement: they take their mass from the constitutive thickness and they collapse
+    # the stable increment (see check_surface_cohesive.py).
+    return dict(nodes=nodes, ply_elements=ply_elements, nid=nid, dz=dz,
+                n_planes=n_planes)
 
 
 def emit(options):
     nx, ny, nz = options.nx, options.ny, options.nz
     lx, ly = options.lx, options.ly
     thickness = options.thickness
-    mesh = build(nx, ny, nz, lx, ly, thickness, options.drop_mm,
-                 options.interface_thickness)
+    mesh = build(nx, ny, nz, lx, ly, thickness)
     nodes = mesh['nodes']
     dt = mesh['dz']
 
@@ -185,9 +176,10 @@ def emit(options):
     ref_node = ball_node_offset + len(ball_nodes) + 1
 
     out = ['*Heading',
-           '** Ball-drop impact on a %g x %g x %g mm coupon, %d plies, cohesive between'
+           '** Ball-drop impact on a %g x %g x %g mm coupon, %d plies, contact-based'
            % (lx * 1e3, ly * 1e3, thickness * 1e3, nz),
-           '** them, generated by make_impact_wave_inp.py. Impact stage only.',
+           '** cohesive between them, generated by make_impact_wave_inp.py. Impact stage'
+           ' only.',
            '** In-plane %g mm: set by ten elements per A0 wavelength at 100 kHz, which'
            % (lx / nx * 1e3),
            '** is the rule the validated wave models use, so one mesh serves both stages.',
@@ -205,33 +197,28 @@ def emit(options):
     for index, connectivity in enumerate(mesh['ply_elements'], start=1):
         out.append('%d, %s' % (index, ', '.join(str(n) for n in connectivity)))
 
-    out.append('** zero-thickness cohesive elements at each ply boundary')
-    out.append('*Element, type=COH3D8')
-    offset = len(mesh['ply_elements'])
-    for index, connectivity in enumerate(mesh['coh_elements'], start=1):
-        out.append('%d, %s' % (offset + index, ', '.join(str(n) for n in connectivity)))
-
     out.append('** rigid facets of the ball')
     out.append('*Element, type=R3D4')
     for index, connectivity in enumerate(ball_faces, start=1):
         if len(connectivity) == 3:
             continue
-        out.append('%d, %s' % (offset + len(mesh['coh_elements']) + index,
-                               ', '.join(str(ball_node_offset + n) for n in connectivity)))
+        out.append('%d, %s' % (len(mesh['ply_elements']) + index,
+                               ', '.join(str(ball_node_offset + 1 + n)
+                                         for n in connectivity)))
     out.append('*Element, type=R3D3')
     for index, connectivity in enumerate(ball_faces, start=1):
         if len(connectivity) != 3:
             continue
-        out.append('%d, %s' % (offset + len(mesh['coh_elements']) + index,
-                               ', '.join(str(ball_node_offset + n) for n in connectivity)))
+        out.append('%d, %s' % (len(mesh['ply_elements']) + index,
+                               ', '.join(str(ball_node_offset + 1 + n)
+                                         for n in connectivity)))
 
     # The ball's mass and inertia belong on its reference node, and *MASS takes an
     # element set, not a node set: asking for a node set gives "Unknown assembly set".
     # One-node MASS and ROTARYI elements carry the values.
     n_ply_elements = len(mesh['ply_elements'])
-    n_coh_elements = len(mesh['coh_elements'])
     n_ball = len(ball_faces)
-    mass_element = n_ply_elements + n_coh_elements + n_ball + 1
+    mass_element = n_ply_elements + n_ball + 1
     inertia_element = mass_element + 1
     out.append('*Element, type=MASS')
     out.append('%d, %d' % (mass_element, ref_node))
@@ -243,14 +230,19 @@ def emit(options):
     out.append('%d,' % inertia_element)
     out.append('*Elset, elset=PLIES, generate')
     out.append('1, %d, 1' % n_ply_elements)
-    out.append('*Elset, elset=INTERFACES, generate')
-    out.append('%d, %d, 1' % (n_ply_elements + 1, n_ply_elements + n_coh_elements))
-    for number, ids in enumerate(mesh['coh_per_interface'], start=1):
-        out.append('*Elset, elset=IFACE%d' % number)
-        out.append(_wrap(ids))
+    # One elset per ply so that each interface can be named as a pair of faces. The
+    # element numbering runs ply by ply, so a range is enough.
+    per_ply = nx * ny
+    for ply in range(nz):
+        out.append('*Elset, elset=LAYER%d, generate' % (ply + 1))
+        out.append('%d, %d, 1' % (ply * per_ply + 1, (ply + 1) * per_ply))
+    for interface in range(nz - 1):
+        out.append('*Surface, type=ELEMENT, name=IFACE%d_LOWER' % (interface + 1))
+        out.append('LAYER%d, S2' % (interface + 1))
+        out.append('*Surface, type=ELEMENT, name=IFACE%d_UPPER' % (interface + 1))
+        out.append('LAYER%d, S1' % (interface + 2))
     out.append('*Elset, elset=BALL, generate')
-    out.append('%d, %d, 1' % (n_ply_elements + n_coh_elements + 1,
-                              n_ply_elements + n_coh_elements + n_ball))
+    out.append('%d, %d, 1' % (n_ply_elements + 1, n_ply_elements + n_ball))
     # R3D3 and R3D4 are rigid facets: they only become a rigid body, with this reference
     # node as its single point of control, through *RIGID BODY.
     out.append('*Rigid Body, ref node=%d, elset=BALL' % ref_node)
@@ -280,9 +272,6 @@ def emit(options):
     out.append('*Solid Section, elset=PLIES, material=PLY, orientation=Fibre, '
                'controls=SC')
     out.append(',')
-    out.append('*Cohesive Section, elset=INTERFACES, material=IFACE, '
-               'response=TRACTION SEPARATION, controls=SC')
-    out.append('%.6g,' % options.cohesive_thickness)
 
     out.append('*Material, name=PLY')
     out.append('*Density')
@@ -297,12 +286,13 @@ def emit(options):
     out.append('*Damage Evolution, type=ENERGY')
     out.append(G_PLY)
 
-    out.append('*Material, name=IFACE')
-    out.append('*Density')
-    out.append('%.1f,' % RHO_IFACE)
-    out.append('*Elastic, type=TRACTION')
-    out.append('%.3g, %.3g, %.3g' % (options.cohesive_stiffness, options.cohesive_stiffness,
-                                     options.cohesive_stiffness))
+    out.append('** Interface: contact-based cohesive behaviour. There is no cohesive')
+    out.append('** element and therefore no cohesive material; the traction-separation')
+    out.append('** law, its initiation criterion and its evolution all live on the')
+    out.append('** surface interaction. Omitting the data line on *COHESIVE BEHAVIOR')
+    out.append('** means the default penalty stiffness is used, so none has to be invented.')
+    out.append('*Surface Interaction, name=DELAM')
+    out.append('*Cohesive Behavior')
     out.append('*Damage Initiation, criterion=QUADS')
     out.append(IFACE_STRENGTH)
     out.append('*Damage Evolution, type=ENERGY, mixed mode behavior=BK, power=%g'
@@ -318,15 +308,29 @@ def emit(options):
                                       2.0 / 5.0 * ball_mass * BALL_RADIUS ** 2,
                                       2.0 / 5.0 * ball_mass * BALL_RADIUS ** 2))
     out.append('*Initial Conditions, type=VELOCITY')
-    out.append('%d, 3, 3, %.6e' % (ref_node, -speed))
+    # Three fields, not four. Written as "node, dof, magnitude". Adding a second dof field
+    # in the hope of a "first dof, last dof" range, which is how *BOUNDARY reads the same
+    # shape of line, makes Abaqus read the magnitude from the third field and ignore the
+    # fourth: the ball was given 3 m/s, the dof number, whatever drop height was asked for,
+    # with no warning in the .dat. Both a deformable node and a rigid-body reference node
+    # in one test deck came out at the dof value, 1 for dof 1 and 3 for dof 3. The energy
+    # check in abaqus/read_odb_impact_summary.py is what caught it, and the field count is
+    # now checked below so it cannot come back silently.
+    out.append('%d, 3, %.6e' % (ref_node, -speed))
 
     out.append('*Surface Interaction, name=FRIC')
     out.append('*Friction')
     out.append('%g,' % FRICTION)
     out.append('*Contact, op=NEW')
     out.append('*Contact Inclusions, ALL EXTERIOR')
+    out.append('** The blanket friction assignment comes first and the interface pairs')
+    out.append('** after it, because a later assignment takes precedence over an earlier')
+    out.append('** one for the same pair.')
     out.append('*Contact Property Assignment')
     out.append(' ,  , FRIC')
+    for interface in range(nz - 1):
+        out.append('IFACE%d_UPPER, IFACE%d_LOWER, DELAM'
+                   % (interface + 1, interface + 1))
 
     out.append('*Step, name=IMPACT, nlgeom=NO')
     out.append('*Dynamic, Explicit')
@@ -341,7 +345,10 @@ def emit(options):
     out.append('*Element Output')
     out.append('S, SDEG')
     out.append('*Contact Output')
-    out.append('CSTRESS')
+    out.append('** CSDMG is the interface damage variable for contact-based cohesive')
+    out.append('** behaviour; it is to the surface what SDEG is to a cohesive element, and')
+    out.append('** it is the variable the interface damage area is read from.')
+    out.append('CSTRESS, CDISP, CSDMG')
     out.append('*Output, history, time interval=%.6g' % (options.history_interval))
     out.append('*Node Output, nset=BALLREF')
     out.append('V3')
@@ -354,8 +361,9 @@ def emit(options):
     return '\n'.join(out) + '\n', dict(mesh=mesh, ball_mass=ball_mass, speed=speed,
                                        energy=energy, ref_node=ref_node,
                                        n_nodes=len(nodes) + len(ball_nodes) + 1,
-                                       n_ply=n_ply_elements, n_coh=n_coh_elements,
-                                       n_ball=n_ball, n_extra=2, dz=dt)
+                                       n_ball_nodes=len(ball_nodes) + 1,
+                                       n_ply=n_ply_elements, n_ball=n_ball, n_extra=2,
+                                       n_interfaces=nz - 1, dz=dt)
 
 
 def _wrap(ids, per_line=16):
@@ -376,12 +384,15 @@ def self_check(text, info):
     problems = []
     defined = set()
     elements = []
+    rigid_nodes = set()
     keyword = None
+    keyword_line = ''
     for raw in text.splitlines():
         line = raw.strip()
         if not line or line.startswith('**'):
             continue
         if line.startswith('*'):
+            keyword_line = line.lower()
             keyword = line.split(',')[0].strip().lower()
             continue
         parts = [p.strip() for p in line.split(',')]
@@ -394,9 +405,22 @@ def self_check(text, info):
                 problems.append('node %d is defined twice' % label)
             defined.add(label)
         elif keyword == '*element':
-            elements.append(line)
+            elements.append((keyword_line, line))
+            if 'type=r3d' in keyword_line.replace(' ', ''):
+                for value in parts[1:]:
+                    if _is_number(value):
+                        rigid_nodes.add(int(value))
+        elif keyword == '*initial conditions':
+            # Three fields, and the third one is the value. Extra fields are ignored
+            # rather than rejected, so a four-field line runs happily with the wrong
+            # velocity; see the note in emit().
+            if len(parts) != 3:
+                problems.append('*Initial Conditions line has %d fields, expected 3: %s'
+                                % (len(parts), line[:60]))
+            elif not _is_number(parts[1]) or not _is_number(parts[2]):
+                problems.append('malformed *Initial Conditions line: %s' % line[:60])
 
-    for line in elements:
+    for keyword_line, line in elements:
         parts = [p.strip() for p in line.split(',')]
         if not parts or not _is_number(parts[0]):
             problems.append('malformed element line: %s' % line[:60])
@@ -406,12 +430,19 @@ def self_check(text, info):
                 problems.append('element %s refers to undefined node %s'
                                 % (parts[0], value))
                 break
+            # A deformable node that turns up in a rigid facet is pulled into the rigid
+            # body while any boundary condition on it stays: the packager only warns, so
+            # the model runs with a corner of the plate clamped and rigid at once.
+            if 'type=c3d' in keyword_line.replace(' ', '') and int(value) in rigid_nodes:
+                problems.append('node %s is shared between a solid element and a rigid '
+                                'facet' % value)
+                break
 
     n_defined = len(defined)
     if n_defined != info['n_nodes']:
         problems.append('defined %d nodes, expected %d' % (n_defined, info['n_nodes']))
     n_elements = len(elements)
-    expected = info['n_ply'] + info['n_coh'] + info['n_ball'] + info['n_extra']
+    expected = info['n_ply'] + info['n_ball'] + info['n_extra']
     if n_elements != expected:
         problems.append('defined %d elements, expected %d' % (n_elements, expected))
     return problems
@@ -438,18 +469,6 @@ def main():
     p.add_argument('--drop-mm', type=float, default=160.0, help='drop height in mm, only '
                                                                 'used for the initial velocity')
     p.add_argument('--impact-us', type=float, default=300.0, help='impact step length in us')
-    p.add_argument('--cohesive-stiffness', type=float, default=1.0e16,
-                   help='penalty stiffness of the cohesive law, Pa/m')
-    p.add_argument('--interface-thickness', type=float, default=0.0,
-                   help='geometric thickness given to the cohesive layer, m; zero means '
-                        'the two faces are coincident, which is the usual idealisation')
-    p.add_argument('--cohesive-thickness', type=float, default=1.0e-5,
-                   help='constitutive thickness of the cohesive section, m. This is not '
-                        'cosmetic: measured with a known initial velocity, a zero-thickness '
-                        'cohesive element takes its mass from this value rather than from '
-                        'the geometry, so the default of 1.0 m would give the interface '
-                        'layers a mass thousands of times the plate. 1e-5 m is also the '
-                        'physical thickness of a resin-rich ply interface')
     p.add_argument('--field-frames', type=int, default=50)
     p.add_argument('--history-interval', type=float, default=5e-7)
     p.add_argument('--out', type=Path, required=True)
@@ -462,20 +481,15 @@ def main():
     print('coupon %.0f x %.0f x %.0f mm, in-plane %.3f mm, %d plies of %.3f mm'
           % (options.lx * 1e3, options.ly * 1e3, options.thickness * 1e3,
              options.lx / options.nx * 1e3, options.nz, info['dz'] * 1e3))
-    print('nodes %d (incl. ball %d + rigid ref), solid %d, cohesive %d, rigid facets %d'
-          % (info['n_nodes'], BALL_N_LAT * BALL_N_LON, info['n_ply'], info['n_coh'],
-             info['n_ball']))
+    print('nodes %d (incl. ball %d), solid %d, rigid facets %d, %d interfaces'
+          % (info['n_nodes'], info['n_ball_nodes'], info['n_ply'], info['n_ball'],
+             info['n_interfaces']))
+    print('interfaces are contact pairs carrying cohesive behaviour, so there are no '
+          'interface elements and no interface mass')
     print('ball %.4f g, drop %.1f mm -> v %.4f m/s, energy %.5f J'
           % (info['ball_mass'] * 1e3, options.drop_mm, info['speed'], info['energy']))
-    plate_mass = options.lx * options.ly * options.thickness * RHO_PLY
-    iface_area = (options.lx / options.nx) * (options.ly / options.ny)
-    iface_mass = (info['n_coh'] * RHO_IFACE * iface_area
-                  * options.cohesive_thickness)
-    print('plate mass %.4f g; total cohesive mass %.4f g, which is %.2f%% of the plate'
-          % (plate_mass * 1e3, iface_mass * 1e3, 100 * iface_mass / plate_mass))
-    print('cohesive penalty %.3g Pa/m, constitutive thickness %g m, geometric %g m'
-          % (options.cohesive_stiffness, options.cohesive_thickness,
-             options.interface_thickness))
+    print('plate mass %.4f g' % (options.lx * options.ly * options.thickness * RHO_PLY
+                                 * 1e3))
     print('wrote %s (%.1f MB)' % (options.out, options.out.stat().st_size / 1e6))
     print('self check:', 'clean' if not problems else '; '.join(problems))
     return 0 if not problems else 1
