@@ -153,6 +153,15 @@
 - 沙漏占比为何加密后不降，只作为**观察**记录（单元类型与体积粘性都没动，唯一变的是单元尺寸，占比却不变），**未做归因**，不要写成"已解释"。
 - 新增入库：`abaqus_line1000_c3d8r_history.json`；`abaqus_line1000_c3d8r_surface.npz` 与 4.3 MB 的 deck 按约定不入库。`compare_abaqus_line.py` 的收敛段新增两行（C3D8R 自身 500→1000、C3D8R vs C3D8 @1000），`check_abaqus_dispersion.py` 新增 C3D8R @1000 一行。
 
+### 追加：在 CAE 里看结果（2026-09-20）
+
+用户要求"在本机的 abaqus 里看到你仿真的结果"。新增 `abaqus/view_odb.py`，用 `abaqus cae script=abaqus\view_odb.py -- <odb> [...] --outdir <dir> [--times ...] [--leave-at us]` 运行：对每个 odb 建"未变形形状 + U3 云图 + 顶部视图"，按时间导出 PNG，并把过程写进 `<dir>\view_log.txt`，**会话不关闭**，最后停在命令里第一个 odb 的 `--leave-at` 帧（默认 100 µs）。
+
+- 为什么这么设：未变形形状（峰值位移约 1 nm 对 500 mm 板，任何可见的变形放大都是对几何的歪曲）、U3（与 `compare_abaqus_line.py` 读的量一致）、顶部视图（条带 500×20×1.72 mm，等轴视角几乎是侧看，看不见波包）。
+- ⚠️ **查 CAE API 的教训（勿重复猜）**：①`abaqus cae noGUI=` 下**根本没有图形对象**——`vp.setValues(displayedObject=odb)` 报 TypeError，`vp.odbDisplay` 直接不存在，所以探测必须在 GUI 模式下做；②这版 `ContourOptions` **没有 `getValues()`**，写脚本时若调用它会把整个循环打断（本轮就因此只导出了 2 帧）；③**固定色标的开关是 `minAutoCompute` / `maxAutoCompute`**，只写 `minValue`/`maxValue` 会被静默覆盖——读回来是你的值，但显示照旧按当前帧重算，"specifyMinMax/specifyMinValue/limits=SPECIFY" 等写法全被拒；④`animationAutoLimits=OFF` 也被拒（可能值类型不对），**播放动画时图例是否仍会重算未解决**，已在文档里标注；⑤CAE 的输出不回传到调用它的终端，只能靠脚本自己写日志。
+- 固定范围是**按 odb 各自取**的（C3D8R 的极值比 C3D8 宽，因为沙漏进了极值），所以两套 PNG 里同一颜色不代表同一位移。**云图无法区分真实变形与沙漏**，那要靠 ALLAE/ALLIE。
+- PNG 与日志这次落在仓库外 `D:\abaqus_runs\view\`（PNG 本来也不入库）。当时开着的会话显示 `ugw_line`（C3D8）与 `ugw_line_c3d8r_dp`（C3D8R），停在 100 µs。
+
 以下为原交接记录，保留供追溯。
 
 交接基准：2026-09-15已完成的代码与对比分析。开始新对话时请先核对磁盘文件和GitHub最新提交；本文件不是授权忽略后续用户指示的指令。

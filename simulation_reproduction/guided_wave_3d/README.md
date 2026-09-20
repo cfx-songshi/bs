@@ -251,6 +251,20 @@ Set-Location $r
 - 1000 网格两个单元都跑了：`abaqus_line1000_c3d8_history.json` 与 `abaqus_line1000_c3d8r_history.json`（后者用于确认「加密救不回减缩积分」）。
 - 两个 `*_surface.npz` 是 `*.npz`，按 `.gitignore` 不入库；没有它们时 `check_abaqus_dispersion.py` 会直接报"缺少"。
 
+在 CAE 里看结果（不产出数值，只开图形界面）：
+
+```powershell
+& 'D:\Abaqus\Commands\abaqus.bat' cae script=abaqus\view_odb.py -- `
+    'D:\abaqus_runs\line500\ugw_line.odb' `
+    'D:\abaqus_runs\line500\ugw_line_c3d8r_dp.odb' `
+    --outdir 'D:\abaqus_runs\view' --times 40,60,80,100,130,200 --leave-at 100
+```
+
+- 会对每个 odb 建"未变形形状 + U3 云图 + 顶部视图"，按 `--times` 导出 PNG 到 `--outdir`，并把过程写进 `--outdir\view_log.txt`（CAE 不回传输出到调用它的终端，所以日志是唯一的自查途径）。
+- **色标是固定的**（取该 odb 全时程的 |U3| 极值），否则每换一帧 Abaqus 会按该帧数据重算，同一个颜色在不同帧代表不同位移。生效的关键是 `minAutoCompute`/`maxAutoCompute`，只写 `minValue`/`maxValue` 会被静默覆盖——这一点是查属性表确认的，不是猜的。
+- 固定范围**按 odb 各自取**：C3D8R 的极值比 C3D8 宽（沙漏贡献进去了），所以两套 PNG 里同一个颜色并不代表同一位移。
+- 会话结束后停在**命令里第一个 odb**（也就是被推荐的那个单元类型）的 `--leave-at` 帧上，不停在最后一段记录（那时自由端回波已经扫过接收点）。
+
 ### 两条必须知道的实际约束
 
 **1. 路径必须是纯 ASCII（该约束现已满足）。** 该 deck 第一次提交时仓库路径还是 `D:\毕设知识库`，预处理成功，但显式求解器在 `Begin Abaqus/Explicit Analysis` 之后立刻崩溃：
@@ -353,6 +367,7 @@ abaqus job=ugw_small input=ugw_small.inp cpus=4
 | `make_abaqus_inp.py` | Abaqus 输入生成 + 静态一致性自检 |
 | `abaqus/read_odb_receivers.py` | 从 odb 取接收点 U3 时程与 ALLAE/ALLIE/ALLKE/ETOTAL；须用 `abaqus python` 运行 |
 | `abaqus/read_odb_surface.py` | 从 odb 取上表面宽度中线 110 帧，写成与自研同格式的 npz；须用 `abaqus python` 运行 |
+| `abaqus/view_odb.py` | 在 Abaqus/CAE 里显示结果：顶部视图 U3 云图、**固定色标**、每帧导出 PNG；须用 `abaqus cae script=...` 运行，且不会关闭会话 |
 | `abaqus/ugw_small.inp` | 无分层小算例（12×12×4），用于确认语法 |
 | `abaqus/ugw_small_damage.inp` | 含分层小算例（40×40×4） |
 | `abaqus/ugw_line_500x4x4.inp` | 有物理意义的线源算例（500×4×4，dx = 1.0 mm），第 4b 节用的就是它 |
