@@ -190,6 +190,23 @@
 - 未入库：点源 deck（88 MB）与 odb（10.5 GB）留在仓库外 `D:\abaqus_runs\point400`；`point_source_check_400.json`、`abaqus_point400_c3d8_history.json`、`abaqus_line500_compare.json` 入库。
 - **点源侧仍未做网格收敛**（4c 只是单档对照），已在 README 第 6 节如实标注。
 
+### 新立项：落球冲击 → 损伤 → 导波检测（2026-09-20）
+
+用户需求：在 Abaqus 里做三维仿真，覆盖 ①板材落球冲击 ②PZT 导波检测落球带来的影响 ③数次落球的损伤累积检测。这是把 `impact_3d_v1`（冲击）与 `guided_wave_3d`（导波，已在 Abaqus 实跑验证过）两条线接成一条链。
+
+**三个已确认口径**：①铺层最终按实物标称 0/90，先用已验证的 `[0]8` 打通链路；②损伤先做**层内 Hashin + 能量型演化**（暂不做层间分层）；③导波先**机械激励 + 应变读数**，之后再接真压电。
+
+**本轮关键发现（能力实测，两个测试 deck 已提交到 `impact_wave_3d/abaqus/` 作为依据）**：
+
+- `C3D8` 实体 + Hashin → 预处理器直接拒绝：`HASHIN DAMAGE INITIATION CRITERIA CANNOT BE USED WITH ELEMENT 1`。Abaqus 的 Hashin 只支持平面应力类单元（壳、连续壳、膜）；实体单元要用 LaRC05，而 **LaRC05 只有 Abaqus/Standard 有**，Explicit 没有。
+- `SC8R` 连续壳 + Hashin + 能量演化 → `THE ANALYSIS HAS COMPLETED SUCCESSFULLY`。
+- 本机**无 Fortran 编译器、无 Intel oneAPI、无 Visual Studio**（实测 `ifort/ifx/cl` 都不在，没有安装目录）→ "实体 + 自编三维 Hashin（VUMAT）"这条路暂不可走，需先装几 GB 工具链。文献里做三维 Hashin 的主流做法正是 VUMAT（见 Zhou/Wen/Wang 2019，低速度冲击 + 3D Hashin + cohesive + VUMAT）。
+- ⇒ **损伤环节走连续壳 SC8R**（8 节点三维单元、三维网格三维几何，铺层本构为平面应力，薄板标准假设）。**代价：导波侧原先在实体 C3D8 上做的频散验证（`check_3d_dispersion.py`）必须对 SC8R 重做**，否则不能继续引用那套判据。
+
+**参数缺口（原有，非本轮引入）**：强度与断裂能在仓库里根本没有——`impact_v1/specimen.json` 写着 `"strength_and_damage_parameters": null`，`impact_v1/缺失数据与获取方法.md` 也注明"损伤研究前必须"。已找到可引用替代表：断裂能 Gft 91.6 / Gfc 79.9 / Gmt 0.22 / Gmc 1.1 kJ/m²（Shi–Swait–Soutis 一系，被多篇低速度冲击 Abaqus 模型沿用），强度另有 T300 系测量值可取。**将按项目惯例标注为替代值、不与实物混淆。**
+
+**下一步**：写"落球 + 导波"一体化生成器（小试件 100×100×2 mm、`[0]8`、SC8R 八层、刚球解析面 + 接触 + 初速、Hashin + 能量演化、冲击步 + 导波步），**先只跑冲击步**，确认损伤确实出现，并与 `impact_3d_v1` 的无损锚点（峰值接触力 32 N、冲击点位移 313 µm）核量级。⚠️ P2 原工况 6.23 mJ 很可能不足以产生损伤（粗估冲击点弯曲应力仅几十 MPa，低于基体横向强度），**可致损能量要用模型实测确定，并作为"数值致损工况"单独记录**。
+
 以下为原交接记录，保留供追溯。
 
 交接基准：2026-09-15已完成的代码与对比分析。开始新对话时请先核对磁盘文件和GitHub最新提交；本文件不是授权忽略后续用户指示的指令。
