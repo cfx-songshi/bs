@@ -1,0 +1,23 @@
+# Abaqus artefacts. Submitting a job writes a dozen files next to the deck (odb, mdl,
+# stt, env, ...) and every one of them is reproducible from the .inp, which is committed.
+# The capability tests and the degradation check write into abaqus/runs/.
+abaqus/runs/
+*.odb
+*.odb_f
+*.mdl
+*.prt
+*.res
+*.stt
+*.com
+*.msg
+*.sta
+*.sim
+*.lck
+*.abq
+*.pac
+*.sel
+*.dat
+*.log
+*.ipm
+*.023
+*.1
