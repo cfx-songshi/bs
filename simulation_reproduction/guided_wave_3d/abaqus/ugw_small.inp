@@ -1430,7 +1430,16 @@
 *Elset, elset=ALL, generate
 1, 576, 1
 **
-*Solid Section, elset=ALL, material=CFRP
+** Anisotropic properties REQUIRE an explicit local orientation in
+** Abaqus, even when the material axes coincide with the global ones.
+** Omitting it is a hard error, not a default: the first successful
+** submission attempt failed with Anisotropic material properties
+** without a local orientation system. Local 1 runs along the fibres
+** (global x), local 2 along y, local 3 through the thickness.
+*Orientation, name=Fibre
+1., 0., 0., 0., 1., 0.
+3, 0.
+*Solid Section, elset=ALL, material=CFRP, orientation=Fibre
 ,
 *End Part
 **
@@ -1488,32 +1497,32 @@
 ** in-house model. No boundary conditions: a free plate is admissible
 ** in explicit dynamics and it is what the reference model solves.
 *Cload, amplitude=HANN
-679, 3, 4.1666667e-02
-692, 3, 4.1666667e-02
-705, 3, 4.1666667e-02
-718, 3, 4.1666667e-02
-731, 3, 4.1666667e-02
-744, 3, 4.1666667e-02
-757, 3, 4.1666667e-02
-770, 3, 4.1666667e-02
-783, 3, 4.1666667e-02
-796, 3, 4.1666667e-02
-809, 3, 4.1666667e-02
-822, 3, 4.1666667e-02
-835, 3, 4.1666667e-02
-3, 3, 4.1666667e-02
-16, 3, 4.1666667e-02
-29, 3, 4.1666667e-02
-42, 3, 4.1666667e-02
-55, 3, 4.1666667e-02
-68, 3, 4.1666667e-02
-81, 3, 4.1666667e-02
-94, 3, 4.1666667e-02
-107, 3, 4.1666667e-02
-120, 3, 4.1666667e-02
-133, 3, 4.1666667e-02
-146, 3, 4.1666667e-02
-159, 3, 4.1666667e-02
+PLATE-1.679, 3, 4.1666667e-02
+PLATE-1.692, 3, 4.1666667e-02
+PLATE-1.705, 3, 4.1666667e-02
+PLATE-1.718, 3, 4.1666667e-02
+PLATE-1.731, 3, 4.1666667e-02
+PLATE-1.744, 3, 4.1666667e-02
+PLATE-1.757, 3, 4.1666667e-02
+PLATE-1.770, 3, 4.1666667e-02
+PLATE-1.783, 3, 4.1666667e-02
+PLATE-1.796, 3, 4.1666667e-02
+PLATE-1.809, 3, 4.1666667e-02
+PLATE-1.822, 3, 4.1666667e-02
+PLATE-1.835, 3, 4.1666667e-02
+PLATE-1.3, 3, 4.1666667e-02
+PLATE-1.16, 3, 4.1666667e-02
+PLATE-1.29, 3, 4.1666667e-02
+PLATE-1.42, 3, 4.1666667e-02
+PLATE-1.55, 3, 4.1666667e-02
+PLATE-1.68, 3, 4.1666667e-02
+PLATE-1.81, 3, 4.1666667e-02
+PLATE-1.94, 3, 4.1666667e-02
+PLATE-1.107, 3, 4.1666667e-02
+PLATE-1.120, 3, 4.1666667e-02
+PLATE-1.133, 3, 4.1666667e-02
+PLATE-1.146, 3, 4.1666667e-02
+PLATE-1.159, 3, 4.1666667e-02
 **
 *Output, field, number interval=110
 *Node Output

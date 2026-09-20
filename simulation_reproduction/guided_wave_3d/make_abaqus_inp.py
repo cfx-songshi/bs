@@ -129,7 +129,16 @@ def emit(path, nx, ny, nz, lx, ly, thickness=THICKNESS, x_src=0.1, mode='line',
     out.append('*Elset, elset=ALL, generate')
     out.append('1, %d, 1' % eid)
     out.extend(['**',
-                '*Solid Section, elset=ALL, material=CFRP',
+                '** Anisotropic properties REQUIRE an explicit local orientation in',
+                '** Abaqus, even when the material axes coincide with the global ones.',
+                '** Omitting it is a hard error, not a default: the first successful',
+                '** submission attempt failed with Anisotropic material properties',
+                '** without a local orientation system. Local 1 runs along the fibres',
+                '** (global x), local 2 along y, local 3 through the thickness.',
+                '*Orientation, name=Fibre',
+                '1., 0., 0., 0., 1., 0.',
+                '3, 0.',
+                '*Solid Section, elset=ALL, material=CFRP, orientation=Fibre',
                 ',',
                 '*End Part',
                 '**',
@@ -174,8 +183,12 @@ def emit(path, nx, ny, nz, lx, ly, thickness=THICKNESS, x_src=0.1, mode='line',
                 '** in explicit dynamics and it is what the reference model solves.',
                 '*Cload, amplitude=HANN'])
     amp = 1.0 * dy if mode == 'line' else 1.0
-    out.extend('%d, 3, %.7e' % (n, amp) for n in top_src)
-    out.extend('%d, 3, %.7e' % (n, amp) for n in bot_src)
+    # Loads live in the assembly, where every node reference must carry its instance
+    # prefix. A bare id is read as an assembly-level node and rejected -- the first
+    # submission of this deck failed with Unknown assembly id 679 for exactly that
+    # reason, so the prefix is not cosmetic.
+    out.extend('PLATE-1.%d, 3, %.7e' % (n, amp) for n in top_src)
+    out.extend('PLATE-1.%d, 3, %.7e' % (n, amp) for n in bot_src)
     out.extend(['**',
                 '*Output, field, number interval=%d' % max(1, int(round(duration / field_interval))),
                 '*Node Output',
@@ -235,8 +248,19 @@ def verify_inp(path):
         elif section == '*nset':
             refs.extend(int(p) for p in parts if p.lstrip('-').isdigit())
         elif section == '*cload':
-            if parts[0].lstrip('-').isdigit():
-                refs.append(int(parts[0]))
+            # Loads sit in the assembly, where a node must be named instance.node. A
+            # bare integer there is not a formatting nicety: Abaqus reads it as an
+            # assembly-level node and rejects the deck with Unknown assembly id, which
+            # is how the first real submission of this generator failed. The original
+            # check missed it because it only asked whether the id existed in the part.
+            ref = parts[0]
+            if '.' not in ref:
+                problems.append('*Cload node %r has no instance prefix; assembly-level '
+                                'loads must be written instance.node' % ref)
+                continue
+            node = ref.split('.', 1)[1]
+            if node.lstrip('-').isdigit():
+                refs.append(int(node))
 
     if not nodes:
         problems.append('no *Node block found')

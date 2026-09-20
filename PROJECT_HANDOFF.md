@@ -89,6 +89,16 @@
 - **另一条易误读点（与上面的bug不同）**：`dispersion.py`的横向约束用平面应变(`ε_yy=0`)，自由板严格说应为平面应力(`σ_yy=0`)。对[0]8实测影响很小，但换铺层须重估。
 - 注意`--frames 2d`的`--frame-stride`默认1；若降采样到2.5 mm，垂直纤维方向只剩3.6采样点/波长，相位拟合失效。
 
+## 后续更新：Abaqus 首次提交（2026-09-20）
+
+- 用户已在`D:\Abaqus`装好**Abaqus 2026**；**许可证由本机`ABAQUSLM`服务提供，不是远程license server**，因此之前担心的校园网/VPN问题不存在。命令入口`D:\Abaqus\Commands\abaqus.bat`。
+- **首次提交已完成并通过**：`abaqus job=ugw_small input=ugw_small.inp cpus=2 interactive` 返回`THE ANALYSIS HAS COMPLETED SUCCESSFULLY`，1404个增量、110帧输出、显式稳定步长1.60e-07 s、墙钟23秒。
+- ⚠️ **Abaqus算例必须放在纯ASCII路径下**。在仓库内（路径含中文）提交时预处理成功，但显式求解器在`Begin Abaqus/Explicit Analysis`之后崩溃：`UnicodeEncodeError: 'charmap' codec can't encode characters in position 15-19`，位置15-19正是路径中的中文。**pre.exe能处理中文路径、explicit.exe不能**，所以"预处理通过"不等于"路径没问题"。因仓库路径本身含中文，**Abaqus算例不能在仓库内运行**，须复制到如`D:\abaqus_runs\<case>\`（已实测成功）。
+- **首次提交暴露的两个真实错误（均已修；静态自检当时全绿却挡不住，这是"必须真跑一次"的理由）**：①`Unknown assembly id 679`——assembly层载荷用裸节点号，必须写`PLATE-1.679`；②`Anisotropic material properties without a local orientation system`——各向异性材料**必须**显式给局部坐标系，**即使材料轴与全局轴重合**；早先文档写的"不需要`*Orientation`"是错的，已改正并加`*Orientation, name=Fibre`。静态自检已补上第①条的检查规则（原先只验证节点存在，不查assembly层引用格式）。
+- 已跑通的`ugw_small.inp`是12×12×4=576单元、dx=41.7 mm，而100 kHz的A0波长12.7 mm，**每波长仅0.3单元、物理结果无意义**，它只用于语法检查。有物理意义的算例需dx≤1.27 mm（`--nx 400`）。
+- 运行目录放仓库外`D:\abaqus_runs\`；仓库内`abaqus/runs/`已加入`.gitignore`（一次求解会生成odb/mdl/stt/env等十余个产物，且`abaqus_v6.env`与机器相关）。
+- **下一步**：用`--nx 400`跑有物理意义的算例，提取接收点时程与自研`solve_uvg_3d.py`对照（这将是第一个真正独立的第三方求解器验证）。
+
 以下为原交接记录，保留供追溯。
 
 交接基准：2026-09-15已完成的代码与对比分析。开始新对话时请先核对磁盘文件和GitHub最新提交；本文件不是授权忽略后续用户指示的指令。

@@ -7,7 +7,7 @@
 | 交付物 | 状态 |
 |---|---|
 | [solve_uvg_3d.py](solve_uvg_3d.py) 三维显式有限元 | **已运行并通过解析验证**（见第 3 节） |
-| [make_abaqus_inp.py](make_abaqus_inp.py) Abaqus 输入生成 | **已生成并通过静态一致性自检，但从未提交给 Abaqus 求解** |
+| [make_abaqus_inp.py](make_abaqus_inp.py) Abaqus 输入生成 | **已在 Abaqus 2026 上实跑通过**（`THE ANALYSIS HAS COMPLETED SUCCESSFULLY`，1404 增量 / 110 帧）；修掉两个真实错误，见第 4 节 |
 
 ## 1. 为什么必须做三维
 
@@ -98,33 +98,61 @@ x 方向恰好判别式为正，所以从未暴露；y 方向判别式为负，�
 
 **注意**：`--frames 2d` 的 `--frame-stride` 默认为 1（不降采样）。若降采样到 2.5 mm，垂直纤维方向只剩 3.6 个采样点/波长，相位拟合会失效 —— 这一条已写在代码注释里。
 
-## 4. Abaqus：已生成，但**没有运行过**
+## 4. Abaqus：已在 2026 上实跑通过
 
-⚠️ **本机没有安装 Abaqus**（PATH 与常见安装路径均已确认）。因此 `make_abaqus_inp.py` 生成的输入文件**从未提交给 Abaqus 求解**。关键字块与格式按 Abaqus 输入参考手册书写，模型只用了最常用的关键字，但请把第一次提交当作**语法检查**而不是已验证的计算。
+本机已安装 **Abaqus 2026**（`D:\Abaqus`；许可证由本机 `ABAQUSLM` 服务提供，不是远程 license server，因此不需要校园网或 VPN）。首次提交完成：
 
-能做的最强验证是**静态一致性自检**，已做且通过：解析生成的 `*Node`/`*Element`/`*Nset`/`*Cload` 块，检查节点引用越界、编号重复、必需关键字缺失。
+```
+Output Field Frame Number   110, of    110, at step time 2.200E-04
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+Abaqus JOB ugw_small COMPLETED
+```
 
-| 算例 | 节点 | 单元 | 节点引用 | 未定义引用 | 问题 |
-|---|---|---|---|---|---|
-| 无分层 12×12×4 | 845 | 576 | 4,636 | 0 | 无 |
-| 含分层 40×40×4 | 8,426 | 6,400 | 51,284 | 0 | 无 |
-| 点源 200×200×4 | 202,005 | 160,000 | 1,280,004 | 0 | 无 |
+1404 个时间增量、110 个输出帧、显式稳定步长 1.60e-07 s、墙钟 23 秒。
 
-**这个自检立刻抓出一个真 bug**：分层时副本节点编号从 `nnode` 起算，而 `.inp` 的编号是 1 基，于是副本覆盖了最后一个原始节点。已修（改成 `nnode + 1`）。
+### 两条必须知道的实际约束
 
-### 首次在 Abaqus 中提交时请先看这几项
+**1. 算例必须放在纯 ASCII 路径下。** 第一次在仓库内（`D:\毕设知识库\...`）提交时预处理成功，但显式求解器在 `Begin Abaqus/Explicit Analysis` 之后立刻崩溃：
 
-1. **`*Dynamic, Explicit` 的稳定步长**：没有设 mass scaling（刻意如此，见下），所以步长由最小单元（厚度方向 0.43 mm）决定，报数应约 1e-8 s 量级。若 Abaqus 报出的步长比这大很多，说明质量缩放被默认打开了，波速会随之失真。
-2. **沙漏能**：C3D8R 是减缩积分，必须看 ALLAE（人工应变能）相对 ALLIE 是否可忽略。若不可忽略，应加密网格或检查沙漏控制是否被关掉。
-3. **能量平衡**：ETOTAL 应在激励结束后保持常数（自由板、无阻尼）。这是与自研模型同一口径的检查。
-4. **与解析对表**：A0 相速度应为 1286 m/s @100 kHz、群速度 1745 m/s；S0 相速度约 9053 m/s。这是第 3 节已验证过的参照。
+```
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 15-19
+```
+
+位置 15-19 正是路径里的中文字符。**pre.exe 能处理中文路径，explicit.exe 不能** —— 所以"预处理通过"不能当作"路径没问题"。因为仓库路径本身含中文，**Abaqus 算例不能在仓库内运行**，须复制到 ASCII 目录再提交：
+
+```powershell
+$r = 'D:\abaqus_runs\small'; New-Item -ItemType Directory -Force -Path $r | Out-Null
+Copy-Item 'D:\毕设知识库\simulation_reproduction\guided_wave_3d\abaqus\ugw_small.inp' $r
+Set-Location $r
+& 'D:\Abaqus\Commands\abaqus.bat' job=ugw_small input=ugw_small.inp cpus=2 interactive
+```
+
+**2. 首次提交暴露的两个真实错误（均已修）。** 静态自检当时是全绿的，却挡不住它们 —— 这正是"必须真跑一次"的理由。
+
+| 错误 | 原因 | 修法 |
+|---|---|---|
+| `Unknown assembly id 679` | assembly 层的载荷用了裸节点号 | 改为 `PLATE-1.679`（instance 前缀） |
+| `Anisotropic material properties without a local orientation system` | 各向异性材料**必须**显式给出局部坐标系，即使与全局轴重合 | 加 `*Orientation, name=Fibre`，由 `*Solid Section` 引用 |
+
+第二条曾被本文档判断为"不需要"，是错的。第一条的检查规则已补进静态自检：它原先只验证节点存在，不检查 assembly 层的引用格式。
+
+### 这个算例只用于语法检查
+
+`ugw_small.inp` 是 12×12×4 = 576 单元、dx = 41.7 mm，而 100 kHz 的 A0 波长是 12.7 mm —— **每波长仅 0.3 个单元，物理结果无意义**。它的唯一作用是证明 deck 能被求解器接受。有物理意义的算例需要 dx ≤ 1.27 mm，即 `--nx 400`。
+
+### 提交大算例前的检查清单
+
+1. **稳定步长**：本例报 1.60e-07 s。未做质量缩放（刻意，见下），若 Abaqus 报出的步长远大于此，说明缩放被默认打开，波速会失真。
+2. **沙漏能**：C3D8R 是减缩积分，须看 ALLAE（人工应变能）相对 ALLIE 是否可忽略。
+3. **能量平衡**：激励结束后 ETOTAL 应保持常数（自由板、无阻尼）。这是与自研模型同一口径的检查。
+4. **与解析对表**：A0 相速度应为 1286 m/s @100 kHz、群速度 1745 m/s；S0 约 9053 m/s。这是第 3 节已验证过的参照。
 
 ### 建模选择及理由
 
 | 选择 | 理由 |
 |---|---|
 | `C3D8R` 减缩积分 | 全积分 `C3D8` 在弯曲下剪切锁定，而 A0 正是弯曲变形。减缩积分有沙漏风险，由 Abaqus 默认沙漏控制处理，**不要关闭** |
-| 不写 `*Orientation` | 单向铺层纤维沿全局 x，默认材料方向已与纤维一致。**若铺层旋转，必须补 `*Orientation`**，否则刚度会跟着网格而不是跟着纤维 |
+| 必须写 `*Orientation` | 各向异性材料在 Abaqus 中**必须**显式给出局部坐标系，**即使材料轴与全局轴重合** —— 省略它是硬错误，不是"自动取默认"。首次实际提交即因此失败（`Anisotropic material properties without a local orientation system`）。这里定义局部 1 轴沿纤维（全局 x）、局部 2 轴沿 y、局部 3 轴沿厚度。若铺层旋转，改这里而不是改网格 |
 | 不做质量缩放 | 自研模型也用自己的稳定步长，两者才可比；缩放会改变所要比较的波速 |
 | 无边界条件 | 自由板在显式动力学中可解，且参考模型同样是自由边界 |
 | 幅值表每 0.5 µs 一点 | 100 kHz 五周期，每周期 100 个采样点，足够复现 Hann 窗 |
