@@ -24,6 +24,11 @@ Hand calculations for a 1.25 x 1.25 mm footprint with two 0.25 mm layers:
   relative slip to full failure= 2 * GIIc / strength                 = 6.67e-5 m
 so the prescribed 1e-4 m covers initiation and complete failure of the interface.
 
+The 30 MPa and 1.0 kJ/m2 here are round numbers chosen so the hand calculation above is
+exact; they are not the generator's values. What is being checked is the mechanism, that
+contact-based cohesive behaviour degrades at all, so the magnitudes do not matter.
+make_impact_wave_inp.py uses a published CFRP set and cites it there.
+
 Run:  python check_surface_cohesive.py
 """
 import re

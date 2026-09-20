@@ -55,9 +55,17 @@ RHO_PLY = 1650.0
 G_PLY_AXIAL = 100.0       # penalty for the index's stiffness, not used for damage
 
 # Interface: cohesive traction-separation, quadratic stress initiation, B-K evolution.
-IFACE_STRENGTH = '30e6, 30e6, 30e6'
-IFACE_ENERGY = '1.0e3, 1.0e3, 1.0e3'
-IFACE_POWER = 2.0
+# Substitute values from a published CFRP cohesive-property set, not measurements of this
+# specimen: Zhu Guohua et al., "Multi-scale modeling and crashworthiness analysis of CFRP
+# thin-walled structures", Acta Materiae Compositae Sinica 40(6) 3626-3639 (2023),
+# DOI 10.13801/j.cnki.fhclxb.20220720.002, whose cohesive table gives an initiation stress
+# of 59.5 MPa, G_nC = 490 J/m2, G_sC = G_tC = 1060 J/m2 and a B-K exponent of 2.284.
+# The source gives one initiation stress, so the same value is used for all three
+# directions rather than inventing a normal-shear split. The previous values here, 30 MPa
+# and 1000 J/m2 in all three modes, were placeholders with no source at all.
+IFACE_STRENGTH = '59.5e6, 59.5e6, 59.5e6'
+IFACE_ENERGY = '490.0, 1060.0, 1060.0'
+IFACE_POWER = 2.284
 
 BALL_RADIUS = 4.0e-3
 BALL_RHO = 14800.0

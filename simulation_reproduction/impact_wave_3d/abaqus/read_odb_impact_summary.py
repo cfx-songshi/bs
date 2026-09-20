@@ -41,6 +41,13 @@ def option(name, default=None):
     return default
 
 
+def contact_field(frame, prefix):
+    for name in frame.fieldOutputs.keys():
+        if name.startswith(prefix):
+            return frame.fieldOutputs[name]
+    return None
+
+
 def status_report(sta_path):
     """Initial and mean stable increment, from the status file."""
     try:
@@ -112,47 +119,86 @@ def main():
         print('   ALLDMD peak / ALLIE peak: %.4f'
               % (damage / internal if internal else float('nan')))
 
-    print('\n3. interface damage')
-    damage_key = None
-    for name in last.fieldOutputs.keys():
-        if name.startswith('CSDMG'):
-            damage_key = name
-    if damage_key is None:
+    print('\n3. interfaces, by node height')
+    # CSDMG is written only for contact pairs that carry cohesive behaviour, so its
+    # presence is also the evidence that the interface interaction is engaged at all
+    # rather than silently overridden by the blanket friction assignment.
+    damage_field = contact_field(last, 'CSDMG')
+    pressure_field = contact_field(last, 'CPRESS')
+    if damage_field is None:
         print('   no CSDMG in the odb: is the cohesive interaction assigned?')
+    elif pressure_field is None:
+        print('   no CPRESS in the odb, so the interface stress cannot be read')
     else:
-        # CSDMG is written only for contact pairs that carry cohesive behaviour, so its
-        # presence is also the evidence that the interface interaction is engaged at all
-        # rather than silently overridden by the blanket friction assignment.
-        field = last.fieldOutputs[damage_key]
+        # The cohesive interface a node belongs to is its height, and so is the surface it
+        # sits on, so one table separates the ply interfaces from the ball and from the
+        # impact face. Heights with neither contact nor damage are left out, which drops
+        # the ball's facets once it has separated.
         heights = {}
-        instance = odb.rootAssembly.instances[field.values[0].instance.name]
+        instance = odb.rootAssembly.instances[damage_field.values[0].instance.name]
         for node in instance.nodes:
             heights[int(node.label)] = node.coordinates[2]
-        by_height = {}
-        for value in field.values:
-            if value.data <= 0.0:
+        rows = {}
+
+        def row_for(label):
+            z = heights.get(int(label))
+            if z is None:
+                return None
+            return rows.setdefault(round(z * 1e3, 4),
+                                   dict(damaged=0, damage=0.0, shear=0.0, shear_t=0.0,
+                                        open=0.0, pressure=0.0))
+
+        for value in damage_field.values:
+            row = row_for(value.nodeLabel)
+            if row is None:
                 continue
-            z = heights.get(int(value.nodeLabel))
-            by_height.setdefault(z, [0, 0.0])
-            by_height[z][0] += 1
-            by_height[z][1] = max(by_height[z][1], value.data)
-        print('   %s at the last frame, per damaged node height:' % damage_key)
-        if not by_height:
-            print('     no node has damage')
-        for z in sorted(by_height):
-            print('     z = %.4f mm: %d nodes, max CSDMG %.4f'
-                  % (z * 1e3, by_height[z][0], by_height[z][1]))
+            if value.data > 0.0:
+                row['damaged'] += 1
+            row['damage'] = max(row['damage'], value.data)
+
+        # The peak is taken over every frame rather than at the last one. Once the ball has
+        # separated the plate relaxes, and the last frame shows a small fraction of the
+        # interface stress that decided whether anything delaminated.
+        #
+        # The columns are chosen to be the delamination drivers, not just the stresses that
+        # happen to be largest. QUADS sums only the *tensile* normal traction and the two
+        # shear tractions, so a large compressive CPRESS under the impact does not push the
+        # interface towards damage at all; it is reported for context and the shear traction
+        # magnitude from CSHEARMAG is the number to compare with the interface strength.
+        # COPEN says whether the interface opens, which is what makes the normal branch
+        # matter in the first place.
+        for frame in step.frames:
+            for prefix, key in (('CSHEARMAG', 'shear'), ('COPEN', 'open'),
+                                ('CPRESS', 'pressure')):
+                field = contact_field(frame, prefix)
+                if field is None:
+                    continue
+                for value in field.values:
+                    row = rows.get(round(heights.get(int(value.nodeLabel), -1.0) * 1e3, 4))
+                    if row is None or value.data <= row[key]:
+                        continue
+                    row[key] = value.data
+                    if prefix == 'CSHEARMAG':
+                        row['shear_t'] = frame.frameValue
+
+        print('   %-9s %8s %8s %11s %10s %11s %11s'
+              % ('height mm', 'damaged', 'CSDMG', 'CSHEARMAG', 'COPEN', 'CPRESS',
+                 'shear at t'))
+        print('   %-9s %8s %8s %11s %10s %11s %11s'
+              % ('', '', '', 'MPa', 'um', 'MPa', 's'))
+        shown = 0
+        for z in sorted(rows):
+            row = rows[z]
+            if not row['damaged'] and not row['shear'] and not row['pressure']:
+                continue
+            shown += 1
+            print('   %-9.4f %8d %8.4f %11.3f %10.4g %11.3f %11.3g'
+                  % (z, row['damaged'], row['damage'], row['shear'] * 1e-6,
+                     row['open'] * 1e6, row['pressure'] * 1e-6, row['shear_t']))
+        if not shown:
+            print('   nothing is in contact and nothing is damaged')
 
     print('\n4. against the impact_3d_v1 anchor (32 N, 313 um)')
-    # Whether the ball is still touching at the end of the step decides whether the impact
-    # stage is finished, and therefore whether a wave step can be started from here.
-    for name in last.fieldOutputs.keys():
-        if not name.startswith('CPRESS'):
-            continue
-        pressures = [value.data for value in last.fieldOutputs[name].values]
-        touching = [value for value in pressures if value > 0.0]
-        print('   contact pressure at the last frame: peak %.4g Pa over %d node(s)'
-              % (max(pressures) if pressures else 0.0, len(touching)))
     gauge = []
     for region_name, region in step.historyRegions.items():
         for name, output in region.historyOutputs.items():
