@@ -328,6 +328,13 @@ def main():
     p.add_argument('--frame-stride', type=int, default=None,
                    help='spatial decimation for --frames 2d; default 1, because the '
                         'across-fibre A0 wavelength is only about 9 mm')
+    p.add_argument('--dt-scale', type=float, default=1.0,
+                   help='multiplier on the stable-step estimate, hence a divisor on dt: '
+                        '1.0 gives the default 0.7 safety factor. Raise it to run at a '
+                        'larger dt, which is what makes a comparison against another '
+                        'solver fair when that solver takes bigger steps -- numerical '
+                        'dispersion depends on dt, so two runs at different Courant '
+                        'numbers differ by more than the implementations do.')
     p.add_argument('--out', type=Path, default=None)
     a = p.parse_args()
 
@@ -340,7 +347,7 @@ def main():
           % (mesh['nelem'], mesh['nnode'], mesh['ndof'], time.time() - t0), flush=True)
     result, meta = run(mesh, a.mode, a.x_src, duration=a.duration, out=a.out,
                        frame_mode=a.frames, frame_stride_xy=a.frame_stride,
-                       y_src=a.y_src)
+                       y_src=a.y_src, dt_scale=a.dt_scale)
     print(json.dumps(meta, indent=2), flush=True)
 
 

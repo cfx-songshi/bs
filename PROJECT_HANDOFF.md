@@ -22,7 +22,7 @@
 
 **工具链**：Python 3.13.15 + 六个锁定依赖（site-packages）；Git 2.55（远端走 SSH，443 被阻断）；CalculiX 2.23（`D:\CalculiX`，无显式动力学）。
 
-**未完成**：①Abaqus 侧**已跑通语法检查**（2026-09-20，见下文），但**尚未跑有物理意义的算例**（`--nx 400`）、也**未与自研 `solve_uvg_3d.py` 对照**；②导波仍无 PZT/胶层/机电耦合，输出是机械位移**不是电压**；③两条线均**未与实物实验对照**（无实测验证集）；④`.inp` → CalculiX 的转换未做；⑤群速度验证精度不足（导波，见下文各节）；⑥`comparison/build_report.py`缺`inspection/`论文页图，本机仍生成不了对比报告HTML（2026-09-20）。
+- **未完成**：①Abaqus 侧已跑出**第一个有物理意义的算例**并做过定量对照（2026-09-20，见下文）：A0 相速度通过（0.16%），但波形形状仍有未解释的 L2≈0.57，且**点源与 PZT 都还没上 Abaqus**；②导波仍无 PZT/胶层/机电耦合，输出是机械位移**不是电压**；③两条线均**未与实物实验对照**（无实测验证集）；④`.inp` → CalculiX 的转换未做；⑤群速度验证精度不足（导波，见下文各节）；⑥`comparison/build_report.py`缺`inspection/`论文页图，本机仍生成不了对比报告HTML（2026-09-20）。
 
 **同步方式**：本机 `D:\bs_thesis` 自身是仓库，`git status` 干净即与远端一致；**最新提交以远端为准**（`git log -1 origin/main`），不要依赖本文档写的提交号。历史各轮细节见下方按时间排列的"后续更新"节。
 
@@ -112,6 +112,22 @@
 - **本轮改动已提交并推送**（`78ffeb9`，提交信息`Repair the hard-coded comparison paths and record the cross-environment rerun`；已用`git log -1 origin/main`回读确认为同一提交，`main`与`origin/main`无分叉）。涉及7个文件：`comparison/audit.py`、`comparison/build_report.py`、`comparison/audit_metrics.json`、`comparison/transfer-comparison.png`、`comparison/论文与仿真逐项对比分析.md`、`comparison/README_对比报告.md`，以及本文件`PROJECT_HANDOFF.md`。本机新建的`results/`与`_damage.npz`已被`.gitignore`排除，不会进仓库。
 - **下一步（用户此前已指定）**：①用`--nx 400`跑有物理意义的Abaqus算例，与自研`solve_uvg_3d.py`对照，这将是第一个真正独立的第三方求解器验证；②从旧电脑拷回`inspection/`4张论文页图后，`build_report.py`才能生成HTML与两份清单。
 - 工具环境提醒：**本会话工作区已指向`D:\bs_thesis`，编辑工具可正常写入仓库内文件**，上一轮那句"编辑工具一律`Access denied`、改动只能走命令行Python脚本"已不再适用（2026-09-20实测）。换行符仍要注意：仓库配`core.autocrlf=true`，但磁盘上各文件并不统一——`论文与仿真逐项对比分析.md`是CRLF，而`PROJECT_HANDOFF.md`、`README_对比报告.md`、`audit.py`是纯LF（同日实测）。任何脚本做文本替换前先探测换行符，不要照抄旧结论。
+
+## 后续更新：Abaqus 定量验证（2026-09-20）
+
+- 用户选定**线源 500×4×4**作首个算例（我提的三个选项里选的），理由：它与自研 `out_line` 构型一一对应，且线源有解析 Rayleigh–Lamb 参照。dx = 1.0 mm、12.7 单元/A0 波长，8000 单元 / 12525 节点 / 37575 变量，**与自研同网格逐一相同**（接收点节点号 11203 / 11343 也对上）。
+- Abaqus 2026 跑通：2329 增量、110 帧、稳定步长 9.554e-08 s、墙钟约 3 秒。⚠️ 前 47 个增量走的是 4.29e-08 s，t = 2.018 µs 之后才恒定；那 2 µs 内激励不足峰值 1.5%，可忽略，但**"稳定步长"那一列不要只看最后一行**。未发生质量缩放（自研的 Gershgorin 界是 1.053e-07 s）。
+- **主结论：A0 相速度验证通过。** 用验证自研模型时的**同一套估计器**（场输出时空谱相位斜率）：自研 1285.6（+0.07%）、Abaqus **C3D8 1288.5（+0.16%）**、Abaqus C3D8R 1273.6（+1.00%），解析 1286.4 m/s @100 kHz。这是本项目第一个真正独立的第三方求解器对照。
+- **副结论（推翻了本目录原默认选择）：C3D8R 在这个网格上不可用。** 沙漏能 ALLAE/ALLIE 峰值比 **17.3%**、最差采样点 26.4%；直达波包 RMS 比自研低 **17%**、峰值低 15–20%。换全积分 C3D8 后沙漏恒为 0、RMS 差 3% 以内。生成器已加 `--element C3D8|C3D8R`；**仓库里提交的 `abaqus/ugw_line_500x4x4.inp` 是 C3D8 版本**，README 第 4b 节的结论就是按它写的。
+- 能量平衡：激励结束后 ETOTAL 变化 5.1e-14 J = 峰值 ALLIE 的 0.047%（C3D8R）/ 0.051%（C3D8）。⚠️ **ETOTAL 是接近零的平衡残差（~5e-14 J），ALLIE 是 ~1e-10 J；拿 ETOTAL 自身的均值做分母会得到 88% 这种无意义的数**，必须除以能量尺度。本轮第一版就犯了这个错。
+- ⚠️ **整段记录的 L2 没有意义**：500 mm 板太短，x=0 自由端约 160 µs 到达的反射幅度与直达波相当。整段 L2 给出 1.24（与两个求解器都无关），窗口化到直达波包后 C3D8 是 0.57 / 0.77。
+- ⚠️ **对照必须先对齐时间步**。Abaqus 的稳定步长比自研的保守估计大 30%（9.554e-08 vs 7.373e-08），单这一项就让自研与自身差出峰值 4.7%、L2 0.037。已给 `solve_uvg_3d.py` 接上 `--dt-scale`，基准取 `--dt-scale 1.2955`（dt = 9.5528e-08，与 Abaqus 差 0.016%）。
+- ⚠️ **峰值不可用于几个百分点的比较**：两边历史输出都是 1 µs、约 10 点/周期，采样最大值可低估真峰达 5%。**以窗口 RMS 为准**，峰值只作参考。
+- **未解决（本轮最弱的一环）**：直达波包内两模型波形仍有 **L2 ≈ 0.57** 的形状差，且随传播距离增大（0.18 m 处 0.57、0.32 m 处 0.77；而自研自身换步长的 L2 只有 0.037）。四个候选已被实测排除：单精度（`double=explicit` 后峰值 0.3416→0.3416、L2 0.6832→0.6831）、时间步（已对齐）、沙漏（C3D8 恒为 0 仍差）、体积粘性（`*Bulk Viscosity` 改 `0.0, 0.0` 后 L2 0.5669→0.5722）。相速度与 RMS 都对上而波形形状没对上，原因未查明；**不要写成"已解释"，也不要宣称波形级一致**。
+- 群速度两法互相矛盾，**两个都不要引用**：相位斜率法给自研 1738.6（+0.40%）、C3D8R 1698.1（2.7%）、C3D8 1924.7（10.3%）；直达波包互相关给 1811.6 / 1792.1 / 1772.2 m/s（三者都偏高 2–4%）。这与二维工作早已记录的"短记录上群速度估计不可靠"一致。
+- 新增文件：`compare_abaqus_line.py`、`check_abaqus_dispersion.py`、`abaqus/read_odb_receivers.py`、`abaqus/read_odb_surface.py`、`abaqus/ugw_line_500x4x4.inp`（1.08 MB，C3D8），以及四份 JSON（`abaqus_line500_compare.json`、`abaqus_dispersion_check.json`、`abaqus_line500_c3d8_history.json`、`abaqus_line500_c3d8r_history.json`）。改动：`solve_uvg_3d.py` 加 `--dt-scale`；`make_abaqus_inp.py` 修掉 docstring 里"从未在 Abaqus 跑过"和"不需要 `*Orientation`"两处旧错误、加能量输出与 `--element`。
+- 两个 `*_surface.npz` 是 `*.npz`，按 `.gitignore` 不入库；缺了它们 `check_abaqus_dispersion.py` 会直接报"缺少"。复算命令见 README 第 4c 节。
+- 本轮未提交时的工作区根目录已确认是 `D:\bs_thesis`，**编辑工具可正常写入**（上一轮那句"一律 Access denied"已不成立，第 114 行的提醒已改写）。
 
 以下为原交接记录，保留供追溯。
 

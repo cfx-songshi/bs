@@ -1,0 +1,181 @@
+{
+  "model": {
+    "nx": 500,
+    "ny": 4,
+    "nz": 4,
+    "dx_m": 0.001,
+    "receivers_x_m": [
+      0.18,
+      0.32
+    ],
+    "receiver_nodes": [
+      11203,
+      11343
+    ],
+    "direct_arrival_windows_s": [
+      [
+        3e-05,
+        0.00012
+      ],
+      [
+        0.00011,
+        0.00022
+      ]
+    ]
+  },
+  "cases": [
+    {
+      "case": "inhouse (Abaqus dt)",
+      "x_m": 0.18,
+      "node": 11203,
+      "peak_m": 4.4058646670590615e-10,
+      "peak_time_s": 7.164567954841511e-05,
+      "peak_ratio_to_reference": 1.0,
+      "rms_m": 1.4157242324495446e-10,
+      "rms_ratio_to_reference": 1.0,
+      "l2_relative_difference": 0.0,
+      "best_lag_s": 0.0,
+      "aligned_residual": 0.0
+    },
+    {
+      "case": "inhouse (Abaqus dt)",
+      "x_m": 0.32,
+      "node": 11343,
+      "peak_m": 4.271291767488525e-10,
+      "peak_time_s": 0.00014902301346070342,
+      "peak_ratio_to_reference": 1.0,
+      "rms_m": 1.3033440087825802e-10,
+      "rms_ratio_to_reference": 1.0,
+      "l2_relative_difference": 0.0,
+      "best_lag_s": 0.0,
+      "aligned_residual": 0.0
+    },
+    {
+      "case": "inhouse (own dt)",
+      "x_m": 0.18,
+      "node": 11203,
+      "peak_m": 4.1968309018863606e-10,
+      "peak_time_s": 7.164567954841511e-05,
+      "peak_ratio_to_reference": 0.9525555637839798,
+      "rms_m": 1.3690964410525048e-10,
+      "rms_ratio_to_reference": 0.9670643545343839,
+      "l2_relative_difference": 0.037367523800786596,
+      "best_lag_s": 1.8000000000000082e-08,
+      "aligned_residual": 0.03672170160385103
+    },
+    {
+      "case": "inhouse (own dt)",
+      "x_m": 0.32,
+      "node": 11343,
+      "peak_m": 4.066991568571766e-10,
+      "peak_time_s": 0.00014902301346070342,
+      "peak_ratio_to_reference": 0.9521689900765348,
+      "rms_m": 1.261463448011944e-10,
+      "rms_ratio_to_reference": 0.9678668406127439,
+      "l2_relative_difference": 0.037291884737488616,
+      "best_lag_s": 2.400000000000011e-08,
+      "aligned_residual": 0.035632477871278344
+    },
+    {
+      "case": "abaqus C3D8R single",
+      "x_m": 0.18,
+      "node": 11203,
+      "peak_m": 3.515415417810612e-10,
+      "peak_time_s": 7.260095527572731e-05,
+      "peak_ratio_to_reference": 0.7978945527069878,
+      "rms_m": 1.1709773947310337e-10,
+      "rms_ratio_to_reference": 0.8271225199733709,
+      "l2_relative_difference": 0.6780881117785809,
+      "best_lag_s": 1.2209999999999998e-06,
+      "aligned_residual": 0.27904022938683204
+    },
+    {
+      "case": "abaqus C3D8R single",
+      "x_m": 0.32,
+      "node": 11343,
+      "peak_m": 3.689383387582102e-10,
+      "peak_time_s": 0.00015188884064264003,
+      "peak_ratio_to_reference": 0.8637629055603994,
+      "rms_m": 1.0768675306869404e-10,
+      "rms_ratio_to_reference": 0.8262343045508104,
+      "l2_relative_difference": 1.388125140725643,
+      "best_lag_s": 2.7479999999999998e-06,
+      "aligned_residual": 0.3385320093289543
+    },
+    {
+      "case": "abaqus C3D8",
+      "x_m": 0.18,
+      "node": 11203,
+      "peak_m": 3.746810215478803e-10,
+      "peak_time_s": 7.260095527572731e-05,
+      "peak_ratio_to_reference": 0.8504142770185947,
+      "rms_m": 1.4242494182813545e-10,
+      "rms_ratio_to_reference": 1.0060217842122114,
+      "l2_relative_difference": 0.5668647119966768,
+      "best_lag_s": 5.549999999999998e-07,
+      "aligned_residual": 0.4550057188569343
+    },
+    {
+      "case": "abaqus C3D8",
+      "x_m": 0.32,
+      "node": 11343,
+      "peak_m": 4.123513843463398e-10,
+      "peak_time_s": 0.00014997828918801562,
+      "peak_ratio_to_reference": 0.9654020535075695,
+      "rms_m": 1.2696642761868906e-10,
+      "rms_ratio_to_reference": 0.9741589846051857,
+      "l2_relative_difference": 0.773168876179884,
+      "best_lag_s": 1.2389999999999995e-06,
+      "aligned_residual": 0.3242157160148311
+    }
+  ],
+  "energy": {
+    "abaqus C3D8R single": {
+      "allae_max_j": 1.8715898622567728e-11,
+      "allie_max_j": 1.0843306114116658e-10,
+      "hourglass_ratio_peak": 0.1726032487287426,
+      "hourglass_ratio_worst_sample": 0.2637273393546646,
+      "etotal_variation_after_burst_j": 5.132922420978715e-14,
+      "etotal_variation_over_peak_allie": 0.00047337245365565016
+    },
+    "abaqus C3D8": {
+      "allae_max_j": 0.0,
+      "allie_max_j": 1.0602242694890407e-10,
+      "hourglass_ratio_peak": 0.0,
+      "hourglass_ratio_worst_sample": 0.0,
+      "etotal_variation_after_burst_j": 5.4129054347486563e-14,
+      "etotal_variation_over_peak_allie": 0.0005105434378857716
+    }
+  },
+  "sources": {
+    "reference": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_abaqusdt\\wavefield.npz"
+  },
+  "direct_packet_group_delay": {
+    "inhouse (Abaqus dt)": {
+      "delay_s": 7.728e-05,
+      "speed_m_s": 1811.5942028985507,
+      "residual": 0.44087654481299166
+    },
+    "inhouse (own dt)": {
+      "delay_s": 7.728e-05,
+      "speed_m_s": 1811.5942028985507,
+      "residual": 0.44086881474090045
+    },
+    "abaqus C3D8R single": {
+      "delay_s": 7.9e-05,
+      "speed_m_s": 1772.1518987341774,
+      "residual": 0.23914690345110154
+    },
+    "abaqus C3D8": {
+      "delay_s": 7.812e-05,
+      "speed_m_s": 1792.1146953405018,
+      "residual": 0.4960298024827686
+    }
+  },
+  "inhouse_reference": {
+    "dt_s": 9.552757273122015e-08,
+    "steps": 2303,
+    "energy_relative_drift": 1.7095411372311915e-15,
+    "elements_per_A0_wavelength": 12.7
+  }
+}

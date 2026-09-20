@@ -1,0 +1,37 @@
+{
+  "frequency_band_khz": [
+    85,
+    115
+  ],
+  "analytic_phase_100k_m_s": 1286.4490022810578,
+  "analytic_group_100k_m_s": 1745.5198590668413,
+  "cases": [
+    {
+      "case": "in-house 500x4x4 @ abq dt",
+      "path": "wavefield.npz",
+      "c_phase_100k_m_s": 1285.5927884464254,
+      "phase_error_vs_analytic": 0.0006655637597092537,
+      "c_group_100k_m_s": 1738.585640716084,
+      "group_error_vs_analytic": 0.003972580612439575,
+      "max_phase_error_in_band": 0.025322938361843475
+    },
+    {
+      "case": "abaqus C3D8R double",
+      "path": "abaqus_line500_c3d8r_dp_surface.npz",
+      "c_phase_100k_m_s": 1273.6266350098645,
+      "phase_error_vs_analytic": 0.00996725657096197,
+      "c_group_100k_m_s": 1698.1094948485718,
+      "group_error_vs_analytic": 0.02716117148252622,
+      "max_phase_error_in_band": 0.045583078360600104
+    },
+    {
+      "case": "abaqus C3D8",
+      "path": "abaqus_line500_c3d8_surface.npz",
+      "c_phase_100k_m_s": 1288.5302267129666,
+      "phase_error_vs_analytic": 0.001617805624800139,
+      "c_group_100k_m_s": 1924.706652952108,
+      "group_error_vs_analytic": 0.10265525937989638,
+      "max_phase_error_in_band": 0.12652174198469776
+    }
+  ]
+}

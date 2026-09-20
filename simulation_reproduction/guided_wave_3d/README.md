@@ -7,7 +7,7 @@
 | 交付物 | 状态 |
 |---|---|
 | [solve_uvg_3d.py](solve_uvg_3d.py) 三维显式有限元 | **已运行并通过解析验证**（见第 3 节） |
-| [make_abaqus_inp.py](make_abaqus_inp.py) Abaqus 输入生成 | **已在 Abaqus 2026 上实跑通过**（`THE ANALYSIS HAS COMPLETED SUCCESSFULLY`，1404 增量 / 110 帧）；修掉两个真实错误，见第 4 节 |
+| [make_abaqus_inp.py](make_abaqus_inp.py) Abaqus 输入生成 | **已在 Abaqus 2026 上实跑，并在 500×4×4 线源上做过定量对照**：A0 相速度 1288.5 m/s vs 解析 1286.4（**0.16%**），RMS 差 3% 以内；但波形形状仍有未解释的 L2 ≈ 0.57。见第 4b 节，直接看那一节的结论再使用 |
 
 ## 1. 为什么必须做三维
 
@@ -110,6 +110,87 @@ Abaqus JOB ugw_small COMPLETED
 
 1404 个时间增量、110 个输出帧、显式稳定步长 1.60e-07 s、墙钟 23 秒。
 
+### 4b. 定量验证：500×4×4 线源（2026-09-20）
+
+第一个有物理意义的算例：`--nx 500 --ny 4 --nz 4 --lx 0.5 --ly 0.02 --mode line`，dx = 1.0 mm，每 A0 波长 12.7 个单元。**8000 单元 / 12525 节点 / 37575 变量，与自研 `solve_uvg_3d.py` 的同一网格逐一相同**（节点号也对得上：两个接收点是 11203 与 11343）。
+
+```
+abaqus job=ugw_line input=ugw_line_500x4x4.inp cpus=8 interactive
+```
+
+2329 个增量、110 帧、稳定步长 9.554e-08 s、墙钟约 3 秒。第 4 节检查清单四项的结果：
+
+| 清单项 | 结果 |
+|---|---|
+| 稳定步长（防质量缩放） | 9.554e-08 s，与稳定性估计一致（自研的 Gershgorin 界是 1.053e-07 s）。质量缩放会把步长抬高一到两个量级，未发生。注意前 47 个增量走的是约 4.29e-08 s，t = 2.018 µs 之后才恒定，而那 2 µs 内激励幅值不足峰值的 1.5% |
+| 沙漏能 ALLAE/ALLIE | C3D8R **17.3%**（最差采样点 26.4%）；C3D8 按构造恒为 0 |
+| 能量平衡 ETOTAL | 激励结束后变化 5.1e-14 J（C3D8R）/ 5.4e-14 J（C3D8），即峰值 ALLIE 的 **0.047% / 0.051%**。注意 ETOTAL 是接近零的平衡残差（~5e-14 J）而 ALLIE 是 ~1e-10 J，用它的自身均值做分母会得到 88% 这种无意义的数 |
+| 与解析对表 | 见下表 |
+
+A0 相速度用**验证自研模型时的同一套估计器**（场输出时空谱相位斜率，`dispersion_check.wave_numbers`）：
+
+| 算例 | c_p@100 kHz | vs 解析 1286.4 | c_g@100 kHz | vs 解析 1745.5 |
+|---|---|---|---|---|
+| 自研 500×4×4（同步长） | 1285.6 | **0.07%** | 1738.6 | 0.40% |
+| Abaqus C3D8 | 1288.5 | **0.16%** | 1924.7 | 10.3% |
+| Abaqus C3D8R | 1273.6 | **1.00%** | 1698.1 | 2.7% |
+
+**结论：A0 相速度这一项通过。** 群速度那一列不可用：同一方法给自研 0.40% 却给 C3D8 10.3%，而直达波包互相关给出的是 1811.6 / 1792.1 / 1772.2 m/s（三个都偏高 2–4%），两法彼此矛盾——这与第 3b 节及二维工作已记录的结论一致：短记录上的群速度估计不可靠，**不要引用这一列**。
+
+时程对照（`compare_abaqus_line.py`）。只在直达波包窗口内统计：整段记录会被 x=0 自由端约 160 µs 到达、幅度与直达波相当的反射污染，整段 L2 会给出 1.24 这种与两个求解器都无关的数。基准是自研在 **Abaqus 步长**下的运行（`--dt-scale 1.2955`），因为数值色散依赖 dt，而 Abaqus 的稳定步长比自研的保守估计大 30%。
+
+| 算例 | 接收点 | 峰值比 | RMS 比 | L2 | 最佳时移 |
+|---|---|---|---|---|---|
+| 自研（自身步长，作灵敏度） | 0.18 / 0.32 m | 0.953 / 0.952 | 0.967 / 0.968 | 0.037 | 0.02 µs |
+| Abaqus C3D8 | 0.18 / 0.32 m | 0.850 / 0.965 | **1.006 / 0.974** | 0.57 / 0.77 | 0.56 / 1.24 µs |
+| Abaqus C3D8R | 0.18 / 0.32 m | 0.798 / 0.864 | **0.827 / 0.826** | 0.68 / 1.39 | 1.22 / 2.75 µs |
+
+峰值受采样相位影响：两边历史输出都是 1 µs、约 10 点/周期，采样最大值可低估真峰达 5%，所以**以 RMS 为准**，峰值只作参考。第一行同时给出时间步本身的影响：步长差 23% 就会让幅值差 3–5%。
+
+两条可用性结论：
+
+- **C3D8（全积分）：可用。** RMS 差 3% 以内、相速度差 0.16%、直达波包群延迟差 1.1%。
+- **C3D8R（减缩积分，本目录原默认）：在本问题的这一网格上不可用。** 沙漏能占 17–26%，RMS 低 **17%**、峰值低 15–20%，能量进了沙漏模式。要么改用 C3D8，要么另做沙漏控制的收敛研究。下文「建模选择」表里原来那句"C3D8R 配默认沙漏控制即可"已被这一实测推翻。
+
+**未解决（如实记录）**：直达波包内两模型的波形仍有 L2 ≈ 0.57 的形状差，且随距离变大（0.18 m 处 0.57、0.32 m 处 0.77，而自研自身换步长的 L2 只有 0.037）。已用实测排除四个候选：
+
+| 候选 | 实测 | 结论 |
+|---|---|---|
+| 单精度（Abaqus 显式默认单精度） | `double=explicit` 后峰值 0.3416→0.3416、L2 0.6832→0.6831 | 无影响，排除 |
+| 时间步不同 | 已用 `--dt-scale` 对齐到 0.016% 以内 | 非主因 |
+| 沙漏 | C3D8 沙漏恒为 0，仍然差 | 排除 |
+| 体积粘性 | `*Bulk Viscosity` 改 0.0, 0.0 后 L2 0.5669→0.5722 | 无影响，排除 |
+
+相速度与 RMS 都对上、而波形形状没对上，差异应在包络/相位随距离的演化上；**原因未查明，不要把这一条写成"已解释"**，也不要据此宣称波形级一致。
+
+### 4c. 4b 的复算命令
+
+仓库路径已是纯 ASCII，可直接在仓库内求解；一次求解会写十来个产物，仓库内 `abaqus/runs/` 已忽略，也可以放到仓库外（如 `D:\abaqus_runs\line500`）。
+
+```powershell
+$py = 'C:\Users\29795\AppData\Local\Programs\Python\Python313\python.exe'
+Set-Location 'D:\bs_thesis\simulation_reproduction\guided_wave_3d'
+
+# 生成 deck（C3D8）与自研参考（--dt-scale 把步长对齐到 Abaqus 的 9.554e-08 s）
+& $py make_abaqus_inp.py --nx 500 --ny 4 --nz 4 --lx 0.5 --ly 0.02 --mode line --element C3D8 --out abaqus/ugw_line_500x4x4.inp
+& $py solve_uvg_3d.py --mode line --nx 500 --ny 4 --nz 4 --lx 0.5 --ly 0.02 --dt-scale 1.2955 --out out_line_abaqusdt
+
+# 求解（8 cpus，约 3 秒）
+& 'D:\Abaqus\Commands\abaqus.bat' job=ugw_line input=ugw_line_500x4x4.inp cpus=8 interactive
+
+# 从 odb 取数；odbAccess 属于 Abaqus 安装，这里必须用 Abaqus 自带的 python
+& 'D:\Abaqus\Commands\abaqus.bat' python abaqus\read_odb_receivers.py ugw_line.odb abaqus_line500_c3d8_history.json
+& 'D:\Abaqus\Commands\abaqus.bat' python abaqus\read_odb_surface.py ugw_line.odb abaqus_line500_c3d8_surface.npz --nx 500 --ny 4 --nz 4 --lx 0.5
+
+# 对照
+& $py compare_abaqus_line.py
+& $py check_abaqus_dispersion.py
+```
+
+- 仓库里提交的 `abaqus/ugw_line_500x4x4.inp` 是 **C3D8** 版本。C3D8R 那一行去掉 `--element C3D8`、输出名改成 `..._c3d8r_...` 即可。
+- `abaqus_line500_c3d8r_history.json` 来自**单精度**默认求解；`abaqus_line500_c3d8r_dp_surface.npz` 来自 `double=explicit` 的那次（两者结果一致到 4 位有效数字，那次跑的目的正是证明精度不是差异来源），所以 `check_abaqus_dispersion.py` 里那一行标的是 "C3D8R double"。
+- 两个 `*_surface.npz` 是 `*.npz`，按 `.gitignore` 不入库；没有它们时 `check_abaqus_dispersion.py` 会直接报"缺少"。
+
 ### 两条必须知道的实际约束
 
 **1. 路径必须是纯 ASCII（该约束现已满足）。** 该 deck 第一次提交时仓库路径还是 `D:\毕设知识库`，预处理成功，但显式求解器在 `Begin Abaqus/Explicit Analysis` 之后立刻崩溃：
@@ -151,7 +232,7 @@ Set-Location $r
 
 | 选择 | 理由 |
 |---|---|
-| `C3D8R` 减缩积分 | 全积分 `C3D8` 在弯曲下剪切锁定，而 A0 正是弯曲变形。减缩积分有沙漏风险，由 Abaqus 默认沙漏控制处理，**不要关闭** |
+| 单元类型：见 4b | 原选 `C3D8R`，理由是"全积分 `C3D8` 在弯曲下剪切锁定，而 A0 正是弯曲变形"。实测**推翻了**这个选择：同一网格下 C3D8R 的沙漏能占 ALLIE 的 17–26%、RMS 比自研低 17%，而 C3D8 的 RMS 差 3% 以内、相速度差 0.16%。本问题的这一网格应取 `C3D8`；若要用减缩积分，须先把沙漏压下去（更密网格或加剧沙漏控制）再谈精度 |
 | 必须写 `*Orientation` | 各向异性材料在 Abaqus 中**必须**显式给出局部坐标系，**即使材料轴与全局轴重合** —— 省略它是硬错误，不是"自动取默认"。首次实际提交即因此失败（`Anisotropic material properties without a local orientation system`）。这里定义局部 1 轴沿纤维（全局 x）、局部 2 轴沿 y、局部 3 轴沿厚度。若铺层旋转，改这里而不是改网格 |
 | 不做质量缩放 | 自研模型也用自己的稳定步长，两者才可比；缩放会改变所要比较的波速 |
 | 无边界条件 | 自由板在显式动力学中可解，且参考模型同样是自由边界 |
@@ -192,7 +273,7 @@ abaqus job=ugw_small input=ugw_small.inp cpus=4
 
 ## 6. 限制与未完成
 
-1. **Abaqus 侧未经求解验证**（第 4 节）。不要把静态自检通过读作"模型已可用"。
+1. **Abaqus 侧已在 A0 相速度上验证通过，但波形级没通过**（第 4b 节）：同一网格、同一时间步下相速度差 0.16%、RMS 差 3% 以内，但直达波包内波形仍有 L2 ≈ 0.57 的形状差，四个候选（单精度/时间步/沙漏/体积粘性）已被实测排除，原因未查明。不要把静态自检通过读作"模型已可用"，也不要把相速度通过读作"波形已复现"。
 2. **分层区无接触、无黏聚、无摩擦**，与二维模型同一定义：开口界面，不闭合、不拍击。不能用于分层扩展或强度预测。
 3. **无 PZT、无胶层、无机电耦合、无阻尼**。输出是**机械位移**，不是电压，绝不可标为电压。
 4. **点源已验证**（见 3b）：沿纤维 1.55%，垂直纤维 3.29%（网格加密后），各向异性比 1.69%。
@@ -204,11 +285,16 @@ abaqus job=ugw_small input=ugw_small.inp cpus=4
 
 | 文件 | 用途 |
 |---|---|
-| `solve_uvg_3d.py` | 三维 H8 显式求解器；`--mode line/point/line_across`，可选分层，`--frames 2d` 存二维表面场 |
+| `solve_uvg_3d.py` | 三维 H8 显式求解器；`--mode line/point/line_across`，可选分层，`--frames 2d` 存二维表面场，`--dt-scale` 放大稳定步长（用于与别的求解器对齐 dt） |
 | `check_3d_dispersion.py` | 3D / 2D / 解析三方波速对比（线源），输出 `dispersion_check_3d.json` |
 | `check_point_source.py` | 点源沿两个方向的波速与各向异性比，输出 `point_source_check*.json` |
+| `check_abaqus_dispersion.py` | 用同一套波数提取器量 Abaqus 的 A0 相/群速度，输出 `abaqus_dispersion_check.json` |
+| `compare_abaqus_line.py` | Abaqus 与自研的接收点时程对照（只在直达波包窗口内），输出 `abaqus_line500_compare.json` |
 | `make_abaqus_inp.py` | Abaqus 输入生成 + 静态一致性自检 |
+| `abaqus/read_odb_receivers.py` | 从 odb 取接收点 U3 时程与 ALLAE/ALLIE/ALLKE/ETOTAL；须用 `abaqus python` 运行 |
+| `abaqus/read_odb_surface.py` | 从 odb 取上表面宽度中线 110 帧，写成与自研同格式的 npz；须用 `abaqus python` 运行 |
 | `abaqus/ugw_small.inp` | 无分层小算例（12×12×4），用于确认语法 |
 | `abaqus/ugw_small_damage.inp` | 含分层小算例（40×40×4） |
+| `abaqus/ugw_line_500x4x4.inp` | 有物理意义的线源算例（500×4×4，dx = 1.0 mm），第 4b 节用的就是它 |
 
 `out_*/` 为求解输出（`*.npz` 不入库），特大 `.inp` 亦不入库，详见 [.gitignore](.gitignore)。
