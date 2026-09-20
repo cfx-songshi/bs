@@ -39,6 +39,13 @@ def main():
     odb = openOdb(odb_path, readOnly=True)
     step = odb.steps[list(odb.steps.keys())[0]]
     print('odb %s, step %s, %d frames' % (odb_path, step.name, len(step.frames)))
+    if not step.frames:
+        # An odb with no frames means the analysis did not produce results, which is a
+        # different problem from a missing history request; say so instead of throwing
+        # an IndexError further down.
+        print('  the step has no frames: the analysis did not run, check the .dat and .log')
+        odb.close()
+        return
 
     total = None
     times = None
