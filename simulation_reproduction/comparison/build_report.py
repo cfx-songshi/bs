@@ -1,6 +1,6 @@
 from pathlib import Path
 import re,html,base64,hashlib,json,shutil
-P=Path(__file__).resolve().parent;B=Path('E:/毕设知识库/simulation_reproduction')
+P=Path(__file__).resolve().parent;B=P.parent
 for src,dst in [('Zhao_2025_Smart_Mate_11.png','P3-p11.png'),('In_Situ_Monitoring_o_7.png','P5-p7.png'),('Embedded_Piezoresist_11.png','P6-p11.png'),('A_Hybrid_Multimodel-_8.png','P7-p8.png')]:
  shutil.copyfile(B/'inspection'/src,P/dst)
 for name in ['localization_sensitivity.png','plate_convergence.png','gear.png','joint_net_tension.png','joint_shear_out.png','joint_bearing.png','faults.png']:

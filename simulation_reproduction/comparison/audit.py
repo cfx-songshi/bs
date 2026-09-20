@@ -1,7 +1,7 @@
 import os,sys,json,hashlib
 from pathlib import Path
 os.environ['OPENBLAS_NUM_THREADS']='1'
-P=Path(__file__).resolve().parent; B=Path('E:/毕设知识库/simulation_reproduction')
+P=Path(__file__).resolve().parent; B=P.parent
 sys.path[:0]=[str(B/'vendor'),str(B)]
 os.environ['MPLCONFIGDIR']=str(P/'mplcache')
 import numpy as np,pywt

@@ -22,7 +22,7 @@
 
 **工具链**：Python 3.13.15 + 六个锁定依赖（site-packages）；Git 2.55（远端走 SSH，443 被阻断）；CalculiX 2.23（`D:\CalculiX`，无显式动力学）。
 
-**未完成**：①Abaqus 侧**已跑通语法检查**（2026-09-20，见下文），但**尚未跑有物理意义的算例**（`--nx 400`）、也**未与自研 `solve_uvg_3d.py` 对照**；②导波仍无 PZT/胶层/机电耦合，输出是机械位移**不是电压**；③两条线均**未与实物实验对照**（无实测验证集）；④`.inp` → CalculiX 的转换未做；⑤群速度验证精度不足（导波，见下文各节）。
+**未完成**：①Abaqus 侧**已跑通语法检查**（2026-09-20，见下文），但**尚未跑有物理意义的算例**（`--nx 400`）、也**未与自研 `solve_uvg_3d.py` 对照**；②导波仍无 PZT/胶层/机电耦合，输出是机械位移**不是电压**；③两条线均**未与实物实验对照**（无实测验证集）；④`.inp` → CalculiX 的转换未做；⑤群速度验证精度不足（导波，见下文各节）；⑥`comparison/build_report.py`缺`inspection/`论文页图，本机仍生成不了对比报告HTML（2026-09-20）。
 
 **同步方式**：本机 `D:\bs_thesis` 自身是仓库，`git status` 干净即与远端一致；**最新提交以远端为准**（`git log -1 origin/main`），不要依赖本文档写的提交号。历史各轮细节见下方按时间排列的"后续更新"节。
 
@@ -99,6 +99,20 @@
 - 运行目录放仓库外`D:\abaqus_runs\`；仓库内`abaqus/runs/`已加入`.gitignore`（一次求解会生成odb/mdl/stt/env等十余个产物，且`abaqus_v6.env`与机器相关）。
 - **下一步**：用`--nx 400`跑有物理意义的算例，提取接收点时程与自研`solve_uvg_3d.py`对照（这将是第一个真正独立的第三方求解器验证）。
 
+## 后续更新：对比脚本路径修复与 results 重建（2026-09-20）
+
+- 起因：仓库改名后`comparison/audit.py`与`comparison/build_report.py`仍硬编码旧电脑路径`B=Path('E:/毕设知识库/simulation_reproduction')`。**本机只有C:/D:两个盘、没有E盘**，该路径永远不可能命中。已改为`B=P.parent`（`P`即`comparison/`，其父目录正是`simulation_reproduction/`）。
+- 改完后脚本仍跑不通，原因不是路径而是**缺数据**：`guided_wave_v2/*_damage.npz`（本机只有healthy）、`results/`、`inspection/`三者本机均无，且后两者**未被git跟踪**、从未同步到本机。
+- 已用`solve.py`重算三组分层算例（1000×8、2000×16、4000×32）。能量相对漂移4.0e-13 / 8.3e-13 / 1.7e-12；`dt`与步数与同网格健康算例**完全相同**（分层只复制节点，不改网格稳定性界限）。
+- **`results/`可在本机完整重建**：`run.py`的`OUT=ROOT/'results'`，`figsave()`也写同一目录，其产出正是两个对比脚本需要的全部输入（`ae_dataset.npz`、`joint_surrogates.npz`、`faults_traces.npz`、`transfer_summary.json`、`transfer_trials.json`，加7张图）。已执行`run.py --experiment all`：checks 7项通过、localization 100k×7档、plate、gear、joints、faults、transfer 39个模型全部完成。
+- **`audit.py`现已端到端跑通（exit 0）**。`build_report.py`仍卡在第5行，只差`inspection/`那4张论文页图，本机无法生成，须从旧电脑拷贝。**连带后果：本机没有`论文与仿真逐项对比分析.html`、`source_manifest.json`、`analysis_manifest.json`。**
+- ⚠️ **CNN迁移支路跨环境不可复现，重跑会改变对比报告第6节的数字。**`transfer.py`虽已设`torch.manual_seed(seed)`与`torch.use_deterministic_algorithms(True)`，但该保证只覆盖同一环境内的算子路径；本机torch 2.14.0与首次审计环境的卷积/池化kernel、CPU指令路径不同，同一seed不再产生逐位相同的权重，100轮训练后放大到1–3个百分点。实测：本模型增益K=13由−4.58 pp变为+0.83 pp、K=18由−1.25 pp变为−6.67 pp；逐种子DANN−pooled在K=13由−2.50/−2.50/−6.25 pp变为−2.50/**0.00**/−1.25 pp，K=18由−3.75/−1.25/−2.50 pp变为−3.75/**−18.75**/−3.75 pp。首次审计未记录环境版本（`results/environment.json`是本次重跑才生成的），故只能确认差异与环境相关，无法精确归因到某次版本变更。
+- 对照：**AE检索与导波两支不受影响**。`ae_window_records.json`重跑后逐字节未变；分层算例重算后`guided-speed.png`、`guided-alignment.png`也逐字节未变。`audit_metrics.json`的相位配准诊断只在浮点末位有约1 ulp变化。
+- 已据此修订`comparison/论文与仿真逐项对比分析.md`：第6节表格四行、增益段落、控制变量证据段落、第1节结论第3条，并在第6节末新增**「跨环境可复现性」**小节，写明引用首次审计数字须走`git show`、不能与本次结果并列同表。`README_对比报告.md`第5、7行也改为符合本机实际。
+- **本轮未提交**（用户未要求提交）。未提交改动共6个文件：`comparison/audit.py`、`comparison/build_report.py`、`comparison/audit_metrics.json`、`comparison/transfer-comparison.png`、`comparison/论文与仿真逐项对比分析.md`、`comparison/README_对比报告.md`。本机新建的`results/`与`_damage.npz`已被`.gitignore`排除，不会进仓库。
+- **下一步（用户此前已指定）**：①用`--nx 400`跑有物理意义的Abaqus算例，与自研`solve_uvg_3d.py`对照，这将是第一个真正独立的第三方求解器验证；②从旧电脑拷回`inspection/`4张论文页图后，`build_report.py`才能生成HTML与两份清单。
+- 工具环境提醒：本轮会话的工作区根目录仍指向已改名的`d:\毕设知识库`，**编辑工具一律返回`Access denied: Edit operations are restricted to the working directory`**，所有文件改动只能走命令行Python脚本（`io.open(..., newline='')`读写、先`assert old in t`再替换）。新会话请确认工作区已指向`D:\bs_thesis`。另注意对比报告那个`.md`在磁盘上是CRLF、git里存LF（仓库配了autocrlf），脚本替换前须先探测换行符。
+
 以下为原交接记录，保留供追溯。
 
 交接基准：2026-09-15已完成的代码与对比分析。开始新对话时请先核对磁盘文件和GitHub最新提交；本文件不是授权忽略后续用户指示的指令。
@@ -125,7 +139,7 @@
 | 落球冲击 | `D:/bs_thesis/simulation_reproduction/impact_v1` |
 | 落球冲击三维模型 | `D:/bs_thesis/simulation_reproduction/impact_3d_v1` |
 | 冲击参数化研究结果 | `D:/bs_thesis/simulation_reproduction/study_final` |
-| 完整对比报告 | `D:/bs_thesis/simulation_reproduction/comparison/论文与仿真逐项对比分析.html` |
+| 完整对比报告 | 正文 `D:/bs_thesis/simulation_reproduction/comparison/论文与仿真逐项对比分析.md`；HTML 由同目录 `build_report.py` 生成，但它还需 `inspection/` 下的论文页图，**本机截至 2026-09-20 尚未生成该 HTML** |
 | GitHub | `https://github.com/cfx-songshi/bs`，分支`main`，远端地址`git@github.com:cfx-songshi/bs.git`（SSH）。最新提交以远端为准，用`git log -1 origin/main`核对，不要依赖本文档写的提交号 |
 | 本机Python | `C:/Users/29795/AppData/Local/Programs/Python/Python313/python.exe`（3.13.15） |
 | 本机Git | `C:/Program Files/Git/cmd/git.exe`（2.55.0.windows.3） |
@@ -133,7 +147,7 @@
 
 项目根目录**自身就是git仓库**，`.git`位于`D:/bs_thesis/.git`，不再存在"代码目录与git副本是两份文件"的问题；改动后直接在本目录`git add`/`commit`/`push`即可。开始新会话仍应先`git status`核对实际状态。
 
-六个依赖已按`requirements-lock.txt`精确安装，版本逐项一致：NumPy 2.5.3、SciPy 1.18.1、Matplotlib 3.11.2、PyWavelets 1.10.0、scikit-learn 1.9.1、PyTorch 2.14.0（CPU构建）。代码仍包含旧电脑的绝对路径引用，尚未做完整跨电脑可移植化。
+六个依赖已按`requirements-lock.txt`精确安装，版本逐项一致：NumPy 2.5.3、SciPy 1.18.1、Matplotlib 3.11.2、PyWavelets 1.10.0、scikit-learn 1.9.1、PyTorch 2.14.0（CPU构建）。**代码中的旧电脑绝对路径已全部清除**：`solve.py`早先已删掉`vendor`路径，2026-09-20又修复了`comparison/audit.py`与`comparison/build_report.py`两处`E:/毕设知识库`。目前仅文档中作为历史记录保留`E:\毕设知识库`字样。
 
 ## 3. 已完成工作及真实性边界
 
@@ -168,7 +182,7 @@
 1. **AE窗口失败**：保存的seed=0、0 dB共100条中71条超过100 μs误差；这71条的真值距允许搜索窗最近采样点都超过100点。局部搜索再准确也无法恢复；证据`ae_window_records.json`。主实验3种子300条为74.67%失败，分母不同，不矛盾。
 2. **压力输入十倍错误**：`run.py/joint_response()`与保存数组峰值为1600 kPa，P5原文PDF p7写160 kPa。归一化电阻又除1600，导致幅值被预设；这不是已验证传感本构。应保留旧数据作为审查基准，修正后另存版本。
 3. **P2样本量旧说明错误**：原文图13写“10 thousands”即每档10000次；本代码100000次。50×50×100空间敏感性数量则匹配。定位代码没有原文畸变ToA修正分支；不能拿有效样本4.56 mm与实测13.40 mm直接比较优劣。
-4. **DANN负增益**：K=13和18时三个种子的DANN均低于pooled。只能说明当前实现与数据，不能宣布DANN普遍无效。没有原论文真实训练数据。
+4. **DANN负增益（2026-09-20按本机重跑更新）**：K=18时三个种子的DANN均低于pooled；K=13时只有两个种子低于pooled，第二种子恰为0.00 pp（旧值为−2.50 pp，原因见下方「后续更新：对比脚本路径修复与results重建」）。只能说当前实现与数据下域对抗多数不带来增益，不能宣布DANN普遍无效。没有原论文真实训练数据。
 5. **齿轮论文内部矛盾**：P4 PDF p9图13逐格计数得到302/324=93.2099%，同页正文为92.36%；尚不能确定原因。公开两套数据，不能擅改原文基准。旧代码的近100%来自简单合成数据且省略CEEMDAN/MWF-PeEn；旧图的V轴不等于机电耦合电压。
 6. **压阻循环论证**：4%、166%、42%、397%、37%来自论文表III并直接用作输入，不能将接近这些数当成独立复现成功。
 7. **故障指标分母**：50 s后2500个采样点中报警1774，报警且编号正确1774，联合成功时间比例70.96%；候选编号正确99.28%不要求报警。不能与论文九类分类97.66%比较。
@@ -228,6 +242,8 @@ Set-Location '.\comparison'
 ```
 
 重跑会覆盖同名生成文件；先保存需保留的旧基准。对比报告正文含人工审核内容，build_report.py仅组装，数据改变后必须重新核对正文，不能认为脚本自动修订了所有结论。克隆仓库不含论文、全部结果NPZ、依赖、原图页；需使用本机知识库或另行准备输入。
+
+2026-09-20补充：`comparison/audit.py`已可完整跑通（`run.py --experiment all`重建`results/`之后）；`comparison/build_report.py`还需`inspection/`下4张论文页图（`P3-p11.png`、`P5-p7.png`、`P6-p11.png`、`P7-p8.png`），本机没有，须从旧电脑拷贝。另注意`run.py`的CNN迁移支路受torch版本与CPU影响，换环境重跑会改变对比报告第6节的数字。
 
 ## 7. 论文对应索引
 
