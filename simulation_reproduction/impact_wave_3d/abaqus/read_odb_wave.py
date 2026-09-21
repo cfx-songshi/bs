@@ -112,6 +112,25 @@ def apply_window(series, window):
                 for name, data in series.items())
 
 
+def first_arrival(data, threshold=0.2):
+    """The onset of the packet: the first time the signal reaches a fraction of its peak.
+
+    The peak of the record is not an arrival time. At the receivers off the direct path the
+    largest excursion comes from a boundary reflection arriving a hundred microseconds
+    after the packet, and reading the peak as the arrival turned those into speeds of 118
+    to 939 m/s against the 1269 m/s the mesh was sized on. The onset is what a time of
+    flight is measured from, and it is the one feature a reflection cannot imitate.
+    """
+    values = [value for _, value in data]
+    if not values:
+        return None
+    level = threshold * max(abs(value) for value in values)
+    for time, value in data:
+        if abs(value) >= level:
+            return time
+    return None
+
+
 def travel(reader, name, series):
     """Distance and packet arrival time from the actuator, for the dispersion check."""
     if name == 'ACT' or 'ACT' not in reader.get('sensor_positions', {}):
@@ -122,8 +141,10 @@ def travel(reader, name, series):
     distance = math.hypot(x - ax, y - ay)
     if 'V3' not in series:
         return None
-    time, value = peaks(series['V3'])
-    return distance, time, value
+    onset = first_arrival(series['V3'])
+    if onset is None:
+        return None
+    return distance, onset, peaks(series['V3'])[0]
 
 
 def peaks(data):
@@ -191,15 +212,21 @@ def main():
             time, value = peaks(first[component])
             print('  %-4s peak % .4e at t=%.6g s' % (component, value, time))
         # The dispersion check this run can make for itself: A0 launched at the actuator,
-        # its packet arriving at a receiver a known distance away, and the resulting group
-        # speed. It is the number to compare against the analytic Rayleigh-Lamb curve.
+        # its packet arriving at a receiver a known distance away, and the resulting speed.
+        # It is the number to compare against the analytic Rayleigh-Lamb curve. Both the
+        # onset and the peak are reported: where they disagree by a lot the peak is a
+        # boundary reflection and only the onset is the packet.
         if fired is not None and name != 'ACT':
             info = travel(reader, name, first)
             if info is not None:
-                distance, time, value = info
-                if time > fired:
-                    print('  direct path %.1f mm, packet %.4g s after ACT, %.0f m/s'
-                          % (distance * 1e3, time - fired, distance / (time - fired)))
+                distance, onset, peak_time = info
+                if onset > fired:
+                    late = 'peak %.4g s after ACT, %.0f m/s' % (peak_time - fired,
+                                                                distance / (peak_time - fired)) \
+                        if peak_time > fired else 'peak not reached'
+                    print('  direct path %.1f mm, first arrival %.4g s after ACT, %.0f m/s '
+                          '(%s)'
+                          % (distance * 1e3, onset - fired, distance / (onset - fired), late))
 
         if len(odbs) < 2:
             continue
