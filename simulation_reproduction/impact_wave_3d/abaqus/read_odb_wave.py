@@ -16,7 +16,14 @@ The sensor labels come from the sidecar make_impact_wave_inp.py writes next to t
 because a deck's node sets do not survive into the odb: Abaqus writes only the sets it
 makes itself, so there is nothing in the odb to match a per-node history region against.
 
-    abaqus python read_odb_wave.py <baseline odb> [<damaged odb>]
+--window-us A,B restricts every number below to that time window. It exists because the
+wave model drifts asymmetric at late times, up to 23 to 39 per cent of the signal near the
+inner edge of the clamp, which is larger than a small delamination's signature. The direct
+packets arrive inside the first hundred microseconds, so windowing is the honest way to
+read the indicator until that drift is fixed; it is also what the through transmission pair
+is for, since a first arrival is the one thing a reflection cannot imitate.
+
+    abaqus python read_odb_wave.py <baseline odb> [<damaged odb>] [--window-us A,B]
 """
 import json
 import math
@@ -83,10 +90,40 @@ def find_nodes(odb_path):
     path = odb_path[:-4] + '.sensors.json' if odb_path.endswith('.odb') else odb_path
     try:
         with open(path, 'r') as handle:
-            sensors = json.load(handle)['sensors']
+            return json.load(handle)
     except IOError:
         return {}
-    return dict((name, (entry['node'], entry['element'])) for name, entry in sensors.items())
+
+
+def read_window(argv):
+    """--window-us A,B, as seconds, or None for the whole record."""
+    if '--window-us' not in argv:
+        return None
+    text = argv[argv.index('--window-us') + 1]
+    low, high = (float(value) * 1e-6 for value in text.split(','))
+    return low, high
+
+
+def apply_window(series, window):
+    if window is None:
+        return series
+    return dict((name, [(time, value) for time, value in data
+                        if window[0] <= time <= window[1]])
+                for name, data in series.items())
+
+
+def travel(reader, name, series):
+    """Distance and packet arrival time from the actuator, for the dispersion check."""
+    if name == 'ACT' or 'ACT' not in reader.get('sensor_positions', {}):
+        return None
+    positions = reader['sensor_positions']
+    ax, ay = positions['ACT']
+    x, y = positions[name]
+    distance = math.hypot(x - ax, y - ay)
+    if 'V3' not in series:
+        return None
+    time, value = peaks(series['V3'])
+    return distance, time, value
 
 
 def peaks(data):
@@ -117,35 +154,56 @@ def compare(a, b):
 
 
 def main():
-    if len(sys.argv) < 2:
-        raise SystemExit('usage: abaqus python read_odb_wave.py <odb> [<odb damaged>]')
-    odbs = [openOdb(path, readOnly=True) for path in sys.argv[1:]]
+    paths = [path for path in sys.argv[1:] if path.endswith('.odb')]
+    if not paths:
+        raise SystemExit('usage: abaqus python read_odb_wave.py <odb> [<odb damaged>] '
+                         '[--window-us A,B]')
+    odbs = [openOdb(path, readOnly=True) for path in paths]
     steps = [odb.steps[list(odb.steps.keys())[0]] for odb in odbs]
-    sensors = find_nodes(sys.argv[1])
+    reader = find_nodes(paths[0])
+    sensors = dict((name, (entry['node'], entry['element']))
+                   for name, entry in reader.get('sensors', {}).items())
     if not sensors:
-        print('no sidecar beside %s: run make_impact_wave_inp.py to write it' % sys.argv[1])
+        print('no sidecar beside %s: run make_impact_wave_inp.py to write it' % paths[0])
         return
-    print('sensor readings, %s' % ', '.join(sys.argv[1:]))
+    print('sensor readings, %s' % ', '.join(paths))
+    window = read_window(sys.argv)
+    if window:
+        print('  restricted to %.4g to %.4g us' % (window[0] * 1e6, window[1] * 1e6))
+
+    # The packet the actuator launches, as the time reference for every arrival. The peak
+    # of the five cycle burst is a usable marker because the burst is short compared with
+    # the time it takes to cross the plate.
+    fired = None
+    if 'ACT' in sensors:
+        series = apply_window(sensor_series(steps[0], sensors['ACT']), window)
+        if 'V3' in series:
+            fired = peaks(series['V3'])[0]
 
     for name in SENSORS:
         if name not in sensors:
             continue
-        first = sensor_series(steps[0], sensors[name])
+        first = apply_window(sensor_series(steps[0], sensors[name]), window)
         print('\n%s (node %d, element %d)' % (name, sensors[name][0], sensors[name][1]))
-        for component in ('V3', 'U3'):
+        for component in COMPONENTS + STRAINS:
             if component not in first:
                 continue
             time, value = peaks(first[component])
             print('  %-4s peak % .4e at t=%.6g s' % (component, value, time))
-        for component in STRAINS:
-            if component not in first:
-                continue
-            time, value = peaks(first[component])
-            print('  %-4s peak % .4e at t=%.6g s' % (component, value, time))
+        # The dispersion check this run can make for itself: A0 launched at the actuator,
+        # its packet arriving at a receiver a known distance away, and the resulting group
+        # speed. It is the number to compare against the analytic Rayleigh-Lamb curve.
+        if fired is not None and name != 'ACT':
+            info = travel(reader, name, first)
+            if info is not None:
+                distance, time, value = info
+                if time > fired:
+                    print('  direct path %.1f mm, packet %.4g s after ACT, %.0f m/s'
+                          % (distance * 1e3, time - fired, distance / (time - fired)))
 
         if len(odbs) < 2:
             continue
-        second = sensor_series(steps[1], sensors[name])
+        second = apply_window(sensor_series(steps[1], sensors[name]), window)
         print('  damaged against baseline:')
         for component in COMPONENTS + STRAINS:
             if component not in first or component not in second:
@@ -161,32 +219,25 @@ def main():
     for left, right in MIRROR_PAIRS:
         if left not in sensors or right not in sensors:
             continue
-        a = sensor_series(steps[0], sensors[left])
-        b = sensor_series(steps[0], sensors[right])
-        # Scale the mismatch by the pair's own signal level rather than by each component's
-        # own amplitude. A component that happens to be near zero at that point, which the
-        # shear and transverse strains often are, would otherwise show a meaningless
-        # hundred per cent for a difference far below the wave.
-        scale = 0.0
-        for component in COMPONENTS + STRAINS:
-            if component in a and component in b:
-                count = min(len(a[component]), len(b[component]))
-                scale = max(scale, max(abs(a[component][i][1]) for i in range(count)),
-                            max(abs(b[component][i][1]) for i in range(count)))
-        if scale == 0.0:
-            continue
+        a = apply_window(sensor_series(steps[0], sensors[left]), window)
+        b = apply_window(sensor_series(steps[0], sensors[right]), window)
+        # Only the displacement and velocity channels. They are what the through
+        # transmission indicator reads, and they are not near zero at a broadside point.
+        # A strain component there can be, and a normalised difference against a signal
+        # that is nearly zero says nothing except that the divisor was small; the shear
+        # components also flip sign under the reflection, which is handled below but makes
+        # them a poor choice to judge the whole check by.
         worst = (0.0, None)
-        for component in COMPONENTS + STRAINS:
+        for component in COMPONENTS:
             if component not in a or component not in b:
                 continue
-            count = min(len(a[component]), len(b[component]))
             sign = -1.0 if component in MIRROR_FLIPS else 1.0
-            difference = max(abs(a[component][i][1] - sign * b[component][i][1])
-                             for i in range(count))
-            if difference > worst[0]:
-                worst = (difference, component)
-        print('  %s vs %s: worst %s, %.3f%% of the pair\'s signal level'
-              % (left, right, worst[1], 100.0 * worst[0] / scale))
+            flipped = [(time, sign * value) for time, value in b[component]]
+            result = compare(a[component], flipped)
+            if result and result[0] > worst[0]:
+                worst = (result[0], component)
+        print('  %s vs %s: normalised RMS difference %.4f (%s), where zero is what a '
+              'symmetric plate must give' % (left, right, worst[0], worst[1]))
 
     for odb in odbs:
         odb.close()

@@ -107,6 +107,11 @@ G_PLY = '9.16e4'          # fibre tensile fracture energy, for the index's evolu
 RHO_PLY = 1650.0
 G_PLY_AXIAL = 100.0       # penalty for the index's stiffness, not used for damage
 
+# Ply elastic constants, the same set ELASTIC writes out for the deck: E1, E2, E3, nu12,
+# nu13, nu23, G12, G13 on its first line and G23 on the second. These named copies are what
+# the interface stiffness below is derived from, so if one changes the other has to.
+E3, G13, G23 = 8.2e9, 4.7e9, 3.44e9
+
 # Interface: cohesive traction-separation, quadratic stress initiation, B-K evolution.
 # Substitute values from a published CFRP cohesive-property set, not measurements of this
 # specimen: Zhu Guohua et al., "Multi-scale modeling and crashworthiness analysis of CFRP
@@ -511,10 +516,17 @@ def emit(options):
     out.append('** Interface: contact-based cohesive behaviour. There is no cohesive')
     out.append('** element and therefore no cohesive material; the traction-separation')
     out.append('** law, its initiation criterion and its evolution all live on the')
-    out.append('** surface interaction. Omitting the data line on *COHESIVE BEHAVIOR')
-    out.append('** means the default penalty stiffness is used, so none has to be invented.')
+    out.append('** surface interaction. The penalty stiffness used to be left to the')
+    out.append('** Abaqus default on the argument that none then had to be invented, which')
+    out.append('** turned out to be the wrong call: on the refined mesh the interface mode')
+    out.append('** that default creates is too stiff for the stable increment and the wave')
+    out.append('** solution drifts asymmetric. --cohesive-stiffness ply sets it from the')
+    out.append('** ply moduli instead. See cohesive_stiffness() above.')
     out.append('*Surface Interaction, name=DELAM')
     out.append('*Cohesive Behavior')
+    stiffness = cohesive_stiffness(options.cohesive_stiffness, thickness / nz)
+    if stiffness:
+        out.append(stiffness)
     out.append('*Damage Initiation, criterion=QUADS')
     out.append(IFACE_STRENGTH)
     out.append('*Damage Evolution, type=ENERGY, mixed mode behavior=BK, power=%g'
@@ -676,6 +688,31 @@ def emit(options):
                                        sensor_elements=sensor_elements)
 
 
+def cohesive_stiffness(option, ply_thickness):
+    """Data line for *Cohesive Behavior, or empty for the Abaqus default.
+
+    Left to the default, the interface's own mode turns out to be too stiff for the time
+    step on the refined mesh. Treating the two coincident planes as a spring of stiffness
+    K per unit area carrying a mass per area of one ply, the mode sits at
+    sqrt(K / (rho h)) and the stable increment has to resolve it. At the ply scale below,
+    K_n = E3 / h = 3.3e13 Pa/m, rho h = 0.4125 kg/m2, so the mode is at 8.9e6 rad/s, a
+    period of 0.70 us, which the 1.3e-8 s increment resolves twenty fold. A default an
+    order of magnitude or two stiffer would put that period at or below the increment.
+
+    'ply' is therefore the recommended setting: each interface modulus is the ply modulus
+    divided by the ply thickness, so the interface adds exactly one ply's worth of
+    compliance in each direction and no more. It is still a stiffness that has been chosen
+    rather than measured, and the compliance it adds is a documented idealisation.
+    """
+    if option == 'default':
+        return ''
+    if option == 'ply':
+        return '%.6g, %.6g, %.6g' % (E3 / ply_thickness, G13 / ply_thickness,
+                                     G23 / ply_thickness)
+    value = float(option)
+    return '%.6g, %.6g, %.6g' % (value, value, value)
+
+
 def _wrap(ids, per_line=16):
     lines = []
     for start in range(0, len(ids), per_line):
@@ -804,6 +841,11 @@ def main():
                         'which brings in the coincident edge strips the duplicated ply '
                         'interfaces leave at the plate perimeter; "interfaces" names only '
                         'the pairs the contact is meant to carry')
+    p.add_argument('--cohesive-stiffness', default='default',
+                   help='"default" omits the data line on *Cohesive Behavior and lets '
+                        'Abaqus pick the penalty stiffness; "ply" sets each interface '
+                        'modulus to the ply modulus over the ply thickness; or give a '
+                        'number in Pa/m to use for all three')
     p.add_argument('--field-frames', type=int, default=50)
     p.add_argument('--wave-frames', type=int, default=25)
     p.add_argument('--history-interval', type=float, default=5e-7)
