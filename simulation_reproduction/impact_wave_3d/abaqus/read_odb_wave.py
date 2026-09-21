@@ -192,14 +192,19 @@ def main():
     if window:
         print('  restricted to %.4g to %.4g us' % (window[0] * 1e6, window[1] * 1e6))
 
-    # The packet the actuator launches, as the time reference for every arrival. The peak
-    # of the five cycle burst is a usable marker because the burst is short compared with
-    # the time it takes to cross the plate.
+    # The actuator's own onset is the launch time, not its peak. The burst is five cycles,
+    # fifty microseconds, which is not short against the twenty to forty microseconds a
+    # receiver takes to be reached, so the burst's peak is half a burst late as a marker
+    # and every speed comes out too high. Both ends are then the same threshold crossing,
+    # which is what a time of flight should compare. The peak to peak time is still
+    # printed beside it, and it is the one to distrust.
     fired = None
+    fired_peak = None
     if 'ACT' in sensors:
         series = apply_window(sensor_series(steps[0], sensors['ACT']), window)
         if 'V3' in series:
-            fired = peaks(series['V3'])[0]
+            fired = first_arrival(series['V3'])
+            fired_peak = peaks(series['V3'])[0]
 
     for name in SENSORS:
         if name not in sensors:
@@ -221,12 +226,13 @@ def main():
             if info is not None:
                 distance, onset, peak_time = info
                 if onset > fired:
-                    late = 'peak %.4g s after ACT, %.0f m/s' % (peak_time - fired,
-                                                                distance / (peak_time - fired)) \
-                        if peak_time > fired else 'peak not reached'
-                    print('  direct path %.1f mm, first arrival %.4g s after ACT, %.0f m/s '
-                          '(%s)'
-                          % (distance * 1e3, onset - fired, distance / (onset - fired), late))
+                    line = ('  direct path %.1f mm, onset to onset %.4g s, %.0f m/s'
+                            % (distance * 1e3, onset - fired, distance / (onset - fired)))
+                    if fired_peak is not None and peak_time > fired_peak:
+                        line += ('; peak to peak %.4g s, %.0f m/s'
+                                 % (peak_time - fired_peak,
+                                    distance / (peak_time - fired_peak)))
+                    print(line)
 
         if len(odbs) < 2:
             continue
