@@ -19,8 +19,15 @@ are read from the run rather than from the deck's intent.
      the deck: it is the ball's mass times the slope of its own velocity history, which is
      the contact force and nothing else while the ball is a free rigid body.
 
-    abaqus python read_odb_impact_summary.py <odb> --ball-mass <kg>
+The delaminated area is not an output either, and it is the number the wave stage's disbond
+radius is read off. It comes from ALLDMD divided by the interface toughness, which spans
+the mode I to the mixed mode value, so the honest answer is a bracket and not a radius. That
+arithmetic used to be done by hand, which is how a factor of ten got into the record; it is
+done here now. An equal area circle is an idealisation: the real footprint is not round.
+
+    abaqus python read_odb_impact_summary.py <odb> --ball-mass <kg> [--gc 490,1060]
 """
+import math
 import re
 import sys
 
@@ -77,6 +84,9 @@ def main():
     odb_path = sys.argv[1]
     ball_mass = option('--ball-mass')
     ball_mass = float(ball_mass) if ball_mass else None
+    # Interface toughness for the area conversion. The deck gives mode I 490 J/m2 and both
+    # shear modes 1060 J/m2, so dividing the dissipated energy by each brackets the area.
+    gc = sorted(float(value) for value in option('--gc', '490,1060').split(','))
 
     odb = openOdb(odb_path, readOnly=True)
     step = odb.steps[list(odb.steps.keys())[0]]
@@ -118,6 +128,12 @@ def main():
         internal = max(value for _, value in series['ALLIE'])
         print('   ALLDMD peak / ALLIE peak: %.4f'
               % (damage / internal if internal else float('nan')))
+        if damage > 0.0:
+            areas = [damage / value * 1e6 for value in gc]
+            radii = [math.sqrt(area / math.pi) for area in areas]
+            print('   ALLDMD -> area %.2f-%.2f mm2, equal area circle radius %.2f-%.2f mm '
+                  '(Gc %g to %g J/m2)'
+                  % (areas[0], areas[1], radii[0], radii[1], gc[0], gc[1]))
 
     print('\n3. interfaces, by node height')
     # CSDMG is written only for contact pairs that carry cohesive behaviour, so its
