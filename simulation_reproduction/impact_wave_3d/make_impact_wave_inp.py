@@ -622,6 +622,20 @@ def emit(options):
         out.append('*Energy Output')
         out.append('ALLKE, ALLIE, ALLSE, ALLAE, ALLDMD, ALLPD, ALLWK, ETOTAL')
         out.append('*End Step')
+        # A deck is one stage or the other and never both, which is deliberate rather than
+        # an omission: the impact leaves the plate holding about 0.13 J of ringing, and its
+        # high frequency part cannot be filtered out where the delaminated plies are
+        # flapping, so a wave step appended to the impact step would measure the ringing
+        # rather than the damage.
+        return '\n'.join(out) + '\n', dict(
+            mesh=mesh, ball_mass=ball_mass, speed=speed, energy=energy, ref_node=ref_node,
+            n_nodes=len(nodes) + len(ball_nodes) + 1,
+            n_ball_nodes=len(ball_nodes) + 1, n_ply=n_ply_elements, n_ball=n_ball,
+            n_extra=2, n_interfaces=nz - 1, dz=dt, wave_only=False,
+            patch=len(patch), patch_area=patch_area, disbond_radius=disbond_radius,
+            disbonded=sorted(inplane_inner),
+            disbond_elements=sum(len(v) for v in inplane_inner.values()),
+            sensors=sensor_nodes, sensor_elements=sensor_elements)
 
     out.append('*Step, name=WAVE, nlgeom=NO')
     out.append('*Dynamic, Explicit')
