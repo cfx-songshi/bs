@@ -17,6 +17,9 @@ Thumbs.db
 参考文献/
 source_text/
 inspection/
+# Extracted text of the reference papers, kept only for cross-checking while reviewing.
+# The papers themselves stay local, so their text does too.
+review/explanation_sources/*.txt
 
 # Generated experiments and reports
 results/

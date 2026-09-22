@@ -1,0 +1,7 @@
+odb d:/bs_thesis/simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_mid.odb
+kind model frames 24 until_us 120.0 size (4000, 1200)
+view visibleEdges FEATURE
+step IMPACT frames available 26 end_s 0.000500000023748726
+wrote d:/bs_thesis/review/abaqus_views\imp_mid_model.png
+wrote d:/bs_thesis/review/abaqus_views\imp_mid_model_front.png
+done

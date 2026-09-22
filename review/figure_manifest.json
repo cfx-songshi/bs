@@ -1,0 +1,18 @@
+{
+  "s1_plate_modal": "figures/s1_plate_modal.png",
+  "s2_farfield_convergence": "figures/s2_farfield_convergence.png",
+  "s2_plate_vs_solid": "figures/s2_plate_vs_solid.png",
+  "s2_sensor_direction": "figures/s2_sensor_direction.png",
+  "s3_dispersion_analytic": "figures/s3_dispersion_analytic.png",
+  "s3_dispersion_check": "figures/s3_dispersion_check.png",
+  "s4_abaqus_speed": "figures/s4_abaqus_speed.png",
+  "s4_cross_solver": "figures/s4_cross_solver.png",
+  "s4_reduced_integration": "figures/s4_reduced_integration.png",
+  "s6_graded_mesh": "figures/s6_graded_mesh.png",
+  "s6_impact_energies": "figures/s6_impact_energies.png",
+  "s6_impact_history": "figures/s6_impact_history.png",
+  "s7_sensor_layout": "figures/s7_sensor_layout.png",
+  "s7_wave_floor": "figures/s7_wave_floor.png",
+  "s7_wave_waveforms": "figures/s7_wave_waveforms.png",
+  "s8_instability": "figures/s8_instability.png"
+}

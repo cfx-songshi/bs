@@ -1,0 +1,9 @@
+odb d:/bs_thesis/simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_smoke.odb
+kind wave frames 3 until_us 120.0 size (1000, 780)
+view visibleEdges FREE
+step WAVE frames available 11 end_s 9.99999974737875e-05
+u3_range_on_exported_frames_m -1.17398492704979e-07 1.13738991558421e-07 legend -1.17398492704979e-07 1.17398492704979e-07
+frame 0 requested_us 40.0 actual_us 40.02 limits fixed
+frame 1 requested_us 80.0 actual_us 80.02 limits fixed
+frame 2 requested_us 100.0 actual_us 100.0 limits fixed
+done
