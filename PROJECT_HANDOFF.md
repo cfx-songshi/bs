@@ -11,20 +11,47 @@
 - 根目录`.gitignore`已排除`*.npz`、`*.csv`、`*.png`、`results/`，提交时只会收录代码、文档、指标JSON与SVG，符合上传范围约定。
 - 旧电脑的`E:\毕设知识库`、`C:\Users\Admin\...`路径及"独立Git工作副本"安排均已作废；第2节表格已按本机实际情况改写。
 
-## 当前状态总览（2026-09-19 收尾）
+## 当前状态总览（2026-09-21 收尾）
 
-两条建模线，各自独立、均有解析或独立求解器对照：
+三条线，各自独立、均有解析或独立求解器对照：
 
 | 线 | 目录 | 状态 |
 |---|---|---|
-| **PZT 主动导波（当前主线）** | `guided_wave_v2/`（二维＋解析参考）、`guided_wave_3d/`（三维） | 二维 A0 相速度对解析 0.48–0.68% 且随网格收敛；三维线源对二维同网格 **0.11%**；三维点源两方向 **1.55% / 3.29%**，各向异性波前比 **1.69%** |
+| **PZT 主动导波（主线）** | `guided_wave_v2/`（二维＋解析参考）、`guided_wave_3d/`（三维） | 二维 A0 相速度对解析 0.48–0.68% 且随网格收敛；三维线源对二维同网格 **0.11%**；三维点源两方向 **1.55% / 3.29%**，各向异性波前比 **1.69%** |
 | 落球冲击（P2 路线） | `impact_v1/`（薄板）、`impact_3d_v1/`（三维） | 三维两级模型网格/时间步/能量三重收敛；并证明**薄板局部量不可信**（峰值力高估 5.1 倍、冲击点位移低估 2.8 倍） |
+| **落球冲击 → 导波链路（本轮主线）** | `impact_wave_3d/` | 冲击步与导波步各自验收通过；分层 footprint 已交接到导波模型的 disbond（kissing bond），两档损伤指标可采信（见下） |
 
-**工具链**：Python 3.13.15 + 六个锁定依赖（site-packages）；Git 2.55（远端走 SSH，443 被阻断）；CalculiX 2.23（`D:\CalculiX`，无显式动力学）。
+**工具链**：Python 3.13.15 + 六个锁定依赖（site-packages）；Git 2.55（远端走 SSH，443 被阻断）；CalculiX 2.23（`D:\CalculiX`，无显式动力学）；Abaqus/Explicit 2026（`D:\Abaqus\Commands\abaqus.bat`）。
 
-- **未完成**：①Abaqus 侧已跑出**第一个有物理意义的算例**并做过定量对照（2026-09-20，见下文）：A0 相速度通过（粗网格 0.16%、细网格 0.09%），残留波形差已定位为离散层面并随加密收敛，但**点源与 PZT 都还没上 Abaqus**；②导波仍无 PZT/胶层/机电耦合，输出是机械位移**不是电压**；③两条线均**未与实物实验对照**（无实测验证集）；④`.inp` → CalculiX 的转换未做；⑤群速度验证精度不足（导波，见下文各节）；⑥`comparison/build_report.py`缺`inspection/`论文页图，本机仍生成不了对比报告HTML（2026-09-20）。
+**链路（`impact_wave_3d/`）当前数**（细节与保留意见见下方"冲击/导波"各节）：
+
+- 加密网格：`--nx 79 --ny 79` ⇒ 106×106×8、89,888 实体、中心 0.15 mm、边缘 1.269 mm（相邻比 ≤1.10）；导波模型 183,184 节点。
+- 界面：接触型黏聚（无黏聚单元、无界面质量），强度 59.5 MPa、`GnC` 490、`GsC`=`GtC` 1060 J/m²、B-K η=2.284。**`*Cohesive Behavior` 一律显式给数据行，取 2.37e13**（＝探针实测的默认静态顺应性）；接触域用命名面对（`--contact-scope interfaces`）。
+- 冲击三档（`--drop-mm` 2571 / 7709 / 20400 ⇒ 0.100 / 0.300 / 0.794 J，`--impact-us 500`）：ALLDMD 0.0966 / 0.9267 / 15.11 mJ ⇒ 等价圆半径 0.17–0.25 / **0.53–0.78** / **2.13–3.13** mm。
+- 导波（`--wave-us 250`，**必须 `double=explicit`**）：无损基线镜像对噪声底 **0.0012–0.0049**（0–90 µs 窗口，V3 归一化 RMS 差）；两档 disbond 取区间上界 **0.8 mm / 3.1 mm**，指标 R1 **0.0547** / R2 **0.0463**（corr 0.999）与 R1 **1.50** / R2 **1.33**（corr **−0.447** / **−0.199**，透射波包反相）。
+- 频散自检（起点对起点）：1219–1448 m/s 对建网格所用的 A0 相速度 1269 m/s。
+- `abaqus/runs/` 与全部 odb/sta **不进版本库**（见 `impact_wave_3d/.gitignore`）：换机器只能重生成 deck，重读不了 odb。
+- **残留小缺口**：0.300 J 档在 2.37e13 下受损界面是 **4 个**（0.75 mm 那面已无损伤），而对应的导波算例仍按原先的 **5 个界面**（3–7）建，多出的那个界面只有 56 个节点到损伤，偏保守，未重跑。
+
+**未完成 / 下一步**：①**多次落球的损伤累积**（计划内下一步，机时空着，逐次放大的 patch 半径按 2.37e13 档区间算）；②可选：两单元**受压**探针，验证"省略数据行时压缩侧另加过刚罚刚度"这条领先假设；③导波仍无 PZT/胶层/机电耦合，输出是机械位移**不是电压**；④两条线均**未与实物实验对照**（无实测验证集）；⑤`.inp` → CalculiX 的转换未做；⑥`comparison/build_report.py` 缺 `inspection/` 论文页图，本机仍生成不了对比报告 HTML。
+
+**引用这些数时必须一并说明的三条**（详见下文各节）：黏聚失稳的**机制未查清**（三条假设均被实测否掉，但"一律给数据行"这条工程规则可靠）；**footprint 自带与界面刚度同量级的不确定度**（面积约 2 倍），不能当确定值引用；**冲击应力场未收敛**（接触半径约 0.28 mm 在 0.15 mm 网格上仍只约 1 个单元）。
 
 **同步方式**：本机 `D:\bs_thesis` 自身是仓库，`git status` 干净即与远端一致；**最新提交以远端为准**（`git log -1 origin/main`），不要依赖本文档写的提交号。历史各轮细节见下方按时间排列的"后续更新"节。
+
+## 怎么接下一段对话（2026-09-21 收尾）
+
+1. **先核对磁盘与远端，不要信本文档里的提交号**：`git -C D:\bs_thesis status --short`、`git log --oneline -1 origin/main`。收尾时工作区干净、`origin/main` = `2e7b792`、无 Abaqus 作业在跑（`Get-ChildItem -Recurse -Filter *.lck` 为空）。
+2. **要接着做链路，只需读本文档的这四节**（都在"后续更新"里、按时间排）："冲击区局部加密，以及加密网格上的重新标定"、"导波步"、"显式黏聚刚度下重跑三档冲击标定"、"用修正后的 disbond 半径重跑两档导波"。其余早于 2026-09-20 的节是旧的 `guided_wave_*` / `impact_*` 两条线，本轮未改动它们。
+3. **复现命令**（cwd = `simulation_reproduction/impact_wave_3d/`；`abaqus\runs\impact\` 需自行新建）：
+   - 导波 deck：`python make_impact_wave_inp.py --wave-only --nx 79 --ny 79 --nz 8 --centre-size 1.5e-4 --contact-scope interfaces --cohesive-stiffness 2.37e13 --disbond-radius 8e-4 --disbond-interfaces 3,4,5,6,7 --wave-us 250 --out abaqus\runs\impact\<name>.inp`
+   - 冲击 deck：同上去掉 `--wave-only`，加 `--impact-us 500 --drop-mm <2571|7709|20400>`，**不给** `--disbond-*`。
+   - 提交作业：`D:\Abaqus\Commands\abaqus.bat job=<name> input=<name>.inp double=explicit interactive`。导波步**必须** `double=explicit`；deck 生成时打印的 `self check: clean` 是前置条件。
+   - 读冲击：`abaqus python read_odb_impact_summary.py runs\impact\<name>.odb --ball-mass 3.9676e-3`
+   - 读导波：`abaqus python read_odb_wave.py runs\impact\wav_base.odb runs\impact\<name>.odb --window-us 0,90`
+   - 核对"某个 deck 是不是这条命令生成的"：比对 MD5（本轮就是这样定出 `--nx 79` 的）。
+4. **起跑前先确认没有旧作业在跑**（`*.lck` 为空）。终端上限 5 个，超过就用 `Start-Process -WindowStyle Hidden` 分离启动（本轮 6 个冲击作业与 2 个导波作业都是这么跑的）；单个加密网格算例：冲击步约 4.6 h、导波步约 2.7 h。
+
 
 ## 后续更新：实物碳板落球路线（2026-09-15）
 
