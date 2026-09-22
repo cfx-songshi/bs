@@ -1,0 +1,318 @@
+{
+  "passed": true,
+  "kind": "capability_and_workflow_only_not_physical_validation",
+  "cohesive": {
+    "passed": true,
+    "inherited_damage_max": 0.879517138004303,
+    "final_damage_max": 0.9695103764533997,
+    "continuity_max_error": 0.0,
+    "restart_vs_whole_damage_max_error": 0.0,
+    "energy_J": {
+      "PULL": {
+        "ALLDMD": [
+          0.0,
+          0.0002618184080347419
+        ],
+        "ALLVD": [
+          0.0,
+          2.3307452465815004e-06
+        ],
+        "ETOTAL": [
+          4.875001309301297e-07,
+          7.116594957778943e-08
+        ]
+      },
+      "RELAX": {
+        "ALLDMD": [
+          0.0002618184080347419,
+          0.0002618184080347419
+        ],
+        "ALLVD": [
+          2.3307452465815004e-06,
+          4.392092250782298e-06
+        ],
+        "ETOTAL": [
+          5.612296263279859e-07,
+          5.504451223714568e-07
+        ]
+      },
+      "RELOAD": {
+        "ALLDMD": [
+          0.0002618184080347419,
+          0.0003361139097250998
+        ],
+        "ALLVD": [
+          4.392092250782298e-06,
+          6.509939339593984e-06
+        ],
+        "ETOTAL": [
+          1.5059454199217726e-06,
+          1.3834484207109199e-06
+        ]
+      }
+    }
+  },
+  "explicit_interval": {
+    "passed": true,
+    "explicit_interval_restart_vs_whole_max_CSDMG_error": 0.0
+  },
+  "damping": {
+    "passed": true,
+    "measured_velocity": {
+      "OFF1": 1.0,
+      "ON": 0.36788251996040344,
+      "OFF2": 0.36693283915519714
+    },
+    "expected_velocity": {
+      "OFF1": 1.0,
+      "ON": 0.36787944117144233,
+      "OFF2": 0.36787944117144233
+    },
+    "max_error": 0.0009466020162451905
+  },
+  "default_decks_byte_identical": {
+    "impact": true,
+    "wave": true
+  },
+  "coupon_stages": [
+    {
+      "stage": "IMPACT",
+      "kind": "impact",
+      "hit": 1,
+      "residual": {
+        "conservative_ball_gap_m": 0.0023408247288898565,
+        "local_top_max_u3_m": -0.00011089319741586223,
+        "plate_max_speed_m_s": 4.565459900856691,
+        "plate_mechanical_tail_max_J": 0.0798259044508115
+      },
+      "energy_drift_fraction": -0.0015776356061299643,
+      "continuity": null,
+      "ball": {
+        "force_peak_N": 3259.945870621262,
+        "force_peak_time_s": 1.0033280659627053e-06,
+        "force_tail_max_N": 0.0,
+        "node": 12283,
+        "rebound_ratio": 0.7848946047284681,
+        "u3_last_m": 0.0022299315314739943,
+        "v3_first_m_s": -12.296299934387207,
+        "v3_last_m_s": 9.651299476623535
+      }
+    },
+    {
+      "stage": "acc_n02_relax1",
+      "kind": "relax",
+      "hit": 2,
+      "residual": {
+        "conservative_ball_gap_m": 0.003001218357212565,
+        "local_top_max_u3_m": -1.218563966176589e-06,
+        "plate_max_speed_m_s": 0.03235089796775009,
+        "plate_mechanical_tail_max_J": 1.1370827678547357e-05
+      },
+      "energy_drift_fraction": 0.002115766207377116,
+      "continuity": {
+        "max_CSDMG_error": 0.0,
+        "ALLDMD_error_J": 0.0,
+        "ETOTAL_boundary_jump_J": 1.519918441772461e-06
+      },
+      "ball": {
+        "force_peak_N": -839.2072528183127,
+        "force_peak_time_s": 6.261407543206587e-05,
+        "force_tail_max_N": 0.0,
+        "node": 12283,
+        "rebound_ratio": -0.0,
+        "u3_last_m": 0.0029999997932463884,
+        "v3_first_m_s": 9.651299476623535,
+        "v3_last_m_s": 0.0
+      }
+    },
+    {
+      "stage": "acc_n02_prepare_POSITION",
+      "kind": "position",
+      "hit": 2,
+      "residual": {
+        "conservative_ball_gap_m": 0.000408016958999724,
+        "local_top_max_u3_m": -6.093748652347131e-07,
+        "plate_max_speed_m_s": 0.011697286311956101,
+        "plate_mechanical_tail_max_J": 2.7360614134330774e-05
+      },
+      "energy_drift_fraction": 0.0,
+      "continuity": {
+        "max_CSDMG_error": 0.0,
+        "ALLDMD_error_J": 0.0,
+        "ETOTAL_boundary_jump_J": 0.0
+      },
+      "ball": {
+        "force_peak_N": -5935.703654357534,
+        "force_peak_time_s": 2.1200356059125625e-05,
+        "force_tail_max_N": 5919.186698035841,
+        "node": 12283,
+        "rebound_ratio": null,
+        "u3_last_m": 0.0004074075841344893,
+        "v3_first_m_s": 0.0,
+        "v3_last_m_s": -0.0009369804756715894
+      }
+    },
+    {
+      "stage": "acc_n02_prepare_LAUNCH",
+      "kind": "launch",
+      "hit": 2,
+      "residual": {
+        "conservative_ball_gap_m": 0.0001001291128233106,
+        "local_top_max_u3_m": -1.289480024979639e-07,
+        "plate_max_speed_m_s": 0.016772173602423,
+        "plate_mechanical_tail_max_J": 2.323878418863945e-06
+      },
+      "energy_drift_fraction": 0.0,
+      "continuity": {
+        "max_CSDMG_error": 0.0,
+        "ALLDMD_error_J": 0.0,
+        "ETOTAL_boundary_jump_J": 0.0
+      },
+      "ball": {
+        "force_peak_N": -975.7375177980185,
+        "force_peak_time_s": 3.052673491765745e-05,
+        "force_tail_max_N": 975.7375177980185,
+        "node": 12283,
+        "rebound_ratio": null,
+        "u3_last_m": 0.00010000016482081264,
+        "v3_first_m_s": 0.0,
+        "v3_last_m_s": -12.296297073364258
+      }
+    },
+    {
+      "stage": "acc_n02",
+      "kind": "impact",
+      "hit": 2,
+      "residual": {
+        "conservative_ball_gap_m": 0.0022198748192749918,
+        "local_top_max_u3_m": -6.419181590899825e-05,
+        "plate_max_speed_m_s": 5.839954551651752,
+        "plate_mechanical_tail_max_J": 0.08140358246226823
+      },
+      "energy_drift_fraction": 8.0565611521403e-05,
+      "continuity": {
+        "max_CSDMG_error": 0.0,
+        "ALLDMD_error_J": 0.0,
+        "ETOTAL_boundary_jump_J": 2.9802322387695312e-08
+      },
+      "ball": {
+        "force_peak_N": 3280.6774650610582,
+        "force_peak_time_s": 9.624051017453894e-06,
+        "force_tail_max_N": 0.0,
+        "node": 12283,
+        "rebound_ratio": 0.7859803645249791,
+        "u3_last_m": 0.0021556830033659935,
+        "v3_first_m_s": -12.296297073364258,
+        "v3_last_m_s": 9.664648056030273
+      }
+    },
+    {
+      "stage": "acc_n03_relax1",
+      "kind": "relax",
+      "hit": 3,
+      "residual": {
+        "conservative_ball_gap_m": 0.0030008376689920624,
+        "local_top_max_u3_m": -8.376429150303011e-07,
+        "plate_max_speed_m_s": 0.043731089675337544,
+        "plate_mechanical_tail_max_J": 1.1098465165559901e-05
+      },
+      "energy_drift_fraction": 0.0007516145706176758,
+      "continuity": {
+        "max_CSDMG_error": 0.0,
+        "ALLDMD_error_J": 0.0,
+        "ETOTAL_boundary_jump_J": -4.76837158203125e-07
+      },
+      "ball": {
+        "force_peak_N": -956.5137924835869,
+        "force_peak_time_s": 9.357625822303817e-05,
+        "force_tail_max_N": 0.0,
+        "node": 12283,
+        "rebound_ratio": -0.0,
+        "u3_last_m": 0.003000000026077032,
+        "v3_first_m_s": 9.664648056030273,
+        "v3_last_m_s": 0.0
+      }
+    },
+    {
+      "stage": "acc_n03_prepare_POSITION",
+      "kind": "position",
+      "hit": 3,
+      "residual": {
+        "conservative_ball_gap_m": 0.0004079002778780705,
+        "local_top_max_u3_m": -4.930138857162092e-07,
+        "plate_max_speed_m_s": 0.010674653032896544,
+        "plate_mechanical_tail_max_J": 2.7258472647950782e-05
+      },
+      "energy_drift_fraction": 0.0,
+      "continuity": {
+        "max_CSDMG_error": 0.0,
+        "ALLDMD_error_J": 0.0,
+        "ETOTAL_boundary_jump_J": 0.0
+      },
+      "ball": {
+        "force_peak_N": 5935.075629195392,
+        "force_peak_time_s": 7.90103804320097e-05,
+        "force_tail_max_N": 5920.461178352954,
+        "node": 12283,
+        "rebound_ratio": null,
+        "u3_last_m": 0.0004074072639923543,
+        "v3_first_m_s": 0.0,
+        "v3_last_m_s": -0.0009669378632679582
+      }
+    },
+    {
+      "stage": "acc_n03_prepare_LAUNCH",
+      "kind": "launch",
+      "hit": 3,
+      "residual": {
+        "conservative_ball_gap_m": 0.00010011087477579395,
+        "local_top_max_u3_m": -1.1103009711632694e-07,
+        "plate_max_speed_m_s": 0.014811680612655977,
+        "plate_mechanical_tail_max_J": 2.292006456017237e-06
+      },
+      "energy_drift_fraction": 0.0,
+      "continuity": {
+        "max_CSDMG_error": 0.0,
+        "ALLDMD_error_J": 0.0,
+        "ETOTAL_boundary_jump_J": 0.0
+      },
+      "ball": {
+        "force_peak_N": -975.7377817435088,
+        "force_peak_time_s": 4.805999924428761e-05,
+        "force_tail_max_N": 975.7377817435088,
+        "node": 12283,
+        "rebound_ratio": null,
+        "u3_last_m": 9.999984467867762e-05,
+        "v3_first_m_s": 0.0,
+        "v3_last_m_s": -12.296297073364258
+      }
+    },
+    {
+      "stage": "acc_n03",
+      "kind": "impact",
+      "hit": 3,
+      "residual": {
+        "conservative_ball_gap_m": 0.0022307415929390118,
+        "local_top_max_u3_m": -6.043612665962428e-05,
+        "plate_max_speed_m_s": 5.974254579213633,
+        "plate_mechanical_tail_max_J": 0.0784020179093356
+      },
+      "energy_drift_fraction": 8.384386698404948e-05,
+      "continuity": {
+        "max_CSDMG_error": 0.0,
+        "ALLDMD_error_J": 0.0,
+        "ETOTAL_boundary_jump_J": -2.9802322387695312e-08
+      },
+      "ball": {
+        "force_peak_N": 3268.53950633649,
+        "force_peak_time_s": 9.624488484405447e-06,
+        "force_tail_max_N": 0.0,
+        "node": 12283,
+        "rebound_ratio": 0.7910753721109121,
+        "u3_last_m": 0.0021703054662793875,
+        "v3_first_m_s": -12.296297073364258,
+        "v3_last_m_s": 9.72729778289795
+      }
+    }
+  ]
+}

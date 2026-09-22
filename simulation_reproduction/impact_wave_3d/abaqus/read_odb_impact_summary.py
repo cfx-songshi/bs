@@ -84,17 +84,36 @@ def main():
     odb_path = sys.argv[1]
     ball_mass = option('--ball-mass')
     ball_mass = float(ball_mass) if ball_mass else None
+    if option('--json'):
+        from impact_metrics import read, write_report
+        report = read(odb_path, option('--step'), ball_mass,
+                      int(option('--ball-node')), int(option('--top-node')),
+                      float(option('--expected-us'))*1e-6 if option('--expected-us') else None,
+                      gc=tuple(float(v) for v in option('--gc', '490,1060').split(',')))
+        write_report(report, option('--json'))
+        print('%s: ALLDMD %.9g J, equivalent radius %.5g-%.5g mm'
+              % (report['step'], report['energy']['ALLDMD']['last_J'],
+                 report['energy_equivalent_radius_mm'][0], report['energy_equivalent_radius_mm'][1]))
+        return
     # Interface toughness for the area conversion. The deck gives mode I 490 J/m2 and both
     # shear modes 1060 J/m2, so dividing the dissipated energy by each brackets the area.
     gc = sorted(float(value) for value in option('--gc', '490,1060').split(','))
 
     odb = openOdb(odb_path, readOnly=True)
-    step = odb.steps[list(odb.steps.keys())[0]]
+    names = list(odb.steps.keys())
+    selected = option('--step')
+    if selected is None and len(names) > 1:
+        odb.close()
+        raise SystemExit('multiple steps: specify --step; available: ' + ', '.join(names))
+    step = odb.steps[selected or names[0]]
     if not step.frames:
         print('the step has no frames: the analysis did not run')
         odb.close()
         return
     last = step.frames[-1]
+    if option('--expected-us') and abs(last.frameValue-float(option('--expected-us'))*1e-6)>1e-9:
+        odb.close()
+        raise SystemExit('step did not reach --expected-us')
     print('odb %s, step %s, %d frames, ends at t=%.6g s'
           % (odb_path, step.name, len(step.frames), last.frameValue))
 
@@ -119,7 +138,7 @@ def main():
         values = [value for _, value in series[name]]
         print('   %-7s first % .6e  last % .6e  peak % .6e'
               % (name, values[0], values[-1], max(values, key=abs)))
-    if 'ETOTAL' in series:
+    if 'ETOTAL' in series and series['ETOTAL'][0][1] != 0.0:
         values = [value for _, value in series['ETOTAL']]
         print('   ETOTAL drift over the step: %+.3f%% of the initial value'
               % (100 * (values[-1] - values[0]) / values[0]))
@@ -129,11 +148,12 @@ def main():
         print('   ALLDMD peak / ALLIE peak: %.4f'
               % (damage / internal if internal else float('nan')))
         if damage > 0.0:
-            areas = [damage / value * 1e6 for value in gc]
+            areas = sorted(damage / value * 1e6 for value in gc)
             radii = [math.sqrt(area / math.pi) for area in areas]
             print('   ALLDMD -> area %.2f-%.2f mm2, equal area circle radius %.2f-%.2f mm '
                   '(Gc %g to %g J/m2)'
                   % (areas[0], areas[1], radii[0], radii[1], gc[0], gc[1]))
+            print('   Energy-equivalent summed-interface proxy, not a geometric radius bound; partial damage also dissipates energy.')
 
     print('\n3. interfaces, by node height')
     # CSDMG is written only for contact pairs that carry cohesive behaviour, so its
@@ -229,8 +249,9 @@ def main():
             print('   node %s U3: final % .4e m, peak downward %.1f um'
                   % (label, values[-1], -peak * 1e6))
             continue
-        print('   node %s V3: starts % .4f m/s, ends % .4f m/s, rebound ratio %.3f'
-              % (label, values[0], values[-1], -values[-1] / values[0]))
+        print('   node %s V3: starts % .4f m/s, ends % .4f m/s, rebound ratio %s'
+              % (label, values[0], values[-1],
+                 _number(-values[-1] / values[0] if values[0] else None)))
         if ball_mass is None or len(times) < 3:
             continue
         # Window of two samples either side rather than one. The first increment carries
@@ -257,6 +278,9 @@ def main():
         # that happens inside the step.
         threshold = 0.01 * abs(peak[0])
         loaded = [time for value, time in force if abs(value) > threshold]
+        if not loaded:
+            print('     no resolved contact force above threshold')
+            continue
         print('     loaded from t=%.4g s to t=%.4g s, %.2f%% of the step'
               % (loaded[0], loaded[-1],
                  100 * (loaded[-1] - loaded[0]) / times[-1]))

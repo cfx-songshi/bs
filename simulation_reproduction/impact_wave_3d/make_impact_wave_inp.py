@@ -484,6 +484,9 @@ def emit(options):
                     clamped.append(mesh['nid'](i, j, plane))
     out.append('*Nset, nset=FRAME')
     out.append(_wrap(clamped))
+    if getattr(options, 'settle_alpha', 0.0):
+        out.append('*Nset, nset=PLATENODES, generate')
+        out.append('1, %d, 1' % len(nodes))
     if not wave_only:
         out.append('*Nset, nset=BALLREF')
         out.append('%d,' % ref_node)
@@ -501,6 +504,12 @@ def emit(options):
     out.append(',')
 
     out.append('*Material, name=PLY')
+    if getattr(options, 'settle_alpha', 0.0):
+        out.append('** Numerical inter-impact relaxation only, NOT measured damping.')
+        out.append('** Field 1=0 during impact; field 1=1 during relaxation.')
+        out.append('*Damping, alpha=TABULAR, dependencies=1')
+        out.append('0., 0., 0.')
+        out.append('%.9g, 0., 1.' % options.settle_alpha)
     out.append('*Density')
     out.append('%.1f,' % RHO_PLY)
     out.append('*Elastic, type=ENGINEERING CONSTANTS')
@@ -554,6 +563,9 @@ def emit(options):
         # caught it, and the field count is now checked below so it cannot come back
         # silently.
         out.append('%d, 3, %.6e' % (ref_node, -speed))
+        if getattr(options, 'settle_alpha', 0.0):
+            out.append('*Initial Conditions, type=FIELD, variable=1')
+            out.append('PLATENODES, 0.')
 
     out.append('*Surface Interaction, name=FRIC')
     out.append('*Friction')
@@ -628,11 +640,15 @@ def emit(options):
         out.append('CSTRESS, CDISP, CSDMG')
         out.append('*Output, history, time interval=%.6g' % (options.history_interval))
         out.append('*Node Output, nset=BALLREF')
-        out.append('V3')
+        out.append('U3, V3' if getattr(options, 'settle_alpha', 0.0) else 'V3')
         out.append('*Node Output, nset=TOPCENTRE')
         out.append('U3')
         out.append('*Energy Output')
         out.append('ALLKE, ALLIE, ALLSE, ALLAE, ALLDMD, ALLPD, ALLWK, ETOTAL')
+        if getattr(options, 'settle_alpha', 0.0):
+            out.append('*Energy Output')
+            out.append('ALLVD, ALLFD, ALLCW, ALLPW')
+            out.append('*Restart, write, number interval=1')
         out.append('*End Step')
         # A deck is one stage or the other and never both, which is deliberate rather than
         # an omission: the impact leaves the plate holding about 0.13 J of ringing, and its
@@ -762,7 +778,7 @@ def self_check(text, info):
                 for value in parts[1:]:
                     if _is_number(value):
                         rigid_nodes.add(int(value))
-        elif keyword == '*initial conditions':
+        elif keyword == '*initial conditions' and 'type=velocity' in keyword_line.replace(' ', ''):
             # Three fields, and the third one is the value. Extra fields are ignored
             # rather than rejected, so a four-field line runs happily with the wrong
             # velocity; see the note in emit().
@@ -849,8 +865,13 @@ def main():
     p.add_argument('--field-frames', type=int, default=50)
     p.add_argument('--wave-frames', type=int, default=25)
     p.add_argument('--history-interval', type=float, default=5e-7)
+    p.add_argument('--settle-alpha', type=float, default=0.0,
+                   help='prepare restart relaxation with switchable numerical mass '
+                        'damping in 1/s; initially OFF; not a measured property')
     p.add_argument('--out', type=Path, required=True)
     options = p.parse_args()
+    if options.settle_alpha < 0 or (options.settle_alpha and options.wave_only):
+        p.error('--settle-alpha must be nonnegative and is for impact only')
 
     text, info = emit(options)
     options.out.write_text(text, encoding='ascii')
@@ -872,6 +893,9 @@ def main():
         disbond=dict(radius=info['disbond_radius'], interfaces=info['disbonded'],
                      elements=info['disbond_elements']),
         impact=None if info['wave_only'] else dict(drop_mm=options.drop_mm,
+                                                   ball_node=info['ref_node'],
+                                                   top_node=info['mesh']['nid'](info['mesh']['nx']//2, info['mesh']['ny']//2, info['mesh']['n_planes']-1),
+                                                   settle_alpha=options.settle_alpha,
                                                    speed=info['speed'],
                                                    energy=info['energy']),
     ), indent=2, sort_keys=True), encoding='ascii')
