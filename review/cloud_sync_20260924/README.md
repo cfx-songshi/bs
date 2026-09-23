@@ -124,3 +124,10 @@ GitHub LFS 对 acc_n02.abq（4,402,044,928 字节）的 batch 请求已明确返
 | `simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/interrupted_20260923_133902/acc_n02_relax1.odb` | 0.301 | bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive |
 | `simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/interrupted_20260923_133902/acc_n02_relax1.pac` | 0.486 | bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive |
 | `simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/interrupted_20260923_133902/acc_n02_relax1.stt` | 0.108 | bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive |
+
+
+## 已完成的校验
+
+成果提交：`44a6323`。本地 `git lfs fsck` 通过；2026-09-24 远端认证下载 batch 检查确认 **957/957 个唯一 LFS 对象** 均存在、大小匹配并返回下载入口，覆盖 **1203 个 LFS 路径**，去重后约 **5.400 GiB**。核验未重新下载全部二进制载荷，详情见 `remote_lfs_verification.json`；签名 URL 与凭据未保存。
+
+本次论文/临时文件排除和 107 个大型求解文件待上传状态不变。收到用户对剩余存储范围的选择前，不执行关机。

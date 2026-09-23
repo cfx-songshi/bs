@@ -19726,5 +19726,10 @@
       "status": "included",
       "reason": "project file or completed simulation result"
     }
-  ]
+  ],
+  "supplemental_verification_files": [
+    "review/verify_remote_lfs.py",
+    "review/cloud_sync_20260924/remote_lfs_verification.json"
+  ],
+  "note": "File sizes/counts above describe the prepared primary snapshot; verification records were added in the following documentation commit."
 }
