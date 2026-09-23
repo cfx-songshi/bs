@@ -1,0 +1,98 @@
+[
+  {
+    "k_per_class": 2,
+    "method": "target_only",
+    "seeds": 3,
+    "accuracy_mean": 0.6791666666666666,
+    "accuracy_std_across_seeds": 0.019094065395649312,
+    "macro_f1_mean": 0.6686742857638167
+  },
+  {
+    "k_per_class": 2,
+    "method": "pooled",
+    "seeds": 3,
+    "accuracy_mean": 0.8666666666666666,
+    "accuracy_std_across_seeds": 0.04389855730355308,
+    "macro_f1_mean": 0.8648359423514221
+  },
+  {
+    "k_per_class": 2,
+    "method": "DANN",
+    "seeds": 3,
+    "accuracy_mean": 0.8583333333333334,
+    "accuracy_std_across_seeds": 0.05636562191028614,
+    "macro_f1_mean": 0.8564639667900537
+  },
+  {
+    "k_per_class": 8,
+    "method": "target_only",
+    "seeds": 3,
+    "accuracy_mean": 0.8583333333333334,
+    "accuracy_std_across_seeds": 0.0314576434802948,
+    "macro_f1_mean": 0.8546487074593146
+  },
+  {
+    "k_per_class": 8,
+    "method": "pooled",
+    "seeds": 3,
+    "accuracy_mean": 0.8916666666666666,
+    "accuracy_std_across_seeds": 0.02602082499332663,
+    "macro_f1_mean": 0.8899808025514715
+  },
+  {
+    "k_per_class": 8,
+    "method": "DANN",
+    "seeds": 3,
+    "accuracy_mean": 0.8958333333333334,
+    "accuracy_std_across_seeds": 0.019094065395649326,
+    "macro_f1_mean": 0.8955893893974389
+  },
+  {
+    "k_per_class": 13,
+    "method": "target_only",
+    "seeds": 3,
+    "accuracy_mean": 0.8625000000000002,
+    "accuracy_std_across_seeds": 0.05448623679425839,
+    "macro_f1_mean": 0.859609024919632
+  },
+  {
+    "k_per_class": 13,
+    "method": "pooled",
+    "seeds": 3,
+    "accuracy_mean": 0.8833333333333333,
+    "accuracy_std_across_seeds": 0.040181878170803965,
+    "macro_f1_mean": 0.8812194334602296
+  },
+  {
+    "k_per_class": 13,
+    "method": "DANN",
+    "seeds": 3,
+    "accuracy_mean": 0.8708333333333332,
+    "accuracy_std_across_seeds": 0.040181878170804,
+    "macro_f1_mean": 0.8693845569224153
+  },
+  {
+    "k_per_class": 18,
+    "method": "target_only",
+    "seeds": 3,
+    "accuracy_mean": 0.8916666666666666,
+    "accuracy_std_across_seeds": 0.014433756729740658,
+    "macro_f1_mean": 0.8916223283803039
+  },
+  {
+    "k_per_class": 18,
+    "method": "pooled",
+    "seeds": 3,
+    "accuracy_mean": 0.9125,
+    "accuracy_std_across_seeds": 0.02165063509461102,
+    "macro_f1_mean": 0.9121366824472895
+  },
+  {
+    "k_per_class": 18,
+    "method": "DANN",
+    "seeds": 3,
+    "accuracy_mean": 0.8250000000000001,
+    "accuracy_std_across_seeds": 0.07806247497997992,
+    "macro_f1_mean": 0.8163706178939275
+  }
+]

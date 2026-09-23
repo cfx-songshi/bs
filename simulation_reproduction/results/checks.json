@@ -1,0 +1,9 @@
+{
+  "wavelet_perfect_reconstruction": true,
+  "sym8_constants_match_pywavelets": true,
+  "noiseless_localization": true,
+  "toa_affine_invariance": true,
+  "center_singularity_rejected": true,
+  "prefix_aic_matches_direct_variance": true,
+  "tca_constraint": true
+}

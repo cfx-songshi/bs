@@ -1,0 +1,67 @@
+*Heading
+** Free rigid translation: analytic damping check, not material calibration
+*Node, nset=ALLN
+1, 0, 0, 0
+2, .001, 0, 0
+3, .001, .001, 0
+4, 0, .001, 0
+5, 0, 0, .001
+6, .001, 0, .001
+7, .001, .001, .001
+8, 0, .001, .001
+*Element, type=C3D8, elset=BODY
+1, 1,2,3,4,5,6,7,8
+*Solid Section, elset=BODY, material=MAT
+,
+*Material, name=MAT
+*Density
+1650.
+*Elastic
+8.2e9, .3
+*Damping, alpha=TABULAR, dependencies=1
+0., 0., 0.
+20000., 0., 1.
+*Initial Conditions, type=FIELD, variable=1
+ALLN, 0.
+*Initial Conditions, type=VELOCITY
+ALLN, 1, 1.
+*Amplitude, name=ON
+0.,1.,1.,1.
+*Amplitude, name=OFF
+0.,0.,1.,0.
+*Step, name=OFF1, nlgeom=NO
+*Dynamic, Explicit
+, 2e-05
+*Field, variable=1, amplitude=OFF
+ALLN, 1.
+*Output, field, number interval=10
+*Node Output
+V
+*Output, history, time interval=1e-6
+*Energy Output
+ALLKE, ALLVD, ETOTAL
+*End Step
+*Step, name=ON, nlgeom=NO
+*Dynamic, Explicit
+, 5e-05
+*Field, variable=1, amplitude=ON
+ALLN, 1.
+*Output, field, number interval=10
+*Node Output
+V
+*Output, history, time interval=1e-6
+*Energy Output
+ALLKE, ALLVD, ETOTAL
+*End Step
+*Step, name=OFF2, nlgeom=NO
+*Dynamic, Explicit
+, 2e-05
+*Field, variable=1, amplitude=OFF
+ALLN, 1.
+*Output, field, number interval=10
+*Node Output
+V
+*Output, history, time interval=1e-6
+*Energy Output
+ALLKE, ALLVD, ETOTAL
+*End Step

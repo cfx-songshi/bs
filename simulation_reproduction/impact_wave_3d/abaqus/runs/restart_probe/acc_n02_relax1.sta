@@ -1,0 +1,73 @@
+Abaqus/Explicit 2026                             DATE 22-Sep-2026  TIME 13:31:25
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 4 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+ NUMERICAL PRECISION USED FOR THIS Abaqus/Explicit ANALYSIS
+-------------------------------------------------------------------------------
+
+Single precision package and double precision explicit executables will be
+used in this analysis.
+
+-------------------------------------------------------------------------------
+           
+***WARNING: Restart frame is set 0 and restart analysis disabled
+           
+
+Abaqus/Explicit 2026                             DATE 22-Sep-2026  TIME 13:31:32
+
+ STEP 2  ORIGIN 5.00000E-04
+
+  Total memory used for step 2 is approximately 78.6 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL        STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME     INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 5.000E-04  00:00:00 9.72956E-08          70  5.500E-02  1.147E-01
+Output Field Frame Number     0, of     10, at step time 0.000E+00
+      125  2.507E-05 5.251E-04  00:00:01 2.02918E-07         181  1.553E-01  1.147E-01
+      248  5.003E-05 5.500E-04  00:00:01 2.02918E-07         542  4.279E-01  1.147E-01
+Output Field Frame Number     1, of     10, at step time 5.003E-05
+      372  7.520E-05 5.752E-04  00:00:01 2.02918E-07         547  1.403E-01  1.147E-01
+      495  1.002E-04 6.002E-04  00:00:02 2.02918E-07         489  5.455E-03  1.147E-01
+Output Field Frame Number     2, of     10, at step time 1.002E-04
+      619  1.253E-04 6.253E-04  00:00:02 2.02918E-07         128  4.301E-03  1.147E-01
+      741  1.501E-04 6.501E-04  00:00:02 2.02918E-07         675  3.760E-03  1.147E-01
+Output Field Frame Number     3, of     10, at step time 1.501E-04
+      865  1.752E-04 6.752E-04  00:00:03 2.02918E-07         235  1.328E-03  1.147E-01
+      988  2.002E-04 7.002E-04  00:00:03 2.02918E-07         432  9.981E-04  1.147E-01
+Output Field Frame Number     4, of     10, at step time 2.002E-04
+     1112  2.254E-04 7.254E-04  00:00:03 2.02918E-07         182  6.161E-04  1.147E-01
+     1234  2.501E-04 7.501E-04  00:00:04 2.02918E-07         547  1.392E-04  1.147E-01
+Output Field Frame Number     5, of     10, at step time 2.501E-04
+     1358  2.753E-04 7.753E-04  00:00:04 2.02918E-07         561  1.558E-04  1.147E-01
+     1480  3.000E-04 8.000E-04  00:00:04 2.02918E-07         539  1.013E-04  1.147E-01
+Output Field Frame Number     6, of     10, at step time 3.000E-04
+     1604  3.252E-04 8.252E-04  00:00:05 2.02918E-07         580  5.829E-05  1.147E-01
+     1727  3.501E-04 8.501E-04  00:00:05 2.02918E-07         441  4.871E-05  1.147E-01
+Output Field Frame Number     7, of     10, at step time 3.501E-04
+     1851  3.753E-04 8.753E-04  00:00:05 2.02918E-07         449  3.841E-05  1.147E-01
+     1973  4.001E-04 9.001E-04  00:00:06 2.02918E-07         447  2.139E-05  1.147E-01
+Output Field Frame Number     8, of     10, at step time 4.001E-04
+     2097  4.252E-04 9.252E-04  00:00:06 2.02918E-07         543  1.233E-05  1.147E-01
+     2220  4.502E-04 9.502E-04  00:00:06 2.02918E-07         466  7.804E-06  1.147E-01
+Output Field Frame Number     9, of     10, at step time 4.502E-04
+     2344  4.753E-04 9.753E-04  00:00:07 2.02918E-07         542  2.733E-06  1.147E-01
+     2466  5.000E-04 1.000E-03  00:00:07 2.02745E-07         580  1.499E-06  1.147E-01
+Restart Number  1 at 1.00000E-03
+Output Field Frame Number    10, of     10, at step time 5.000E-04
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =   6.1000
+       SYSTEM TIME (SEC)    =  0.50000
+       WALLCLOCK TIME (SEC) =            7
+              INIT (SEC) =          0
+              MAIN (SEC) =          7
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

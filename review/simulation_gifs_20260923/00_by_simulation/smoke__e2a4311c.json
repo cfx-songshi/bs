@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "smoke__e2a4311c",
+  "name": "smoke",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\smoke",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\smoke__e2a4311c.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\smoke__e2a4311c.png",
+  "frames": 51,
+  "segments": 1,
+  "duration_s": 7.6499999999999995,
+  "signature": [
+    [
+      "smoke__IMPACT__bcd75f83",
+      1790143712.0942166
+    ]
+  ],
+  "group": "20_historical",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\smoke.odb"
+  ],
+  "caveats": [
+    "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+  ],
+  "parts": [
+    "smoke__IMPACT__bcd75f83"
+  ]
+}

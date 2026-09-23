@@ -1,0 +1,101 @@
+Abaqus/Explicit 2026                             DATE 20-Sep-2026  TIME 17:58:16
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 4 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+ NUMERICAL PRECISION USED FOR THIS Abaqus/Explicit ANALYSIS
+-------------------------------------------------------------------------------
+
+Single precision package and explicit executables will be used in this analysis.
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass in model = 6.70313E-07
+   Center of mass of model = ( 6.250000E-04, 6.250000E-04, 1.298077E-04)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          2.722989E-13                  5.454346E-13
+      I(YY)          2.722990E-13                  5.454346E-13
+      I(ZZ)          5.236816E-13                  1.047363E-12
+      I(XY)          1.726083E-20                 -2.618408E-13
+      I(YZ)          4.590036E-21                 -5.438233E-14
+      I(ZX)          2.895970E-21                 -5.438233E-14
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 1.19766E-10
+
+   Statistics over 2 deformable elements:
+      Mean = 1.28412E-08
+      Standard deviation = 1.79908E-08
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+   ----------------------------------------------------------
+           2          1       1.197664E-10      1.000000E+00
+           1          2       2.556262E-08      4.685218E-03
+
+
+Abaqus/Explicit 2026                             DATE 20-Sep-2026  TIME 17:58:23
+The entire model is considered 1 domain.
+Only 1 MPI rank is used.
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 1.2 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL        STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME     INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 0.000E+00  00:00:00 1.19766E-10           2  0.000E+00  0.000E+00
+     4217  5.000E-07 5.000E-07  00:00:00 1.18569E-10           2  0.000E+00  0.000E+00
+     8434  1.000E-06 1.000E-06  00:00:01 1.18569E-10           2  0.000E+00  0.000E+00
+    12651  1.500E-06 1.500E-06  00:00:01 1.18569E-10           2  0.000E+00  0.000E+00
+    16869  2.000E-06 2.000E-06  00:00:02 1.18569E-10           2  0.000E+00  0.000E+00
+    21090  2.500E-06 2.500E-06  00:00:02 1.18569E-10           2  0.000E+00  0.000E+00
+    25311  3.000E-06 3.000E-06  00:00:02 1.18569E-10           2  0.000E+00  0.000E+00
+    29532  3.500E-06 3.500E-06  00:00:03 1.18569E-10           2  0.000E+00  0.000E+00
+    33750  4.000E-06 4.000E-06  00:00:03 1.18569E-10           2  0.000E+00  0.000E+00
+    37963  4.500E-06 4.500E-06  00:00:04 1.18569E-10           2  0.000E+00  0.000E+00
+    42176  5.000E-06 5.000E-06  00:00:04 1.18569E-10           2  0.000E+00  0.000E+00
+    46389  5.500E-06 5.500E-06  00:00:05 1.18569E-10           2  0.000E+00  0.000E+00
+    50602  6.000E-06 6.000E-06  00:00:05 1.18569E-10           2  0.000E+00  0.000E+00
+    54815  6.500E-06 6.500E-06  00:00:06 1.18569E-10           2  0.000E+00  0.000E+00
+    59028  7.000E-06 7.000E-06  00:00:06 1.18569E-10           2  0.000E+00  0.000E+00
+    63241  7.501E-06 7.501E-06  00:00:06 1.18569E-10           2  0.000E+00  0.000E+00
+    67466  8.001E-06 8.001E-06  00:00:07 1.18569E-10           2  0.000E+00  0.000E+00
+    71695  8.501E-06 8.501E-06  00:00:07 1.18569E-10           2  0.000E+00  0.000E+00
+    75924  9.001E-06 9.001E-06  00:00:08 1.18569E-10           2  0.000E+00  0.000E+00
+    80153  9.501E-06 9.501E-06  00:00:08 1.18569E-10           2  0.000E+00  0.000E+00
+    84377  1.000E-05 1.000E-05  00:00:09 1.18569E-10           2  0.000E+00  0.000E+00
+Restart Number  1 at 1.00000E-05
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =   5.8000
+       SYSTEM TIME (SEC)    =   10.700
+       WALLCLOCK TIME (SEC) =            9
+              INIT (SEC) =          0
+              MAIN (SEC) =          9
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

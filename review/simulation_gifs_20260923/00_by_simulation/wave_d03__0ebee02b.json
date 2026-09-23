@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "wave_d03__0ebee02b",
+  "name": "wave_d03",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d03",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_d03__0ebee02b.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_d03__0ebee02b.png",
+  "frames": 26,
+  "segments": 1,
+  "duration_s": 3.9,
+  "signature": [
+    [
+      "wave_d03__WAVE__57e8d8de",
+      1790143670.8886583
+    ]
+  ],
+  "group": "20_historical",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d03.odb"
+  ],
+  "caveats": [
+    "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+  ],
+  "parts": [
+    "wave_d03__WAVE__57e8d8de"
+  ]
+}

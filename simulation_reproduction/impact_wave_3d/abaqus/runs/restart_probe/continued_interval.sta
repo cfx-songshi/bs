@@ -1,0 +1,113 @@
+Abaqus/Explicit 2026                             DATE 22-Sep-2026  TIME 13:37:27
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 9 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+ NUMERICAL PRECISION USED FOR THIS Abaqus/Explicit ANALYSIS
+-------------------------------------------------------------------------------
+
+Single precision package and double precision explicit executables will be
+used in this analysis.
+
+-------------------------------------------------------------------------------
+
+Abaqus/Explicit 2026                             DATE 22-Sep-2026  TIME 13:37:34
+
+ STEP 2  ORIGIN 4.00000E-05
+
+  Total memory used for step 2 is approximately 871.2 kilobytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL        STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME     INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 4.000E-05  00:00:00 1.05884E-07           2  4.875E-07  5.612E-07
+Output Field Frame Number     0, of     10, at step time 0.000E+00
+       19  2.011E-06 4.201E-05  00:00:00 1.05830E-07           2  6.431E-07  5.766E-07
+       38  4.022E-06 4.402E-05  00:00:00 1.05830E-07           1  9.235E-07  5.731E-07
+Output Field Frame Number     1, of     10, at step time 4.022E-06
+       57  6.032E-06 4.603E-05  00:00:00 1.05831E-07           1  1.060E-06  5.639E-07
+       76  8.043E-06 4.804E-05  00:00:00 1.05831E-07           1  1.056E-06  5.613E-07
+Output Field Frame Number     2, of     10, at step time 8.043E-06
+       95  1.005E-05 5.005E-05  00:00:00 1.05830E-07           2  1.009E-06  5.612E-07
+      114  1.206E-05 5.206E-05  00:00:00 1.05830E-07           2  9.745E-07  5.611E-07
+Output Field Frame Number     3, of     10, at step time 1.206E-05
+      133  1.408E-05 5.408E-05  00:00:00 1.05830E-07           2  9.605E-07  5.610E-07
+      152  1.609E-05 5.609E-05  00:00:00 1.05831E-07           2  9.593E-07  5.610E-07
+Output Field Frame Number     4, of     10, at step time 1.609E-05
+      171  1.810E-05 5.810E-05  00:00:00 1.05831E-07           2  9.623E-07  5.610E-07
+      189  2.000E-05 6.000E-05  00:00:00 1.05831E-07           1  5.689E-07  6.654E-07
+Output Field Frame Number     5, of     10, at step time 2.000E-05
+      208  2.201E-05 6.201E-05  00:00:00 1.05831E-07           1  6.115E-08  5.697E-07
+      227  2.402E-05 6.402E-05  00:00:00 1.05828E-07           2  1.225E-09  5.596E-07
+Output Field Frame Number     6, of     10, at step time 2.402E-05
+      246  2.603E-05 6.603E-05  00:00:00 1.05830E-07           2  6.513E-09  5.516E-07
+      265  2.804E-05 6.804E-05  00:00:00 1.05831E-07           2  3.104E-09  5.506E-07
+Output Field Frame Number     7, of     10, at step time 2.804E-05
+      284  3.006E-05 7.006E-05  00:00:00 1.05830E-07           2  3.965E-10  5.506E-07
+      303  3.207E-05 7.207E-05  00:00:00 1.05830E-07           1  1.765E-11  5.505E-07
+Output Field Frame Number     8, of     10, at step time 3.207E-05
+      322  3.408E-05 7.408E-05  00:00:00 1.05831E-07           1  7.961E-11  5.505E-07
+      341  3.609E-05 7.609E-05  00:00:00 1.05831E-07           1  3.581E-11  5.504E-07
+Output Field Frame Number     9, of     10, at step time 3.609E-05
+      360  3.810E-05 7.810E-05  00:00:00 1.05831E-07           1  3.013E-12  5.504E-07
+      378  4.000E-05 8.000E-05  00:00:00 1.05831E-07           2  4.104E-12  5.504E-07
+Restart Number  1 at 8.00000E-05
+Output Field Frame Number    10, of     10, at step time 4.000E-05
+
+Abaqus/Explicit 2026                             DATE 22-Sep-2026  TIME 13:37:34
+
+ STEP 3  ORIGIN 8.00000E-05
+
+  Total memory used for step 3 is approximately 796.7 kilobytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL        STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME     INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 8.000E-05  00:00:00 1.05831E-07           2  9.555E-07  1.506E-06
+Output Field Frame Number     0, of     10, at step time 0.000E+00
+       19  2.012E-06 8.201E-05  00:00:00 1.05888E-07           2  1.267E-06  1.542E-06
+       38  4.024E-06 8.402E-05  00:00:00 1.05888E-07           2  1.867E-06  1.533E-06
+Output Field Frame Number     1, of     10, at step time 4.024E-06
+       57  6.036E-06 8.604E-05  00:00:00 1.05891E-07           2  2.159E-06  1.511E-06
+       76  8.048E-06 8.805E-05  00:00:00 1.05893E-07           2  2.126E-06  1.505E-06
+Output Field Frame Number     2, of     10, at step time 8.048E-06
+       95  1.006E-05 9.006E-05  00:00:00 1.05893E-07           2  1.999E-06  1.506E-06
+      114  1.207E-05 9.207E-05  00:00:00 1.05893E-07           1  1.910E-06  1.505E-06
+Output Field Frame Number     3, of     10, at step time 1.207E-05
+      133  1.408E-05 9.408E-05  00:00:00 1.05893E-07           1  1.877E-06  1.505E-06
+      152  1.610E-05 9.610E-05  00:00:00 1.05893E-07           1  1.911E-06  1.505E-06
+Output Field Frame Number     4, of     10, at step time 1.610E-05
+      171  1.811E-05 9.811E-05  00:00:00 1.05893E-07           1  1.924E-06  1.505E-06
+      189  2.001E-05 1.000E-04  00:00:00 1.05893E-07           2  1.005E-06  1.519E-06
+Output Field Frame Number     5, of     10, at step time 2.001E-05
+      208  2.203E-05 1.020E-04  00:00:00 1.05893E-07           2  1.904E-07  1.415E-06
+      227  2.404E-05 1.040E-04  00:00:00 1.05893E-07           1  7.089E-10  1.412E-06
+Output Field Frame Number     6, of     10, at step time 2.404E-05
+      246  2.605E-05 1.060E-04  00:00:00 1.05893E-07           1  1.669E-08  1.389E-06
+      265  2.806E-05 1.081E-04  00:00:00 1.05893E-07           2  1.298E-08  1.383E-06
+Output Field Frame Number     7, of     10, at step time 2.806E-05
+      284  3.007E-05 1.101E-04  00:00:00 1.05892E-07           2  2.329E-09  1.384E-06
+      303  3.209E-05 1.121E-04  00:00:00 1.05892E-07           2  8.131E-12  1.384E-06
+Output Field Frame Number     8, of     10, at step time 3.209E-05
+      322  3.410E-05 1.141E-04  00:00:00 1.05893E-07           2  2.772E-10  1.384E-06
+      340  3.600E-05 1.160E-04  00:00:00 1.05893E-07           2  5.907E-11  1.383E-06
+Output Field Frame Number     9, of     10, at step time 3.600E-05
+      359  3.802E-05 1.180E-04  00:00:00 1.05893E-07           1  4.105E-12  1.383E-06
+      378  4.000E-05 1.200E-04  00:00:00 1.05893E-07           1  2.159E-11  1.383E-06
+Restart Number  1 at 1.20000E-04
+Output Field Frame Number    10, of     10, at step time 4.000E-05
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =  0.10000
+       SYSTEM TIME (SEC)    =  0.20000
+       WALLCLOCK TIME (SEC) =            0
+              INIT (SEC) =          0
+              MAIN (SEC) =          0
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

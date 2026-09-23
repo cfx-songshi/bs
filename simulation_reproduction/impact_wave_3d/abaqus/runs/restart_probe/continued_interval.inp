@@ -1,0 +1,28 @@
+*Heading
+*Restart, read, step=1, interval=1, end step
+*Amplitude, name=ON, time=STEP TIME
+0., 1., 1., 1.
+*Amplitude, name=OFF, time=STEP TIME
+0., 0., 1., 0.
+*Amplitude, name=UNLOAD, time=STEP TIME
+0., 1e-5, 2e-5, 0., 4e-5, 0.
+*Amplitude, name=RELOAD, time=STEP TIME
+0., 0., 2e-5, 1.4e-5, 4e-5, 1.4e-5
+*Step, name=RELAX, nlgeom=NO
+*Dynamic, Explicit
+, 4e-5
+*Field, variable=1, amplitude=ON
+ALLN, 1.
+*Boundary, amplitude=UNLOAD
+TOP, 3, 3, 1.
+*Restart, write, number interval=1
+*End Step
+*Step, name=RELOAD, nlgeom=NO
+*Dynamic, Explicit
+, 4e-5
+*Field, variable=1, amplitude=OFF
+ALLN, 1.
+*Boundary, amplitude=RELOAD
+TOP, 3, 3, 1.
+*Restart, write, number interval=1
+*End Step

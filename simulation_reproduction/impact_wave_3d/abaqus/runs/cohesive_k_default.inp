@@ -1,0 +1,97 @@
+*Heading
+** Measures the stiffness Abaqus uses for contact-based cohesive behaviour when
+** *COHESIVE BEHAVIOR is given no data line. Two stacked bricks share no nodes at the
+** interface, exactly as the plate model's plies do not, so the opening is carried by the
+** cohesive interaction alone. The top face is pulled by a slow prescribed displacement,
+** twenty microseconds against a 0.39 us axial period, so the response is quasi-static and
+** the opening can be read without the bricks ringing. Write the same deck with and without
+** a data line under *COHESIVE BEHAVIOR and the two stiffnesses fall out of
+** K = (reaction force / area) / opening.
+*Preprint, echo=NO, model=NO, history=NO, contact=NO
+*Node
+1, 0., 0., 0.
+2, 1e-3, 0., 0.
+3, 1e-3, 1e-3, 0.
+4, 0., 1e-3, 0.
+5, 0., 0., 1e-3
+6, 1e-3, 0., 1e-3
+7, 1e-3, 1e-3, 1e-3
+8, 0., 1e-3, 1e-3
+11, 0., 0., 1e-3
+12, 1e-3, 0., 1e-3
+13, 1e-3, 1e-3, 1e-3
+14, 0., 1e-3, 1e-3
+15, 0., 0., 2e-3
+16, 1e-3, 0., 2e-3
+17, 1e-3, 1e-3, 2e-3
+18, 0., 1e-3, 2e-3
+*Element, type=C3D8
+1, 1, 2, 3, 4, 5, 6, 7, 8
+2, 11, 12, 13, 14, 15, 16, 17, 18
+*Elset, elset=LOWER
+1,
+*Elset, elset=UPPER
+2,
+*Nset, nset=BOTTOM
+1, 2, 3, 4,
+*Nset, nset=MIDLOWER
+5, 6, 7, 8,
+*Nset, nset=MIDUPPER
+11, 12, 13, 14,
+*Nset, nset=TOP
+15, 16, 17, 18,
+** The lateral degrees of freedom are held on both faces either side of the interface and
+** on the pulled face. Without that the upper brick is free to tilt, the interface opens
+** as a wedge and the opening read is the wedge's maximum rather than the value the
+** stiffness belongs to; the first run of this deck measured 2.9 times the default against
+** the specified value for exactly that reason.
+*Boundary
+BOTTOM, ENCASTRE
+TOP, 1, 2
+MIDLOWER, 1, 2
+MIDUPPER, 1, 2
+*Surface, type=ELEMENT, name=LOWER_TOP
+LOWER, S2
+*Surface, type=ELEMENT, name=UPPER_BOTTOM
+UPPER, S1
+*Material, name=STEEL
+*Density
+7800.,
+*Elastic
+2.1e11, 0.3
+*Solid Section, elset=LOWER, material=STEEL
+,
+*Solid Section, elset=UPPER, material=STEEL
+,
+*Amplitude, name=RAMP, time=STEP TIME
+0., 0.
+2e-5, 1.
+*Surface Interaction, name=COH
+*Cohesive Behavior
+*Contact
+*Contact Inclusions
+LOWER_TOP, UPPER_BOTTOM
+*Contact Property Assignment
+ ,  , COH
+*Step, name=PULL, nlgeom=NO
+*Dynamic, Explicit
+, 4e-5
+*Bulk Viscosity
+0.06, 1.2
+*Boundary
+BOTTOM, ENCASTRE
+*Boundary, amplitude=RAMP, type=DISPLACEMENT
+TOP, 3, 3, 4e-8
+*Output, field, number interval=10
+*Node Output
+U, V
+*Element Output
+S
+*Contact Output
+CDISP, CSTRESS
+*Output, history, time interval=2e-7
+*Node Output, nset=TOP
+RF3, U3
+*Energy Output
+ALLKE, ALLIE, ETOTAL
+*End Step

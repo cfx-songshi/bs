@@ -1,0 +1,12 @@
+{
+  "wall_s": 29.859604835510254,
+  "command": [
+    "D:\\Abaqus\\Commands\\abaqus.bat",
+    "job=acc_n02",
+    "input=acc_n02.inp",
+    "double=explicit",
+    "interactive",
+    "oldjob=acc_n02_prepare"
+  ],
+  "returncode": 0
+}

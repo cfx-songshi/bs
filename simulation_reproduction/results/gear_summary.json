@@ -1,0 +1,210 @@
+[
+  {
+    "rpm": 150,
+    "method": "ELM",
+    "source_train_n": 486,
+    "target_adapt_unlabeled_n": 27,
+    "target_test_n": 54,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion": [
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        0,
+        18,
+        0
+      ],
+      [
+        0,
+        0,
+        18
+      ]
+    ]
+  },
+  {
+    "rpm": 150,
+    "method": "linear_TCA_ELM",
+    "source_train_n": 486,
+    "target_adapt_unlabeled_n": 27,
+    "target_test_n": 54,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion": [
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        0,
+        18,
+        0
+      ],
+      [
+        0,
+        0,
+        18
+      ]
+    ]
+  },
+  {
+    "rpm": 200,
+    "method": "ELM",
+    "source_train_n": 486,
+    "target_adapt_unlabeled_n": 27,
+    "target_test_n": 54,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion": [
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        0,
+        18,
+        0
+      ],
+      [
+        0,
+        0,
+        18
+      ]
+    ]
+  },
+  {
+    "rpm": 200,
+    "method": "linear_TCA_ELM",
+    "source_train_n": 486,
+    "target_adapt_unlabeled_n": 27,
+    "target_test_n": 54,
+    "accuracy": 0.9814814814814815,
+    "macro_f1": 0.9814671814671815,
+    "confusion": [
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        1,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        18
+      ]
+    ]
+  },
+  {
+    "rpm": 250,
+    "method": "ELM",
+    "source_train_n": 486,
+    "target_adapt_unlabeled_n": 27,
+    "target_test_n": 54,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion": [
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        0,
+        18,
+        0
+      ],
+      [
+        0,
+        0,
+        18
+      ]
+    ]
+  },
+  {
+    "rpm": 250,
+    "method": "linear_TCA_ELM",
+    "source_train_n": 486,
+    "target_adapt_unlabeled_n": 27,
+    "target_test_n": 54,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion": [
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        0,
+        18,
+        0
+      ],
+      [
+        0,
+        0,
+        18
+      ]
+    ]
+  },
+  {
+    "rpm": 300,
+    "method": "ELM",
+    "source_train_n": 486,
+    "target_adapt_unlabeled_n": 27,
+    "target_test_n": 54,
+    "accuracy": 0.9814814814814815,
+    "macro_f1": 0.9814671814671815,
+    "confusion": [
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        0,
+        18,
+        0
+      ],
+      [
+        1,
+        0,
+        17
+      ]
+    ]
+  },
+  {
+    "rpm": 300,
+    "method": "linear_TCA_ELM",
+    "source_train_n": 486,
+    "target_adapt_unlabeled_n": 27,
+    "target_test_n": 54,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion": [
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        0,
+        18,
+        0
+      ],
+      [
+        0,
+        0,
+        18
+      ]
+    ]
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_hashin.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "fewer than two field frames"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxps_dir1.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "fewer than two field frames"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxse.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "fewer than two field frames"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxss.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "fewer than two field frames"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8r_hashin.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "fewer than two field frames"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\deg_c3d8_elastic.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\deg_c3d8_max_stress.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\deg_c3d8_maxps.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\deg_c3d8_quads.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\deg_sc8r_hashin.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\ic_probe.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_relax1.odb",
+    "type": "odb",
+    "outputs": [],
+    "status": "skipped_active",
+    "reason": "lock exists: active or unverified job"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade.odb",
+    "step": "IMPACT",
+    "status": "no_animation",
+    "reason": "fewer than two field frames"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_a_thin_K1e16.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_b_thick_K1e16.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_c_thin_K1e13.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_d_thick_K1e13.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_dt.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "fewer than two field frames"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_dt_thick.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_dt_thin.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_e_thick_K1e12.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_f_thick_K1e10.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "no U or V nodal field"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_mass.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "fewer than two field frames"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_mass2.odb",
+    "step": "S1",
+    "status": "no_animation",
+    "reason": "fewer than two field frames"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\results\\transfer_dataset_seed0.npz",
+    "status": "not_temporal_simulation",
+    "reason": "静态训练/迁移张量或无已定义物理时间轴，不补造过程动画",
+    "keys": [
+      "normalization_source_mean",
+      "normalization_source_std",
+      "source",
+      "source_event_ids",
+      "source_xy",
+      "source_y",
+      "target_event_ids",
+      "target_pool",
+      "target_xy",
+      "target_y",
+      "test",
+      "test_event_ids",
+      "test_xy",
+      "test_y"
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\results\\transfer_dataset_seed1.npz",
+    "status": "not_temporal_simulation",
+    "reason": "静态训练/迁移张量或无已定义物理时间轴，不补造过程动画",
+    "keys": [
+      "normalization_source_mean",
+      "normalization_source_std",
+      "source",
+      "source_event_ids",
+      "source_xy",
+      "source_y",
+      "target_event_ids",
+      "target_pool",
+      "target_xy",
+      "target_y",
+      "test",
+      "test_event_ids",
+      "test_xy",
+      "test_y"
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\results\\transfer_dataset_seed2.npz",
+    "status": "not_temporal_simulation",
+    "reason": "静态训练/迁移张量或无已定义物理时间轴，不补造过程动画",
+    "keys": [
+      "normalization_source_mean",
+      "normalization_source_std",
+      "source",
+      "source_event_ids",
+      "source_xy",
+      "source_y",
+      "target_event_ids",
+      "target_pool",
+      "target_xy",
+      "target_y",
+      "test",
+      "test_event_ids",
+      "test_xy",
+      "test_y"
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "reviewed": [
+    ".dat: THE OPTION *FIELD IS USED BUT THE OPTION *INITIAL",
+    ".dat: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE",
+    ".dat: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE",
+    ".dat: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE"
+  ],
+  "unresolved": [
+    ".sta: Restart frame is set 0 and restart analysis disabled"
+  ]
+}

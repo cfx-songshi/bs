@@ -1,0 +1,18 @@
+{
+  "mode": "point",
+  "mesh": "400x400x4",
+  "elements": 640000,
+  "nodes": 804005,
+  "dofs": 2412015,
+  "dx_m": 0.00125,
+  "dy_m": 0.00125,
+  "dz_m": 0.00043,
+  "dt_s": 1.1969532100108813e-07,
+  "dt_upper_bound_s": 1.2875551469804494e-07,
+  "steps": 1838,
+  "duration_s": 0.00022,
+  "elements_per_A0_wavelength": 10.16,
+  "frame_mode": "2d",
+  "frame_stride_xy": 1,
+  "energy_relative_drift": 6.445512799579924e-14
+}

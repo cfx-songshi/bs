@@ -1,0 +1,31 @@
+{
+  "key": "clamp10mm__signals__25762246",
+  "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp10mm\\signals.csv",
+  "kind": "traces",
+  "group": "61_thin_plate",
+  "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+  "complete": true,
+  "status": "exported",
+  "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\clamp10mm__signals__25762246.npz",
+  "step": "saved data",
+  "frames": 51,
+  "source_frames": 801,
+  "start_s": 0.0,
+  "end_s": 0.003999750015624024,
+  "field": "U",
+  "geometry_scale": 1,
+  "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+  "trace_names": [
+    "contact_force_N",
+    "impact_w（µm）",
+    "ball_travel（µm）",
+    "energy_J"
+  ],
+  "renderer_version": 3,
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\61_thin_plate\\clamp10mm__signals__25762246.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\61_thin_plate\\clamp10mm__signals__25762246.png",
+  "gif_frames": 51,
+  "width": 1160,
+  "height": 710,
+  "duration_ms": 150
+}

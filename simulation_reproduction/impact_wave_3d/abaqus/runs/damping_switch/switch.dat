@@ -1,0 +1,186 @@
+1
+
+   Abaqus 2026                                  Date 22-Sep-2026   Time 13:34:32
+   For use by Supplied by Team-SolidSQUAD under license from Dassault Systemes or its subsidiary.
+
+
+
+                         The Abaqus Software is a product of:
+
+                           Dassault Systemes Americas Corp.
+                           1301 Atwood Avenue, Suite 101W
+                              Johnston, RI 02919, USA
+ 
+
+
+                   The Abaqus Software is available only under license
+                   from Dassault Systemes or its subsidiary and may be
+                   used or reproduced only in accordance with the terms
+                   of such license.
+ 
+                          On machine CFX 
+                          you are authorized to run
+                          Abaqus/Explicit until 31-Dec-2055
+
+                          Your site id is:  
+
+
+ 
+                    For assistance or any other information you may
+                    obtain contact information for your local office
+                    from the world wide web at:
+
+                      https://www.3ds.com/products-services/simulia/services-support/locations/
+
+ 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                *                                                         * 
+                *                   *****************                     * 
+                *                   *  N O T I C E  *                     * 
+                *                   *****************                     * 
+                *                                                         * 
+                *                                                         * 
+                *                       Abaqus 2026                       * 
+                *                                                         * 
+                *       BUILD ID: 2025_09_23-22.43.03 RELr428 206049      * 
+                *                                                         * 
+                *                                                         * 
+                *  Please make sure you are using                         * 
+                *  release Abaqus 2026 manuals                            * 
+                *  plus the notes accompanying this release.              * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+ 
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *heading
+  *material, name=MAT
+  *density
+  *elastic
+  *damping, alpha=TABULAR, dependencies=1
+  *solidsection, elset=BODY, material=MAT
+  *solidsection, elset=BODY, material=MAT
+  *solidsection, elset=BODY, material=MAT
+  *initialconditions, type=FIELD, variable=1
+  *initialconditions, type=VELOCITY
+  *field, variable=1, amplitude=OFF
+  *field, variable=1, amplitude=ON
+  *field, variable=1, amplitude=OFF
+  *initialconditions, type=FIELD, variable=1
+  *initialconditions, type=VELOCITY
+  *output, field, numberinterval=10
+  *output, history, timeinterval=1e-06
+  *output, field, numberinterval=10
+  *output, history, timeinterval=1e-06
+  *output, field, numberinterval=10
+  *output, history, timeinterval=1e-06
+  *step, name=OFF1, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *step, name=ON, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *step, name=OFF2, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *energyoutput
+  *energyoutput
+  *energyoutput
+  *step, name=OFF1, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *output, field, numberinterval=10
+  *nodeoutput
+  *output, history, timeinterval=1e-06
+  *energyoutput
+  *endstep
+  *step, name=ON, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *output, field, numberinterval=10
+  *nodeoutput
+  *output, history, timeinterval=1e-06
+  *energyoutput
+  *endstep
+  *step, name=OFF2, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *output, field, numberinterval=10
+  *nodeoutput
+  *output, history, timeinterval=1e-06
+  *energyoutput
+  *endstep
+  *step, name=OFF1, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *field, variable=1, amplitude=OFF
+  *endstep
+  *step, name=ON, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *field, variable=1, amplitude=ON
+  *endstep
+  *step, name=OFF2, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *field, variable=1, amplitude=OFF
+  *endstep
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                     1
+          NUMBER OF NODES IS                                        8
+          NUMBER OF NODES DEFINED BY THE USER                       8
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                   24
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      = ************
+       SYSTEM TIME (SEC)    = ************
+       TOTAL CPU TIME (SEC) = ************
+       WALLCLOCK TIME (SEC) =            0

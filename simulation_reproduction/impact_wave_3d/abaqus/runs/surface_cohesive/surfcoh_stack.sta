@@ -1,0 +1,122 @@
+Abaqus/Explicit 2026                             DATE 20-Sep-2026  TIME 18:08:19
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 5 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+ NUMERICAL PRECISION USED FOR THIS Abaqus/Explicit ANALYSIS
+-------------------------------------------------------------------------------
+
+Single precision package and explicit executables will be used in this analysis.
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass in model = 1.28906E-06
+   Center of mass of model = ( 6.250000E-04, 6.250000E-04, 2.500000E-04)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          5.438232E-13                  1.127930E-12
+      I(YY)          5.438232E-13                  1.127930E-12
+      I(ZZ)          1.007080E-12                  2.014160E-12
+      I(XY)          1.486161E-20                 -5.035400E-13
+      I(YZ)          9.355545E-21                 -2.014160E-13
+      I(ZX)          2.579282E-21                 -2.014160E-13
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 2.55626E-08
+
+   Statistics over 2 deformable elements:
+      Mean = 2.55626E-08
+      Standard deviation = 0.0000
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+   ----------------------------------------------------------
+           1          1       2.556262E-08      1.000000E+00
+           2          2       2.556262E-08      1.000000E+00
+
+
+Abaqus/Explicit 2026                             DATE 20-Sep-2026  TIME 18:08:26
+The entire model is considered 1 domain.
+Only 1 MPI rank is used.
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 1.0 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL        STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME     INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 0.000E+00  00:00:00 2.55626E-08           2  4.028E-08  4.028E-08
+Output Field Frame Number     0, of     20, at step time 0.000E+00
+      130  1.004E-05 1.004E-05  00:00:00 9.46573E-08           2  5.820E-08  4.302E-08
+Output Field Frame Number     1, of     20, at step time 1.004E-05
+      236  2.007E-05 2.007E-05  00:00:00 9.46573E-08           2  1.065E-07  3.983E-08
+Output Field Frame Number     2, of     20, at step time 2.007E-05
+      341  3.001E-05 3.001E-05  00:00:00 9.46573E-08           2  6.306E-08  4.321E-08
+Output Field Frame Number     3, of     20, at step time 3.001E-05
+      447  4.004E-05 4.004E-05  00:00:00 9.46573E-08           2  4.313E-08  3.971E-08
+Output Field Frame Number     4, of     20, at step time 4.004E-05
+      553  5.008E-05 5.008E-05  00:00:00 9.46573E-08           2  4.155E-08  3.995E-08
+Output Field Frame Number     5, of     20, at step time 5.008E-05
+      658  6.001E-05 6.001E-05  00:00:00 9.46573E-08           2  1.118E-07  3.844E-08
+Output Field Frame Number     6, of     20, at step time 6.001E-05
+      764  7.005E-05 7.005E-05  00:00:00 9.46573E-08           2  1.011E-07  4.118E-08
+Output Field Frame Number     7, of     20, at step time 7.005E-05
+      870  8.008E-05 8.008E-05  00:00:00 9.46573E-08           2  5.242E-08  4.180E-08
+Output Field Frame Number     8, of     20, at step time 8.008E-05
+      975  9.002E-05 9.002E-05  00:00:00 9.46573E-08           2  4.398E-08  3.882E-08
+Output Field Frame Number     9, of     20, at step time 9.002E-05
+     1081  1.001E-04 1.001E-04  00:00:00 9.46573E-08           2  7.551E-08  4.170E-08
+Output Field Frame Number    10, of     20, at step time 1.001E-04
+     1187  1.101E-04 1.101E-04  00:00:00 9.46573E-08           2  1.183E-07  3.696E-08
+Output Field Frame Number    11, of     20, at step time 1.101E-04
+     1292  1.200E-04 1.200E-04  00:00:00 9.46573E-08           2  4.959E-08  4.213E-08
+Output Field Frame Number    12, of     20, at step time 1.200E-04
+     1398  1.301E-04 1.301E-04  00:00:00 9.46573E-08           2  4.159E-08  3.636E-08
+Output Field Frame Number    13, of     20, at step time 1.301E-04
+     1503  1.400E-04 1.400E-04  00:00:00 9.46573E-08           2  8.231E-08  4.513E-08
+Output Field Frame Number    14, of     20, at step time 1.400E-04
+     1609  1.500E-04 1.500E-04  00:00:00 9.46573E-08           2  1.181E-07  4.394E-08
+Output Field Frame Number    15, of     20, at step time 1.500E-04
+     1715  1.601E-04 1.601E-04  00:00:00 9.46573E-08           2  7.950E-08  4.692E-08
+Output Field Frame Number    16, of     20, at step time 1.601E-04
+     1820  1.700E-04 1.700E-04  00:00:00 9.46573E-08           2  4.224E-08  4.564E-08
+Output Field Frame Number    17, of     20, at step time 1.700E-04
+     1926  1.800E-04 1.800E-04  00:00:00 9.46573E-08           2  5.025E-08  5.051E-08
+Output Field Frame Number    18, of     20, at step time 1.800E-04
+     2032  1.901E-04 1.901E-04  00:00:00 9.46573E-08           2  9.868E-08  4.775E-08
+Output Field Frame Number    19, of     20, at step time 1.901E-04
+     2137  2.000E-04 2.000E-04  00:00:00 9.46573E-08           2  6.649E-08  4.888E-08
+Restart Number  1 at 2.00000E-04
+Output Field Frame Number    20, of     20, at step time 2.000E-04
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =  0.20000
+       SYSTEM TIME (SEC)    =  0.60000
+       WALLCLOCK TIME (SEC) =            0
+              INIT (SEC) =          0
+              MAIN (SEC) =          0
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

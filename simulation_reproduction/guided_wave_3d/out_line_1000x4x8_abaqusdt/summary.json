@@ -1,0 +1,18 @@
+{
+  "mode": "line",
+  "mesh": "1000x4x8",
+  "elements": 32000,
+  "nodes": 45045,
+  "dofs": 135135,
+  "dx_m": 0.0005,
+  "dy_m": 0.005,
+  "dz_m": 0.000215,
+  "dt_s": 4.7743055555555557e-08,
+  "dt_upper_bound_s": 5.275836121064207e-08,
+  "steps": 4608,
+  "duration_s": 0.00022,
+  "elements_per_A0_wavelength": 25.4,
+  "frame_mode": "line",
+  "frame_stride_xy": 1,
+  "energy_relative_drift": 1.2350949008163038e-14
+}

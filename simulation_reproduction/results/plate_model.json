@@ -1,0 +1,27 @@
+{
+  "model": "equivalent simply-supported Kirchhoff plate; NOT ABAQUS reproduction",
+  "D_Nm": 4307.690868963454,
+  "areal_mass_kg_m2": 3.5584000000000002,
+  "sphere_mass_kg": 0.00396762208197367,
+  "impact_velocity_m_s": 2.657668150842012,
+  "force_peak_N": 276.057580456635,
+  "contact_duration_s_assumed": 6e-05,
+  "convergence": [
+    {
+      "modes_per_axis": 6,
+      "relative_L2_all_sensors": 0.012036583351457906
+    },
+    {
+      "modes_per_axis": 10,
+      "relative_L2_all_sensors": 0.0009102334394501624
+    },
+    {
+      "modes_per_axis": 16,
+      "relative_L2_all_sensors": 0.00016203620850180627
+    },
+    {
+      "modes_per_axis": 24,
+      "relative_L2_all_sensors": 0.0
+    }
+  ]
+}

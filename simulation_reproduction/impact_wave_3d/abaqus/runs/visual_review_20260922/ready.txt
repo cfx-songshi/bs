@@ -1,0 +1,1 @@
+Read-only GUI ready; 50 us wave fields; 0-90 us V3 curves. Metric order: RMS difference, correlation, peak ratio.

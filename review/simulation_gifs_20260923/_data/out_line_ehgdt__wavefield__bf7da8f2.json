@@ -1,0 +1,19 @@
+{
+  "key": "out_line_ehgdt__wavefield__bf7da8f2",
+  "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_ehgdt\\wavefield.npz",
+  "kind": "line",
+  "group": "60_custom_wave",
+  "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+  "complete": true,
+  "status": "exported",
+  "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\out_line_ehgdt__wavefield__bf7da8f2.npz",
+  "step": "saved data",
+  "frames": 51,
+  "source_frames": 110,
+  "start_s": 0.0,
+  "end_s": 0.00021961622328826863,
+  "field": "U",
+  "geometry_scale": 1,
+  "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+  "component_label": "U3"
+}

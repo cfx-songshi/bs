@@ -1,0 +1,34 @@
+{
+  "merge_version": 2,
+  "key": "order46__d4757fdc",
+  "name": "order46",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order46",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order46__d4757fdc.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order46__d4757fdc.png",
+  "frames": 102,
+  "segments": 2,
+  "duration_s": 15.299999999999999,
+  "signature": [
+    [
+      "order46__fields__374fa33b",
+      1790143507.6661634
+    ],
+    [
+      "order46__signals__9d92c16d",
+      1790143502.1475265
+    ]
+  ],
+  "group": "61_thin_plate",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\study_final\\order46\\fields.npz",
+    "D:\\bs_thesis\\simulation_reproduction\\study_final\\order46\\signals.csv"
+  ],
+  "caveats": [
+    "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+    "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+  ],
+  "parts": [
+    "order46__fields__374fa33b",
+    "order46__signals__9d92c16d"
+  ]
+}

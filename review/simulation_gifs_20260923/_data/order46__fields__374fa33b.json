@@ -1,0 +1,19 @@
+{
+  "key": "order46__fields__374fa33b",
+  "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order46\\fields.npz",
+  "kind": "plan",
+  "group": "61_thin_plate",
+  "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+  "complete": true,
+  "status": "exported",
+  "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order46__fields__374fa33b.npz",
+  "step": "saved data",
+  "frames": 51,
+  "source_frames": 81,
+  "start_s": 0.0,
+  "end_s": 0.003999937500976547,
+  "field": "U",
+  "geometry_scale": 1,
+  "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+  "component_label": "w（向下为正）"
+}

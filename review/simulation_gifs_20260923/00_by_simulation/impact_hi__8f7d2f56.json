@@ -1,0 +1,32 @@
+{
+  "merge_version": 2,
+  "key": "impact_hi__8f7d2f56",
+  "name": "impact_hi",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_hi__8f7d2f56.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_hi__8f7d2f56.png",
+  "frames": 52,
+  "segments": 2,
+  "duration_s": 7.8,
+  "signature": [
+    [
+      "impact_hi__IMPACT__1929ccaa",
+      1790143476.3221438
+    ],
+    [
+      "impact_hi__WAVE__246d9e1d",
+      1790143481.356667
+    ]
+  ],
+  "group": "20_historical",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi.odb"
+  ],
+  "caveats": [
+    "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+  ],
+  "parts": [
+    "impact_hi__IMPACT__1929ccaa",
+    "impact_hi__WAVE__246d9e1d"
+  ]
+}

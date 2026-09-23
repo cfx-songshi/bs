@@ -1,0 +1,3256 @@
+[
+  {
+    "source": "D:\\abaqus_runs\\impact80\\ugw_impact.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ugw_impact__IMPACT__da8b94f1",
+        "source": "D:\\abaqus_runs\\impact80\\ugw_impact.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "90_incomplete",
+        "caveat": "未完成，仅供诊断；不得作为完整结果",
+        "complete": false,
+        "status": "exported",
+        "frames": 2,
+        "source_frames": 2,
+        "start_s": 0.0,
+        "end_s": 3.797346985467964e-12,
+        "field": "U",
+        "full_top_nodes": 6561,
+        "displayed_top_nodes": 6561,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789897818.5461972,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ugw_impact__IMPACT__da8b94f1.npz",
+        "ball_node": 115659
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\abaqus_runs\\line1000\\ugw_line1000.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ugw_line1000__WAVE__8736e4b9",
+        "source": "D:\\abaqus_runs\\line1000\\ugw_line1000.odb",
+        "step": "WAVE",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829015,
+        "field": "U",
+        "full_top_nodes": 5005,
+        "displayed_top_nodes": 635,
+        "section_y_m": 0.009999999776482582,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789888640.005273,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ugw_line1000__WAVE__8736e4b9.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\abaqus_runs\\line1000\\ugw_line1000_c3d8r.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ugw_line1000_c3d8r__WAVE__9a28bf4b",
+        "source": "D:\\abaqus_runs\\line1000\\ugw_line1000_c3d8r.odb",
+        "step": "WAVE",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格；减缩积分/沙漏对照，不得当作已验证推荐结果",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829015,
+        "field": "U",
+        "full_top_nodes": 5005,
+        "displayed_top_nodes": 635,
+        "section_y_m": 0.009999999776482582,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789889052.76001,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ugw_line1000_c3d8r__WAVE__9a28bf4b.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\abaqus_runs\\line500\\ugw_line.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ugw_line__WAVE__5d0d5ac4",
+        "source": "D:\\abaqus_runs\\line500\\ugw_line.odb",
+        "step": "WAVE",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829015,
+        "field": "U",
+        "full_top_nodes": 2505,
+        "displayed_top_nodes": 635,
+        "section_y_m": 0.009999999776482582,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789888414.0243118,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ugw_line__WAVE__5d0d5ac4.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\abaqus_runs\\line500\\ugw_line_c3d8.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ugw_line_c3d8__WAVE__c4820d01",
+        "source": "D:\\abaqus_runs\\line500\\ugw_line_c3d8.odb",
+        "step": "WAVE",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829015,
+        "field": "U",
+        "full_top_nodes": 2505,
+        "displayed_top_nodes": 635,
+        "section_y_m": 0.009999999776482582,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789887686.9480162,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ugw_line_c3d8__WAVE__c4820d01.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\abaqus_runs\\line500\\ugw_line_c3d8_dp.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ugw_line_c3d8_dp__WAVE__3fd79584",
+        "source": "D:\\abaqus_runs\\line500\\ugw_line_c3d8_dp.odb",
+        "step": "WAVE",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829015,
+        "field": "U",
+        "full_top_nodes": 2505,
+        "displayed_top_nodes": 635,
+        "section_y_m": 0.009999999776482582,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789887842.8852024,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ugw_line_c3d8_dp__WAVE__3fd79584.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\abaqus_runs\\line500\\ugw_line_c3d8_nobv.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ugw_line_c3d8_nobv__WAVE__8697b9d1",
+        "source": "D:\\abaqus_runs\\line500\\ugw_line_c3d8_nobv.odb",
+        "step": "WAVE",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829015,
+        "field": "U",
+        "full_top_nodes": 2505,
+        "displayed_top_nodes": 635,
+        "section_y_m": 0.009999999776482582,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789888250.5976985,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ugw_line_c3d8_nobv__WAVE__8697b9d1.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\abaqus_runs\\line500\\ugw_line_c3d8r_dp.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ugw_line_c3d8r_dp__WAVE__1e593937",
+        "source": "D:\\abaqus_runs\\line500\\ugw_line_c3d8r_dp.odb",
+        "step": "WAVE",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格；减缩积分/沙漏对照，不得当作已验证推荐结果",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829015,
+        "field": "U",
+        "full_top_nodes": 2505,
+        "displayed_top_nodes": 635,
+        "section_y_m": 0.009999999776482582,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789887867.4947271,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ugw_line_c3d8r_dp__WAVE__1e593937.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\abaqus_runs\\line500\\ugw_line_c3d8r_ehg.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ugw_line_c3d8r_ehg__WAVE__0bf8cf39",
+        "source": "D:\\abaqus_runs\\line500\\ugw_line_c3d8r_ehg.odb",
+        "step": "WAVE",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格；减缩积分/沙漏对照，不得当作已验证推荐结果",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829015,
+        "field": "U",
+        "full_top_nodes": 2505,
+        "displayed_top_nodes": 635,
+        "section_y_m": 0.009999999776482582,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789890512.959503,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ugw_line_c3d8r_ehg__WAVE__0bf8cf39.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\abaqus_runs\\point400\\ugw_point400.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ugw_point400__WAVE__938ea353",
+        "source": "D:\\abaqus_runs\\point400\\ugw_point400.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "30_abaqus_validation",
+        "caveat": "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829015,
+        "field": "U",
+        "full_top_nodes": 160801,
+        "displayed_top_nodes": 10201,
+        "section_y_m": 0.25,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789891383.737101,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ugw_point400__WAVE__938ea353.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\abaqus_runs\\small\\ugw_small.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ugw_small__WAVE__9818ec68",
+        "source": "D:\\abaqus_runs\\small\\ugw_small.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "30_abaqus_validation",
+        "caveat": "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829015,
+        "field": "U",
+        "full_top_nodes": 169,
+        "displayed_top_nodes": 169,
+        "section_y_m": 0.25,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789885244.0257537,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ugw_small__WAVE__9818ec68.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_elastic.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "c3d8_elastic__S1__c9f67bca",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_elastic.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 19,
+        "source_frames": 19,
+        "start_s": 0.0,
+        "end_s": 9.999999974752427e-07,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789893037.2217207,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\c3d8_elastic__S1__c9f67bca.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_hashin.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "fewer than two field frames"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_max_strain.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "c3d8_max_strain__S1__b8a4deab",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_max_strain.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 19,
+        "source_frames": 19,
+        "start_s": 0.0,
+        "end_s": 9.999999974752427e-07,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789893079.9909506,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\c3d8_max_strain__S1__b8a4deab.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_max_stress.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "c3d8_max_stress__S1__cddd95aa",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_max_stress.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 19,
+        "source_frames": 19,
+        "start_s": 0.0,
+        "end_s": 9.999999974752427e-07,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789893058.5344458,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\c3d8_max_stress__S1__cddd95aa.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxpe.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "c3d8_maxpe__S1__7ee5ec02",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxpe.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 19,
+        "source_frames": 19,
+        "start_s": 0.0,
+        "end_s": 9.999999974752427e-07,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789893144.3494053,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\c3d8_maxpe__S1__7ee5ec02.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxps.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "c3d8_maxps__S1__c506692d",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxps.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 19,
+        "source_frames": 19,
+        "start_s": 0.0,
+        "end_s": 9.999999974752427e-07,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789893122.8664768,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\c3d8_maxps__S1__c506692d.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxps_dir1.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "fewer than two field frames"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxse.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "fewer than two field frames"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxss.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "fewer than two field frames"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_quads.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "c3d8_quads__S1__c3683a7b",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_quads.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 19,
+        "source_frames": 19,
+        "start_s": 0.0,
+        "end_s": 9.999999974752427e-07,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789893165.7656794,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\c3d8_quads__S1__c3683a7b.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_tsaiwu.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "c3d8_tsaiwu__S1__5b294fbd",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_tsaiwu.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 19,
+        "source_frames": 19,
+        "start_s": 0.0,
+        "end_s": 9.999999974752427e-07,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789893101.4608028,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\c3d8_tsaiwu__S1__5b294fbd.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8r_hashin.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "fewer than two field frames"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive\\cohesive_cohesive.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "cohesive_cohesive__S1__375dbbb2",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive\\cohesive_cohesive.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 21,
+        "source_frames": 21,
+        "start_s": 0.0,
+        "end_s": 0.00019999999494757503,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789896643.359758,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\cohesive_cohesive__S1__375dbbb2.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive\\cohesive_solid.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "cohesive_solid__S1__fbc7638a",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive\\cohesive_solid.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 21,
+        "source_frames": 21,
+        "start_s": 0.0,
+        "end_s": 0.00019999999494757503,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789896621.2623467,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\cohesive_solid__S1__fbc7638a.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive_k_default.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "cohesive_k_default__PULL__d0c35313",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive_k_default.odb",
+        "step": "PULL",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 3.9999998989515007e-05,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789967319.1410737,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\cohesive_k_default__PULL__d0c35313.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive_k_ply.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "cohesive_k_ply__PULL__75c0a764",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive_k_ply.odb",
+        "step": "PULL",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 3.9999998989515007e-05,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789967340.6955345,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\cohesive_k_ply__PULL__75c0a764.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\damping_switch\\switch.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "switch__OFF1__ad92718b",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\damping_switch\\switch.odb",
+        "step": "OFF1",
+        "kind": "probe",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 1.9999999494757503e-05,
+        "field": "V",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "m/s",
+        "source_mtime": 1790055285.929816,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\switch__OFF1__ad92718b.npz",
+        "ball_node": null
+      },
+      {
+        "key": "switch__ON__b5753516",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\damping_switch\\switch.odb",
+        "step": "ON",
+        "kind": "probe",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 4.999999873689376e-05,
+        "field": "V",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "m/s",
+        "source_mtime": 1790055285.929816,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\switch__ON__b5753516.npz",
+        "ball_node": null
+      },
+      {
+        "key": "switch__OFF2__1e2224b5",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\damping_switch\\switch.odb",
+        "step": "OFF2",
+        "kind": "probe",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 1.9999999494757503e-05,
+        "field": "V",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "m/s",
+        "source_mtime": 1790055285.929816,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\switch__OFF2__1e2224b5.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_elastic.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "axial_c3d8_elastic__S1__a94dbb79",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_elastic.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 21,
+        "source_frames": 21,
+        "start_s": 0.0,
+        "end_s": 0.00019999999494757503,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789895647.8038888,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\axial_c3d8_elastic__S1__a94dbb79.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_max_stress.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "axial_c3d8_max_stress__S1__3d2a0786",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_max_stress.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 21,
+        "source_frames": 21,
+        "start_s": 0.0,
+        "end_s": 0.00019999999494757503,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789895669.8214936,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\axial_c3d8_max_stress__S1__3d2a0786.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_maxps.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "axial_c3d8_maxps__S1__69e310df",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_maxps.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 21,
+        "source_frames": 21,
+        "start_s": 0.0,
+        "end_s": 0.00019999999494757503,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789895691.8331428,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\axial_c3d8_maxps__S1__69e310df.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_quads.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "axial_c3d8_quads__S1__14f80099",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_quads.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 21,
+        "source_frames": 21,
+        "start_s": 0.0,
+        "end_s": 0.00019999999494757503,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789895713.833802,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\axial_c3d8_quads__S1__14f80099.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_sc8r_hashin.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "axial_sc8r_hashin__S1__01e153ca",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_sc8r_hashin.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 21,
+        "source_frames": 21,
+        "start_s": 0.0,
+        "end_s": 0.00019999999494757503,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789895735.8808236,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\axial_sc8r_hashin__S1__01e153ca.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\deg_c3d8_elastic.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\deg_c3d8_max_stress.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\deg_c3d8_maxps.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\deg_c3d8_quads.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\deg_sc8r_hashin.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\shear_c3d8_elastic.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "shear_c3d8_elastic__S1__4f59fb18",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\shear_c3d8_elastic.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 21,
+        "source_frames": 21,
+        "start_s": 0.0,
+        "end_s": 0.00019999999494757503,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789895757.9344277,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\shear_c3d8_elastic__S1__4f59fb18.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\shear_c3d8_max_stress.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "shear_c3d8_max_stress__S1__ad384bbb",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\shear_c3d8_max_stress.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 21,
+        "source_frames": 21,
+        "start_s": 0.0,
+        "end_s": 0.00019999999494757503,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 8,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789895779.9270976,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\shear_c3d8_max_stress__S1__ad384bbb.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\ic_probe.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n01.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n01__IMPACT__34fa7d29",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n01.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "01_current_impact",
+        "caveat": "正式累积序列第1次；尚不能代表三次累积完成",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790072507.2173452,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n01__IMPACT__34fa7d29.npz",
+        "ball_node": 193867
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_relax1.odb",
+    "type": "odb",
+    "outputs": [],
+    "status": "skipped_active",
+    "reason": "lock exists: active or unverified job"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\interrupted_20260923_133902\\acc_n02_relax1.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n02_relax1__acc_n02_relax1__2e5ce3e1",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\interrupted_20260923_133902\\acc_n02_relax1.odb",
+        "step": "acc_n02_relax1",
+        "kind": "impact",
+        "group": "90_incomplete",
+        "caveat": "未完成，仅供诊断；不得作为完整结果；中断归档，终止原因未定",
+        "complete": false,
+        "status": "exported",
+        "frames": 7,
+        "source_frames": 7,
+        "start_s": 0.0,
+        "end_s": 0.00030000045080669224,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790082771.85665,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02_relax1__acc_n02_relax1__2e5ce3e1.npz",
+        "ball_node": 193867
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "IMPACT",
+        "status": "no_animation",
+        "reason": "fewer than two field frames"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_hi.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "grade_hi__IMPACT__d04c3c5a",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_hi.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789915085.8679557,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\grade_hi__IMPACT__d04c3c5a.npz",
+        "ball_node": 193867
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_lo.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "grade_lo__IMPACT__c60e1092",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_lo.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789914501.90495,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\grade_lo__IMPACT__c60e1092.npz",
+        "ball_node": 193867
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_mid.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "grade_mid__IMPACT__2fcd7b53",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_mid.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789914038.6273768,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\grade_mid__IMPACT__2fcd7b53.npz",
+        "ball_node": 193867
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_hi.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "imp_hi__IMPACT__41d87c74",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_hi.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "01_current_impact",
+        "caveat": "显式黏聚刚度 2.37e13 下的单次标定；应力场未收敛、材料为替代参数",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789987139.3507557,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\imp_hi__IMPACT__41d87c74.npz",
+        "ball_node": 193867
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_lo.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "imp_lo__IMPACT__f065c58c",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_lo.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "01_current_impact",
+        "caveat": "显式黏聚刚度 2.37e13 下的单次标定；应力场未收敛、材料为替代参数",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789986868.1489742,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\imp_lo__IMPACT__f065c58c.npz",
+        "ball_node": 193867
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_mid.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "imp_mid__IMPACT__e9f1fa9b",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_mid.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "01_current_impact",
+        "caveat": "显式黏聚刚度 2.37e13 下的单次标定；应力场未收敛、材料为替代参数",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789986901.321102,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\imp_mid__IMPACT__e9f1fa9b.npz",
+        "ball_node": 193867
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_big.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "impact_big__IMPACT__842711d4",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_big.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.000699999975040555,
+        "field": "U",
+        "full_top_nodes": 6561,
+        "displayed_top_nodes": 6561,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789904786.000245,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_big__IMPACT__842711d4.npz",
+        "ball_node": 115659
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_dmg.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "impact_dmg__IMPACT__83fad9bc",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_dmg.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.000699999975040555,
+        "field": "U",
+        "full_top_nodes": 6561,
+        "displayed_top_nodes": 6561,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789902463.664358,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_dmg__IMPACT__83fad9bc.npz",
+        "ball_node": 115659
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_full.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "impact_full__IMPACT__c62eb679",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_full.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.0003000000142492354,
+        "field": "U",
+        "full_top_nodes": 6561,
+        "displayed_top_nodes": 6561,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789900393.7854204,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_full__IMPACT__c62eb679.npz",
+        "ball_node": 115659
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "impact_hi__IMPACT__1929ccaa",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789966269.6375282,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_hi__IMPACT__1929ccaa.npz",
+        "ball_node": 193867
+      },
+      {
+        "key": "impact_hi__WAVE__246d9e1d",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi.odb",
+        "step": "WAVE",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789966269.6375282,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_hi__WAVE__246d9e1d.npz",
+        "ball_node": 193867
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_lo.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "impact_lo__IMPACT__54026e7b",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_lo.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789965950.8874738,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_lo__IMPACT__54026e7b.npz",
+        "ball_node": 193867
+      },
+      {
+        "key": "impact_lo__WAVE__930eeba0",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_lo.odb",
+        "step": "WAVE",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789965950.8874738,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_lo__WAVE__930eeba0.npz",
+        "ball_node": 193867
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_mid.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "impact_mid__IMPACT__52da9842",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_mid.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789966151.7392087,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_mid__IMPACT__52da9842.npz",
+        "ball_node": 193867
+      },
+      {
+        "key": "impact_mid__WAVE__0ebb1d27",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_mid.odb",
+        "step": "WAVE",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789966151.7392087,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_mid__WAVE__0ebb1d27.npz",
+        "ball_node": 193867
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\iw_small.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "iw_small__IMPACT__eda0b4ac",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\iw_small.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 1.9999999494757503e-05,
+        "field": "U",
+        "full_top_nodes": 25,
+        "displayed_top_nodes": 25,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789897567.3805747,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\iw_small__IMPACT__eda0b4ac.npz",
+        "ball_node": 10783
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kdef.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "kdef__WAVE__8d03a022",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kdef.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 9.999999747378752e-05,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789970305.7794056,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\kdef__WAVE__8d03a022.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_ply.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "kply_ply__WAVE__3febed0f",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_ply.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 9.999999747378752e-05,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789967081.5010262,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\kply_ply__WAVE__3febed0f.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_smoke.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "kply_smoke__WAVE__a329c62e",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_smoke.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 5,
+        "source_frames": 5,
+        "start_s": 0.0,
+        "end_s": 1.9999999494757503e-05,
+        "field": "U",
+        "full_top_nodes": 2673,
+        "displayed_top_nodes": 2673,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789963291.5142543,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\kply_smoke__WAVE__a329c62e.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_stiff.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "kply_stiff__WAVE__27581ec3",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_stiff.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 9.999999747378752e-05,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789966379.4030204,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\kply_stiff__WAVE__27581ec3.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\ksoft.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "ksoft__WAVE__d8f2174e",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\ksoft.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 9.999999747378752e-05,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789970277.089598,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ksoft__WAVE__d8f2174e.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_a_thin_K1e16.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_b_thick_K1e16.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_c_thin_K1e13.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_d_thick_K1e13.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_dt.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "fewer than two field frames"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_dt_thick.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_dt_thin.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_e_thick_K1e12.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_f_thick_K1e10.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "no U or V nodal field"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_mass.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "fewer than two field frames"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\probe_mass2.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "step": "S1",
+        "status": "no_animation",
+        "reason": "fewer than two field frames"
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_impact.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "scope_impact__IMPACT__0e369eb1",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_impact.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 7,
+        "source_frames": 7,
+        "start_s": 0.0,
+        "end_s": 0.00011999999696854502,
+        "field": "U",
+        "full_top_nodes": 2673,
+        "displayed_top_nodes": 2673,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789953741.1195347,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\scope_impact__IMPACT__0e369eb1.npz",
+        "ball_node": 53451
+      },
+      {
+        "key": "scope_impact__WAVE__52c6e0ed",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_impact.odb",
+        "step": "WAVE",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 2673,
+        "displayed_top_nodes": 2673,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789953741.1195347,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\scope_impact__WAVE__52c6e0ed.npz",
+        "ball_node": 53451
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_smoke.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "scope_smoke__WAVE__ffe4d1a8",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_smoke.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 9.999999747378752e-05,
+        "field": "U",
+        "full_top_nodes": 2673,
+        "displayed_top_nodes": 2673,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789924577.3223748,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\scope_smoke__WAVE__ffe4d1a8.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\smoke.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "smoke__IMPACT__bcd75f83",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\smoke.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.0003000000142492354,
+        "field": "U",
+        "full_top_nodes": 25,
+        "displayed_top_nodes": 25,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789899756.9285135,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\smoke__IMPACT__bcd75f83.npz",
+        "ball_node": 10783
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\smoke2.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "smoke2__IMPACT__7e600908",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\smoke2.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.0003000000142492354,
+        "field": "U",
+        "full_top_nodes": 25,
+        "displayed_top_nodes": 25,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789899521.5429595,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\smoke2__IMPACT__7e600908.npz",
+        "ball_node": 10783
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_base.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "wav_base__WAVE__31bfb0d4",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_base.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "02_current_wave",
+        "caveat": "修正半径后的导波；机械位移而非电压；0.8 mm 档仍有4/5受损界面映射差异",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789983193.1466436,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wav_base__WAVE__31bfb0d4.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "wav_d03__WAVE__f22fdec6",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789983078.3606086,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wav_d03__WAVE__f22fdec6.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03_r08.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "wav_d03_r08__WAVE__610f16ee",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03_r08.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "02_current_wave",
+        "caveat": "修正半径后的导波；机械位移而非电压；0.8 mm 档仍有4/5受损界面映射差异",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789999347.5722735,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wav_d03_r08__WAVE__610f16ee.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "wav_d08__WAVE__2a23102c",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789982805.5607588,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wav_d08__WAVE__2a23102c.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08_r31.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "wav_d08_r31__WAVE__cf0049b0",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08_r31.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "02_current_wave",
+        "caveat": "修正半径后的导波；机械位移而非电压；0.8 mm 档仍有4/5受损界面映射差异",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789999271.7658665,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wav_d08_r31__WAVE__cf0049b0.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_base.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "wave_base__WAVE__6b2ad559",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_base.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789931059.6419575,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wave_base__WAVE__6b2ad559.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d03.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "wave_d03__WAVE__57e8d8de",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d03.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789931246.3654778,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wave_d03__WAVE__57e8d8de.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d08.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "wave_d08__WAVE__ec42e15f",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d08.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 26,
+        "source_frames": 26,
+        "start_s": 0.0,
+        "end_s": 0.0002500000118743628,
+        "field": "U",
+        "full_top_nodes": 11449,
+        "displayed_top_nodes": 11449,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789931070.126878,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wave_d08__WAVE__ec42e15f.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_dp.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "wave_dp__WAVE__0646558a",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_dp.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 9.999999747378752e-05,
+        "field": "U",
+        "full_top_nodes": 2673,
+        "displayed_top_nodes": 2673,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789917186.8959427,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wave_dp__WAVE__0646558a.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_smoke.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "wave_smoke__WAVE__74425e6e",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_smoke.odb",
+        "step": "WAVE",
+        "kind": "plan",
+        "group": "20_historical",
+        "caveat": "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 9.999999747378752e-05,
+        "field": "U",
+        "full_top_nodes": 2673,
+        "displayed_top_nodes": 2673,
+        "section_y_m": 0.05000000074505806,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789916831.1477349,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wave_smoke__WAVE__74425e6e.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n02__acc_n02__41dc5ea4",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02.odb",
+        "step": "acc_n02",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055313.344011,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02__acc_n02__41dc5ea4.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02_prepare.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n02_prepare__acc_n02_prepare_POSITION__989068a8",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02_prepare.odb",
+        "step": "acc_n02_prepare_POSITION",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 9.999999747378752e-05,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055280.3261309,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02_prepare__acc_n02_prepare_POSITION__989068a8.npz",
+        "ball_node": 12283
+      },
+      {
+        "key": "acc_n02_prepare__acc_n02_prepare_LAUNCH__7b052533",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02_prepare.odb",
+        "step": "acc_n02_prepare_LAUNCH",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 4.999999873689376e-05,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055280.3261309,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02_prepare__acc_n02_prepare_LAUNCH__7b052533.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02_relax1.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n02_relax1__acc_n02_relax1__fd2490de",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02_relax1.odb",
+        "step": "acc_n02_relax1",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055253.0948777,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02_relax1__acc_n02_relax1__fd2490de.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\coupon_first.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "coupon_first__IMPACT__6c992c7f",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\coupon_first.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055222.5058265,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\coupon_first__IMPACT__6c992c7f.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n02__acc_n02__aba940bf",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02.odb",
+        "step": "acc_n02",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055627.1827233,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02__acc_n02__aba940bf.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02_prepare.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n02_prepare__acc_n02_prepare_POSITION__0580e01d",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02_prepare.odb",
+        "step": "acc_n02_prepare_POSITION",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 9.999999747378752e-05,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055593.899708,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02_prepare__acc_n02_prepare_POSITION__0580e01d.npz",
+        "ball_node": 12283
+      },
+      {
+        "key": "acc_n02_prepare__acc_n02_prepare_LAUNCH__9dbd80ba",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02_prepare.odb",
+        "step": "acc_n02_prepare_LAUNCH",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 4.999999873689376e-05,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055593.899708,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02_prepare__acc_n02_prepare_LAUNCH__9dbd80ba.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02_relax1.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n02_relax1__acc_n02_relax1__fb011f0a",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02_relax1.odb",
+        "step": "acc_n02_relax1",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055567.3080144,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02_relax1__acc_n02_relax1__fb011f0a.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n03__acc_n03__099e4a64",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03.odb",
+        "step": "acc_n03",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055717.2859907,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n03__acc_n03__099e4a64.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03_prepare.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n03_prepare__acc_n03_prepare_POSITION__47c5768d",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03_prepare.odb",
+        "step": "acc_n03_prepare_POSITION",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 9.999999747378752e-05,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055684.1199713,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n03_prepare__acc_n03_prepare_POSITION__47c5768d.npz",
+        "ball_node": 12283
+      },
+      {
+        "key": "acc_n03_prepare__acc_n03_prepare_LAUNCH__cda73a0a",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03_prepare.odb",
+        "step": "acc_n03_prepare_LAUNCH",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 4.999999873689376e-05,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055684.1199713,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n03_prepare__acc_n03_prepare_LAUNCH__cda73a0a.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03_relax1.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n03_relax1__acc_n03_relax1__7ea8ccbb",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03_relax1.odb",
+        "step": "acc_n03_relax1",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055657.3386085,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n03_relax1__acc_n03_relax1__7ea8ccbb.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\coupon_first.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "coupon_first__IMPACT__63d1d1a3",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\coupon_first.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055535.0427861,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\coupon_first__IMPACT__63d1d1a3.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n02__acc_n02__ad6da8bd",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02.odb",
+        "step": "acc_n02",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055161.1996777,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02__acc_n02__ad6da8bd.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02_prepare.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n02_prepare__acc_n02_prepare_POSITION__94c7a999",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02_prepare.odb",
+        "step": "acc_n02_prepare_POSITION",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 9.999999747378752e-05,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055126.4864776,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02_prepare__acc_n02_prepare_POSITION__94c7a999.npz",
+        "ball_node": 12283
+      },
+      {
+        "key": "acc_n02_prepare__acc_n02_prepare_LAUNCH__5907b003",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02_prepare.odb",
+        "step": "acc_n02_prepare_LAUNCH",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 4.999999873689376e-05,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055126.4864776,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02_prepare__acc_n02_prepare_LAUNCH__5907b003.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02_relax1.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "acc_n02_relax1__acc_n02_relax1__e5325563",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02_relax1.odb",
+        "step": "acc_n02_relax1",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055099.5622056,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02_relax1__acc_n02_relax1__e5325563.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "continued__RELAX__85660a3c",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued.odb",
+        "step": "RELAX",
+        "kind": "probe",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 3.9999998989515007e-05,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790054707.8081295,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\continued__RELAX__85660a3c.npz",
+        "ball_node": null
+      },
+      {
+        "key": "continued__RELOAD__e84e5a49",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued.odb",
+        "step": "RELOAD",
+        "kind": "probe",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 3.9999998989515007e-05,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790054707.8081295,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\continued__RELOAD__e84e5a49.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued_interval.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "continued_interval__RELAX__ac676570",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued_interval.odb",
+        "step": "RELAX",
+        "kind": "probe",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 3.9999998989515007e-05,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055454.8207555,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\continued_interval__RELAX__ac676570.npz",
+        "ball_node": null
+      },
+      {
+        "key": "continued_interval__RELOAD__cf017bc2",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued_interval.odb",
+        "step": "RELOAD",
+        "kind": "probe",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 3.9999998989515007e-05,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790055454.8207555,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\continued_interval__RELOAD__cf017bc2.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\coupon_first.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "coupon_first__IMPACT__cfad7201",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\coupon_first.odb",
+        "step": "IMPACT",
+        "kind": "impact",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 51,
+        "source_frames": 51,
+        "start_s": 0.0,
+        "end_s": 0.0005000000237487257,
+        "field": "U",
+        "full_top_nodes": 400,
+        "displayed_top_nodes": 400,
+        "section_y_m": 0.04736842215061188,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790054877.5851612,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\coupon_first__IMPACT__cfad7201.npz",
+        "ball_node": 12283
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\first.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "first__PULL__8e7372fb",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\first.odb",
+        "step": "PULL",
+        "kind": "probe",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 3.9999998989515007e-05,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790054685.5395696,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\first__PULL__8e7372fb.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\whole.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "whole__PULL__0ec6bc5b",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\whole.odb",
+        "step": "PULL",
+        "kind": "probe",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 3.9999998989515007e-05,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790054664.1368103,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\whole__PULL__0ec6bc5b.npz",
+        "ball_node": null
+      },
+      {
+        "key": "whole__RELAX__44d3ee68",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\whole.odb",
+        "step": "RELAX",
+        "kind": "probe",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 3.9999998989515007e-05,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790054664.1368103,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\whole__RELAX__44d3ee68.npz",
+        "ball_node": null
+      },
+      {
+        "key": "whole__RELOAD__0e4b0601",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\whole.odb",
+        "step": "RELOAD",
+        "kind": "probe",
+        "group": "50_workflow_tests",
+        "caveat": "小模型/流程验证，不代表正式板损伤结论",
+        "complete": true,
+        "status": "exported",
+        "frames": 11,
+        "source_frames": 11,
+        "start_s": 0.0,
+        "end_s": 3.9999998989515007e-05,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1790054664.1368103,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\whole__RELOAD__0e4b0601.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\surface_cohesive\\surfcoh_interface.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "surfcoh_interface__S1__b8683abe",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\surface_cohesive\\surfcoh_interface.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 21,
+        "source_frames": 21,
+        "start_s": 0.0,
+        "end_s": 0.00019999999494757503,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 16,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789898929.1193638,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\surfcoh_interface__S1__b8683abe.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\surface_cohesive\\surfcoh_stack.odb",
+    "type": "odb",
+    "outputs": [
+      {
+        "key": "surfcoh_stack__S1__71766a54",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\surface_cohesive\\surfcoh_stack.odb",
+        "step": "S1",
+        "kind": "probe",
+        "group": "40_material_probes",
+        "caveat": "材料/关键词能力探针，不等于实物材料标定",
+        "complete": true,
+        "status": "exported",
+        "frames": 21,
+        "source_frames": 21,
+        "start_s": 0.0,
+        "end_s": 0.00019999999494757503,
+        "field": "U",
+        "full_top_nodes": 4,
+        "displayed_top_nodes": 12,
+        "section_y_m": 0.0,
+        "geometry_scale": 1,
+        "sampling": "selected saved frames and nodes; no solution interpolation",
+        "scalar_units": "mm",
+        "source_mtime": 1789898906.6057785,
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\surfcoh_stack__S1__71766a54.npz",
+        "ball_node": null
+      }
+    ],
+    "status": "processed"
+  }
+]

@@ -1,0 +1,82 @@
+Abaqus/Explicit 2026                             DATE 20-Sep-2026  TIME 17:47:40
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 3 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+ NUMERICAL PRECISION USED FOR THIS Abaqus/Explicit ANALYSIS
+-------------------------------------------------------------------------------
+
+Single precision package and explicit executables will be used in this analysis.
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass in model = 1.65083E-03
+   Center of mass of model = ( 5.000000E-04, 5.000000E-04, 4.998751E-04)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          4.128095E-10                  1.238016E-09
+      I(YY)          4.128095E-10                  1.238016E-09
+      I(ZZ)          8.254127E-10                  1.650825E-09
+      I(XY)          2.018542E-17                 -4.127063E-10
+      I(YZ)         -3.027410E-17                 -4.126032E-10
+      I(ZX)         -3.027410E-17                 -4.126032E-10
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 1.00000E-09
+
+   Statistics over 2 deformable elements:
+      Mean = 2.11058E-07
+      Standard deviation = 2.37131E-07
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+   ----------------------------------------------------------
+           1          1       4.338120E-08      2.305146E-02
+           2          2       3.787347E-07      2.640371E-03
+
+
+Abaqus/Explicit 2026                             DATE 20-Sep-2026  TIME 17:47:47
+The entire model is considered 1 domain.
+Only 1 MPI rank is used.
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 1.1 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL        STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME     INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 0.000E+00  00:00:00 1.00000E-09           1  8.254E-04  8.254E-04
+        1  1.000E-09 1.000E-09  00:00:00 1.00000E-09           1  8.254E-04  8.254E-04
+Restart Number  1 at 1.00000E-09
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =  0.10000
+       SYSTEM TIME (SEC)    =   0.0000
+       WALLCLOCK TIME (SEC) =            0
+              INIT (SEC) =          0
+              MAIN (SEC) =          0
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

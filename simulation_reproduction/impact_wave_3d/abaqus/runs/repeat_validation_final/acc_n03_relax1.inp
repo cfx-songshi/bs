@@ -1,0 +1,38 @@
+*Heading
+** Repeat-drop state continuation
+*Restart, read, step=5, interval=1, end step
+*Amplitude, name=acc_n03_relax1_DAMP, time=STEP TIME
+0, 1
+0.0005, 1
+*Amplitude, name=acc_n03_relax1_MOVE, time=STEP TIME
+0, 9.66464805603
+5e-05, 12.0540159047
+0.0001, 0
+0.0005, 0
+*Step, name=acc_n03_relax1, nlgeom=NO
+*Dynamic, Explicit
+, 0.0005
+*Bulk Viscosity
+0.06, 1.2
+*Field, variable=1, amplitude=acc_n03_relax1_DAMP
+PLATENODES, 1.
+*Boundary, op=NEW
+FRAME, ENCASTRE
+*Boundary, op=NEW, type=VELOCITY, amplitude=acc_n03_relax1_MOVE
+BALLREF, 3, 3, 1.
+*Output, field, op=NEW, number interval=10
+*Node Output
+U, V
+*Element Output
+S
+*Contact Output
+CSTRESS, CDISP, CSDMG
+*Output, history, op=NEW, time interval=5e-07
+*Node Output, nset=BALLREF
+U3, V3
+*Node Output, nset=TOPCENTRE
+U3
+*Energy Output
+ALLKE, ALLIE, ALLSE, ALLAE, ALLDMD, ALLPD, ALLWK, ETOTAL, ALLVD, ALLFD, ALLCW, ALLPW
+*Restart, write, number interval=1
+*End Step

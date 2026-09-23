@@ -1,0 +1,1 @@
+﻿     loaded from t=1.013e-06 s to t=0.0003335 s, 47.50% of the step

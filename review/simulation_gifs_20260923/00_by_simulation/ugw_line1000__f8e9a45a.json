@@ -1,0 +1,34 @@
+{
+  "merge_version": 2,
+  "key": "ugw_line1000__f8e9a45a",
+  "name": "ugw_line1000",
+  "identity": "D:\\abaqus_runs\\line1000\\ugw_line1000",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line1000__f8e9a45a.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line1000__f8e9a45a.png",
+  "frames": 102,
+  "segments": 2,
+  "duration_s": 15.299999999999999,
+  "signature": [
+    [
+      "ugw_line1000__WAVE__8736e4b9",
+      1790143573.6703343
+    ],
+    [
+      "guided_wave_3d__abaqus_line1000_c3d8_surface__e27a666a",
+      1790143425.8937547
+    ]
+  ],
+  "group": "30_abaqus_validation",
+  "sources": [
+    "D:\\abaqus_runs\\line1000\\ugw_line1000.odb",
+    "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line1000_c3d8_surface.npz"
+  ],
+  "caveats": [
+    "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格",
+    "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+  ],
+  "parts": [
+    "ugw_line1000__WAVE__8736e4b9",
+    "guided_wave_3d__abaqus_line1000_c3d8_surface__e27a666a"
+  ]
+}

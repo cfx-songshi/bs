@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "wav_d08_r31__c1828585",
+  "name": "wav_d08_r31",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08_r31",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_d08_r31__c1828585.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_d08_r31__c1828585.png",
+  "frames": 26,
+  "segments": 1,
+  "duration_s": 3.9,
+  "signature": [
+    [
+      "wav_d08_r31__WAVE__cf0049b0",
+      1790143722.2447083
+    ]
+  ],
+  "group": "02_current_wave",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08_r31.odb"
+  ],
+  "caveats": [
+    "修正半径后的导波；机械位移而非电压；0.8 mm 档仍有4/5受损界面映射差异"
+  ],
+  "parts": [
+    "wav_d08_r31__WAVE__cf0049b0"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "PyWavelets": "1.10.0",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.0"
+  },
+  "last_command": {
+    "vendor": "D:\\bs_thesis\\simulation_reproduction\\vendor",
+    "experiment": "all",
+    "seeds": 3,
+    "mc": 100000,
+    "epochs": 100
+  }
+}

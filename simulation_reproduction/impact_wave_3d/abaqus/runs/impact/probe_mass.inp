@@ -1,0 +1,60 @@
+*Heading
+** Cohesive mass probe. One solid element and one zero-thickness cohesive element, every
+** node given 1 m/s along x, so the initial kinetic energy is half the mass and the mass
+** convention for a zero-thickness cohesive element can be read off directly.
+** Solid mass alone is 1650 * 1e-3 * 1e-3 * 5e-4 = 8.25e-7 kg, so a kinetic energy of
+** 4.13e-7 J means the cohesive element contributed nothing, while 8.25e-4 J means its
+** mass was computed from the constitutive thickness of 1.0 m instead of the zero
+** geometric thickness.
+*Preprint, echo=NO, model=NO, history=NO, contact=NO
+*Node
+1, 0., 0., 0.
+2, 1e-3, 0., 0.
+3, 1e-3, 1e-3, 0.
+4, 0., 1e-3, 0.
+5, 0., 0., 5e-4
+6, 1e-3, 0., 5e-4
+7, 1e-3, 1e-3, 5e-4
+8, 0., 1e-3, 5e-4
+9, 0., 0., 5e-4
+10, 1e-3, 0., 5e-4
+11, 1e-3, 1e-3, 5e-4
+12, 0., 1e-3, 5e-4
+*Element, type=C3D8
+1, 1, 2, 3, 4, 5, 6, 7, 8
+*Element, type=COH3D8
+2, 5, 6, 7, 8, 9, 10, 11, 12
+*Elset, elset=SOLID
+1,
+*Elset, elset=COH
+2,
+*Nset, nset=EVERY, generate
+1, 12, 1
+*Orientation, name=Fibre
+1., 0., 0., 0., 1., 0.
+3, 0.
+*Solid Section, elset=SOLID, material=PLY, orientation=Fibre
+,
+*Cohesive Section, elset=COH, material=IFACE, response=TRACTION SEPARATION
+1.0e-5,
+*Material, name=PLY
+*Density
+1650.,
+*Elastic, type=ENGINEERING CONSTANTS
+1.281e11, 8.2e9, 8.2e9, 0.27, 0.27, 0.20, 4.7e9, 4.7e9
+3.44e9,
+*Material, name=IFACE
+*Density
+1650.,
+*Elastic, type=TRACTION
+1e16, 1e16, 1e16
+*Initial Conditions, type=VELOCITY
+EVERY, 1, 1, 1.0
+*Step, name=S1, nlgeom=NO
+*Dynamic, Explicit
+, 1e-9
+*Boundary
+*Output, history
+*Energy Output
+ALLKE, ALLIE, ETOTAL
+*End Step

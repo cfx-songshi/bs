@@ -1,0 +1,28 @@
+{
+  "key": "results__ae_dataset_sample0__70068cec",
+  "source": "D:\\bs_thesis\\simulation_reproduction\\results\\ae_dataset.npz",
+  "kind": "traces",
+  "group": "70_surrogate",
+  "caveat": "AE 合成数据集第1条示例；数据集样本不能混称独立有限元算例",
+  "complete": true,
+  "status": "exported",
+  "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__ae_dataset_sample0__70068cec.npz",
+  "step": "sample0",
+  "frames": 51,
+  "source_frames": 2048,
+  "start_s": 0.0,
+  "end_s": 0.002047,
+  "field": "U",
+  "geometry_scale": 1,
+  "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+  "trace_names": [
+    "第1条样本（源文件单位）"
+  ],
+  "renderer_version": 3,
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\70_surrogate\\results__ae_dataset_sample0__70068cec.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\70_surrogate\\results__ae_dataset_sample0__70068cec.png",
+  "gif_frames": 51,
+  "width": 1160,
+  "height": 710,
+  "duration_ms": 150
+}

@@ -1,0 +1,32 @@
+{
+  "merge_version": 2,
+  "key": "continued_interval__8d5691c5",
+  "name": "continued_interval",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued_interval",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\continued_interval__8d5691c5.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\continued_interval__8d5691c5.png",
+  "frames": 22,
+  "segments": 2,
+  "duration_s": 3.3,
+  "signature": [
+    [
+      "continued_interval__RELAX__ac676570",
+      1790143650.8383255
+    ],
+    [
+      "continued_interval__RELOAD__cf017bc2",
+      1790143678.6262405
+    ]
+  ],
+  "group": "50_workflow_tests",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued_interval.odb"
+  ],
+  "caveats": [
+    "小模型/流程验证，不代表正式板损伤结论"
+  ],
+  "parts": [
+    "continued_interval__RELAX__ac676570",
+    "continued_interval__RELOAD__cf017bc2"
+  ]
+}

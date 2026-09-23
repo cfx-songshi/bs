@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "cohesive_cohesive__030272d9",
+  "name": "cohesive_cohesive",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive\\cohesive_cohesive",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\cohesive_cohesive__030272d9.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\cohesive_cohesive__030272d9.png",
+  "frames": 21,
+  "segments": 1,
+  "duration_s": 3.15,
+  "signature": [
+    [
+      "cohesive_cohesive__S1__375dbbb2",
+      1790143256.6399145
+    ]
+  ],
+  "group": "40_material_probes",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive\\cohesive_cohesive.odb"
+  ],
+  "caveats": [
+    "材料/关键词能力探针，不等于实物材料标定"
+  ],
+  "parts": [
+    "cohesive_cohesive__S1__375dbbb2"
+  ]
+}

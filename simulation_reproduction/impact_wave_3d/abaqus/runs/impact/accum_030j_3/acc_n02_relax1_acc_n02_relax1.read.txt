@@ -1,0 +1,1 @@
+acc_n02_relax1: ALLDMD 0.000924134278 J, equivalent radius 0.52679-0.77481 mm

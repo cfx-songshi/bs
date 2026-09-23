@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "impact_big__715c02e3",
+  "name": "impact_big",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_big",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_big__715c02e3.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_big__715c02e3.png",
+  "frames": 51,
+  "segments": 1,
+  "duration_s": 7.6499999999999995,
+  "signature": [
+    [
+      "impact_big__IMPACT__842711d4",
+      1790143445.6848109
+    ]
+  ],
+  "group": "20_historical",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_big.odb"
+  ],
+  "caveats": [
+    "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+  ],
+  "parts": [
+    "impact_big__IMPACT__842711d4"
+  ]
+}

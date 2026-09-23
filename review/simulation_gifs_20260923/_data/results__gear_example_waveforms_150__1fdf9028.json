@@ -1,0 +1,23 @@
+{
+  "key": "results__gear_example_waveforms_150__1fdf9028",
+  "source": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz",
+  "kind": "traces",
+  "group": "70_surrogate",
+  "caveat": "齿轮箱合成信号样例，不是实测；速度标签取自保存文件",
+  "complete": true,
+  "status": "exported",
+  "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__gear_example_waveforms_150__1fdf9028.npz",
+  "step": "150",
+  "frames": 51,
+  "source_frames": 6000,
+  "start_s": 0.0,
+  "end_s": 0.0002499583333333333,
+  "field": "U",
+  "geometry_scale": 1,
+  "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+  "trace_names": [
+    "通道1（源文件单位）",
+    "通道2（源文件单位）",
+    "通道3（源文件单位）"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "coupon_first__32371430",
+  "name": "coupon_first",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\coupon_first",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\coupon_first__32371430.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\coupon_first__32371430.png",
+  "frames": 51,
+  "segments": 1,
+  "duration_s": 7.6499999999999995,
+  "signature": [
+    [
+      "coupon_first__IMPACT__6c992c7f",
+      1790143688.0176098
+    ]
+  ],
+  "group": "50_workflow_tests",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\coupon_first.odb"
+  ],
+  "caveats": [
+    "小模型/流程验证，不代表正式板损伤结论"
+  ],
+  "parts": [
+    "coupon_first__IMPACT__6c992c7f"
+  ]
+}

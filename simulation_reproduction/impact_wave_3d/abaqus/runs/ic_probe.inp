@@ -1,0 +1,70 @@
+*Heading
+** Throwaway probe: which *INITIAL CONDITIONS, TYPE=VELOCITY data-line form is read?
+** Node 5 (deformable) is given V1 by bare node number, node 9 (rigid body reference
+** node) by node-set name, so one run separates the two questions.
+*Preprint, echo=NO, model=NO, history=NO, contact=NO
+*Node
+1, 0., 0., 0.
+2, 1e-3, 0., 0.
+3, 1e-3, 1e-3, 0.
+4, 0., 1e-3, 0.
+5, 0., 0., 1e-3
+6, 1e-3, 0., 1e-3
+7, 1e-3, 1e-3, 1e-3
+8, 0., 1e-3, 1e-3
+9, 5e-3, 0., 0.
+10, 6e-3, 0., 0.
+11, 6e-3, 1e-3, 0.
+12, 5e-3, 1e-3, 0.
+*Element, type=C3D8
+1, 1, 2, 3, 4, 5, 6, 7, 8
+*Element, type=R3D4
+2, 9, 10, 11, 12
+*Elset, elset=CUBE
+1,
+*Elset, elset=BLOCK
+2,
+*Nset, nset=TOP
+5, 6, 7,
+*Nset, nset=REF
+9,
+*Material, name=STEEL
+*Density
+7800.,
+*Elastic
+2.1e11, 0.3
+*Solid Section, elset=CUBE, material=STEEL
+,
+*Rigid Body, ref node=9, elset=BLOCK
+*Element, type=MASS
+3, 9
+*Element, type=ROTARYI
+4, 9
+*Elset, elset=PMASS
+3,
+*Elset, elset=PINERTIA
+4,
+*Mass, elset=PMASS
+1e-2,
+*Rotary Inertia, elset=PINERTIA
+1e-5, 1e-5, 1e-5
+*Initial Conditions, type=VELOCITY
+5, 1, -7.0
+6, 2, -9.0
+7, 3, -11.0
+*Step, name=S1, nlgeom=NO
+*Dynamic, Explicit
+, 1e-4
+*Boundary
+1, 1, 3
+2, 1, 3
+3, 1, 3
+4, 1, 3
+*Output, history, time interval=1e-5
+*Node Output, nset=TOP
+V1, V3
+*Node Output, nset=REF
+V3
+*Energy Output
+ALLKE
+*End Step

@@ -1,0 +1,32 @@
+{
+  "merge_version": 2,
+  "key": "acc_n02_prepare__1016ef7d",
+  "name": "acc_n02_prepare",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02_prepare",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_prepare__1016ef7d.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_prepare__1016ef7d.png",
+  "frames": 22,
+  "segments": 2,
+  "duration_s": 3.3,
+  "signature": [
+    [
+      "acc_n02_prepare__acc_n02_prepare_LAUNCH__7b052533",
+      1790143650.3919995
+    ],
+    [
+      "acc_n02_prepare__acc_n02_prepare_POSITION__989068a8",
+      1790143652.420824
+    ]
+  ],
+  "group": "50_workflow_tests",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02_prepare.odb"
+  ],
+  "caveats": [
+    "小模型/流程验证，不代表正式板损伤结论"
+  ],
+  "parts": [
+    "acc_n02_prepare__acc_n02_prepare_LAUNCH__7b052533",
+    "acc_n02_prepare__acc_n02_prepare_POSITION__989068a8"
+  ]
+}

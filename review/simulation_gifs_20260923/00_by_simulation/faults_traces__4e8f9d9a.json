@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "faults_traces__4e8f9d9a",
+  "name": "faults_traces",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\faults_traces",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\faults_traces__4e8f9d9a.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\faults_traces__4e8f9d9a.png",
+  "frames": 51,
+  "segments": 1,
+  "duration_s": 7.6499999999999995,
+  "signature": [
+    [
+      "results__faults_traces__ccfb429b",
+      1790143572.6165988
+    ]
+  ],
+  "group": "70_surrogate",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\results\\faults_traces.npz"
+  ],
+  "caveats": [
+    "早期故障检测数值演示；无独立实测验证集"
+  ],
+  "parts": [
+    "results__faults_traces__ccfb429b"
+  ]
+}

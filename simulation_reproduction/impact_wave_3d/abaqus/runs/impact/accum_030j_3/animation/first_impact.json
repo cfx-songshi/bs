@@ -1,0 +1,12 @@
+{
+  "source": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n01.odb",
+  "step": "IMPACT",
+  "frames": 51,
+  "end_us": 500.00002374872565,
+  "section_y_mm": 50,
+  "geometry_scale": 1,
+  "ball_radius_mm": 4,
+  "top_nodes": 11449,
+  "section_nodes": 1712,
+  "interpolation": "none"
+}

@@ -1,0 +1,1 @@
+*** Error: Abaqus Error: The following file(s) could not be located: small.inp

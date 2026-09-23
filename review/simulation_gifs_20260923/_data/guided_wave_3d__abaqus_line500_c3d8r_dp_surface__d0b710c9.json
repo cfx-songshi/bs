@@ -1,0 +1,19 @@
+{
+  "key": "guided_wave_3d__abaqus_line500_c3d8r_dp_surface__d0b710c9",
+  "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line500_c3d8r_dp_surface.npz",
+  "kind": "line",
+  "group": "30_abaqus_validation",
+  "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证；沙漏对照，不作为推荐解",
+  "complete": true,
+  "status": "exported",
+  "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\guided_wave_3d__abaqus_line500_c3d8r_dp_surface__d0b710c9.npz",
+  "step": "saved data",
+  "frames": 51,
+  "source_frames": 111,
+  "start_s": 0.0,
+  "end_s": 0.00022000000171829018,
+  "field": "U",
+  "geometry_scale": 1,
+  "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+  "component_label": "U3"
+}

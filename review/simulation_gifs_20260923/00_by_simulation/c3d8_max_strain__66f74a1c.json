@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "c3d8_max_strain__66f74a1c",
+  "name": "c3d8_max_strain",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_max_strain",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_max_strain__66f74a1c.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_max_strain__66f74a1c.png",
+  "frames": 19,
+  "segments": 1,
+  "duration_s": 2.85,
+  "signature": [
+    [
+      "c3d8_max_strain__S1__b8a4deab",
+      1790143190.954141
+    ]
+  ],
+  "group": "40_material_probes",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_max_strain.odb"
+  ],
+  "caveats": [
+    "材料/关键词能力探针，不等于实物材料标定"
+  ],
+  "parts": [
+    "c3d8_max_strain__S1__b8a4deab"
+  ]
+}

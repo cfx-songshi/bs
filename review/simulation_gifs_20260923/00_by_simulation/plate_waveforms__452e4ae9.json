@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "plate_waveforms__452e4ae9",
+  "name": "plate_waveforms",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\plate_waveforms",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\plate_waveforms__452e4ae9.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\plate_waveforms__452e4ae9.png",
+  "frames": 51,
+  "segments": 1,
+  "duration_s": 7.6499999999999995,
+  "signature": [
+    [
+      "results__plate_waveforms__26e57465",
+      1790143581.589441
+    ]
+  ],
+  "group": "70_surrogate",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\results\\plate_waveforms.npz"
+  ],
+  "caveats": [
+    "早期板响应代理/合成演示，不能冒充当前 Abaqus 求解结果"
+  ],
+  "parts": [
+    "results__plate_waveforms__26e57465"
+  ]
+}

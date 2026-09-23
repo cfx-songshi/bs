@@ -1,0 +1,11 @@
+{
+  "wall_s": 31.764668941497803,
+  "command": [
+    "D:\\Abaqus\\Commands\\abaqus.bat",
+    "job=coupon_first",
+    "input=coupon_first.inp",
+    "double=explicit",
+    "interactive"
+  ],
+  "returncode": 0
+}

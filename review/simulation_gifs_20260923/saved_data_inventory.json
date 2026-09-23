@@ -1,0 +1,1993 @@
+[
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line1000_c3d8_surface.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "guided_wave_3d__abaqus_line1000_c3d8_surface__e27a666a",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line1000_c3d8_surface.npz",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\guided_wave_3d__abaqus_line1000_c3d8_surface__e27a666a.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829018,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line1000_c3d8r_surface.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "guided_wave_3d__abaqus_line1000_c3d8r_surface__7baa13d2",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line1000_c3d8r_surface.npz",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证；沙漏对照，不作为推荐解",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\guided_wave_3d__abaqus_line1000_c3d8r_surface__7baa13d2.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829018,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line500_c3d8_surface.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "guided_wave_3d__abaqus_line500_c3d8_surface__34fe8da0",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line500_c3d8_surface.npz",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\guided_wave_3d__abaqus_line500_c3d8_surface__34fe8da0.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829018,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line500_c3d8r_dp_surface.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "guided_wave_3d__abaqus_line500_c3d8r_dp_surface__d0b710c9",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line500_c3d8r_dp_surface.npz",
+        "kind": "line",
+        "group": "30_abaqus_validation",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证；沙漏对照，不作为推荐解",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\guided_wave_3d__abaqus_line500_c3d8r_dp_surface__d0b710c9.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00022000000171829018,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_1000x4x8\\wavefield.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "out_line_1000x4x8__wavefield__49a6dab5",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_1000x4x8\\wavefield.npz",
+        "kind": "line",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\out_line_1000x4x8__wavefield__49a6dab5.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00021933534743202415,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_1000x4x8_abaqusdt\\wavefield.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "out_line_1000x4x8_abaqusdt__wavefield__50766719",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_1000x4x8_abaqusdt\\wavefield.npz",
+        "kind": "line",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\out_line_1000x4x8_abaqusdt__wavefield__50766719.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 110,
+        "start_s": 0.0,
+        "end_s": 0.00021856770833333334,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_500x4x4\\wavefield.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "out_line_500x4x4__wavefield__9b08b59d",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_500x4x4\\wavefield.npz",
+        "kind": "line",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\out_line_500x4x4__wavefield__9b08b59d.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00021896782841823056,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_abaqusdt\\wavefield.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "out_line_abaqusdt__wavefield__67b38000",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_abaqusdt\\wavefield.npz",
+        "kind": "line",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\out_line_abaqusdt__wavefield__67b38000.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 110,
+        "start_s": 0.0,
+        "end_s": 0.00021866261398176292,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_ehgdt\\wavefield.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "out_line_ehgdt__wavefield__bf7da8f2",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_ehgdt\\wavefield.npz",
+        "kind": "line",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\out_line_ehgdt__wavefield__bf7da8f2.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 110,
+        "start_s": 0.0,
+        "end_s": 0.00021961622328826863,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_point_400\\wavefield.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "out_point_400__wavefield__a0e4edd3",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_point_400\\wavefield.npz",
+        "kind": "plan",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\out_point_400__wavefield__a0e4edd3.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 109,
+        "start_s": 0.0,
+        "end_s": 0.00021976060935799781,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\1000_8_damage.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "guided_wave_v2__1000_8_damage__2ac0000b",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\1000_8_damage.npz",
+        "kind": "line",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\guided_wave_v2__1000_8_damage__2ac0000b.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00021970410221923336,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\1000_8_healthy.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "guided_wave_v2__1000_8_healthy__84c4bdad",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\1000_8_healthy.npz",
+        "kind": "line",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\guided_wave_v2__1000_8_healthy__84c4bdad.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00021970410221923336,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\2000_16_damage.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "guided_wave_v2__2000_16_damage__030c7f84",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\2000_16_damage.npz",
+        "kind": "line",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\guided_wave_v2__2000_16_damage__030c7f84.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00021972257250945778,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\2000_16_healthy.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "guided_wave_v2__2000_16_healthy__9f6c6ecf",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\2000_16_healthy.npz",
+        "kind": "line",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\guided_wave_v2__2000_16_healthy__9f6c6ecf.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00021972257250945778,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\4000_32_damage.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "guided_wave_v2__4000_32_damage__71e321a0",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\4000_32_damage.npz",
+        "kind": "line",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\guided_wave_v2__4000_32_damage__71e321a0.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00021973180881920215,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\4000_32_healthy.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "guided_wave_v2__4000_32_healthy__4b23713d",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\4000_32_healthy.npz",
+        "kind": "line",
+        "group": "60_custom_wave",
+        "caveat": "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\guided_wave_v2__4000_32_healthy__4b23713d.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 111,
+        "start_s": 0.0,
+        "end_s": 0.00021973180881920215,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "U3"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\submodel\\contact_patch.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "submodel__contact_patch__d5ed3159",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\submodel\\contact_patch.npz",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "局部三维子模型的接触时程；无损伤演化",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\submodel__contact_patch__d5ed3159.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 100,
+        "start_s": 0.0,
+        "end_s": 0.0004951275006439426,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "总接触力（N）",
+          "最大节点接触力（N）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\results\\ae_dataset.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "results__ae_dataset_sample0__70068cec",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\results\\ae_dataset.npz",
+        "kind": "traces",
+        "group": "70_surrogate",
+        "caveat": "AE 合成数据集第1条示例；数据集样本不能混称独立有限元算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__ae_dataset_sample0__70068cec.npz",
+        "step": "sample0",
+        "frames": 51,
+        "source_frames": 2048,
+        "start_s": 0.0,
+        "end_s": 0.002047,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "第1条样本（源文件单位）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\results\\faults_traces.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "results__faults_traces__ccfb429b",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\results\\faults_traces.npz",
+        "kind": "traces",
+        "group": "70_surrogate",
+        "caveat": "早期故障检测数值演示；无独立实测验证集",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__faults_traces__ccfb429b.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 3750,
+        "start_s": 0.0,
+        "end_s": 149.96,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "最大异常评分",
+          "判定裕量",
+          "报警标记",
+          "预测传感器编号"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "results__gear_example_waveforms_0__d9299ea6",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz",
+        "kind": "traces",
+        "group": "70_surrogate",
+        "caveat": "齿轮箱合成信号样例，不是实测；速度标签取自保存文件",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__gear_example_waveforms_0__d9299ea6.npz",
+        "step": "0",
+        "frames": 51,
+        "source_frames": 6000,
+        "start_s": 0.0,
+        "end_s": 0.0002499583333333333,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "通道1（源文件单位）",
+          "通道2（源文件单位）",
+          "通道3（源文件单位）"
+        ]
+      },
+      {
+        "key": "results__gear_example_waveforms_150__1fdf9028",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz",
+        "kind": "traces",
+        "group": "70_surrogate",
+        "caveat": "齿轮箱合成信号样例，不是实测；速度标签取自保存文件",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__gear_example_waveforms_150__1fdf9028.npz",
+        "step": "150",
+        "frames": 51,
+        "source_frames": 6000,
+        "start_s": 0.0,
+        "end_s": 0.0002499583333333333,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "通道1（源文件单位）",
+          "通道2（源文件单位）",
+          "通道3（源文件单位）"
+        ]
+      },
+      {
+        "key": "results__gear_example_waveforms_200__8958e499",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz",
+        "kind": "traces",
+        "group": "70_surrogate",
+        "caveat": "齿轮箱合成信号样例，不是实测；速度标签取自保存文件",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__gear_example_waveforms_200__8958e499.npz",
+        "step": "200",
+        "frames": 51,
+        "source_frames": 6000,
+        "start_s": 0.0,
+        "end_s": 0.0002499583333333333,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "通道1（源文件单位）",
+          "通道2（源文件单位）",
+          "通道3（源文件单位）"
+        ]
+      },
+      {
+        "key": "results__gear_example_waveforms_250__83f55a31",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz",
+        "kind": "traces",
+        "group": "70_surrogate",
+        "caveat": "齿轮箱合成信号样例，不是实测；速度标签取自保存文件",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__gear_example_waveforms_250__83f55a31.npz",
+        "step": "250",
+        "frames": 51,
+        "source_frames": 6000,
+        "start_s": 0.0,
+        "end_s": 0.0002499583333333333,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "通道1（源文件单位）",
+          "通道2（源文件单位）",
+          "通道3（源文件单位）"
+        ]
+      },
+      {
+        "key": "results__gear_example_waveforms_300__301e5756",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz",
+        "kind": "traces",
+        "group": "70_surrogate",
+        "caveat": "齿轮箱合成信号样例，不是实测；速度标签取自保存文件",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__gear_example_waveforms_300__301e5756.npz",
+        "step": "300",
+        "frames": 51,
+        "source_frames": 6000,
+        "start_s": 0.0,
+        "end_s": 0.0002499583333333333,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "通道1（源文件单位）",
+          "通道2（源文件单位）",
+          "通道3（源文件单位）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\results\\joint_surrogates.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "results__joint_surrogates__636e9c3b",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\results\\joint_surrogates.npz",
+        "kind": "traces",
+        "group": "70_surrogate",
+        "caveat": "接头响应替代模型；不是实测曲线；静态强度曲线未伪造时间轴",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__joint_surrogates__636e9c3b.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 3501,
+        "start_s": 0.0,
+        "end_s": 350.0,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "压力（kPa）",
+          "电阻相对变化"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\results\\plate_waveforms.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "results__plate_waveforms__26e57465",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\results\\plate_waveforms.npz",
+        "kind": "traces",
+        "group": "70_surrogate",
+        "caveat": "早期板响应代理/合成演示，不能冒充当前 Abaqus 求解结果",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__plate_waveforms__26e57465.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 101,
+        "start_s": 0.0,
+        "end_s": 0.0005,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "S6 位移（µm）",
+          "S7 位移（µm）",
+          "S10 位移（µm）",
+          "S11 位移（µm）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\results\\transfer_dataset_seed0.npz",
+    "status": "not_temporal_simulation",
+    "reason": "静态训练/迁移张量或无已定义物理时间轴，不补造过程动画",
+    "keys": [
+      "normalization_source_mean",
+      "normalization_source_std",
+      "source",
+      "source_event_ids",
+      "source_xy",
+      "source_y",
+      "target_event_ids",
+      "target_pool",
+      "target_xy",
+      "target_y",
+      "test",
+      "test_event_ids",
+      "test_xy",
+      "test_y"
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\results\\transfer_dataset_seed1.npz",
+    "status": "not_temporal_simulation",
+    "reason": "静态训练/迁移张量或无已定义物理时间轴，不补造过程动画",
+    "keys": [
+      "normalization_source_mean",
+      "normalization_source_std",
+      "source",
+      "source_event_ids",
+      "source_xy",
+      "source_y",
+      "target_event_ids",
+      "target_pool",
+      "target_xy",
+      "target_y",
+      "test",
+      "test_event_ids",
+      "test_xy",
+      "test_y"
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\results\\transfer_dataset_seed2.npz",
+    "status": "not_temporal_simulation",
+    "reason": "静态训练/迁移张量或无已定义物理时间轴，不补造过程动画",
+    "keys": [
+      "normalization_source_mean",
+      "normalization_source_std",
+      "source",
+      "source_event_ids",
+      "source_xy",
+      "source_y",
+      "target_event_ids",
+      "target_pool",
+      "target_xy",
+      "target_y",
+      "test",
+      "test_event_ids",
+      "test_xy",
+      "test_y"
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp10mm\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "clamp10mm__fields__b18b47c2",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp10mm\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\clamp10mm__fields__b18b47c2.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp30mm\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "clamp30mm__fields__60ae57b5",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp30mm\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\clamp30mm__fields__60ae57b5.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact050\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "contact050__fields__7ec97407",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact050\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\contact050__fields__7ec97407.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact200\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "contact200__fields__9e80d2dd",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact200\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\contact200__fields__9e80d2dd.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\finest_halfdt\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "finest_halfdt__fields__7d07055a",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\finest_halfdt\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\finest_halfdt__fields__7d07055a.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999968750244139,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\halfdt\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "halfdt__fields__77f13ae9",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\halfdt\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\halfdt__fields__77f13ae9.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999875003906128,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\offcentre\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "offcentre__fields__01a38583",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\offcentre\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\offcentre__fields__01a38583.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order10\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order10__fields__32f6f11d",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order10\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order10__fields__32f6f11d.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order14\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order14__fields__22b46d46",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order14\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order14__fields__22b46d46.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order18\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order18__fields__d846913d",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order18\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order18__fields__d846913d.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order22\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order22__fields__432a1e6a",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order22\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order22__fields__432a1e6a.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order30\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order30__fields__610efffe",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order30\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order30__fields__610efffe.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999937500976547,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order38\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order38__fields__7dcf7f6d",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order38\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order38__fields__7dcf7f6d.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999937500976547,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order46\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order46__fields__374fa33b",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order46\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order46__fields__374fa33b.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999937500976547,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order6\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order6__fields__9488c110",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order6\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order6__fields__9488c110.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness075\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "stiffness075__fields__7a6d1922",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness075\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\stiffness075__fields__7a6d1922.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness125\\fields.npz",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "stiffness125__fields__5604959f",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness125\\fields.npz",
+        "kind": "plan",
+        "group": "61_thin_plate",
+        "caveat": "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\stiffness125__fields__5604959f.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 81,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "component_label": "w（向下为正）"
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_100x80x4\\sensors.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "farfield_100x80x4__sensors__bbafe6ef",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_100x80x4\\sensors.csv",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "自研三维远场传感器机械应变；不是 PZT 电压；小幅通道仍须关注网格敏感性",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\farfield_100x80x4__sensors__bbafe6ef.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 101,
+        "start_s": 0.0,
+        "end_s": 0.0004981684981684981,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "S9 沿冲击方向应变（µε）",
+          "S10 沿冲击方向应变（µε）",
+          "S13 沿冲击方向应变（µε）",
+          "S14 沿冲击方向应变（µε）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_100x80x4\\through_thickness.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "farfield_100x80x4__through_thickness__50c80711",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_100x80x4\\through_thickness.csv",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "仅已保存厚度方向测点的位移时程，不能重建未保存的全场运动",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\farfield_100x80x4__through_thickness__50c80711.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 101,
+        "start_s": 0.0,
+        "end_s": 0.0004981684981684981,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "z=-1.000 mm 的 uz（µm）",
+          "z=-0.500 mm 的 uz（µm）",
+          "z=0.500 mm 的 uz（µm）",
+          "z=1.000 mm 的 uz（µm）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_150x120x4\\sensors.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "farfield_150x120x4__sensors__4ec885a4",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_150x120x4\\sensors.csv",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "自研三维远场传感器机械应变；不是 PZT 电压；小幅通道仍须关注网格敏感性",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\farfield_150x120x4__sensors__4ec885a4.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 101,
+        "start_s": 0.0,
+        "end_s": 0.0004981684981684981,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "S9 沿冲击方向应变（µε）",
+          "S10 沿冲击方向应变（µε）",
+          "S13 沿冲击方向应变（µε）",
+          "S14 沿冲击方向应变（µε）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_150x120x4\\through_thickness.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "farfield_150x120x4__through_thickness__785cc154",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_150x120x4\\through_thickness.csv",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "仅已保存厚度方向测点的位移时程，不能重建未保存的全场运动",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\farfield_150x120x4__through_thickness__785cc154.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 101,
+        "start_s": 0.0,
+        "end_s": 0.0004981684981684981,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "z=-1.000 mm 的 uz（µm）",
+          "z=-0.500 mm 的 uz（µm）",
+          "z=0.500 mm 的 uz（µm）",
+          "z=1.000 mm 的 uz（µm）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x4\\sensors.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "farfield_200x160x4__sensors__f6a66b48",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x4\\sensors.csv",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "自研三维远场传感器机械应变；不是 PZT 电压；小幅通道仍须关注网格敏感性",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\farfield_200x160x4__sensors__f6a66b48.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 101,
+        "start_s": 0.0,
+        "end_s": 0.0004981684981684981,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "S9 沿冲击方向应变（µε）",
+          "S10 沿冲击方向应变（µε）",
+          "S13 沿冲击方向应变（µε）",
+          "S14 沿冲击方向应变（µε）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x4\\through_thickness.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "farfield_200x160x4__through_thickness__1033fb13",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x4\\through_thickness.csv",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "仅已保存厚度方向测点的位移时程，不能重建未保存的全场运动",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\farfield_200x160x4__through_thickness__1033fb13.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 101,
+        "start_s": 0.0,
+        "end_s": 0.0004981684981684981,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "z=-1.000 mm 的 uz（µm）",
+          "z=-0.500 mm 的 uz（µm）",
+          "z=0.500 mm 的 uz（µm）",
+          "z=1.000 mm 的 uz（µm）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x8\\sensors.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "farfield_200x160x8__sensors__4902294a",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x8\\sensors.csv",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "自研三维远场传感器机械应变；不是 PZT 电压；小幅通道仍须关注网格敏感性",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\farfield_200x160x8__sensors__4902294a.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 101,
+        "start_s": 0.0,
+        "end_s": 0.0004981684981684981,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "S9 沿冲击方向应变（µε）",
+          "S10 沿冲击方向应变（µε）",
+          "S13 沿冲击方向应变（µε）",
+          "S14 沿冲击方向应变（µε）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x8\\through_thickness.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "farfield_200x160x8__through_thickness__00902d6a",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x8\\through_thickness.csv",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "仅已保存厚度方向测点的位移时程，不能重建未保存的全场运动",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\farfield_200x160x8__through_thickness__00902d6a.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 101,
+        "start_s": 0.0,
+        "end_s": 0.0004981684981684981,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "z=-1.000 mm 的 uz（µm）",
+          "z=-0.250 mm 的 uz（µm）",
+          "z=0.250 mm 的 uz（µm）",
+          "z=1.000 mm 的 uz（µm）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\global\\sensors.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "global__sensors__53f74111",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\global\\sensors.csv",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "自研三维远场传感器机械应变；不是 PZT 电压；小幅通道仍须关注网格敏感性",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\global__sensors__53f74111.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 100,
+        "start_s": 0.0,
+        "end_s": 0.0004975515463917526,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "S9 沿冲击方向应变（µε）",
+          "S10 沿冲击方向应变（µε）",
+          "S13 沿冲击方向应变（µε）",
+          "S14 沿冲击方向应变（µε）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\global\\through_thickness.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "global__through_thickness__ef3f76f2",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\global\\through_thickness.csv",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "仅已保存厚度方向测点的位移时程，不能重建未保存的全场运动",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\global__through_thickness__ef3f76f2.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 100,
+        "start_s": 0.0,
+        "end_s": 0.0004975515463917526,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "z=-1.000 mm 的 uz（µm）",
+          "z=-0.500 mm 的 uz（µm）",
+          "z=0.500 mm 的 uz（µm）",
+          "z=1.000 mm 的 uz（µm）"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\submodel\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "submodel__signals__06287773",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\submodel\\signals.csv",
+        "kind": "traces",
+        "group": "62_custom_3d",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\submodel__signals__06287773.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 100,
+        "start_s": 0.0,
+        "end_s": 0.0004951275006439426,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "centre_deflection（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp10mm\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "clamp10mm__signals__25762246",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp10mm\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\clamp10mm__signals__25762246.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp30mm\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "clamp30mm__signals__1d49b0bd",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp30mm\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\clamp30mm__signals__1d49b0bd.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact050\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "contact050__signals__4d79e743",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact050\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\contact050__signals__4d79e743.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact200\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "contact200__signals__a6c81466",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact200\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\contact200__signals__a6c81466.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\finest_halfdt\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "finest_halfdt__signals__6373982f",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\finest_halfdt\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\finest_halfdt__signals__6373982f.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999968750244139,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\halfdt\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "halfdt__signals__a9b63907",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\halfdt\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\halfdt__signals__a9b63907.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999875003906128,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\offcentre\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "offcentre__signals__a130e264",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\offcentre\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\offcentre__signals__a130e264.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order10\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order10__signals__e6b5893b",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order10\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order10__signals__e6b5893b.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order14\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order14__signals__9b52043b",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order14\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order14__signals__9b52043b.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order18\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order18__signals__d9de66f7",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order18\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order18__signals__d9de66f7.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order22\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order22__signals__5f9988c6",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order22\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order22__signals__5f9988c6.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order30\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order30__signals__3dfce7b9",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order30\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order30__signals__3dfce7b9.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999937500976547,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order38\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order38__signals__8581d6ac",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order38\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order38__signals__8581d6ac.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999937500976547,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order46\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order46__signals__9d92c16d",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order46\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order46__signals__9d92c16d.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999937500976547,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order6\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "order6__signals__ff80bd27",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order6\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\order6__signals__ff80bd27.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness075\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "stiffness075__signals__0956d523",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness075\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\stiffness075__signals__0956d523.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness125\\signals.csv",
+    "status": "exported",
+    "outputs": [
+      {
+        "key": "stiffness125__signals__8213612e",
+        "source": "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness125\\signals.csv",
+        "kind": "traces",
+        "group": "61_thin_plate",
+        "caveat": "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+        "complete": true,
+        "status": "exported",
+        "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\stiffness125__signals__8213612e.npz",
+        "step": "saved data",
+        "frames": 51,
+        "source_frames": 801,
+        "start_s": 0.0,
+        "end_s": 0.003999750015624024,
+        "field": "U",
+        "geometry_scale": 1,
+        "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+        "trace_names": [
+          "contact_force_N",
+          "impact_w（µm）",
+          "ball_travel（µm）",
+          "energy_J"
+        ]
+      }
+    ]
+  }
+]

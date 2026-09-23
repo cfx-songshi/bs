@@ -1,0 +1,31 @@
+*Heading
+** Repeat-drop state continuation
+*Restart, read, step=8, interval=1, end step
+*Amplitude, name=acc_n03_OFF, time=STEP TIME
+0, 0
+0.0005, 0
+*Step, name=acc_n03, nlgeom=NO
+*Dynamic, Explicit
+, 0.0005
+*Bulk Viscosity
+0.06, 1.2
+*Field, variable=1, amplitude=acc_n03_OFF
+PLATENODES, 1.
+*Boundary, op=NEW
+FRAME, ENCASTRE
+*Output, field, op=NEW, number interval=50
+*Node Output
+U, V
+*Element Output
+S
+*Contact Output
+CSTRESS, CDISP, CSDMG
+*Output, history, op=NEW, time interval=5e-07
+*Node Output, nset=BALLREF
+U3, V3
+*Node Output, nset=TOPCENTRE
+U3
+*Energy Output
+ALLKE, ALLIE, ALLSE, ALLAE, ALLDMD, ALLPD, ALLWK, ETOTAL, ALLVD, ALLFD, ALLCW, ALLPW
+*Restart, write, number interval=1
+*End Step

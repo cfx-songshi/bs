@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "surfcoh_stack__ebbc6bde",
+  "name": "surfcoh_stack",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\surface_cohesive\\surfcoh_stack",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\surfcoh_stack__ebbc6bde.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\surfcoh_stack__ebbc6bde.png",
+  "frames": 21,
+  "segments": 1,
+  "duration_s": 3.15,
+  "signature": [
+    [
+      "surfcoh_stack__S1__71766a54",
+      1790143656.8721762
+    ]
+  ],
+  "group": "40_material_probes",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\surface_cohesive\\surfcoh_stack.odb"
+  ],
+  "caveats": [
+    "材料/关键词能力探针，不等于实物材料标定"
+  ],
+  "parts": [
+    "surfcoh_stack__S1__71766a54"
+  ]
+}

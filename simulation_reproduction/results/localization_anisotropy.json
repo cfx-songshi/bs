@@ -1,0 +1,27 @@
+[
+  {
+    "anisotropy_e": 0,
+    "failure_percent": 0.0,
+    "mean_error_percent_L_valid": 2.4455789045239533e-13
+  },
+  {
+    "anisotropy_e": 0.02,
+    "failure_percent": 3.6599999999999966,
+    "mean_error_percent_L_valid": 1.771787142900123
+  },
+  {
+    "anisotropy_e": 0.05,
+    "failure_percent": 13.600000000000001,
+    "mean_error_percent_L_valid": 4.128234147148277
+  },
+  {
+    "anisotropy_e": 0.1,
+    "failure_percent": 28.43,
+    "mean_error_percent_L_valid": 7.550504312130787
+  },
+  {
+    "anisotropy_e": 0.2,
+    "failure_percent": 57.47,
+    "mean_error_percent_L_valid": 13.382519324860114
+  }
+]

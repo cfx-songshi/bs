@@ -1,0 +1,31 @@
+{
+  "key": "results__faults_traces__ccfb429b",
+  "source": "D:\\bs_thesis\\simulation_reproduction\\results\\faults_traces.npz",
+  "kind": "traces",
+  "group": "70_surrogate",
+  "caveat": "早期故障检测数值演示；无独立实测验证集",
+  "complete": true,
+  "status": "exported",
+  "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\results__faults_traces__ccfb429b.npz",
+  "step": "saved data",
+  "frames": 51,
+  "source_frames": 3750,
+  "start_s": 0.0,
+  "end_s": 149.96,
+  "field": "U",
+  "geometry_scale": 1,
+  "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+  "trace_names": [
+    "最大异常评分",
+    "判定裕量",
+    "报警标记",
+    "预测传感器编号"
+  ],
+  "renderer_version": 3,
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\70_surrogate\\results__faults_traces__ccfb429b.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\70_surrogate\\results__faults_traces__ccfb429b.png",
+  "gif_frames": 51,
+  "width": 1160,
+  "height": 710,
+  "duration_ms": 150
+}

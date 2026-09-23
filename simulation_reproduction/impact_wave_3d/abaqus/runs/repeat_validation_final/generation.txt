@@ -1,0 +1,12 @@
+wrote D:\bs_thesis\simulation_reproduction\impact_wave_3d\abaqus\runs\repeat_validation_final\coupon_first.sensors.json
+coupon 100 x 100 x 2 mm, 2 plies of 1.000 mm
+mesh 19 x 19 in-plane per ply, 5.263 mm at the edge, 5.263 mm at the centre
+nodes 12283 (incl. ball 10683), solid 722, rigid facets 10800, 1 interfaces
+interfaces are contact pairs carrying cohesive behaviour, so there are no interface elements and no interface mass
+ball 3.9676 g, drop 7709.0 mm -> v 12.2963 m/s, energy 0.29995 J
+no disbond: every interface is fully bonded
+actuator patch 1 elements, 27.70 mm2, 361 kPa at 100 kHz, 5 cycles
+sensors: ACT node 1406 element 557, R1 node 1413 element 564, R2 node 1416 element 567, R3 node 1311 element 467, R4 node 1491 element 638, R5 node 1315 element 471, R6 node 1495 element 642, R7 node 1306 element 462, R8 node 1486 element 633
+plate mass 33.0000 g
+wrote D:\bs_thesis\simulation_reproduction\impact_wave_3d\abaqus\runs\repeat_validation_final\coupon_first.inp (1.0 MB)
+self check: clean

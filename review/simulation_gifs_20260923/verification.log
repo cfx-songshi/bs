@@ -1,0 +1,2 @@
+VERIFIED 170 GIFs; exclusions 27
+{'01_current_impact': 4, '02_current_wave': 3, '20_historical': 30, '30_abaqus_validation': 14, '40_material_probes': 20, '50_workflow_tests': 30, '60_custom_wave': 12, '61_thin_plate': 34, '62_custom_3d': 12, '70_surrogate': 9, '90_incomplete': 2}

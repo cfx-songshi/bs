@@ -98,3 +98,14 @@ ETOTAL 步内漂移 ≤单次入射能的 1%，步间跳变 ≤0.1%，
 
 可复算的求解器探针：`abaqus python check_restart_accumulation.py` 与
 `abaqus python check_damping_switch.py`（在 `abaqus` 目录下执行，默认拒绝覆盖已有探针）。
+
+## 第一次冲击动画
+
+在本目录执行：
+
+```powershell
+& D:\Abaqus\Commands\abaqus.bat python abaqus/export_impact_animation.py abaqus/runs/impact/accum_030j_3/acc_n01.odb abaqus/runs/impact/accum_030j_3/animation/first_impact.npz
+python render_impact_animation.py abaqus/runs/impact/accum_030j_3/animation/first_impact.npz abaqus/runs/impact/accum_030j_3/animation/first_impact.gif
+```
+
+51 个原始场输出帧，不插帧，150 ms/帧慢放。左侧是真实位移 ×1 的中心截面，球按刚体参考点位移绘制；右侧是未变形坐标上的顶面 U3，固定 ±0.8 mm 色标。下方为中心位移与 ALLDMD。球显示为圆，FE 几何仍是分片球面；不要用图片读数代替更密的历史输出。

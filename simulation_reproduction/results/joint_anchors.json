@@ -1,0 +1,20 @@
+[
+  {
+    "failure_mode": "net_tension",
+    "stage2_surface_anchor_fraction": 0.04,
+    "stage2_embedded_anchor_fraction": 1.66,
+    "status": "calibration inputs from embedded paper Table III, not reproduced measurements"
+  },
+  {
+    "failure_mode": "shear_out",
+    "stage2_surface_anchor_fraction": 0.42,
+    "stage2_embedded_anchor_fraction": 3.97,
+    "status": "calibration inputs from embedded paper Table III, not reproduced measurements"
+  },
+  {
+    "failure_mode": "bearing",
+    "stage2_surface_anchor_fraction": null,
+    "stage2_embedded_anchor_fraction": 0.37,
+    "status": "calibration inputs from embedded paper Table III, not reproduced measurements"
+  }
+]

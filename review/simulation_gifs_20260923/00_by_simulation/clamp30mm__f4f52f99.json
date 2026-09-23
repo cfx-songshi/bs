@@ -1,0 +1,34 @@
+{
+  "merge_version": 2,
+  "key": "clamp30mm__f4f52f99",
+  "name": "clamp30mm",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp30mm",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\clamp30mm__f4f52f99.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\clamp30mm__f4f52f99.png",
+  "frames": 102,
+  "segments": 2,
+  "duration_s": 15.299999999999999,
+  "signature": [
+    [
+      "clamp30mm__fields__60ae57b5",
+      1790143242.076696
+    ],
+    [
+      "clamp30mm__signals__1d49b0bd",
+      1790143252.4386306
+    ]
+  ],
+  "group": "61_thin_plate",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp30mm\\fields.npz",
+    "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp30mm\\signals.csv"
+  ],
+  "caveats": [
+    "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+    "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+  ],
+  "parts": [
+    "clamp30mm__fields__60ae57b5",
+    "clamp30mm__signals__1d49b0bd"
+  ]
+}

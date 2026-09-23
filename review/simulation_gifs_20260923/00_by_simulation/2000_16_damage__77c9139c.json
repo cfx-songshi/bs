@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "2000_16_damage__77c9139c",
+  "name": "2000_16_damage",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\2000_16_damage",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\2000_16_damage__77c9139c.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\2000_16_damage__77c9139c.png",
+  "frames": 51,
+  "segments": 1,
+  "duration_s": 7.6499999999999995,
+  "signature": [
+    [
+      "guided_wave_v2__2000_16_damage__030c7f84",
+      1790143435.9450257
+    ]
+  ],
+  "group": "60_custom_wave",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\2000_16_damage.npz"
+  ],
+  "caveats": [
+    "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+  ],
+  "parts": [
+    "guided_wave_v2__2000_16_damage__030c7f84"
+  ]
+}

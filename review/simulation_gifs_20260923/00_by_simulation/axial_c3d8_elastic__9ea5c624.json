@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "axial_c3d8_elastic__9ea5c624",
+  "name": "axial_c3d8_elastic",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_elastic",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_c3d8_elastic__9ea5c624.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_c3d8_elastic__9ea5c624.png",
+  "frames": 21,
+  "segments": 1,
+  "duration_s": 3.15,
+  "signature": [
+    [
+      "axial_c3d8_elastic__S1__a94dbb79",
+      1790143170.1979232
+    ]
+  ],
+  "group": "40_material_probes",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_elastic.odb"
+  ],
+  "caveats": [
+    "材料/关键词能力探针，不等于实物材料标定"
+  ],
+  "parts": [
+    "axial_c3d8_elastic__S1__a94dbb79"
+  ]
+}

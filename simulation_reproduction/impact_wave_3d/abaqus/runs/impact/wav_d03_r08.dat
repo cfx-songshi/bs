@@ -1,0 +1,244 @@
+1
+
+   Abaqus 2026                                  Date 21-Sep-2026   Time 19:25:37
+   For use by Supplied by Team-SolidSQUAD under license from Dassault Systemes or its subsidiary.
+
+
+
+                         The Abaqus Software is a product of:
+
+                           Dassault Systemes Americas Corp.
+                           1301 Atwood Avenue, Suite 101W
+                              Johnston, RI 02919, USA
+ 
+
+
+                   The Abaqus Software is available only under license
+                   from Dassault Systemes or its subsidiary and may be
+                   used or reproduced only in accordance with the terms
+                   of such license.
+ 
+                          On machine CFX 
+                          you are authorized to run
+                          Abaqus/Explicit until 31-Dec-2055
+
+                          Your site id is:  
+
+
+ 
+                    For assistance or any other information you may
+                    obtain contact information for your local office
+                    from the world wide web at:
+
+                      https://www.3ds.com/products-services/simulia/services-support/locations/
+
+ 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                *                                                         * 
+                *                   *****************                     * 
+                *                   *  N O T I C E  *                     * 
+                *                   *****************                     * 
+                *                                                         * 
+                *                                                         * 
+                *                       Abaqus 2026                       * 
+                *                                                         * 
+                *       BUILD ID: 2025_09_23-22.43.03 RELr428 206049      * 
+                *                                                         * 
+                *                                                         * 
+                *  Please make sure you are using                         * 
+                *  release Abaqus 2026 manuals                            * 
+                *  plus the notes accompanying this release.              * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+ 
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *heading
+  *material, name=PLY
+  *density
+  *elastic, type=ENGINEERINGCONSTANTS
+  *damageinitiation, criterion=MAXSTRESS
+  *orientation, name=FIBRE
+  *solidsection, elset=PLIES, material=PLY, orientation=FIBRE, controls=SC
+  *sectioncontrols, name=SC, maxdegradation=1
+  *solidsection, elset=PLIES, material=PLY, orientation=FIBRE, controls=SC
+  *surface, type=ELEMENT, name=TOP
+  *surface, type=ELEMENT, name=IFACE1_LOWER
+  *surface, type=ELEMENT, name=IFACE1_UPPER
+  *surface, type=ELEMENT, name=IFACE2_LOWER
+  *surface, type=ELEMENT, name=IFACE2_UPPER
+  *surface, type=ELEMENT, name=IFACE3_IN_LOWER
+  *surface, type=ELEMENT, name=IFACE3_IN_UPPER
+  *surface, type=ELEMENT, name=IFACE3_OUT_LOWER
+  *surface, type=ELEMENT, name=IFACE3_OUT_UPPER
+  *surface, type=ELEMENT, name=IFACE4_IN_LOWER
+  *surface, type=ELEMENT, name=IFACE4_IN_UPPER
+  *surface, type=ELEMENT, name=IFACE4_OUT_LOWER
+  *surface, type=ELEMENT, name=IFACE4_OUT_UPPER
+  *surface, type=ELEMENT, name=IFACE5_IN_LOWER
+  *surface, type=ELEMENT, name=IFACE5_IN_UPPER
+  *surface, type=ELEMENT, name=IFACE5_OUT_LOWER
+  *surface, type=ELEMENT, name=IFACE5_OUT_UPPER
+  *surface, type=ELEMENT, name=IFACE6_IN_LOWER
+  *surface, type=ELEMENT, name=IFACE6_IN_UPPER
+  *surface, type=ELEMENT, name=IFACE6_OUT_LOWER
+  *surface, type=ELEMENT, name=IFACE6_OUT_UPPER
+  *surface, type=ELEMENT, name=IFACE7_IN_LOWER
+  *surface, type=ELEMENT, name=IFACE7_IN_UPPER
+  *surface, type=ELEMENT, name=IFACE7_OUT_LOWER
+  *surface, type=ELEMENT, name=IFACE7_OUT_UPPER
+  *surface, type=ELEMENT, name=PATCH
+  *surface, type=ELEMENT, name=TOP
+  *surface, type=ELEMENT, name=IFACE1_LOWER
+  *surface, type=ELEMENT, name=IFACE1_UPPER
+  *surface, type=ELEMENT, name=IFACE2_LOWER
+  *surface, type=ELEMENT, name=IFACE2_UPPER
+  *surface, type=ELEMENT, name=IFACE3_IN_LOWER
+  *surface, type=ELEMENT, name=IFACE3_IN_UPPER
+  *surface, type=ELEMENT, name=IFACE3_OUT_LOWER
+  *surface, type=ELEMENT, name=IFACE3_OUT_UPPER
+  *surface, type=ELEMENT, name=IFACE4_IN_LOWER
+  *surface, type=ELEMENT, name=IFACE4_IN_UPPER
+  *surface, type=ELEMENT, name=IFACE4_OUT_LOWER
+  *surface, type=ELEMENT, name=IFACE4_OUT_UPPER
+  *surface, type=ELEMENT, name=IFACE5_IN_LOWER
+  *surface, type=ELEMENT, name=IFACE5_IN_UPPER
+  *surface, type=ELEMENT, name=IFACE5_OUT_LOWER
+  *surface, type=ELEMENT, name=IFACE5_OUT_UPPER
+  *surface, type=ELEMENT, name=IFACE6_IN_LOWER
+  *surface, type=ELEMENT, name=IFACE6_IN_UPPER
+  *surface, type=ELEMENT, name=IFACE6_OUT_LOWER
+  *surface, type=ELEMENT, name=IFACE6_OUT_UPPER
+  *surface, type=ELEMENT, name=IFACE7_IN_LOWER
+  *surface, type=ELEMENT, name=IFACE7_IN_UPPER
+  *surface, type=ELEMENT, name=IFACE7_OUT_LOWER
+
+ ***NOTE: DUE TO EXCESSIVE REPORTING, THE ECHO OF THE *SURFACE OPTION IS BEING 
+          SUPPRESSED.
+  *surfaceinteraction, name=DELAM
+  *surfaceinteraction, name=FRIC
+  *friction
+  *boundary
+  *solidsection, elset=PLIES, material=PLY, orientation=FIBRE, controls=SC
+  *friction
+  *elementoutput, elset=SENSOR_ACT
+  *elementoutput, elset=SENSOR_R1
+  *elementoutput, elset=SENSOR_R2
+  *elementoutput, elset=SENSOR_R3
+  *elementoutput, elset=SENSOR_R4
+  *elementoutput, elset=SENSOR_R5
+  *elementoutput, elset=SENSOR_R6
+  *elementoutput, elset=SENSOR_R7
+  *elementoutput, elset=SENSOR_R8
+  *output, field, numberinterval=25
+  *output, history, timeinterval=5e-07
+  *step, name=WAVE, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *energyoutput
+  *step, name=WAVE, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *boundary
+  *dsload, op=NEW, amplitude=BURST
+  *output, field, numberinterval=25
+  *nodeoutput
+  *output, history, timeinterval=5e-07
+  *nodeoutput, nset=SENSOR_ACT
+  *elementoutput, elset=SENSOR_ACT
+  *nodeoutput, nset=SENSOR_R1
+  *elementoutput, elset=SENSOR_R1
+  *nodeoutput, nset=SENSOR_R2
+  *elementoutput, elset=SENSOR_R2
+  *nodeoutput, nset=SENSOR_R3
+  *elementoutput, elset=SENSOR_R3
+  *nodeoutput, nset=SENSOR_R4
+  *elementoutput, elset=SENSOR_R4
+  *nodeoutput, nset=SENSOR_R5
+  *elementoutput, elset=SENSOR_R5
+  *nodeoutput, nset=SENSOR_R6
+  *elementoutput, elset=SENSOR_R6
+  *nodeoutput, nset=SENSOR_R7
+  *elementoutput, elset=SENSOR_R7
+  *nodeoutput, nset=SENSOR_R8
+  *elementoutput, elset=SENSOR_R8
+  *energyoutput
+  *endstep
+  *surfaceinteraction, name=DELAM
+  *cohesivebehavior
+  *damageinitiation, criterion=QUADS
+  *damageevolution, type=ENERGY, power=2.284, mixedmodebehavior=BK
+
+ ***WARNING: LOGARITHMIC INTERPOLATION OF RATE DEPENDENT COHESIVE DAMAGE FOR 
+             ABAQUS/EXPLICIT GENERAL CONTACT IS DEFINED BY DEFAULT. IF LINEAR 
+             INTERPOLATION IS PREFERRED, THEN DEFINE *SURFACE INTERACTION, RATE 
+             INTERPOLATION=LINEAR FOR EACH RELEVANT INTERACTION PROPERTY
+ LINE IMAGE: *surfaceinteraction, name=FRIC
+  *surfaceinteraction, name=FRIC
+  *friction
+  *contact, op=NEW
+
+ ***WARNING: OP=NEW on *CONTACT is ignored when the general contact definition 
+             is specified as model data.
+  *contactinclusions
+  *contactpropertyassignment
+  *step, name=WAVE, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *boundary
+
+ ***WARNING: THE OPTION *BOUNDARY,TYPE=DISPLACEMENT HAS BEEN USED; CHECK STATUS 
+             FILE BETWEEN STEPS FOR WARNINGS ON ANY JUMPS PRESCRIBED ACROSS THE 
+             STEPS IN DISPLACEMENT VALUES OF TRANSLATIONAL DOF. FOR ROTATIONAL 
+             DOF MAKE SURE THAT THERE ARE NO SUCH JUMPS. ALL JUMPS IN 
+             DISPLACEMENTS ACROSS STEPS ARE IGNORED
+  *endstep
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                 89888
+          NUMBER OF NODES IS                                   183184
+          NUMBER OF NODES DEFINED BY THE USER                  183184
+          TOTAL NUMBER OF VARIABLES IN THE MODEL               549552
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =       4.E+00
+       SYSTEM TIME (SEC)    =       2.E+00
+       TOTAL CPU TIME (SEC) =       6.E+00
+       WALLCLOCK TIME (SEC) =            2

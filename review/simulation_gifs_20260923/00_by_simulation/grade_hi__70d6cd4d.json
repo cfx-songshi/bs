@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "grade_hi__70d6cd4d",
+  "name": "grade_hi",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_hi",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\grade_hi__70d6cd4d.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\grade_hi__70d6cd4d.png",
+  "frames": 26,
+  "segments": 1,
+  "duration_s": 3.9,
+  "signature": [
+    [
+      "grade_hi__IMPACT__d04c3c5a",
+      1790143421.8578587
+    ]
+  ],
+  "group": "20_historical",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_hi.odb"
+  ],
+  "caveats": [
+    "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+  ],
+  "parts": [
+    "grade_hi__IMPACT__d04c3c5a"
+  ]
+}

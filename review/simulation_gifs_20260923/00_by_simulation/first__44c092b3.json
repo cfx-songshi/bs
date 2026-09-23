@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "first__44c092b3",
+  "name": "first",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\first",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\first__44c092b3.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\first__44c092b3.png",
+  "frames": 11,
+  "segments": 1,
+  "duration_s": 1.65,
+  "signature": [
+    [
+      "first__PULL__8e7372fb",
+      1790143690.198508
+    ]
+  ],
+  "group": "50_workflow_tests",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\first.odb"
+  ],
+  "caveats": [
+    "小模型/流程验证，不代表正式板损伤结论"
+  ],
+  "parts": [
+    "first__PULL__8e7372fb"
+  ]
+}

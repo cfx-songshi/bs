@@ -1,0 +1,237 @@
+Abaqus/Explicit 2026                             DATE 20-Sep-2026  TIME 18:18:31
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 6 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+ NUMERICAL PRECISION USED FOR THIS Abaqus/Explicit ANALYSIS
+-------------------------------------------------------------------------------
+
+Single precision package and explicit executables will be used in this analysis.
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass in model = 3.69676E-02
+   Center of mass of model = ( 5.000000E-02, 5.000000E-02, 1.536635E-03)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          3.106795E-05                  1.235743E-04
+      I(YY)          3.106795E-05                  1.235743E-04
+      I(ZZ)          6.190043E-05                  2.467385E-04
+      I(XY)         -1.240778E-11                 -9.241907E-05
+      I(YZ)         -4.513365E-13                 -2.840287E-06
+      I(ZX)         -4.522246E-13                 -2.840287E-06
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 1.06092E-07
+
+   Statistics over 32 deformable elements:
+      Mean = 1.06092E-07
+      Standard deviation = 1.06178E-10
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+   ----------------------------------------------------------
+          11          1       1.060922E-07      1.000000E+00
+          27          2       1.060922E-07      1.000000E+00
+          12          3       1.060922E-07      9.999999E-01
+          15          4       1.060922E-07      9.999999E-01
+          16          5       1.060922E-07      9.999999E-01
+          28          6       1.060922E-07      9.999999E-01
+          31          7       1.060922E-07      9.999999E-01
+          32          8       1.060922E-07      9.999999E-01
+           3          9       1.060922E-07      9.999999E-01
+           7         10       1.060922E-07      9.999999E-01
+
+-------------------------------------------------------------------------------
+
+  INFORMATION REGARDING INITIAL CONTACT OVERCLOSURES FOR NEWLY DEFINED GENERAL
+  CONTACT INTERACTIONS IN STEP 1
+
+-------------------------------------------------------------------------------
+
+  No initial node-face overclosures found.
+
+
+  Abaqus/Explicit will attempt to resolve 16 initial edge-edge overclosure(s).
+
+
+  Maximum initial overclosure for edge-edge contact is 3.34694E-10 between the
+  edge defined by nodes 26 and 31 and the edge defined by nodes 51 and 52
+
+
+  No nodal position adjustments have been made.
+
+
+  No node-face overclosures left unresolved.
+
+
+  8 edge-edge overclosure(s) left unresolved and will be stored as offsets. To
+  help identify the nodes involved in the overclosures a node set
+  InfoNodeUnresolvInitOver has been created. Check the message file for more
+  detailed information.
+
+
+  Maximum unresolved overclosure is 3.34694E-10 between the edge defined by
+  nodes 26 and 31 and the edge defined by nodes 51 and 52
+
+
+  For more detailed information on initial overclosures, use the *DIAGNOSTICS,
+  CONTACT=DETAIL command and see the message (.msg) file.
+
+
+***NOTE: You can view the deformed configuration due to the resolution of
+         initial overclosures.  In increment 0, draw the deformed shape or
+         draw a symbol plot of vector displacements.
+
+------------------------------------------------------------------------------
+
+Abaqus/Explicit 2026                             DATE 20-Sep-2026  TIME 18:18:38
+The entire model is considered 1 domain.
+Only 1 MPI rank is used.
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 32.9 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL        STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME     INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 0.000E+00  00:00:00 1.00244E-07          27  1.785E-02  1.785E-02
+Output Field Frame Number     0, of     50, at step time 0.000E+00
+       32  6.112E-06 6.112E-06  00:00:00 2.12380E-07          27  1.785E-02  1.785E-02
+Output Field Frame Number     1, of     50, at step time 6.112E-06
+       60  1.203E-05 1.203E-05  00:00:00 2.10670E-07          27  1.785E-02  1.785E-02
+Output Field Frame Number     2, of     50, at step time 1.203E-05
+       89  1.813E-05 1.813E-05  00:00:00 2.10359E-07          27  1.785E-02  1.785E-02
+Output Field Frame Number     3, of     50, at step time 1.813E-05
+      117  2.402E-05 2.402E-05  00:00:00 2.10227E-07          27  1.785E-02  1.785E-02
+Output Field Frame Number     4, of     50, at step time 2.402E-05
+      146  3.011E-05 3.011E-05  00:00:00 2.10096E-07          27  1.785E-02  1.785E-02
+Output Field Frame Number     5, of     50, at step time 3.011E-05
+      175  3.621E-05 3.621E-05  00:00:00 2.09958E-07          27  1.785E-02  1.785E-02
+Output Field Frame Number     6, of     50, at step time 3.621E-05
+      203  4.208E-05 4.208E-05  00:00:00 2.09834E-07          32  1.785E-02  1.785E-02
+Output Field Frame Number     7, of     50, at step time 4.208E-05
+      232  4.817E-05 4.817E-05  00:00:01 2.09731E-07          26  1.785E-02  1.785E-02
+Output Field Frame Number     8, of     50, at step time 4.817E-05
+      260  5.404E-05 5.404E-05  00:00:01 2.09658E-07          15  1.785E-02  1.786E-02
+Output Field Frame Number     9, of     50, at step time 5.404E-05
+      289  6.012E-05 6.012E-05  00:00:01 2.09608E-07          22  1.785E-02  1.785E-02
+Output Field Frame Number    10, of     50, at step time 6.012E-05
+      318  6.620E-05 6.620E-05  00:00:01 2.09577E-07          19  1.785E-02  1.785E-02
+Output Field Frame Number    11, of     50, at step time 6.620E-05
+      346  7.206E-05 7.206E-05  00:00:01 2.09559E-07          22  1.785E-02  1.785E-02
+Output Field Frame Number    12, of     50, at step time 7.206E-05
+      375  7.814E-05 7.814E-05  00:00:01 2.09548E-07          26  1.785E-02  1.786E-02
+Output Field Frame Number    13, of     50, at step time 7.814E-05
+      403  8.401E-05 8.401E-05  00:00:01 2.09541E-07          22  1.785E-02  1.785E-02
+Output Field Frame Number    14, of     50, at step time 8.401E-05
+      432  9.008E-05 9.008E-05  00:00:01 2.09537E-07          19  1.785E-02  1.785E-02
+Output Field Frame Number    15, of     50, at step time 9.008E-05
+      461  9.616E-05 9.616E-05  00:00:01 2.09535E-07          25  1.785E-02  1.785E-02
+Output Field Frame Number    16, of     50, at step time 9.616E-05
+      489  1.020E-04 1.020E-04  00:00:01 2.09534E-07          23  1.785E-02  1.785E-02
+Output Field Frame Number    17, of     50, at step time 1.020E-04
+      518  1.081E-04 1.081E-04  00:00:01 2.09533E-07          19  1.785E-02  1.786E-02
+Output Field Frame Number    18, of     50, at step time 1.081E-04
+      547  1.142E-04 1.142E-04  00:00:01 2.09532E-07          11  1.785E-02  1.785E-02
+Output Field Frame Number    19, of     50, at step time 1.142E-04
+      575  1.200E-04 1.200E-04  00:00:01 2.09532E-07           2  1.785E-02  1.785E-02
+Output Field Frame Number    20, of     50, at step time 1.200E-04
+      604  1.261E-04 1.261E-04  00:00:01 2.09532E-07          25  1.785E-02  1.786E-02
+Output Field Frame Number    21, of     50, at step time 1.261E-04
+      633  1.322E-04 1.322E-04  00:00:01 2.09532E-07          19  1.785E-02  1.785E-02
+Output Field Frame Number    22, of     50, at step time 1.322E-04
+      661  1.381E-04 1.381E-04  00:00:01 2.09532E-07          15  1.785E-02  1.785E-02
+Output Field Frame Number    23, of     50, at step time 1.381E-04
+      690  1.441E-04 1.441E-04  00:00:01 2.09532E-07          21  1.785E-02  1.785E-02
+Output Field Frame Number    24, of     50, at step time 1.441E-04
+      718  1.500E-04 1.500E-04  00:00:01 2.09532E-07          30  1.785E-02  1.785E-02
+Output Field Frame Number    25, of     50, at step time 1.500E-04
+      747  1.561E-04 1.561E-04  00:00:01 2.09532E-07           1  1.785E-02  1.785E-02
+Output Field Frame Number    26, of     50, at step time 1.561E-04
+      776  1.622E-04 1.622E-04  00:00:02 2.09532E-07          26  1.785E-02  1.785E-02
+Output Field Frame Number    27, of     50, at step time 1.622E-04
+      804  1.680E-04 1.680E-04  00:00:02 2.09532E-07          27  1.785E-02  1.785E-02
+Output Field Frame Number    28, of     50, at step time 1.680E-04
+      833  1.741E-04 1.741E-04  00:00:02 2.09532E-07          32  1.785E-02  1.785E-02
+Output Field Frame Number    29, of     50, at step time 1.741E-04
+      862  1.802E-04 1.802E-04  00:00:02 2.09532E-07          23  1.785E-02  1.785E-02
+Output Field Frame Number    30, of     50, at step time 1.802E-04
+      890  1.861E-04 1.861E-04  00:00:02 2.09532E-07          15  1.785E-02  1.785E-02
+Output Field Frame Number    31, of     50, at step time 1.861E-04
+      919  1.921E-04 1.921E-04  00:00:02 2.09532E-07          27  1.785E-02  1.785E-02
+Output Field Frame Number    32, of     50, at step time 1.921E-04
+      948  1.982E-04 1.982E-04  00:00:02 2.09532E-07          17  1.785E-02  1.785E-02
+Output Field Frame Number    33, of     50, at step time 1.982E-04
+      976  2.041E-04 2.041E-04  00:00:02 2.09532E-07          12  1.785E-02  1.785E-02
+Output Field Frame Number    34, of     50, at step time 2.041E-04
+     1005  2.101E-04 2.101E-04  00:00:02 2.09532E-07          24  1.785E-02  1.785E-02
+Output Field Frame Number    35, of     50, at step time 2.101E-04
+     1033  2.160E-04 2.160E-04  00:00:02 2.09532E-07           6  1.785E-02  1.786E-02
+Output Field Frame Number    36, of     50, at step time 2.160E-04
+     1062  2.221E-04 2.221E-04  00:00:02 2.09532E-07          10  1.785E-02  1.785E-02
+Output Field Frame Number    37, of     50, at step time 2.221E-04
+     1091  2.282E-04 2.282E-04  00:00:02 2.09532E-07          19  1.785E-02  1.785E-02
+Output Field Frame Number    38, of     50, at step time 2.282E-04
+     1119  2.340E-04 2.340E-04  00:00:02 2.09532E-07          11  1.785E-02  1.785E-02
+Output Field Frame Number    39, of     50, at step time 2.340E-04
+
+ STEP 1  ORIGIN 0.0000
+
+              STEP     TOTAL      WALL        STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME     INCREMENT     ELEMENT     ENERGY     ENERGY
+     1148  2.401E-04 2.401E-04  00:00:02 2.09532E-07           5  1.785E-02  1.785E-02
+Output Field Frame Number    40, of     50, at step time 2.401E-04
+     1177  2.462E-04 2.462E-04  00:00:02 2.09532E-07          26  1.785E-02  1.785E-02
+Output Field Frame Number    41, of     50, at step time 2.462E-04
+     1205  2.521E-04 2.521E-04  00:00:02 2.09532E-07          23  1.785E-02  1.786E-02
+Output Field Frame Number    42, of     50, at step time 2.521E-04
+     1234  2.581E-04 2.581E-04  00:00:02 2.09532E-07          11  1.786E-02  1.785E-02
+Output Field Frame Number    43, of     50, at step time 2.581E-04
+     1263  2.642E-04 2.642E-04  00:00:02 2.09532E-07          19  1.785E-02  1.785E-02
+Output Field Frame Number    44, of     50, at step time 2.642E-04
+     1291  2.701E-04 2.701E-04  00:00:03 2.09532E-07          27  1.785E-02  1.785E-02
+Output Field Frame Number    45, of     50, at step time 2.701E-04
+     1320  2.761E-04 2.761E-04  00:00:03 2.09532E-07          10  1.785E-02  1.785E-02
+Output Field Frame Number    46, of     50, at step time 2.761E-04
+     1348  2.820E-04 2.820E-04  00:00:03 2.09532E-07          10  1.785E-02  1.785E-02
+Output Field Frame Number    47, of     50, at step time 2.820E-04
+     1377  2.881E-04 2.881E-04  00:00:03 2.09532E-07          22  1.785E-02  1.785E-02
+Output Field Frame Number    48, of     50, at step time 2.881E-04
+     1406  2.942E-04 2.942E-04  00:00:03 2.09532E-07          27  1.785E-02  1.786E-02
+Output Field Frame Number    49, of     50, at step time 2.942E-04
+     1434  3.000E-04 3.000E-04  00:00:03 2.09406E-07          23  1.785E-02  1.785E-02
+Restart Number  1 at 3.00000E-04
+Output Field Frame Number    50, of     50, at step time 3.000E-04
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =   4.3000
+       SYSTEM TIME (SEC)    =   2.4000
+       WALLCLOCK TIME (SEC) =            3
+              INIT (SEC) =          0
+              MAIN (SEC) =          3
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

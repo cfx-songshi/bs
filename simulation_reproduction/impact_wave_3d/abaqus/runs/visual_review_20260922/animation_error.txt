@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:/bs_thesis/simulation_reproduction/impact_wave_3d/abaqus/runs/visual_review_20260922/play_wave.py", line 12, in <module>
+    session.animationController.setValues(animationType=TIME_HISTORY)
+AttributeError: 'Session' object has no attribute 'animationController'

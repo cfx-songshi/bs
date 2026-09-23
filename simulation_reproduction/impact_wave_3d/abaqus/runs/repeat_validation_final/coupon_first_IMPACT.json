@@ -1,0 +1,125 @@
+{
+  "ball": {
+    "force_peak_N": 3259.945870621262,
+    "force_peak_time_s": 1.0033280659627053e-06,
+    "force_tail_max_N": 0.0,
+    "node": 12283,
+    "rebound_ratio": 0.7848946047284681,
+    "u3_last_m": 0.0022299315314739943,
+    "v3_first_m_s": -12.296299934387207,
+    "v3_last_m_s": 9.651299476623535
+  },
+  "centre": {
+    "node": 1390,
+    "peak_downward_um": 530.9789557941258,
+    "u3_last_m": -0.0001108938449760899
+  },
+  "damage_end": {},
+  "damage_start": {},
+  "end_s": 0.0005000000237487257,
+  "energy": {
+    "ALLAE": {
+      "delta_J": 0.0,
+      "first_J": 0.0,
+      "last_J": 0.0,
+      "peak_abs_J": 0.0
+    },
+    "ALLCW": {
+      "delta_J": 0.0,
+      "first_J": 0.0,
+      "last_J": 0.0,
+      "peak_abs_J": 0.0
+    },
+    "ALLDMD": {
+      "delta_J": 0.0,
+      "first_J": 0.0,
+      "last_J": 0.0,
+      "peak_abs_J": 0.0
+    },
+    "ALLFD": {
+      "delta_J": 2.5881336114252917e-05,
+      "first_J": 0.0,
+      "last_J": 2.5881336114252917e-05,
+      "peak_abs_J": 2.5881336114252917e-05
+    },
+    "ALLIE": {
+      "delta_J": 0.02441764995455742,
+      "first_J": 0.0,
+      "last_J": 0.02441764995455742,
+      "peak_abs_J": 0.2538870871067047
+    },
+    "ALLKE": {
+      "delta_J": -0.060167089104652405,
+      "first_J": 0.2999502122402191,
+      "last_J": 0.2397831231355667,
+      "peak_abs_J": 0.2999502122402191
+    },
+    "ALLPD": {
+      "delta_J": 0.0,
+      "first_J": 0.0,
+      "last_J": 0.0,
+      "peak_abs_J": 0.0
+    },
+    "ALLPW": {
+      "delta_J": -0.013619907200336456,
+      "first_J": 0.0,
+      "last_J": -0.013619907200336456,
+      "peak_abs_J": 0.015143316239118576
+    },
+    "ALLSE": {
+      "delta_J": 0.02441764995455742,
+      "first_J": 0.0,
+      "last_J": 0.02441764995455742,
+      "peak_abs_J": 0.2538870871067047
+    },
+    "ALLVD": {
+      "delta_J": 0.021630343049764633,
+      "first_J": 0.0,
+      "last_J": 0.021630343049764633,
+      "peak_abs_J": 0.021630343049764633
+    },
+    "ALLWK": {
+      "delta_J": 0.0,
+      "first_J": 0.0,
+      "last_J": 0.0,
+      "peak_abs_J": 0.0
+    },
+    "ETOTAL": {
+      "delta_J": -0.00047329068183898926,
+      "first_J": 0.2999502122402191,
+      "last_J": 0.2994769215583801,
+      "peak_abs_J": 0.3002559542655945
+    }
+  },
+  "energy_equivalent_area_mm2": [
+    0.0,
+    0.0
+  ],
+  "energy_equivalent_radius_mm": [
+    0.0,
+    0.0
+  ],
+  "energy_radius_caveat": "summed-interface full-fracture-equivalent proxy, not per-interface geometric radius; partial damage contributes",
+  "etotal_delta_over_incident": -0.0015776356061299643,
+  "frames": 51,
+  "interfaces": [
+    {
+      "area_D_ge_0p95_mm2": 0.0,
+      "area_D_gt_0p01_mm2": 0.0,
+      "damage_weighted_area_mm2": 0.0,
+      "damaged_nodes": 0,
+      "height_mm": 1.0000000474974513,
+      "max_CSDMG": 0.0,
+      "max_damage_radius_mm": 0.0
+    }
+  ],
+  "odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\coupon_first.odb",
+  "residual": {
+    "conservative_ball_gap_m": 0.0023408247288898565,
+    "local_top_max_u3_m": -0.00011089319741586223,
+    "plate_max_speed_m_s": 4.565459900856691,
+    "plate_mechanical_tail_max_J": 0.0798259044508115
+  },
+  "step": "IMPACT",
+  "step_number": 1
+}

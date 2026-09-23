@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "gear_example_waveforms_0__91464f69",
+  "name": "gear_example_waveforms_0",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms_0",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_0__91464f69.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_0__91464f69.png",
+  "frames": 51,
+  "segments": 1,
+  "duration_s": 7.6499999999999995,
+  "signature": [
+    [
+      "results__gear_example_waveforms_0__d9299ea6",
+      1790143540.5942154
+    ]
+  ],
+  "group": "70_surrogate",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz"
+  ],
+  "caveats": [
+    "齿轮箱合成信号样例，不是实测；速度标签取自保存文件"
+  ],
+  "parts": [
+    "results__gear_example_waveforms_0__d9299ea6"
+  ]
+}

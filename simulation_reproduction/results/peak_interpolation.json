@@ -1,0 +1,37 @@
+[
+  {
+    "fs_hz": 50000,
+    "n": 1000,
+    "invalid": 0,
+    "parabolic_mae_us": 0.581984998445482,
+    "integer_peak_mae_us": 5.071522815966924
+  },
+  {
+    "fs_hz": 100000,
+    "n": 1000,
+    "invalid": 0,
+    "parabolic_mae_us": 0.10620672427995444,
+    "integer_peak_mae_us": 2.460516240469011
+  },
+  {
+    "fs_hz": 200000,
+    "n": 1000,
+    "invalid": 0,
+    "parabolic_mae_us": 0.048380479875941254,
+    "integer_peak_mae_us": 1.2393519181864412
+  },
+  {
+    "fs_hz": 500000,
+    "n": 1000,
+    "invalid": 0,
+    "parabolic_mae_us": 0.10967190615515486,
+    "integer_peak_mae_us": 0.528383405348093
+  },
+  {
+    "fs_hz": 1000000,
+    "n": 1000,
+    "invalid": 0,
+    "parabolic_mae_us": 0.2088627743091895,
+    "integer_peak_mae_us": 0.3652759824764319
+  }
+]

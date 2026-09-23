@@ -1,0 +1,13 @@
+{
+  "nx": 4000,
+  "nz": 32,
+  "damaged": true,
+  "dt_s": 9.247971751649922e-09,
+  "dt_upper_bound_s": 1.3211626132193018e-08,
+  "steps": 23789,
+  "nodes": 132272,
+  "mass_kg_per_m": 1.3501999999999996,
+  "energy_relative_drift": 1.6907851239413333e-12,
+  "rigid_rotation_relative_residual": 6.896073239889494e-20,
+  "seconds": 125.42227029800415
+}

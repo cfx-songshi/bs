@@ -1,0 +1,12 @@
+{
+  "wall_s": 29.01260542869568,
+  "command": [
+    "D:\\Abaqus\\Commands\\abaqus.bat",
+    "job=acc_n02_relax1",
+    "input=acc_n02_relax1.inp",
+    "double=explicit",
+    "interactive",
+    "oldjob=coupon_first"
+  ],
+  "returncode": 0
+}

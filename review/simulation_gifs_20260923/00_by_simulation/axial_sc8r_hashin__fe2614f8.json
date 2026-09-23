@@ -1,0 +1,27 @@
+{
+  "merge_version": 2,
+  "key": "axial_sc8r_hashin__fe2614f8",
+  "name": "axial_sc8r_hashin",
+  "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_sc8r_hashin",
+  "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_sc8r_hashin__fe2614f8.gif",
+  "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_sc8r_hashin__fe2614f8.png",
+  "frames": 21,
+  "segments": 1,
+  "duration_s": 3.15,
+  "signature": [
+    [
+      "axial_sc8r_hashin__S1__01e153ca",
+      1790143185.5192957
+    ]
+  ],
+  "group": "40_material_probes",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_sc8r_hashin.odb"
+  ],
+  "caveats": [
+    "材料/关键词能力探针，不等于实物材料标定"
+  ],
+  "parts": [
+    "axial_sc8r_hashin__S1__01e153ca"
+  ]
+}

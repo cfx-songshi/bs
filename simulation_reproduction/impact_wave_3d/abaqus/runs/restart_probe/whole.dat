@@ -1,0 +1,243 @@
+1
+
+   Abaqus 2026                                  Date 22-Sep-2026   Time 13:24:08
+   For use by Supplied by Team-SolidSQUAD under license from Dassault Systemes or its subsidiary.
+
+
+
+                         The Abaqus Software is a product of:
+
+                           Dassault Systemes Americas Corp.
+                           1301 Atwood Avenue, Suite 101W
+                              Johnston, RI 02919, USA
+ 
+
+
+                   The Abaqus Software is available only under license
+                   from Dassault Systemes or its subsidiary and may be
+                   used or reproduced only in accordance with the terms
+                   of such license.
+ 
+                          On machine CFX 
+                          you are authorized to run
+                          Abaqus/Explicit until 31-Dec-2055
+
+                          Your site id is:  
+
+
+ 
+                    For assistance or any other information you may
+                    obtain contact information for your local office
+                    from the world wide web at:
+
+                      https://www.3ds.com/products-services/simulia/services-support/locations/
+
+ 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                *                                                         * 
+                *                   *****************                     * 
+                *                   *  N O T I C E  *                     * 
+                *                   *****************                     * 
+                *                                                         * 
+                *                                                         * 
+                *                       Abaqus 2026                       * 
+                *                                                         * 
+                *       BUILD ID: 2025_09_23-22.43.03 RELr428 206049      * 
+                *                                                         * 
+                *                                                         * 
+                *  Please make sure you are using                         * 
+                *  release Abaqus 2026 manuals                            * 
+                *  plus the notes accompanying this release.              * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+ 
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *heading
+  *material, name=STEEL
+  *damping, alpha=TABULAR, dependencies=1
+  *density
+  *elastic
+  *solidsection, elset=LOWER, material=STEEL
+  *solidsection, elset=UPPER, material=STEEL
+  *solidsection, elset=LOWER, material=STEEL
+  *solidsection, elset=UPPER, material=STEEL
+  *surface, type=ELEMENT, name=LOWER_TOP
+  *surface, type=ELEMENT, name=UPPER_BOTTOM
+  *surface, type=ELEMENT, name=LOWER_TOP
+  *surface, type=ELEMENT, name=UPPER_BOTTOM
+  *surfaceinteraction, name=COH
+  *boundary
+  *boundary
+  *boundary, amplitude=RAMP, type=DISPLACEMENT
+  *boundary, amplitude=UNLOAD
+  *boundary, amplitude=RELOAD
+  *solidsection, elset=LOWER, material=STEEL
+  *solidsection, elset=UPPER, material=STEEL
+  *initialconditions, type=FIELD, variable=1
+  *field, variable=1, amplitude=ON
+  *field, variable=1, amplitude=OFF
+  *initialconditions, type=FIELD, variable=1
+  *output, field, numberinterval=10
+  *output, history, timeinterval=2e-07
+  *step, name=PULL, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *step, name=RELAX, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *step, name=RELOAD, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *energyoutput
+  *step, name=PULL, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *boundary
+  *boundary, amplitude=RAMP, type=DISPLACEMENT
+  *output, field, numberinterval=10
+  *nodeoutput
+  *contactoutput
+  *output, history, timeinterval=2e-07
+  *nodeoutput, nset=TOP
+  *energyoutput
+  *endstep
+  *step, name=RELAX, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *boundary, amplitude=UNLOAD
+  *endstep
+  *step, name=RELOAD, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *boundary, amplitude=RELOAD
+  *endstep
+  *boundary
+  *surfaceinteraction, name=COH
+  *cohesivebehavior
+  *damageinitiation, criterion=QUADS
+  *damageevolution, type=ENERGY, power=2.284, mixedmodebehavior=BK
+
+ ***WARNING: LOGARITHMIC INTERPOLATION OF RATE DEPENDENT COHESIVE DAMAGE FOR 
+             ABAQUS/EXPLICIT GENERAL CONTACT IS DEFINED BY DEFAULT. IF LINEAR 
+             INTERPOLATION IS PREFERRED, THEN DEFINE *SURFACE INTERACTION, RATE 
+             INTERPOLATION=LINEAR FOR EACH RELEVANT INTERACTION PROPERTY
+ LINE IMAGE: *contact
+  *contact
+  *contactinclusions
+  *contactpropertyassignment
+  *surface, type=ELEMENT, name=LOWER_TOP
+  *surface, type=ELEMENT, name=UPPER_BOTTOM
+  *step, name=PULL, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *boundary
+
+ ***WARNING: THE OPTION *BOUNDARY,TYPE=DISPLACEMENT HAS BEEN USED; CHECK STATUS 
+             FILE BETWEEN STEPS FOR WARNINGS ON ANY JUMPS PRESCRIBED ACROSS THE 
+             STEPS IN DISPLACEMENT VALUES OF TRANSLATIONAL DOF. FOR ROTATIONAL 
+             DOF MAKE SURE THAT THERE ARE NO SUCH JUMPS. ALL JUMPS IN 
+             DISPLACEMENTS ACROSS STEPS ARE IGNORED
+  *boundary, amplitude=RAMP, type=DISPLACEMENT
+  *endstep
+
+ ***WARNING: The contact interactions referencing cohesive behavior under 
+             *CONTACT PROPERTY ASSIGNMENT are currently being used in 
+             self-contact in which the name of the second surface is either 
+             identical to the name of the first surface or not being defined in 
+             the data line. Note that the resulting self-contact will have the 
+             balanced main-secondary formulation rather then the usual pure 
+             main-secondary formulation for cohesive contact. Check the 
+             surfaces and contact interactions (see the surface interaction 
+             named COH).
+  *step, name=RELAX, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *field, variable=1, amplitude=ON
+  *boundary, amplitude=UNLOAD
+  *endstep
+
+ ***WARNING: The contact interactions referencing cohesive behavior under 
+             *CONTACT PROPERTY ASSIGNMENT are currently being used in 
+             self-contact in which the name of the second surface is either 
+             identical to the name of the first surface or not being defined in 
+             the data line. Note that the resulting self-contact will have the 
+             balanced main-secondary formulation rather then the usual pure 
+             main-secondary formulation for cohesive contact. Check the 
+             surfaces and contact interactions (see the surface interaction 
+             named COH).
+  *step, name=RELOAD, nlgeom=NO
+
+ ***WARNING: LINEAR GEOMETRIC KINEMATICS OPTION WILL NOT BE SUPPORTED IN FUTURE 
+             for Abaqus/Explicit ANALYSES.  LARGE DEFORMATIONS WILL BE ASSUMED.
+  *dynamic, explicit
+  *field, variable=1, amplitude=OFF
+  *boundary, amplitude=RELOAD
+  *endstep
+
+ ***WARNING: The contact interactions referencing cohesive behavior under 
+             *CONTACT PROPERTY ASSIGNMENT are currently being used in 
+             self-contact in which the name of the second surface is either 
+             identical to the name of the first surface or not being defined in 
+             the data line. Note that the resulting self-contact will have the 
+             balanced main-secondary formulation rather then the usual pure 
+             main-secondary formulation for cohesive contact. Check the 
+             surfaces and contact interactions (see the surface interaction 
+             named COH).
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                     2
+          NUMBER OF NODES IS                                       16
+          NUMBER OF NODES DEFINED BY THE USER                      16
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                   48
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =       1.E-01
+       SYSTEM TIME (SEC)    = ************
+       TOTAL CPU TIME (SEC) =       1.E-01
+       WALLCLOCK TIME (SEC) =            0

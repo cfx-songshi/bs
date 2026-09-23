@@ -1,0 +1,24 @@
+{
+  "key": "farfield_150x120x4__through_thickness__785cc154",
+  "source": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_150x120x4\\through_thickness.csv",
+  "kind": "traces",
+  "group": "62_custom_3d",
+  "caveat": "仅已保存厚度方向测点的位移时程，不能重建未保存的全场运动",
+  "complete": true,
+  "status": "exported",
+  "data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\farfield_150x120x4__through_thickness__785cc154.npz",
+  "step": "saved data",
+  "frames": 51,
+  "source_frames": 101,
+  "start_s": 0.0,
+  "end_s": 0.0004981684981684981,
+  "field": "U",
+  "geometry_scale": 1,
+  "sampling": "saved samples, uniformly selected indices, no temporal interpolation",
+  "trace_names": [
+    "z=-1.000 mm 的 uz（µm）",
+    "z=-0.500 mm 的 uz（µm）",
+    "z=0.500 mm 的 uz（µm）",
+    "z=1.000 mm 的 uz（µm）"
+  ]
+}

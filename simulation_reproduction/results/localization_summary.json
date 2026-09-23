@@ -1,0 +1,79 @@
+[
+  {
+    "toa_error_halfwidth_fraction_of_L_over_v": 0,
+    "n_all": 100000,
+    "valid_count": 100000,
+    "failure_percent": 0.0,
+    "ambiguous_count": 0,
+    "mean_error_percent_L_valid": 1.9198755382230917e-13,
+    "std_error_percent_L_valid": 5.534737795459224e-12,
+    "p95_error_percent_L_valid": 3.334829811380133e-13,
+    "success_within_5percent_L_all": 100.0
+  },
+  {
+    "toa_error_halfwidth_fraction_of_L_over_v": 0.001,
+    "n_all": 100000,
+    "valid_count": 97670,
+    "failure_percent": 2.3299999999999987,
+    "ambiguous_count": 0,
+    "mean_error_percent_L_valid": 0.8315181219490014,
+    "std_error_percent_L_valid": 2.013690809053463,
+    "p95_error_percent_L_valid": 2.9089095590146483,
+    "success_within_5percent_L_all": 95.257
+  },
+  {
+    "toa_error_halfwidth_fraction_of_L_over_v": 0.0025,
+    "n_all": 100000,
+    "valid_count": 94616,
+    "failure_percent": 5.384,
+    "ambiguous_count": 0,
+    "mean_error_percent_L_valid": 1.6832998109853576,
+    "std_error_percent_L_valid": 2.924408360435684,
+    "p95_error_percent_L_valid": 5.991427290769848,
+    "success_within_5percent_L_all": 88.544
+  },
+  {
+    "toa_error_halfwidth_fraction_of_L_over_v": 0.005,
+    "n_all": 100000,
+    "valid_count": 90775,
+    "failure_percent": 9.225000000000005,
+    "ambiguous_count": 0,
+    "mean_error_percent_L_valid": 2.8192475431071515,
+    "std_error_percent_L_valid": 3.9291810103076372,
+    "p95_error_percent_L_valid": 9.629359096910237,
+    "success_within_5percent_L_all": 78.281
+  },
+  {
+    "toa_error_halfwidth_fraction_of_L_over_v": 0.01,
+    "n_all": 100000,
+    "valid_count": 84609,
+    "failure_percent": 15.390999999999998,
+    "ambiguous_count": 0,
+    "mean_error_percent_L_valid": 4.564477285651856,
+    "std_error_percent_L_valid": 5.115282099511864,
+    "p95_error_percent_L_valid": 14.426405307390459,
+    "success_within_5percent_L_all": 59.882000000000005
+  },
+  {
+    "toa_error_halfwidth_fraction_of_L_over_v": 0.02,
+    "n_all": 100000,
+    "valid_count": 75358,
+    "failure_percent": 24.641999999999996,
+    "ambiguous_count": 0,
+    "mean_error_percent_L_valid": 7.199943476462319,
+    "std_error_percent_L_valid": 6.642936386036584,
+    "p95_error_percent_L_valid": 20.5968331522742,
+    "success_within_5percent_L_all": 36.058
+  },
+  {
+    "toa_error_halfwidth_fraction_of_L_over_v": 0.05,
+    "n_all": 100000,
+    "valid_count": 56938,
+    "failure_percent": 43.062,
+    "ambiguous_count": 0,
+    "mean_error_percent_L_valid": 12.137448168643521,
+    "std_error_percent_L_valid": 8.777214885107536,
+    "p95_error_percent_L_valid": 29.610704031894908,
+    "success_within_5percent_L_all": 13.464
+  }
+]

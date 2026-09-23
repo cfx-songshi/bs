@@ -1,0 +1,122 @@
+*Heading
+** restart partial damage test
+*Preprint, echo=NO, model=NO, history=NO, contact=NO
+*Node
+1, 0., 0., 0.
+2, 1e-3, 0., 0.
+3, 1e-3, 1e-3, 0.
+4, 0., 1e-3, 0.
+5, 0., 0., 1e-3
+6, 1e-3, 0., 1e-3
+7, 1e-3, 1e-3, 1e-3
+8, 0., 1e-3, 1e-3
+11, 0., 0., 1e-3
+12, 1e-3, 0., 1e-3
+13, 1e-3, 1e-3, 1e-3
+14, 0., 1e-3, 1e-3
+15, 0., 0., 2e-3
+16, 1e-3, 0., 2e-3
+17, 1e-3, 1e-3, 2e-3
+18, 0., 1e-3, 2e-3
+*Element, type=C3D8
+1, 1, 2, 3, 4, 5, 6, 7, 8
+2, 11, 12, 13, 14, 15, 16, 17, 18
+*Elset, elset=LOWER
+1,
+*Elset, elset=UPPER
+2,
+*Nset, nset=BOTTOM
+1, 2, 3, 4,
+*Nset, nset=MIDLOWER
+5, 6, 7, 8,
+*Nset, nset=MIDUPPER
+11, 12, 13, 14,
+*Nset, nset=TOP
+15, 16, 17, 18,
+*Nset, nset=ALLN
+1,2,3,4,5,6,7,8,11,12,13,14,15,16,17,18
+*Initial Conditions, type=FIELD, variable=1
+ALLN, 0.
+*Boundary
+BOTTOM, ENCASTRE
+TOP, 1, 2
+MIDLOWER, 1, 2
+MIDUPPER, 1, 2
+*Surface, type=ELEMENT, name=LOWER_TOP
+LOWER, S2
+*Surface, type=ELEMENT, name=UPPER_BOTTOM
+UPPER, S1
+*Material, name=STEEL
+*Damping, alpha=TABULAR, dependencies=1
+0., 0., 0.
+20000., 0., 1.
+*Density
+7800.,
+*Elastic
+2.1e11, 0.3
+*Solid Section, elset=LOWER, material=STEEL
+,
+*Solid Section, elset=UPPER, material=STEEL
+,
+*Amplitude, name=RAMP, time=STEP TIME
+0., 0.
+2e-5, 1.
+*Surface Interaction, name=COH
+*Cohesive Behavior
+2.37e13, 2.37e13, 2.37e13
+*Damage Initiation, criterion=QUADS
+59.5e6, 59.5e6, 59.5e6
+*Damage Evolution, type=ENERGY, mixed mode behavior=BK, power=2.284
+490., 1060., 1060.
+*Contact
+*Contact Inclusions
+LOWER_TOP, UPPER_BOTTOM
+*Contact Property Assignment
+ ,  , COH
+*Step, name=PULL, nlgeom=NO
+*Dynamic, Explicit
+, 4e-5
+*Bulk Viscosity
+0.06, 1.2
+*Boundary
+BOTTOM, ENCASTRE
+*Boundary, amplitude=RAMP, type=DISPLACEMENT
+TOP, 3, 3, 1e-5
+*Output, field, number interval=10
+*Node Output
+U, V
+*Contact Output
+CDISP, CSTRESS, CSDMG
+*Output, history, time interval=2e-7
+*Node Output, nset=TOP
+RF3, U3
+*Energy Output
+ALLKE, ALLIE, ALLSE, ALLVD, ALLDMD, ALLWK, ETOTAL
+*Restart, write, number interval=1
+*End Step
+*Amplitude, name=ON, time=STEP TIME
+0., 1., 1., 1.
+*Amplitude, name=OFF, time=STEP TIME
+0., 0., 1., 0.
+*Amplitude, name=UNLOAD, time=STEP TIME
+0., 1e-5, 2e-5, 0., 4e-5, 0.
+*Amplitude, name=RELOAD, time=STEP TIME
+0., 0., 2e-5, 1.4e-5, 4e-5, 1.4e-5
+*Step, name=RELAX, nlgeom=NO
+*Dynamic, Explicit
+, 4e-5
+*Field, variable=1, amplitude=ON
+ALLN, 1.
+*Boundary, amplitude=UNLOAD
+TOP, 3, 3, 1.
+*Restart, write, number interval=1
+*End Step
+*Step, name=RELOAD, nlgeom=NO
+*Dynamic, Explicit
+, 4e-5
+*Field, variable=1, amplitude=OFF
+ALLN, 1.
+*Boundary, amplitude=RELOAD
+TOP, 3, 3, 1.
+*Restart, write, number interval=1
+*End Step

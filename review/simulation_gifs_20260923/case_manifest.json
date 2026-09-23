@@ -1,0 +1,3764 @@
+[
+  {
+    "merge_version": 2,
+    "key": "acc_n01__0a0d2561",
+    "name": "acc_n01",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n01",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n01__0a0d2561.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n01__0a0d2561.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "acc_n01__IMPACT__34fa7d29",
+        1790143164.8482332
+      ]
+    ],
+    "group": "01_current_impact",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n01.odb"
+    ],
+    "caveats": [
+      "正式累积序列第1次；尚不能代表三次累积完成"
+    ],
+    "parts": [
+      "acc_n01__IMPACT__34fa7d29"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "imp_hi__14315861",
+    "name": "imp_hi",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_hi",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\imp_hi__14315861.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\imp_hi__14315861.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "imp_hi__IMPACT__41d87c74",
+        1790143471.73745
+      ]
+    ],
+    "group": "01_current_impact",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_hi.odb"
+    ],
+    "caveats": [
+      "显式黏聚刚度 2.37e13 下的单次标定；应力场未收敛、材料为替代参数"
+    ],
+    "parts": [
+      "imp_hi__IMPACT__41d87c74"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "imp_lo__545c8666",
+    "name": "imp_lo",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_lo",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\imp_lo__545c8666.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\imp_lo__545c8666.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "imp_lo__IMPACT__f065c58c",
+        1790143456.0350437
+      ]
+    ],
+    "group": "01_current_impact",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_lo.odb"
+    ],
+    "caveats": [
+      "显式黏聚刚度 2.37e13 下的单次标定；应力场未收敛、材料为替代参数"
+    ],
+    "parts": [
+      "imp_lo__IMPACT__f065c58c"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "imp_mid__aeca0372",
+    "name": "imp_mid",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_mid",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\imp_mid__aeca0372.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\imp_mid__aeca0372.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "imp_mid__IMPACT__e9f1fa9b",
+        1790143450.4298885
+      ]
+    ],
+    "group": "01_current_impact",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_mid.odb"
+    ],
+    "caveats": [
+      "显式黏聚刚度 2.37e13 下的单次标定；应力场未收敛、材料为替代参数"
+    ],
+    "parts": [
+      "imp_mid__IMPACT__e9f1fa9b"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wav_base__bd33f763",
+    "name": "wav_base",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_base",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_base__bd33f763.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_base__bd33f763.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "wav_base__WAVE__31bfb0d4",
+        1790143717.3382263
+      ]
+    ],
+    "group": "02_current_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_base.odb"
+    ],
+    "caveats": [
+      "修正半径后的导波；机械位移而非电压；0.8 mm 档仍有4/5受损界面映射差异"
+    ],
+    "parts": [
+      "wav_base__WAVE__31bfb0d4"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wav_d03_r08__99235604",
+    "name": "wav_d03_r08",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03_r08",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_d03_r08__99235604.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_d03_r08__99235604.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "wav_d03_r08__WAVE__610f16ee",
+        1790143661.882811
+      ]
+    ],
+    "group": "02_current_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03_r08.odb"
+    ],
+    "caveats": [
+      "修正半径后的导波；机械位移而非电压；0.8 mm 档仍有4/5受损界面映射差异"
+    ],
+    "parts": [
+      "wav_d03_r08__WAVE__610f16ee"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wav_d08_r31__c1828585",
+    "name": "wav_d08_r31",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08_r31",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_d08_r31__c1828585.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_d08_r31__c1828585.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "wav_d08_r31__WAVE__cf0049b0",
+        1790143722.2447083
+      ]
+    ],
+    "group": "02_current_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08_r31.odb"
+    ],
+    "caveats": [
+      "修正半径后的导波；机械位移而非电压；0.8 mm 档仍有4/5受损界面映射差异"
+    ],
+    "parts": [
+      "wav_d08_r31__WAVE__cf0049b0"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "grade_hi__70d6cd4d",
+    "name": "grade_hi",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_hi",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\grade_hi__70d6cd4d.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\grade_hi__70d6cd4d.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "grade_hi__IMPACT__d04c3c5a",
+        1790143421.8578587
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_hi.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "grade_hi__IMPACT__d04c3c5a"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "grade_lo__b3011418",
+    "name": "grade_lo",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_lo",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\grade_lo__b3011418.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\grade_lo__b3011418.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "grade_lo__IMPACT__c60e1092",
+        1790143421.860081
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_lo.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "grade_lo__IMPACT__c60e1092"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "grade_mid__def883ea",
+    "name": "grade_mid",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_mid",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\grade_mid__def883ea.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\grade_mid__def883ea.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "grade_mid__IMPACT__2fcd7b53",
+        1790143425.3931782
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_mid.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "grade_mid__IMPACT__2fcd7b53"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "impact_big__715c02e3",
+    "name": "impact_big",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_big",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_big__715c02e3.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_big__715c02e3.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "impact_big__IMPACT__842711d4",
+        1790143445.6848109
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_big.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "impact_big__IMPACT__842711d4"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "impact_dmg__9d706c70",
+    "name": "impact_dmg",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_dmg",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_dmg__9d706c70.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_dmg__9d706c70.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "impact_dmg__IMPACT__83fad9bc",
+        1790143465.3791747
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_dmg.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "impact_dmg__IMPACT__83fad9bc"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "impact_full__c3cbe787",
+    "name": "impact_full",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_full",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_full__c3cbe787.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_full__c3cbe787.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "impact_full__IMPACT__c62eb679",
+        1790143456.1013794
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_full.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "impact_full__IMPACT__c62eb679"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "impact_hi__8f7d2f56",
+    "name": "impact_hi",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_hi__8f7d2f56.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_hi__8f7d2f56.png",
+    "frames": 52,
+    "segments": 2,
+    "duration_s": 7.8,
+    "signature": [
+      [
+        "impact_hi__IMPACT__1929ccaa",
+        1790143476.3221438
+      ],
+      [
+        "impact_hi__WAVE__246d9e1d",
+        1790143481.356667
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "impact_hi__IMPACT__1929ccaa",
+      "impact_hi__WAVE__246d9e1d"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "impact_lo__f6d62dad",
+    "name": "impact_lo",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_lo",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_lo__f6d62dad.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_lo__f6d62dad.png",
+    "frames": 52,
+    "segments": 2,
+    "duration_s": 7.8,
+    "signature": [
+      [
+        "impact_lo__IMPACT__54026e7b",
+        1790143455.8852022
+      ],
+      [
+        "impact_lo__WAVE__930eeba0",
+        1790143485.6764505
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_lo.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "impact_lo__IMPACT__54026e7b",
+      "impact_lo__WAVE__930eeba0"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "impact_mid__cb877aad",
+    "name": "impact_mid",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_mid",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_mid__cb877aad.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\impact_mid__cb877aad.png",
+    "frames": 52,
+    "segments": 2,
+    "duration_s": 7.8,
+    "signature": [
+      [
+        "impact_mid__IMPACT__52da9842",
+        1790143461.257472
+      ],
+      [
+        "impact_mid__WAVE__0ebb1d27",
+        1790143490.0023365
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_mid.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "impact_mid__IMPACT__52da9842",
+      "impact_mid__WAVE__0ebb1d27"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "iw_small__673df22a",
+    "name": "iw_small",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\iw_small",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\iw_small__673df22a.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\iw_small__673df22a.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "iw_small__IMPACT__eda0b4ac",
+        1790143465.7337627
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\iw_small.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "iw_small__IMPACT__eda0b4ac"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "kdef__b37dbd9d",
+    "name": "kdef",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kdef",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\kdef__b37dbd9d.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\kdef__b37dbd9d.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "kdef__WAVE__8d03a022",
+        1790143491.7666533
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kdef.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "kdef__WAVE__8d03a022"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "kply_ply__b9ead21f",
+    "name": "kply_ply",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_ply",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\kply_ply__b9ead21f.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\kply_ply__b9ead21f.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "kply_ply__WAVE__3febed0f",
+        1790143462.9796696
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_ply.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "kply_ply__WAVE__3febed0f"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "kply_smoke__4ae390bf",
+    "name": "kply_smoke",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_smoke",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\kply_smoke__4ae390bf.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\kply_smoke__4ae390bf.png",
+    "frames": 5,
+    "segments": 1,
+    "duration_s": 0.75,
+    "signature": [
+      [
+        "kply_smoke__WAVE__a329c62e",
+        1790143466.4588113
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_smoke.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "kply_smoke__WAVE__a329c62e"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "kply_stiff__b289d3c3",
+    "name": "kply_stiff",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_stiff",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\kply_stiff__b289d3c3.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\kply_stiff__b289d3c3.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "kply_stiff__WAVE__27581ec3",
+        1790143652.869089
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_stiff.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "kply_stiff__WAVE__27581ec3"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ksoft__05705774",
+    "name": "ksoft",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\ksoft",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ksoft__05705774.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ksoft__05705774.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "ksoft__WAVE__d8f2174e",
+        1790143683.834681
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\ksoft.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "ksoft__WAVE__d8f2174e"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "scope_impact__c1c01f7d",
+    "name": "scope_impact",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_impact",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\scope_impact__c1c01f7d.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\scope_impact__c1c01f7d.png",
+    "frames": 33,
+    "segments": 2,
+    "duration_s": 4.95,
+    "signature": [
+      [
+        "scope_impact__IMPACT__0e369eb1",
+        1790143662.000671
+      ],
+      [
+        "scope_impact__WAVE__52c6e0ed",
+        1790143689.248375
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_impact.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "scope_impact__IMPACT__0e369eb1",
+      "scope_impact__WAVE__52c6e0ed"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "scope_smoke__e25e12ff",
+    "name": "scope_smoke",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_smoke",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\scope_smoke__e25e12ff.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\scope_smoke__e25e12ff.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "scope_smoke__WAVE__ffe4d1a8",
+        1790143692.4062319
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_smoke.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "scope_smoke__WAVE__ffe4d1a8"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "smoke2__9d517bf1",
+    "name": "smoke2",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\smoke2",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\smoke2__9d517bf1.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\smoke2__9d517bf1.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "smoke2__IMPACT__7e600908",
+        1790143702.6127627
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\smoke2.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "smoke2__IMPACT__7e600908"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "smoke__e2a4311c",
+    "name": "smoke",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\smoke",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\smoke__e2a4311c.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\smoke__e2a4311c.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "smoke__IMPACT__bcd75f83",
+        1790143712.0942166
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\smoke.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "smoke__IMPACT__bcd75f83"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wav_d03__e6a66468",
+    "name": "wav_d03",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_d03__e6a66468.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_d03__e6a66468.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "wav_d03__WAVE__f22fdec6",
+        1790143665.6926184
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "wav_d03__WAVE__f22fdec6"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wav_d08__26724154",
+    "name": "wav_d08",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_d08__26724154.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wav_d08__26724154.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "wav_d08__WAVE__2a23102c",
+        1790143698.9696665
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "wav_d08__WAVE__2a23102c"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wave_base__9d0b4a49",
+    "name": "wave_base",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_base",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_base__9d0b4a49.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_base__9d0b4a49.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "wave_base__WAVE__6b2ad559",
+        1790143727.497446
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_base.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "wave_base__WAVE__6b2ad559"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wave_d03__0ebee02b",
+    "name": "wave_d03",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d03",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_d03__0ebee02b.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_d03__0ebee02b.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "wave_d03__WAVE__57e8d8de",
+        1790143670.8886583
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d03.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "wave_d03__WAVE__57e8d8de"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wave_d08__e57e0308",
+    "name": "wave_d08",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d08",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_d08__e57e0308.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_d08__e57e0308.png",
+    "frames": 26,
+    "segments": 1,
+    "duration_s": 3.9,
+    "signature": [
+      [
+        "wave_d08__WAVE__ec42e15f",
+        1790143676.4118552
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d08.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "wave_d08__WAVE__ec42e15f"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wave_dp__05ab1b4e",
+    "name": "wave_dp",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_dp",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_dp__05ab1b4e.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_dp__05ab1b4e.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "wave_dp__WAVE__0646558a",
+        1790143729.6486826
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_dp.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "wave_dp__WAVE__0646558a"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wave_smoke__2b6741ed",
+    "name": "wave_smoke",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_smoke",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_smoke__2b6741ed.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wave_smoke__2b6741ed.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "wave_smoke__WAVE__74425e6e",
+        1790143731.6953719
+      ]
+    ],
+    "group": "20_historical",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_smoke.odb"
+    ],
+    "caveats": [
+      "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+    ],
+    "parts": [
+      "wave_smoke__WAVE__74425e6e"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ugw_line1000__f8e9a45a",
+    "name": "ugw_line1000",
+    "identity": "D:\\abaqus_runs\\line1000\\ugw_line1000",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line1000__f8e9a45a.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line1000__f8e9a45a.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "ugw_line1000__WAVE__8736e4b9",
+        1790143573.6703343
+      ],
+      [
+        "guided_wave_3d__abaqus_line1000_c3d8_surface__e27a666a",
+        1790143425.8937547
+      ]
+    ],
+    "group": "30_abaqus_validation",
+    "sources": [
+      "D:\\abaqus_runs\\line1000\\ugw_line1000.odb",
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line1000_c3d8_surface.npz"
+    ],
+    "caveats": [
+      "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格",
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "ugw_line1000__WAVE__8736e4b9",
+      "guided_wave_3d__abaqus_line1000_c3d8_surface__e27a666a"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ugw_line1000_c3d8r__f83e7c93",
+    "name": "ugw_line1000_c3d8r",
+    "identity": "D:\\abaqus_runs\\line1000\\ugw_line1000_c3d8r",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line1000_c3d8r__f83e7c93.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line1000_c3d8r__f83e7c93.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "ugw_line1000_c3d8r__WAVE__9a28bf4b",
+        1790143599.863089
+      ],
+      [
+        "guided_wave_3d__abaqus_line1000_c3d8r_surface__7baa13d2",
+        1790143435.97255
+      ]
+    ],
+    "group": "30_abaqus_validation",
+    "sources": [
+      "D:\\abaqus_runs\\line1000\\ugw_line1000_c3d8r.odb",
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line1000_c3d8r_surface.npz"
+    ],
+    "caveats": [
+      "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格；减缩积分/沙漏对照，不得当作已验证推荐结果",
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证；沙漏对照，不作为推荐解"
+    ],
+    "parts": [
+      "ugw_line1000_c3d8r__WAVE__9a28bf4b",
+      "guided_wave_3d__abaqus_line1000_c3d8r_surface__7baa13d2"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ugw_line_c3d8__54b6c518",
+    "name": "ugw_line_c3d8",
+    "identity": "D:\\abaqus_runs\\line500\\ugw_line_c3d8",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line_c3d8__54b6c518.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line_c3d8__54b6c518.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "ugw_line_c3d8__WAVE__c4820d01",
+        1790143600.5988152
+      ],
+      [
+        "guided_wave_3d__abaqus_line500_c3d8_surface__34fe8da0",
+        1790143431.3087888
+      ]
+    ],
+    "group": "30_abaqus_validation",
+    "sources": [
+      "D:\\abaqus_runs\\line500\\ugw_line_c3d8.odb",
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line500_c3d8_surface.npz"
+    ],
+    "caveats": [
+      "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格",
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "ugw_line_c3d8__WAVE__c4820d01",
+      "guided_wave_3d__abaqus_line500_c3d8_surface__34fe8da0"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "abaqus_line500_c3d8r_dp_surface__907b1fd6",
+    "name": "abaqus_line500_c3d8r_dp_surface",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line500_c3d8r_dp_surface",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\abaqus_line500_c3d8r_dp_surface__907b1fd6.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\abaqus_line500_c3d8r_dp_surface__907b1fd6.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "guided_wave_3d__abaqus_line500_c3d8r_dp_surface__d0b710c9",
+        1790143446.1963043
+      ]
+    ],
+    "group": "30_abaqus_validation",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\abaqus_line500_c3d8r_dp_surface.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证；沙漏对照，不作为推荐解"
+    ],
+    "parts": [
+      "guided_wave_3d__abaqus_line500_c3d8r_dp_surface__d0b710c9"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ugw_line__dddebaeb",
+    "name": "ugw_line",
+    "identity": "D:\\abaqus_runs\\line500\\ugw_line",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line__dddebaeb.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line__dddebaeb.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "ugw_line__WAVE__5d0d5ac4",
+        1790143590.2032032
+      ]
+    ],
+    "group": "30_abaqus_validation",
+    "sources": [
+      "D:\\abaqus_runs\\line500\\ugw_line.odb"
+    ],
+    "caveats": [
+      "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格"
+    ],
+    "parts": [
+      "ugw_line__WAVE__5d0d5ac4"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ugw_line_c3d8_dp__a3d47318",
+    "name": "ugw_line_c3d8_dp",
+    "identity": "D:\\abaqus_runs\\line500\\ugw_line_c3d8_dp",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line_c3d8_dp__a3d47318.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line_c3d8_dp__a3d47318.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "ugw_line_c3d8_dp__WAVE__3fd79584",
+        1790143584.0354457
+      ]
+    ],
+    "group": "30_abaqus_validation",
+    "sources": [
+      "D:\\abaqus_runs\\line500\\ugw_line_c3d8_dp.odb"
+    ],
+    "caveats": [
+      "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格"
+    ],
+    "parts": [
+      "ugw_line_c3d8_dp__WAVE__3fd79584"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ugw_line_c3d8_nobv__003323ea",
+    "name": "ugw_line_c3d8_nobv",
+    "identity": "D:\\abaqus_runs\\line500\\ugw_line_c3d8_nobv",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line_c3d8_nobv__003323ea.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line_c3d8_nobv__003323ea.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "ugw_line_c3d8_nobv__WAVE__8697b9d1",
+        1790143594.6727302
+      ]
+    ],
+    "group": "30_abaqus_validation",
+    "sources": [
+      "D:\\abaqus_runs\\line500\\ugw_line_c3d8_nobv.odb"
+    ],
+    "caveats": [
+      "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格"
+    ],
+    "parts": [
+      "ugw_line_c3d8_nobv__WAVE__8697b9d1"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ugw_line_c3d8r_dp__53ff6532",
+    "name": "ugw_line_c3d8r_dp",
+    "identity": "D:\\abaqus_runs\\line500\\ugw_line_c3d8r_dp",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line_c3d8r_dp__53ff6532.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line_c3d8r_dp__53ff6532.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "ugw_line_c3d8r_dp__WAVE__1e593937",
+        1790143608.7863443
+      ]
+    ],
+    "group": "30_abaqus_validation",
+    "sources": [
+      "D:\\abaqus_runs\\line500\\ugw_line_c3d8r_dp.odb"
+    ],
+    "caveats": [
+      "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格；减缩积分/沙漏对照，不得当作已验证推荐结果"
+    ],
+    "parts": [
+      "ugw_line_c3d8r_dp__WAVE__1e593937"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ugw_line_c3d8r_ehg__a5d14a42",
+    "name": "ugw_line_c3d8r_ehg",
+    "identity": "D:\\abaqus_runs\\line500\\ugw_line_c3d8r_ehg",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line_c3d8r_ehg__a5d14a42.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_line_c3d8r_ehg__a5d14a42.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "ugw_line_c3d8r_ehg__WAVE__0bf8cf39",
+        1790143532.053768
+      ]
+    ],
+    "group": "30_abaqus_validation",
+    "sources": [
+      "D:\\abaqus_runs\\line500\\ugw_line_c3d8r_ehg.odb"
+    ],
+    "caveats": [
+      "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格；减缩积分/沙漏对照，不得当作已验证推荐结果"
+    ],
+    "parts": [
+      "ugw_line_c3d8r_ehg__WAVE__0bf8cf39"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ugw_point400__ae5efb28",
+    "name": "ugw_point400",
+    "identity": "D:\\abaqus_runs\\point400\\ugw_point400",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_point400__ae5efb28.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_point400__ae5efb28.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "ugw_point400__WAVE__938ea353",
+        1790143618.6966684
+      ]
+    ],
+    "group": "30_abaqus_validation",
+    "sources": [
+      "D:\\abaqus_runs\\point400\\ugw_point400.odb"
+    ],
+    "caveats": [
+      "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格"
+    ],
+    "parts": [
+      "ugw_point400__WAVE__938ea353"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ugw_small__5ccac5a0",
+    "name": "ugw_small",
+    "identity": "D:\\abaqus_runs\\small\\ugw_small",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_small__5ccac5a0.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_small__5ccac5a0.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "ugw_small__WAVE__9818ec68",
+        1790143603.494759
+      ]
+    ],
+    "group": "30_abaqus_validation",
+    "sources": [
+      "D:\\abaqus_runs\\small\\ugw_small.odb"
+    ],
+    "caveats": [
+      "Abaqus 独立求解器对照；按交接文档区分线源、点源和网格"
+    ],
+    "parts": [
+      "ugw_small__WAVE__9818ec68"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "axial_c3d8_elastic__9ea5c624",
+    "name": "axial_c3d8_elastic",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_elastic",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_c3d8_elastic__9ea5c624.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_c3d8_elastic__9ea5c624.png",
+    "frames": 21,
+    "segments": 1,
+    "duration_s": 3.15,
+    "signature": [
+      [
+        "axial_c3d8_elastic__S1__a94dbb79",
+        1790143170.1979232
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_elastic.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "axial_c3d8_elastic__S1__a94dbb79"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "axial_c3d8_max_stress__6379443e",
+    "name": "axial_c3d8_max_stress",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_max_stress",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_c3d8_max_stress__6379443e.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_c3d8_max_stress__6379443e.png",
+    "frames": 21,
+    "segments": 1,
+    "duration_s": 3.15,
+    "signature": [
+      [
+        "axial_c3d8_max_stress__S1__3d2a0786",
+        1790143174.1620905
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_max_stress.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "axial_c3d8_max_stress__S1__3d2a0786"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "axial_c3d8_maxps__2d778b9f",
+    "name": "axial_c3d8_maxps",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_maxps",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_c3d8_maxps__2d778b9f.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_c3d8_maxps__2d778b9f.png",
+    "frames": 21,
+    "segments": 1,
+    "duration_s": 3.15,
+    "signature": [
+      [
+        "axial_c3d8_maxps__S1__69e310df",
+        1790143178.1773162
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_maxps.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "axial_c3d8_maxps__S1__69e310df"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "axial_c3d8_quads__88f16da4",
+    "name": "axial_c3d8_quads",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_quads",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_c3d8_quads__88f16da4.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_c3d8_quads__88f16da4.png",
+    "frames": 21,
+    "segments": 1,
+    "duration_s": 3.15,
+    "signature": [
+      [
+        "axial_c3d8_quads__S1__14f80099",
+        1790143181.8581762
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_c3d8_quads.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "axial_c3d8_quads__S1__14f80099"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "axial_sc8r_hashin__fe2614f8",
+    "name": "axial_sc8r_hashin",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_sc8r_hashin",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_sc8r_hashin__fe2614f8.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\axial_sc8r_hashin__fe2614f8.png",
+    "frames": 21,
+    "segments": 1,
+    "duration_s": 3.15,
+    "signature": [
+      [
+        "axial_sc8r_hashin__S1__01e153ca",
+        1790143185.5192957
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\axial_sc8r_hashin.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "axial_sc8r_hashin__S1__01e153ca"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "c3d8_elastic__426b90fb",
+    "name": "c3d8_elastic",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_elastic",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_elastic__426b90fb.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_elastic__426b90fb.png",
+    "frames": 19,
+    "segments": 1,
+    "duration_s": 2.85,
+    "signature": [
+      [
+        "c3d8_elastic__S1__c9f67bca",
+        1790143188.4199896
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_elastic.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "c3d8_elastic__S1__c9f67bca"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "c3d8_max_strain__66f74a1c",
+    "name": "c3d8_max_strain",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_max_strain",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_max_strain__66f74a1c.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_max_strain__66f74a1c.png",
+    "frames": 19,
+    "segments": 1,
+    "duration_s": 2.85,
+    "signature": [
+      [
+        "c3d8_max_strain__S1__b8a4deab",
+        1790143190.954141
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_max_strain.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "c3d8_max_strain__S1__b8a4deab"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "c3d8_max_stress__897ae67b",
+    "name": "c3d8_max_stress",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_max_stress",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_max_stress__897ae67b.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_max_stress__897ae67b.png",
+    "frames": 19,
+    "segments": 1,
+    "duration_s": 2.85,
+    "signature": [
+      [
+        "c3d8_max_stress__S1__cddd95aa",
+        1790143194.9167845
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_max_stress.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "c3d8_max_stress__S1__cddd95aa"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "c3d8_maxpe__d4aeef40",
+    "name": "c3d8_maxpe",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxpe",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_maxpe__d4aeef40.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_maxpe__d4aeef40.png",
+    "frames": 19,
+    "segments": 1,
+    "duration_s": 2.85,
+    "signature": [
+      [
+        "c3d8_maxpe__S1__7ee5ec02",
+        1790143198.965139
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxpe.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "c3d8_maxpe__S1__7ee5ec02"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "c3d8_maxps__d7ad3052",
+    "name": "c3d8_maxps",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxps",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_maxps__d7ad3052.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_maxps__d7ad3052.png",
+    "frames": 19,
+    "segments": 1,
+    "duration_s": 2.85,
+    "signature": [
+      [
+        "c3d8_maxps__S1__c506692d",
+        1790143202.595259
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_maxps.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "c3d8_maxps__S1__c506692d"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "c3d8_quads__99d9aadb",
+    "name": "c3d8_quads",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_quads",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_quads__99d9aadb.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_quads__99d9aadb.png",
+    "frames": 19,
+    "segments": 1,
+    "duration_s": 2.85,
+    "signature": [
+      [
+        "c3d8_quads__S1__c3683a7b",
+        1790143206.430085
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_quads.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "c3d8_quads__S1__c3683a7b"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "c3d8_tsaiwu__6a07e664",
+    "name": "c3d8_tsaiwu",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_tsaiwu",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_tsaiwu__6a07e664.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\c3d8_tsaiwu__6a07e664.png",
+    "frames": 19,
+    "segments": 1,
+    "duration_s": 2.85,
+    "signature": [
+      [
+        "c3d8_tsaiwu__S1__5b294fbd",
+        1790143212.1766593
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\c3d8_tsaiwu.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "c3d8_tsaiwu__S1__5b294fbd"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "cohesive_cohesive__030272d9",
+    "name": "cohesive_cohesive",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive\\cohesive_cohesive",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\cohesive_cohesive__030272d9.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\cohesive_cohesive__030272d9.png",
+    "frames": 21,
+    "segments": 1,
+    "duration_s": 3.15,
+    "signature": [
+      [
+        "cohesive_cohesive__S1__375dbbb2",
+        1790143256.6399145
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive\\cohesive_cohesive.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "cohesive_cohesive__S1__375dbbb2"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "cohesive_k_default__1065f0fb",
+    "name": "cohesive_k_default",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive_k_default",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\cohesive_k_default__1065f0fb.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\cohesive_k_default__1065f0fb.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "cohesive_k_default__PULL__d0c35313",
+        1790143258.6327565
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive_k_default.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "cohesive_k_default__PULL__d0c35313"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "cohesive_k_ply__8c9bfc5b",
+    "name": "cohesive_k_ply",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive_k_ply",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\cohesive_k_ply__8c9bfc5b.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\cohesive_k_ply__8c9bfc5b.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "cohesive_k_ply__PULL__75c0a764",
+        1790143260.685759
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive_k_ply.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "cohesive_k_ply__PULL__75c0a764"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "cohesive_solid__2426de8f",
+    "name": "cohesive_solid",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive\\cohesive_solid",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\cohesive_solid__2426de8f.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\cohesive_solid__2426de8f.png",
+    "frames": 21,
+    "segments": 1,
+    "duration_s": 3.15,
+    "signature": [
+      [
+        "cohesive_solid__S1__fbc7638a",
+        1790143264.6879292
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\cohesive\\cohesive_solid.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "cohesive_solid__S1__fbc7638a"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "shear_c3d8_elastic__9097fbb0",
+    "name": "shear_c3d8_elastic",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\shear_c3d8_elastic",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\shear_c3d8_elastic__9097fbb0.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\shear_c3d8_elastic__9097fbb0.png",
+    "frames": 21,
+    "segments": 1,
+    "duration_s": 3.15,
+    "signature": [
+      [
+        "shear_c3d8_elastic__S1__4f59fb18",
+        1790143585.5452697
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\shear_c3d8_elastic.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "shear_c3d8_elastic__S1__4f59fb18"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "shear_c3d8_max_stress__6e868dad",
+    "name": "shear_c3d8_max_stress",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\shear_c3d8_max_stress",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\shear_c3d8_max_stress__6e868dad.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\shear_c3d8_max_stress__6e868dad.png",
+    "frames": 21,
+    "segments": 1,
+    "duration_s": 3.15,
+    "signature": [
+      [
+        "shear_c3d8_max_stress__S1__ad384bbb",
+        1790143521.5433774
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\degradation\\shear_c3d8_max_stress.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "shear_c3d8_max_stress__S1__ad384bbb"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "surfcoh_interface__021cbe25",
+    "name": "surfcoh_interface",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\surface_cohesive\\surfcoh_interface",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\surfcoh_interface__021cbe25.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\surfcoh_interface__021cbe25.png",
+    "frames": 21,
+    "segments": 1,
+    "duration_s": 3.15,
+    "signature": [
+      [
+        "surfcoh_interface__S1__b8683abe",
+        1790143693.8966906
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\surface_cohesive\\surfcoh_interface.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "surfcoh_interface__S1__b8683abe"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "surfcoh_stack__ebbc6bde",
+    "name": "surfcoh_stack",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\surface_cohesive\\surfcoh_stack",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\surfcoh_stack__ebbc6bde.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\surfcoh_stack__ebbc6bde.png",
+    "frames": 21,
+    "segments": 1,
+    "duration_s": 3.15,
+    "signature": [
+      [
+        "surfcoh_stack__S1__71766a54",
+        1790143656.8721762
+      ]
+    ],
+    "group": "40_material_probes",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\surface_cohesive\\surfcoh_stack.odb"
+    ],
+    "caveats": [
+      "材料/关键词能力探针，不等于实物材料标定"
+    ],
+    "parts": [
+      "surfcoh_stack__S1__71766a54"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02__68a4c449",
+    "name": "acc_n02",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02__68a4c449.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02__68a4c449.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "acc_n02__acc_n02__41dc5ea4",
+        1790143655.9121242
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n02__acc_n02__41dc5ea4"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02__e3b25ae0",
+    "name": "acc_n02",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02__e3b25ae0.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02__e3b25ae0.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "acc_n02__acc_n02__aba940bf",
+        1790143663.9745533
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n02__acc_n02__aba940bf"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02__e3d7d44a",
+    "name": "acc_n02",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02__e3d7d44a.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02__e3d7d44a.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "acc_n02__acc_n02__ad6da8bd",
+        1790143655.6623635
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n02__acc_n02__ad6da8bd"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02_prepare__07637895",
+    "name": "acc_n02_prepare",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02_prepare",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_prepare__07637895.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_prepare__07637895.png",
+    "frames": 22,
+    "segments": 2,
+    "duration_s": 3.3,
+    "signature": [
+      [
+        "acc_n02_prepare__acc_n02_prepare_LAUNCH__5907b003",
+        1790143648.7584007
+      ],
+      [
+        "acc_n02_prepare__acc_n02_prepare_POSITION__94c7a999",
+        1790143660.2690253
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02_prepare.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n02_prepare__acc_n02_prepare_LAUNCH__5907b003",
+      "acc_n02_prepare__acc_n02_prepare_POSITION__94c7a999"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02_prepare__1016ef7d",
+    "name": "acc_n02_prepare",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02_prepare",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_prepare__1016ef7d.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_prepare__1016ef7d.png",
+    "frames": 22,
+    "segments": 2,
+    "duration_s": 3.3,
+    "signature": [
+      [
+        "acc_n02_prepare__acc_n02_prepare_LAUNCH__7b052533",
+        1790143650.3919995
+      ],
+      [
+        "acc_n02_prepare__acc_n02_prepare_POSITION__989068a8",
+        1790143652.420824
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02_prepare.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n02_prepare__acc_n02_prepare_LAUNCH__7b052533",
+      "acc_n02_prepare__acc_n02_prepare_POSITION__989068a8"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02_prepare__a3c13d39",
+    "name": "acc_n02_prepare",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02_prepare",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_prepare__a3c13d39.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_prepare__a3c13d39.png",
+    "frames": 22,
+    "segments": 2,
+    "duration_s": 3.3,
+    "signature": [
+      [
+        "acc_n02_prepare__acc_n02_prepare_LAUNCH__9dbd80ba",
+        1790143657.924398
+      ],
+      [
+        "acc_n02_prepare__acc_n02_prepare_POSITION__0580e01d",
+        1790143665.5236752
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02_prepare.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n02_prepare__acc_n02_prepare_LAUNCH__9dbd80ba",
+      "acc_n02_prepare__acc_n02_prepare_POSITION__0580e01d"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02_relax1__db1ebbc8",
+    "name": "acc_n02_relax1",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02_relax1",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_relax1__db1ebbc8.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_relax1__db1ebbc8.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "acc_n02_relax1__acc_n02_relax1__e5325563",
+        1790143654.6697328
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\acc_n02_relax1.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n02_relax1__acc_n02_relax1__e5325563"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02_relax1__5c0b2502",
+    "name": "acc_n02_relax1",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02_relax1",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_relax1__5c0b2502.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_relax1__5c0b2502.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "acc_n02_relax1__acc_n02_relax1__fb011f0a",
+        1790143648.974226
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n02_relax1.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n02_relax1__acc_n02_relax1__fb011f0a"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02_relax1__4752002d",
+    "name": "acc_n02_relax1",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02_relax1",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_relax1__4752002d.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_relax1__4752002d.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "acc_n02_relax1__acc_n02_relax1__fd2490de",
+        1790143656.5422428
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\acc_n02_relax1.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n02_relax1__acc_n02_relax1__fd2490de"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n03__22e9d2c3",
+    "name": "acc_n03",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n03__22e9d2c3.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n03__22e9d2c3.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "acc_n03__acc_n03__099e4a64",
+        1790143674.3706565
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n03__acc_n03__099e4a64"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n03_prepare__61ac2e2d",
+    "name": "acc_n03_prepare",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03_prepare",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n03_prepare__61ac2e2d.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n03_prepare__61ac2e2d.png",
+    "frames": 22,
+    "segments": 2,
+    "duration_s": 3.3,
+    "signature": [
+      [
+        "acc_n03_prepare__acc_n03_prepare_LAUNCH__cda73a0a",
+        1790143658.805517
+      ],
+      [
+        "acc_n03_prepare__acc_n03_prepare_POSITION__47c5768d",
+        1790143676.6036966
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03_prepare.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n03_prepare__acc_n03_prepare_LAUNCH__cda73a0a",
+      "acc_n03_prepare__acc_n03_prepare_POSITION__47c5768d"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n03_relax1__4a6311a2",
+    "name": "acc_n03_relax1",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03_relax1",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n03_relax1__4a6311a2.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n03_relax1__4a6311a2.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "acc_n03_relax1__acc_n03_relax1__7ea8ccbb",
+        1790143662.0670369
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\acc_n03_relax1.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "acc_n03_relax1__acc_n03_relax1__7ea8ccbb"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "continued__311945c7",
+    "name": "continued",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\continued__311945c7.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\continued__311945c7.png",
+    "frames": 22,
+    "segments": 2,
+    "duration_s": 3.3,
+    "signature": [
+      [
+        "continued__RELAX__85660a3c",
+        1790143663.5136287
+      ],
+      [
+        "continued__RELOAD__e84e5a49",
+        1790143660.806362
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "continued__RELAX__85660a3c",
+      "continued__RELOAD__e84e5a49"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "continued_interval__8d5691c5",
+    "name": "continued_interval",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued_interval",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\continued_interval__8d5691c5.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\continued_interval__8d5691c5.png",
+    "frames": 22,
+    "segments": 2,
+    "duration_s": 3.3,
+    "signature": [
+      [
+        "continued_interval__RELAX__ac676570",
+        1790143650.8383255
+      ],
+      [
+        "continued_interval__RELOAD__cf017bc2",
+        1790143678.6262405
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\continued_interval.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "continued_interval__RELAX__ac676570",
+      "continued_interval__RELOAD__cf017bc2"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "coupon_first__0e8dd4e9",
+    "name": "coupon_first",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\coupon_first",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\coupon_first__0e8dd4e9.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\coupon_first__0e8dd4e9.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "coupon_first__IMPACT__63d1d1a3",
+        1790143671.8866057
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation_final\\coupon_first.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "coupon_first__IMPACT__63d1d1a3"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "coupon_first__32371430",
+    "name": "coupon_first",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\coupon_first",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\coupon_first__32371430.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\coupon_first__32371430.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "coupon_first__IMPACT__6c992c7f",
+        1790143688.0176098
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\repeat_validation\\coupon_first.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "coupon_first__IMPACT__6c992c7f"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "coupon_first__4edd4821",
+    "name": "coupon_first",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\coupon_first",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\coupon_first__4edd4821.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\coupon_first__4edd4821.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "coupon_first__IMPACT__cfad7201",
+        1790143681.4496381
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\coupon_first.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "coupon_first__IMPACT__cfad7201"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "first__44c092b3",
+    "name": "first",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\first",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\first__44c092b3.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\first__44c092b3.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "first__PULL__8e7372fb",
+        1790143690.198508
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\first.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "first__PULL__8e7372fb"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "switch__fe56892b",
+    "name": "switch",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\damping_switch\\switch",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\switch__fe56892b.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\switch__fe56892b.png",
+    "frames": 33,
+    "segments": 3,
+    "duration_s": 4.95,
+    "signature": [
+      [
+        "switch__OFF1__ad92718b",
+        1790143563.1570892
+      ],
+      [
+        "switch__OFF2__1e2224b5",
+        1790143587.747145
+      ],
+      [
+        "switch__ON__b5753516",
+        1790143589.8440356
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\damping_switch\\switch.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "switch__OFF1__ad92718b",
+      "switch__OFF2__1e2224b5",
+      "switch__ON__b5753516"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "whole__d6836744",
+    "name": "whole",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\whole",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\whole__d6836744.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\whole__d6836744.png",
+    "frames": 33,
+    "segments": 3,
+    "duration_s": 4.95,
+    "signature": [
+      [
+        "whole__PULL__0ec6bc5b",
+        1790143733.843488
+      ],
+      [
+        "whole__RELAX__44d3ee68",
+        1790143701.175349
+      ],
+      [
+        "whole__RELOAD__0e4b0601",
+        1790143663.2632372
+      ]
+    ],
+    "group": "50_workflow_tests",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\restart_probe\\whole.odb"
+    ],
+    "caveats": [
+      "小模型/流程验证，不代表正式板损伤结论"
+    ],
+    "parts": [
+      "whole__PULL__0ec6bc5b",
+      "whole__RELAX__44d3ee68",
+      "whole__RELOAD__0e4b0601"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "1000_8_damage__e74c761c",
+    "name": "1000_8_damage",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\1000_8_damage",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\1000_8_damage__e74c761c.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\1000_8_damage__e74c761c.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "guided_wave_v2__1000_8_damage__2ac0000b",
+        1790143440.865271
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\1000_8_damage.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "guided_wave_v2__1000_8_damage__2ac0000b"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "1000_8_healthy__4572a1af",
+    "name": "1000_8_healthy",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\1000_8_healthy",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\1000_8_healthy__4572a1af.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\1000_8_healthy__4572a1af.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "guided_wave_v2__1000_8_healthy__84c4bdad",
+        1790143450.7015066
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\1000_8_healthy.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "guided_wave_v2__1000_8_healthy__84c4bdad"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "2000_16_damage__77c9139c",
+    "name": "2000_16_damage",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\2000_16_damage",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\2000_16_damage__77c9139c.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\2000_16_damage__77c9139c.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "guided_wave_v2__2000_16_damage__030c7f84",
+        1790143435.9450257
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\2000_16_damage.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "guided_wave_v2__2000_16_damage__030c7f84"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "2000_16_healthy__86172bb2",
+    "name": "2000_16_healthy",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\2000_16_healthy",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\2000_16_healthy__86172bb2.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\2000_16_healthy__86172bb2.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "guided_wave_v2__2000_16_healthy__9f6c6ecf",
+        1790143457.0368042
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\2000_16_healthy.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "guided_wave_v2__2000_16_healthy__9f6c6ecf"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "4000_32_damage__d34e4ba0",
+    "name": "4000_32_damage",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\4000_32_damage",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\4000_32_damage__d34e4ba0.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\4000_32_damage__d34e4ba0.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "guided_wave_v2__4000_32_damage__71e321a0",
+        1790143466.9596572
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\4000_32_damage.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "guided_wave_v2__4000_32_damage__71e321a0"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "4000_32_healthy__0ff72199",
+    "name": "4000_32_healthy",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\4000_32_healthy",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\4000_32_healthy__0ff72199.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\4000_32_healthy__0ff72199.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "guided_wave_v2__4000_32_healthy__4b23713d",
+        1790143426.2903345
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_v2\\4000_32_healthy.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "guided_wave_v2__4000_32_healthy__4b23713d"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wavefield__6f0d3d10",
+    "name": "wavefield",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_1000x4x8\\wavefield",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__6f0d3d10.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__6f0d3d10.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "out_line_1000x4x8__wavefield__49a6dab5",
+        1790143518.414605
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_1000x4x8\\wavefield.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "out_line_1000x4x8__wavefield__49a6dab5"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wavefield__3de4e91b",
+    "name": "wavefield",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_1000x4x8_abaqusdt\\wavefield",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__3de4e91b.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__3de4e91b.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "out_line_1000x4x8_abaqusdt__wavefield__50766719",
+        1790143502.8393788
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_1000x4x8_abaqusdt\\wavefield.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "out_line_1000x4x8_abaqusdt__wavefield__50766719"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wavefield__0c66dc7a",
+    "name": "wavefield",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_500x4x4\\wavefield",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__0c66dc7a.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__0c66dc7a.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "out_line_500x4x4__wavefield__9b08b59d",
+        1790143512.4776216
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_500x4x4\\wavefield.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "out_line_500x4x4__wavefield__9b08b59d"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wavefield__2e0abf26",
+    "name": "wavefield",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_abaqusdt\\wavefield",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__2e0abf26.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__2e0abf26.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "out_line_abaqusdt__wavefield__67b38000",
+        1790143562.1913283
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_abaqusdt\\wavefield.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "out_line_abaqusdt__wavefield__67b38000"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wavefield__fb373e67",
+    "name": "wavefield",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_ehgdt\\wavefield",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__fb373e67.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__fb373e67.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "out_line_ehgdt__wavefield__bf7da8f2",
+        1790143528.4264865
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_line_ehgdt\\wavefield.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "out_line_ehgdt__wavefield__bf7da8f2"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "wavefield__45a4d1b3",
+    "name": "wavefield",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_point_400\\wavefield",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__45a4d1b3.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\wavefield__45a4d1b3.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "out_point_400__wavefield__a0e4edd3",
+        1790143522.1083891
+      ]
+    ],
+    "group": "60_custom_wave",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\guided_wave_3d\\out_point_400\\wavefield.npz"
+    ],
+    "caveats": [
+      "已保存波场；相速度/群速度与网格验收范围须查交接文档；未做实物验证"
+    ],
+    "parts": [
+      "out_point_400__wavefield__a0e4edd3"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "clamp10mm__130df4c9",
+    "name": "clamp10mm",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp10mm",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\clamp10mm__130df4c9.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\clamp10mm__130df4c9.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "clamp10mm__fields__b18b47c2",
+        1790143222.703745
+      ],
+      [
+        "clamp10mm__signals__25762246",
+        1790143231.1941752
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp10mm\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp10mm\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "clamp10mm__fields__b18b47c2",
+      "clamp10mm__signals__25762246"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "clamp30mm__f4f52f99",
+    "name": "clamp30mm",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp30mm",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\clamp30mm__f4f52f99.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\clamp30mm__f4f52f99.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "clamp30mm__fields__60ae57b5",
+        1790143242.076696
+      ],
+      [
+        "clamp30mm__signals__1d49b0bd",
+        1790143252.4386306
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp30mm\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\clamp30mm\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "clamp30mm__fields__60ae57b5",
+      "clamp30mm__signals__1d49b0bd"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "contact050__ecd483ff",
+    "name": "contact050",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact050",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\contact050__ecd483ff.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\contact050__ecd483ff.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "contact050__fields__7ec97407",
+        1790143274.402635
+      ],
+      [
+        "contact050__signals__4d79e743",
+        1790143284.9527206
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact050\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact050\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "contact050__fields__7ec97407",
+      "contact050__signals__4d79e743"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "contact200__70137afd",
+    "name": "contact200",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact200",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\contact200__70137afd.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\contact200__70137afd.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "contact200__fields__9e80d2dd",
+        1790143295.068212
+      ],
+      [
+        "contact200__signals__a6c81466",
+        1790143304.9717748
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact200\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\contact200\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "contact200__fields__9e80d2dd",
+      "contact200__signals__a6c81466"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "finest_halfdt__98c9c098",
+    "name": "finest_halfdt",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\finest_halfdt",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\finest_halfdt__98c9c098.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\finest_halfdt__98c9c098.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "finest_halfdt__fields__7d07055a",
+        1790143388.151249
+      ],
+      [
+        "finest_halfdt__signals__6373982f",
+        1790143396.2559557
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\finest_halfdt\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\finest_halfdt\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "finest_halfdt__fields__7d07055a",
+      "finest_halfdt__signals__6373982f"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "halfdt__fb3727e5",
+    "name": "halfdt",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\halfdt",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\halfdt__fb3727e5.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\halfdt__fb3727e5.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "halfdt__fields__77f13ae9",
+        1790143435.752267
+      ],
+      [
+        "halfdt__signals__a9b63907",
+        1790143445.466511
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\halfdt\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\halfdt\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "halfdt__fields__77f13ae9",
+      "halfdt__signals__a9b63907"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "offcentre__8b9e6cff",
+    "name": "offcentre",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\offcentre",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\offcentre__8b9e6cff.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\offcentre__8b9e6cff.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "offcentre__fields__01a38583",
+        1790143472.2190716
+      ],
+      [
+        "offcentre__signals__a130e264",
+        1790143481.5314684
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\offcentre\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\offcentre\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "offcentre__fields__01a38583",
+      "offcentre__signals__a130e264"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "order10__430e6771",
+    "name": "order10",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order10",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order10__430e6771.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order10__430e6771.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "order10__fields__32f6f11d",
+        1790143501.5924428
+      ],
+      [
+        "order10__signals__e6b5893b",
+        1790143511.833126
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order10\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order10\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "order10__fields__32f6f11d",
+      "order10__signals__e6b5893b"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "order14__df41728d",
+    "name": "order14",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order14",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order14__df41728d.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order14__df41728d.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "order14__fields__22b46d46",
+        1790143475.1185064
+      ],
+      [
+        "order14__signals__9b52043b",
+        1790143484.7759707
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order14\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order14\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "order14__fields__22b46d46",
+      "order14__signals__9b52043b"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "order18__5c642c15",
+    "name": "order18",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order18",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order18__5c642c15.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order18__5c642c15.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "order18__fields__d846913d",
+        1790143475.6011856
+      ],
+      [
+        "order18__signals__d9de66f7",
+        1790143521.563216
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order18\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order18\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "order18__fields__d846913d",
+      "order18__signals__d9de66f7"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "order22__bda64f77",
+    "name": "order22",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order22",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order22__bda64f77.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order22__bda64f77.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "order22__fields__432a1e6a",
+        1790143492.778397
+      ],
+      [
+        "order22__signals__5f9988c6",
+        1790143489.5058837
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order22\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order22\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "order22__fields__432a1e6a",
+      "order22__signals__5f9988c6"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "order30__7101ac02",
+    "name": "order30",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order30",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order30__7101ac02.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order30__7101ac02.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "order30__fields__610efffe",
+        1790143497.2936678
+      ],
+      [
+        "order30__signals__3dfce7b9",
+        1790143531.7264407
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order30\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order30\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "order30__fields__610efffe",
+      "order30__signals__3dfce7b9"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "order38__117884b8",
+    "name": "order38",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order38",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order38__117884b8.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order38__117884b8.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "order38__fields__7dcf7f6d",
+        1790143484.942948
+      ],
+      [
+        "order38__signals__8581d6ac",
+        1790143541.0348144
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order38\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order38\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "order38__fields__7dcf7f6d",
+      "order38__signals__8581d6ac"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "order46__d4757fdc",
+    "name": "order46",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order46",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order46__d4757fdc.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order46__d4757fdc.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "order46__fields__374fa33b",
+        1790143507.6661634
+      ],
+      [
+        "order46__signals__9d92c16d",
+        1790143502.1475265
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order46\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order46\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "order46__fields__374fa33b",
+      "order46__signals__9d92c16d"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "order6__949359f9",
+    "name": "order6",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\order6",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order6__949359f9.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\order6__949359f9.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "order6__fields__9488c110",
+        1790143552.1028109
+      ],
+      [
+        "order6__signals__ff80bd27",
+        1790143492.7434354
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order6\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\order6\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "order6__fields__9488c110",
+      "order6__signals__ff80bd27"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "stiffness075__fa369395",
+    "name": "stiffness075",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness075",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\stiffness075__fa369395.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\stiffness075__fa369395.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "stiffness075__fields__7a6d1922",
+        1790143547.329643
+      ],
+      [
+        "stiffness075__signals__0956d523",
+        1790143557.2847393
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness075\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness075\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "stiffness075__fields__7a6d1922",
+      "stiffness075__signals__0956d523"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "stiffness125__75e936c2",
+    "name": "stiffness125",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness125",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\stiffness125__75e936c2.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\stiffness125__75e936c2.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "stiffness125__fields__5604959f",
+        1790143568.6893752
+      ],
+      [
+        "stiffness125__signals__8213612e",
+        1790143579.4005082
+      ]
+    ],
+    "group": "61_thin_plate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness125\\fields.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\study_final\\stiffness125\\signals.csv"
+    ],
+    "caveats": [
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例",
+      "薄板 Rayleigh–Ritz 代理；w 向下为正；局部峰值力/接触应力不可信，非三维损伤预测"
+    ],
+    "parts": [
+      "stiffness125__fields__5604959f",
+      "stiffness125__signals__8213612e"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "farfield_100x80x4__bb81c9c5",
+    "name": "farfield_100x80x4",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_100x80x4",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\farfield_100x80x4__bb81c9c5.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\farfield_100x80x4__bb81c9c5.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "farfield_100x80x4__sensors__bbafe6ef",
+        1790143313.6966527
+      ],
+      [
+        "farfield_100x80x4__through_thickness__50c80711",
+        1790143322.5462143
+      ]
+    ],
+    "group": "62_custom_3d",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_100x80x4\\sensors.csv",
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_100x80x4\\through_thickness.csv"
+    ],
+    "caveats": [
+      "仅已保存厚度方向测点的位移时程，不能重建未保存的全场运动",
+      "自研三维远场传感器机械应变；不是 PZT 电压；小幅通道仍须关注网格敏感性"
+    ],
+    "parts": [
+      "farfield_100x80x4__sensors__bbafe6ef",
+      "farfield_100x80x4__through_thickness__50c80711"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "farfield_150x120x4__f76d17a5",
+    "name": "farfield_150x120x4",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_150x120x4",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\farfield_150x120x4__f76d17a5.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\farfield_150x120x4__f76d17a5.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "farfield_150x120x4__sensors__4ec885a4",
+        1790143331.3973854
+      ],
+      [
+        "farfield_150x120x4__through_thickness__785cc154",
+        1790143340.8422341
+      ]
+    ],
+    "group": "62_custom_3d",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_150x120x4\\sensors.csv",
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_150x120x4\\through_thickness.csv"
+    ],
+    "caveats": [
+      "仅已保存厚度方向测点的位移时程，不能重建未保存的全场运动",
+      "自研三维远场传感器机械应变；不是 PZT 电压；小幅通道仍须关注网格敏感性"
+    ],
+    "parts": [
+      "farfield_150x120x4__sensors__4ec885a4",
+      "farfield_150x120x4__through_thickness__785cc154"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "farfield_200x160x4__d007cff6",
+    "name": "farfield_200x160x4",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x4",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\farfield_200x160x4__d007cff6.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\farfield_200x160x4__d007cff6.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "farfield_200x160x4__sensors__f6a66b48",
+        1790143350.620222
+      ],
+      [
+        "farfield_200x160x4__through_thickness__1033fb13",
+        1790143361.0233247
+      ]
+    ],
+    "group": "62_custom_3d",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x4\\sensors.csv",
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x4\\through_thickness.csv"
+    ],
+    "caveats": [
+      "仅已保存厚度方向测点的位移时程，不能重建未保存的全场运动",
+      "自研三维远场传感器机械应变；不是 PZT 电压；小幅通道仍须关注网格敏感性"
+    ],
+    "parts": [
+      "farfield_200x160x4__sensors__f6a66b48",
+      "farfield_200x160x4__through_thickness__1033fb13"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "farfield_200x160x8__ececa6f4",
+    "name": "farfield_200x160x8",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x8",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\farfield_200x160x8__ececa6f4.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\farfield_200x160x8__ececa6f4.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "farfield_200x160x8__sensors__4902294a",
+        1790143368.9677634
+      ],
+      [
+        "farfield_200x160x8__through_thickness__00902d6a",
+        1790143377.778641
+      ]
+    ],
+    "group": "62_custom_3d",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x8\\sensors.csv",
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\farfield_200x160x8\\through_thickness.csv"
+    ],
+    "caveats": [
+      "仅已保存厚度方向测点的位移时程，不能重建未保存的全场运动",
+      "自研三维远场传感器机械应变；不是 PZT 电压；小幅通道仍须关注网格敏感性"
+    ],
+    "parts": [
+      "farfield_200x160x8__sensors__4902294a",
+      "farfield_200x160x8__through_thickness__00902d6a"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "global__8060d395",
+    "name": "global",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\global",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\global__8060d395.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\global__8060d395.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "global__sensors__53f74111",
+        1790143404.6219027
+      ],
+      [
+        "global__through_thickness__ef3f76f2",
+        1790143411.9750385
+      ]
+    ],
+    "group": "62_custom_3d",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\global\\sensors.csv",
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\global\\through_thickness.csv"
+    ],
+    "caveats": [
+      "仅已保存厚度方向测点的位移时程，不能重建未保存的全场运动",
+      "自研三维远场传感器机械应变；不是 PZT 电压；小幅通道仍须关注网格敏感性"
+    ],
+    "parts": [
+      "global__sensors__53f74111",
+      "global__through_thickness__ef3f76f2"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "submodel__a1b7acb7",
+    "name": "submodel",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\submodel",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\submodel__a1b7acb7.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\submodel__a1b7acb7.png",
+    "frames": 102,
+    "segments": 2,
+    "duration_s": 15.299999999999999,
+    "signature": [
+      [
+        "submodel__contact_patch__d5ed3159",
+        1790143553.8139606
+      ],
+      [
+        "submodel__signals__06287773",
+        1790143561.0771105
+      ]
+    ],
+    "group": "62_custom_3d",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\submodel\\contact_patch.npz",
+      "D:\\bs_thesis\\simulation_reproduction\\impact_3d_v1\\study_3d\\submodel\\signals.csv"
+    ],
+    "caveats": [
+      "局部三维子模型的接触时程；无损伤演化",
+      "已保存响应时程；局部量的可信范围按各模型验收记录，不能跨模型当作同一算例"
+    ],
+    "parts": [
+      "submodel__contact_patch__d5ed3159",
+      "submodel__signals__06287773"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ae_dataset__a5d6e93a",
+    "name": "ae_dataset",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\ae_dataset",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ae_dataset__a5d6e93a.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ae_dataset__a5d6e93a.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "results__ae_dataset_sample0__70068cec",
+        1790143533.3622098
+      ]
+    ],
+    "group": "70_surrogate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\results\\ae_dataset.npz"
+    ],
+    "caveats": [
+      "AE 合成数据集第1条示例；数据集样本不能混称独立有限元算例"
+    ],
+    "parts": [
+      "results__ae_dataset_sample0__70068cec"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "faults_traces__4e8f9d9a",
+    "name": "faults_traces",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\faults_traces",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\faults_traces__4e8f9d9a.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\faults_traces__4e8f9d9a.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "results__faults_traces__ccfb429b",
+        1790143572.6165988
+      ]
+    ],
+    "group": "70_surrogate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\results\\faults_traces.npz"
+    ],
+    "caveats": [
+      "早期故障检测数值演示；无独立实测验证集"
+    ],
+    "parts": [
+      "results__faults_traces__ccfb429b"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "gear_example_waveforms_0__91464f69",
+    "name": "gear_example_waveforms_0",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms_0",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_0__91464f69.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_0__91464f69.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "results__gear_example_waveforms_0__d9299ea6",
+        1790143540.5942154
+      ]
+    ],
+    "group": "70_surrogate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz"
+    ],
+    "caveats": [
+      "齿轮箱合成信号样例，不是实测；速度标签取自保存文件"
+    ],
+    "parts": [
+      "results__gear_example_waveforms_0__d9299ea6"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "gear_example_waveforms_150__0f43d231",
+    "name": "gear_example_waveforms_150",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms_150",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_150__0f43d231.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_150__0f43d231.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "results__gear_example_waveforms_150__1fdf9028",
+        1790143548.329856
+      ]
+    ],
+    "group": "70_surrogate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz"
+    ],
+    "caveats": [
+      "齿轮箱合成信号样例，不是实测；速度标签取自保存文件"
+    ],
+    "parts": [
+      "results__gear_example_waveforms_150__1fdf9028"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "gear_example_waveforms_200__454451be",
+    "name": "gear_example_waveforms_200",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms_200",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_200__454451be.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_200__454451be.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "results__gear_example_waveforms_200__8958e499",
+        1790143510.4499125
+      ]
+    ],
+    "group": "70_surrogate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz"
+    ],
+    "caveats": [
+      "齿轮箱合成信号样例，不是实测；速度标签取自保存文件"
+    ],
+    "parts": [
+      "results__gear_example_waveforms_200__8958e499"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "gear_example_waveforms_250__a390c3cc",
+    "name": "gear_example_waveforms_250",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms_250",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_250__a390c3cc.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_250__a390c3cc.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "results__gear_example_waveforms_250__83f55a31",
+        1790143530.1315765
+      ]
+    ],
+    "group": "70_surrogate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz"
+    ],
+    "caveats": [
+      "齿轮箱合成信号样例，不是实测；速度标签取自保存文件"
+    ],
+    "parts": [
+      "results__gear_example_waveforms_250__83f55a31"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "gear_example_waveforms_300__01d99e48",
+    "name": "gear_example_waveforms_300",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms_300",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_300__01d99e48.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\gear_example_waveforms_300__01d99e48.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "results__gear_example_waveforms_300__301e5756",
+        1790143518.0120974
+      ]
+    ],
+    "group": "70_surrogate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\results\\gear_example_waveforms.npz"
+    ],
+    "caveats": [
+      "齿轮箱合成信号样例，不是实测；速度标签取自保存文件"
+    ],
+    "parts": [
+      "results__gear_example_waveforms_300__301e5756"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "joint_surrogates__8cad833c",
+    "name": "joint_surrogates",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\joint_surrogates",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\joint_surrogates__8cad833c.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\joint_surrogates__8cad833c.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "results__joint_surrogates__636e9c3b",
+        1790143536.9701488
+      ]
+    ],
+    "group": "70_surrogate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\results\\joint_surrogates.npz"
+    ],
+    "caveats": [
+      "接头响应替代模型；不是实测曲线；静态强度曲线未伪造时间轴"
+    ],
+    "parts": [
+      "results__joint_surrogates__636e9c3b"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "plate_waveforms__452e4ae9",
+    "name": "plate_waveforms",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\results\\plate_waveforms",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\plate_waveforms__452e4ae9.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\plate_waveforms__452e4ae9.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "results__plate_waveforms__26e57465",
+        1790143581.589441
+      ]
+    ],
+    "group": "70_surrogate",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\results\\plate_waveforms.npz"
+    ],
+    "caveats": [
+      "早期板响应代理/合成演示，不能冒充当前 Abaqus 求解结果"
+    ],
+    "parts": [
+      "results__plate_waveforms__26e57465"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02_relax1__3c604fe9",
+    "name": "acc_n02_relax1",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\interrupted_20260923_133902\\acc_n02_relax1",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_relax1__3c604fe9.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\acc_n02_relax1__3c604fe9.png",
+    "frames": 7,
+    "segments": 1,
+    "duration_s": 1.05,
+    "signature": [
+      [
+        "acc_n02_relax1__acc_n02_relax1__2e5ce3e1",
+        1790143166.5306242
+      ]
+    ],
+    "group": "90_incomplete",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\interrupted_20260923_133902\\acc_n02_relax1.odb"
+    ],
+    "caveats": [
+      "未完成，仅供诊断；不得作为完整结果；中断归档，终止原因未定"
+    ],
+    "parts": [
+      "acc_n02_relax1__acc_n02_relax1__2e5ce3e1"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "ugw_impact__e7d02b21",
+    "name": "ugw_impact",
+    "identity": "D:\\abaqus_runs\\impact80\\ugw_impact",
+    "gif": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_impact__e7d02b21.gif",
+    "poster": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\00_by_simulation\\ugw_impact__e7d02b21.png",
+    "frames": 2,
+    "segments": 1,
+    "duration_s": 0.3,
+    "signature": [
+      [
+        "ugw_impact__IMPACT__da8b94f1",
+        1790143563.742971
+      ]
+    ],
+    "group": "90_incomplete",
+    "sources": [
+      "D:\\abaqus_runs\\impact80\\ugw_impact.odb"
+    ],
+    "caveats": [
+      "未完成，仅供诊断；不得作为完整结果"
+    ],
+    "parts": [
+      "ugw_impact__IMPACT__da8b94f1"
+    ]
+  }
+]
