@@ -1,0 +1,1867 @@
+{
+  "large_file_count": 107,
+  "large_bytes": 93791850952,
+  "jobs": [
+    {
+      "job": "acc_n01",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n01.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n01.abq",
+          "bytes": 2063978496,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n01.odb",
+          "bytes": 2231721572,
+          "status": "pending_large_file",
+          "reason": "exceeds confirmed remote LFS 2 GiB per-file limit"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n01.pac",
+          "bytes": 393846784,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n01.stt",
+          "bytes": 117540900,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 4807087752,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 51,
+          "source_frames": 51,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 781.0582173988223,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n01__IMPACT__34fa7d29.npz",
+          "ALLDMD_last_mJ": 0.9241342777386308,
+          "ALLDMD_delta_mJ": 0.9241342777386308,
+          "ALLKE_last_mJ": 235.3437840938568,
+          "ALLKE_delta_mJ": -64.6064281463623,
+          "ALLIE_last_mJ": 58.858487755060196,
+          "ALLIE_delta_mJ": 58.858487755060196
+        }
+      ],
+      "gif": "gifs/acc_n01__0a0d2561.gif",
+      "poster": "posters/acc_n01__0a0d2561.png",
+      "category": "01_current_impact",
+      "caveats": [
+        "正式累积序列第1次；尚不能代表三次累积完成"
+      ],
+      "gif_frames": 51
+    },
+    {
+      "job": "acc_n02",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02.abq",
+          "bytes": 4402044928,
+          "status": "pending_large_file",
+          "reason": "exceeds confirmed remote LFS 2 GiB per-file limit"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02.odb",
+          "bytes": 2231708976,
+          "status": "pending_large_file",
+          "reason": "exceeds confirmed remote LFS 2 GiB per-file limit"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02.pac",
+          "bytes": 904978432,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02.stt",
+          "bytes": 115975780,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 7654708116,
+      "completed": true,
+      "steps": [
+        {
+          "step": "acc_n02",
+          "frames": 51,
+          "source_frames": 51,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 780.4159540683031,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\large_file_summary_20260924\\new_animations\\_data\\acc_n02__acc_n02__8dddffa9.npz",
+          "ALLDMD_last_mJ": 0.9408833575434983,
+          "ALLDMD_delta_mJ": 0.016749079804867506,
+          "ALLKE_last_mJ": 244.86824870109558,
+          "ALLKE_delta_mJ": -55.08357286453247,
+          "ALLIE_last_mJ": 50.33211410045624,
+          "ALLIE_delta_mJ": 49.407836981117725
+        }
+      ],
+      "gif": "gifs/acc_n02__29a03e4e.gif",
+      "poster": "posters/acc_n02__29a03e4e.png",
+      "category": "01_current_impact",
+      "caveats": [
+        "正式累积冲击；次数取作业编号，完成范围以当前结果汇总为准"
+      ],
+      "gif_frames": 51
+    },
+    {
+      "job": "imp_hi",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_hi.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_hi.abq",
+          "bytes": 1153449984,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_hi.odb",
+          "bytes": 1148965388,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_hi.pac",
+          "bytes": 393113600,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_hi.stt",
+          "bytes": 106035236,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2801564208,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 1272.818073630333,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\imp_hi__IMPACT__41d87c74.npz",
+          "ALLDMD_last_mJ": 15.108759514987469,
+          "ALLDMD_delta_mJ": 15.108759514987469,
+          "ALLKE_last_mJ": 617.8229451179504,
+          "ALLKE_delta_mJ": -175.92209577560425,
+          "ALLIE_last_mJ": 160.97594797611237,
+          "ALLIE_delta_mJ": 160.97594797611237
+        }
+      ],
+      "gif": "gifs/imp_hi__14315861.gif",
+      "poster": "posters/imp_hi__14315861.png",
+      "category": "01_current_impact",
+      "caveats": [
+        "显式黏聚刚度 2.37e13 下的单次标定；应力场未收敛、材料为替代参数"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "imp_lo",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_lo.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_lo.abq",
+          "bytes": 1153449984,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_lo.odb",
+          "bytes": 1148962160,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_lo.pac",
+          "bytes": 393113600,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_lo.stt",
+          "bytes": 106035236,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2801560980,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 455.17919352278113,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\imp_lo__IMPACT__f065c58c.npz",
+          "ALLDMD_last_mJ": 0.09661180956754833,
+          "ALLDMD_delta_mJ": 0.09661180956754833,
+          "ALLKE_last_mJ": 78.5144791007042,
+          "ALLKE_delta_mJ": -21.520748734474182,
+          "ALLIE_last_mJ": 19.564835354685783,
+          "ALLIE_delta_mJ": 19.564835354685783
+        }
+      ],
+      "gif": "gifs/imp_lo__545c8666.gif",
+      "poster": "posters/imp_lo__545c8666.png",
+      "category": "01_current_impact",
+      "caveats": [
+        "显式黏聚刚度 2.37e13 下的单次标定；应力场未收敛、材料为替代参数"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "imp_mid",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_mid.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_mid.abq",
+          "bytes": 1153449984,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_mid.odb",
+          "bytes": 1148957908,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_mid.pac",
+          "bytes": 393113600,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_mid.stt",
+          "bytes": 106035236,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2801556728,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 781.0639799572527,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\imp_mid__IMPACT__e9f1fa9b.npz",
+          "ALLDMD_last_mJ": 0.9266880224458873,
+          "ALLDMD_delta_mJ": 0.9266880224458873,
+          "ALLKE_last_mJ": 235.35247147083282,
+          "ALLKE_delta_mJ": -64.59774076938629,
+          "ALLIE_last_mJ": 58.80245938897133,
+          "ALLIE_delta_mJ": 58.80245938897133
+        }
+      ],
+      "gif": "gifs/imp_mid__aeca0372.gif",
+      "poster": "posters/imp_mid__aeca0372.png",
+      "category": "01_current_impact",
+      "caveats": [
+        "显式黏聚刚度 2.37e13 下的单次标定；应力场未收敛、材料为替代参数"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "wav_base",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_base.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_base.abq",
+          "bytes": 1672990720,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_base.odb",
+          "bytes": 438832244,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_base.pac",
+          "bytes": 378392576,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2490215540,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 0.3331091136260511,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wav_base__WAVE__31bfb0d4.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.0045390770537778735,
+          "ALLKE_delta_mJ": 0.0045390770537778735,
+          "ALLIE_last_mJ": 0.002893387545555015,
+          "ALLIE_delta_mJ": 0.002893387545555015
+        }
+      ],
+      "gif": "gifs/wav_base__bd33f763.gif",
+      "poster": "posters/wav_base__bd33f763.png",
+      "category": "02_current_wave",
+      "caveats": [
+        "修正半径后的导波；机械位移而非电压；0.8 mm 档仍有4/5受损界面映射差异"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "wav_d03_r08",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03_r08.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03_r08.abq",
+          "bytes": 1673269248,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03_r08.odb",
+          "bytes": 437320792,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03_r08.pac",
+          "bytes": 378863616,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2489453656,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 0.3332323217364319,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wav_d03_r08__WAVE__610f16ee.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.004606808943208307,
+          "ALLKE_delta_mJ": 0.004606808943208307,
+          "ALLIE_last_mJ": 0.0028462270620366326,
+          "ALLIE_delta_mJ": 0.0028462270620366326
+        }
+      ],
+      "gif": "gifs/wav_d03_r08__99235604.gif",
+      "poster": "posters/wav_d03_r08__99235604.png",
+      "category": "02_current_wave",
+      "caveats": [
+        "修正半径后的导波；机械位移而非电压；0.8 mm 档仍有4/5受损界面映射差异"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "wav_d08_r31",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08_r31.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08_r31.abq",
+          "bytes": 1674407936,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08_r31.odb",
+          "bytes": 437508976,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08_r31.pac",
+          "bytes": 379052032,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2490968944,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 0.45394381231744774,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wav_d08_r31__WAVE__cf0049b0.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.004194676421320764,
+          "ALLKE_delta_mJ": 0.004194676421320764,
+          "ALLIE_last_mJ": 0.0030342880563694052,
+          "ALLIE_delta_mJ": 0.0030342880563694052
+        }
+      ],
+      "gif": "gifs/wav_d08_r31__c1828585.gif",
+      "poster": "posters/wav_d08_r31__c1828585.png",
+      "category": "02_current_wave",
+      "caveats": [
+        "修正半径后的导波；机械位移而非电压；0.8 mm 档仍有4/5受损界面映射差异"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "acc_n02_prepare",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_prepare.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_prepare.abq",
+          "bytes": 4402044928,
+          "status": "pending_large_file",
+          "reason": "exceeds confirmed remote LFS 2 GiB per-file limit"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_prepare.odb",
+          "bytes": 978099016,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_prepare.pac",
+          "bytes": 777195520,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_prepare.stt",
+          "bytes": 115975780,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 6273315244,
+      "completed": true,
+      "steps": [
+        {
+          "step": "acc_n02_prepare_POSITION",
+          "frames": 11,
+          "source_frames": 11,
+          "time_start_us": 0.0,
+          "time_end_us": 99.99999747378752,
+          "max_abs_top_U3_sampled_um": 2.7696535198629135,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\large_file_summary_20260924\\new_animations\\_data\\acc_n02_prepare__acc_n02_prepare_POSITION__f7ce235d.npz",
+          "ALLDMD_last_mJ": 0.9241342777386308,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.0012214204616611823,
+          "ALLKE_delta_mJ": 0.0005058649321654229,
+          "ALLIE_last_mJ": 0.9248137939721346,
+          "ALLIE_delta_mJ": -0.00494043342769146
+        },
+        {
+          "step": "acc_n02_prepare_LAUNCH",
+          "frames": 11,
+          "source_frames": 11,
+          "time_start_us": 0.0,
+          "time_end_us": 49.99999873689376,
+          "max_abs_top_U3_sampled_um": 1.1394238299544668,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\large_file_summary_20260924\\new_animations\\_data\\acc_n02_prepare__acc_n02_prepare_LAUNCH__e675c2c0.npz",
+          "ALLDMD_last_mJ": 0.9241342777386308,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 299.95185136795044,
+          "ALLKE_delta_mJ": 299.95062994760247,
+          "ALLIE_last_mJ": 0.9242771193385124,
+          "ALLIE_delta_mJ": -0.0005366746336221695
+        }
+      ],
+      "gif": "gifs/acc_n02_prepare__238b4439.gif",
+      "poster": "posters/acc_n02_prepare__238b4439.png",
+      "category": "03_between_impacts",
+      "caveats": [
+        "两次冲击之间的数值消振/球复位与入射准备；不是额外冲击，数值时间不等于实验等待时间"
+      ],
+      "gif_frames": 22
+    },
+    {
+      "job": "acc_n02_relax1",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_relax1.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_relax1.abq",
+          "bytes": 2575384576,
+          "status": "pending_large_file",
+          "reason": "exceeds confirmed remote LFS 2 GiB per-file limit"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_relax1.odb",
+          "bytes": 496143612,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_relax1.pac",
+          "bytes": 521629696,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_relax1.stt",
+          "bytes": 115975780,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 3709133664,
+      "completed": true,
+      "steps": [
+        {
+          "step": "acc_n02_relax1",
+          "frames": 11,
+          "source_frames": 11,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 309.0150130447,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\large_file_summary_20260924\\new_animations\\_data\\acc_n02_relax1__acc_n02_relax1__5d2fbb0d.npz",
+          "ALLDMD_last_mJ": 0.9241342777386308,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.0007155555294957594,
+          "ALLKE_delta_mJ": -235.34305363716612,
+          "ALLIE_last_mJ": 0.929754227399826,
+          "ALLIE_delta_mJ": -57.92873352766037
+        }
+      ],
+      "gif": "gifs/acc_n02_relax1__e4e25936.gif",
+      "poster": "posters/acc_n02_relax1__e4e25936.png",
+      "category": "03_between_impacts",
+      "caveats": [
+        "两次冲击之间的数值消振/球复位与入射准备；不是额外冲击，数值时间不等于实验等待时间"
+      ],
+      "gif_frames": 11
+    },
+    {
+      "job": "grade_hi",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_hi.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_hi.abq",
+          "bytes": 1168351232,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_hi.odb",
+          "bytes": 1155011036,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_hi.pac",
+          "bytes": 401981440,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2725343708,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 1251.874607987702,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\grade_hi__IMPACT__d04c3c5a.npz",
+          "ALLDMD_last_mJ": 26.73443593084812,
+          "ALLDMD_delta_mJ": 26.73443593084812,
+          "ALLKE_last_mJ": 604.9900650978088,
+          "ALLKE_delta_mJ": -188.75497579574585,
+          "ALLIE_last_mJ": 182.36596882343292,
+          "ALLIE_delta_mJ": 182.36596882343292
+        }
+      ],
+      "gif": "gifs/grade_hi__70d6cd4d.gif",
+      "poster": "posters/grade_hi__70d6cd4d.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "grade_lo",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_lo.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_lo.abq",
+          "bytes": 1168351232,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_lo.odb",
+          "bytes": 1154992848,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_lo.pac",
+          "bytes": 401981440,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2725325520,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 442.96460691839457,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\grade_lo__IMPACT__c60e1092.npz",
+          "ALLDMD_last_mJ": 0.35809387918561697,
+          "ALLDMD_delta_mJ": 0.35809387918561697,
+          "ALLKE_last_mJ": 79.27244901657104,
+          "ALLKE_delta_mJ": -20.76277881860733,
+          "ALLIE_last_mJ": 20.071471109986305,
+          "ALLIE_delta_mJ": 20.071471109986305
+        }
+      ],
+      "gif": "gifs/grade_lo__b3011418.gif",
+      "poster": "posters/grade_lo__b3011418.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "grade_mid",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_mid.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_mid.abq",
+          "bytes": 1168351232,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_mid.odb",
+          "bytes": 1154969384,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_mid.pac",
+          "bytes": 401981440,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2725302056,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 760.7857696712017,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\grade_mid__IMPACT__2fcd7b53.npz",
+          "ALLDMD_last_mJ": 1.879985793493688,
+          "ALLDMD_delta_mJ": 1.879985793493688,
+          "ALLKE_last_mJ": 232.0241779088974,
+          "ALLKE_delta_mJ": -67.92603433132172,
+          "ALLIE_last_mJ": 65.47250598669052,
+          "ALLIE_delta_mJ": 65.47250598669052
+        }
+      ],
+      "gif": "gifs/grade_mid__def883ea.gif",
+      "poster": "posters/grade_mid__def883ea.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "impact_big",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_big.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_big.abq",
+          "bytes": 715591680,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_big.odb",
+          "bytes": 1302671288,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_big.pac",
+          "bytes": 232955904,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2251218872,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 51,
+          "source_frames": 51,
+          "time_start_us": 0.0,
+          "time_end_us": 699.999975040555,
+          "max_abs_top_U3_sampled_um": 1208.1091990694404,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_big__IMPACT__842711d4.npz",
+          "ALLDMD_last_mJ": 1.3294994132593274,
+          "ALLDMD_delta_mJ": 1.3294994132593274,
+          "ALLKE_last_mJ": 545.2150702476501,
+          "ALLKE_delta_mJ": -248.52997064590454,
+          "ALLIE_last_mJ": 236.61576211452484,
+          "ALLIE_delta_mJ": 236.61576211452484
+        }
+      ],
+      "gif": "gifs/impact_big__715c02e3.gif",
+      "poster": "posters/impact_big__715c02e3.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 51
+    },
+    {
+      "job": "impact_dmg",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_dmg.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_dmg.abq",
+          "bytes": 715591680,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_dmg.odb",
+          "bytes": 1302671288,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_dmg.pac",
+          "bytes": 232955904,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2251218872,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 51,
+          "source_frames": 51,
+          "time_start_us": 0.0,
+          "time_end_us": 699.999975040555,
+          "max_abs_top_U3_sampled_um": 169.994673342444,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_dmg__IMPACT__83fad9bc.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 10.58876607567072,
+          "ALLKE_delta_mJ": -4.974868148565292,
+          "ALLIE_last_mJ": 4.730008076876402,
+          "ALLIE_delta_mJ": 4.730008076876402
+        }
+      ],
+      "gif": "gifs/impact_dmg__9d706c70.gif",
+      "poster": "posters/impact_dmg__9d706c70.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 51
+    },
+    {
+      "job": "impact_full",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_full.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_full.abq",
+          "bytes": 715591680,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_full.odb",
+          "bytes": 1302636088,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_full.pac",
+          "bytes": 232955904,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2251183672,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 51,
+          "source_frames": 51,
+          "time_start_us": 0.0,
+          "time_end_us": 300.0000142492354,
+          "max_abs_top_U3_sampled_um": 107.58681310107931,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_full__IMPACT__c62eb679.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 5.2040861919522285,
+          "ALLKE_delta_mJ": -1.0213651694357395,
+          "ALLIE_last_mJ": 0.9412490762770176,
+          "ALLIE_delta_mJ": 0.9412490762770176
+        }
+      ],
+      "gif": "gifs/impact_full__c3cbe787.gif",
+      "poster": "posters/impact_full__c3cbe787.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 51
+    },
+    {
+      "job": "impact_hi",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_hi.abq",
+          "bytes": 2105135104,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_hi.odb",
+          "bytes": 1699859012,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_hi.pac",
+          "bytes": 518782976,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_hi.stt",
+          "bytes": 106035428,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 4429812520,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 1253.483584150672,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_hi__IMPACT__1929ccaa.npz",
+          "ALLDMD_last_mJ": 30.251922085881233,
+          "ALLDMD_delta_mJ": 30.251922085881233,
+          "ALLKE_last_mJ": 602.1792888641357,
+          "ALLKE_delta_mJ": -191.56575202941895,
+          "ALLIE_last_mJ": 186.20911240577698,
+          "ALLIE_delta_mJ": 186.20911240577698
+        },
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 652.0685274153948,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_hi__WAVE__246d9e1d.npz",
+          "ALLDMD_last_mJ": 30.251922085881233,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 534.9951386451721,
+          "ALLKE_delta_mJ": -67.18415021896362,
+          "ALLIE_last_mJ": 251.70010328292847,
+          "ALLIE_delta_mJ": 65.49099087715149
+        }
+      ],
+      "gif": "gifs/impact_hi__8f7d2f56.gif",
+      "poster": "posters/impact_hi__8f7d2f56.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 52
+    },
+    {
+      "job": "impact_lo",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_lo.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_lo.abq",
+          "bytes": 2105135104,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_lo.odb",
+          "bytes": 1699821612,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_lo.pac",
+          "bytes": 518782976,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_lo.stt",
+          "bytes": 106035428,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 4429775120,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 442.9160035215318,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_lo__IMPACT__54026e7b.npz",
+          "ALLDMD_last_mJ": 0.3613390144892037,
+          "ALLDMD_delta_mJ": 0.3613390144892037,
+          "ALLKE_last_mJ": 79.2517140507698,
+          "ALLKE_delta_mJ": -20.78351378440857,
+          "ALLIE_last_mJ": 20.079676061868668,
+          "ALLIE_delta_mJ": 20.079676061868668
+        },
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 235.7015328016132,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_lo__WAVE__930eeba0.npz",
+          "ALLDMD_last_mJ": 0.3613390144892037,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 69.84319537878036,
+          "ALLKE_delta_mJ": -9.408518671989441,
+          "ALLIE_last_mJ": 29.25792522728443,
+          "ALLIE_delta_mJ": 9.178249165415764
+        }
+      ],
+      "gif": "gifs/impact_lo__f6d62dad.gif",
+      "poster": "posters/impact_lo__f6d62dad.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 52
+    },
+    {
+      "job": "impact_mid",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_mid.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_mid.abq",
+          "bytes": 2105135104,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_mid.odb",
+          "bytes": 1699840824,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_mid.pac",
+          "bytes": 518782976,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_mid.stt",
+          "bytes": 106035428,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 4429794332,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 500.00002374872565,
+          "max_abs_top_U3_sampled_um": 760.8597516082227,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_mid__IMPACT__52da9842.npz",
+          "ALLDMD_last_mJ": 1.9035397563129663,
+          "ALLDMD_delta_mJ": 1.9035397563129663,
+          "ALLKE_last_mJ": 232.07594454288483,
+          "ALLKE_delta_mJ": -67.87426769733429,
+          "ALLIE_last_mJ": 65.47057628631592,
+          "ALLIE_delta_mJ": 65.47057628631592
+        },
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 406.0920618940145,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\impact_mid__WAVE__0ebb1d27.npz",
+          "ALLDMD_last_mJ": 1.9035397563129663,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 213.67508172988892,
+          "ALLKE_delta_mJ": -18.40086281299591,
+          "ALLIE_last_mJ": 83.31853896379471,
+          "ALLIE_delta_mJ": 17.84796267747879
+        }
+      ],
+      "gif": "gifs/impact_mid__cb877aad.gif",
+      "poster": "posters/impact_mid__cb877aad.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 52
+    },
+    {
+      "job": "kdef",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kdef.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kdef.abq",
+          "bytes": 1672990720,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kdef.odb",
+          "bytes": 194074320,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kdef.pac",
+          "bytes": 378392576,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2245457616,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 11,
+          "source_frames": 11,
+          "time_start_us": 0.0,
+          "time_end_us": 99.99999747378752,
+          "max_abs_top_U3_sampled_um": 0.3331091136260511,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\kdef__WAVE__8d03a022.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.004983136477676453,
+          "ALLKE_delta_mJ": 0.004983136477676453,
+          "ALLIE_last_mJ": 0.0036144224395684432,
+          "ALLIE_delta_mJ": 0.0036144224395684432
+        }
+      ],
+      "gif": "gifs/kdef__b37dbd9d.gif",
+      "poster": "posters/kdef__b37dbd9d.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 11
+    },
+    {
+      "job": "kply_ply",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_ply.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_ply.abq",
+          "bytes": 1672990720,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_ply.odb",
+          "bytes": 194107468,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_ply.pac",
+          "bytes": 378392576,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2245490764,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 11,
+          "source_frames": 11,
+          "time_start_us": 0.0,
+          "time_end_us": 99.99999747378752,
+          "max_abs_top_U3_sampled_um": 0.3387995946013689,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\kply_ply__WAVE__3febed0f.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.004688009539677296,
+          "ALLKE_delta_mJ": 0.004688009539677296,
+          "ALLIE_last_mJ": 0.0032214140901487553,
+          "ALLIE_delta_mJ": 0.0032214140901487553
+        }
+      ],
+      "gif": "gifs/kply_ply__b9ead21f.gif",
+      "poster": "posters/kply_ply__b9ead21f.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 11
+    },
+    {
+      "job": "kply_smoke",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_smoke.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_smoke.abq",
+          "bytes": 387284992,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 387284992,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 5,
+          "source_frames": 5,
+          "time_start_us": 0.0,
+          "time_end_us": 19.999999494757503,
+          "max_abs_top_U3_sampled_um": 0.2308484710056291,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\kply_smoke__WAVE__a329c62e.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.0010824916216733982,
+          "ALLKE_delta_mJ": 0.0010824916216733982,
+          "ALLIE_last_mJ": 0.000594910432027973,
+          "ALLIE_delta_mJ": 0.000594910432027973
+        }
+      ],
+      "gif": "gifs/kply_smoke__4ae390bf.gif",
+      "poster": "posters/kply_smoke__4ae390bf.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 5
+    },
+    {
+      "job": "kply_stiff",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_stiff.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_stiff.abq",
+          "bytes": 1672990720,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_stiff.odb",
+          "bytes": 194077548,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_stiff.pac",
+          "bytes": 378392576,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2245460844,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 11,
+          "source_frames": 11,
+          "time_start_us": 0.0,
+          "time_end_us": 99.99999747378752,
+          "max_abs_top_U3_sampled_um": 0.2866628392439452,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\kply_stiff__WAVE__27581ec3.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.005056058398622554,
+          "ALLKE_delta_mJ": 0.005056058398622554,
+          "ALLIE_last_mJ": 0.0048691031224734616,
+          "ALLIE_delta_mJ": 0.0048691031224734616
+        }
+      ],
+      "gif": "gifs/kply_stiff__b289d3c3.gif",
+      "poster": "posters/kply_stiff__b289d3c3.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 11
+    },
+    {
+      "job": "ksoft",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\ksoft.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/ksoft.abq",
+          "bytes": 1672990720,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/ksoft.odb",
+          "bytes": 194065816,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/ksoft.pac",
+          "bytes": 378392576,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2245449112,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 11,
+          "source_frames": 11,
+          "time_start_us": 0.0,
+          "time_end_us": 99.99999747378752,
+          "max_abs_top_U3_sampled_um": 0.932781915707892,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\ksoft__WAVE__d8f2174e.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.0009518715273770795,
+          "ALLKE_delta_mJ": 0.0009518715273770795,
+          "ALLIE_last_mJ": 0.0003187207084920374,
+          "ALLIE_delta_mJ": 0.0003187207084920374
+        }
+      ],
+      "gif": "gifs/ksoft__05705774.gif",
+      "poster": "posters/ksoft__05705774.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 11
+    },
+    {
+      "job": "scope_impact",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_impact.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/scope_impact.abq",
+          "bytes": 420184064,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/scope_impact.odb",
+          "bytes": 216967344,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/scope_impact.pac",
+          "bytes": 128770048,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 765921456,
+      "completed": true,
+      "steps": [
+        {
+          "step": "IMPACT",
+          "frames": 7,
+          "source_frames": 7,
+          "time_start_us": 0.0,
+          "time_end_us": 119.99999696854502,
+          "max_abs_top_U3_sampled_um": 693.5375859029591,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\scope_impact__IMPACT__0e369eb1.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 74.96712356805801,
+          "ALLKE_delta_mJ": -224.9830886721611,
+          "ALLIE_last_mJ": 222.25448489189148,
+          "ALLIE_delta_mJ": 222.25448489189148
+        },
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 749.0374846383929,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\scope_impact__WAVE__52c6e0ed.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 241.30947887897491,
+          "ALLKE_delta_mJ": 166.3423553109169,
+          "ALLIE_last_mJ": 56.46192654967308,
+          "ALLIE_delta_mJ": -165.7925583422184
+        }
+      ],
+      "gif": "gifs/scope_impact__c1c01f7d.gif",
+      "poster": "posters/scope_impact__c1c01f7d.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 33
+    },
+    {
+      "job": "scope_smoke",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_smoke.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/scope_smoke.abq",
+          "bytes": 387284992,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 387284992,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 11,
+          "source_frames": 11,
+          "time_start_us": 0.0,
+          "time_end_us": 99.99999747378752,
+          "max_abs_top_U3_sampled_um": 0.22599131455081078,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\scope_smoke__WAVE__ffe4d1a8.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.0034893641895905603,
+          "ALLKE_delta_mJ": 0.0034893641895905603,
+          "ALLIE_last_mJ": 0.0021252019450912485,
+          "ALLIE_delta_mJ": 0.0021252019450912485
+        }
+      ],
+      "gif": "gifs/scope_smoke__e25e12ff.gif",
+      "poster": "posters/scope_smoke__e25e12ff.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 11
+    },
+    {
+      "job": "wav_d03",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03.abq",
+          "bytes": 1673375744,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03.odb",
+          "bytes": 439294832,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03.pac",
+          "bytes": 378863616,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2491534192,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 0.3332359312935296,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wav_d03__WAVE__f22fdec6.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.0046696986828465015,
+          "ALLKE_delta_mJ": 0.0046696986828465015,
+          "ALLIE_last_mJ": 0.0027996622975479113,
+          "ALLIE_delta_mJ": 0.0027996622975479113
+        }
+      ],
+      "gif": "gifs/wav_d03__e6a66468.gif",
+      "poster": "posters/wav_d03__e6a66468.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "wav_d08",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08.abq",
+          "bytes": 1674801152,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08.odb",
+          "bytes": 439438888,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08.pac",
+          "bytes": 379052032,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2493292072,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 0.49807795221568085,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wav_d08__WAVE__2a23102c.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.0041134626371786,
+          "ALLKE_delta_mJ": 0.0041134626371786,
+          "ALLIE_last_mJ": 0.0031430329272552626,
+          "ALLIE_delta_mJ": 0.0031430329272552626
+        }
+      ],
+      "gif": "gifs/wav_d08__26724154.gif",
+      "poster": "posters/wav_d08__26724154.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "wave_base",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_base.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_base.abq",
+          "bytes": 1672990720,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_base.odb",
+          "bytes": 436622840,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_base.pac",
+          "bytes": 378392576,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2488006136,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 0.2902453672959382,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wave_base__WAVE__6b2ad559.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.005679940386471571,
+          "ALLKE_delta_mJ": 0.005679940386471571,
+          "ALLIE_last_mJ": 0.00316297928293352,
+          "ALLIE_delta_mJ": 0.00316297928293352
+        }
+      ],
+      "gif": "gifs/wave_base__9d0b4a49.gif",
+      "poster": "posters/wave_base__9d0b4a49.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "wave_d03",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d03.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d03.abq",
+          "bytes": 1673375744,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d03.odb",
+          "bytes": 437129684,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d03.pac",
+          "bytes": 378863616,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2489369044,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 0.29012821300966607,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wave_d03__WAVE__57e8d8de.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.005591371063928818,
+          "ALLKE_delta_mJ": 0.005591371063928818,
+          "ALLIE_last_mJ": 0.003230280981370015,
+          "ALLIE_delta_mJ": 0.003230280981370015
+        }
+      ],
+      "gif": "gifs/wave_d03__0ebee02b.gif",
+      "poster": "posters/wave_d03__0ebee02b.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "wave_d08",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d08.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d08.abq",
+          "bytes": 1674801152,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d08.odb",
+          "bytes": 437329728,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d08.pac",
+          "bytes": 379052032,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 2491182912,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 26,
+          "source_frames": 26,
+          "time_start_us": 0.0,
+          "time_end_us": 250.00001187436283,
+          "max_abs_top_U3_sampled_um": 0.33228604934265604,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wave_d08__WAVE__ec42e15f.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.0049667687562759966,
+          "ALLKE_delta_mJ": 0.0049667687562759966,
+          "ALLIE_last_mJ": 0.0031629708701075288,
+          "ALLIE_delta_mJ": 0.0031629708701075288
+        }
+      ],
+      "gif": "gifs/wave_d08__e57e0308.gif",
+      "poster": "posters/wave_d08__e57e0308.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 26
+    },
+    {
+      "job": "wave_dp",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_dp.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_dp.abq",
+          "bytes": 400924672,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 400924672,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 11,
+          "source_frames": 11,
+          "time_start_us": 0.0,
+          "time_end_us": 99.99999747378752,
+          "max_abs_top_U3_sampled_um": 0.22671576971333707,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wave_dp__WAVE__0646558a.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.0033728499602148077,
+          "ALLKE_delta_mJ": 0.0033728499602148077,
+          "ALLIE_last_mJ": 0.0021940256829111604,
+          "ALLIE_delta_mJ": 0.0021940256829111604
+        }
+      ],
+      "gif": "gifs/wave_dp__05ab1b4e.gif",
+      "poster": "posters/wave_dp__05ab1b4e.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 11
+    },
+    {
+      "job": "wave_smoke",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_smoke.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_smoke.abq",
+          "bytes": 248356864,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 248356864,
+      "completed": true,
+      "steps": [
+        {
+          "step": "WAVE",
+          "frames": 11,
+          "source_frames": 11,
+          "time_start_us": 0.0,
+          "time_end_us": 99.99999747378752,
+          "max_abs_top_U3_sampled_um": 0.22780467645588942,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\wave_smoke__WAVE__74425e6e.npz",
+          "ALLDMD_last_mJ": 0.0,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.05255872747511603,
+          "ALLKE_delta_mJ": 0.05255872747511603,
+          "ALLIE_last_mJ": 0.010085576832352672,
+          "ALLIE_delta_mJ": 0.010085576832352672
+        }
+      ],
+      "gif": "gifs/wave_smoke__2b6741ed.gif",
+      "poster": "posters/wave_smoke__2b6741ed.png",
+      "category": "20_historical",
+      "caveats": [
+        "历史参数/网格/精度对照；不得替代交接文档的最终标定；同作业冲击后的 WAVE 含残余振动"
+      ],
+      "gif_frames": 11
+    },
+    {
+      "job": "acc_n02_relax1",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\interrupted_20260923_133902\\acc_n02_relax1.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/interrupted_20260923_133902/acc_n02_relax1.abq",
+          "bytes": 2063978496,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/interrupted_20260923_133902/acc_n02_relax1.odb",
+          "bytes": 322961408,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/interrupted_20260923_133902/acc_n02_relax1.pac",
+          "bytes": 521629696,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/interrupted_20260923_133902/acc_n02_relax1.stt",
+          "bytes": 115975780,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 3024545380,
+      "completed": false,
+      "steps": [
+        {
+          "step": "acc_n02_relax1",
+          "frames": 7,
+          "source_frames": 7,
+          "time_start_us": 0.0,
+          "time_end_us": 300.00045080669224,
+          "max_abs_top_U3_sampled_um": 309.0150130447,
+          "field": "U",
+          "source_data": "D:\\bs_thesis\\review\\simulation_gifs_20260923\\_data\\acc_n02_relax1__acc_n02_relax1__2e5ce3e1.npz",
+          "ALLDMD_last_mJ": 0.9241342777386308,
+          "ALLDMD_delta_mJ": 0.0,
+          "ALLKE_last_mJ": 0.10575469786999747,
+          "ALLKE_delta_mJ": -235.23801449482562,
+          "ALLIE_last_mJ": 1.3676051748916507,
+          "ALLIE_delta_mJ": -57.490882580168545
+        }
+      ],
+      "gif": "gifs/acc_n02_relax1__3c604fe9.gif",
+      "poster": "posters/acc_n02_relax1__3c604fe9.png",
+      "category": "90_incomplete",
+      "caveats": [
+        "未完成，仅供诊断；不得作为完整结果；中断归档，终止原因未定"
+      ],
+      "gif_frames": 7
+    },
+    {
+      "job": "grade",
+      "source_odb": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade.odb",
+      "large_files": [
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade.abq",
+          "bytes": 201768960,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        },
+        {
+          "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade.pac",
+          "bytes": 401981440,
+          "status": "pending_large_file",
+          "reason": "bulk solver archive pending storage plan: total about 94 GiB, local free about 9 GiB; cannot stage full LFS archive"
+        }
+      ],
+      "large_bytes": 603750400,
+      "completed": true,
+      "steps": [],
+      "gif": null,
+      "poster": null,
+      "category": "缺少过程帧",
+      "caveats": [
+        "grade 的求解状态为成功，但 ODB 的 IMPACT 步不足两帧；不能从单帧构造真实过程。"
+      ]
+    }
+  ],
+  "overview_gif": "gifs/repeat_030J_two_hits.gif",
+  "source_inventory": "review/cloud_sync_20260924/upload_inventory.json"
+}

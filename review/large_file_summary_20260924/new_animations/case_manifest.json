@@ -1,0 +1,92 @@
+[
+  {
+    "merge_version": 2,
+    "key": "acc_n02__29a03e4e",
+    "name": "acc_n02",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02",
+    "gif": "D:\\bs_thesis\\review\\large_file_summary_20260924\\new_animations\\00_by_simulation\\acc_n02__29a03e4e.gif",
+    "poster": "D:\\bs_thesis\\review\\large_file_summary_20260924\\new_animations\\00_by_simulation\\acc_n02__29a03e4e.png",
+    "frames": 51,
+    "segments": 1,
+    "duration_s": 7.6499999999999995,
+    "signature": [
+      [
+        "acc_n02__acc_n02__8dddffa9",
+        1790226479.1527221,
+        0
+      ]
+    ],
+    "group": "01_current_impact",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02.odb"
+    ],
+    "caveats": [
+      "正式累积冲击；次数取作业编号，完成范围以当前结果汇总为准"
+    ],
+    "parts": [
+      "acc_n02__acc_n02__8dddffa9"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02_prepare__238b4439",
+    "name": "acc_n02_prepare",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_prepare",
+    "gif": "D:\\bs_thesis\\review\\large_file_summary_20260924\\new_animations\\00_by_simulation\\acc_n02_prepare__238b4439.gif",
+    "poster": "D:\\bs_thesis\\review\\large_file_summary_20260924\\new_animations\\00_by_simulation\\acc_n02_prepare__238b4439.png",
+    "frames": 22,
+    "segments": 2,
+    "duration_s": 3.3,
+    "signature": [
+      [
+        "acc_n02_prepare__acc_n02_prepare_POSITION__f7ce235d",
+        1790226483.4426177,
+        0
+      ],
+      [
+        "acc_n02_prepare__acc_n02_prepare_LAUNCH__e675c2c0",
+        1790226481.2402093,
+        1
+      ]
+    ],
+    "group": "03_between_impacts",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_prepare.odb"
+    ],
+    "caveats": [
+      "两次冲击之间的数值消振/球复位与入射准备；不是额外冲击，数值时间不等于实验等待时间"
+    ],
+    "parts": [
+      "acc_n02_prepare__acc_n02_prepare_POSITION__f7ce235d",
+      "acc_n02_prepare__acc_n02_prepare_LAUNCH__e675c2c0"
+    ]
+  },
+  {
+    "merge_version": 2,
+    "key": "acc_n02_relax1__e4e25936",
+    "name": "acc_n02_relax1",
+    "identity": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_relax1",
+    "gif": "D:\\bs_thesis\\review\\large_file_summary_20260924\\new_animations\\00_by_simulation\\acc_n02_relax1__e4e25936.gif",
+    "poster": "D:\\bs_thesis\\review\\large_file_summary_20260924\\new_animations\\00_by_simulation\\acc_n02_relax1__e4e25936.png",
+    "frames": 11,
+    "segments": 1,
+    "duration_s": 1.65,
+    "signature": [
+      [
+        "acc_n02_relax1__acc_n02_relax1__5d2fbb0d",
+        1790226485.7031665,
+        0
+      ]
+    ],
+    "group": "03_between_impacts",
+    "sources": [
+      "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_relax1.odb"
+    ],
+    "caveats": [
+      "两次冲击之间的数值消振/球复位与入射准备；不是额外冲击，数值时间不等于实验等待时间"
+    ],
+    "parts": [
+      "acc_n02_relax1__acc_n02_relax1__5d2fbb0d"
+    ]
+  }
+]

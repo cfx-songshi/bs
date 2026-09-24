@@ -9,7 +9,9 @@ items=json.loads((root/'manifest.json').read_text(encoding='utf-8'))
 groups=defaultdict(list)
 for x in items:
     p=Path(x['source'])
-    if p.suffix=='.odb':identity=str(p.with_suffix(''));name=p.stem
+    if x.get('simulation_identity'):
+        identity=x['simulation_identity'];name=x['simulation_name']
+    elif p.suffix=='.odb':identity=str(p.with_suffix(''));name=p.stem
     elif p.name in ('fields.npz','signals.csv','sensors.csv','through_thickness.csv','contact_patch.npz'):
         identity=str(p.parent);name=p.parent.name
     else:
@@ -27,10 +29,10 @@ small=ImageFont.truetype('C:/Windows/Fonts/msyh.ttc',16)
 result=[]
 for identity,entries in groups.items():
     # ODB order was exported in step order; preserve physical ordering via source metadata inventory.
-    entries.sort(key=lambda e:(0 if e[1].get('step')=='IMPACT' else 1 if e[1].get('step')=='WAVE' else 2,e[1]['source'],e[1].get('step','')))
+    entries.sort(key=lambda e:(e[1].get('sequence_order',0 if e[1].get('step')=='IMPACT' else 1 if e[1].get('step')=='WAVE' else 2),e[1]['source'],e[1].get('step','')))
     name=entries[0][0];key=re.sub('[^A-Za-z0-9_-]','_',name)+'__'+hashlib.sha1(identity.encode()).hexdigest()[:8]
     dest=out/(key+'.gif');poster=dest.with_suffix('.png');receipt=dest.with_suffix('.json')
-    signature=[(x['key'],Path(x['gif']).stat().st_mtime) for _,x in entries]
+    signature=[(x['key'],Path(x['gif']).stat().st_mtime,x.get('sequence_order')) for _,x in entries]
     if receipt.exists() and json.loads(receipt.read_text(encoding='utf-8')).get('merge_version')==2 and json.loads(receipt.read_text(encoding='utf-8')).get('signature')==[list(x) for x in signature]:
         result.append(json.loads(receipt.read_text(encoding='utf-8')));continue
     if len(entries)==1:

@@ -1,0 +1,57 @@
+{
+  "merge_version": 2,
+  "key": "repeat_030J_two_hits__eabfc95e",
+  "name": "repeat_030J_two_hits",
+  "identity": "formal_repeat_030J_two_hits",
+  "gif": "D:\\bs_thesis\\review\\large_file_summary_20260924\\repeat_sequence\\00_by_simulation\\repeat_030J_two_hits__eabfc95e.gif",
+  "poster": "D:\\bs_thesis\\review\\large_file_summary_20260924\\repeat_sequence\\00_by_simulation\\repeat_030J_two_hits__eabfc95e.png",
+  "frames": 135,
+  "segments": 5,
+  "duration_s": 20.25,
+  "signature": [
+    [
+      "acc_n01__IMPACT__34fa7d29",
+      1790143164.8482332,
+      0
+    ],
+    [
+      "acc_n02_relax1__acc_n02_relax1__5d2fbb0d",
+      1790226485.7031665,
+      1
+    ],
+    [
+      "acc_n02_prepare__acc_n02_prepare_POSITION__f7ce235d",
+      1790226483.4426177,
+      2
+    ],
+    [
+      "acc_n02_prepare__acc_n02_prepare_LAUNCH__e675c2c0",
+      1790226481.2402093,
+      3
+    ],
+    [
+      "acc_n02__acc_n02__8dddffa9",
+      1790226479.1527221,
+      4
+    ]
+  ],
+  "group": "01_current_impact",
+  "sources": [
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n01.odb",
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02.odb",
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_prepare.odb",
+    "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_relax1.odb"
+  ],
+  "caveats": [
+    "两次冲击之间的数值消振/球复位与入射准备；不是额外冲击，数值时间不等于实验等待时间",
+    "正式累积冲击；次数取作业编号，完成范围以当前结果汇总为准",
+    "正式累积序列第1次；尚不能代表三次累积完成"
+  ],
+  "parts": [
+    "acc_n01__IMPACT__34fa7d29",
+    "acc_n02_relax1__acc_n02_relax1__5d2fbb0d",
+    "acc_n02_prepare__acc_n02_prepare_POSITION__f7ce235d",
+    "acc_n02_prepare__acc_n02_prepare_LAUNCH__e675c2c0",
+    "acc_n02__acc_n02__8dddffa9"
+  ]
+}

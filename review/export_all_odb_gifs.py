@@ -30,7 +30,9 @@ def classify(path,step,kind,complete):
         return '50_workflow_tests','小模型/流程验证，不代表正式板损伤结论'
     if name in ('imp_lo','imp_mid','imp_hi') and step=='IMPACT':
         return '01_current_impact','显式黏聚刚度 2.37e13 下的单次标定；应力场未收敛、材料为替代参数'
-    if name=='acc_n01':return '01_current_impact','正式累积序列第1次；尚不能代表三次累积完成'
+    if re.fullmatch(r'acc_n\d{2}',name):return '01_current_impact','正式累积冲击；次数取作业编号，完成范围以当前结果汇总为准'
+    if name.startswith('acc_n02_') and '/accum_030j_3/' in text:
+        return '03_between_impacts','两次冲击之间的数值消振/球复位与入射准备；不是额外冲击，数值时间不等于实验等待时间'
     if name in ('wav_base','wav_d03_r08','wav_d08_r31'):
         return '02_current_wave','修正半径后的导波；机械位移而非电压；0.8 mm 档仍有4/5受损界面映射差异'
     if 'guided_wave' in text or 'D:/abaqus_runs' in text:
@@ -94,7 +96,7 @@ def export(path):
                 c=list(e.connectivity)
                 if len(c)==8:
                     edges.extend((rows[c[a]],rows[c[b]]) for a,b in pairs if c[a] in rows and c[b] in rows)
-        for stepname,step in odb.steps.items():
+        for step_order,(stepname,step) in enumerate(odb.steps.items()):
             if len(step.frames)<2:
                 status['outputs'].append({'step':stepname,'status':'no_animation','reason':'fewer than two field frames'});continue
             uid=hashlib.sha1((str(path)+'#'+stepname).encode()).hexdigest()[:8]
@@ -128,7 +130,7 @@ def export(path):
                         histories[name]=np.array(out.data)
             group,caveat=classify(path,stepname,kind,complete)
             if archived:caveat+='；中断归档，终止原因未定'
-            info=dict(key=key,source=str(path),step=stepname,kind=kind,group=group,caveat=caveat,
+            info=dict(key=key,source=str(path),step=stepname,sequence_order=step_order,kind=kind,group=group,caveat=caveat,
                       complete=complete,status='exported',frames=len(times),source_frames=len(step.frames),
                       start_s=times[0],end_s=times[-1],field=field,full_top_nodes=full_top,
                       displayed_top_nodes=len(top),section_y_m=ycentre,geometry_scale=1,
@@ -148,6 +150,8 @@ def export(path):
 
 
 sources=sorted(list((ROOT/'simulation_reproduction').rglob('*.odb'))+list(Path('D:/abaqus_runs').rglob('*.odb')))
+if len(sys.argv)>2:
+    sources=[Path(p) for p in json.loads(Path(sys.argv[2]).read_text(encoding='utf-8'))]
 inventory=[]
 for path in sources:
     try:result=export(path)

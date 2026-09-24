@@ -19,6 +19,7 @@ from PIL import Image
 OUT=Path(sys.argv[1]);DATA=OUT/'_data'
 plt.rcParams.update({'font.family':'Microsoft YaHei','font.size':9,'axes.unicode_minus':False})
 NAMES={'01_current_impact':'当前有效 · 冲击','02_current_wave':'当前有效 · 导波',
+ '03_between_impacts':'两次冲击之间 · 数值消振与入射准备',
  '20_historical':'历史参数对照','30_abaqus_validation':'Abaqus 独立对照','40_material_probes':'材料能力探针',
  '50_workflow_tests':'流程验证','60_custom_wave':'自研导波','61_thin_plate':'薄板冲击与敏感性',
  '62_custom_3d':'自研三维冲击','70_surrogate':'早期代理/合成数据','90_incomplete':'未完成/中断'}
