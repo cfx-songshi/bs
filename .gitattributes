@@ -12,3 +12,4 @@
 *.prt filter=lfs diff=lfs merge=lfs -text
 *.npz filter=lfs diff=lfs merge=lfs -text
 *.pt filter=lfs diff=lfs merge=lfs -text
+archives/solver_archive_20260924/chunks/*.xz filter=lfs diff=lfs merge=lfs -text
