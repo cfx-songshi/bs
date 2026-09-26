@@ -1,0 +1,755 @@
+{
+  "archive_commit": "91a8bdd1be11b6b38eb45d520b32bef35e9b1ae9",
+  "remote_verified": true,
+  "files": [
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade.abq",
+      "bytes": 201768960,
+      "sha256": "5dc89f4691b1b90f8ae513e1ceb9446751868672727ba8d93920d3767741b581",
+      "mtime_ns": 1789906048724746200
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade.pac",
+      "bytes": 401981440,
+      "sha256": "fbbd16d24000b1a2cbd4bf3886dff0862880ffd4d5c315cb1c7841cf9375150c",
+      "mtime_ns": 1789906048831694400
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_hi.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_hi.abq",
+      "bytes": 1168351232,
+      "sha256": "52f1288815be855fb1db1ec0f3a9d24393eb9d0dad3f1faf3dbec70a265e49d1",
+      "mtime_ns": 1789915085650616800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_hi.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_hi.odb",
+      "bytes": 1155011036,
+      "sha256": "9ab147982e47cba3297d4a66ad5b47ac93844fadc3842fab54794b2e3d7995c0",
+      "mtime_ns": 1789915085867955600
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_hi.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_hi.pac",
+      "bytes": 401981440,
+      "sha256": "f4a82c8aa34e2c85c5def838f2c55b9f95770c274e410c8a10cbeda494647ea4",
+      "mtime_ns": 1789906168992474700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_lo.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_lo.abq",
+      "bytes": 1168351232,
+      "sha256": "e1075f0ab093b0cfad438b97ebbae469d43c9b24f9709be759286eab1ff3b064",
+      "mtime_ns": 1789914501654658700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_lo.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_lo.odb",
+      "bytes": 1154992848,
+      "sha256": "af993e2de552b7dc570d84546bb5d0ea0195b4ac615059310aac395357b884a9",
+      "mtime_ns": 1789914501904949800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_lo.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_lo.pac",
+      "bytes": 401981440,
+      "sha256": "d6f0eb559de0df51e95038aa575a710357233c521fcd63d909d93c6f823e8deb",
+      "mtime_ns": 1789906140194657300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_mid.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_mid.abq",
+      "bytes": 1168351232,
+      "sha256": "9229554c6ef97dd6df7d15b5801bd69c1cbb3fe9d7a34bcb676bde2913389526",
+      "mtime_ns": 1789914038381290400
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_mid.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_mid.odb",
+      "bytes": 1154969384,
+      "sha256": "e897ef1316d094edc919dd353010b548b9a34761f673310bc7e88581aca98b52",
+      "mtime_ns": 1789914038627376800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/grade_mid.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\grade_mid.pac",
+      "bytes": 401981440,
+      "sha256": "d811183a5cd81da2f544d266afec01e29cfb321a3206c7ad202e7f5efbb156e3",
+      "mtime_ns": 1789906154941877900
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_big.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_big.abq",
+      "bytes": 715591680,
+      "sha256": "b841dc10c9e778237fe95aab05a7c51be8962db6e85bc0608934bf476ce835eb",
+      "mtime_ns": 1789904785848512300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_big.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_big.odb",
+      "bytes": 1302671288,
+      "sha256": "635dd7a70b9eea4be0f4bd6e74647f27cc23de0803fcb81dd1777f0fcd3b8aeb",
+      "mtime_ns": 1789904786000245100
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_big.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_big.pac",
+      "bytes": 232955904,
+      "sha256": "2765820f5678c96a87f330669af6195cfe17b90c2a4d995c0292769ca02eb8fa",
+      "mtime_ns": 1789903131797171100
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_dmg.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_dmg.abq",
+      "bytes": 715591680,
+      "sha256": "9716448789122193c88f3620b26df3c6bcb7ef7ea3f92b3db4e0e26e0becf69e",
+      "mtime_ns": 1789902463514420700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_dmg.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_dmg.odb",
+      "bytes": 1302671288,
+      "sha256": "155f2ba0916613393c854fc1df018eb47a0777251bec6ef4729969f6b5910165",
+      "mtime_ns": 1789902463664358000
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_dmg.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_dmg.pac",
+      "bytes": 232955904,
+      "sha256": "a893427539ef3b59d5ef19d251410b35135e0e74cc68ce76758453c1ddc1a97f",
+      "mtime_ns": 1789901186913512700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_full.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_full.abq",
+      "bytes": 715591680,
+      "sha256": "32c26eed242ea2dcaef12f8ed9ea1da028dfc5ad7528915f3fe51b253be7bb89",
+      "mtime_ns": 1789900393602037800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_full.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_full.odb",
+      "bytes": 1302636088,
+      "sha256": "201231d1927852cf4e013ad7ebf332a2fe985030e48c82f6bb2dc625523c328e",
+      "mtime_ns": 1789900393785420300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_full.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_full.pac",
+      "bytes": 232955904,
+      "sha256": "c5dd63c6d57ae7a1ebfa5a83d9211d9d47d7fdf632795e22bf9b5ef59ad41d64",
+      "mtime_ns": 1789899799378962500
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_hi.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi.abq",
+      "bytes": 2105135104,
+      "sha256": "8382330904fff4a5ed140e45d9e00734425b35cbe0bf2e42b82989f73b3805f0",
+      "mtime_ns": 1789966269356422400
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_hi.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi.odb",
+      "bytes": 1699859012,
+      "sha256": "a767d01384404f08b530f788856c6a7b67e741af36faee6d7b07c9c5194628bd",
+      "mtime_ns": 1789966269637528200
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_hi.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi.pac",
+      "bytes": 518782976,
+      "sha256": "96d346cab7fc04e73d713a75a203c468c32a67a76c1cb6ea2e3a93c758d9ca56",
+      "mtime_ns": 1789953826176543600
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_hi.stt",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_hi.stt",
+      "bytes": 106035428,
+      "sha256": "d180d3ad6a95fc8e298d05263282cfeb327df98fa710c134208f5d397d188143",
+      "mtime_ns": 1789953821039367300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_lo.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_lo.abq",
+      "bytes": 2105135104,
+      "sha256": "4e8cd76b45eee9e29da598765d42c858a7ae7ea0b42ef2bdf331d4ddeb53569a",
+      "mtime_ns": 1789965950581278000
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_lo.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_lo.odb",
+      "bytes": 1699821612,
+      "sha256": "b3872ee18753ed7b6f91be3e6e5d3700ee93c984d748bdcf17bd551a9aefac00",
+      "mtime_ns": 1789965950887473800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_lo.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_lo.pac",
+      "bytes": 518782976,
+      "sha256": "cf1ae1734f0ec6f63644bb8fbe1e8936dfef397bce52fdd5a2f78e68795767af",
+      "mtime_ns": 1789953798286793700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_lo.stt",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_lo.stt",
+      "bytes": 106035428,
+      "sha256": "a901a4cdb95d9abd40c852b38002841a7f723c7e79e7ca0721e96c0ca81c3b9b",
+      "mtime_ns": 1789953793041925100
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_mid.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_mid.abq",
+      "bytes": 2105135104,
+      "sha256": "d87fea90493c096cc95255c890a354510b4a5f64ace3a5e8b8eb0ee86c668c9f",
+      "mtime_ns": 1789966151467882400
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_mid.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_mid.odb",
+      "bytes": 1699840824,
+      "sha256": "efe918c6d8667827ea628613107975030693249994a98c53d5179e62c24fb7ef",
+      "mtime_ns": 1789966151739208600
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_mid.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_mid.pac",
+      "bytes": 518782976,
+      "sha256": "ea761c7b6086051a1a037f1e76aa94db63de4ba64599f6472a36c415ed854907",
+      "mtime_ns": 1789953812621934500
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/impact_mid.stt",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\impact_mid.stt",
+      "bytes": 106035428,
+      "sha256": "ca03fae930779cba19deb1a6420a2b46f4d7fa0f709fb84db44b11d183ab1127",
+      "mtime_ns": 1789953807214144500
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_hi.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_hi.abq",
+      "bytes": 1153449984,
+      "sha256": "11f58f302548c54ea7fd927561922bed9a5ada7f9e88cc81a47ec2282b4b9325",
+      "mtime_ns": 1789987139154206300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_hi.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_hi.odb",
+      "bytes": 1148965388,
+      "sha256": "10a5ca8728011a47a5343c4c6fb9a1f775e7366faac511ec70de35749f74a811",
+      "mtime_ns": 1789987139350755800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_hi.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_hi.pac",
+      "bytes": 393113600,
+      "sha256": "8ca1f64bce3d32f3fa78c8fa5a75989a113a73060263d823a76fa0619fc7eb9f",
+      "mtime_ns": 1789970561141664700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_hi.stt",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_hi.stt",
+      "bytes": 106035236,
+      "sha256": "241b8d616a7ca0db4b64c095440dcf0b31c4ffbeba4e3dcd9a05456e7027d320",
+      "mtime_ns": 1789970557392848300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_lo.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_lo.abq",
+      "bytes": 1153449984,
+      "sha256": "10f64bc6edea0af342aea9e6a77e3caa2c9f0c3ada1bff8a948850eec94f468b",
+      "mtime_ns": 1789986867862844700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_lo.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_lo.odb",
+      "bytes": 1148962160,
+      "sha256": "9392157034ce95d37aca077039498c027d8c587c53603ef920405b2e36f04e48",
+      "mtime_ns": 1789986868148974100
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_lo.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_lo.pac",
+      "bytes": 393113600,
+      "sha256": "0ee2cd6a37d0fbb4c9ad02a265886057aed6f78ab6ec12ecbadde8dc46515bc5",
+      "mtime_ns": 1789970561180934300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_lo.stt",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_lo.stt",
+      "bytes": 106035236,
+      "sha256": "a26bc611b0b31ed40414e31afa0755a459049b80b2765230771f7a0a19c38c5b",
+      "mtime_ns": 1789970557407065800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_mid.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_mid.abq",
+      "bytes": 1153449984,
+      "sha256": "526497575ff3b0a29b17a3278a3325417d2aafe093b4ec75933ff3965ac9f36b",
+      "mtime_ns": 1789986901078185700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_mid.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_mid.odb",
+      "bytes": 1148957908,
+      "sha256": "99436da75d14065fc06384386d7e1347e7e32f6b872d3ad8027cc15f5bd48b29",
+      "mtime_ns": 1789986901321101800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_mid.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_mid.pac",
+      "bytes": 393113600,
+      "sha256": "192c92bc8d51821ffb059be93add3f1b183cbd71f14c76c9a0cae43c8d9daa18",
+      "mtime_ns": 1789970560876915800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/imp_mid.stt",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\imp_mid.stt",
+      "bytes": 106035236,
+      "sha256": "d731785a0478b8fa2d50987a58fd018063d064c1fffb3a4c2d57cd9d452292dd",
+      "mtime_ns": 1789970557183496000
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kdef.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kdef.abq",
+      "bytes": 1672990720,
+      "sha256": "76298f6232df523855c6a0453ff4392a126577ddc8e11048038253339e869ce7",
+      "mtime_ns": 1789970305556709200
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kdef.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kdef.odb",
+      "bytes": 194074320,
+      "sha256": "6959e002fe8d1e4d627f2a7cd7925ba800f6c9bbcfeba964dd3c1739c3dfe6cf",
+      "mtime_ns": 1789970305779405500
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kdef.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kdef.pac",
+      "bytes": 378392576,
+      "sha256": "78df039da09f5b06fb9e9e80112a399aab5a5fb977c3470adec48aafab827560",
+      "mtime_ns": 1789967384135159800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_ply.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_ply.abq",
+      "bytes": 1672990720,
+      "sha256": "9f0de40a4ea794968773eae40fafdb39637d6f2d51b05604566b61a0da86856f",
+      "mtime_ns": 1789967081231688400
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_ply.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_ply.odb",
+      "bytes": 194107468,
+      "sha256": "a77417a3e704856fd85b876948de19b891c6c08e6732624bccdae988aee85fb7",
+      "mtime_ns": 1789967081501026200
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_ply.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_ply.pac",
+      "bytes": 378392576,
+      "sha256": "b6e1462430f6efc88d23fa9fe4a9fb14fb17d30d49a5b0424245c5a427a394b9",
+      "mtime_ns": 1789963334977081300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_smoke.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_smoke.abq",
+      "bytes": 387284992,
+      "sha256": "7fd8b6de3c20d32df26e92d54b37a7e2d723a31c2600cbcc9ab9e71096546cb9",
+      "mtime_ns": 1789963291321133100
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_stiff.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_stiff.abq",
+      "bytes": 1672990720,
+      "sha256": "d510f41882eba995ec5f32dd443f07668ce63014d54c96551182866027ae2935",
+      "mtime_ns": 1789966379158927500
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_stiff.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_stiff.odb",
+      "bytes": 194077548,
+      "sha256": "d3c71c136aad06832569f7f839c9c5fe274e547c2d056dec1d6c8dafde302bf9",
+      "mtime_ns": 1789966379403020500
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/kply_stiff.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\kply_stiff.pac",
+      "bytes": 378392576,
+      "sha256": "91db1726761819ede424402b79ba4d4cc9e5c2110c1b667711df9d2dc00713a0",
+      "mtime_ns": 1789963350294640700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/ksoft.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\ksoft.abq",
+      "bytes": 1672990720,
+      "sha256": "468f67e584067b7006fb862c19ec7beee139a8c5a57979fccd510beafbd74571",
+      "mtime_ns": 1789970276762063700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/ksoft.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\ksoft.odb",
+      "bytes": 194065816,
+      "sha256": "820b4da2c59d9194a25fd86bf8b340ebc49c5719d0641bd6188b63121ef4968f",
+      "mtime_ns": 1789970277089597900
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/ksoft.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\ksoft.pac",
+      "bytes": 378392576,
+      "sha256": "15f7b4e99aa19b8d2250ff32953e413de55100f390c7141a34f51cac6a4ef066",
+      "mtime_ns": 1789967397983080900
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/scope_impact.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_impact.abq",
+      "bytes": 420184064,
+      "sha256": "364425eef459f0391be079153211a27a77ed7539194a913ff6b6b90ece5c7cad",
+      "mtime_ns": 1789953740972279100
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/scope_impact.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_impact.odb",
+      "bytes": 216967344,
+      "sha256": "b2627552b0b5a54422659cfe3ea60c5134d18d29fce8ad11f51fa917d6e857f0",
+      "mtime_ns": 1789953741119534800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/scope_impact.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_impact.pac",
+      "bytes": 128770048,
+      "sha256": "192e0d0365c1c8daeef1b63703fb97780eb59afef0cb6060652e37ed305a04c1",
+      "mtime_ns": 1789953452419273800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/scope_smoke.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\scope_smoke.abq",
+      "bytes": 387284992,
+      "sha256": "d8710e6c89da192bb6520312878e6ced6a802c73c4feac12cc152b5afc5b36c3",
+      "mtime_ns": 1789924577173695400
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_base.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_base.abq",
+      "bytes": 1672990720,
+      "sha256": "e815a82cc41a9c4ae8504d5dda9cf26eefaec70b806223dd4f0b448441b9fdf9",
+      "mtime_ns": 1789931059338858600
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_base.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_base.odb",
+      "bytes": 436622840,
+      "sha256": "716cc032e1b9ffe26a06f97602bc24cd2c45ea5eaa70301d9bc48c509718b699",
+      "mtime_ns": 1789931059641957500
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_base.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_base.pac",
+      "bytes": 378392576,
+      "sha256": "005dcdb42963692697b8ec01caea9da0922c28aa0155d4c6d0c81cd7daa0a149",
+      "mtime_ns": 1789924619298026600
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d03.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d03.abq",
+      "bytes": 1673375744,
+      "sha256": "871a4b0c40407a74d857b067f58924005a30f06602bf975b3ed29c9c4e99725e",
+      "mtime_ns": 1789931246117591900
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d03.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d03.odb",
+      "bytes": 437129684,
+      "sha256": "8036a3dd4685e5e9b7057a188d349cc22b001141200f47a444c0d7d15956553e",
+      "mtime_ns": 1789931246365477900
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d03.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d03.pac",
+      "bytes": 378863616,
+      "sha256": "3092ab68301411e6d240dd9288fe489109593517f82757b4ed1783e63a4fc5f9",
+      "mtime_ns": 1789924635025489700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d08.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d08.abq",
+      "bytes": 1674801152,
+      "sha256": "24c45127a5e2c83489f7d061f8364be86009d4b35e3805ae11b4e18b916f84d2",
+      "mtime_ns": 1789931069861593200
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d08.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d08.odb",
+      "bytes": 437329728,
+      "sha256": "6e548688cd8e547acc5254efd15f88c465794384cc30de20baf9e757d83040f1",
+      "mtime_ns": 1789931070126878000
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_d08.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_d08.pac",
+      "bytes": 379052032,
+      "sha256": "70a868f53bd2a303e32778af38664d1b23954ba399d450852a8e9e718d9bcec3",
+      "mtime_ns": 1789924650750819000
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_dp.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_dp.abq",
+      "bytes": 400924672,
+      "sha256": "c09d7e9a745ec8a82aa087edb0000d6c4a0c2e38858b82a6db0750606e78355b",
+      "mtime_ns": 1789917186746828100
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wave_smoke.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wave_smoke.abq",
+      "bytes": 248356864,
+      "sha256": "27177afed2055cbfc8f1d583c3768472814d42afce7970b55ca5e8636e0b151d",
+      "mtime_ns": 1789916831014810300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_base.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_base.abq",
+      "bytes": 1672990720,
+      "sha256": "e7d5bd7635e227d86df1e3b782a236a7dc6f0dba5690c7cec85236ddd4450cec",
+      "mtime_ns": 1789983192789182300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_base.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_base.odb",
+      "bytes": 438832244,
+      "sha256": "e208b3f674434dff195478d5f5255c46af29ee49addfa9b98a9b01a03904faef",
+      "mtime_ns": 1789983193146643600
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_base.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_base.pac",
+      "bytes": 378392576,
+      "sha256": "dcad1b5a85f33cab9fcaf6b8e96750b5924c45a49857c1657e9f684d702b75fa",
+      "mtime_ns": 1789970560916758200
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03.abq",
+      "bytes": 1673375744,
+      "sha256": "2b63a7a3076a9d7de52ca9a4b509d4b3fe69a7881fcb51d1c240e763b73fcb57",
+      "mtime_ns": 1789983077966098500
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03.odb",
+      "bytes": 439294832,
+      "sha256": "9de87ba25406a25c1d4d89e7673956d283551cc080b62e6bd0cb9f7e780a7b3c",
+      "mtime_ns": 1789983078360608600
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03.pac",
+      "bytes": 378863616,
+      "sha256": "4a7e0401486340e7411a5ee1bba50f91affdfb8c8fe8b81eee50c526aefef64f",
+      "mtime_ns": 1789970560151207900
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03_r08.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03_r08.abq",
+      "bytes": 1673269248,
+      "sha256": "4bdb81e5d0f59550b7969cb118dfc019ac37838b2e9d0bdf80311d19b2057afa",
+      "mtime_ns": 1789999347223515900
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03_r08.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03_r08.odb",
+      "bytes": 437320792,
+      "sha256": "5f7405cb1f040686b07515f2bde89deb2b1e0b7e7b7c70016403b217b5639b96",
+      "mtime_ns": 1789999347572273500
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d03_r08.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d03_r08.pac",
+      "bytes": 378863616,
+      "sha256": "633b5a542e7a878a8a836d17feeb2d0a3ee0c07ea5251294f1e608d6d717b902",
+      "mtime_ns": 1789989952030520400
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08.abq",
+      "bytes": 1674801152,
+      "sha256": "2cb4533c97358528f3e36159dcd17383a53336a77bb2cc526d90265f37219a32",
+      "mtime_ns": 1789982805095307700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08.odb",
+      "bytes": 439438888,
+      "sha256": "86763baab985dff2f59595be38b9ae66056b82bfd0151c10e16e8a3b0c1ea367",
+      "mtime_ns": 1789982805560758900
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08.pac",
+      "bytes": 379052032,
+      "sha256": "789c5f0d8d4c07001d390c74d61d67382525249e23676f79ccd0d7aa17913ed2",
+      "mtime_ns": 1789970561109688600
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08_r31.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08_r31.abq",
+      "bytes": 1674407936,
+      "sha256": "85407b63f589d250a810e19f9990c6659645b281131030dc75959e2494b9613f",
+      "mtime_ns": 1789999271414621100
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08_r31.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08_r31.odb",
+      "bytes": 437508976,
+      "sha256": "f889d12f165d805290e7b4130e604acb2c89663240ac424b193e40c77b585f80",
+      "mtime_ns": 1789999271765866500
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/wav_d08_r31.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\wav_d08_r31.pac",
+      "bytes": 379052032,
+      "sha256": "e69f0f86fe73c195244ec9b67e1136b49f2f5f533ad05cd4ae8da2390dfffb84",
+      "mtime_ns": 1789989952047098500
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n01.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n01.abq",
+      "bytes": 2063978496,
+      "sha256": "3cf59cd81ef2384d9a32485a57d2c68695d947eb41558723474e4997bb3150f4",
+      "mtime_ns": 1790072506881182600
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n01.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n01.odb",
+      "bytes": 2231721572,
+      "sha256": "e31118a77b24f99ece80df5cc2cabc6d8c0f96b79578660cfd359b681dc8990f",
+      "mtime_ns": 1790072507217345300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n01.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n01.pac",
+      "bytes": 393846784,
+      "sha256": "00d26373c5bc77414e713cbf44b91e3002ee924dd0d3f3b825c9ba0b074cccef",
+      "mtime_ns": 1790055851369325700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n01.stt",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n01.stt",
+      "bytes": 117540900,
+      "sha256": "d6f72d56d077a2f3a0683258d4baf41f0ac42c2e97318bff583abf4a42c15d7d",
+      "mtime_ns": 1790055848660716600
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02.abq",
+      "bytes": 4402044928,
+      "sha256": "00b8f08df01c0b7b924b06c0121dcb275d71d5a175306e4a81cffa06c10db047",
+      "mtime_ns": 1790179087972970000
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02.odb",
+      "bytes": 2231708976,
+      "sha256": "34428ee066f84784075939f51291dc41bb92141b98bafa41f2049fe029c07d33",
+      "mtime_ns": 1790179088264159300
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02.pac",
+      "bytes": 904978432,
+      "sha256": "ac9aa87b8446ff7863aa92675639fa10fb382b20b6975d89d460132296e74b2a",
+      "mtime_ns": 1790163375803030900
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02.stt",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02.stt",
+      "bytes": 115975780,
+      "sha256": "63a7ec40961318285e776228f2f7c73a3b9720863a34d7e2e82e0ab7351139a9",
+      "mtime_ns": 1790163371642453800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_prepare.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_prepare.abq",
+      "bytes": 4402044928,
+      "sha256": "c6c66cb31ae0278c80e213e5a8d6e15530dcaa2a045af12fe838c81d230b4ef5",
+      "mtime_ns": 1790163321108381100
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_prepare.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_prepare.odb",
+      "bytes": 978099016,
+      "sha256": "84741e1292d580a8bffc56a25ab59f5f9277de0a5a4ec9b198770bea62a5c87c",
+      "mtime_ns": 1790163321385499800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_prepare.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_prepare.pac",
+      "bytes": 777195520,
+      "sha256": "b4021a540ffd38fb389914a1f325aa4e100b8dff70c76c09f27203b54192e1a3",
+      "mtime_ns": 1790158438053706800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_prepare.stt",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_prepare.stt",
+      "bytes": 115975780,
+      "sha256": "0003ff2fa200bd1eabfa44f2bb3501aff1a9fa0ca67687e978d80efd0448f860",
+      "mtime_ns": 1790158433272342200
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_relax1.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_relax1.abq",
+      "bytes": 2575384576,
+      "sha256": "ca3956e8b70fc7c7578d36bc8f5565fa1cbb0a8acab8b30262eb63017a6dee56",
+      "mtime_ns": 1790158395499130600
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_relax1.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_relax1.odb",
+      "bytes": 496143612,
+      "sha256": "57eb7c79212ed0f3049b1bebea744a6467cbb9148a545e3f3b74d58c0b202aa8",
+      "mtime_ns": 1790158395833905700
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_relax1.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_relax1.pac",
+      "bytes": 521629696,
+      "sha256": "5d06693d36802bd17685b8131ad7b475f9840e752131fee85ecc809a68e46196",
+      "mtime_ns": 1790141985611134200
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/acc_n02_relax1.stt",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\acc_n02_relax1.stt",
+      "bytes": 115975780,
+      "sha256": "9bdc806de6675ab23ab5f2db7a23de99c8d79c2f54584d5581f4c173404ab8c5",
+      "mtime_ns": 1790141981460571100
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/interrupted_20260923_133902/acc_n02_relax1.abq",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\interrupted_20260923_133902\\acc_n02_relax1.abq",
+      "bytes": 2063978496,
+      "sha256": "e889aaa3ad303c4cb7a500821ccee82051a1cb706e9698473bd0ea1cdafc986c",
+      "mtime_ns": 1790072565657996200
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/interrupted_20260923_133902/acc_n02_relax1.odb",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\interrupted_20260923_133902\\acc_n02_relax1.odb",
+      "bytes": 322961408,
+      "sha256": "bcf1ec1c052573bb9e77c4cf9c951ec340785d44a883285c775e93d31cc08391",
+      "mtime_ns": 1790082771856650200
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/interrupted_20260923_133902/acc_n02_relax1.pac",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\interrupted_20260923_133902\\acc_n02_relax1.pac",
+      "bytes": 521629696,
+      "sha256": "5d06693d36802bd17685b8131ad7b475f9840e752131fee85ecc809a68e46196",
+      "mtime_ns": 1790072551590880800
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/interrupted_20260923_133902/acc_n02_relax1.stt",
+      "absolute_path": "D:\\bs_thesis\\simulation_reproduction\\impact_wave_3d\\abaqus\\runs\\impact\\accum_030j_3\\interrupted_20260923_133902\\acc_n02_relax1.stt",
+      "bytes": 115975780,
+      "sha256": "9bdc806de6675ab23ab5f2db7a23de99c8d79c2f54584d5581f4c173404ab8c5",
+      "mtime_ns": 1790072546334207900
+    }
+  ]
+}
