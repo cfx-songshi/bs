@@ -3,7 +3,7 @@
 SSH authorization and signed URLs stay in memory and are never printed/saved.
 This checks server availability, not a full re-download of all binary payloads.
 """
-import datetime,json,subprocess,sys,urllib.request
+import datetime,json,subprocess,sys,urllib.request,time
 from pathlib import Path
 
 items=json.loads(subprocess.check_output(['git','lfs','ls-files','--json']))['files']
@@ -18,7 +18,13 @@ for start in range(0,len(values),100):
     req=urllib.request.Request(auth['href'].rstrip('/')+'/objects/batch',
         data=json.dumps({'operation':'download','transfers':['basic'],'objects':batch}).encode(),
         headers={**auth.get('header',{}),'Content-Type':'application/vnd.git-lfs+json','Accept':'application/vnd.git-lfs+json'})
-    with urllib.request.urlopen(req,timeout=30) as response:data=json.load(response)
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req,timeout=60) as response:data=json.load(response)
+            break
+        except Exception:
+            if attempt==2:raise RuntimeError('Remote LFS batch unavailable after three attempts') from None
+            time.sleep(2)
     received={o['oid']:o for o in data.get('objects',[])}
     for expected in batch:
         obj=received.get(expected['oid'],{})

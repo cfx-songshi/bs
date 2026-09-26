@@ -774,3 +774,12 @@ Set-Location '.\comparison'
 ### 后续更新：2026-09-26 大文件归档上云并清理本地原件
 
 107 个大型原始求解文件共 87.350 GiB，已无损分块去重压缩为 11.253 GiB（3579 块），上传至 `archives/solver_archive_20260924/`，归档提交 `91a8bdd1be11b6b38eb45d520b32bef35e9b1ae9`。从远端实际重新下载全部压缩块后，逐块及逐原文件 SHA-256 校验全部通过；随后再次比对本地 107 个原件哈希，才删除对应原件。完整记录见 `review/cloud_sync_20260924/solver_archive_remote_verification.json`、`solver_original_cleanup_receipt.json`。报告、35 个 GIF、代码、输入及其他小型输出保留。需查看原始 ODB 或续算时，先按归档 README 下载 LFS 对象并还原；紧凑报告不替代原始数据。原始文件虽已完整备份，模型未收敛/替代参数/缺少实验验证等科学局限不变。本次没有启动新仿真或执行关机。
+
+
+### 后续更新：2026-09-26 清理已备份的本地仿真副本和缓存
+
+用户授权删除已总结、已上传的仿真过程文件。本次远端认证检查 4546 个 LFS 对象均可下载；对工作目录逐文件 SHA256 比对后，681 个小型求解输出和 3579 个压缩分块的本地二进制内容已替换为 Git LFS 指针，未删除云端路径。Git LFS prune 验证后删除 4546 个本地缓存对象，保留 1 个远端未找到的对象。合计清理约 33.01 GiB（按载荷及缓存对象大小计）。报告、35 个 GIF、代码、输入均保留。逐文件记录见 `review/cloud_sync_20260924/local_payload_eviction.json`。
+
+尚未清理：`.git/solver_remote_verify` 的 11.253 GiB 校验临时副本，其递归删除被自动审批策略拒绝，仅返回 blocked by policy，没有具体原因；没有绕过限制。`D:/abaqus_runs` 的原始数据不在此次已验证归档范围内，因此仍保留。
+
+注意当前 `.odb/.abq` 等路径可能只有约 130 字节的 LFS 指针，不能直接用 Abaqus 打开。需要时执行 `git lfs pull --include="所需的仓库相对路径"` 下载；107 个已归档大原件仍须按 `archives/solver_archive_20260924/README.md` 还原。使用者不应把小指针文件误判为损坏仿真结果。
