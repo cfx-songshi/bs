@@ -1,0 +1,284 @@
+{
+  "remote_commit": "049c8a67a7111dacdda0c0bcb23ef683e650c5ef",
+  "checked_at": "2026-10-01T01:42:00.756108+08:00",
+  "method": "Independent full HTTP download and SHA-256, no local cache fallback",
+  "files": [
+    {
+      "path": "simulation_reproduction/guided_wave_3d/abaqus_line1000_c3d8_surface.npz",
+      "oid": "f11ca424ea159e27bdd69fc5bdb385796cb8ade39aa0b567f55f807e61a0add4",
+      "bytes": 779318,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_3d/abaqus_line1000_c3d8r_surface.npz",
+      "oid": "f8ccaee6b4eb606991127f002dac89ef3b76dfc3aa36f0686662146419b608dc",
+      "bytes": 778605,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_3d/abaqus_line500_c3d8_surface.npz",
+      "oid": "a5cca61e2bf78636ab4953e256038424a2ce2b0d5a71a8d8dfc707f99644a481",
+      "bytes": 389971,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_3d/abaqus_line500_c3d8r_dp_surface.npz",
+      "oid": "9711b03c1f85c97586566cb370f2fba8cbc9cc4ddbbe8f016205933406bdc58c",
+      "bytes": 399151,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_3d/out_line_1000x4x8/wavefield.npz",
+      "oid": "db98b5f5682372e74b3163878b258f1bc5efb0793a5a94173059c4a8333f41b7",
+      "bytes": 810950,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_3d/out_line_1000x4x8_abaqusdt/wavefield.npz",
+      "oid": "cb8b5f91c24abdcd63d5cae9ae396ad8859a59b7d81ef6209079319f7616f640",
+      "bytes": 789153,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_3d/out_line_500x4x4/wavefield.npz",
+      "oid": "577159c19619d7ab94ac53321207b81c91cf61ca56643c3cd21d2ad8ad20285f",
+      "bytes": 409068,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_3d/out_line_abaqusdt/wavefield.npz",
+      "oid": "1c7e396e3c9f88820b3ab5489d56a57eb3865c758fec3dd4b3c2c0cc19dd23f4",
+      "bytes": 398281,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_3d/out_line_ehgdt/wavefield.npz",
+      "oid": "21ddcae4e1a2b53e96698c67d318b7dc3352a04fe68cb96ffa6b39f369896ed5",
+      "bytes": 414187,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_3d/out_point_400/wavefield.npz",
+      "oid": "c2eddb55794d869d326d23d0e56c8e5eb84eac9f3b3770a4f615f4e1a6b68b8f",
+      "bytes": 103611813,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_v2/1000_8_damage.npz",
+      "oid": "2d87f45522bb3bf95e71f3f13d544d17f3f4d57a655e010347e54dd2ca162946",
+      "bytes": 444339,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_v2/1000_8_healthy.npz",
+      "oid": "ce13049af4c8546e8c7342a233b7bfd5c8700fb111df8b17bf6a4dbd5461db65",
+      "bytes": 444545,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_v2/2000_16_damage.npz",
+      "oid": "fc90e8ef018af22190673bed83a93789aace188cbe772c96ba400ee4c4a4f398",
+      "bytes": 451453,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_v2/2000_16_healthy.npz",
+      "oid": "970410470b001dcf00996e63b5c788c41e437692b538349f72c0b96da593c9ad",
+      "bytes": 451713,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_v2/4000_32_damage.npz",
+      "oid": "34b3c89b07f4811871833c688552bd71425e0e7072f5b54bf3a9350caacc9fa9",
+      "bytes": 444422,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/guided_wave_v2/4000_32_healthy.npz",
+      "oid": "8fdbd78733152cdf409895a819a96576ed8d3009482aa1053f85025e2dddf1b7",
+      "bytes": 444569,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/impact_3d_v1/study_3d/submodel/contact_patch.npz",
+      "oid": "0da46ef04e1603da8384c6c5997a31f2c12ab39a3efa519d09d978ec1ec95f5c",
+      "bytes": 5592,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/impact_wave_3d/abaqus/runs/impact/accum_030j_3/animation/first_impact.npz",
+      "oid": "ae7d4960834ba3ddda9163e074eb916eda07df5191c5de578566988034cb6c00",
+      "bytes": 6296159,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/results/ae_dataset.npz",
+      "oid": "701f8ce315a3ce648580b4a8e0c1679dd4c3c800903929243efa500774338530",
+      "bytes": 1570686,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/results/cnn_DANN_seed0_k8.pt",
+      "oid": "61b8d901a01eb6f284f3204840b65729d588ab91a3dc7c6d41b6062abed8a7d2",
+      "bytes": 5865103,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/results/cnn_pooled_seed0_k8.pt",
+      "oid": "cf8db6c98e9e9c87599af75740cb3645e4464faacb62649ce929865cddca2b76",
+      "bytes": 5865147,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/results/cnn_target_only_seed0_k8.pt",
+      "oid": "aed1c3450cd0465e64d069fcb365de1f86c0ca587247fbafae53918d6313119d",
+      "bytes": 5865321,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/results/faults_traces.npz",
+      "oid": "3d6f59c1f41a5b599cca42b8b082ff23081f987d70263d1c76d008904a22eb88",
+      "bytes": 375799,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/results/gear_example_waveforms.npz",
+      "oid": "05c8e1d29d84afd3cdf0c57691183942f15658e05a4ad281118d713fd34dd085",
+      "bytes": 723901,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/results/joint_surrogates.npz",
+      "oid": "60484f8f17ef4db388c3c98ce26e77d12e868c47dc9373a87d417d5576364812",
+      "bytes": 48516,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/results/plate_waveforms.npz",
+      "oid": "b0c6d05511ba6d8b73d74c8bfb98227395161ea95ea1dae88a6fd927fcb81c42",
+      "bytes": 10731,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/results/transfer_dataset_seed0.npz",
+      "oid": "3c0ed5b3f5bca8b424410d5d6e2f3ea749093928bcccbdb01c49d5e4c556ec07",
+      "bytes": 1917649,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/results/transfer_dataset_seed1.npz",
+      "oid": "f16883d5f13a2dcfa6f4046485455a9aee3cfcd4dab7055c2297238e2a76d8f6",
+      "bytes": 1916700,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/results/transfer_dataset_seed2.npz",
+      "oid": "f2fe1b382b1ee4f0162bfb9010e2bbbc5269bb50e7b20151569c983cb16b3fbf",
+      "bytes": 1917401,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/clamp10mm/fields.npz",
+      "oid": "991586f39c19053ca119b5d01c94ebfa071fa5aeb818f81f74c8789b75f542aa",
+      "bytes": 548886,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/clamp30mm/fields.npz",
+      "oid": "452012f15a65226e5752981a732e1a15f18004173d6c70185c4cc4219b8ece05",
+      "bytes": 594588,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/contact050/fields.npz",
+      "oid": "4e2298c53f2036bcbbcfdf04fe6fed379fe763cb7af11fcaf59d7ad008612583",
+      "bytes": 560160,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/contact200/fields.npz",
+      "oid": "4d18ca5a32f82cb3892033ff3fabb9abfe50843db7544f254fc5a56fb00372c4",
+      "bytes": 562318,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/finest_halfdt/fields.npz",
+      "oid": "71932df48ef8581301b22883b1842b7c303c144f79f453dcc06c381a13eb3c82",
+      "bytes": 646206,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/halfdt/fields.npz",
+      "oid": "c49322d8833f0543fa94567015356a16db4a91a5c970c4f8c056fe4d7b9ce848",
+      "bytes": 561131,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/offcentre/fields.npz",
+      "oid": "f34e177d1b88e2a6458dc96e88bc3d648b7bc558f13f54c6a0bf28256642abb5",
+      "bytes": 772699,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/order10/fields.npz",
+      "oid": "3083520d57c80c121163731160b71b96e8a231d0d4a753c1b8520cd7edc30155",
+      "bytes": 515644,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/order14/fields.npz",
+      "oid": "2daa9331d315b64530d505c274b14653264c7b780f1080baad40427a567358a8",
+      "bytes": 511470,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/order18/fields.npz",
+      "oid": "0595d0820f04a51f87bc64ea7f7297f3f9ed32e9c853aae03ea99b507333d4db",
+      "bytes": 542256,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/order22/fields.npz",
+      "oid": "b5f060e0b596d120f9b5a9d7eda5e1e1a3213d00e70255f90d7a1cad381a5ac5",
+      "bytes": 561223,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/order30/fields.npz",
+      "oid": "fefa79b3d1f3c4f3cd70a7357e2d875baf60eede225adc0dae36726562eb5d69",
+      "bytes": 591771,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/order38/fields.npz",
+      "oid": "eef0dea68fc94baac232616f872dd80369e227447f93b5862d1bc2ea41480cc0",
+      "bytes": 622431,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/order46/fields.npz",
+      "oid": "a3123a95de1146f8b9364b18bc6b22d663629852273488ae13de26ceac127880",
+      "bytes": 646304,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/order6/fields.npz",
+      "oid": "f1e524c436274028e692dc55640a84d36728744973607a69c3c9d6eb54ea97b3",
+      "bytes": 453349,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/stiffness075/fields.npz",
+      "oid": "a1903093fd9bdd5ac3393f4440a5c2cc8d342b7e151dbcb56cf3c6349dd142d0",
+      "bytes": 572425,
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/study_final/stiffness125/fields.npz",
+      "oid": "02c9757de8b0c619497283acd9def67ebd5b285d20ab5bc4b3b7a36e2a56758f",
+      "bytes": 565959,
+      "verified": true
+    }
+  ],
+  "all_verified": true
+}
