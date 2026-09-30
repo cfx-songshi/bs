@@ -1,0 +1,97 @@
+{
+  "compiled_at": "2026-10-01T00:06:22.404102",
+  "timezone": "Asia/Shanghai",
+  "scope": "Diaz Part II Fig.5 result snapshot",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 98,
+      "sha256": "965888c309ee0431dff2cea07839a5bf47f58a64de402d6879284f15f79bc896"
+    },
+    {
+      "path": "evidence/match_paper_c0_run.json",
+      "bytes": 100462,
+      "sha256": "9ae21e30f09d4298622b9a8a06d1e9086cda0c3308714534b4c8b3729eaa03c6"
+    },
+    {
+      "path": "evidence/match_paper_run.json",
+      "bytes": 79246,
+      "sha256": "a1fb8600631dfa8bbf69b5872bd44f908ab4cb8ca4f94b3fb666d1cbae5fea6b"
+    },
+    {
+      "path": "evidence/repair_comparison.json",
+      "bytes": 6414,
+      "sha256": "6a07f235312e15e5a1a34574db48a1b855b49c69e74dd15bf9eab15f0ba7c888"
+    },
+    {
+      "path": "evidence/repair_moving_1e3_n100.json",
+      "bytes": 123847,
+      "sha256": "b06c3b4efad10dedde94990442dbe64fa5bdc115432301138a1270095ea33781"
+    },
+    {
+      "path": "evidence/repair_moving_1e3_pm_c05_n1000.json",
+      "bytes": 238718,
+      "sha256": "312cbd6ed8c53cb29391ce6d8df58d8ad20d599860dfd0744eec4ddde0691c65"
+    },
+    {
+      "path": "evidence/repair_moving_1e3_pm_c10_n1000.json",
+      "bytes": 149500,
+      "sha256": "a825f61cca94128e9091d04946ec9d914c840c981848378a3336288994f9eae2"
+    },
+    {
+      "path": "evidence/repair_moving_1e3_pm_n100.json",
+      "bytes": 133377,
+      "sha256": "2ad23357cd752b91a02e56b090c6cb64665c71d1042546277a4f4baec575af9a"
+    },
+    {
+      "path": "evidence/repair_moving_1e3_pm_n1000.json",
+      "bytes": 238071,
+      "sha256": "e7257a0f64dc640d396ad8e7a27d4db7d525a918b952b020126edea7bff9b576"
+    },
+    {
+      "path": "evidence/repair_moving_1e5_n100.json",
+      "bytes": 636,
+      "sha256": "5908ea658ac329e710a56975e3666bc4be91aa0dc2c71d5d0e978b2da23236f5"
+    },
+    {
+      "path": "evidence/repair_moving_1e5_pm_n100.json",
+      "bytes": 136008,
+      "sha256": "7e1712e3f5d8cb0ede193e92c8ca8e563c781f7624a753794da1c627073d486e"
+    },
+    {
+      "path": "evidence/repair_old_aligned_c0.json",
+      "bytes": 206752,
+      "sha256": "396d1860879e37cbacec331a29a49743731a0e4eecff974d2737710641c96b1e"
+    },
+    {
+      "path": "evidence/repair_old_aligned_h.json",
+      "bytes": 233341,
+      "sha256": "177425204b416fea88b20da230720a4564368144c5fc710a8153ae98fdc4d841"
+    },
+    {
+      "path": "evidence/repair_validation.json",
+      "bytes": 14434,
+      "sha256": "ccaa6eb5af9bb1a539ca55fdf1345db73c5f46c4bbad065ff588c9f7bf6297ea"
+    },
+    {
+      "path": "evidence/temperature_scaling_diagnostic.json",
+      "bytes": 2744,
+      "sha256": "8f42dfb23c4c76e56263b87a4292247a27f3530d0936aa44efeb55e346f8b564"
+    },
+    {
+      "path": "fig5_repair_comparison.png",
+      "bytes": 228745,
+      "sha256": "4dbca44cfdf6471dffee93db74b4e15abde3a03ddc091cc035740e847b8821a7"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8251,
+      "sha256": "3d059560fc1ccaab4765ee9d47c72b12a97afcf1e20f251f3a5d3acfc7c1446a"
+    },
+    {
+      "path": "report.html",
+      "bytes": 314493,
+      "sha256": "e50b52889a4aa6d9e4858892ca67da8bb31aa3f4e4a59ff33f64ebe7ca818e7c"
+    }
+  ]
+}

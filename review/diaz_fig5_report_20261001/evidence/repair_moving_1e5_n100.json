@@ -1,0 +1,22 @@
+{
+  "job": {
+    "id": "moving_1e5_n100",
+    "mode": "solve",
+    "Cwppm": 0.1,
+    "T": 293,
+    "kmov": 100000,
+    "meshdiv": 5,
+    "order": 3,
+    "pressure": "solid.pGp",
+    "outputs": 1000,
+    "divisions": 100,
+    "rtol": 0.005,
+    "passes": 1,
+    "save": true
+  },
+  "solve_ok": false,
+  "complete": false,
+  "status": "operator_stopped_numerical_stagnation",
+  "reason": "Dozens of accepted submillisecond steps at approximately t=2.9833e7 s; shrinking dt. Unsaved trial stopped to revise numerical strategy. Not a solver-declared failure.",
+  "solver_log": "logs/repair_moving_1e5_n100_solver.log"
+}

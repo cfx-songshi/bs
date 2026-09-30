@@ -1,0 +1,78 @@
+{
+  "method": "Analytical uniform-concentration scaling of the existing no-H response; not a hydrogen transport solve. The same absolute time increment may break exact discrete scaling.",
+  "constants": {
+    "Mm_g_mol": 55.845,
+    "MH_g_mol": 1.008,
+    "delta_g_J_mol": 30000,
+    "R_J_mol_K": 8.314462618,
+    "Xi": 0.89
+  },
+  "rows": [
+    {
+      "Cwppm": 0.1,
+      "T_K": 293,
+      "coverage_uniform": 0.5525778512149138,
+      "Gc_ratio_uniform": 0.5082057124187267,
+      "estimated_uniform_peak_N": 507.61269463596057,
+      "estimated_uniform_peak_um": 3.902335136040512,
+      "paper_peak_N": 534.8249515004626,
+      "paper_peak_um": 4.128862360988274,
+      "estimated_peak_error_pct": -5.088067934780804
+    },
+    {
+      "Cwppm": 0.1,
+      "T_K": 300,
+      "coverage_uniform": 0.4809471498739553,
+      "Gc_ratio_uniform": 0.5719570366121798,
+      "estimated_uniform_peak_N": 538.510786950446,
+      "estimated_uniform_peak_um": 4.139868027848727,
+      "paper_peak_N": 534.8249515004626,
+      "paper_peak_um": 4.128862360988274,
+      "estimated_peak_error_pct": 0.6891666964382814
+    },
+    {
+      "Cwppm": 0.5,
+      "T_K": 293,
+      "coverage_uniform": 0.8606296734616478,
+      "Gc_ratio_uniform": 0.2340395906191335,
+      "estimated_uniform_peak_N": 344.4747299268246,
+      "estimated_uniform_peak_um": 2.6481919311248903,
+      "paper_peak_N": 368.9972375636146,
+      "paper_peak_um": 2.8521701964692254,
+      "estimated_peak_error_pct": -6.645715777902639
+    },
+    {
+      "Cwppm": 0.5,
+      "T_K": 300,
+      "coverage_uniform": 0.8224725104217349,
+      "Gc_ratio_uniform": 0.26799946572465594,
+      "estimated_uniform_peak_N": 368.6206559049791,
+      "estimated_uniform_peak_um": 2.833816712247357,
+      "paper_peak_N": 368.9972375636146,
+      "paper_peak_um": 2.8521701964692254,
+      "estimated_peak_error_pct": -0.10205541405186036
+    },
+    {
+      "Cwppm": 1,
+      "T_K": 293,
+      "coverage_uniform": 0.9250950747877422,
+      "Gc_ratio_uniform": 0.17666538343890936,
+      "estimated_uniform_peak_N": 299.28740012221476,
+      "estimated_uniform_peak_um": 2.300808765448073,
+      "paper_peak_N": 318.4454649646703,
+      "paper_peak_um": 2.465556146713673,
+      "estimated_peak_error_pct": -6.016121110275819
+    },
+    {
+      "Cwppm": 1,
+      "T_K": 300,
+      "coverage_uniform": 0.9025897572868281,
+      "Gc_ratio_uniform": 0.196695116014723,
+      "estimated_uniform_peak_N": 315.7980846525338,
+      "estimated_uniform_peak_um": 2.4277366871560817,
+      "paper_peak_N": 318.4454649646703,
+      "paper_peak_um": 2.465556146713673,
+      "estimated_peak_error_pct": -0.8313449564842146
+    }
+  ]
+}

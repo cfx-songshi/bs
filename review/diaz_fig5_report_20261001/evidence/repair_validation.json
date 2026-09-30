@@ -1,0 +1,610 @@
+[
+  {
+    "id": "moving_1e3_n100",
+    "source": "repair_moving_1e3_n100.json",
+    "issues": [],
+    "complete": false,
+    "last_displacement_um": 3.01253258467917,
+    "observed_peak_N": 399.42370414513897,
+    "final_load_fraction_of_observed_peak": 1.0,
+    "C_min_all": [
+      0.7807522008692521,
+      0.780753968253968
+    ],
+    "C_max_all": [
+      0.7807549903293479,
+      1.9587425629850441
+    ],
+    "phi_min_all": [
+      7.327889025731076e-17,
+      5.080103022666971e-08
+    ],
+    "phi_max_all": [
+      3.976248245703604e-10,
+      0.5526866933032629
+    ],
+    "coverage_min_all": [
+      0.5525772914934879,
+      0.5525778511588003
+    ],
+    "coverage_max_all": [
+      0.5525781748115977,
+      0.7560030518003013
+    ],
+    "Gc_min_all": [
+      1372.154645927731,
+      883.3246665238762
+    ],
+    "Gc_max_all": [
+      1372.1567685411487,
+      1372.1554236654026
+    ],
+    "phi_outside_0_1": [
+      0.0,
+      0.0
+    ],
+    "moving_boundary_line_check_at_observed_peak": {
+      "0.5": {
+        "points": 4,
+        "C_over_C0_range": [
+          0.999998690914059,
+          1.8779640040705423
+        ]
+      },
+      "0.9": {
+        "points": 0,
+        "C_over_C0_range": null
+      },
+      "0.95": {
+        "points": 0,
+        "C_over_C0_range": null
+      }
+    },
+    "internal_probe_observed_peak_N": 400.1359868322657,
+    "output_peak_vs_probe_peak_pct": -0.17801015418923427,
+    "status": "partial"
+  },
+  {
+    "id": "moving_1e3_pm_c05_n1000",
+    "source": "repair_moving_1e3_pm_c05_n1000.json",
+    "issues": [],
+    "complete": true,
+    "last_displacement_um": 7.0,
+    "observed_peak_N": 338.26524540365125,
+    "final_load_fraction_of_observed_peak": 0.0020272595793331626,
+    "C_min_all": [
+      3.903767213140054,
+      3.8778457567301197,
+      3.902319556081005
+    ],
+    "C_max_all": [
+      3.903779622434507,
+      5.5648714064638085,
+      3.9040906185959674
+    ],
+    "phi_min_all": [
+      1.591215850081195e-18,
+      7.679532431856724e-08,
+      6.816969931080858e-08
+    ],
+    "phi_max_all": [
+      8.63423463914778e-12,
+      0.8063639248279667,
+      1.004213886939622
+    ],
+    "coverage_min_all": [
+      0.8606295926831307,
+      0.8598285580324534,
+      0.8605850980886626
+    ],
+    "coverage_max_all": [
+      0.8606299739673526,
+      0.8979875055478606,
+      0.8606395288599443
+    ],
+    "Gc_min_all": [
+      631.9061725564517,
+      542.136024168491,
+      631.8832121495537
+    ],
+    "Gc_max_all": [
+      631.907088782437,
+      633.8319750480146,
+      632.0140092929437
+    ],
+    "phi_outside_0_1": [
+      0.0,
+      0.004213886939621991
+    ],
+    "moving_boundary_line_check_at_observed_peak": {
+      "0.5": {
+        "points": 10,
+        "C_over_C0_range": [
+          0.9999974944372858,
+          1.0362982110762209
+        ]
+      },
+      "0.9": {
+        "points": 0,
+        "C_over_C0_range": null
+      },
+      "0.95": {
+        "points": 0,
+        "C_over_C0_range": null
+      }
+    },
+    "internal_probe_observed_peak_N": 338.26569305714685,
+    "output_peak_vs_probe_peak_pct": -0.00013233783525690157,
+    "status": "complete"
+  },
+  {
+    "id": "moving_1e3_pm_c10_n1000",
+    "source": "repair_moving_1e3_pm_c10_n1000.json",
+    "issues": [
+      "Stored solver or postprocessing error; inspect source JSON",
+      "Solver did not report success"
+    ],
+    "recovery_join_samples": {
+      "time_s": [
+        17360000.0,
+        17430000.0,
+        17500000.0,
+        17570000.0,
+        17640000.0
+      ],
+      "displacement_um": [
+        1.736,
+        1.743,
+        1.75,
+        1.757,
+        1.764
+      ],
+      "force_N": [
+        232.39767032749788,
+        233.27588961428762,
+        234.15507345590584,
+        235.02829124454112,
+        235.9046765573171
+      ]
+    },
+    "complete": false,
+    "last_displacement_um": 2.583005604541603,
+    "observed_peak_N": 296.52298886911586,
+    "final_load_fraction_of_observed_peak": 0.0014304921243204435,
+    "C_min_all": [
+      7.807534426280108,
+      7.762254491383173,
+      6.857221301347505
+    ],
+    "C_max_all": [
+      7.8075592448690125,
+      10.695274121091968,
+      7.971985009589585
+    ],
+    "phi_min_all": [
+      2.1079823273784033e-18,
+      7.841160809107494e-08,
+      6.935788589651253e-08
+    ],
+    "phi_max_all": [
+      1.1438305352361727e-11,
+      0.8000896015078673,
+      1.002882388448143
+    ],
+    "coverage_min_all": [
+      0.925095028121159,
+      0.924690987354516,
+      0.915590501623372
+    ],
+    "coverage_max_all": [
+      0.9250952483929549,
+      0.9441907692370619,
+      0.92652668030472
+    ],
+    "Gc_min_all": [
+      476.9961181117294,
+      431.1095815233403,
+      473.5563872277579
+    ],
+    "Gc_max_all": [
+      476.99664742485504,
+      477.96755738709794,
+      499.83602459903705
+    ],
+    "phi_outside_0_1": [
+      0.0,
+      0.002882388448143036
+    ],
+    "moving_boundary_line_check_at_observed_peak": {
+      "0.5": {
+        "points": 10,
+        "C_over_C0_range": [
+          0.999997494437286,
+          1.0425851509998545
+        ]
+      },
+      "0.9": {
+        "points": 0,
+        "C_over_C0_range": null
+      },
+      "0.95": {
+        "points": 0,
+        "C_over_C0_range": null
+      }
+    },
+    "internal_probe_observed_peak_N": 296.5231224569197,
+    "output_peak_vs_probe_peak_pct": -4.50513952143794e-05,
+    "status": "evidence_error"
+  },
+  {
+    "id": "moving_1e3_pm_n100",
+    "source": "repair_moving_1e3_pm_n100.json",
+    "issues": [],
+    "complete": false,
+    "last_displacement_um": 4.498417115288762,
+    "observed_peak_N": 524.2557180588637,
+    "final_load_fraction_of_observed_peak": 0.15541982464547435,
+    "C_min_all": [
+      0.7807487121073943,
+      0.7371251574377541,
+      0.6500230265279315
+    ],
+    "C_max_all": [
+      0.780773531026024,
+      1.3375249002304364,
+      1.2050884465096814
+    ],
+    "phi_min_all": [
+      7.32788902000192e-17,
+      7.753025722152288e-08,
+      7.066637385405184e-08
+    ],
+    "phi_max_all": [
+      3.9762594858417187e-10,
+      1.0006387251819653,
+      1.0032452915882915
+    ],
+    "coverage_min_all": [
+      0.5525761867276492,
+      0.5383220448396809,
+      0.5069594220094833
+    ],
+    "coverage_max_all": [
+      0.5525840458709934,
+      0.6790496467306006,
+      0.6559144252973377
+    ],
+    "Gc_min_all": [
+      1372.1405377720027,
+      1068.2436989063667,
+      1123.8376360104976
+    ],
+    "Gc_max_all": [
+      1372.159423293459,
+      1406.4121262502467,
+      1481.7765089112117
+    ],
+    "phi_outside_0_1": [
+      0.0,
+      0.0032452915882914546
+    ],
+    "moving_boundary_line_check_at_observed_peak": {
+      "0.5": {
+        "points": 29,
+        "C_over_C0_range": [
+          0.9999749443708341,
+          1.1451955759018102
+        ]
+      },
+      "0.9": {
+        "points": 15,
+        "C_over_C0_range": [
+          0.9999749443708341,
+          1.0036897369627797
+        ]
+      },
+      "0.95": {
+        "points": 13,
+        "C_over_C0_range": [
+          0.9999749443708341,
+          1.0029881098943183
+        ]
+      }
+    },
+    "internal_probe_observed_peak_N": 524.2856350918122,
+    "output_peak_vs_probe_peak_pct": -0.005706246928394165,
+    "status": "partial"
+  },
+  {
+    "id": "moving_1e3_pm_n1000",
+    "source": "repair_moving_1e3_pm_n1000.json",
+    "issues": [],
+    "complete": true,
+    "last_displacement_um": 7.0,
+    "observed_peak_N": 490.8411736079656,
+    "final_load_fraction_of_observed_peak": 0.0018628003182343668,
+    "C_min_all": [
+      0.7807534426280108,
+      0.7730815674197651,
+      0.7800472808504977
+    ],
+    "C_max_all": [
+      0.7807559244869013,
+      1.2843610452102032,
+      0.7811186155172388
+    ],
+    "phi_min_all": [
+      7.3278890229222825e-19,
+      7.449548720635305e-08,
+      6.58057358398676e-08
+    ],
+    "phi_max_all": [
+      3.976249500456409e-12,
+      0.7682888433657145,
+      1.0028726738471867
+    ],
+    "coverage_min_all": [
+      0.5525776847126641,
+      0.5501350240010159,
+      0.5523539577171316
+    ],
+    "coverage_max_all": [
+      0.5525784706237195,
+      0.6701466331032635,
+      0.5526932915109745
+    ],
+    "Gc_min_all": [
+      1372.1539350912021,
+      1089.6376406528577,
+      1371.8780204991283
+    ],
+    "Gc_max_all": [
+      1372.155823635468,
+      1378.025537325559,
+      1372.693439605733
+    ],
+    "phi_outside_0_1": [
+      0.0,
+      0.002872673847186702
+    ],
+    "moving_boundary_line_check_at_observed_peak": {
+      "0.5": {
+        "points": 10,
+        "C_over_C0_range": [
+          0.9999974944372858,
+          1.137817996005886
+        ]
+      },
+      "0.9": {
+        "points": 0,
+        "C_over_C0_range": null
+      },
+      "0.95": {
+        "points": 0,
+        "C_over_C0_range": null
+      }
+    },
+    "internal_probe_observed_peak_N": 490.841277705572,
+    "output_peak_vs_probe_peak_pct": -2.1207997602523676e-05,
+    "status": "complete"
+  },
+  {
+    "id": "moving_1e5_n100",
+    "source": "repair_moving_1e5_n100.json",
+    "issues": [
+      "operator_stopped_numerical_stagnation"
+    ],
+    "status": "no_curve"
+  },
+  {
+    "id": "moving_1e5_pm_n100",
+    "source": "repair_moving_1e5_pm_n100.json",
+    "issues": [
+      "Stored solver or postprocessing error; inspect source JSON",
+      "Solver did not report success"
+    ],
+    "complete": false,
+    "last_displacement_um": 4.389402743091791,
+    "observed_peak_N": 514.571548793605,
+    "final_load_fraction_of_observed_peak": 0.0028127072692495725,
+    "C_min_all": [
+      0.7807487121073942,
+      0.7457651048975267,
+      0.6502316056799593
+    ],
+    "C_max_all": [
+      0.780773531026024,
+      1.2707444527768637,
+      0.8284060649802735
+    ],
+    "phi_min_all": [
+      7.327889020637706e-17,
+      7.748460043100668e-08,
+      7.035349828496301e-08
+    ],
+    "phi_max_all": [
+      3.9762594858114263e-10,
+      0.9984370582307962,
+      1.002950507914278
+    ],
+    "coverage_min_all": [
+      0.5525761867276491,
+      0.5412168510183658,
+      0.5070396133321379
+    ],
+    "coverage_max_all": [
+      0.5525840458709934,
+      0.6677863252097391,
+      0.5671751817237842
+    ],
+    "Gc_min_all": [
+      1372.1405377720027,
+      1095.309460520997,
+      1337.0780383177464
+    ],
+    "Gc_max_all": [
+      1372.1594232934592,
+      1399.455907002867,
+      1481.5838091628725
+    ],
+    "phi_outside_0_1": [
+      0.0,
+      0.0029505079142779778
+    ],
+    "moving_boundary_line_check_at_observed_peak": {
+      "0.5": {
+        "points": 23,
+        "C_over_C0_range": [
+          0.9999749443708341,
+          1.0948777242672219
+        ]
+      },
+      "0.9": {
+        "points": 10,
+        "C_over_C0_range": [
+          0.9999749443708341,
+          1.0000092752307246
+        ]
+      },
+      "0.95": {
+        "points": 8,
+        "C_over_C0_range": [
+          0.9999749443708341,
+          1.0000005061699528
+        ]
+      }
+    },
+    "internal_probe_observed_peak_N": 514.573433421129,
+    "output_peak_vs_probe_peak_pct": -0.0003662504516666054,
+    "status": "evidence_error"
+  },
+  {
+    "id": "old_aligned_c0",
+    "source": "repair_old_aligned_c0.json",
+    "issues": [],
+    "complete": true,
+    "last_displacement_um": 7.0,
+    "observed_peak_N": 712.0536277815995,
+    "final_load_fraction_of_observed_peak": 0.0014877971158631525,
+    "C_min_all": [
+      0,
+      0,
+      0
+    ],
+    "C_max_all": [
+      0,
+      0,
+      0
+    ],
+    "phi_min_all": [
+      3.7240750619116974e-19,
+      8.099128697285062e-08,
+      7.133701609244595e-08
+    ],
+    "phi_max_all": [
+      2.0207521467280264e-12,
+      0.6845338338157256,
+      1.0036684653683785
+    ],
+    "coverage_min_all": [
+      0,
+      0,
+      0
+    ],
+    "coverage_max_all": [
+      0,
+      0,
+      0
+    ],
+    "Gc_min_all": [
+      2700,
+      2700,
+      2700
+    ],
+    "Gc_max_all": [
+      2700,
+      2700,
+      2700
+    ],
+    "phi_outside_0_1": [
+      0.0,
+      0.003668465368378504
+    ],
+    "internal_probe_observed_peak_N": 712.0540680604767,
+    "output_peak_vs_probe_peak_pct": -6.183222551747747e-05,
+    "status": "complete"
+  },
+  {
+    "id": "old_aligned_h",
+    "source": "repair_old_aligned_h.json",
+    "issues": [],
+    "complete": true,
+    "last_displacement_um": 7.0,
+    "observed_peak_N": 411.0865496923106,
+    "final_load_fraction_of_observed_peak": 0.002354023253976205,
+    "C_min_all": [
+      0.7807537902388617,
+      0.780753968253968,
+      0.7306374159601203
+    ],
+    "C_max_all": [
+      0.7807540682817725,
+      2.2848633766800317,
+      0.782665810778257
+    ],
+    "phi_min_all": [
+      7.327889023494678e-19,
+      5.1418685896542706e-08,
+      4.5668361930285574e-08
+    ],
+    "phi_max_all": [
+      3.976248375887184e-12,
+      0.8263921347474397,
+      1.0031101458073801
+    ],
+    "coverage_min_all": [
+      0.5525777947880695,
+      0.5525778511588003,
+      0.5361242043008659
+    ],
+    "coverage_max_all": [
+      0.5525778828338611,
+      0.7832815574993586,
+      0.5531824420792038
+    ],
+    "Gc_min_all": [
+      1372.1553475502317,
+      817.7744173290412,
+      1370.7025916836733
+    ],
+    "Gc_max_all": [
+      1372.155559124269,
+      1372.1554236654026,
+      1411.6935370650194
+    ],
+    "phi_outside_0_1": [
+      0.0,
+      0.003110145807380116
+    ],
+    "moving_boundary_line_check_at_observed_peak": {
+      "0.5": {
+        "points": 11,
+        "C_over_C0_range": [
+          0.9999998718830688,
+          2.798102461879637
+        ]
+      },
+      "0.9": {
+        "points": 0,
+        "C_over_C0_range": null
+      },
+      "0.95": {
+        "points": 0,
+        "C_over_C0_range": null
+      }
+    },
+    "internal_probe_observed_peak_N": 411.08670954819263,
+    "output_peak_vs_probe_peak_pct": -3.8886171294105765e-05,
+    "status": "complete"
+  }
+]
