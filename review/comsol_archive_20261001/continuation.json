@@ -1,5 +1,4 @@
 {
-  "stage": "continuing_pipeline",
-  "time": "2026-10-01T15:24:51.344321+08:00",
-  "attempt": 1
+  "stage": "publishing_completed_receipts",
+  "time": "2026-10-01T17:35:20.371070+08:00"
 }
