@@ -1,0 +1,4491 @@
+{
+  "commit": "6193e385f3c55a9950494e6d08bf88ce0a590261",
+  "time": "2026-10-01T17:32:22.440371+08:00",
+  "all_verified": true,
+  "manifest_sha256": "d7086f621f9485b0c2b1c036a1b7e6633202dffa3e0d8f599b16945235beb89a",
+  "method": "Fresh remote downloads; full reconstructed file SHA-256",
+  "files": [
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/AUDIT_20260929.md",
+      "bytes": 7262,
+      "sha256": "769a913d89cd9f18b2068356414b9db20ec3072d644e06f5dee7d7dea5a90a73",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/all_results/all_01_curves_noH.png",
+      "bytes": 76085,
+      "sha256": "579dcdd89e709cbac8220d10b17fd75a68dddd3c35655bae5ca730c8ed84e360",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/all_results/all_02_curves_c01_prerepair.png",
+      "bytes": 84081,
+      "sha256": "86e36a78ea81f37bfe0cfed6ab0040de85b45ec1d6488b8ac209aa648610e4d3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/all_results/all_03_curves_c01_repair.png",
+      "bytes": 79363,
+      "sha256": "202f7d05609dc1266facb1416fbcf69ad4b59115df19d0b101c48dfa45d94ad5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/all_results/all_04_peak_overview.png",
+      "bytes": 113390,
+      "sha256": "a9e8ea62bbd345755b065e767c23f7fc6d1f3dff585b1aa8c50e95405b82700b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/all_results/all_05_step_convergence.png",
+      "bytes": 117090,
+      "sha256": "863fdb1a9bac428c0c1d90ab1e21ea44c27ab476b2944df4443b72f4e44824c4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/all_results/all_06_ablation_studies.png",
+      "bytes": 114694,
+      "sha256": "017a46dd396113bd49764cc1b7b98f9442a46feb8aa6f609c65e7adb5e2a477d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/all_results/all_07_repair_diagnostics.png",
+      "bytes": 103558,
+      "sha256": "4e8ddeed662c7fe4c96147593a7bcc7e1e9caa68b64670393723ac20a6c61a5d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/all_results/all_08_curves_c05.png",
+      "bytes": 47552,
+      "sha256": "b6b913a115e31eaa0373c7c3e7dcc8014a1d7792e04eb3fc5a8436f9f7550b30",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/fig5_aligned_overlay.png",
+      "bytes": 150597,
+      "sha256": "001fb1996a8fbac161b74d4ebfc0662fd2e31a12c4f5a5cd0cd8351533265719",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/fig5_all_attempts.png",
+      "bytes": 104706,
+      "sha256": "bcf339f3f22962b1c6d322d05bd7f68e13f30e896728c0975043e306037701ff",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/fig5_overlay.png",
+      "bytes": 80833,
+      "sha256": "7c693027def9ed742d3de067c2ad3ec6621e4bd33488662b7037dd03dfb512b0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/fig5_overlay_final.png",
+      "bytes": 113412,
+      "sha256": "ea52c1bdaf8d4f5de6f9373fc3a677f0fa37af54a58ffb53185ca6b812e9f476",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/fig5_repair_comparison.png",
+      "bytes": 208157,
+      "sha256": "75a13707166ebfda300e4be77532b54489439f6594bd8108c8379378e2aa53c7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/fig5_sensitivity_summary.png",
+      "bytes": 160201,
+      "sha256": "1c1c2ea101b6bae6ed6733c876aff93a17d1d54eb33a038b8d609b0945e0b1e5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/fig5_step_convergence.png",
+      "bytes": 142644,
+      "sha256": "cf4a2cf67a79cb26559e4dc78beda9691f1321f0bc794d9632330cd7db4890f6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/load_disp_c0p000.png",
+      "bytes": 41951,
+      "sha256": "58c8c627155c6ce14bf26242dba3493d1d6e6c8781bfbf76e156f1d997f084d5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/load_disp_c0p100.png",
+      "bytes": 42579,
+      "sha256": "56d0807f995449e7601813276d3cfde8d23a3bbdfd48309ac99c4b33cd88c98c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/multipass_c0p1.png",
+      "bytes": 51179,
+      "sha256": "b7fb1865f349df7b6e85f8b8272b5f815d94ed6155341a92c3b315a3b38444f4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/repair_moving_1e3_n100_fields.png",
+      "bytes": 126617,
+      "sha256": "1a40aaa9784790df853876cdbeee7546743b7d8124805ce565c2f71c6752a1c2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/repair_moving_1e3_pm_n1000_fields.png",
+      "bytes": 128456,
+      "sha256": "eef7fa7aa5405b9ec7cb44203f47a47dd624a4e379fda2df2e20b872734bc272",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/repair_moving_1e3_pm_n100_fields.png",
+      "bytes": 127154,
+      "sha256": "432dcf83fab738755de1c76ccdac80b809c6852dc2457b49fea10ed8e57f9260",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/repair_old_aligned_c0_fields.png",
+      "bytes": 103344,
+      "sha256": "25bf9d759de63bcd373a8c143c6461b940c3eb913575c9562434daa50011aaed",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/repair_old_aligned_h_fields.png",
+      "bytes": 132601,
+      "sha256": "c6858e1c6b4c34194ab99abc899a437f915e81254b67f8bd0bf9cc0dfe438b13",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/step_study_c0p1.png",
+      "bytes": 42438,
+      "sha256": "4cac75e4349407dada34904d0a268ab7d40ea808d7ca734829e6cce8547160e1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/01_figures/step_study_coarse.png",
+      "bytes": 38200,
+      "sha256": "c0edeb71bf82bff77a9b8139d8fabb651b33208dc641e43ba32f559f4aa7decf",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/attempt_multipass_tol_26pts_FAILED.json",
+      "bytes": 1595,
+      "sha256": "4312d2ef0215a7195f75a511eddd88996e2c732ffb9f30ef561a6feb90ba98e2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/c0_bc_probe.json",
+      "bytes": 1445,
+      "sha256": "d734e4ab731ebb772058a8edbda4df5daf99472fc4df122bec2995e7a25670ec",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/fig5_runs.json",
+      "bytes": 19134,
+      "sha256": "c055356ed4d628c4383db3709422a8f4047684bd5f15acb038a3fe78d1fba1d8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/fig5_runs_c0p100_attempt1.json",
+      "bytes": 34479,
+      "sha256": "6570724372ecea29352463bd1978a105485d3592b62eceffeafbbc5e573d530d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/hmax_scan.json",
+      "bytes": 13088,
+      "sha256": "0c595f6d2bde4b1b65588c1ea848b2240c37d9c28ee6bfe06015f6ce1c33eb5f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/interface_probe.json",
+      "bytes": 875,
+      "sha256": "57f47267217a1b19253633e259f2180232d4a4660188b33f7c04abaaa46c1072",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/load_probe.json",
+      "bytes": 43709,
+      "sha256": "9b3f9dd2f988c501d7b416fda4811f2a1e3fc18ec7d0a8a972a055f11e9b68e7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/match_paper_c0_26pts_FAILED_var_c.json",
+      "bytes": 3517,
+      "sha256": "d2c01e3a12425bbdce8a2ae4634d8412859b70e3290847277b7ed2520afe4b61",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/match_paper_c0_run.json",
+      "bytes": 100462,
+      "sha256": "9ae21e30f09d4298622b9a8a06d1e9086cda0c3308714534b4c8b3729eaa03c6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/match_paper_probe.json",
+      "bytes": 5181,
+      "sha256": "cd93d4085fe00f7c4e4095f5461e00ac42450112bc8cbfde910914089d83bbe1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/match_paper_run.json",
+      "bytes": 79246,
+      "sha256": "a1fb8600631dfa8bbf69b5872bd44f908ab4cb8ca4f94b3fb666d1cbae5fea6b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/mesh_study.json",
+      "bytes": 25066,
+      "sha256": "f8e7e733fd00278b3a6eaf9ae1ad159ef6ddab56be3a35541acef53d0d63d805",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/mesh_variants_probe.json",
+      "bytes": 1438,
+      "sha256": "b30a1a1824649e285dbb852b9c899f0fb1f7a9a108217fae0b3762bd73541718",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/multipass_iter3_study.json",
+      "bytes": 13974,
+      "sha256": "7f0f8c3d9a416720b1782df91237e5765a4832056d41e9e82c7260bbd5127527",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/order_study.json",
+      "bytes": 33008,
+      "sha256": "141a138c5dca0fc53a6a2693e66ed3ff93c2033a0b84266ef5827a7bcedf9617",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/repair_comparison.json",
+      "bytes": 3699,
+      "sha256": "9aae5152cba1935b6dbe6e24be7f1b9f837b44a58d75f7251046ff7182eea98c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/repair_internal_steps.json",
+      "bytes": 717540,
+      "sha256": "68abbd07bb9f9aaa47cf821af3de0b8bf9af6a9f5b20cde13c8bc281ac536b8c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/repair_moving_1e3_n100.json",
+      "bytes": 123847,
+      "sha256": "b06c3b4efad10dedde94990442dbe64fa5bdc115432301138a1270095ea33781",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/repair_moving_1e3_pm_c05_n1000.json",
+      "bytes": 238718,
+      "sha256": "312cbd6ed8c53cb29391ce6d8df58d8ad20d599860dfd0744eec4ddde0691c65",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/repair_moving_1e3_pm_n100.json",
+      "bytes": 133377,
+      "sha256": "2ad23357cd752b91a02e56b090c6cb64665c71d1042546277a4f4baec575af9a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/repair_moving_1e3_pm_n1000.json",
+      "bytes": 238071,
+      "sha256": "e7257a0f64dc640d396ad8e7a27d4db7d525a918b952b020126edea7bff9b576",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/repair_moving_1e5_n100.json",
+      "bytes": 636,
+      "sha256": "5908ea658ac329e710a56975e3666bc4be91aa0dc2c71d5d0e978b2da23236f5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/repair_old_aligned_c0.json",
+      "bytes": 206752,
+      "sha256": "396d1860879e37cbacec331a29a49743731a0e4eecff974d2737710641c96b1e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/repair_old_aligned_h.json",
+      "bytes": 233341,
+      "sha256": "177425204b416fea88b20da230720a4564368144c5fc710a8153ae98fdc4d841",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/repair_validation.json",
+      "bytes": 8257,
+      "sha256": "7646709423ce8e70932f915d9b25b48f96958bf925c4bc272ab2db3d00bbb2e2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/solver_settings.json",
+      "bytes": 5325,
+      "sha256": "429785355ff719f24c5c4712b215f18906b42cac430a500d3195d42719f1c167",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/step_study.json",
+      "bytes": 57032,
+      "sha256": "c91dd7f62629eec9f9587231d3c073927887f9e0895b3c654cb2cff75cdfb764",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/step_study_100_500.json",
+      "bytes": 57032,
+      "sha256": "c91dd7f62629eec9f9587231d3c073927887f9e0895b3c654cb2cff75cdfb764",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/step_study_25_50.json",
+      "bytes": 4567,
+      "sha256": "9d24df81ff412054481af20232a4de468d9936091e10fd59fdd72e0238ac4ba0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/stored_solution_probe.json",
+      "bytes": 4280,
+      "sha256": "9a8f14332372a80619cb32f00350cc191a78b074076a24c7e647b3c365d87784",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/02_metrics/temperature_scaling_diagnostic.json",
+      "bytes": 2744,
+      "sha256": "8f42dfb23c4c76e56263b87a4292247a27f3530d0936aa44efeb55e346f8b564",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/load_probe.m",
+      "bytes": 4845,
+      "sha256": "f4c0ec7c6962c3b019d2b5d5165fa8f7f88dfc97f62a08dec7bb99e51c730a7f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/probe_c0_bc.m",
+      "bytes": 3058,
+      "sha256": "0888c8be18878214a84ac3d200eedd78f4a1ad7432cd5100d9b36ecc99f2e83c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/probe_extra_interfaces.m",
+      "bytes": 1988,
+      "sha256": "aa2a5d8dbc87d8d1867bee54153803bbad5ee9675049369d61ac4706c3108f0a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/probe_match_paper.m",
+      "bytes": 4776,
+      "sha256": "04d5c75a2a814a3c7c1dbcd750bfe528fe07b02207f66e9d922dccb71d940879",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/probe_mesh_variants.m",
+      "bytes": 4149,
+      "sha256": "8b74195f163199207ee9034f1737177ef769c6358891c03a2f9e4597b08c0c57",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/probe_solver_settings.m",
+      "bytes": 4235,
+      "sha256": "ae6ab6a68d03a35acebc6ec7da46dae8edd742f660323560d70d9109fc262ab7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/probe_stored_solution.m",
+      "bytes": 2348,
+      "sha256": "aad4f2f142dd4a3bf32dc646bda569e950c7520535dad2951cde052836302279",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/repair_higher_concentrations.json",
+      "bytes": 1255,
+      "sha256": "e2f8015358c60002f9e509b7150fd68ff6445efe7832377c686a7693524ea7d9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/repair_multipass_pending.json",
+      "bytes": 340,
+      "sha256": "f884ea5001b93f621d2a37a8b994b9475189c3eaa323cd85ab5e9790508183da",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/repair_pending.json",
+      "bytes": 847,
+      "sha256": "8bad1d207fa293b23dd5caf895e79a7d4fce9099e5cc099a625a1a24f2df6699",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/repair_queue.json",
+      "bytes": 2370,
+      "sha256": "225eb814126587c85a33473428f6f30547fc01c49062497bdfd90d887bd3a3e6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/repair_refinement_pending.json",
+      "bytes": 626,
+      "sha256": "cba750e59f723f62fd0698790b35e255005428b56600d12c3eaaa5492cdd1092",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/run_fig5_cases.m",
+      "bytes": 8963,
+      "sha256": "4d3e2efd44d54414760bdef0d6f78a813402489bdeb4e377d5ada64f89e5361d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/run_match_paper.m",
+      "bytes": 8184,
+      "sha256": "6f58a644d69727e12c50f504a74a0c754661911ccc4b1bc442502b8b16ed71c9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/run_match_paper_c0.m",
+      "bytes": 9055,
+      "sha256": "92237ab6248f896730acbec3f6696bf4c3a69cf0c985aaea69e01ce2740f2da7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/run_mesh_study.m",
+      "bytes": 5446,
+      "sha256": "19b6b3676420aa06ea9c44203be7d026700476b994087182f10169e02d115740",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/run_multipass_study.m",
+      "bytes": 8505,
+      "sha256": "76e24a316ad19fcdc31e5e9d914fe6e7e93d1d4a33a4782071d0b4f350536646",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/run_order_study.m",
+      "bytes": 6403,
+      "sha256": "f626ec4fdafd04c874cfe6ed47f3b5de081073274745ba5c22365ad1521e932c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/run_repair_campaign.m",
+      "bytes": 8027,
+      "sha256": "fd9c5b66aa4e2d8253e692e14935f26df7aa0e2e84e89dd34834ffb74dfd3ff7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/run_step_study.m",
+      "bytes": 5957,
+      "sha256": "78cdd3879ad987ae77ee30915d3d85bbf1506849a63e8eaf3899ee5252dfc8a3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/scan_hmax.m",
+      "bytes": 5479,
+      "sha256": "0e27bac142c78e7f0fcd507ded5b0e5d21617e69edcb6cb91d2fcb073a436edf",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/sha256file.m",
+      "bytes": 377,
+      "sha256": "00051dcbe396e143039cf3238d183578faf68cc0861cc4f9f4104179863008b9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/Start-Case.ps1",
+      "bytes": 3999,
+      "sha256": "94495eaf16998439c6d49df3ce3c6565a13c70172d83fb6431e9759ff5c90827",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/Start-Fig5.ps1",
+      "bytes": 2030,
+      "sha256": "bc211ba38e42804b2a567a4fdc716ec2d6dd524c403a2527e668d5bf65694d16",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/Start-Repair-Worker.ps1",
+      "bytes": 2002,
+      "sha256": "3e3ca7bd0a348a755deb8609d2c2f9bb0a828ffe8237faea7d6bc50ae4e10184",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/Start-Repair.ps1",
+      "bytes": 4088,
+      "sha256": "b55a23cbf9e0f6fdf89edeedfe4aeead39ca0fcdb6da73430c483c5b39536b58",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/comsol_scripts/stop_stalled_repair_20260930.m",
+      "bytes": 844,
+      "sha256": "99849809e2aee5befc505c68b59d64bca40c92f4401bbc8bcfa3a1e0d8a98be4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/compare_all_runs.py",
+      "bytes": 4519,
+      "sha256": "a65e3fb0814ed206f8202788c422e386be6ea5f534a8e240d3a94b3e8a69ad73",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/compare_fig5.py",
+      "bytes": 5111,
+      "sha256": "30c2669295f99321beb2d824ff63f776c386cf7c59e1b52b40254f3fee028431",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/compare_repair.py",
+      "bytes": 4590,
+      "sha256": "3b32fdd52e188eff345d7f6ec59c392ef2ae74eb44d31ac363c524a636bc0892",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/digitize_fig5.py",
+      "bytes": 6933,
+      "sha256": "e5e6ba26da0c23576b3fc00ea04ec1db5cf4814343a2aa1a3e5408e2915c1f9d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/plot_all_attempts.py",
+      "bytes": 3378,
+      "sha256": "e3c55a5bc45eb2ce03451082b8e769783150c3c28473d0cb3e9361cf37e3fea2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/plot_all_results.py",
+      "bytes": 19857,
+      "sha256": "1b58749a62f45d20aeed25ef0297a22c20e55361b1346c49761f9f80fa4bb756",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/plot_fig5_aligned.py",
+      "bytes": 5333,
+      "sha256": "a15def84d263bb3aa74dffe4af92b684ba0597253a41b595289651350840faa6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/plot_fig5_final.py",
+      "bytes": 2793,
+      "sha256": "18c22a45ed33c50e4477d1bf3599f06831fc76aeacdae5723ee459ed6455e3d6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/plot_fig5_overlay.py",
+      "bytes": 1993,
+      "sha256": "03e0cc94f01ff55cfa703af35d71d4ee4e71ce976fca9f110e6d8a80e06f8070",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/plot_fig5_repaired.py",
+      "bytes": 2711,
+      "sha256": "6605ee2e601737dc93692b5c20ca40f37da5076f3470dfb1afe6da3bae31d1cf",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/plot_repair_fields.py",
+      "bytes": 1552,
+      "sha256": "18309f5b4de4d294db1353efc1493f608b8126e3b0f677f5b0347a069be701b1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/plot_sensitivity_summary.py",
+      "bytes": 4316,
+      "sha256": "70711c6fdac9ec6b3599b51037d0b36d08537348d615dd8fa48ff4c414506590",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/plot_step_convergence.py",
+      "bytes": 6008,
+      "sha256": "6f0e33d5206b62f99f0f8596d3943b1c5759b5db3656aa283acd4af0f3752c29",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/summarize_solver_steps.py",
+      "bytes": 1443,
+      "sha256": "bb52255ece7a9f27fedf4cbdd0b41252db344637d84b198f0e38623277fda12b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/temperature_scaling_diagnostic.py",
+      "bytes": 1888,
+      "sha256": "ca11e2341ad22fd2e732e9308f7dc46acd12d741dedaa1a10c139da410ef770f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/validate_repair_results.py",
+      "bytes": 3807,
+      "sha256": "1674721c749311930e79278880c162cf7f1a2a87a0af4855adba69b70b01e0d7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/03_scripts/figure_digitize/write_repair_report.py",
+      "bytes": 8754,
+      "sha256": "29ad1d486f7d280a930896a2ed4556cf9a4ea55f96512ef209481ba237e3e957",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/04_reports/AUDIT_20260929.md",
+      "bytes": 7262,
+      "sha256": "769a913d89cd9f18b2068356414b9db20ec3072d644e06f5dee7d7dea5a90a73",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/04_reports/README.md",
+      "bytes": 32340,
+      "sha256": "1cbb2fc0ec83288ff8143f2361ee2d7a951e8244724ec364aab193985182cf7e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/04_reports/README_historical_20260930.md",
+      "bytes": 30453,
+      "sha256": "e2f72763245c1a68617909dc93f82bdbb25cbad579ba40c65b5a694d7fbb5773",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/04_reports/REPAIR_REPORT.md",
+      "bytes": 7034,
+      "sha256": "3580bb6d614972863be3d45a30df5c4eca9913c5901dce49c78c114c79f6dced",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/heartbeat.txt",
+      "bytes": 48,
+      "sha256": "c9693898fa3a4a71a937e995ee8c9f79cd2c29c08261b5c24af02625732af57c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/last_case_run.json",
+      "bytes": 541,
+      "sha256": "c7ae978acd967182bff948a097a654a3c13c0e0577c0224a1a685786cf4ea39a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/probe.log",
+      "bytes": 2051,
+      "sha256": "6c71c4d70c5655c58a9dc3611671675bba69e56527c96038232f4927aa7a4f7a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_baseline_n100_interrupted_20260929.log",
+      "bytes": 42624,
+      "sha256": "6e5989d7223838a6e5f299ba30794a7058990739d34ba4556998124ac12a3a82",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_baseline_n100_solver.log",
+      "bytes": 42624,
+      "sha256": "6e5989d7223838a6e5f299ba30794a7058990739d34ba4556998124ac12a3a82",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_campaign.log",
+      "bytes": 318,
+      "sha256": "f49934d31977d0015495896134303d46c35b6fcfeeb297d6845274e219f84f72",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_campaign_status.json",
+      "bytes": 443,
+      "sha256": "4b544dbda736b45bc5cc9838fbb20ec245105f56cb8d34994eb17122e697b92b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_higher_concentrations_matlab.log",
+      "bytes": 581,
+      "sha256": "84e33e1228f672cdd7202971ed83b7d6305ce273338cd7a2f6568c5ff40927f3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_moving_1e3_n100_solver.log",
+      "bytes": 63969,
+      "sha256": "c1ba4dca4032f396c9cc6e681a2626b3a652a04d414bb565d8e80bbf22c0c202",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_moving_1e3_pm_c05_n1000_solver.log",
+      "bytes": 1231160,
+      "sha256": "06dbfa138213af85609e48559b011d917d7b259f7f06ec6370799bdfef755337",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_moving_1e3_pm_c10_n1000_solver.log",
+      "bytes": 235597,
+      "sha256": "1a3593bd479575af6f99732af2ae0f559024ce5106fbc4808bfcec3f0c8072a5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_moving_1e3_pm_n1000_solver.log",
+      "bytes": 1048477,
+      "sha256": "d96d3452cafcdd882e05d9594f848a24aa6e25bf45dcda93c1a2ad907bf004c7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_moving_1e3_pm_n100_solver.log",
+      "bytes": 184134,
+      "sha256": "d7172ddb8826818370215b9dde988c0ac507a026cf7aad3037e95bd614240d5f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_moving_1e3_pm_T300_c01_n1000_solver.log",
+      "bytes": 21567,
+      "sha256": "b9e8cb6beb2bb28ca4d1ebe623ec6bbc1ca5a202712c8b0403ffeee80ff6737e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/repair_moving_1e5_n100_solver.log",
+      "bytes": 166565,
+      "sha256": "802f994472b2a6a3d1cff87c8d1253b82b7320dab564c40fc7578f31d94d8967",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/05_logs/soft_stop_20260930.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930/MANIFEST.txt",
+      "bytes": 15793,
+      "sha256": "b398b3e27a818996c25cecb3269e7c69d385864021ad3706f599521920db9fdd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/deliverables/comsol_diaz_2025_Fig5_all_results_20260930.zip",
+      "bytes": 3367928,
+      "sha256": "f8371b531994771d88e30f6e7435d9ee2ffaca27d759d4568bafafda1b62d748",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/compare_all_runs.py",
+      "bytes": 4519,
+      "sha256": "a65e3fb0814ed206f8202788c422e386be6ea5f534a8e240d3a94b3e8a69ad73",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/compare_fig5.py",
+      "bytes": 5111,
+      "sha256": "30c2669295f99321beb2d824ff63f776c386cf7c59e1b52b40254f3fee028431",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/compare_repair.py",
+      "bytes": 4590,
+      "sha256": "3b32fdd52e188eff345d7f6ec59c392ef2ae74eb44d31ac363c524a636bc0892",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/digitize_fig5.py",
+      "bytes": 6933,
+      "sha256": "e5e6ba26da0c23576b3fc00ea04ec1db5cf4814343a2aa1a3e5408e2915c1f9d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/fig5_comparison.json",
+      "bytes": 1218,
+      "sha256": "d5f64aca1a58eeb3d552b1558f10376148ca52f3539f6fb97f28618cd3aca235",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/fig5_comparison_all.json",
+      "bytes": 2914,
+      "sha256": "3ddd27bea149b8e815fe81510509fdfe431b763294cdbafc3e553042bf6b3d3a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/fig5_digitized.json",
+      "bytes": 180241,
+      "sha256": "cc460115b1ae532d13e8f2507b4c4326198f7aa9744c062d3c6eafef71a5c36d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/page13.png",
+      "bytes": 489237,
+      "sha256": "85411956eabb1ccff6cdb38c75f51c518f7e7d4540cc133bccc47700566df16f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/page14.png",
+      "bytes": 556457,
+      "sha256": "794ce2c8d48ffbea30f83411426bf5b6c8457bce9a64c8ea982d577a96d8330f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/page15.png",
+      "bytes": 483466,
+      "sha256": "4cedfb214fadc4df44fb4089faffd0935d044aa8d4d49a5dd40808098aacee83",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/plot_all_attempts.py",
+      "bytes": 3378,
+      "sha256": "e3c55a5bc45eb2ce03451082b8e769783150c3c28473d0cb3e9361cf37e3fea2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/plot_all_results.py",
+      "bytes": 19857,
+      "sha256": "1b58749a62f45d20aeed25ef0297a22c20e55361b1346c49761f9f80fa4bb756",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/plot_fig5_aligned.py",
+      "bytes": 5333,
+      "sha256": "a15def84d263bb3aa74dffe4af92b684ba0597253a41b595289651350840faa6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/plot_fig5_final.py",
+      "bytes": 2793,
+      "sha256": "18c22a45ed33c50e4477d1bf3599f06831fc76aeacdae5723ee459ed6455e3d6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/plot_fig5_overlay.py",
+      "bytes": 1993,
+      "sha256": "03e0cc94f01ff55cfa703af35d71d4ee4e71ce976fca9f110e6d8a80e06f8070",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/plot_fig5_repaired.py",
+      "bytes": 3307,
+      "sha256": "cb75d107d774d1ff9d6c5d8a60276f246959db3aa850260717abc5630a07729b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/plot_repair_fields.py",
+      "bytes": 1552,
+      "sha256": "18309f5b4de4d294db1353efc1493f608b8126e3b0f677f5b0347a069be701b1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/plot_sensitivity_summary.py",
+      "bytes": 4316,
+      "sha256": "70711c6fdac9ec6b3599b51037d0b36d08537348d615dd8fa48ff4c414506590",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/plot_step_convergence.py",
+      "bytes": 6008,
+      "sha256": "6f0e33d5206b62f99f0f8596d3943b1c5759b5db3656aa283acd4af0f3752c29",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/summarize_solver_steps.py",
+      "bytes": 1654,
+      "sha256": "aa4d09b944ade7722a51edce32e441c097dae588fc64a6bc374b927b2dad04f0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/temperature_scaling_diagnostic.py",
+      "bytes": 1888,
+      "sha256": "ca11e2341ad22fd2e732e9308f7dc46acd12d741dedaa1a10c139da410ef770f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/validate_repair_results.py",
+      "bytes": 4233,
+      "sha256": "7f1384b775801213c0440b14fd41178c00cf7374cbc2e0cfeb399f0b9f0a2754",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figure_digitize/write_repair_report.py",
+      "bytes": 9591,
+      "sha256": "4d0d5bcaf80a6225372a562c5dd95813b1882337707af809a956b389c4a1e549",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/all_results/all_01_curves_noH.png",
+      "bytes": 76085,
+      "sha256": "579dcdd89e709cbac8220d10b17fd75a68dddd3c35655bae5ca730c8ed84e360",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/all_results/all_02_curves_c01_prerepair.png",
+      "bytes": 84081,
+      "sha256": "86e36a78ea81f37bfe0cfed6ab0040de85b45ec1d6488b8ac209aa648610e4d3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/all_results/all_03_curves_c01_repair.png",
+      "bytes": 79363,
+      "sha256": "202f7d05609dc1266facb1416fbcf69ad4b59115df19d0b101c48dfa45d94ad5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/all_results/all_04_peak_overview.png",
+      "bytes": 113390,
+      "sha256": "a9e8ea62bbd345755b065e767c23f7fc6d1f3dff585b1aa8c50e95405b82700b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/all_results/all_05_step_convergence.png",
+      "bytes": 117090,
+      "sha256": "863fdb1a9bac428c0c1d90ab1e21ea44c27ab476b2944df4443b72f4e44824c4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/all_results/all_06_ablation_studies.png",
+      "bytes": 114694,
+      "sha256": "017a46dd396113bd49764cc1b7b98f9442a46feb8aa6f609c65e7adb5e2a477d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/all_results/all_07_repair_diagnostics.png",
+      "bytes": 103558,
+      "sha256": "4e8ddeed662c7fe4c96147593a7bcc7e1e9caa68b64670393723ac20a6c61a5d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/all_results/all_08_curves_c05.png",
+      "bytes": 47552,
+      "sha256": "b6b913a115e31eaa0373c7c3e7dcc8014a1d7792e04eb3fc5a8436f9f7550b30",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/fig5_aligned_overlay.png",
+      "bytes": 150597,
+      "sha256": "001fb1996a8fbac161b74d4ebfc0662fd2e31a12c4f5a5cd0cd8351533265719",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/fig5_all_attempts.png",
+      "bytes": 104706,
+      "sha256": "bcf339f3f22962b1c6d322d05bd7f68e13f30e896728c0975043e306037701ff",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/fig5_overlay.png",
+      "bytes": 80833,
+      "sha256": "7c693027def9ed742d3de067c2ad3ec6621e4bd33488662b7037dd03dfb512b0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/fig5_overlay_final.png",
+      "bytes": 113412,
+      "sha256": "ea52c1bdaf8d4f5de6f9373fc3a677f0fa37af54a58ffb53185ca6b812e9f476",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/fig5_repair_comparison.png",
+      "bytes": 228745,
+      "sha256": "4dbca44cfdf6471dffee93db74b4e15abde3a03ddc091cc035740e847b8821a7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/fig5_sensitivity_summary.png",
+      "bytes": 160201,
+      "sha256": "1c1c2ea101b6bae6ed6733c876aff93a17d1d54eb33a038b8d609b0945e0b1e5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/fig5_step_convergence.png",
+      "bytes": 142644,
+      "sha256": "cf4a2cf67a79cb26559e4dc78beda9691f1321f0bc794d9632330cd7db4890f6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/load_disp_c0p000.png",
+      "bytes": 41951,
+      "sha256": "58c8c627155c6ce14bf26242dba3493d1d6e6c8781bfbf76e156f1d997f084d5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/load_disp_c0p100.png",
+      "bytes": 42579,
+      "sha256": "56d0807f995449e7601813276d3cfde8d23a3bbdfd48309ac99c4b33cd88c98c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/multipass_c0p1.png",
+      "bytes": 51179,
+      "sha256": "b7fb1865f349df7b6e85f8b8272b5f815d94ed6155341a92c3b315a3b38444f4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/repair_moving_1e3_n100_fields.png",
+      "bytes": 126617,
+      "sha256": "1a40aaa9784790df853876cdbeee7546743b7d8124805ce565c2f71c6752a1c2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/repair_moving_1e3_pm_c05_n1000_fields.png",
+      "bytes": 126486,
+      "sha256": "4a36b0528f31f3d10ddc212b6b24139cf65d9079d9307be84fe40d8d5f7e6c3f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/repair_moving_1e3_pm_c10_n1000_fields.png",
+      "bytes": 131932,
+      "sha256": "a13b65275e2f53ff0b829ba732cfd3078bee895dc66f272f617cc6ba3ba1fdbb",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/repair_moving_1e3_pm_n1000_fields.png",
+      "bytes": 128456,
+      "sha256": "eef7fa7aa5405b9ec7cb44203f47a47dd624a4e379fda2df2e20b872734bc272",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/repair_moving_1e3_pm_n100_fields.png",
+      "bytes": 127154,
+      "sha256": "432dcf83fab738755de1c76ccdac80b809c6852dc2457b49fea10ed8e57f9260",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/repair_moving_1e5_pm_n100_fields.png",
+      "bytes": 128639,
+      "sha256": "3929274224123d462d3bab0ae1d620b22269ffe122e681a9cb8954ac1103fdd0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/repair_old_aligned_c0_fields.png",
+      "bytes": 103344,
+      "sha256": "25bf9d759de63bcd373a8c143c6461b940c3eb913575c9562434daa50011aaed",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/repair_old_aligned_h_fields.png",
+      "bytes": 132601,
+      "sha256": "c6858e1c6b4c34194ab99abc899a437f915e81254b67f8bd0bf9cc0dfe438b13",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/step_study_c0p1.png",
+      "bytes": 42438,
+      "sha256": "4cac75e4349407dada34904d0a268ab7d40ea808d7ca734829e6cce8547160e1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/figures/step_study_coarse.png",
+      "bytes": 38200,
+      "sha256": "c0edeb71bf82bff77a9b8139d8fabb651b33208dc641e43ba32f559f4aa7decf",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/heartbeat.txt",
+      "bytes": 48,
+      "sha256": "c9693898fa3a4a71a937e995ee8c9f79cd2c29c08261b5c24af02625732af57c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/last_case_run.json",
+      "bytes": 541,
+      "sha256": "c7ae978acd967182bff948a097a654a3c13c0e0577c0224a1a685786cf4ea39a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/probe.log",
+      "bytes": 2051,
+      "sha256": "6c71c4d70c5655c58a9dc3611671675bba69e56527c96038232f4927aa7a4f7a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_baseline_n100_interrupted_20260929.log",
+      "bytes": 42624,
+      "sha256": "6e5989d7223838a6e5f299ba30794a7058990739d34ba4556998124ac12a3a82",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_baseline_n100_solver.log",
+      "bytes": 42624,
+      "sha256": "6e5989d7223838a6e5f299ba30794a7058990739d34ba4556998124ac12a3a82",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_campaign.log",
+      "bytes": 318,
+      "sha256": "f49934d31977d0015495896134303d46c35b6fcfeeb297d6845274e219f84f72",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_campaign_status.json",
+      "bytes": 443,
+      "sha256": "4b544dbda736b45bc5cc9838fbb20ec245105f56cb8d34994eb17122e697b92b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_higher_concentrations_2a9de3f9816d433d9f75aa2d20b95902.port",
+      "bytes": 7,
+      "sha256": "196ba73fe83ede95a83b98b6124d0f59da844177ea616abd770f06c51f5622cd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_higher_concentrations_5b23e5b9755647e39c20894c93ea6fc3.port",
+      "bytes": 7,
+      "sha256": "59bd7d23f4e5c21ca97206a812d4de095929a34257cc7ca1aab23ebf65f51358",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_higher_concentrations_matlab.log",
+      "bytes": 273,
+      "sha256": "7d2aaa9343013c2ed7f2349bf2f0cce9e6e7e2a9002b8da1d40b53c5c240c7ac",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_moving_1e3_n100_solver.log",
+      "bytes": 63969,
+      "sha256": "c1ba4dca4032f396c9cc6e681a2626b3a652a04d414bb565d8e80bbf22c0c202",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_moving_1e3_pm_c05_n1000_solver.log",
+      "bytes": 1231160,
+      "sha256": "06dbfa138213af85609e48559b011d917d7b259f7f06ec6370799bdfef755337",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_moving_1e3_pm_c10_n1000_interrupted_0937.log",
+      "bytes": 235597,
+      "sha256": "1a3593bd479575af6f99732af2ae0f559024ce5106fbc4808bfcec3f0c8072a5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_moving_1e3_pm_c10_n1000_solver.log",
+      "bytes": 234486,
+      "sha256": "0fb1ae10e6e292457b70bb8ad81348167cad1ba88fb26b56e09a4a7bce614240",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_moving_1e3_pm_n1000_solver.log",
+      "bytes": 1048477,
+      "sha256": "d96d3452cafcdd882e05d9594f848a24aa6e25bf45dcda93c1a2ad907bf004c7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_moving_1e3_pm_n100_solver.log",
+      "bytes": 184134,
+      "sha256": "d7172ddb8826818370215b9dde988c0ac507a026cf7aad3037e95bd614240d5f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_moving_1e3_pm_T300_c01_n1000_interrupted_0937.log",
+      "bytes": 21567,
+      "sha256": "b9e8cb6beb2bb28ca4d1ebe623ec6bbc1ca5a202712c8b0403ffeee80ff6737e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_moving_1e3_pm_T300_c01_n1000_solver.log",
+      "bytes": 532360,
+      "sha256": "ed74320fbd68b371a40702f8d71409294b857cfc831cd3e80a548deb207342f3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_moving_1e5_n100_solver.log",
+      "bytes": 166565,
+      "sha256": "802f994472b2a6a3d1cff87c8d1253b82b7320dab564c40fc7578f31d94d8967",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_moving_1e5_pm_n100_solver.log",
+      "bytes": 200639,
+      "sha256": "3d5bc6179c42cd6613102a02b697975be8e49d6eecd04920f7fd718ee71f4557",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_moving_1e7_pm_n100_solver.log",
+      "bytes": 135327,
+      "sha256": "fb1403640d817edf26790c08f3dc3b85223cc0d7e99f8c1e4077ef0027ec0480",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_queue_342c417e665e4034a0ef8c83f6370735.port",
+      "bytes": 7,
+      "sha256": "55a6b70e71fd0734c7d82ca7c36fb6fc995d133adc23da4889d2b22ecd0415cb",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/repair_queue_matlab.log",
+      "bytes": 484,
+      "sha256": "e0f63863164243d98381c521953b85235aa4c086fa250c5a0ab091696c555448",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/resume_postprocess.log",
+      "bytes": 3744,
+      "sha256": "ba405446e347e23868f76e6f847b74ce2e9c0813e99a4537df71481d3d243cd7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/resume_postprocess.pid",
+      "bytes": 7,
+      "sha256": "21178ad40976ba050fc2eca32dbac7a68f3e8cefb2bc0138ec2bdad5d6a8d8d6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/resume_postprocess_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/resume_primary_launcher.log",
+      "bytes": 545,
+      "sha256": "18e70728420b7293484f7137c71160de15f639e9536a9097c24e1f5589dc103b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/resume_primary_launcher.pid",
+      "bytes": 7,
+      "sha256": "542684fbb50e734fa5819be92fb867f89c8f07a1271023b3e98de15503b633da",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/resume_primary_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/resume_secondary_launcher.log",
+      "bytes": 346,
+      "sha256": "d1bf635ed2ba9473d50288760a7b869d7ccf86a32e3b50bd53f3d393440ac56c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/resume_secondary_launcher.pid",
+      "bytes": 7,
+      "sha256": "7bf0767390eb37a80809e57c670a15b0ec89bdcfdf50dc52620081ab0d29728d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/resume_secondary_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server.port",
+      "bytes": 7,
+      "sha256": "0b9cf6e2dd031db322c37c969d9b8e364119daceb580e9ffc48cfcf9920998c8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_01686aa3f73e43f9b1e061d8ec9a56e2.port",
+      "bytes": 7,
+      "sha256": "1eef9eea964983291efad502b4775b2286ed5252ec6e08ec60ce0a2ced590b43",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_0bfe3b62ccd8491bbf8ef55f7bdb1b3c.port",
+      "bytes": 7,
+      "sha256": "08cc463fea6081a934299aa518eb3739242938feedea6a7971b583080d37bade",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_0d10cfdaef3348f89761307fcbc4bb78.port",
+      "bytes": 7,
+      "sha256": "0b98638f5a6ffff841b55d6f3167f0d3c4582bb010d3babd6f7cc5feae16c2b5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_2116cf148d7d4ff48e07eb09782b7757.port",
+      "bytes": 7,
+      "sha256": "81a88184f509120f57ea62b41aed2822a29bd77cb8bfbcdeb617496ee12eb5fe",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_25e48ee2c3f64ad6b71e3e3a4346de18.port",
+      "bytes": 7,
+      "sha256": "ee54eafa9a8894c881e42ef66ca97abea9c4ca0bab8e4ae7b1e9a8a3184de9ac",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_34570895609449d19ca935ae65054aab.port",
+      "bytes": 7,
+      "sha256": "737e87c629a5039d8b867d02f727eaa641180e06ea87d583ec6a54aeb0bffd5f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_4cedab3f1e504c7ebc184aaf4d8203f8.port",
+      "bytes": 7,
+      "sha256": "55790958ad00e1250ce4a6b2da25d99954d7e09e5cbafd00274a08ffd17fbc60",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_54b20bf792474d87bab59c1b50b104ed.port",
+      "bytes": 7,
+      "sha256": "2095c8b81086bd3c211a6732af203676ba0745efd0a121a2eea27657723a19ad",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_55eae05e987345bfad4a9c2d14d0efac.port",
+      "bytes": 7,
+      "sha256": "2901b92655c80b4b4561c7452678e45ac99bc604155b5193f976c6d85b2650ce",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_59176f26971f485b950b137c50c3f120.port",
+      "bytes": 7,
+      "sha256": "4bb33cd721771ecbab422f084474a7dbccea7e401a4a059c24abe231c43da336",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_5a0d0c9471084a2a830dabb886ca7990.port",
+      "bytes": 7,
+      "sha256": "c924449455a17bc98d77737c672b9799625478c40582e554c6d7c246cd883d25",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_5dc6bfe760ce4848ba9bedc8263e9fcc.port",
+      "bytes": 7,
+      "sha256": "0b9cf6e2dd031db322c37c969d9b8e364119daceb580e9ffc48cfcf9920998c8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_5ee45497dfbd41369818993f31cde330.port",
+      "bytes": 7,
+      "sha256": "96146e4453c139b308e35d0d32871a532d634268f93fd5e479b294e6a8f0eec4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_82baf243ae5141c6a0b0e5a85b1a92c3.port",
+      "bytes": 7,
+      "sha256": "626a3d262c93be3ef780f4d8525f9ca93b13039d3cc6e32bda8ff5243f0b7b52",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_8602801e3d4a42cfb266301cbdd7a801.port",
+      "bytes": 7,
+      "sha256": "941180522fcf44d69c64602fa3a1a907dabc59f85665b9760d71dca2efd9f1a8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_9f08e5c1dba8491b84761e4c2203c92e.port",
+      "bytes": 7,
+      "sha256": "c52138c6dbcd02b108e75f54efdfbb5c9b25f402ff093b6d4675ef8ef67cc700",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_a08b7b8fc69b4a9a86705fa44128dc5c.port",
+      "bytes": 7,
+      "sha256": "23fb248523bfb6c1a9b16be7e07dc042768047d4824cb040a8081063030a3c87",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_a8bd5dc35761442d9cfa171f228da059.port",
+      "bytes": 7,
+      "sha256": "50ecaf9f1fc3401ea86ae4c2aca04ebabf5b9083e29a3150c1c824eed08e45f2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_b999d44702264ba2a0d99387fa87eef8.port",
+      "bytes": 7,
+      "sha256": "15438312a9757e272137407bcd64fb62a796db39c36974cf72e21a1022cc0cb6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_bab662c2199a47eea12149034686f196.port",
+      "bytes": 7,
+      "sha256": "4eb3c2287ba5b3d1b892fb2b5f7cc883a8ff103d1aa7043db25fc9f4a5c56972",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_bd9f7e6761194084a57b078f1b431514.port",
+      "bytes": 7,
+      "sha256": "a863ecfe09da18634286f4569d1c16bba42464ebf0c1abc94e6fec5c1c59e023",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_c1bdb2578308447db07271dc6608d871.port",
+      "bytes": 7,
+      "sha256": "d99d52bd91b6c3c269638b7bfc8a1bb6ad7c91d01c0f8e086ad83d87c8aa5ab8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_cad56044fb9d4a4a8742f56ba16811fd.port",
+      "bytes": 7,
+      "sha256": "ed8b8c7220dbdc412f7577b1ea05352040a66c269f7d788ad359544331bb44f0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_d56e011cdf0744ef9c824a44171176a6.port",
+      "bytes": 7,
+      "sha256": "71c2ec22f52cb37a92ac69f0dc57d7f943eddf4a50880183d7b2852a4dfc6f66",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_d9d21b62853d4f34b42f638c81ba8b74.port",
+      "bytes": 7,
+      "sha256": "d3a4ba34503dff4109a2a27801d5b2af357ba7d60fa9168002051caab134a04a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_e28b95f8c6434058a33f344b69b121a9.port",
+      "bytes": 7,
+      "sha256": "2a3ab07ac7fc8dde7343904f1fcef50a74e5ff3125b4b9dfee6a9d371f43c713",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_e4c082abceab472a87bbdd60e8e63cb7.port",
+      "bytes": 7,
+      "sha256": "3925715ad1d176d877abc6c2be26b0b6249a45cafe668a23bfdaaeb2b27dbb2c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/server_f9b385b25c5346b58c588efc333fdd95.port",
+      "bytes": 7,
+      "sha256": "a1e1271aacf07cae23733d4fe1d783e9b2dc21867cfde31eac610eb13c905b5c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/logs/soft_stop_20260930.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/attempt_multipass_tol_26pts_FAILED.json",
+      "bytes": 1595,
+      "sha256": "4312d2ef0215a7195f75a511eddd88996e2c732ffb9f30ef561a6feb90ba98e2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/c0_bc_probe.json",
+      "bytes": 1445,
+      "sha256": "d734e4ab731ebb772058a8edbda4df5daf99472fc4df122bec2995e7a25670ec",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/fig5_runs.json",
+      "bytes": 19134,
+      "sha256": "c055356ed4d628c4383db3709422a8f4047684bd5f15acb038a3fe78d1fba1d8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/fig5_runs_c0p100_attempt1.json",
+      "bytes": 34479,
+      "sha256": "6570724372ecea29352463bd1978a105485d3592b62eceffeafbbc5e573d530d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/hmax_scan.json",
+      "bytes": 13088,
+      "sha256": "0c595f6d2bde4b1b65588c1ea848b2240c37d9c28ee6bfe06015f6ce1c33eb5f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/interface_probe.json",
+      "bytes": 875,
+      "sha256": "57f47267217a1b19253633e259f2180232d4a4660188b33f7c04abaaa46c1072",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/load_probe.json",
+      "bytes": 43709,
+      "sha256": "9b3f9dd2f988c501d7b416fda4811f2a1e3fc18ec7d0a8a972a055f11e9b68e7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/match_paper_c0_26pts_FAILED_var_c.json",
+      "bytes": 3517,
+      "sha256": "d2c01e3a12425bbdce8a2ae4634d8412859b70e3290847277b7ed2520afe4b61",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/match_paper_c0_run.json",
+      "bytes": 100462,
+      "sha256": "9ae21e30f09d4298622b9a8a06d1e9086cda0c3308714534b4c8b3729eaa03c6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/match_paper_probe.json",
+      "bytes": 5181,
+      "sha256": "cd93d4085fe00f7c4e4095f5461e00ac42450112bc8cbfde910914089d83bbe1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/match_paper_run.json",
+      "bytes": 79246,
+      "sha256": "a1fb8600631dfa8bbf69b5872bd44f908ab4cb8ca4f94b3fb666d1cbae5fea6b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/mesh_study.json",
+      "bytes": 25066,
+      "sha256": "f8e7e733fd00278b3a6eaf9ae1ad159ef6ddab56be3a35541acef53d0d63d805",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/mesh_variants_probe.json",
+      "bytes": 1438,
+      "sha256": "b30a1a1824649e285dbb852b9c899f0fb1f7a9a108217fae0b3762bd73541718",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/multipass_iter3_study.json",
+      "bytes": 13974,
+      "sha256": "7f0f8c3d9a416720b1782df91237e5765a4832056d41e9e82c7260bbd5127527",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/order_study.json",
+      "bytes": 33008,
+      "sha256": "141a138c5dca0fc53a6a2693e66ed3ff93c2033a0b84266ef5827a7bcedf9617",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_comparison.json",
+      "bytes": 6414,
+      "sha256": "6a07f235312e15e5a1a34574db48a1b855b49c69e74dd15bf9eab15f0ba7c888",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_internal_steps.json",
+      "bytes": 889509,
+      "sha256": "c9d2b52821a6c03623c6eadc8af100905a2c988920dd78f340ae901d59043ba7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_moving_1e3_n100.json",
+      "bytes": 123847,
+      "sha256": "b06c3b4efad10dedde94990442dbe64fa5bdc115432301138a1270095ea33781",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_moving_1e3_pm_c05_n1000.json",
+      "bytes": 238718,
+      "sha256": "312cbd6ed8c53cb29391ce6d8df58d8ad20d599860dfd0744eec4ddde0691c65",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_moving_1e3_pm_c10_n1000.json",
+      "bytes": 149500,
+      "sha256": "a825f61cca94128e9091d04946ec9d914c840c981848378a3336288994f9eae2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_moving_1e3_pm_n100.json",
+      "bytes": 133377,
+      "sha256": "2ad23357cd752b91a02e56b090c6cb64665c71d1042546277a4f4baec575af9a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_moving_1e3_pm_n1000.json",
+      "bytes": 238071,
+      "sha256": "e7257a0f64dc640d396ad8e7a27d4db7d525a918b952b020126edea7bff9b576",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_moving_1e5_n100.json",
+      "bytes": 636,
+      "sha256": "5908ea658ac329e710a56975e3666bc4be91aa0dc2c71d5d0e978b2da23236f5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_moving_1e5_pm_n100.json",
+      "bytes": 136008,
+      "sha256": "7e1712e3f5d8cb0ede193e92c8ca8e563c781f7624a753794da1c627073d486e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_old_aligned_c0.json",
+      "bytes": 206752,
+      "sha256": "396d1860879e37cbacec331a29a49743731a0e4eecff974d2737710641c96b1e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_old_aligned_h.json",
+      "bytes": 233341,
+      "sha256": "177425204b416fea88b20da230720a4564368144c5fc710a8153ae98fdc4d841",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/repair_validation.json",
+      "bytes": 14434,
+      "sha256": "ccaa6eb5af9bb1a539ca55fdf1345db73c5f46c4bbad065ff588c9f7bf6297ea",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/solver_settings.json",
+      "bytes": 5325,
+      "sha256": "429785355ff719f24c5c4712b215f18906b42cac430a500d3195d42719f1c167",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/step_study.json",
+      "bytes": 57032,
+      "sha256": "c91dd7f62629eec9f9587231d3c073927887f9e0895b3c654cb2cff75cdfb764",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/step_study_100_500.json",
+      "bytes": 57032,
+      "sha256": "c91dd7f62629eec9f9587231d3c073927887f9e0895b3c654cb2cff75cdfb764",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/step_study_25_50.json",
+      "bytes": 4567,
+      "sha256": "9d24df81ff412054481af20232a4de468d9936091e10fd59fdd72e0238ac4ba0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/stored_solution_probe.json",
+      "bytes": 4280,
+      "sha256": "9a8f14332372a80619cb32f00350cc191a78b074076a24c7e647b3c365d87784",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/metrics/temperature_scaling_diagnostic.json",
+      "bytes": 2744,
+      "sha256": "8f42dfb23c4c76e56263b87a4292247a27f3530d0936aa44efeb55e346f8b564",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/model_exports/diaz_Paper_I_Dadfarnia_Dislocation_transport.java",
+      "bytes": 60739,
+      "sha256": "a6a83baedc38746a28e66ef77acc113c41e46f60bc66dca64c8d7561b14b98f9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/model_exports/diaz_Paper_I_DiLeo_Chemical_based.java",
+      "bytes": 56711,
+      "sha256": "d1ad1a2a6123e87463aff50e9b07e82c13309740388d40be1012f8a0f35f1af7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/model_exports/diaz_Paper_I_DiLeo_Chemical_based_TransportSolids.java",
+      "bytes": 55190,
+      "sha256": "8092aa713706413964eac3882190548624f1dd0832b4db6f5dd6e5f73568497f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/model_exports/diaz_Paper_I_Kotake_Softening.java",
+      "bytes": 57729,
+      "sha256": "95d0667082fcfdbcc58a69fdb4dda7eae884c5548548c5ddf6b97a2720fd59b6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/model_exports/diaz_Paper_I_Krom_HTransport.java",
+      "bytes": 55310,
+      "sha256": "901d2362c04380ad38cc2114a31d5cfe10137122cfe7894d14327f58349b99ec",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/model_exports/diaz_Paper_II_Elastic_HPF.java",
+      "bytes": 42671,
+      "sha256": "6ce3611b76e8ee4c622e35abb8fd09c4c42dc5ec648d5092242dd164aae14feb",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/model_exports/diaz_Paper_II_HPF_BoundaryLayer_Multitrap.java",
+      "bytes": 66026,
+      "sha256": "b0b004301dad5aa75e42e5cc0aa3e38262e09d8ea21151326e8a9edbefb3d0ef",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/paper_text/partII.txt",
+      "bytes": 134121,
+      "sha256": "dedcf590f9e7c49ed98350a7c7183e99771973b451badc35068471988ac19b19",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/README.md",
+      "bytes": 32540,
+      "sha256": "4fb40e823ec06e999734d680a5e329418164fbfef21ef236f7962b94bb72f8ff",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/README_historical_20260930.md",
+      "bytes": 30453,
+      "sha256": "e2f72763245c1a68617909dc93f82bdbb25cbad579ba40c65b5a694d7fbb5773",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/clusterignore.xml",
+      "bytes": 77,
+      "sha256": "58f5d8033692b215c97e887dab1d65c911915ae100b23ec16262ba879767936f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/dmodel.xml",
+      "bytes": 1086207,
+      "sha256": "a95b90247b4e03f34d22061f54efdcdc05f678b863129208ce95c3a49b6afd08",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/fileversion",
+      "bytes": 21,
+      "sha256": "c41cbad714bc289eb934a9d98ae927b119bed84c3573ecfbbf84a08af94e97c3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/geometry1001863107147359637.mphbin",
+      "bytes": 1181,
+      "sha256": "e93e80dc232a645666435dfac9008e149196599767ffc238f19a7eef57f29f88",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/geometry10626137737734935608.mphbin",
+      "bytes": 1181,
+      "sha256": "39ace3d7925475b748d963e77af46ced91048e2f024081a2483c47c365f4eda9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/geometry11000622515882071468.mphbin",
+      "bytes": 334,
+      "sha256": "e6b66a3e186476a4644122f2fc2f5e00e118c9772ce4ae66712d4b59335db575",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/geometry11449554478090663602.mphbin",
+      "bytes": 334,
+      "sha256": "88d60089872c5f2139cb87b0bbd71e2604e41e2a100dde4bdc1f68a1ca095e96",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/geometry11559795454311017526.mphbin",
+      "bytes": 334,
+      "sha256": "478bdd282d637c0c3b8fdb4459ce933f9b0ce60edf36742c7d472842f5bb42cf",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/geometry11718167928349705784.mphbin",
+      "bytes": 7730,
+      "sha256": "1e8e423805936af19f74cc48e2155cb72711e1d56feaf9577bddb1ed576f2bcd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/geometry15889477807745302471.mphbin",
+      "bytes": 1181,
+      "sha256": "f171cd945ae09b0c2decae244d8b1737d9f2f210ca9d6a6e7eb23646c357f916",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/geometry18364379538155407130.mphbin",
+      "bytes": 334,
+      "sha256": "2fa174792f26be503b338ad424baadaf27c0869c80d752d67cd7375bfcc7c58b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/geometry3546226476740252647.mphbin",
+      "bytes": 334,
+      "sha256": "3b39843c2d5ccb2c4b76b181a38bcf4d080a1b339b097123ff6cb12f0698d2f1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/geometry9578928271622659953.mphbin",
+      "bytes": 334,
+      "sha256": "86cb0fb80bbc761c7017a7a1e10fbcdd1b2400d9e753356036692b3e3211f245",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/geommanager10144030838986142884.mphbin",
+      "bytes": 9205,
+      "sha256": "01116df98941ab57cd1f04c6f4c94104311372625aa3a882124b23961fc70ef1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/mesh11305957264496918874.mphbin",
+      "bytes": 803274,
+      "sha256": "cfbd74e336fe6f845a8ffaa8f894a2032638d9c2c12402579a153579798e623c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/model.mph",
+      "bytes": 2081674,
+      "sha256": "b22a2d540806e6a1e701d6948bb27c7bbcf640ba35f767c2988ca1efe15a27e4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/model.xml",
+      "bytes": 207,
+      "sha256": "7731e10ff4f072e3c1f9d3637834759576d9e07270dc971fa0277bd779b36e2c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/modelinfo.xml",
+      "bytes": 987,
+      "sha256": "4b2a86d54cd4f16b9ce6d5f5f3b283e0ee1870574452123645026d4453079157",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/recovery.xml",
+      "bytes": 2132,
+      "sha256": "907d589acd3e2a9206bb6c0c8fb49b3e96e0b0e3a86b35a7cb5d5ddae8194bf8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/recoveryDescription.txt",
+      "bytes": 33,
+      "sha256": "c1aa93649b3a27024ae8bc34d25548aada4d9f0971b96de8a79affeda15c6de3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/recoveryid.txt",
+      "bytes": 28,
+      "sha256": "cc53d373fdd1d85f75c21d4ca44a76a9c58158ec56e403e6af5047eaee337461",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/savepoint1/model.zip",
+      "bytes": 44434,
+      "sha256": "b6b036890c018e1993dff16b88e71c895e4a80fbf39857bf6af3b2b2fb18d2dd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/savepoint1/savepoint.xml",
+      "bytes": 698100,
+      "sha256": "198802b0271224a409b75fe79b775bb3eb70c6dce2da5480c5f8c9062e6e6c3c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solblock0_8714207213990063104.mphbin",
+      "bytes": 12594727,
+      "sha256": "6271f30747bf5b5877275de10be357c6e2943a8b5baf642372e2ea6c227b956e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solblock1_8546866794388950016.mphbin",
+      "bytes": 25189265,
+      "sha256": "ffdffb070e36521ac75884ef906a1ad4c26271b40148b3d495494f2057c9a3f2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solblock2_7923568709926864896.mphbin",
+      "bytes": 25189265,
+      "sha256": "452ee51926d3dba1a3b5e6d0f3c85b6fe41b0201153a29f37d6aa5d5aa4ae874",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solblock3_8152460959728102400.mphbin",
+      "bytes": 25189265,
+      "sha256": "ad8a882055d19af9bfe55283cd3e90b2b4fe2f5ef264c4e58f772001c6fc3d7e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solblock4_1498387991430529024.mphbin",
+      "bytes": 25189265,
+      "sha256": "71d6ea3131620d143d3f724dba01ae7e85d1edf5d2c56f804ead9f7493ffd071",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solblock5_6193582494848164864.mphbin",
+      "bytes": 25189265,
+      "sha256": "40bf9c94e8d9961462fd410e53189477c4cbefdfc9759d65bca9633e71865abe",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solblock6_6173556956821229568.mphbin",
+      "bytes": 25189265,
+      "sha256": "d97faaa0acf230b69343c825d54b70232e63b3bf6d304963331847a60d8823d8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solblock7_8122970795745947648.mphbin",
+      "bytes": 25189265,
+      "sha256": "1ef32fa12a913ad053ccf2d81e0b6a78f319446a4613b8f01c6edf81391eda50",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solution13718519030994812565.mphbin",
+      "bytes": 556,
+      "sha256": "1aa54afddbbd5254e80f7a0924cbd384d063dc7a3eeb7e58d27d2babfaedadb5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solution7635338842446702850.mphbin",
+      "bytes": 3287,
+      "sha256": "6cf383fc17f109c95614d7561187deb158de5739d00ce9f604e036010e8c0467",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solutionblock8321662829641100844.mphbin",
+      "bytes": 12591352,
+      "sha256": "7fe191a842416b2d2dafa55b0c0e7eadf5c343d7909805e304b26c9bbd83bd7c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solutionstatic5014296211189486710.mphbin",
+      "bytes": 3149859,
+      "sha256": "d237e23483f0cfbd2736ff267180a87344988a5fcf2a0d5ff55b59b7b4477c6e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/solutionstatic9005788083077473220.mphbin",
+      "bytes": 3148186,
+      "sha256": "323683eeddc0b34fec6942b2ab27d44fbaca54ef198d3ca534e491280f35e507",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/tabledata11800616142087448499.mphbin",
+      "bytes": 108,
+      "sha256": "f79e773a4e03d242bf9396953b8333da380ef0841c89f0fbbf67711e97d7e696",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/usedlicenses.txt",
+      "bytes": 27,
+      "sha256": "8cd8b8160fc534af153e62d5302cac6b72b5eecc989cdf839d9c7a28a5465f29",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c01_300_interrupted_0937/xmesh16579883028184179430.mphbin",
+      "bytes": 12149943,
+      "sha256": "9ba139973d78192e26d173bbb2985a89c537fe95e90854fba9041c3d0c26bcf7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/clusterignore.xml",
+      "bytes": 77,
+      "sha256": "58f5d8033692b215c97e887dab1d65c911915ae100b23ec16262ba879767936f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/dmodel.xml",
+      "bytes": 1086188,
+      "sha256": "ff046f11b93d7da2c1bbac4440904a589fe674d3f19d5fee3244cd5889798313",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/fileversion",
+      "bytes": 21,
+      "sha256": "c41cbad714bc289eb934a9d98ae927b119bed84c3573ecfbbf84a08af94e97c3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/geometry12490911646958829865.mphbin",
+      "bytes": 334,
+      "sha256": "88d60089872c5f2139cb87b0bbd71e2604e41e2a100dde4bdc1f68a1ca095e96",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/geometry1275803601719599735.mphbin",
+      "bytes": 1181,
+      "sha256": "e93e80dc232a645666435dfac9008e149196599767ffc238f19a7eef57f29f88",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/geometry14362305290282080246.mphbin",
+      "bytes": 334,
+      "sha256": "2fa174792f26be503b338ad424baadaf27c0869c80d752d67cd7375bfcc7c58b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/geometry15239197019365337852.mphbin",
+      "bytes": 334,
+      "sha256": "3b39843c2d5ccb2c4b76b181a38bcf4d080a1b339b097123ff6cb12f0698d2f1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/geometry1639590203438876867.mphbin",
+      "bytes": 334,
+      "sha256": "86cb0fb80bbc761c7017a7a1e10fbcdd1b2400d9e753356036692b3e3211f245",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/geometry2840617845895961547.mphbin",
+      "bytes": 7730,
+      "sha256": "1e8e423805936af19f74cc48e2155cb72711e1d56feaf9577bddb1ed576f2bcd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/geometry4717744800926236070.mphbin",
+      "bytes": 334,
+      "sha256": "e6b66a3e186476a4644122f2fc2f5e00e118c9772ce4ae66712d4b59335db575",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/geometry5758899412979270969.mphbin",
+      "bytes": 1181,
+      "sha256": "f171cd945ae09b0c2decae244d8b1737d9f2f210ca9d6a6e7eb23646c357f916",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/geometry6724218857101108280.mphbin",
+      "bytes": 334,
+      "sha256": "478bdd282d637c0c3b8fdb4459ce933f9b0ce60edf36742c7d472842f5bb42cf",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/geometry8199884165244438468.mphbin",
+      "bytes": 1181,
+      "sha256": "39ace3d7925475b748d963e77af46ced91048e2f024081a2483c47c365f4eda9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/geommanager5033176077709231278.mphbin",
+      "bytes": 9205,
+      "sha256": "01116df98941ab57cd1f04c6f4c94104311372625aa3a882124b23961fc70ef1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/mesh4842686641609307341.mphbin",
+      "bytes": 803274,
+      "sha256": "cfbd74e336fe6f845a8ffaa8f894a2032638d9c2c12402579a153579798e623c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/model.xml",
+      "bytes": 207,
+      "sha256": "7731e10ff4f072e3c1f9d3637834759576d9e07270dc971fa0277bd779b36e2c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/modelinfo.xml",
+      "bytes": 987,
+      "sha256": "9d28e68bacfb18344d3ad8acb76352425f1bcd18a17f37915d614c1fd13dde98",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/recovery.xml",
+      "bytes": 2118,
+      "sha256": "38a4a36a89232c19bd4d56d29ddc10c38d875edc5091c0797d054c4332df2909",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/recoveryDescription.txt",
+      "bytes": 33,
+      "sha256": "e02eb4527c56e6d20675ecbec65c8aee401f480e2a1c2861fdfaa18901d3bb60",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/recoveryid.txt",
+      "bytes": 29,
+      "sha256": "f4f4532c9f0907fed52e3353fbffe077515578d4a99aaf55b04b7c1d1cf6c0d0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/savepoint1/model.zip",
+      "bytes": 44464,
+      "sha256": "7d95ca8ae1024891357c2b182f3b4a61cd82adfd910dad643cf8d3cf6a835885",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/savepoint1/savepoint.xml",
+      "bytes": 698082,
+      "sha256": "4e82cd3134c108f4141743fbdc206d02c67c24189b507eaaa4db0e694d4099ce",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock0_6699420673442302976.mphbin",
+      "bytes": 12594727,
+      "sha256": "8a10b416010b16c92b279eb281d4520ebdf74056796ace6f778b4e824d681a79",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock100_1243337967752222720.mphbin",
+      "bytes": 25189265,
+      "sha256": "02d93c3e1fe230a57fb33c2fce7e6dd17ffb5b3d3c66a0ede573e45606afbad3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock101_6747910409225896960.mphbin",
+      "bytes": 25189265,
+      "sha256": "2c2b2a50e72d9ba7dc26d7317c9687d38858048767936532459a09816e1f938e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock102_5883724910510611456.mphbin",
+      "bytes": 25189265,
+      "sha256": "80d782e3a467cd6ec641d79bee461ea97f7cc3dbe9e4991363ef973694240e56",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock103_3991500853290278912.mphbin",
+      "bytes": 25189265,
+      "sha256": "5aa943487c785c891fe424bade9d4158a40ce9bb499a330c913c001adf9329ab",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock104_7824619713346917376.mphbin",
+      "bytes": 25189265,
+      "sha256": "0b97ff6788aee48b98b13ac2b3d8daebea74922d22cd3ae3f6a5c47b5b225b68",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock105_2612338310480769024.mphbin",
+      "bytes": 25189265,
+      "sha256": "04d23688e3d3589f8318c4f0c8338737c0f4f4ce863811084f1cd41de7ae3a5c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock106_8165915149371180032.mphbin",
+      "bytes": 25189265,
+      "sha256": "fcf2ce39565059e8da37961b00831633c7444f0b68d7ff091d520da89c913cf9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock107_3866156695935398912.mphbin",
+      "bytes": 25189265,
+      "sha256": "e478bcd83eb91e5c66b7c576364b3459a3d600f806a7883264dc18a48341db7d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock108_5491107096035543040.mphbin",
+      "bytes": 25189265,
+      "sha256": "2d001021bf300d5b24dbcbc0c539da3d04bde9ac511d07c819d4be21620a0573",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock109_9043206967309475840.mphbin",
+      "bytes": 25189265,
+      "sha256": "496d5c4c4fa392ba24e1e7f490ed4b37f9795eeb138b8bfafee06e4f08f190f0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock10_4492923470730689536.mphbin",
+      "bytes": 25189265,
+      "sha256": "5e1b4993a5b6c1aaa633df607b46b2ecdb1d01023ca15eca6e6f900dcfbff757",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock110_7471889028426218496.mphbin",
+      "bytes": 25189265,
+      "sha256": "1e25789e7b60d13fee39ce169546cea535a564146e7baa92abe93debf3c8bb72",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock111_2361843756105783296.mphbin",
+      "bytes": 25189265,
+      "sha256": "cdf3f313b2b571b5670ae954d38a769960b067ad77163e354d5179d7081bc69f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock112_6655194697588033536.mphbin",
+      "bytes": 25189265,
+      "sha256": "a3c6a14bcb3337ffc544afb8b12c529da19430627371e31874d4e0987aba802f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock113_500017166103646208.mphbin",
+      "bytes": 25189265,
+      "sha256": "faf7026460d73bdf368a45f6d790f7c8f6ea14a3828ec1a55b3c53c7cf55c1ef",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock114_6439290212700040192.mphbin",
+      "bytes": 25189265,
+      "sha256": "1ec64058d3bba67f7756bf7bca8c7eb9b56a9dca32cbd3438c2e59f070aca10f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock115_4923186166990496768.mphbin",
+      "bytes": 25189265,
+      "sha256": "806e9eb0613c823e1ab7324a8cc71856633160b5b0ae121c48c5be8489518557",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock116_6504874945160842240.mphbin",
+      "bytes": 25189265,
+      "sha256": "13bdd7a2a2d5f203ba3b8030f467d85d5d7869fc94abb57a677ae3955f786ff8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock117_2906779993807302656.mphbin",
+      "bytes": 25189265,
+      "sha256": "3e203ddea26a31beb3ccc7bc91446d905719ce1bb8c582eab08231003a27e960",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock118_5679712429530434560.mphbin",
+      "bytes": 25189265,
+      "sha256": "122766df2db13714b8ee383c3a41a26a6dd03e49ce4f9031476c39b2542bc793",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock119_6237508924478419968.mphbin",
+      "bytes": 25189265,
+      "sha256": "717297d5752012da6edb4ca25b0a09c7a334a76f70688b132e42c7ba4e4113ec",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock11_5066393151144030208.mphbin",
+      "bytes": 25189265,
+      "sha256": "f209be93afdd3614c8c4861c9a3c0c81aec694fcc7b434aa1dbfd9435b9ada67",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock120_339214697705372672.mphbin",
+      "bytes": 25189265,
+      "sha256": "9f3c9a133b08f96e355176af81879878d88b12fcd9d7220203a0bf1d4f40295b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock121_2322665536775119872.mphbin",
+      "bytes": 25189265,
+      "sha256": "056cf9bbcc7230d9f2aa45ec03b01409177ab6451df1a7d2d00e5d9851bcd909",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock122_3738027067477127168.mphbin",
+      "bytes": 25189265,
+      "sha256": "9c7ceda02ab96fbc16aea4afc68c1294b69478eb974b23afe89bd0e4aab08f0c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock123_3474888141085753344.mphbin",
+      "bytes": 25189265,
+      "sha256": "598316f63bc36c51e0b15eb148ac998070aab9677add63d0be9e0f95b5046064",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock124_4464851010651063296.mphbin",
+      "bytes": 25189265,
+      "sha256": "b800e4afb070ae58cf57918df438bc855e5686b9f56d7d914d409309f355b334",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock125_452665559147222016.mphbin",
+      "bytes": 25189265,
+      "sha256": "fff2bb01151b42b4323ef3d5997b051655a7e5a304cace6f74c2dd983f339ed2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock12_7700789698162553856.mphbin",
+      "bytes": 25189265,
+      "sha256": "613fcda421d1ec44161ce6c27c7c2647c1a6074e914a85d6ec95d4af1b53b90c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock13_2226083911855858688.mphbin",
+      "bytes": 25189265,
+      "sha256": "8bd5712b30424f5a3ae6491d66c7b05b85577e77b6ebec8fd064bda0734ad44f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock14_8762529038395787264.mphbin",
+      "bytes": 25189265,
+      "sha256": "549268a3b2e9f1f4e682d85eb9b3595bebde5036947ed3a7609b08f4d51edffd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock15_6502730587698753536.mphbin",
+      "bytes": 25189265,
+      "sha256": "2e39298711cf91bc76c211f7ac00c55f30a839aefa8d3db02db00f465c6f0b11",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock16_8057917790070767616.mphbin",
+      "bytes": 25189265,
+      "sha256": "380b58255128d4bf6d3b829594ff0d6ab1d4adbdddf62f36d8b82cb4991ed237",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock17_2435965248754937856.mphbin",
+      "bytes": 25189265,
+      "sha256": "4ebf9f57c7ac8000f5ef4bbf048ed4a256fb8f61acb82a9b32f5b518d7493d1f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock18_8295659613486399488.mphbin",
+      "bytes": 25189265,
+      "sha256": "817493e6a6e90ea74124d70e77465a25ef6901e335f9d73c1cccdb176754701f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock19_3219501170269572096.mphbin",
+      "bytes": 25189265,
+      "sha256": "12207f6c5641d1a7ac4de9e86d5ac86f6aeece3efe9690fa3b574e42c6f7af4a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock1_2391316891281327104.mphbin",
+      "bytes": 25189265,
+      "sha256": "674ecee1dc94e6832c36f12e205c9b5ac2aab97dc9c8c2e1303bb5e016f524ec",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock20_6351905870363907072.mphbin",
+      "bytes": 25189265,
+      "sha256": "7f41407e9ad4cdda3d4a1156e2ac8528f2a2e0d5779da8454fb2fe8a265b27ed",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock21_4306119575518940160.mphbin",
+      "bytes": 25189265,
+      "sha256": "4d336b2c9e0cf41a43029bee35a6f9154fa69968fd5a248c74cf2088d5fd2fc2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock22_2596805668275526656.mphbin",
+      "bytes": 25189265,
+      "sha256": "314859431590a8a92060c69c1bf06a7a42baf9068ad343d4b07e9e29cb81fb6a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock23_31746153215198208.mphbin",
+      "bytes": 25189265,
+      "sha256": "4dbddf538aa19d58afa7b737b685a3245c855f6573b68740612b0e0b7c995ea1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock24_3972354501018771456.mphbin",
+      "bytes": 25189265,
+      "sha256": "c97586ffb7166dc1ea49f7feee6019ec2bf5c14a26c74da2308a744e9734a7a7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock25_8030560064610187264.mphbin",
+      "bytes": 25189265,
+      "sha256": "466bbddb489e8b6c2a8240d5233122e66b6bbeb97c9d4dfadc04ecf961cb2044",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock26_1548194543762569216.mphbin",
+      "bytes": 25189265,
+      "sha256": "c93549b6bf7cdb4bedf8a9d89a2f9a8af53f68c55b271c9abb73b97cf941d6d8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock27_6087719382270852096.mphbin",
+      "bytes": 25189265,
+      "sha256": "5bf196b777e09aada5f29892b1b0a106bc87cd0cf95d99dd2a34194c00d8e050",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock28_6460369820574979072.mphbin",
+      "bytes": 25189265,
+      "sha256": "3753b1a4ad7f2dbe4b4fea0bfe3f649270c7f604b0b5abdf830443d270e28d94",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock29_2798730085915721728.mphbin",
+      "bytes": 25189265,
+      "sha256": "6652769ab3d3dfabe22c7f93df36acef9f89d9b96b189680fc730de204d5e437",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock2_660962301502843904.mphbin",
+      "bytes": 25189265,
+      "sha256": "a1809480e4e942fcbcd01a08b4d54c0c1cfd6549b4a0377981fcbbe88fc960b8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock30_4396144717348540416.mphbin",
+      "bytes": 25189265,
+      "sha256": "0b49efb0c033191e7b8d3f0d8baed3bbcc6a6816162c6a32d3a00c3c38f5046d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock31_2653058967483416576.mphbin",
+      "bytes": 25189265,
+      "sha256": "0cdab8c5b52b4215e67e53ef52dea3cd3d845bc7a4722c31bb792a01ccd4c4e7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock32_7365634687537687552.mphbin",
+      "bytes": 25189265,
+      "sha256": "680639b140ebea77f1f6f2beab1cfe00e163b3e3744320015db9fb3631b2e416",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock33_2321663245815761920.mphbin",
+      "bytes": 25189265,
+      "sha256": "c76bf30105245d082e1260eb96a71578b274b7a08a06d0d22d710700a86b4486",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock34_5394445539326795776.mphbin",
+      "bytes": 25189265,
+      "sha256": "852534786c1b67657634d10ff7725b2f63d6f4a081c264f7bf155602d4afcb5d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock35_5691797807407438848.mphbin",
+      "bytes": 25189265,
+      "sha256": "92d794da23df58bcb75518461f2c7d3124030826582fef359d3720bc41923ef5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock36_5192913174085669888.mphbin",
+      "bytes": 25189265,
+      "sha256": "539e2a1fc93d6141bca5441afb4e0456c6f291b2b245761e0559515b67a75eb5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock37_5250073063967467520.mphbin",
+      "bytes": 25189265,
+      "sha256": "9c180f3d0f154ae4cca98d5afb3cba89aecf8118a46a51049c574b888e6ae630",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock38_2060326656357902336.mphbin",
+      "bytes": 25189265,
+      "sha256": "797a264c9cd32b19def91d85ebe4fe5eba0c7702d9d75b435c4fb4cb1e96a262",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock39_7447766080721711104.mphbin",
+      "bytes": 25189265,
+      "sha256": "139f09015fa9ae7882d3f3c44affb75063897f014e10ad4f9259267e29884b25",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock3_2030907072922303488.mphbin",
+      "bytes": 25189265,
+      "sha256": "718071cf4821219ed5ffbbb3e71d0b91667159c147d073b7d5992ca884df5613",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock40_5474934881459545088.mphbin",
+      "bytes": 25189265,
+      "sha256": "94d63a2f57d99fd383c567a68e6f0da7c2a1f56eab201f08ee2ec8cb36331be7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock41_5560875142549737472.mphbin",
+      "bytes": 25189265,
+      "sha256": "c5bcb88518aa59acae0419eb8035857d1222acbe6eae338937be4204dd14a54f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock42_2255770388064193536.mphbin",
+      "bytes": 25189265,
+      "sha256": "33d35fc3778b720f3cbef3ddf366d46e31671dfc3348030d3c3ac2d985c3e182",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock43_6522859370634654720.mphbin",
+      "bytes": 25189265,
+      "sha256": "55f7fb62334ec0e61387092034efafe99913acf7edbbd49e748d43534cc5d810",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock44_6927101514924618752.mphbin",
+      "bytes": 25189265,
+      "sha256": "8518cac86355eb8e91bb3e1acce736476d8115f2da479fbf5a37a5c85bea26ec",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock45_8518186957001378816.mphbin",
+      "bytes": 25189265,
+      "sha256": "2675fab9bc88dc5b024b23d89a8fa1f128d9c602a35f8642f1d83cbf24d81075",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock46_735483191971615744.mphbin",
+      "bytes": 25189265,
+      "sha256": "2d00eb12fbd9867c1c350e02c59c2faa52504f2485ebaf82f6af86a75b8aef18",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock47_7519146559140777984.mphbin",
+      "bytes": 25189265,
+      "sha256": "e36c94bf9752bc8564224d45d71594906980ecb8f69fa62aa44a42f1ef822e2f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock48_4011140037163428864.mphbin",
+      "bytes": 25189265,
+      "sha256": "a51c693a3cde942df1d30b26a069bc9cae23235b8ae3a9ef6619c3c250d38e37",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock49_2347489642632035328.mphbin",
+      "bytes": 25189265,
+      "sha256": "805e60dd749d5d922f455d8ea872806e5bca97e8fbc3ac86b9742c0998dbbd7d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock4_3870344999294969856.mphbin",
+      "bytes": 25189265,
+      "sha256": "4b5ae7c3d08a5b9faa8ea91d61c318a5cf1f3444178a55f161b488a037df8ece",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock50_8870213594586398720.mphbin",
+      "bytes": 25189265,
+      "sha256": "24aa0452df0d7e0412fa920aee6d897ddcec2caab1b4691ca94e198a2c4c761a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock51_6644953261970795520.mphbin",
+      "bytes": 25189265,
+      "sha256": "78197d2cb8b644952d6cabb33efbac3865af303a2db6c319d48ab945232b5961",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock52_2719431919217435648.mphbin",
+      "bytes": 25189265,
+      "sha256": "43b7bf06a7b70d7f3aa9359931401cd62fc53697d046deb694b8fd05652444a2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock53_3520708120863843328.mphbin",
+      "bytes": 25189265,
+      "sha256": "06b81de304ccf8051ac2f36bf6fdd85ae70c5518ef468fa681105cf17547bd95",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock54_2568314513191576576.mphbin",
+      "bytes": 25189265,
+      "sha256": "9a22a71d51b243b5b8026b3c687325b89bb1d8d66cf39e01a84c1ca5d0e630a1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock55_6931842772762491904.mphbin",
+      "bytes": 25189265,
+      "sha256": "5ebf560f3a21f16b46227853fa4f3c86946efef59dfedf7840a312aeb5d0c5ba",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock56_6552911709413235712.mphbin",
+      "bytes": 25189265,
+      "sha256": "b0b64f18d9883949257698fad40709ae1b2afacab87cb2d50358038c6802b7b4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock57_7346225285022088192.mphbin",
+      "bytes": 25189265,
+      "sha256": "c5b0f57ad8d77011ccc5863746e889df5b3bf7b2557626fdb0ea55ac06ac6d1f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock58_6869950346364904448.mphbin",
+      "bytes": 25189265,
+      "sha256": "717ce083cc7711c6a489df3e88dba7afb91eb8ac48d274b3efc79524202264d9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock59_7423049225436993536.mphbin",
+      "bytes": 25189265,
+      "sha256": "3b02296f48c391f17ff4df0d776a00fd00139e1ea4e78a35d638d939bf3f5725",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock5_8372002655483332608.mphbin",
+      "bytes": 25189265,
+      "sha256": "24003167a142509abb28d026f416274c26822fda0cd2043899a5b7fed250b297",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock60_5406960708787228672.mphbin",
+      "bytes": 25189265,
+      "sha256": "dfde224ef463b180450c8d2817367d8a2b7477be7ca8f1e3b77a37b53c394f73",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock61_5302389100305467392.mphbin",
+      "bytes": 25189265,
+      "sha256": "6cb020756abb9d8a0b2e19c6ca6b31d71b323889ace1d7b30b73b7e73fb24b1e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock62_3984376454168729600.mphbin",
+      "bytes": 25189265,
+      "sha256": "2c29e7659948a96d00700e89264d1bd47b69da160f34686a94e5a3e8d04fd24a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock63_7692455777747221504.mphbin",
+      "bytes": 25189265,
+      "sha256": "06dd11e365e9b71287150d5c6e7a54075f4e1791b351e873592e9cb0202c1ed9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock64_6934207665474592768.mphbin",
+      "bytes": 25189265,
+      "sha256": "c2ec18cfbf28624bb87eb445a18a3658ba7ec31b087013d1eed5c25fdd36e4c7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock65_4877706997317984256.mphbin",
+      "bytes": 25189265,
+      "sha256": "5f762374f1e67cea8c488dfe5c1da3a7d4eac2b326ebce0a90b8d592fd9e2262",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock66_716584259486239744.mphbin",
+      "bytes": 25189265,
+      "sha256": "54850f2bc5afc49edad24da02cb47e3609f4225e57327fdd3cfbcc3ebcd9670d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock67_2625109719641549824.mphbin",
+      "bytes": 25189265,
+      "sha256": "be7464ebfebe7239f136913cdc6513b9c70889d29f40c3c1dbacc6d9ebdf5000",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock68_4910211573675344896.mphbin",
+      "bytes": 25189265,
+      "sha256": "508c1785427cd6b31fba6d78e5102143efe5751bf7bfd3e2584b2b89bb6a964d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock69_9018965107776111616.mphbin",
+      "bytes": 25189265,
+      "sha256": "06d5d8ddc4760f96240ad97c480d3303bd0eff15782a148fb0d97c4a8259fd74",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock6_5810438797956558848.mphbin",
+      "bytes": 25189265,
+      "sha256": "706b5b83b587f52a74f14e18cdb60a2e3fbc637980bab2fbdf7449d7b252ca16",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock70_4761856552285983744.mphbin",
+      "bytes": 25189265,
+      "sha256": "b40aa7f1f10c3b7c4ff84aa4d59f993a8594ebaa9b3bbdbb3af339c02fef6295",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock71_7683457123015212032.mphbin",
+      "bytes": 25189265,
+      "sha256": "0c7b96dad0092e65de6e60092656214c554f2b58d9aa4fe668d5305f410a4bcd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock72_7919873686958743552.mphbin",
+      "bytes": 25189265,
+      "sha256": "8cc2f8ec1301145e08bf281f4cf9d964197c4f88de699ca064de847c5413673f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock73_5395937634208441344.mphbin",
+      "bytes": 25189265,
+      "sha256": "786e0096aafd06bba82659a8c695a5b289aa0ce1b8aaf5532681b4e26d63441e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock74_4727835495539485696.mphbin",
+      "bytes": 25189265,
+      "sha256": "e2612f638a02ce488f33e2ca7e4983422a5e7a8e56880a5f6d35986b7b8806d0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock75_1409808768643765248.mphbin",
+      "bytes": 25189265,
+      "sha256": "e7f90a7ca37b3df42a2f928a9dd8c6e18dcdfa32003baf48b9ea22bcdb170929",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock76_5758865871160404992.mphbin",
+      "bytes": 25189265,
+      "sha256": "41ba04d2ce9764da7e7df5b5e8c51b1682a771f4d4bb590a42e5c9cc83ca0621",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock77_5324062551928962048.mphbin",
+      "bytes": 25189265,
+      "sha256": "8b7ed841fbce28d4fd7b1ac5e7a2d8fe9743c50fe05b3ffba087e52c600c989e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock78_7031362035475639296.mphbin",
+      "bytes": 25189265,
+      "sha256": "19fb744e9110d4ee8ead9562f673dfd475adb70122b2216ac4f8adce517893b9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock79_651305293904122880.mphbin",
+      "bytes": 25189265,
+      "sha256": "a54fe5caef5eb894e54b55b5d5d92be56ae4291130cb3b96856189070ee74d76",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock7_7620126543413156864.mphbin",
+      "bytes": 25189265,
+      "sha256": "d939021aa0dbd7c6f8ebdcd9ddd5e92299a9a4bfa4e322cf8aea34d0840c3e97",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock80_7982802074962994176.mphbin",
+      "bytes": 25189265,
+      "sha256": "b3fb2ee68bb2ac1039d7f4c79b0fa7b14126c1f763e5e91207c2c6da1b17796d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock81_3004231723204273152.mphbin",
+      "bytes": 25189265,
+      "sha256": "4c78bd84d760ea02a85f342407ad86e6d79de57e4cf1c55fdbbddea4678a50a5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock82_3042659061121575936.mphbin",
+      "bytes": 25189265,
+      "sha256": "e0a47e478a32caaffa018f030057c03735f49e464fb98f510386034a5b7926ff",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock83_3666727850411381760.mphbin",
+      "bytes": 25189265,
+      "sha256": "5a54890981f81b737c1073a41fe9b97d6bd731a813ca76d8de44e315cc840508",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock84_6796298887928817664.mphbin",
+      "bytes": 25189265,
+      "sha256": "2dedfb0b94f260342fa5a9e953dca23f339beb5e89d1690834aba92ee7e01121",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock85_6484245636171680768.mphbin",
+      "bytes": 25189265,
+      "sha256": "e9050c2efa6db2fa1b524aa73f5ac33168a6824208f1230871a3c329414e395d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock86_3084825217096617984.mphbin",
+      "bytes": 25189265,
+      "sha256": "105b295db0d7f067bdda7487620bdb5541340f30adc191385a831c846dac944f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock87_8548985097085698048.mphbin",
+      "bytes": 25189265,
+      "sha256": "cd2a6f18fa45ba665cb6ac9b1c89312eff255915d1f14c95b3fb64b7da9f0db1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock88_1759085034346943488.mphbin",
+      "bytes": 25189265,
+      "sha256": "88d17788576e1067c25e5d8276c5a97e8da91695fcc29bd2d6fc4432d4312e06",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock89_7848561623859931136.mphbin",
+      "bytes": 25189265,
+      "sha256": "62336b2433131f0d24469887364016032c60803d7be7bd89afcec2eadc533218",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock8_8905845774803399680.mphbin",
+      "bytes": 25189265,
+      "sha256": "7971f2a4118d947c09f9247863ce0b3bf4d3452a968ec07efa0495fab2fdfd99",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock90_2464662060584178688.mphbin",
+      "bytes": 25189265,
+      "sha256": "a45175c381316ef6da7064ca028a28c3381d1780aba10c64a87fc0b4fce9a86f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock91_5279033299921231872.mphbin",
+      "bytes": 25189265,
+      "sha256": "6fa3fa27174c29c72f8a1223bc264ffa85c3dc0c8b8b4dbe7fe853eb2740d38f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock92_6685802590501371904.mphbin",
+      "bytes": 25189265,
+      "sha256": "0cecc3c4527f26fb9161012e339fc444a061ba0d5da51a16839311d183cb3615",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock93_9183021506710563840.mphbin",
+      "bytes": 25189265,
+      "sha256": "3ff5f329c12ff67b59456a9ed5141bb1e918720ddfa9eaccea8fbd8eb4582ac4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock94_8522708690666348544.mphbin",
+      "bytes": 25189265,
+      "sha256": "0bbf75378f7d4d1f0005c8e1d02e6dd7b7ee5e3549925ac71ac1af7e636f7cf7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock95_3594962084541443072.mphbin",
+      "bytes": 25189265,
+      "sha256": "7dff06140bb29df763a5f7e00848df8e8cf7b4263a65720ebed66c84f6e94eee",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock96_5169947933283373056.mphbin",
+      "bytes": 25189265,
+      "sha256": "704c38916341ab41416b6abcf9ff56f7f907c0930c00ffd26eb874d4dfd1c15f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock97_6715080501209523200.mphbin",
+      "bytes": 25189265,
+      "sha256": "b1a428aca82f3d4e55d31d7cc2ef66951d44c32426ee64606fd86434dfc0657f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock98_5281622276259042304.mphbin",
+      "bytes": 25189265,
+      "sha256": "4bb73ac447aaf7ede58751bdb066a5e7ce52b565396bbd866da76ce964015e59",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock99_2504008684542022656.mphbin",
+      "bytes": 25189265,
+      "sha256": "ba3107c83796e9472ec48dc9f8f59ab787fb619dd1901d1b4e495bd1a40da5e1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solblock9_4366061513021000704.mphbin",
+      "bytes": 25189265,
+      "sha256": "4df4cf1ec6f0bb895c93cc2c99e39a0a1cd45973ed899b18f04d029550dec9f7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solution12309293991252286144.mphbin",
+      "bytes": 556,
+      "sha256": "1aa54afddbbd5254e80f7a0924cbd384d063dc7a3eeb7e58d27d2babfaedadb5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solution7298248215055971341.mphbin",
+      "bytes": 42759,
+      "sha256": "a72d3f3a2bcdc3507831b2a1425a1c7bbdc9cda61269bbf9283b4b864d5d4b43",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solutionblock827787663106922274.mphbin",
+      "bytes": 12591352,
+      "sha256": "a4a7a3b559886af826031b8b5a6dc526082a91306a7498814539221baa626372",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solutionstatic5179499198861320477.mphbin",
+      "bytes": 3149859,
+      "sha256": "d237e23483f0cfbd2736ff267180a87344988a5fcf2a0d5ff55b59b7b4477c6e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/solutionstatic7628615336408215121.mphbin",
+      "bytes": 3148186,
+      "sha256": "323683eeddc0b34fec6942b2ab27d44fbaca54ef198d3ca534e491280f35e507",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/tabledata2972632766805050042.mphbin",
+      "bytes": 108,
+      "sha256": "f79e773a4e03d242bf9396953b8333da380ef0841c89f0fbbf67711e97d7e696",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/usedlicenses.txt",
+      "bytes": 27,
+      "sha256": "0536893d26c432c417e21c340c88dc0098c5de99b25387098a1db3d4e7a1d1b8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/recovery_snapshots/c10_293_interrupted_0937/xmesh85713696869066718.mphbin",
+      "bytes": 12149935,
+      "sha256": "b739479daed8db81d418ade0106b726a892849222fd3838650f99067a1d1019c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/REPAIR_REPORT.md",
+      "bytes": 9075,
+      "sha256": "aef98ef8aecd3b4bbb0ddf26920369f79722401c1a05f57f70487f8bf86d7258",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/elastic_hpf_c0p000.mph",
+      "bytes": 786992755,
+      "sha256": "76692613cd04c37a3adf2c41820798bf48c93350b3f8f52045fb9f5ce9f5c454",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/elastic_hpf_c0p100.mph",
+      "bytes": 786995729,
+      "sha256": "5760642fdfdc63c973a49ffe3810cb8d685d3f2922fb7ca1cb2df3e16d559e97",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/matchpaper_1000.mph",
+      "bytes": 12627798484,
+      "sha256": "c41b9c5524bc0657b195b071a6ac17742ad21802805e0e2e4b7cfa6ee3860f04",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/matchpaper_25.mph",
+      "bytes": 345700801,
+      "sha256": "7d5c5638a519ad5925940e43e25c238a823f4ed3d41af656ca428f17dd32fd05",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/matchpaper_c0_100.mph",
+      "bytes": 1290475180,
+      "sha256": "2970694d50230f313d2e571eaac26968051133473b7badaf0821e184f0b8cdd6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/matchpaper_c0_1000.mph",
+      "bytes": 12627798925,
+      "sha256": "1933bc8fb78f313f9a2255241750dd6a83988b719806249af58a613737811f69",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/matchpaper_c0_25.mph",
+      "bytes": 333104826,
+      "sha256": "be19af12fe4effc9da9db8dae5d0529a32518edadfb4cd349f95d967dc4e2ca8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/mesh_4_c0p1.mph",
+      "bytes": 552680987,
+      "sha256": "33f25a5e27e9ba6c866af313cb2840829b8f3d4f40df96e3c6f6b5d90483eed0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/mesh_5_c0p1.mph",
+      "bytes": 786995449,
+      "sha256": "7566d61e9635d20494fc35fd53868186710ac6c3da3ecda8628b7d27a17731ed",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/mesh_8_c0p1.mph",
+      "bytes": 1652687009,
+      "sha256": "d28a8c7d184d89fcab10a17329de0e7e68b1396d1996104570c000f67fd3b673",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/mpass_100_c0p1.mph",
+      "bytes": 786994449,
+      "sha256": "4607320059c9506df691fcf768190aa211217901ac80543d7f2f3be8164c746e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/mpass_25_c0p1.mph",
+      "bytes": 150994216,
+      "sha256": "2bc6ab2b60cd28bc8d8dd7202b6ceb25b156ddb13ed29e50617e1b106a9106db",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/order_1.mph",
+      "bytes": 786995355,
+      "sha256": "9aa2f317fe15ec10786fea3f2648f44aa0c992c318e34b03c8517590db4bebf3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/order_2.mph",
+      "bytes": 1119522827,
+      "sha256": "63c96a25fd851baf153da11f454e99cfe6f9803ec1f947e330a8d10bc4c23103",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/order_3.mph",
+      "bytes": 1119522960,
+      "sha256": "f028c616757a48cf2ea625c1ec8cb3bc362a2d2c3ad032bf7e8bcf94906d55bd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/order_4.mph",
+      "bytes": 1119523120,
+      "sha256": "ba95ddd008c536fa739da8777319b354a4eb464f5a9c8f6c19f8509f9bbd40a1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/repair_moving_1e3_n100.mph",
+      "bytes": 1126711745,
+      "sha256": "2d498a27df6778e1c8b4a1ca2f1f10bf3ac41001a165ba288b18ebee15c94b6f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/repair_moving_1e3_pm_c05_n1000.mph",
+      "bytes": 12627802546,
+      "sha256": "dad698204a0cfce7c574c248a2a79604a568230b86c8e99385803e01d29a71d2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/repair_moving_1e3_pm_c10_n1000.mph",
+      "bytes": 4691700361,
+      "sha256": "08954b5565f1483cb0bdddd356783eeaea48e9f7c5771d9cbfe47394d4c61ce6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/repair_moving_1e3_pm_n100.mph",
+      "bytes": 1655795033,
+      "sha256": "00eeefa1b5281a02f76108f9556c68e2461d30921107eef60c56e182b0758f2f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/repair_moving_1e3_pm_n1000.mph",
+      "bytes": 12627802703,
+      "sha256": "811fd0f83fc5ded2e68d6c1290a239961202f953ae248d07da7539f227832261",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/repair_moving_1e5_pm_n100.mph",
+      "bytes": 1618004256,
+      "sha256": "1a59d3dca636472a2e1570193e42a5d814fbbf84f7f65972a031c1c83889ec71",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/step_100_c0p1.mph",
+      "bytes": 786995520,
+      "sha256": "9a3ec9d0e2b6492924366a63c9076186375254521e5ef30f20f38ae5af256670",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/step_25_c0p1.mph",
+      "bytes": 212302535,
+      "sha256": "c25bbd00e7eac663a7a6de8101418b849d4eba11d5e39071bfc10a797b82a1a9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/step_500_c0p1.mph",
+      "bytes": 3852017286,
+      "sha256": "10d40ae19b515c7b41fc0bd645330a4a388eb1d6df5d7cd933019d00acd03b9c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/runs/step_50_c0p1.mph",
+      "bytes": 2081674,
+      "sha256": "b22a2d540806e6a1e701d6948bb27c7bbcf640ba35f767c2988ca1efe15a27e4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/load_probe.m",
+      "bytes": 4845,
+      "sha256": "f4c0ec7c6962c3b019d2b5d5165fa8f7f88dfc97f62a08dec7bb99e51c730a7f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/probe_c0_bc.m",
+      "bytes": 3058,
+      "sha256": "0888c8be18878214a84ac3d200eedd78f4a1ad7432cd5100d9b36ecc99f2e83c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/probe_extra_interfaces.m",
+      "bytes": 1988,
+      "sha256": "aa2a5d8dbc87d8d1867bee54153803bbad5ee9675049369d61ac4706c3108f0a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/probe_match_paper.m",
+      "bytes": 4776,
+      "sha256": "04d5c75a2a814a3c7c1dbcd750bfe528fe07b02207f66e9d922dccb71d940879",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/probe_mesh_variants.m",
+      "bytes": 4149,
+      "sha256": "8b74195f163199207ee9034f1737177ef769c6358891c03a2f9e4597b08c0c57",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/probe_solver_settings.m",
+      "bytes": 4235,
+      "sha256": "ae6ab6a68d03a35acebc6ec7da46dae8edd742f660323560d70d9109fc262ab7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/probe_stored_solution.m",
+      "bytes": 2348,
+      "sha256": "aad4f2f142dd4a3bf32dc646bda569e950c7520535dad2951cde052836302279",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/repair_higher_concentrations.json",
+      "bytes": 1645,
+      "sha256": "7c9f9e4c735347e15c9aecfb98418b71b65591206eec89ddfc9e6cfa6e52e511",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/repair_multipass_pending.json",
+      "bytes": 340,
+      "sha256": "f884ea5001b93f621d2a37a8b994b9475189c3eaa323cd85ab5e9790508183da",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/repair_pending.json",
+      "bytes": 847,
+      "sha256": "8bad1d207fa293b23dd5caf895e79a7d4fce9099e5cc099a625a1a24f2df6699",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/repair_queue.json",
+      "bytes": 2760,
+      "sha256": "ef68c178f0c30277e7eb19744574d57bc5640a7742a2f94edaf4a543b01e0f01",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/repair_refinement_pending.json",
+      "bytes": 626,
+      "sha256": "cba750e59f723f62fd0698790b35e255005428b56600d12c3eaaa5492cdd1092",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/run_fig5_cases.m",
+      "bytes": 8963,
+      "sha256": "4d3e2efd44d54414760bdef0d6f78a813402489bdeb4e377d5ada64f89e5361d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/run_match_paper.m",
+      "bytes": 8184,
+      "sha256": "6f58a644d69727e12c50f504a74a0c754661911ccc4b1bc442502b8b16ed71c9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/run_match_paper_c0.m",
+      "bytes": 9055,
+      "sha256": "92237ab6248f896730acbec3f6696bf4c3a69cf0c985aaea69e01ce2740f2da7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/run_mesh_study.m",
+      "bytes": 5446,
+      "sha256": "19b6b3676420aa06ea9c44203be7d026700476b994087182f10169e02d115740",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/run_multipass_study.m",
+      "bytes": 8505,
+      "sha256": "76e24a316ad19fcdc31e5e9d914fe6e7e93d1d4a33a4782071d0b4f350536646",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/run_order_study.m",
+      "bytes": 6403,
+      "sha256": "f626ec4fdafd04c874cfe6ed47f3b5de081073274745ba5c22365ad1521e932c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/run_repair_campaign.m",
+      "bytes": 9674,
+      "sha256": "e89f28d098ac16ff756a9a696622be309730f718805169302e3cf4761995aad0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/run_step_study.m",
+      "bytes": 5957,
+      "sha256": "78cdd3879ad987ae77ee30915d3d85bbf1506849a63e8eaf3899ee5252dfc8a3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/scan_hmax.m",
+      "bytes": 5479,
+      "sha256": "0e27bac142c78e7f0fcd507ded5b0e5d21617e69edcb6cb91d2fcb073a436edf",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/sha256file.m",
+      "bytes": 377,
+      "sha256": "00051dcbe396e143039cf3238d183578faf68cc0861cc4f9f4104179863008b9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/Start-Case.ps1",
+      "bytes": 3999,
+      "sha256": "94495eaf16998439c6d49df3ce3c6565a13c70172d83fb6431e9759ff5c90827",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/Start-Fig5.ps1",
+      "bytes": 2030,
+      "sha256": "bc211ba38e42804b2a567a4fdc716ec2d6dd524c403a2527e668d5bf65694d16",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/Start-Repair-Worker.ps1",
+      "bytes": 2002,
+      "sha256": "3e3ca7bd0a348a755deb8609d2c2f9bb0a828ffe8237faea7d6bc50ae4e10184",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/Start-Repair.ps1",
+      "bytes": 4088,
+      "sha256": "b55a23cbf9e0f6fdf89edeedfe4aeead39ca0fcdb6da73430c483c5b39536b58",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/stop_stalled_repair_20260930.m",
+      "bytes": 844,
+      "sha256": "99849809e2aee5befc505c68b59d64bca40c92f4401bbc8bcfa3a1e0d8a98be4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/scripts/Watch-Repair-Results.ps1",
+      "bytes": 1234,
+      "sha256": "7d3726688f8e764b01b6235567dd7e13c159c43b4a1841649ae5e64e74d77006",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/ArticlePartI.pdf",
+      "bytes": 3030878,
+      "sha256": "93356d58d6c68d5780d7712226828a7269dbef39fa2ae06eaf798fa0b08f827b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/ArticlePartII.pdf",
+      "bytes": 4903333,
+      "sha256": "4c00b81d7ab6e877220cc66ee9a24bfd86bae1edf0b738f19238ff0db749b0b2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/Model_index.pdf",
+      "bytes": 97173,
+      "sha256": "d1d11e61177a7fa2a0159a863b5e6aa3067ec8c144116ecaf6f2cebc1aff6317",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/Paper_I/Dadfarnia_Dislocation_transport.mph",
+      "bytes": 2122389,
+      "sha256": "d414bd00378488d947d8fc2badfef4144f71b9fcbe87e1c48bdfaa81bc8bb762",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/Paper_I/DiLeo_Chemical_based.mph",
+      "bytes": 2666726,
+      "sha256": "d2dbd23d6cef14085353abb4b98d0a849071c57aa76220b86d0524890367e145",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/Paper_I/DiLeo_Chemical_based_TransportSolids.mph",
+      "bytes": 1997661,
+      "sha256": "14d850ede323fda184ac30227bafc0dce5602251f2a84011e39cd51e92b47068",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/Paper_I/Kotake_Softening.mph",
+      "bytes": 2007409,
+      "sha256": "8f94225576b65ec1f8cdb436508ab42824b98e2b8f649dff4bb51a513309090d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/Paper_I/Krom_HTransport.mph",
+      "bytes": 2240843,
+      "sha256": "b25890dd0eee37a18cdd838ef0e2ca05b49d8afb7683b79103a9fca1e768c832",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/Paper_I/Martinez-Paneda_Electrochemical_uptake.mph",
+      "bytes": 2199696,
+      "sha256": "a0eb01f16ab2dd0e7df923e58e00ce0467335472e9fb954b64d2f25f04dfc56b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/Paper_I/Martinez-Paneda_McNabb-Foster.mph",
+      "bytes": 1873043,
+      "sha256": "187a06b9c99a38fe0fd0d7f772ddf4a9d6b7cb49a69ae2ac1b3e90c25b51441d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/Paper_I/TDS_2traps_Legrand_McNabb-Foster.mph",
+      "bytes": 1074842,
+      "sha256": "a5bc7aa92704018664eae4e08846b52ebc8413100d2bda9ffc2535a2f54f3f5a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/Paper_II/Elastic_HPF.mph",
+      "bytes": 2081674,
+      "sha256": "b22a2d540806e6a1e701d6948bb27c7bbcf640ba35f767c2988ca1efe15a27e4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_diaz_2025/upstream/Paper_II/HPF_BoundaryLayer_Multitrap.mph",
+      "bytes": 2915147,
+      "sha256": "b19c723befad55a48dfd9c54fe7e5de31044fa34bcc13adecb5be7869c2956cd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/.gitignore",
+      "bytes": 55,
+      "sha256": "103d4bc4413b1cb32fe64368857cea73fe63c33b84b23f9c3a65bf2b0b140e5a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/audit_coupling.json",
+      "bytes": 3704,
+      "sha256": "67b90be9faec4e628002c1f56c9f04a955b403ab97d3765cb750d9bbd39144a8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/audit_readonly.json",
+      "bytes": 20952,
+      "sha256": "716d567fb95e5b987850333e4586f340077e1633235e74866ca3e34313104dac",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/audit_repair.json",
+      "bytes": 2567,
+      "sha256": "3f51d79e88656f2f4920fb99dc7ded5227ecaa40b76206cb2b2e5ceadd5dcce1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/license_probe.json",
+      "bytes": 8324,
+      "sha256": "633037bcbca22b6dd9987def2f4edc877a70212749d0c81d91fb162d795b09a0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/license_probe2.json",
+      "bytes": 3584,
+      "sha256": "98d903bb3da166275078986b40e99242f71af7a156be9e40cd6473f5eacf2dee",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/license_probe3.json",
+      "bytes": 2664,
+      "sha256": "f53a0f335ae32593104bd26bfef23241f0a388373045f3d280b5a554ab3f21e0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/author_model_compact.java",
+      "bytes": 55471,
+      "sha256": "7ba65b5bb7b2c68ddd5c85f9a909676d7fbc234bea632dfbaf5f80a303504036",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/author_model_compact.m",
+      "bytes": 53502,
+      "sha256": "8e6761f1d739aadf55c7309bf94ebf1336def5dde5c7f183b3a1e7e00b43d84a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/author_model_export.java",
+      "bytes": 701598,
+      "sha256": "70b57605c39c002f94c1d43a971f042a2d08c9563436d2e19954d6620073b2d9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/author_with_solution.mph",
+      "bytes": 33102085,
+      "sha256": "f32260621ba1abc1e6995f7694bbe1821e052594425cfc0a7c2e1ff0e2932ce6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/dmodel_original.xml",
+      "bytes": 2082351,
+      "sha256": "b67215b2eac04154528370d7f1607711424407729527b6cde32744ba807da058",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/environment_probe.json",
+      "bytes": 15572,
+      "sha256": "eb1056c308bac234485851a25916809964325df44ae8a789f2ffe8e3b07b1e9a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_smoke.log",
+      "bytes": 2288,
+      "sha256": "91e54df29fc84d525844a6c820d242361106ad6e1702acc5035b96851d20ad3c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_smoke_v2.log",
+      "bytes": 2287,
+      "sha256": "1c41f9f212b6cd7a830c86fad28a32d73084cd78a910fca01b7283770deed193",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_smoke_v3.log",
+      "bytes": 2522,
+      "sha256": "cb5d356f5083dc5cdee81dc09ff326244de112a1c128e9b0e6296310dbe2296d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_smoke_v4.log",
+      "bytes": 9491,
+      "sha256": "99c72de454a388923ae735db18bffb2239dc6dad02f0c084704ac0e0de555403",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_v2_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_v2_stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_v3_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_v3_stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_v4_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/initial_v4_stdout.log",
+      "bytes": 259,
+      "sha256": "55321d283529fe253a94b916f8c0a425b2ee0aed23c62c96e7816471f9494dc1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/inspect_batch.log",
+      "bytes": 368,
+      "sha256": "cf38cb43a7453a9a5ce6651fda23997ed03b3f3955a89ac619b94edab75513ec",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/inspect_compact.log",
+      "bytes": 1074,
+      "sha256": "777bd483a807fb3b06c8d42d0fd127ab5af86b7e920eb79eb75205b44835572f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/license_probe3.log",
+      "bytes": 591,
+      "sha256": "9cbda01b1bb78d9f9a4d47ebd678b05005a5c78cebb282f4822148aed57b92df",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/matlab_probe.log",
+      "bytes": 130,
+      "sha256": "41a9bffddebe10df088ffd953144a6c6a3e087ae75d126dc93278fb517ee46a6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/memory_probe_h05.log",
+      "bytes": 10305,
+      "sha256": "7a530f8a52837ddc565005f9d3363791fc740fd15bdf783d98958203751cff42",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/method_0.java",
+      "bytes": 9680,
+      "sha256": "b3f413ba4bf582057de3cf37c45b46abaacf6e6cef49cce6717115a82a1f2eb5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/model_original.xml",
+      "bytes": 207,
+      "sha256": "7731e10ff4f072e3c1f9d3637834759576d9e07270dc971fa0277bd779b36e2c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/model_probe.log",
+      "bytes": 1197,
+      "sha256": "13f9ebe658b32c2b78470069b634e4a521a6196f50b9d108a665c8f8cbbfef9f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/model_probe_latest.log",
+      "bytes": 860,
+      "sha256": "b5a2089b0abbd357ffd996c18abe1283471d6c3540aa0c5adb959eb845be4926",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/model_probe_retry.log",
+      "bytes": 172,
+      "sha256": "44ca5d0899016496a308f9e1f72e0bc09c671d862eb20508175a9a2c96d21f11",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/repair_probe.log",
+      "bytes": 6645,
+      "sha256": "5360aeab772c0ad6796025f92092704496a932b046fa62312f06a20f247d8c35",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/seed_mesh_probe.log",
+      "bytes": 924,
+      "sha256": "668592a698dff819241370e32c5aa6054c2e3de5ef2225faa5760a25eb7d2421",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server.port",
+      "bytes": 7,
+      "sha256": "b4d7c48cfb9e06553ab2ad9daaab9f707fa518fe4f0a1b6adda42fa6790931ae",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_1138888b042640fa934286cc13f26cef.port",
+      "bytes": 7,
+      "sha256": "c1839d07586e9bbb1f6479867e51ed22d6f38f5410587e1901458073afd012cc",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_157c85dc526948398ca57a680606c3a5.port",
+      "bytes": 7,
+      "sha256": "5ccf1ec1c28658ce6a4906fd8df19daca0caae1fa07ae3399316aedb4072d928",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_34f535e09a7a465691fc192052514b91.port",
+      "bytes": 7,
+      "sha256": "0c66d8a8b1cd59d120e3514af01faae6b1d27a1e812c421f47e8491d5ab0de12",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_5385415685054059a8dc8fb772ab904c.port",
+      "bytes": 7,
+      "sha256": "1047757f540e4c1a321e3d11b059d3f2272478cb5fab6f4711f619b846fac148",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_76dcd98770e24d028b759403ed67d314.port",
+      "bytes": 7,
+      "sha256": "b4d7c48cfb9e06553ab2ad9daaab9f707fa518fe4f0a1b6adda42fa6790931ae",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_8dba0bebb887491ea7d2ce19099624c0.port",
+      "bytes": 7,
+      "sha256": "8d877505e6c230da370abd927a52ca82501b67e368768c25ec4696d6a9336f9f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_a2440b2763314f5db69ca71e24931e8b.port",
+      "bytes": 7,
+      "sha256": "e9ce63f63ff46b86e01839d61fc9445b118f72a91f05fb7cf7a8d0fcca279ab0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_ebcfa4b2f54349dbac2bad2206523e87.port",
+      "bytes": 7,
+      "sha256": "17574aee4ca936f62ba08eca94c7a9460cecbefeb684d97db79000f6c1d9e0ef",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_f5473fe083a340989f35fd743bb8db74.port",
+      "bytes": 7,
+      "sha256": "269805fcfac715044f01a7ab50f25440e9dd6ef36f2f993db9143563c2e83072",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_fbb1f0d6f3e8486c813769119c86cf7a.port",
+      "bytes": 7,
+      "sha256": "b17e22a031d12f437ddb2fb75d19af7203fcb83b25badde007af3ad9474d86be",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/server_stdout.log",
+      "bytes": 246,
+      "sha256": "f7bb0febc9d5d127790d28a160909637970478fd85ba3e5fa83e9b654c823294",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/smoke_author.log",
+      "bytes": 1181,
+      "sha256": "14cf9e04b213372097996244a301f838af20f6d77bb5bf7422b84788b4a9654f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/smoke_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/smoke_stdout.log",
+      "bytes": 30,
+      "sha256": "9bf6a888d40e82a7107d43006fed146722f6b5b2ef0da47fef8b30af17fb1bb2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/with_solution_compact.m",
+      "bytes": 54151,
+      "sha256": "8672b174f661ebca806ed617f7e4c0530381d6b427b0e07e8840d30d094ff9b2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/logs/with_solution_dmodel.xml",
+      "bytes": 2114807,
+      "sha256": "efb2ddba51313c4a6bed9b132b6da05f86014dc41a5a30c1e706ce4f1fb6099a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/PARAMETER_MEMORY_AUDIT_20260928.md",
+      "bytes": 11342,
+      "sha256": "a504d20e6172926f397d6792765a1d5825ce23ae23bd94964b472a34fe463f08",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/README.md",
+      "bytes": 4569,
+      "sha256": "408cc0f44d3af9f44c17f5c2e598fadbb13a43b1f0c146a2aab1441cbc6e5083",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/runs/initial_smoke.mph",
+      "bytes": 7935452,
+      "sha256": "1ad616dc28cc2be09ecb9bd90b51d5e56fb97aaeae10bea8f61354a23f15d64d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/runs/memory_probe_h05.mph",
+      "bytes": 15151157,
+      "sha256": "7d137a410c80fdbc515f27a7c658c11260fb87513f43f83fd763daa1d15f870a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/runs/repaired_preheat_001.mph",
+      "bytes": 8118012,
+      "sha256": "e1cccd5a7cd2969b4c880b17595bc3371d57103a169c1c23849d54a2f47d63dd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/runs/repaired_preheat_002.mph",
+      "bytes": 11643255,
+      "sha256": "52593c97038ed8e79ea7b3a0c73168a2104435955c2d1f0671195fab00331d29",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/runs/seed_mesh_sol2_diagnostic.mph",
+      "bytes": 19274605,
+      "sha256": "ecee29537b8f949fb85b9e6a93a662edcf5d5a3573dacd2942c207b59be32580",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/audit_coupling.m",
+      "bytes": 1505,
+      "sha256": "c99646526ce34cf6800ddee9b2f3b5bbfe58e586bea74eb070ee190fae48cb37",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/audit_readonly.m",
+      "bytes": 1593,
+      "sha256": "166baa47fb8bf4e4d36ea9929bdfd59d8b8ae37a7744228cf9580f724e86043e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/audit_repair.m",
+      "bytes": 1500,
+      "sha256": "cf09e83a6f858b3b40e1c33f4d0c40cbdc19b21215630ee72923133997fc492d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/Configure-Session.ps1",
+      "bytes": 307,
+      "sha256": "756afc6ce5873ae10fc15d9e7dc5cdbc99b47d675b98ba0bb1d058c5a750bab6",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/export_screening_models.m",
+      "bytes": 3097,
+      "sha256": "80214dce924b52268f407a5e8497e20146bddd5e19482f90f53405ba140da144",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/InitialSmoke.class",
+      "bytes": 5194,
+      "sha256": "a329869a2b862bfd02d4e5eb8a402d603bc5f270f8dfd02c173f1009e992287e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/InitialSmoke.class.status",
+      "bytes": 20,
+      "sha256": "f3411f67054a9e0bf044dbb8f025674fcc67bec22408754893fd381d2f51b85d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/InitialSmoke.java",
+      "bytes": 2454,
+      "sha256": "1aa5a63af625b40cff6bafb26ebac3dbb6e724865bab5a8528a01b35f76a6e26",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/InspectModel.class",
+      "bytes": 2697,
+      "sha256": "89a3011dc8847e3009ae618bcebeec7c425e34936f5d1d78234b547ccc783ecc",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/InspectModel.class.status",
+      "bytes": 20,
+      "sha256": "6c1f298ed9fea75776079af18e381fcc0f648d2ad208b744d1c770acf7a18475",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/InspectModel.java",
+      "bytes": 818,
+      "sha256": "13cb31c07b48704622074e5143f47cd7615c9bfb71fcac304c1f19efaf59e3de",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/make_smoke_runner.py",
+      "bytes": 2641,
+      "sha256": "c949719f1c12c140add7880b50700046cced5f167a1d42c54711bee376e72167",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/MeshMemoryProbe.class",
+      "bytes": 5359,
+      "sha256": "c21f162bef69c1752426b74e87e99a5eb5279162353b34f582da144e316e4306",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/MeshMemoryProbe.class.status",
+      "bytes": 20,
+      "sha256": "1b7af39fa7780829c6e6bc820acedf51e77e57135d060dd525b00a498a722f40",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/MeshMemoryProbe.java",
+      "bytes": 2552,
+      "sha256": "9a3a92c1c9a24e273aaaeed9b2533e5ac3cc462b8722bc90349f564130c4ea0b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/probe_licenses.m",
+      "bytes": 2786,
+      "sha256": "f90634f8c3c39b017b0f846ea6aba9730d8fd8c20987848e784f34da329192e4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/probe_licenses2.m",
+      "bytes": 2934,
+      "sha256": "c65da5e5010b19d3d89e6d44d3f1b02f1613bd0097c0f2fec8043a449520e7bf",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/probe_licenses3.m",
+      "bytes": 2367,
+      "sha256": "f9f4af6d6f67913771eef06bc86ea18b16dee6fb157d601f4942505b52025664",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/probe_model.m",
+      "bytes": 1298,
+      "sha256": "9616c02e12fa53622179423283d970bae283211fe262014a93f58d69059984b8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/RepairProbe.class",
+      "bytes": 6054,
+      "sha256": "e336fc332edde669aa0e7506a5d78decf6bad3449b27b6bb2d46382d27eaaec3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/RepairProbe.class.status",
+      "bytes": 20,
+      "sha256": "46104d2f689bd1cce58b198102f1de5e5f8e64ea9989954c5da971899674b939",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/RepairProbe.java",
+      "bytes": 3099,
+      "sha256": "69031a99249b7c27e284ec6230c4782a9a61f350cab3f40cfef02aa90316fedb",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/SeedMeshProbe.class",
+      "bytes": 2105,
+      "sha256": "d0be3570032d75dbfc2773f506780244b1a004d51a95669058c67456bce1b747",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/SeedMeshProbe.class.status",
+      "bytes": 20,
+      "sha256": "1a4f3bab82b1fbe89a044b0712477df7f6904dd56b5fbf987e1ee494d1997658",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/SeedMeshProbe.java",
+      "bytes": 687,
+      "sha256": "866889ebf8e8ba2b5c2d6346df3a07a81f8346bffd31f90c0f2e046cd48afeff",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/SmokeAuthor.class",
+      "bytes": 5245,
+      "sha256": "e874f9e975834b58616dcbf19133ff7956bec90850890b37d0e92e9e9e8fdd66",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/SmokeAuthor.class.status",
+      "bytes": 20,
+      "sha256": "eaf8ebcecf323f69b970c6607fb74a5d67d3adb099e999f20dde1b563e3b6f3b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/SmokeAuthor.java",
+      "bytes": 3989,
+      "sha256": "227e04fc976bce721a648abd4380c4b5c233f936744e04ee1e4e751c393751f5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/scripts/Start-Probe.ps1",
+      "bytes": 1468,
+      "sha256": "3a60bc7b3ac21e0a0254bb7a7f905e62a0dc331169e721b07b19ad2e4a014784",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/source_manifest.json",
+      "bytes": 674,
+      "sha256": "e54b6a55283f403a5f18b4db797fa46eaa37e8c02d2b6812e12c04736ec3a9ec",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/startup_result.json",
+      "bytes": 1295,
+      "sha256": "2ece6c4eb47b37cae96171751ce2aaf7317890973ed017d7499b38cb8fff9331",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/config",
+      "bytes": 373,
+      "sha256": "b03880abee1e3a8e114272eaa18eb6d1c2b34b55df2facf1cdabe467e77a7edd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/description",
+      "bytes": 73,
+      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/HEAD",
+      "bytes": 21,
+      "sha256": "28d25bf82af4c0e2b72f50959b2beb859e3e60b9630a5e8c603dad4ddb2b6e80",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/applypatch-msg.sample",
+      "bytes": 478,
+      "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/commit-msg.sample",
+      "bytes": 1972,
+      "sha256": "efc1401b0e99d1ff51494d154d98b46c1e99059bcd8bf9f73cecde19fd3eb23b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/fsmonitor-watchman.sample",
+      "bytes": 4611,
+      "sha256": "9159720099ad5595b8e66645cbfd47763c1e920f46e0b50ae75e642bbec57ef0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/post-update.sample",
+      "bytes": 189,
+      "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/pre-applypatch.sample",
+      "bytes": 424,
+      "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/pre-commit.sample",
+      "bytes": 1649,
+      "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/pre-merge-commit.sample",
+      "bytes": 416,
+      "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/pre-push.sample",
+      "bytes": 1374,
+      "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/pre-rebase.sample",
+      "bytes": 4898,
+      "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/pre-receive.sample",
+      "bytes": 544,
+      "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/prepare-commit-msg.sample",
+      "bytes": 1492,
+      "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/push-to-checkout.sample",
+      "bytes": 2783,
+      "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/sendemail-validate.sample",
+      "bytes": 2308,
+      "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/hooks/update.sample",
+      "bytes": 3650,
+      "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/index",
+      "bytes": 272,
+      "sha256": "cd8a7bb2defe0a5431f09eb77c90ca293b05402952ca99a582be706544b847a0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/info/exclude",
+      "bytes": 240,
+      "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/logs/HEAD",
+      "bytes": 194,
+      "sha256": "899cb0b39027fa491f23a9c9f03a042c20e93440cfbca78a01b77a8c7dad9ba4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/logs/refs/heads/main",
+      "bytes": 194,
+      "sha256": "899cb0b39027fa491f23a9c9f03a042c20e93440cfbca78a01b77a8c7dad9ba4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/logs/refs/remotes/origin/HEAD",
+      "bytes": 194,
+      "sha256": "899cb0b39027fa491f23a9c9f03a042c20e93440cfbca78a01b77a8c7dad9ba4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-a20ac1073ae07cdfceae54d669b4c1c42e9ed6ca.idx",
+      "bytes": 1100,
+      "sha256": "169ae8865a94b2345ed163b774b0255232313c797e0c508d2b70240ec1fae445",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-a20ac1073ae07cdfceae54d669b4c1c42e9ed6ca.pack",
+      "bytes": 9347240,
+      "sha256": "d620e3fcca5370a79ce9fa6879257076a5b2ad0804a19253b538500752ef1909",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-a20ac1073ae07cdfceae54d669b4c1c42e9ed6ca.promisor",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-a20ac1073ae07cdfceae54d669b4c1c42e9ed6ca.rev",
+      "bytes": 56,
+      "sha256": "442c06f015713c327b6abb77d56134a4461f5c890ef2d040de4c9c3f663f644e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-aebad1fa84492273e654bed205e8dcf7ba52f6ad.idx",
+      "bytes": 1128,
+      "sha256": "4ddd266c9b60d9ec97d77431c2caa389e81a372c6f6b7ad6b1fb08611fa833d0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-aebad1fa84492273e654bed205e8dcf7ba52f6ad.pack",
+      "bytes": 1015,
+      "sha256": "5e99c63f06468fab38767828d6d6b749c9ef23549d93c8b04a28f1303e30e809",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-aebad1fa84492273e654bed205e8dcf7ba52f6ad.promisor",
+      "bytes": 103,
+      "sha256": "4c8c4463f3ec7568fd577d33a08fc0b303aec12563bc00fe4d411e4e92025e2a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-aebad1fa84492273e654bed205e8dcf7ba52f6ad.rev",
+      "bytes": 60,
+      "sha256": "b992a9e36c84be7d19372d68bde9b77c1aa5e96c356796ab5503b2bbfc45b680",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-d21163ce19dd35148b9de16e63978777795dcd0b.idx",
+      "bytes": 1100,
+      "sha256": "0d992e052948f226b3c1143f5dc003cf1559f45acd15f64297d0a77b5db5b5ee",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-d21163ce19dd35148b9de16e63978777795dcd0b.pack",
+      "bytes": 5173780,
+      "sha256": "3c2b2ef5b570f170769aec0f4338ff8f1fa82a535511eeef50dcee69f3014891",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-d21163ce19dd35148b9de16e63978777795dcd0b.promisor",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/objects/pack/pack-d21163ce19dd35148b9de16e63978777795dcd0b.rev",
+      "bytes": 56,
+      "sha256": "92cc632762bcc7adae6c5df653026f4a324eb401a23ef7957343d9c8a4e18d60",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/packed-refs",
+      "bytes": 112,
+      "sha256": "820a8ad4f1f3d8ff6cd8f4272c15efbf5eec0b8c3f51800e609273d60c124e9c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/refs/heads/main",
+      "bytes": 41,
+      "sha256": "db13a23b35345fc59b0a627196ff1f825701001cc1de797c85b5214e4562a472",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/refs/remotes/origin/HEAD",
+      "bytes": 30,
+      "sha256": "2bb6a24aa0fc6c484100f5d51a29bbad841cd2c755f5d93faa204e5dbb4eb2b4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/.git/shallow",
+      "bytes": 41,
+      "sha256": "db13a23b35345fc59b0a627196ff1f825701001cc1de797c85b5214e4562a472",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/3d_disk_0.5mm_notch_tetrahedral_half_amg2 with solution2.zip",
+      "bytes": 9493279,
+      "sha256": "adee053a3763e18c77821650022a7a5904254966851302ccdd9513f7b5de358b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_he2026/upstream/3d_disk_0.5mm_notch_tetrahedral_half_amg2.mph",
+      "bytes": 18669252,
+      "sha256": "8347672114c2d6a836f741d51a52d08788cbce5abecd6c8565b4b4689c0b8e08",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/DAMAGE_CAUSE_AND_REVISION_20260929.md",
+      "bytes": 5134,
+      "sha256": "08166c7492b8cd0a5527ffc932f9ec6d8e678e030562b8512b3ef4998a9c3abc",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/INDEPENDENT_PARAMETER_REVIEW_20260929.md",
+      "bytes": 8283,
+      "sha256": "9a36570382fadd6f7a627a5947ab0fc7c186aae245ae518b94423d04520977de",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/heartbeat.txt",
+      "bytes": 47,
+      "sha256": "8105aebcf98305c23b03cd54083ef6c1954bf7380f17c29aa359621c71b442cc",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/interrupted_20260930_085245/heartbeat.txt",
+      "bytes": 43,
+      "sha256": "c18ae80ed8a676e1d2874f8a05f010458762d7b5e2f89b4c9546e41c41e26272",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/interrupted_20260930_085245/probe.log",
+      "bytes": 172,
+      "sha256": "6e4daaadf8e0ae088213d2a7380e7bbfeaa356309cea815b6b57a1766fa5bcd2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/interrupted_20260930_085245/short_control_baseline_solver.log",
+      "bytes": 31301,
+      "sha256": "61bb9fde5a12082e7e3f305f6d7a14621215bf6eca507dfbc832dda88cf874ef",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/interrupted_20260930_085245/short_controls_launcher.error.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/interrupted_20260930_085245/short_controls_launcher.log",
+      "bytes": 215,
+      "sha256": "0e68948583cd7b90ad3c2dd517374c0c8d40288444b813493ef77ecf6f236a25",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/interrupted_20260930_085245/short_paper_controls.json",
+      "bytes": 105,
+      "sha256": "d047b3949ded2e36ee48ea763c6954501ba7fcb634c48309e7178e1e2e0d9bfe",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/last_case_run.json",
+      "bytes": 443,
+      "sha256": "45c20d3a3ece112cd86051bab409a7bbffd4a98f5fc03303450d6bc95459cdb3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/paper_10ms_launcher.log",
+      "bytes": 374,
+      "sha256": "54a1c984892c3d82478cc6eab570ac8fd8973e2f45d5fb7faa565aa747b50933",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/paper_10ms_launcher_error.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/paper_10ms_solver.log",
+      "bytes": 449224,
+      "sha256": "f7bd8484bb2fe5e711d26fe6b67b024aa12d1278e220926ca0caf177c9e46318",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/probe.log",
+      "bytes": 172,
+      "sha256": "9bb1aa5942de607052f28240b724157aa26bbc04e6e3543a2817f11eda1c5844",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server.port",
+      "bytes": 7,
+      "sha256": "bf5967eccefdbf2808ffb35e47a0ac9e53648f0f691faeef3a6d2dfedd985845",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_15859b8eb50a415d99a16e3b7879fc71.port",
+      "bytes": 7,
+      "sha256": "26706436af6e5ae097b7a432b8c87503b6ed1ce497a7eaf093396dce8dc08fc1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_19d27358d1d4451abf116ec28759885e.port",
+      "bytes": 7,
+      "sha256": "585f94ad2d3a0f80d28ea04a5b755a1daaabc7904912b80d6c9ec6f557af10c8",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_214ea0e14c644dc1b1550aae43b869ea.port",
+      "bytes": 7,
+      "sha256": "0cc66ae262b1009527b2c339c86d35fa6ba9cef48c178e630e2d8b9a053f1813",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_354693a31b994a7cac94f43d3a22c925.port",
+      "bytes": 7,
+      "sha256": "34a75a12f1a0b825c28d9e3c7ae20216e66cae4a45b3c947dceb8f20e376e8b4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_3fdcc341aa4e4a5c9a8af12849b35a18.port",
+      "bytes": 7,
+      "sha256": "055b0e6acce9e909bba442014744d3141b64194c8787a4f8de0392a4866205a4",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_552f2148dd3e4e4cac20fc4ec771f7d8.port",
+      "bytes": 7,
+      "sha256": "e0c04b961be7d26fefa3a68c5ea8e2b50560af060dcf9412568a629c9e529f17",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_5cccb55ee863481290acb3bb37442c9d.port",
+      "bytes": 7,
+      "sha256": "2a8c240b74e7bda391bd56e487f22d35e3f9c661587735f8ba4fadadb415d9ce",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_5f7acf38371c4be1adde06bd1c05031c.port",
+      "bytes": 7,
+      "sha256": "2af2bbeb4a1930484674dc2ea083d9403d62d230939d365b24e104d89a36769d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_708e69f51fb648b0a450057d0f7b2e5c.port",
+      "bytes": 7,
+      "sha256": "15e245361316ff1984526d748e1f54db941f3315346c322e38172f9953dd6750",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_90c19d762545497c98310fdbb09c5db6.port",
+      "bytes": 7,
+      "sha256": "642a3f45398476cb04bb665ec5b36af1fe681ea1c876baf944c9cf16c058d190",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_9cf7e2806bed46c6b1f25da27ca9ffa9.port",
+      "bytes": 7,
+      "sha256": "10013ea06e3291ef070b50c51328111036693c22df0df1822299b7e6c7760b35",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_a7b36751f7114aae910f161584327197.port",
+      "bytes": 7,
+      "sha256": "bf5967eccefdbf2808ffb35e47a0ac9e53648f0f691faeef3a6d2dfedd985845",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_ae3c0a656e2642b788682b84c54246b5.port",
+      "bytes": 7,
+      "sha256": "5e7fde49703bd8d074b0ba762e9fbfd8823b3809fe7617f9cda7c9b551eca37e",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/server_f68d2f837ba2401b839c1364f866371e.port",
+      "bytes": 7,
+      "sha256": "3c7ffa7fb581cf853c860b8db04510a2b28a18ea8889049b7ce22f81313c3493",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/short_control_baseline_solver.log",
+      "bytes": 244930,
+      "sha256": "cd2da880851f6af28d6df7d1edfbb42a118a48e0828ea0f3df6081f3d0cd69dd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/short_control_thermal_only_solver.log",
+      "bytes": 19828,
+      "sha256": "43b60c632eebbdf3b354aada282c7cde52fd7a8e352e832816775f0359f1115a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/short_controls_launcher.error.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/short_controls_launcher.log",
+      "bytes": 215,
+      "sha256": "ef5445cde4d074963cc189ea0b920028c0d90b37dca945ad510b558759032dbf",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/variant_build_launcher.error.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/variant_build_launcher.log",
+      "bytes": 2064,
+      "sha256": "7a58b47d1289b65149e652120b890e59b46abac828ec572f21d2a369dc36b99a",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/logs/variant_build_resource.json",
+      "bytes": 443,
+      "sha256": "45c20d3a3ece112cd86051bab409a7bbffd4a98f5fc03303450d6bc95459cdb3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/metrics/damage_bounds_audit.json",
+      "bytes": 1722,
+      "sha256": "2a5041ac0350f4eb45162f2e72cd7d6d4f386e2870b31982c7bac8cbde40e1bb",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/metrics/diagnose_stage1.json",
+      "bytes": 14023,
+      "sha256": "fd754ea07d87507951448c75403669a4a391c51f89d16d4fcf82182e7a7290e1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/metrics/paper_10ms.json",
+      "bytes": 11324,
+      "sha256": "4a8002e81e766a2c76d694ecf3525951496037ac0d98640913c8ead31790a366",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/metrics/paper_variant_build.json",
+      "bytes": 3014,
+      "sha256": "a996d6c17851fdc0373689b8f5df54b668268befaeeb23fb2305f0d5a1c201f2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/metrics/probe_edges_and_steps.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/metrics/restart_history_audit.json",
+      "bytes": 297,
+      "sha256": "3e2cec3cb47ef647ac198d9a7575974549f855299e1d9d370b5fad0dc665fead",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/metrics/restart_history_gauss_audit.json",
+      "bytes": 748,
+      "sha256": "68c5583709a35d855c86a81bf420d1a2570c23c43dff64d485d21db0705c6afd",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/metrics/segment_restart_no_reinit.json",
+      "bytes": 1248,
+      "sha256": "014eeb1a051ee9e197a59b002811647d3434779b5c75a9918ad933483b199815",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/metrics/segment_restart_validation.json",
+      "bytes": 1172,
+      "sha256": "7fd68b960032569148e4bff17c1d05adf58559e794f4425eb36ae79edd2a2aab",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/metrics/short_paper_controls.json",
+      "bytes": 7275,
+      "sha256": "d990cfdd11b8fd3de62b0e8745003f0c5a38dc159ab19669cf42bbc4308b3274",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/metrics/stage1.json",
+      "bytes": 5717,
+      "sha256": "59b029d544d895e0ea6952a676d0e9c5206aeec5045dcade78b084efdb7dd6ab",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/README.md",
+      "bytes": 6607,
+      "sha256": "17227fae3a9877c6f2be665a2170de64853922f4b64f99b0d43df0768bf8623d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/runs/paper_10ms.mph",
+      "bytes": 1692272863,
+      "sha256": "288427d74d84882a9e0ec4f70fcc11c1b5e68a672fb46539a0ff9e0b3d8510dc",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/runs/restart_checkpoint_0002.mph",
+      "bytes": 145350979,
+      "sha256": "ff7136a714eab71a501b8ceca625a434fec455ff1284823d6c2c1958be5502e0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/runs/restart_no_reinit_0004.mph",
+      "bytes": 259871659,
+      "sha256": "dc0c15aba91c51c32403b5c8a192ee5e5201e46b85bb2345659223bced746445",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/runs/restart_reference_0004.mph",
+      "bytes": 186420550,
+      "sha256": "a032d90aa165dfe976b519e2f1eb4509e90b9014170581c4cfccdc105bb76917",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/runs/restart_segmented_0004.mph",
+      "bytes": 259867722,
+      "sha256": "73482fd8f62ebc231beb87d98dc3d71185ca572a81ee03a0d072f4c9512d3779",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/runs/short_control_baseline.mph",
+      "bytes": 542351385,
+      "sha256": "4bfe081259faec52695cce9fb3032a2681321ff6bddaa3780766a9755153eb3b",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/runs/thermo_mech_stage1.mph",
+      "bytes": 268558547,
+      "sha256": "2d427db75c6a62e8b34b6d3cf970b8e8da4d4f45b8d77442956f0ca58f3dcd0f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/runs/variant_mesh_only_unsolved.mph",
+      "bytes": 5783258,
+      "sha256": "c479ea156ac514aad3d5f92ffe87efcac875134de9934ff660503ad2ff81e289",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/runs/variant_thermal_only_unsolved.mph",
+      "bytes": 2548227,
+      "sha256": "2a6f9d0eb9a2e0dd2ad049e681c3822a6f09f5faa5683889adb32690e8408e29",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/audit_and_solve.m",
+      "bytes": 10743,
+      "sha256": "022317cf27236b8fe6d70abcd4f69d0d451e8422d443b83cff30571443956ad3",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/audit_damage_bounds.m",
+      "bytes": 1574,
+      "sha256": "efcb7fb1d2da505a99c4df40894e8b861b4bb26f8246c61dfd140988dc2a4da0",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/audit_restart_history.m",
+      "bytes": 1008,
+      "sha256": "3b9831f3c7767f997a1b5ae9c75f5a74a7ca27e7e9eb9aa0dfdef3215be2e947",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/audit_restart_history_gauss.m",
+      "bytes": 1374,
+      "sha256": "94f78d1593339be8ec4405ecded56401e621c28cbe78f4a86dfefe9d2646c676",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/build_paper_variant.m",
+      "bytes": 1462,
+      "sha256": "43911d7e27e179a273ed8f3dc1d4f97c9fb62876b165aa32f49dfe666fe1a91f",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/check_paper_variants.m",
+      "bytes": 1193,
+      "sha256": "864252e15b3b55d5720800be8f000dfaab643a323090e1933ea5620db76cd48d",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/diagnose_stage1.m",
+      "bytes": 5812,
+      "sha256": "e6eb6ae4171f31d95bd8eac637468d56b1a196d0abd50c25a0c9032140cc3b4c",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/probe_edges_and_steps.m",
+      "bytes": 4773,
+      "sha256": "3eb6a9d49bfa13fbc2eac664fe48d6ea1528127b9539a267cb764105ca9c62d2",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/run_first_paper_time.m",
+      "bytes": 1683,
+      "sha256": "e56588da54394febdd32ef3dbd2dec7642dde7dcda597977b71174de15ecb7f1",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/run_full_case.m",
+      "bytes": 9786,
+      "sha256": "8a15e49315b6d03e79401ba6801f27f4570d0040d4da05708412f55f8f74ab20",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/run_short_paper_controls.m",
+      "bytes": 2639,
+      "sha256": "1fd5f5991bd717369474c30c33b983dc5181720758ed6e05c3f94235b78c8487",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/sha256file.m",
+      "bytes": 377,
+      "sha256": "00051dcbe396e143039cf3238d183578faf68cc0861cc4f9f4104179863008b9",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/Start-Case.ps1",
+      "bytes": 3999,
+      "sha256": "94495eaf16998439c6d49df3ce3c6565a13c70172d83fb6431e9759ff5c90827",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/validate_restart_no_reinit.m",
+      "bytes": 2536,
+      "sha256": "c32a66503aa071b0d34d9db180a12e21c2b7b5415b25c30bae4aa0c742a73218",
+      "verified": true
+    },
+    {
+      "path": "simulation_reproduction/comsol_pfczm_01/scripts/validate_segment_restart.m",
+      "bytes": 2413,
+      "sha256": "d45c672b2fef2f184e09d76a20c0b535b218f7fbbeee9226733640ab8902baa8",
+      "verified": true
+    }
+  ]
+}

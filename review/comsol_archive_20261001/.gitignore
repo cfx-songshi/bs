@@ -1,0 +1,3 @@
+# Runtime logs can contain transient service URLs; publish structured receipts only.
+*.log
+process_id.txt
