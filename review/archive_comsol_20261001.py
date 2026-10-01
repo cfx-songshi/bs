@@ -94,7 +94,7 @@ def publish(m):
     changed=subprocess.run(['git','diff','--cached','--quiet','--',*paths],cwd=ROOT).returncode
     if changed: run(['git','-c','user.name=cfx-songshi','-c','user.email=z58599517@gmail.com','commit','--only','-m','Archive complete COMSOL project data for verified local cleanup','--',*paths])
     state('uploading',stored_bytes=m['stored_bytes'])
-    run(['git','-c','lfs.concurrenttransfers=8','push','origin','main'])
+    run(['git','-c','core.sshCommand=ssh -o ServerAliveInterval=30 -o ServerAliveCountMax=6','-c','lfs.concurrenttransfers=8','push','origin','main'])
     head=git('rev-parse','HEAD')
     if git('ls-remote','origin','refs/heads/main').split()[0]!=head:raise RuntimeError('Remote mismatch')
     return head
@@ -178,7 +178,7 @@ def cleanup(m,commit):
     state('complete',archive_commit=commit,deleted_files=len(deleted),deleted_bytes=sum(x['bytes'] for x in deleted),temporary_cache_bytes=reclaimed)
     run(['git','add','--','review/comsol_archive_20261001'])
     run(['git','-c','user.name=cfx-songshi','-c','user.email=z58599517@gmail.com','commit','--only','-m','Record verified COMSOL archive and local data deletion','--','review/comsol_archive_20261001'])
-    run(['git','push','origin','main'])
+    run(['git','-c','core.sshCommand=ssh -o ServerAliveInterval=30 -o ServerAliveCountMax=6','push','origin','main'])
 def main():
     REVIEW.mkdir(parents=True,exist_ok=True)
     m=build()
